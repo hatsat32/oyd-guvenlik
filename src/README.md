@@ -2,9 +2,9 @@
 
 ## Buradan Başlayın
 
-Zaman sıkıntısı mı çekiyorsunuz? Baskıyla mücadele etmek veya daha iyi bir dünya inşaa etmek için çok mu meşgulsünüz? Muhteşem! Size güvenlik yolculuğunuza burada bahsedeceğimiz kolay adımlarla herkes sayısal hayatını daha güvenli kılabilir.
+Zaman sıkıntısı mı çekiyorsunuz? Baskıyla mücadele etmek ve daha iyi bir dünya inşaa etmek için çok mu meşgulsünüz? Muhteşem! Burada bahsedeceğimiz kolay adımlarla kendinizin ve herkesin sayısal hayatını daha güvenli kılabilirsiniz.
 
-* [Yazışma temizliğine giriş yapın](./message-hygiene.md): Yazışma temizliğine giriş yapın: Saldırıların çoğu posta kutunuzdan gelir. E-posta ve anlık yazışma kullanırken uygun önlemleri nasıl alacağınızı öğrenin.
+* [Yazışma disiplinine giriş yapın](./message-hygiene.md): Yazışma disiplinine giriş yapın: Saldırıların çoğu posta kutunuzdan gelir. E-posta ve anlık yazışma kullanırken uygun önlemleri nasıl alacağınızı öğrenin.
 * [Parola yöneticisi kullanın](./passwords.md): Parola yöneticisi kullanarak kendinizi çok sayıda tehlikeden koruyabilirsiniz.
 * [Cihazlarınızı şifreleyin](./device-encryption.md): Tam disk şifreleme kullanması çok kolay, pek çok işletim sisteminde dahili olarak gelen ve cihazlarınızdaki verilerin korunmasında çok etkili bir sistemdir.
 * [Web sitelerini daha güvenli gezin](./better-web-browsing.md): Varsayılan tarayıcınızı ve varsayılan ayarlarını değiştirip birkaç eklenti kurarak web üzerindeki güvneliğinizi ve keyfinizi fazlasıyla arttırabilirsiniz.
@@ -16,13 +16,13 @@ Bilgi ve iletişim (bilişim) teknolojilerinin giderek yükselen önemi bir baş
 
 **Ulus Devletler;** yeni iletişim teknolojilerine, bu yolla yapılacak iletişimi ve kitleleri topluca kontrol etmek için gerekli altyapıları geliştirerek tepki vermiştir. Pek çok devlet aynı zamanda ahlaki değerleri olmayan özel şirketlerle insanların ve toplumun öncülerinin iletişimlerine ve cihazlarına girmek için işbirliği yapmakta.
 
-**Şirketler;** İnternet sayesinde ortaya çıkan veriye dayalı düzende rekabette sağ kalabilmek için insanların kişisel verilerini toplayıp, inceleyip sonuç çıkarmak zorunda olduklarını fark ettiler. Özellikle reklamcılık sektörü tamamen kişilerin takip edilmesi ve davranışlarının incelenmesi üzerine kurulu bir sisteme geçiş yapmıştır.
+**Şirketler;** İnternet sayesinde ortaya çıkan veriye dayalı düzende rekabette sağ kalabilmek için insanların kişisel verilerini toplayıp, inceleyip sonuç çıkarmak zorunda olduklarını fark ettiler. Özellikle reklamcılık sektörü tamamen kişilerin takip edilmesi ve davranışlarının incelenmesi üzerine kurulu bir sisteme geçiş yaptı.
 
 **Suçlular;** kişilerin cihazlarına ve hesaplarına yapacakları saldırılar aracılığı ile yapabilecekleri şantaj ve sahteciliğin çokça karlı olduğunu farketti.
 
 Bu bağlamda, sayısal güvenlik hayati bir öneme sahiptir.
 
-* Devlet gözetiminin sosyal hareket ve ilerlemeyi bastırdığı gerçeği tarihi olarak bilinen bir gerçektir.
+* Devlet gözetiminin, sosyal hareket ve ilerlemeyi bastırdığı gerçeği tarihi olarak bilinen bir gerçektir.
 * Dolaylı bile olsa, kontrolsüz gözetimin sosyal hareketler ve insanlar üzerinde olumsuz etkileri vardır.
 * Şirket gözetimi devletlerinki kadar ciddi bir tehlikedir. Sadece şirketlerin insanlar hakkında topladığı sınırsız bilginin devletler tararfından başka amaçlarla kullanılması değil, şirketlerin tüketiciler üzerinde hiç olmadığı şekilde kontrol sahibi olması da tehlikenin bir parçasıdır.
 

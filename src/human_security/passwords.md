@@ -2,24 +2,24 @@
 
 ## Parola yöneticisi kullanın
 
-Parola yöneticisi kullanmak, kişisel güvenliğinizi arttırmak için yapabileceğiniz en önemli şeyler arasından en önemlisidir.
+Parola yöneticisi kullanmak, kişisel güvenliğinizi arttırmak için yapabileceğiniz en önemli şeydir. Bilgisayarların işlem güçlerinin giderek arttığı ve sızıntılar dolayısı ile çokça kişinin parolaları İnternet'e saçıldığı için insanların kafalarından uydurduğu parolalar artık yetersiz kalmaktadır. Güvenli parolalar artık **xoo|Z'eetohth3Zoaph^** gibi göründüğünden insanların hatırlaması mümkün değildir.
 
-Bir parola yöneticisi, size hem güçlü hem de eşsiz parolalar kullanma imkanı sağlar. Parola yöneticisi ile diğer tüm parolalarınıza erişmenizi sağlayacak bir adet parola hatırlarsınız.
+Bir parola yöneticisi, size hem güçlü hem de eşsiz parolalar kullanma imkanı sağlar. Parola yöneticisi ile her hesabınız için benzersiz parolalar atar ve tüm hesaplarınızın parolalarına erişmenizi sağlayacak sadece bir adet parola hatırlarsınız. Özetle siz bir tane güvenli parola hatırlarsınız, parola yöneticisi sizin için yüzlerce!
 
-Bir parola yöneticisinin dikkat edilmesi gereken üç önemli özelliği vardır:
+İyi bir parola yöneticisinin dikkat edilmesi gereken üç önemli özelliği vardır:
 
-* **Yerel Yazılım**: Amaca uygun bir yazılım olarak parola yöneticisinin sakladığı parolaları yerel olarak bilgisayarınızda bulundurması, bir ana parola ile şifrelemesidir. Bu en güvenli seçenek olmakla birlikte birden fazla cihaz arasında eşitlemeyi güçleştirecektir.
-* **Bulut Hizmetleri**: Genellikle ücretli olmakla parolalarınızı cihazlarınızdan bağımsız olarak saklayan bir hizmeti ifade eder. Bulut hizmetleri aracılığı ile parolalarınıza heryerden ulaşmanın rahatlığını daha az güvenlik elde etmekle ödersiniz.
-* **Tarayıcı Eklentileri**: Hem yerel yazılım hemde bulut hizmeti olarak sunulan parola yöneticilerinin çoğunlukla, parolalarınıza kolaylıkla erişebilmeniz için bir tarayıcı eklentisine sahiptirler. Bu eklentiler rahatlık sağlar fakat biraz daha az güvenlidirler.
+* **Yerel Yazılım**: Özel bir amaçla yazılmış bir yazılım olarak parola yöneticisinin sakladığı parolaları yerel olarak bilgisayarınızda bulundurması, bir ana parola ile şifrelemesidir. Bu en güvenli seçenek olmakla birlikte birden fazla cihaz arasında eşitlemeyi güçleştirecektir.
+* **Bulut Hizmetleri**: Genellikle ücretli olmakla parolalarınızı cihazlarınızdan bağımsız olarak saklayan bir hizmeti ifade eder. Bulut hizmetleri aracılığı ile parolalarınıza heryerden ulaşmanın rahatlığını daha az güvenlik olarak ödersiniz.
+* **Tarayıcı Eklentileri**: Hem yerel yazılım hemde bulut hizmeti olarak sunulan parola yöneticileri çoğunlukla, parolalarınıza kolaylıkla erişebilmeniz için bir tarayıcı eklentisine sahiptirler. Bu eklentiler rahatlık sağlar fakat daha az güvenlidirler.
 
 Hangi aracı seçtiğinizden bağımsız olarak gerçekten önemli olan bir parola yöneticisi kullanmanızdır. Lütfen aşağıdaki önerileri aklınızda tutun:
 
-* **Ana Parola**: Bir parola yöneticisi kullanırken, ana parolanızı kaybetmemeniz hayati öneme sahiptir. Şayet unutacağınıza en kücük ihtimal bile veriyorsanız parolanızı güvendiğiniz bir yerde yazılı olarak saklamalısınız.
-* **Yedekler**: Parola yöneticinizin verilerini düzenli olarak yedeklemeniz de bir o kadar önemlidir. Bulut hizmetinin kesilmesi sonunuzun gelmesi demektir bu yüzden düzenli yerel yedek almak iyi bir fikirdir. Yerel yazılımlar için yedek almak yeterlidir.
+* **Ana Parola**: Bir parola yöneticisi kullanırken, ana parolanızı kaybetmemeniz hayati öneme sahiptir. Bunun için **[Zarola](zarola.oyd.org.tr)** kullanmanızı öneriyoruz. Bilgisayarlar için zor ama hatırlamanız için kolay bir parola tüm sayısal hayatınızın dayanacağı bir parolayı unutmamak için en garanti yoldur.
+* **Yedekler**: Parola yöneticinizin verilerini düzenli olarak yedeklemeniz de bir o kadar önemlidir. Bulut hizmetinin kesilmesi sonunuzun gelmesi olur bu yüzden düzenli yerel yedek almak iyi bir fikirdir. Yerel yazılımlar için basitçe yedek almak yeterlidir. Ara sıra parola yöneticinizin parolaları sakladığı küçük dosyayı bir flash belleğe koyup kenara kaldırmak sizi çokça baş ağrısından kurtarabilir.
 
 Yaygın parola yöneticileri;
 
-*  Keepass ve KeepassX (yazılım-türü) ciddi şekilde önerilen iki yerel parola yöneticisinin versiyonlarıdır. Bu iki araç aynı şifreli dosya tipini kullanmakta ve neredeyse her bilgisayarda çalışabilmektedir.
+*  Keepass ve KeepassX (yerel yazılım) ciddi şekilde önerilen iki yerel parola yöneticisinin versiyonlarıdır. Bu iki araç aynı şifreli dosya tipini kullanmakta ve neredeyse her bilgisayarda çalışabilmektedir.
    * [Security Self-defense / How to: Use KeepPassXC](https://ssd.eff.org/en/module/how-use-keepassxc)
    * [Security In-a-box / KeePass overview](https://securityinabox.org/en/guide/keepass/windows)
 * LassPass (Bulut)
@@ -27,27 +27,31 @@ Yaygın parola yöneticileri;
 
 ## Güçlü Parolalar Kullanın
 
-Rastgele üretilmiş güçlü parolalar kullanın. Bunun istisnası cihazınızı ve parola yöneticinizi açacak parolalardır. Diğer tüm parolalarınız parola yöneticisi tarafından rastgele üretilmiş ve en az 12 karakterden oluşmalıdır ama 26'dan fazlası gerekli değildir.
+Rastgele üretilmiş güçlü parolalar kullanın. Bir parolanın gücünü, uzunluğu ve rastgeleliği belirler. Parolalarınız parola yöneticisi tarafından rastgele üretilmiş olması gereklidir. Parola yöneticinizin hafızası ile bir sıkıntısı olmadığından 24 karakterden kısa parolalar kullanmamanız geleceğe yönelik iyi bir yatırımdır.
 
-İnsanlar, bilgisayarların aksine güvenli parolalar yaratmakça çok başarısızlardır. Bırakın bilgisayar bu işi sizin için yapsın.
+Güçlü ve rastgele parolaların istisnası olarak cihazlarınızın ekran kilitlerine koyduklarınız sayılabilir. Bu sistemler birden fazla giriş denemesini engellediklerinden ve sizin tarafınızdan ara sıra değiştirildiklerinde görece kısa olsalar da amaçlanan güvenlik için yeterlidirler.
 
-Hatırlamanız gereken güçlü parolalar üretmek için çokça yol bulunmaktadır. Eğer parola yöneticisi kullanıyorsanız, bırakın o sizin için bir tane üretsin. Bunun için Gözetim Meşru Müdafaa'nın [Güçlü Parolalar Üretmek](https://ssd.eff.org/en/module/creating-strong-passwords) rehberine bakabilirsiniz.
+İnsanlar, bilgisayarların aksine güvenli parolalar yaratmakça çok başarısızdır. Bırakın bilgisayar bu işi sizin için yapsın.
 
-[Diceware](https://world.std.com/~reinhold/diceware.html) (zarola?) günlük nesneler ve bir kelime listesi ile hatırlanabilir ve güçlü parolalar üretmek için eğlenceli bir yöntemdir. Diğer iyi bir yöntem ise kimsenin daha önce söylemediği aptalca bir cümle uydurup her kelimenin ilk veya ilk iki harfini parola olarak başka karakterlerle karıştırarak kullanmaktır. 
+Hatırlamanız gereken parolalar üretmek için çokça yol bulunmaktadır. Eğer parola yöneticisine bırakmak yerine hatırlamanız gereken parolalar varsa bunlar için biz [Zarola](zarola.oyd.org.tr) kullanmanızı öneriyoruz. 
 
-Her hesabın güvenli parolalar ile korunması önemlidir, öyle ki bir hesaba erişim çoğunlukla diğer sistemlere giriş için de kullanılabilir. Bu özellikle hesaplarınızı sıfırlama imkanı olan her e-posta hesabı için geçerlidir (genellikle "parolamı unuttum" bağlantıları ile).
+[Zarola](zarola.oyd.org.tr) Zarola, kolayca hatırlanabilir ve yüksek derecede güvenli parolalar oluşturabilmenizi sağlayan bir yöntemdir. İnsanlar rastgele şeyler üretemeyeceklerinden rastgelelik kaynağı olarak zar veya bozukpara kullanılır. 7776 Tane kelime içinden seçilen 7 adet ile parola oluşturulur ve hikayeleştirilerek ezberlenir. Bazen komik hikayeler bile çıkar!
+
+Konuya ilişkin Gözetim Meşru Müdafaa'nın [Güçlü Parolalar Üretmek](https://ssd.eff.org/en/module/creating-strong-passwords) rehberine bakabilirsiniz.
+
+Her hesabın güvenli parolalar ile korunması önemlidir, öyle ki bir hesaba erişim çoğunlukla diğer hesap ve sistemlere giriş için de kullanılabilir. Bu özellikle hesaplarınızı sıfırlama imkanı olan her **e-posta hesabı** için geçerlidir (genellikle "parolamı unuttum" bağlantıları ile).
 
 ## Eşsiz parolalar kullanın
 
-Bu tavsiyeleri takip etmek, üçüncü taraf yazılımları kullanmayarak aldığınız riski azaltmak için gayet iyidir. Eğer parolarınızı tekrar kullanmaz iseniz bir kişinin kullanıcı adı ve parolanızı bir sızıntı veya ihlal aracılığı ile öğrenerek diğer hesaplarınıza girmesine imkan vermez. Kullandığınız her hizmet için farklı bir parola kullanarak, önemli bilgilerinizin korunması için kullandığınız hizmetin becerilerine güvenmek zorunda kalmazsınız. Eğer bir parola yöneticisi kullanırsanız bu sizin için çok kolay olacaktır.
+Şayet bir parolayı birden fazla hesap için kullanırsanız, bir hesaptan sızan parolalar ile diğer hesaplarınıza erişilebilir. Paralolarınızı hesap başına ayrı tutmanız hesaplarınızı izole ederek riskinizi azaltacaktır. Bir parola yöneticisi kullanmak bunu yapmayı çok kolaylaştırır.
 
 ## Parolalarınızı gizli tutun
 
-Biri kendisini IT veya teknik destek olarak tanısa bile asla kimseye parolarınızı vermeyin. Neredeyse her sistem yönetim amacı ile parola sıfırlanmasına olanak tanımakta. Gerçek bir IT personeli size parolanızı sormak yerine bu imkanı kullanır. Bu tip sistemler aynı zamanda takip edilebilir bir erişim izi bırakmakta ve sizi sıfırlama hakkında bilgilendirmektedir. Sizin de her yönetici erişiminden sonra parolanızı değiştirmeniz gerekmektedir ki sadece sizin sayısal bilgilerinize erişiminiz olduğuna emin olun. Bu aynı zamanda kurumda kimin hesabınızda değişiklik yaptığını da öğrenmenizi sağlar.
+Biri yardım teklif etse veya kendini teknik destek olarak tanıtsa bile asla kimseye parolalarınızı vermeyin. Neredeyse her hesap ve sistem parola sıfırlanmasına olanak tanımakta. Gerçek bir IT uzmanı size parolanızı sormak yerine sahip olunan bu imkanları kullanabilir. Bu tip sistemler aynı zamanda erişimleri takip altında tutar ve sizi sıfırlama hakkında bilgilendirir. Sizin de her yönetici erişiminden sonra parolanızı değiştirmeniz gerekmektedir ki sadece sizin söz konusu sistemlere erişiminiz olduğuna emin olun.
 
-## Kurum ve kişisel parolalarınızı ayırın
+## Kurumsal ve kişisel parolalarınızı ayırın
 
-Kurum parolaları, kurumunuzun sistemlerine ve sayısal kimliklerine yönetici yetkisi tanıyan herhangi bir paroladır. Bunlar gerçekten önemli bilgiler olduğundan kişilerin kendi kişisel hesaplarına girmek için kullandıklarından farklı olmalıdır. Bunu parola yöneticisinde ayrı bir giriş veya farklı bir parola dosyası kullanarak veya tamamen farklı bir parola yöneticisi seçerek sağlayabilirsiniz.
+Kurumsal parolalar, kurumunuzun sistemlerine ve sayısal kimliklerine erişim sağlayan herhangi bir paroladır. Bunlar gerçekten önemli bilgiler olduğundan kişilerin kendi kişisel hesaplarına girmek için kullandıklarından farklı olmalıdır. Bunu parola yöneticisinde ayrı bir giriş veya farklı bir parola dosyası kullanarak veya tamamen farklı bir parola yöneticisi seçerek sağlayabilirsiniz.
 
 ## Ek okuma listesi
 
