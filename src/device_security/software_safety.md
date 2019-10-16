@@ -42,22 +42,21 @@ Genel bir alışkanlık olarak cihazlarınızda gereksiz veya çok seyrek kullan
 
 Maalesef dizüstü ve masaüstü bilgisayarlarındaki çoğu işletim sisteminin bir izin yönetimi yok ve yazılımlar kurulum sırasında sistem kaynaklarına erişim için izin istemiyor. Bu yüzden bilgisayarlarınıza indirdiğiniz yazılımlarda çok daha dikkatli olmanız gerekiyor.
 
-## Korsan yazılım kullanma / Mümkünse mülk yazılım kullanma
+## Korsan yazılım kullanmayın / Mümkünse mülk yazılım kullanmayın
 
 Korsan yazılım indirmek bilgisayarınıza virüs veya kötü amaçlı yazılım bulaştırmak için harika bir yoldur. Pek çok mülk yazılım da kaynak koduna erişemediğiniz için şüpheli ve bazen amacı gereği zaten güvenlik tehlikesidir.
 
-Buna ek olarak, eğer korsan yazılım yüklerseniz şirketinizin her cihaz için binlerce dolar ödemek zorunda kalması çok yüksek bir ihtimaldir. Bu olduğunda, işvereninin gizlilik ve güvenlik politikasını ihlal ettiğiniz için kovulabilirsiniz.
+Eğer cihazlarınızda yapmanız gereken bir işlem varsa ve bunun için uygun bir yazılım arıyorsanız öncelikle özgür veya açık kaynak yazılımları değerlendirmeniz önerilir.
 
-Eğer kullanmanız gereken bir uygulama varsa ve onu güvenli kanallardan edinmek istemiyorsan, uygulamanın özgür veya açık kaynak yazılım olan alternatiflerini değerlendir.
+## Özgür yazılım kullanın
 
-## Özgür yazılım kullan
-
-Bu özgür veya açık kaynak uygulamalar, genellikle kullanılan özel mülk ürünlere harika alternatiflerdir. Mac, Windows ve Linux için kolaylıkla elde edilebilir.
+Özgür veya açık kaynak uygulamalar, genellikle kullanılan özel mülk yazılımlara harika alternatiflerdir. Gnu/linux, windows, MacOs ve Android için kolaylıkla elde edilebilir.
 
 * **[Gimp](https://www.gimp.org/)**: Taramalı grafik ve fotoğraf düzenleme programı (Adobe Photoshop'a alternatif)
 * **[Inkscape](https://inkscape.org/en/)**: Vektör çizme programı (Adobe Illustrator'a alternatif)
 * **[LibreOffice](https://www.libreoffice.org/)**: Ofis verimlilik takımı (Microsoft Office'e alternatif)
 * **[Scribus](https://www.scribus.net)**: Masaüstü yayıncılık uygulaması (Adobe Indesign'a alternatif)
+* **[F-droid](https://f-droid.org)**: Android işletim sistemlerinde özgür yazılımların bulunabileceği benzersiz bir uygulama mağzası.
 
 ## Ayrıca bakınız
 
