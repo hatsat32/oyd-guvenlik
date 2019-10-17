@@ -5,6 +5,7 @@
 - [Beşeri Güvenlik](human_security/README.md)
   - [Mesaj Temizliği](human_security/message_hygiene.md)
   - [Parolalar](human_security/passwords.md)
+  - [Çift Aşamalı Doğrulama](human_security/2fa.md)
 - [Cihaz Güvenliği](device_security/README.md)
   - [Yazılım Güvenliği](device_security/software_safety.md)
   - [Cihaz Şifreleme](device_security/device_encryption.md)
