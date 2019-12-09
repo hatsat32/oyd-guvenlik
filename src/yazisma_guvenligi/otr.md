@@ -11,8 +11,6 @@
 
 ## OTR'yi Yükleme
 
-Bu rehberde biz OTR'yi Pidgin ile kullanıyor olacağız. Pidgin, OTR’nin en gelişmiş tatbiki olmakla birlikte GNU Linux, Windows ve Mac üzerinde çalıştırılabilmekte.
-
 ### Gnu/Linux
 
 #### Alt+F2’ye basın ve çalıştırın:
@@ -22,6 +20,10 @@ Bu rehberde biz OTR'yi Pidgin ile kullanıyor olacağız. Pidgin, OTR’nin en g
 #### Pidgin’i çalıştırmak için Alt+F2’ye basın ve yazın:
 `pidgin`
 
+### Android
+
+[F-droid](https://f-droid.org/) veya bir başka kaynaktan [Conversations Legacy](https://conversations.im/) indirin. Conversations Legacy'nin Pix-art gibi başka forkları da olmasına rağmen özellikle onları tercih etmenizi gerektirecek bir sebep olmadıkça Conversations en iyi tercih olacaktır.
+
 ### Windows
 
 <https://pidgin.im/download> adresini ziyaret edin.
@@ -30,9 +32,19 @@ Bu rehberde biz OTR'yi Pidgin ile kullanıyor olacağız. Pidgin, OTR’nin en g
 
 Pidgin Mac’te çalıştırılabilir fakat onun yerine Adium kullanmak çok daha kolay. Adium Pidgin’in Mac OS uyumlu hali. [Adium](https://adium.im)'u indir.
 
-## Pidgin’e Hesap Ekleme
+## Hesabınıza giriş yapın veya yeni hesap oluşturun
 
-Pidgin’e riseup.net hesabı ekleme talimatları için [pidgin tutorial](https://riseup.net/en/chat/clients/pidgin) kullanabilirsiniz.
+Şayet bir sunucuda XMPP hesabınız var ise kullanıcı adı ve parolasını girerek bağlantı sağlayabilirsiniz. Şayet bir XMPP hesabınız yok ise bu aşamada kayıt imkanı veren bir sunucuda hesap açabilirsiniz. Tek yapmanız gereken kendinize bir
+
+Aşağıdaki sunucuları tercihinizde değerlendirebilirsiniz;
+
+[Calyx Institute](https://www.calyxinstitute.org/) - Çok geniş XMPP kullanıcı kitlesine hizmet veren bir Dernek. Sayısal haklar alanında çalışmalar sürdüren derneğin XMPP sunucusu anonim kayıt kabul ediyor.
+Kayıt için (kullanıcı adı)@jabber.calyxinstitute.org alan adı kullanılabilir.
+
+[Conversations](https://conversations.im/#xmpp) - Conversations yazılımının kendi sunucusu. Şayet özgür yazılıma destek olunmak istiyorsanız ücretli bu hizmeti tercih edebilirsiniz. İlk altı ay ücretsiz kullanım imkanı vermekte.
+
+[Riseup](https://www.riseup.net) - Riseup teknoloji kolektifinin ücretsiz hizmetlerinden biri de XMPP. Doğrudan kayıt imkanı vermediği için bir Riseup hesabı sahibi olmanızı gerektiriyor.
+
 
 ## OTR kurulumu
 
@@ -42,9 +54,9 @@ Pidgin’e riseup.net hesabı ekleme talimatları için [pidgin tutorial](https:
 
 * Off-The-Record Messaging eklentisini etkinleştirin ve Configure’a basın
 
-* Listeden riseup.net hesabınızı seçin ve Generate’e basın
+* Listeden XMPP hesabınızı seçin ve Generate’e basın
 
-* __ÖNEMLİ NOT!__: "Default OTR Settings" altında hem *Require private messaging* hem de *Don’t log OTR conversations* seçeneklerini işaretleyin. Bu seçenekler yalnızca şifrelenmiş sohbetler yapmanızı ve sohbetlerin kaydının tutulmadığını temin eder. Fakat aklınızda olsun ki konuştuğunuz kişinin sohbetin kaydını tutma ihtimali her zaman vardır. Karşınızdaki kişiye sohbetinizin kaydını tutup tutmadığını sormak iyi bir fikir.
+* __ÖNEMLİ NOT!__: "Default OTR Settings" altında hem *Require private messaging* hem de *Don’t log OTR conversations* seçeneklerini işaretleyin. Bu seçenekler yalnızca şifrelenmiş sohbetler yapmanızı ve sohbetlerin kaydının tutulmadığını temin eder. Fakat aklınızda olsun ki konuştuğunuz kişinin sohbetin kaydını tutma ihtimali her zaman vardır. Karşınızdaki kişiye sohbetinizin kaydını tutup tutmadığını sormak iyi bir fikisr.
 
 ## Rehbere Arkadaş Ekleme
 
