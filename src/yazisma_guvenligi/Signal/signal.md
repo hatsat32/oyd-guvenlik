@@ -14,7 +14,7 @@
 * __Federasyon eksikliği__ Signal'in arkasında bulunduğu Whisper Systems ve Moxie Merlinspike Signal sunucularını [federasyona](https://en.wikipedia.org/wiki/Fediverse) açmayacağına dair kesin bir duruş sergilemektedir. Bu bakımdan ileride Whisper Systems ortadan kalkar veya hizmetlerini vermek konusunda kısıtlamalara giderse Signal kullanıcıları çaresiz kalacaktır.
 * __Anonim olmaması__ Signal anonim olarak kullanılabilecek bir yazılım değildir. Kurulumu sırasında kullanıcılarından SMS alabilecek bir telefon numarası talep etmekte ve kullanıcının arkadaşlarını rehberinde bulunan telefon numaraları aracılığı ile bulmaktadır. Her ne kadar signal telefon numaralarını doğrudan sunucusuna yüklemese de bir kullanıcı kimliğini veya telefon numarasını koruyarak bir başka Signal kullanıcısı ile görüşemez. Kimi basın çalışanlarının yaşadığı gibi bu durum kimi zaman tehlike yaratabilir.
 
-## Signal nasıl kullanılır
+## Signal nasıl kurulur
 
 ### Mobil Platformlar
 
@@ -32,10 +32,12 @@ Signal kendi [web sayfasında](https://signal.org/download/#linuxModal) Debian t
 
 Flatpak kullananlar dağıtımlarından bağımsız olarak Signal masaüstü istemcisini sistemlerine Flatpak repolarından kolaylıkla kurabilirler.
 
-##İpuçları
+##İpuçları ve Öneriler
 
 ** Signal mahremiyet vaadeden bir platform değildir. Tüm kullanıcılarını, kimliklerine sıkı sıkıya bağlı ve anonimlikten uzak cep telefonu numarası ile tanımlar. Telefon numarası anonimliğin güvenlik için gerektiği durumlarda ciddi tehlikeli bir veridir. Bu bakımdan Signal'den beklentiniz anonimlik olmamalıdır.
 
 ** Signal'i kullandığınız kişiler ile anahtarlarınızı doğrulamazsanız şifrelemenin güvenliğini ciddi miktarda zayıflatmış olursunuz. Bu tip saldırılar hem [devletler tarafından](https://yro.slashdot.org/story/18/11/07/2156241/police-decrypt-258000-messages-after-breaking-pricey-ironchat-crypto-app) hem de kötücül amaçlı bireyler tarafından gerçekleştirilebilmekte. Konuşma penceresinde kişi ismine tıkladıktan sonra açılan menünün en altında "Güvenlik numarasını görüntüle" bölümündeki numaraları **SIGNAL HARİCİ** bir kanaldan doğrulayabilir. Yanyana iken gösterilen karekodu taratarak doğrulama yapabilirsiniz.
 
+** Sesli aramalarınızı da Signal aracılığı ile yapabilirsiniz. Bu size olağan aramalara göre çok daha yüksek mahremiyet sağlayacaktır. Çevreniz ile kullanmanız önerilir. Bazı kullanıcılar VPN ile signal kullanırken ses bağlantı sorunları yaşayabilmektedir.
 
+** Signal ve geliştiriciliğini yapan [Open Whisper Systems](https://signal.org/) pek özgürlük taraftarı değiltir. Moxie Merlinspike, özgür olan signal'in Google servisleri içermeyen [LibreSignal forkunu yasal tehditler](https://github.com/LibreSignal/LibreSignal/issues/37#issuecomment-217211165) ile ortadan kaldırmıştır. Hali ile Signal bir gün kullanıcılarına sırtını dönerse Signal'i kendi sunucunuz ile kullanmak için çokça çaba harcamanız ve bağlantılarınızı kaybetmeniz olasıdır.
