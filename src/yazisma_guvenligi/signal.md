@@ -20,11 +20,17 @@
 
 Android veya IOS çalıştıran cihazlarda Signal kullanmak, herhangi bir yazılımı kurmak kadar kolaydır. Playstore veya Appstore'dan arama yapıp Signali kurabilirsiniz. 
 
-Bu şekilde kurulum yaptığınız durumda Signal'in Google'ın bildirim ve harita hizmetlerine ait bağımlılıklarını içeren versiyonunu kuracağınızı aklınızda bulundurmalısınız. Ne yazık ki Signal bu bağımlılıkları kullanmakta israr ettiği ve belirli yazılım özgürlüklerini göz ardı ettiğinden F-droid depolarında yer bulmamakta. Bu yüzden Android versiyonunun [APK](https://signal.org/android/apk/) kurulum dosyasını indirmelisiniz. **MUTLAKA** indirdiğiniz dosyanın parmak izi doğrulamasını yapın. Daha sonra Signal kendisini düzenli olarak güncelleyecektir.
+Bu şekilde kurulum yaptığınız durumda Signal'in Google'ın bildirim ve harita hizmetlerine ait bağımlılıklarını içeren versiyonunu kuracağınızı aklınızda bulundurmalısınız. Ne yazık ki Signal bu bağımlılıkları kullanmakta israr ettiği ve belirli yazılım özgürlüklerini göz ardı ettiğinden F-droid depolarında yer bulmamakta. Bu yüzden Android versiyonunun [APK](https://signal.org/android/apk/) kurulum dosyasını indirmelisiniz. **MUTLAKA** indirdiğiniz dosyanın parmak izi doğrulamasını yapın. Bunun için bir GNU/Linux bilgisayarda uç birimde aşağıdaki komutu çalıştırarak Signal'in indirme sayfasında verdiği parmak izi karşılaştırılabilir;
+
+`keytool -list -printcert -jarfile [apk'nın yolu]`
+
+Kurulum bir kere güvenli şekilde tamamlandıktan sonra Signal kendisini düzenli olarak güncelleyecektir.
 
 ### Gnu/Linux
 
 Signal kendi [web sayfasında](https://signal.org/download/#linuxModal) Debian tabanlı dağıtımlar için kurulum dosyasını sunmaktadır.
+
+Flatpak kullananlar dağıtımlarından bağımsız olarak Signal masaüstü istemcisini sistemlerine Flatpak repolarından kolaylıkla kurabilirler.
 
 ### Windows ve IOS
 
