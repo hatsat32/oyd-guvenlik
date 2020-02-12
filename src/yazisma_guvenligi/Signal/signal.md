@@ -38,6 +38,9 @@ Flatpak kullananlar dağıtımlarından bağımsız olarak Signal masaüstü ist
 
 ** Signal'i kullandığınız kişiler ile anahtarlarınızı doğrulamazsanız şifrelemenin güvenliğini ciddi miktarda zayıflatmış olursunuz. Bu tip saldırılar hem [devletler tarafından](https://yro.slashdot.org/story/18/11/07/2156241/police-decrypt-258000-messages-after-breaking-pricey-ironchat-crypto-app) hem de kötücül amaçlı bireyler tarafından gerçekleştirilebilmekte. Konuşma penceresinde kişi ismine tıkladıktan sonra açılan menünün en altında "Güvenlik numarasını görüntüle" bölümündeki numaraları **SIGNAL HARİCİ** bir kanaldan doğrulayabilir. Yanyana iken gösterilen karekodu taratarak doğrulama yapabilirsiniz.
 
+![alt-text](signal1.png)
+![alt-text](signal2.png)
+
 ** Sesli aramalarınızı da Signal aracılığı ile yapabilirsiniz. Bu size olağan aramalara göre çok daha yüksek mahremiyet sağlayacaktır. Çevreniz ile kullanmanız önerilir. Bazı kullanıcılar VPN ile signal kullanırken ses bağlantı sorunları yaşayabilmektedir.
 
 ** Signal ve geliştiriciliğini yapan [Open Whisper Systems](https://signal.org/) pek özgürlük taraftarı değiltir. Moxie Merlinspike, özgür olan signal'in Google servisleri içermeyen [LibreSignal forkunu yasal tehditler](https://github.com/LibreSignal/LibreSignal/issues/37#issuecomment-217211165) ile ortadan kaldırmıştır. Hali ile Signal bir gün kullanıcılarına sırtını dönerse Signal'i kendi sunucunuz ile kullanmak için çokça çaba harcamanız ve bağlantılarınızı kaybetmeniz olasıdır.
