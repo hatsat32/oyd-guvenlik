@@ -6,5 +6,5 @@ Sayısal dünya ile kurduğunuz her iletişim, sayısal bir cins cihaz ile etkil
 
 Elbette günümüzdeki üretim sistemlerinin ve üretilen donanımların karmaşıklığı bireysel olarak bu cihazların incelenmesini ve kesinlikle güvenilirliğinin kanıtlanmasını çok zorlaştırmakta fakat basit birkaç adım ile bir çok tehdite karşı koyabilecek şekilde cihazlarınızı güvenli kılabilirsiniz.
 
-* [Özgür Yazılım Derneği / Donanım Özgürlüğü](adres girilmeli)
+* [Özgür Yazılım Derneği / Donanım Özgürlüğü](https://oyd.org.tr/yazilar/ozgur-yazilim/)
 

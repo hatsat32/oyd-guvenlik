@@ -1,4 +1,4 @@
-# Kayıt Dışı Mesajlaşma
+# OTR (Off-The-Record Messaging)
 
 ## OTR’ye Giriş
 

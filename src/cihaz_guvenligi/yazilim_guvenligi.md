@@ -56,7 +56,7 @@ Eğer cihazlarınızda yapmanız gereken bir işlem varsa ve bunun için uygun b
 * **[Inkscape](https://inkscape.org/en/)**: Vektör çizme programı (Adobe Illustrator'a alternatif)
 * **[LibreOffice](https://www.libreoffice.org/)**: Ofis verimlilik takımı (Microsoft Office'e alternatif)
 * **[Scribus](https://www.scribus.net)**: Masaüstü yayıncılık uygulaması (Adobe Indesign'a alternatif)
-* **[F-droid](https://f-droid.org)**: Android işletim sistemlerinde özgür yazılımların bulunabileceği benzersiz bir uygulama mağzası.
+* **[F-droid](https://f-droid.org)**: Android işletim sistemlerinde özgür yazılımların bulunabileceği benzersiz bir uygulama deposu.
 
 ## Ayrıca bakınız
 
