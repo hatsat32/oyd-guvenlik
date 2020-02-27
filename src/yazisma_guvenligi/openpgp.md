@@ -20,7 +20,7 @@ gpg bağlantısı verilecek
 
 ## Webmail Kullanarak E-posta Şifrelenebilir Mi
 
-Açıkçası, şifreli e-posta göndermenin en iyi yolu [Thunderbird](https://www.thunderbird.net/en-us) gibi bir istemci ile [Enigmail](https://www.enigmail.net) benzeri bir eklenti kullanmaktır.
+Açıkçası, şifreli e-posta göndermenin en iyi yolu [Thunderbird](https://www.thunderbird.net/en-US/) gibi bir istemci ile [Enigmail](https://www.enigmail.net) benzeri bir eklenti kullanmaktır.
 
 ## Şifrelenmiş E-posta Neyi Korumaz
 
