@@ -1,6 +1,6 @@
 # Signal
 
-[Signal App](https://www.signal.org) Android, Gnu/Linux, IOS ve Windows cihazlarda çalışan, OTR'nin takipçisi olan [OMEMO](https://conversations.im/omemo/) protokolünün değiştirilmiş bir versiyonu ile çalışan modern bir mesajlaşma ve sesli iletişim yazılımıdır.
+[Signal App](https://www.signal.org) Android, GNU/Linux, iOS ve Windows cihazlarda çalışan, OTR'nin takipçisi olan [OMEMO](https://conversations.im/omemo/) protokolünün değiştirilmiş bir versiyonu ile çalışan modern bir mesajlaşma ve sesli iletişim yazılımıdır.
 
 ## Avantajları
 
@@ -26,7 +26,7 @@ Bu şekilde kurulum yaptığınız durumda Signal'in Google'ın bildirim ve hari
 
 Kurulum bir kere güvenli şekilde tamamlandıktan sonra Signal kendisini düzenli olarak güncelleyecektir.
 
-### Gnu/Linux
+### GNU/Linux
 
 Signal kendi [web sayfasında](https://signal.org/download/#linuxModal) Debian tabanlı dağıtımlar için kurulum dosyasını sunmaktadır.
 

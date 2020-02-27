@@ -21,9 +21,9 @@ OTR ile OMEMO'yu ayıran iki önemli fark bulunmakta.
 
 ## OMEMO'yu Yükleme
 
-### Gnu/Linux
+### GNU/Linux
 
-Şu anda Gnu/Linux sistemlerde [tam işlevsellikle](https://omemo.top/) çalışan en iyi yazılım [Gajim](https://gajim.org/) Pidgin için geliştirilen OMEMO eklentisi hala geliştirme aşamasında bulunduğundan sağlıklı olarak kullanılması pek mümkün değil gün itibari ile.
+Şu anda GNU/Linux sistemlerde [tam işlevsellikle](https://omemo.top/) çalışan en iyi yazılım [Gajim](https://gajim.org/) Pidgin için geliştirilen OMEMO eklentisi hala geliştirme aşamasında bulunduğundan sağlıklı olarak kullanılması pek mümkün değil gün itibari ile.
 
 #### Bir uçbirim açın veya Alt+F2’ye basın ve çalıştırın:
 Debian ve Ubuntu
@@ -47,7 +47,7 @@ Ertesinde available (indirme) sekmesinden OMEMO eklentisini indirip kurabilir ve
 
 ### Android
 
-[F-droid](https://f-droid.org/) veya bir başka kaynaktan [Conversations](https://conversations.im/) indirin. Conversations'nın [Pix-art](https://github.com/kriztan/Pix-Art-Messenger) gibi başka forkları da olmasına rağmen özellikle onları tercih etmenizi gerektirecek bir sebep olmadıkça Conversations en iyi tercih olacaktır.
+[F-Droid](https://f-droid.org/) veya bir başka kaynaktan [Conversations](https://conversations.im/) indirin. Conversations'nın [Pix-Art](https://github.com/kriztan/Pix-Art-Messenger) gibi başka forkları da olmasına rağmen özellikle onları tercih etmenizi gerektirecek bir sebep olmadıkça Conversations en iyi tercih olacaktır.
 
 ### Mac
 

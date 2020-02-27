@@ -11,7 +11,7 @@
 
 ## OTR'yi Yükleme
 
-### Gnu/Linux
+### GNU/Linux
 
 #### Alt+F2’ye basın ve çalıştırın:
 `gnome-terminal`

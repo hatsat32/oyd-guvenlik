@@ -79,7 +79,7 @@ Kağıt bu açıdan akıllara son gelen seçenek olsa da insanlık tarihinin en 
 
 Şayet kıyamet koparsa diye GPG'nin **iptal sertifikası** isminde bir seçeneği bulunmakta. Bu araç ile gpg size kısa bir çıktı vermekte ve anahtarınızı geri dönmeyecek şekilde kaybetmeniz durumunda anahtar sunucularına bu anahtarı göndermeniz ile anahtarınız kullanılmaz duruma gelmektedir. Şayet anahtarınızı *güven* oluşturmak için kullanıyorsanız küçük bir adım olarak bunu yapmanız önerilir.
 
-İptal sertifikasını oluşturmak için Gnu/Linux'ta uçbirim aracılığı ile şu komutu kullanabilirsiniz.
+İptal sertifikasını oluşturmak için GNU/Linux'ta uçbirim aracılığı ile şu komutu kullanabilirsiniz.
 
 * `gpg --generate-revocation [anahtar kimliği veya e-posta adresi] > [sertifikanın kaydedileceği dizin] 
 

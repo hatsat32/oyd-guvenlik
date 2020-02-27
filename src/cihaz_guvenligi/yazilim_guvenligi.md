@@ -8,7 +8,7 @@ Bir saldırgan yazılımlarınızdaki bir zayıflığı kullanarak cihazlarını
 
 Otomatik Güncellemer Nasıl Açılır?
 
-* **Gnu/Linux**: Çoğu dağıtımda otomatik güncelleştirmeler zaten açık gelir ve kritik güncelleştirmeler konusunda uyarılırsınız. Elle güncelleme yapmak isterseniz kullandığınız dağıtımın grafik arayüzünden faydalanabilir veya;
+* **GNU/Linux**: Çoğu dağıtımda otomatik güncelleştirmeler zaten açık gelir ve kritik güncelleştirmeler konusunda uyarılırsınız. Elle güncelleme yapmak isterseniz kullandığınız dağıtımın grafik arayüzünden faydalanabilir veya;
 	*Debian tabanlı dağıtımlar için: Terminalden **sudo apt-get update & sudo apt-get upgrade -y** komutunu kullanarak güncelleme yapabilirsiniz.
 	*RPM tabanlı dağıtımlar için: Terminalden **sudo yum update -y** komutunu kullanrak güncelleme yapabilirsiniz.
 * **macOS**: **Apple** menüsüne tıklayın, **Sistem tercihleri** > **App Store** > **Güncellemeleri otomatik olarak denetle**
@@ -26,7 +26,7 @@ Mümkün olduğunca yazılımlarınızı işletim sisteminize ait uygulama mağa
 
 * **Güvenilirlik**: Uygulama mağazasındaki uygulamalar geliştiricileri tarafından imzalanır ve mağaza tarafından doğrulanır. Bu doğrulama çoğu zaman sığ bir inceleme olduğu için mutlak olarak güven duyulmamalıdır ama hiç yoktan iyidir.
 * **Güncellemeler**: Uygulama mağazası uygulamalarınızı güncel tutmanıza yardım eder.
-* **Side Loading Saldırılarını Önler**: Uygulama mağazası dışından uygulama indirmeye "Side Loading" denir. Side loading şuanda Android'de varsayılan olarak engelli, iOS'te ise imkansız ancak Gnu/Linux'ta, macOS seçime bağlı durumda. Windows sistemler ise çoğunlukla side loading'e dayanmakta. Side loading kullanarak indirdiğiniz ve doğrulamadığınız her yazılım nihayetinde sisteminizi kötücül yazılımlara karşı tehlikeye atar. Bu neden ile sistemlerinize kurduğunuz yazılımları güvenilir kaynaklardan ve uygulama mağzalarından yüklemeniz önerilir.
+* **Side Loading Saldırılarını Önler**: Uygulama mağazası dışından uygulama indirmeye "Side Loading" denir. Side loading şuanda Android'de varsayılan olarak engelli, iOS'te ise imkansız ancak GNU/Linux'ta, macOS seçime bağlı durumda. Windows sistemler ise çoğunlukla side loading'e dayanmakta. Side loading kullanarak indirdiğiniz ve doğrulamadığınız her yazılım nihayetinde sisteminizi kötücül yazılımlara karşı tehlikeye atar. Bu neden ile sistemlerinize kurduğunuz yazılımları güvenilir kaynaklardan ve uygulama mağzalarından yüklemeniz önerilir.
 
 Not: Resmi Android uygulama mağazası Google Play'i taklitçi uygulamalardan kaçınmak için dikkatli kullanmalısınız. En iyisi sadece özgür yazılımların sunulduğu [F-Droid](https://f-droid.org) uygulama mağzasını kullanmanızdır.
 
@@ -50,13 +50,13 @@ Eğer cihazlarınızda yapmanız gereken bir işlem varsa ve bunun için uygun b
 
 ## Özgür yazılım kullanın
 
-Özgür veya açık kaynak uygulamalar, genellikle kullanılan özel mülk yazılımlara harika alternatiflerdir. Gnu/linux, windows, MacOs ve Android için kolaylıkla elde edilebilir.
+Özgür veya açık kaynak uygulamalar, genellikle kullanılan özel mülk yazılımlara harika alternatiflerdir. GNU/linux, windows, MacOs ve Android için kolaylıkla elde edilebilir.
 
 * **[Gimp](https://www.gimp.org/)**: Taramalı grafik ve fotoğraf düzenleme programı (Adobe Photoshop'a alternatif)
 * **[Inkscape](https://inkscape.org/en/)**: Vektör çizme programı (Adobe Illustrator'a alternatif)
 * **[LibreOffice](https://www.libreoffice.org/)**: Ofis verimlilik takımı (Microsoft Office'e alternatif)
 * **[Scribus](https://www.scribus.net)**: Masaüstü yayıncılık uygulaması (Adobe Indesign'a alternatif)
-* **[F-droid](https://f-droid.org)**: Android işletim sistemlerinde özgür yazılımların bulunabileceği benzersiz bir uygulama deposu.
+* **[F-Droid](https://f-droid.org)**: Android işletim sistemlerinde özgür yazılımların bulunabileceği benzersiz bir uygulama deposu.
 
 ## Ayrıca bakınız
 
