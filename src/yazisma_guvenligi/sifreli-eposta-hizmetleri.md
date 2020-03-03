@@ -59,7 +59,7 @@ Protonmail'in gün itibari ile en ucuz ücretli üyeliği 4 Avro/aylık olmakla 
 
 #### Platform Yaygınlığı
 
-Her iki hizmet de Gnu/Linux dahil olmak üzere tüm platformlarda istemci bulunduruyor. Lakin Protonmail SMTP protokolü ile yerel e-posta istemcilerinin kullanılabilmesi için bir köprü yazılımı da geliştirmiş durumda. Böylece isteyenler Thunderbird gibi kendi e-posta istemcileri ile Protonmail'i kullanabilmekte. Tutanota ise sadece webmail ve kendi istemcileri ile kullanıma imkan veriyor.
+Her iki hizmet de GNU/Linux dahil olmak üzere tüm platformlarda istemci bulunduruyor. Lakin Protonmail SMTP protokolü ile yerel e-posta istemcilerinin kullanılabilmesi için bir köprü yazılımı da geliştirmiş durumda. Böylece isteyenler Thunderbird gibi kendi e-posta istemcileri ile Protonmail'i kullanabilmekte. Tutanota ise sadece webmail ve kendi istemcileri ile kullanıma imkan veriyor.
 
 #### Yazılım Özgürlüğü
 
@@ -75,7 +75,7 @@ Muhtemelen Tutanota ve Protonmail arasındaki en önemli fark hizmetlerinin özg
 
 Protonmail ise GPG ile çalışmakta ve yakın zamanda kendi kullanıcılarının GPG anahtarlarının indirilebileceği [anahtar sunucularını](hkps://api.protonmail.ch) devreye almış durumdalar. Hala Android ve IOS istemcilerinden hizmet sağlayıcılar arası şifreleme konusunda sorun çekilse de webmail üzerinden yapılan yazışmalarda gelen e-posta GPG ile şifreli ise Protonmail doğrudan anahtarı indirip cevapları şifreli olarak gönderebiliyor. Bu bakımdan Protonmail dışı kişilerle şifreli yazışmak gün itibari ile mümkün ve görece kolay.
 
-Aynı zamanda SMTP ve POP3 gibi federatif e-posta protokolleri iki hizmet tarafından da doğrudan desteklenmemekte. Sadece Protonmail [kendi köprü yazılımları](https://protonmail.com/bridge/) ile buna imkan vermekte. Bu yazılım gün itibari ile özgür olmadığından ve Gnu/Linux paketi hala beta aşamasında bulunduğundan hala tam bir özellik olarak sayılması zor.
+Aynı zamanda SMTP ve POP3 gibi federatif e-posta protokolleri iki hizmet tarafından da doğrudan desteklenmemekte. Sadece Protonmail [kendi köprü yazılımları](https://protonmail.com/bridge/) ile buna imkan vermekte. Bu yazılım gün itibari ile özgür olmadığından ve GNU/Linux paketi hala beta aşamasında bulunduğundan hala tam bir özellik olarak sayılması zor.
 
 # Sonuç
 

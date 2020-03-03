@@ -1,6 +1,6 @@
 # Şifreli E-Posta
 
-## E-posta Nedir
+## E-posta nedir?
 
 Bu soru anlamsız gelse de güvenli kılınmadan önce bir sistemin ne olduğu az da olsa anlaşılmalıdır. E-posta İnternet'in ilk mesajlaşma yöntemidir. Bu bakımdan üzerine onlarca alternatif geliştirilmiş olsa da hala baskın iletişim aracı olarak hayatımızdaki yerini sürdürmektedir.
 
@@ -10,9 +10,9 @@ TLS ile genel olarak e-posta sunucunuz ile aranızdaki iletişim ve çoğunlukla
 
 ## E-posta Nasıl Şifrelenir
 
-GnuPG'ye hoşgeldiniz. Bugün bildiğimiz ismiyle Gnu Privacy Guard sadece e-posta şifrelemek için değil neredeyse bilgisayarınızda yapabileceğiniz her kriptografik işlem için kullanılabilecek çok amaçlı bir yazılımdır.
+GnuPG'ye hoşgeldiniz. Bugün bildiğimiz ismiyle GNU Privacy Guard sadece e-posta şifrelemek için değil neredeyse bilgisayarınızda yapabileceğiniz her kriptografik işlem için kullanılabilecek çok amaçlı bir yazılımdır.
 
-Pretty Good Privacy ismi ile Philiph Zimmerman tarafından 80'lerde ABD'de yazılan PGP ülkedeki gelmesi beklenen şifreleme yasaklarına karşı geliştirilip dünya ile paylaşılmıştır. ABD ve RSA şirketinin davası üzerine yazılımın kaynak kodu anayasal korumadan faydalanmak adına kitap olarak basılıp yayınlanmış ve Zimmarman'ın PGP'yi satması ile bugün özgür bir yazılım olarak Gnupg ismi ile hayatına devam etmektedir.
+Pretty Good Privacy ismi ile Philiph Zimmerman tarafından 80'lerde ABD'de yazılan PGP ülkedeki gelmesi beklenen şifreleme yasaklarına karşı geliştirilip dünya ile paylaşılmıştır. ABD ve RSA şirketinin davası üzerine yazılımın kaynak kodu anayasal korumadan faydalanmak adına kitap olarak basılıp yayınlanmış ve Zimmarman'ın PGP'yi satması ile bugün özgür bir yazılım olarak GnuPG ismi ile hayatına devam etmektedir.
 
 GPG ile e-postalarınızı ve eklerini şifreleyebilir, size ulaşan e-postanın değiştirilmediğini bilebilir veya gönderen kişinin kimliğini doğrulayabilirsiniz. GPG merkezi bir otoriteye dayanmadan insanların arasında bir güven ilişkisi kurulmasına imkan verir.
 
@@ -20,7 +20,7 @@ gpg bağlantısı verilecek
 
 ## Webmail Kullanarak E-posta Şifrelenebilir Mi
 
-Açıkçası, şifreli e-posta göndermenin en iyi yolu [Thunderbird](https://www.thunderbird.net/en-us) gibi bir istemci ile [Enigmail](https://www.enigmail.net) benzeri bir eklenti kullanmaktır.
+Açıkçası, şifreli e-posta göndermenin en iyi yolu [Thunderbird](https://www.thunderbird.net/en-US/) gibi bir istemci ile [Enigmail](https://www.enigmail.net) benzeri bir eklenti kullanmaktır.
 
 ## Şifrelenmiş E-posta Neyi Korumaz
 
