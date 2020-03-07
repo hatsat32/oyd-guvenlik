@@ -55,7 +55,7 @@ Pidgin Mac’te çalıştırılabilir ve eksik de olsa OMEMO eklentisi olan [lib
 
 ## Hesabınıza giriş yapın veya yeni hesap oluşturun
 
-Şayet bir sunucuda XMPP hesabınız var ise kullanıcı adı ve parolasını girerek bağlantı sağlayabilirsiniz. Şayet bir XMPP hesabınız yok ise bu aşamada kayıt imkanı veren bir sunucuda hesap açabilirsiniz. Tek yapmanız gereken kendinize bir
+Şayet bir sunucuda XMPP hesabınız var ise kullanıcı adı ve parolasını girerek bağlantı sağlayabilirsiniz. Şayet bir XMPP hesabınız yok ise XMPP istemcileri hesap eklerken "bu sunucuda hesap aç" anlamında bir seçeneği işleyerek girdiğiniz bilgilerle kullanıcı oluşturma imkanı vermekte.
 
 Aşağıdaki sunucuları tercihinizde değerlendirebilirsiniz;
 
@@ -64,7 +64,7 @@ Kayıt için (kullanıcı adı)@jabber.calyxinstitute.org alan adı kullanılabi
 
 [Conversations](https://conversations.im/#xmpp) - Conversations yazılımının kendi sunucusu. Şayet özgür yazılıma destek olunmak istiyorsanız ücretli bu hizmeti tercih edebilirsiniz. İlk altı ay ücretsiz kullanım imkanı vermekte.
 
-[Riseup](https://www.riseup.net) - Riseup teknoloji kolektifinin ücretsiz hizmetlerinden biri de XMPP. Doğrudan kayıt imkanı vermediği için bir Riseup hesabı sahibi olmanızı gerektiriyor.
+[Riseup](https://www.riseup.net) - Riseup teknoloji kolektifinin ücretsiz hizmetlerinden biri de XMPP. Doğrudan kayıt imkanı vermediği için bir Riseup hesabı sahibi olmanızı gerektiriyor. Riseup'ın amacı dünyada mücadele gösteren topluluklara ve kişilere teknolojik destek vermek olduğundan ve sadece bağış ile ayakta kaldıklarından ya bağış yapmak ya da kaynaklarını kullanmak konusunda dikkatli olmak gereklidir.
 
 ## Rehbere Arkadaş Ekleme
 
