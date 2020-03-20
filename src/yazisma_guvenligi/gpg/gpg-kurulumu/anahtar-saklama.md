@@ -73,7 +73,7 @@ Anahtarınızı çok çeşitli şekillerde saklamanız mümkündür;
 
 Sabit diskler, usb bellek ve flash kartlar zamanla veri bozulmasına uğrayabilir. Sabit diskler bu bakımdan hareketli parçaları sebebi ile çok daha risk altındadır. Bu ortamları kullanırken dikkatli olunması ve iyi bir değerlendirme yapılması önerilir.
 
-Kağıt bu açıdan akıllara son gelen seçenek olsa da insanlık tarihinin en dayanıklı kayıt ortamı olarak hala tartışmasız bulunmaktadır. Bu sebeple anahtarınızın bir yedeğinin kağıda basılmış olarak bir yerde saklanması fiyat/kafa rahatlığında tartışmasızdır. Anahtarınızın --armour yani base64 encode halini bir kağıda dümdüz basıp bir kenara kaldırabileceğiniz gibi geri dönüşümü karekodlar aracılığı ile kolaylaştırmak için [paperbackup](https://github.com/intra2net/paperbackup) gibi bir araçtan da faydalanabilirsiniz. Yedeklerinizi katlamadan su geçirmez bir şekilde paketleyip ışık görmeyen bir yerde saklamanız önerilir.
+Kağıt bu açıdan akıllara son gelen seçenek olsa da insanlık tarihinin en dayanıklı kayıt ortamı olarak hala tartışmasız bulunmaktadır. Bu sebeple anahtarınızın bir yedeğinin kağıda basılmış olarak bir yerde saklanması fiyat/kafa rahatlığında tartışmasızdır. Anahtarınızın --armour yani base64 encode halini bir kağıda dümdüz basıp bir kenara kaldırabileceğiniz gibi geri dönüşümü karekodlar aracılığı ile kolaylaştırmak için [paperbackup](https://github.com/intra2net/paperbackup) gibi bir araçtan da faydalanabilirsiniz. [Kağıt yedek rehberimiz size bu konuda yardımcı olabilir.](yazisma_guvenligi/gpg/gpg-kurulumu/paperbackup/paperbackup.md) Yedeklerinizi katlamadan su geçirmez bir şekilde paketleyip ışık görmeyen bir yerde saklamanız önerilir.
 
 ##Kıyamet!
 
