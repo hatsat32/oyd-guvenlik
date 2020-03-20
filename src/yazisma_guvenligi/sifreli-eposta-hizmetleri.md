@@ -2,7 +2,7 @@
 
 Snowden'in kamuya açıkladığı gerçeklerden sonra şifreli e-posta hizmetleri fazlasıyla tartışılmış ve konuşulmuştur. Özellikle [Lavabit'in](https://en.wikipedia.org/wiki/Lavabit) muhtemelen [FBI](https://www.fbi.gov/) baskısı sebebi ile kapatılmasından sonra benzer şifreli e-posta hizmetlerine ilişkin merak ve tartışma daha da arttı. Bunun bir ihtiyaç olarak gören kimi kimseler çeşitli "şifreli e-posta" hizmeti vermeye başlamıştır.
 
-## Şifreli E-posta Hizmeti Nedir
+## Şifreli e-posta hizmeti nedir?
 
 Öncelikle "şifreli" veya "güvenli" e-postanın ne olmadığından söz etmek gerekir. Herhangi bir yazışmanın "mahrem" veya "güvenli" sayılabilmesi için şifrelemenin [uçtan uca(end-to-end)](https://en.wikipedia.org/wiki/End-to-end_encryption) olması gereklidir. Bu koşulun gerçekten oluşmasının tek imkanı tarafların şifreleme anahtarlarını kendi cihazlarında üretmeleri ve ellerinde bulundurmalarıdır. Aracı olarak hizmet sunan şifreli e-posta hizmet sağlayıcısının şifreleme işlemine müdahil olduğu her durumda **güvenin** bir kısmı hizmet sağlayıcıya aktarılmış olur.
 
@@ -45,7 +45,7 @@ Uçtan uca şifreli e-posta hizmeti veren en tanınmış iki isim [Tutanota](htt
 
 ### Tutanota vs Protonmail
 
-#### Bedava Üyelik
+#### Ücretsiz Üyelik
 
 Protonmail de Tutanota da giriş seviyesi temel güvenlik özelliklerinin sunulduğu bedava hesaplar vermekte. Bu bakımdan şayet ihtiyaçlarınız sınırlı ve bütçeniz dar ise iki hizmet sağlayıcıdan da bedava hizmet almanız mümkün
 

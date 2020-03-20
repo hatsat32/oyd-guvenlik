@@ -26,9 +26,10 @@ OTR ile OMEMO'yu ayıran iki önemli fark bulunmakta.
 Şu anda GNU/Linux sistemlerde [tam işlevsellikle](https://omemo.top/) çalışan en iyi yazılım [Gajim](https://gajim.org/) Pidgin için geliştirilen OMEMO eklentisi hala geliştirme aşamasında bulunduğundan sağlıklı olarak kullanılması pek mümkün değil gün itibari ile.
 
 #### Bir uçbirim açın veya Alt+F2’ye basın ve çalıştırın:
-Debian ve Ubuntu
+
+Debian ve Ubuntu (APT):
 `sudo apt-get insall gajim gajim-omemo`
-Fedora ve RPM
+Red Hat ve Fedora (RPM):
 `sudo dnf insall gajim`
 `sudo dnf copr enable philfry/gajim`
 `dnf install python3-axolotl python3-axolotl-curve25519 python3-qrcode`

@@ -2,7 +2,7 @@
 
 VPN temel olarak iki yerel ağ üzerinde güvensiz İnternet bağlantısı üzerinden birbirine güvenli şekilde bağlanabilmesi için geliştirilmiş bir teknolojidir. Basitçe iki bilgisayarın birbirine şifrelenmiş bir kanal üzerinden bağlanmasını sağlar. Temel olarak şirketlerin ağ altyapılarına uzaktan güvenli erişim için tasarlanmış olmasına rağmen günümüzde en yaygın kullanımı kullanıcıları tehlikeli ağlardan güvenli şekilde İnternet'e erişmesini sağlamak üzerinedir.
 
-## VPN Ne İşe Yarar
+## VPN ne işe yarar?
 
 VPN temel olarak size şunları sağlar;
 
@@ -12,7 +12,7 @@ VPN temel olarak size şunları sağlar;
 
 * VPN kimi koşullar için yeterince anonimlik sağlamamakla beraber, bağlı olduğunuz VPN sunucusundaki herkes ile aynı IP adresini paylaştığınızdan kalabalığın içine karışmış olursunuz.
 
-## VPN Neden Kullanmalıyım
+## Neden VPN kullanmalıyım?
 
 VPN kullanmak için çok çeşitli sebepleriniz olabilir;
 
@@ -22,7 +22,7 @@ VPN kullanmak için çok çeşitli sebepleriniz olabilir;
 
 * Bağlı olduğunuz yerel ağ üzerindne size yöneltilebilecek saldırılara karşı korumaya ihtiyacınız vardır.
 
-## Bedava VPN Olur Mu?
+## Ücretsiz VPN olur mu?
 
 Türkiye'de ve dünyada yaşanan her engelleme ve sansür girişiminde akla ilk gelen şey VPN idir. Neredeyse her tavsiye ise "bedava" VPN hizmetleri üzerinden yürür. Doğal olarak çoğu insanın sansür durumunda tek amacı sansürü aşarak ihtiyaç duydukları bilgiye veya hizmete erişme amacı olduğundan ve VPN teknolojisi hakkında kısıtlı bilgiye sahip olmalarından dolayı, olası tehlikelerin üzerine düşünmedikleri söylenebilir. Bir VPN hizmet sağlayıcısı ona bağlı olduğunuz sürece;
 
@@ -36,7 +36,7 @@ Türkiye'de ve dünyada yaşanan her engelleme ve sansür girişiminde akla ilk 
 
 Bu sebeplerden ötürü VPN bir güven gerektirir. Daha doğru bir ifade ile VPN **İnternet servis sağlayıcınıza olan güveninizi VPN sağlayıcınıza aktarır.** Nasıl ki evinizin anahtarını rastgele birine vermiyorsanız İnternet bağlantınızı da rastgele birinin eline vermemeniz gerekir. Bu sebepten ötürü İnternet hizmetlerine ilişkin **para vermiyorsanız ürün sizsiniz** sözüne dayanarak VPN'i satın almanız veya kendi sunucunuzu kurarak kullanmanız gerekir.
 
-## VPN Hizmeti Seçerken Nelere Dikkat Etmeli
+## VPN hizmeti seçerken nelere dikkat etmeliyim?
 
 * **[Özgür yazılım](https://oyd.org.tr/yazilar/ozgur-yazilim/)** kullanmayan hiç bir VPN sağlayıcıya güvenmeyin. VPN ile tüm ağ trafiğinizi teslim ettiğiniz bir şirketin sizden kullandığı yazılımları sizin özgürlüğünüze karşı olması hiç güven telkin eden bir unsur değildir.
 
@@ -162,7 +162,7 @@ Bir uçbirim çalıştırarak aşağıdaki komutları sırası ile belirtilen ye
 
 [Bu bölüme katkı verebilirsiniz](https://git.oyd.org.tr/oyd/guvenlik)
 
-#### Ufw
+#### ufw
 
 [Bu bölüme katkı verebilirsiniz](https://git.oyd.org.tr/oyd/guvenlik)
 

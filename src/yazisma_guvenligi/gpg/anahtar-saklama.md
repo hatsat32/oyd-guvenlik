@@ -8,7 +8,7 @@ Doğru bir anahtar yönetiminin birkaç unsuru bulunmakta:
 * __Saklama__ GPG anahtarınızı yedeklediğiniz kayıt medyasının ve konumunun doğru ve ihtiyaçlarınıza uygun olarak seçilmiş olması gereklidir. Her kayıt medyasının bir tür saklama sorunu içerdiğini ve bu yedekleri kime teslim ettiğiniz veya nereye koyduğunuz gelecek için önemlidir.
 * __Planlama__ GPG anahtarınızın başına gelebilecekleri düşünerek buna uygun planlama yapmanız gerekir. Aksi halde tedbirin sınırı olmayacağından gereğinden fazla çaba harcamanız mümkündür.
 
-##Planlama
+## Planlama
 
 Planlamanızı sağduyu ile yapın. Her tedbir planlaması gibi bir risk yönetimi yapmanız yerinde olacaktır. Bunun için kendinize aşağıdaki soruları sorun ve cevaplarına göre uygun tedbirleri alın.
 
@@ -27,7 +27,7 @@ Ara sıra gpg ile yazışıyor, anahtarınızı imzalatmıyor ve önemli görmü
 7 kıtada 3 farklı konumda titanyuma kazınmış yedekler alabiliyorsanız ne güzel...
 Bir saatiniz var ise bu işe zaman ayırabilecek hızlıca elinizdekileri kullanabilirsiniz.
 
-##Yedekleme
+## Yedekleme
 
 Yedeklemek anlam bakımından elinizdeki bir verinin kötü bir ihtimale karşı bir kopyasının alınmasını ve saklanmasını ifade eder. GPG anahtarınızı kullanabilmek için muhtemelen bir cihazda tutuyor olacaksınız. İki veya daha cihazınızda bu anahtarın olması kötü de olsa bir nevi yedekleme sayılabilir.
 
@@ -35,9 +35,9 @@ Yedeklemek anlam bakımından elinizdeki bir verinin kötü bir ihtimale karşı
 
 Anahtarınıza önem veriyorsanız veya kaybetmenizin ciddiyeti her türlü önlemi almanızı gerektirecek düzeydeyse en az iki kopyanın mümkünse farklı kayıt ortamlarında (dvd vd usb bellek gibi) aynı tehlike modelini içermeyen farklı konumlarda (eviniz ve şehir dışındaki arkadaşınız gibi) bulundurulması gerekliliklerinizi karşılayabilir.
 
-###Anahtarınızın yedeğini almak
+### Anahtarınızın yedeğini almak
 
-###GNU/Linux
+### GNU/Linux
 
 * Şayet uçbirim (terminal) aşinalığınız varsa açacağınız bir uçbirim ekranında aşağıdaki komutu çalıştırın
 
@@ -47,7 +47,7 @@ kurulumunuza bağlı olarak size anahtarınızın parolasını soracaktır. Paro
 
 * Şayet Kleopatra gibi GUI arayüz kullanıyor iseniz, arayüzde Export veya backup gibi ifade edilen seçeneği arayıp talimatları takip edin. Anahtarınızın yedeğini bir dosya olarak kaydettikten sonra dosyayı dilediğiniz gibi yedekleyebilirsiniz. Şayet arayüz size `armour` veya `base64` gibi bir ifade ile seçenek sunuyor ise seçmenizi öneririz. Böylece yedeğinizi gerekirse kağıda basabilirsiniz.
 
-###Android
+### Android
 
 Android'de GPG istemcisi [OpenKeychain](https://www.openkeychain.org/) kullanılmakta. 
 
@@ -61,7 +61,7 @@ Android'de GPG istemcisi [OpenKeychain](https://www.openkeychain.org/) kullanıl
 
 * __ÖNEMLİ NOT!__: OpenKeychain ile aldığınız yedek dosyası ayrıca AES256 ile size verilen parola ile şifrelidir. Şayet bu şifreyi çözmeden dosyayı yedeklemeye karar verirseniz verilen parolayı da **MUTLAKA** güvenli şekilde saklamak zorundasınız. Bunun yerine bilgisayarınızda GPG ile şifreyi çözebilir ve elde ettiğiniz anahtarı bu şekilde OpenKeychain'in verdiği parolaya ihtiyaç duymadan da saklayabilirsiniz.
 
-##Saklama
+## Saklama
 
 Anahtarınızı çok çeşitli şekillerde saklamanız mümkündür;
 
@@ -75,7 +75,7 @@ Sabit diskler, usb bellek ve flash kartlar zamanla veri bozulmasına uğrayabili
 
 Kağıt bu açıdan akıllara son gelen seçenek olsa da insanlık tarihinin en dayanıklı kayıt ortamı olarak hala tartışmasız bulunmaktadır. Bu sebeple anahtarınızın bir yedeğinin kağıda basılmış olarak bir yerde saklanması fiyat/kafa rahatlığında tartışmasızdır. Anahtarınızın --armour yani base64 encode halini bir kağıda dümdüz basıp bir kenara kaldırabileceğiniz gibi geri dönüşümü karekodlar aracılığı ile kolaylaştırmak için [paperbackup](https://github.com/intra2net/paperbackup) gibi bir araçtan da faydalanabilirsiniz. [Kağıt yedek rehberimiz size bu konuda yardımcı olabilir.](yazisma_guvenligi/gpg/gpg-kurulumu/paperbackup/paperbackup.md) Yedeklerinizi katlamadan su geçirmez bir şekilde paketleyip ışık görmeyen bir yerde saklamanız önerilir.
 
-##Kıyamet!
+## Kıyamet!
 
 Şayet kıyamet koparsa diye GPG'nin **iptal sertifikası** isminde bir seçeneği bulunmakta. Bu araç ile gpg size kısa bir çıktı vermekte ve anahtarınızı geri dönmeyecek şekilde kaybetmeniz durumunda anahtar sunucularına bu anahtarı göndermeniz ile anahtarınız kullanılmaz duruma gelmektedir. Şayet anahtarınızı *güven* oluşturmak için kullanıyorsanız küçük bir adım olarak bunu yapmanız önerilir.
 

@@ -2,15 +2,15 @@
 
 E-posta şifrelemeye başlamadan önce bir tane GPG anahtarı sahibi olmanız ve bunu güvenle saklamanız gerekli. GPG anahtarı üretimi kullandığınız donanıma ve işletim sistemine bağlı olarak değişmekte. Şayet tehdit modeliniz yüksek değil, sadece mahremiyetiniz için basitçe yazışmalarınızı şifrelemek istiyorsanız aşağıdaki yöntemleri kullanarak tüm cihazlarınızda hızlı ve görece güvenli şekilde GPG anahtarı oluşturabilirsiniz.
 
-#GNU/Linux -  Windows - Osx
+## GNU/Linux -  Windows - macOS
 
-GNU/Linux dağıtımlar için çokça kullanışlı grafik arayüz sunan gpg istemcisi bulunmakta. Bu bakımsan KDE masaüstü ortamının anahtar yöneticisi Kleopatra hem platformlar arası olması hem de en geniş yönetim seçeneklerini sunması itibari ile tercih edilebilir.
+GNU/Linux dağıtımlar için çokça kullanışlı grafik arayüz sunan GnuPG istemcisi bulunmakta. Bu bakımsan KDE masaüstü ortamının anahtar yöneticisi Kleopatra hem platformlar arası olması hem de en geniş yönetim seçeneklerini sunması itibari ile tercih edilebilir.
 
-* Kleopatrayı yüklemek için aşağıdaki komutları kullanabilir veya dağıtımınızın grafik yükleyicisini kullanabilirsiniz;
+* Kleopatra'yı yüklemek için aşağıdaki komutları kullanabilir veya dağıtımınızın grafik yükleyicisini kullanabilirsiniz;
 
-Debian: `sudo apt-get install kleopatra`
+Debian/Ubuntu (APT): `sudo apt-get install kleopatra`
 
-RPM: `sudo yum install kleopatra`
+Red Hat/Fedora (RPM): `sudo yum install kleopatra`
 
 * Kurulum tamamlandıktan sonra Kleopatrayı dilediğiniz şekilde çalıştırın ve anahtarların listelendiği alan ile birlikte Kleopatra sizi karşılayacak.
 
@@ -20,7 +20,7 @@ RPM: `sudo yum install kleopatra`
 
 ![alt-text](kleopatra2.png "Anahtar Çifti Oluşturma Ekranı")
 
-* Kleopatra size isminizi ve e-posta adresinizi soracaktır. Burada doğru bilgiler vermek zorunda değilsiniz. __Lakin__ GPG insanların kimliklerini oluşturmak ve buna güven duyulmasını sağlamak amacı ile kullanılmaktadır. Bu anahtar sizin kimliğinizi ve sizi tanıyan insanların size güvenmesi demek olacağından bu anahtarla yapacağınız işlemlerin size ait olduğunu kanıtlamanızı sağlar. Bu sebep ile gerçek bilgiler kullanmanızı öneririz. **Her halde** dilediğiniz bu bilgileri değiştirmenize engel olan bir durum yok.
+* Kleopatra size isminizi ve e-posta adresinizi soracaktır. Burada doğru bilgiler vermek zorunda değilsiniz. __Lakin__ GnuPG insanların kimliklerini oluşturmak ve buna güven duyulmasını sağlamak amacı ile kullanılmaktadır. Bu anahtar sizin kimliğinizi ve sizi tanıyan insanların size güvenmesi demek olacağından bu anahtarla yapacağınız işlemlerin size ait olduğunu kanıtlamanızı sağlar. Bu sebep ile gerçek bilgiler kullanmanızı öneririz. **Her halde** dilediğiniz bu bilgileri değiştirmenize engel olan bir durum yok.
 
 ![alt-text](kleopatra3.png "ID Bilgilerinin Girimi")
 
@@ -38,35 +38,35 @@ RPM: `sudo yum install kleopatra`
 
 * Şayet anahtarınızı e-posta yazışması için kullanılmasını istiyorsanız, bu aşamada "Dizin Servisine Açık Anahtarı Yükle" seçeneğine tıklayarak anahtarınızı anahtar sunucularına gönderek herkes tarafından size şifreli e-posta atılabilmesini sağlayabilirsiniz.
 
-__ÖNEMLİ NOT__ Anahtar sunucusuna yüklediğiniz anahtarlar **SONSUZA** kadar sunucularda kalacaktır. Bu bakımdan anahtarınızı kullanacağınızdan ve/veya anahtarı iptal etmek için gerekenlere sahip olduğunuzdan emin olmadan anahtarı sunuculara göndermeyin. Gizli anahtara ve parolasına veya bir iptal sertifikasına sahip değilseniz sunucudaki anahtarlar son kullanma tarihine kadar geçerli kalır.
+__ÖNEMLİ NOT:__ Anahtar sunucusuna yüklediğiniz anahtarlar **SONSUZA** kadar sunucularda kalacaktır. Bu bakımdan anahtarınızı kullanacağınızdan ve/veya anahtarı iptal etmek için gerekenlere sahip olduğunuzdan emin olmadan anahtarı sunuculara göndermeyin. Gizli anahtara ve parolasına veya bir iptal sertifikasına sahip değilseniz sunucudaki anahtarlar son kullanma tarihine kadar geçerli kalır.
 
-#Android
+# Android
 
-Android işletim sistemlerinde GPG kullanmak neredeyse diğer tüm imkanlardan daha kolay.[OpenKeychain](https://openkeychain.org) [F-droid](https://f-droid.org] üzerinden indirilebilen özgür bir yazılım olarak kullanışlı arayüzü ve kolay kullanımı ile GPG işlemlerinin kolaylıkla yapılabilmesine ve anahtar yönetimine imkan sağlıyor.
+Android işletim sistemlerinde GnuPG kullanmak neredeyse diğer tüm imkanlardan daha kolay. [OpenKeychain](https://openkeychain.org) [F-Droid](https://f-droid.org] üzerinden indirilebilen özgür bir yazılım olarak kullanışlı arayüzü ve kolay kullanımı ile GnuPG işlemlerinin kolaylıkla yapılabilmesine ve anahtar yönetimine imkan sağlıyor.
 
-* Android mobil işletim sistemleri için [OpenKeychain](https://openkeychain.org) yazılımını [F-droid](https://f-droid.org] reposundan veya özgür olmayan bir başka repodan indirerek telefonunuza kurun.
+* Android mobil işletim sistemleri için [OpenKeychain](https://openkeychain.org) yazılımını [F-Droid](https://f-droid.org] reposundan veya özgür olmayan bir başka repodan indirerek telefonunuza kurun.
 
 * OpenKeychain sizi şirin asmakilit karakteri ile karşılayacak ve anahtar kullanımı için seçenekler sunacaktır. Buradan "Anahtarımı oluştur" seçeneğini seçerek ilerleyin.
 
 ![alt-text](openkeychain1.png "OpenKeychain Karşılama Ekranı")
 
-* OpenKeychain size adınızı veya rumuzunuzu soracaktır. Burada doğru bilgiler vermek zorunda değilsiniz. __Lakin__ GPG insanların kimliklerini oluşturmak ve buna güven duyulmasını sağlamak amacı ile kullanılmaktadır. Bu anahtar sizin kimliğinizi ve sizi tanıyan insanların size güvenmesi demek olacağından bu anahtarla yapacağınız işlemlerin size ait olduğunu kanıtlamanızı sağlar. Bu sebep ile gerçek bilgiler kullanmanızı öneririz. **Her halde** dilediğiniz bu bilgileri değiştirmenize engel olan bir durum yok.
+* OpenKeychain size adınızı veya rumuzunuzu soracaktır. Burada doğru bilgiler vermek zorunda değilsiniz. __Lakin__ GnuPG insanların kimliklerini oluşturmak ve buna güven duyulmasını sağlamak amacı ile kullanılmaktadır. Bu anahtar sizin kimliğinizi ve sizi tanıyan insanların size güvenmesi demek olacağından bu anahtarla yapacağınız işlemlerin size ait olduğunu kanıtlamanızı sağlar. Bu sebep ile gerçek bilgiler kullanmanızı öneririz. **Her halde** dilediğiniz bu bilgileri değiştirmenize engel olan bir durum yok.
 
 ![alt-text](openkeychain2.png "İsim Girişi")
 
-* Bir sonraki aşamada OpenKeychain sizden e-posta adresinizi ve varsa başkaca e-posta adreslerinizi girmenize imkan verecektir. Buraya GPG anahtarınızı kullanmak istediğiniz e-posta adreslerini girin. Gerekirse ileride yenilerini ekleyebilir veya çıkartabilirsiniz.
+* Bir sonraki aşamada OpenKeychain sizden e-posta adresinizi ve varsa başkaca e-posta adreslerinizi girmenize imkan verecektir. Buraya GnuPG anahtarınızı kullanmak istediğiniz e-posta adreslerini girin. Gerekirse ileride yenilerini ekleyebilir veya çıkartabilirsiniz.
 
 ![alt-text](openkeychain3.png "E-posta Girişi")
 
-* Anahtarınızı oluşturmadan önce, isminiz ve e-postanızın gösterildiği aşamada anahtarınızı "Anahtar sunucusuna gönder" "Publish on keyserver" seçeneği görülecektir. Şayet anahtarınızı e-posta yazışması için kullanılmasını istiyorsanız bu seçeneği işaretleyerek devam edebilirsiniz.
+* Anahtarınızı oluşturmadan önce, isminiz ve e-postanızın gösterildiği aşamada anahtarınızı "Anahtar sunucusuna gönder" (Publish on keyserver) seçeneği görülecektir. Şayet anahtarınızı e-posta yazışması için kullanılmasını istiyorsanız bu seçeneği işaretleyerek devam edebilirsiniz.
 
 ![alt-text](openkeychain4.png "Anahtar Oluşturma")
 
-__ÖNEMLİ NOT__ Anahtar sunucusuna yüklediğiniz anahtarlar **SONSUZA** kadar sunucularda kalacaktır. Bu bakımdan anahtarınızı kullanacağınızdan ve/veya anahtarı iptal etmek için gerekenlere sahip olduğunuzdan emin olmadan anahtarı sunuculara göndermeyin. Gizli anahtara ve parolasına veya bir iptal sertifikasına sahip değilseniz sunucudaki anahtarlar son kullanma tarihine kadar geçerli kalır.
+__ÖNEMLİ NOT:__ Anahtar sunucusuna yüklediğiniz anahtarlar **SONSUZA** kadar sunucularda kalacaktır. Bu bakımdan anahtarınızı kullanacağınızdan ve/veya anahtarı iptal etmek için gerekenlere sahip olduğunuzdan emin olmadan anahtarı sunuculara göndermeyin. Gizli anahtara ve parolasına veya bir iptal sertifikasına sahip değilseniz sunucudaki anahtarlar son kullanma tarihine kadar geçerli kalır.
 
 * Anahtarınızı üretmeye geçmeden, sağ üst köşede bulunan menüden "Anahtar yapılandırmasını değiştir" seçeneğini seçerek anahtarınızın bazı standart ayarlarını deiştirmek isteyebilirsiniz.
-**Parola** OpenKeychain üretilen anahtarlara bir parola ile korumamaktadır. Bu sebepten bir [**zarola**](https://zarola.oyd.org.tr) ile anahtarınızı şifrelemenizi öneririz.
-**Alt Anahtarlar** OpenKeychain standart olarak en yüksek güvenlikteki anahtar boyutu olan 4096 bit kullanmamakta. Bunu şifreleme hızı için yapsa da uzun vadede kullanacağınız anahtarlarınızın boyutunun 4096 bit olması uzun vadede faydalı olabilir. Dilerseniz bu aşamada SSH gibi yetkilendirme sistemlerinde kullanılmak üzere başkaca bir alt anahtar daha ekleyebilirsiniz.
+**Parola:** OpenKeychain üretilen anahtarlara bir parola ile korumamaktadır. Bu sebepten bir [**zarola**](https://zarola.oyd.org.tr) ile anahtarınızı şifrelemenizi öneririz.
+**Alt Anahtarlar:** OpenKeychain standart olarak en yüksek güvenlikteki anahtar boyutu olan 4096 bit kullanmamakta. Bunu şifreleme hızı için yapsa da uzun vadede kullanacağınız anahtarlarınızın boyutunun 4096 bit olması uzun vadede faydalı olabilir. Dilerseniz bu aşamada SSH gibi yetkilendirme sistemlerinde kullanılmak üzere başkaca bir alt anahtar daha ekleyebilirsiniz.
 
 ![alt-text](openkeychain7.png "Gelişmiş Anahtar Ayarları")
 
@@ -75,6 +75,6 @@ __ÖNEMLİ NOT__ Anahtar sunucusuna yüklediğiniz anahtarlar **SONSUZA** kadar 
 ![alt-text](openkeychain5.png)
 ![alt-text](openkeychain6.png)
 
-Tebrikler artık kullanılabilir bir GPG anahtarınız var! Artık hem e-postalarınızı hem de dosyalarınızı şifreleyebileceğiniz dünyaca güvenilen bir yazılımı kullanabilir konumdasınız. Bu bilgiyi çevrenizle paylaşın ve onların da kendi anahtarlarını üretip sizinle iletişime geçebilmesine yardımcı olun.
+Tebrikler artık kullanılabilir bir GnuPG anahtarınız var! Artık hem e-postalarınızı hem de dosyalarınızı şifreleyebileceğiniz dünyaca güvenilen bir yazılımı kullanabilir konumdasınız. Bu bilgiyi çevrenizle paylaşın ve onların da kendi anahtarlarını üretip sizinle iletişime geçebilmesine yardımcı olun.
 
 
