@@ -16,11 +16,15 @@ Pretty Good Privacy ismi ile Philiph Zimmerman tarafından 80'lerde ABD'de yazı
 
 GPG ile e-postalarınızı ve eklerini şifreleyebilir, size ulaşan e-postanın değiştirilmediğini bilebilir veya gönderen kişinin kimliğini doğrulayabilirsiniz. GPG merkezi bir otoriteye dayanmadan insanların arasında bir güven ilişkisi kurulmasına imkan verir.
 
-gpg bağlantısı verilecek
+[GPG kurulumu için rehberimize danışabilirsiniz](gpg/gpg-anahtar-uretimi.md)
 
 ## Webmail Kullanarak E-posta Şifrelenebilir Mi
 
 Açıkçası, şifreli e-posta göndermenin en iyi yolu [Thunderbird](https://www.thunderbird.net/en-US/) gibi bir istemci ile [Enigmail](https://www.enigmail.net) benzeri bir eklenti kullanmaktır.
+
+[Mailvelope](https://www.mailvelope.com/en/) eklentisi tarayıcınıza kurabileceğiniz ve girdiğiniz webmail üzerinden GPG şifreli yazışma yapmanıza imkan sağlayan bir tarayıcı eklentisi. Kurulumu biraz daha karmaşık olacak olsa da web üzerinden e-postalarınızı yönetme ihtiyacınız varsa değerlendirilebilir bir seçenek.
+
+Kimi e-posta sağlayıcılar kendi yazılımları aracılığı ile GPG destekli şifreli e-posta hizmeti sunmakta. Bunun için [şifreli e-posta hizmetleri](sifreli-eposta-hizmetleri.md) rehberimize danışabilirsiniz.
 
 ## Şifrelenmiş E-posta Neyi Korumaz
 

@@ -3,7 +3,7 @@
 [Giriş](README.md)
 
 - [Beşeri Güvenlik](beseri_guvenlik/README.md)
-  - [Mesaj Temizliği](beseri_guvenlik/mesaj_disiplini.md)
+  - [Mesaj Disiplini](beseri_guvenlik/mesaj_disiplini.md)
   - [Parolalar](beseri_guvenlik/parolalar.md)
   - [Çift Aşamalı Doğrulama](beseri_guvenlik/2fa.md)
 - [Cihaz Güvenliği](cihaz_guvenligi/README.md)
