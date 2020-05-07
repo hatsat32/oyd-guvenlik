@@ -16,11 +16,11 @@ Posta istemcisi nedir? Posta istemcisi e-posta oluşturmak ve e-postalarınızı
 
 ## Genel Ayarlar
 
-Normal koşullarda, posta istemciniz için gerekli kurulum ayarlarını araştırmanız ve programın bütün bağlantılarda(POP veya IMAP ile SMTP için) SSL veya TLS kullanmaya ayarlı olduğundan ve ayrıca doğru portu kullanıyor olduğunuzdan emin olun. Eğer bunların ne anlama geldiğini bilmiyorsanız endişelenmeyin, biz buradayız. 
+Normal koşullarda, posta istemciniz için gerekli kurulum ayarlarını araştırmanız ve programın bütün bağlantılarda(POP veya IMAP ile SMTP için) SSL veya TLS kullanmaya ayarlı olduğundan ve ayrıca doğru portu kullanıyor olduğunuzdan emin olun. Eğer bunların ne anlama geldiğini bilmiyorsanız endişelenmeyin, biz buradayız.
 
-Bunu yapmak için belirli prosedür her posta istemcisi için epey farklı ve hatta bazen aynı yazılımın farklı sürümleri için bile çok farklı olabiliyor. 
+Bunu yapmak için belirli prosedür her posta istemcisi için epey farklı ve hatta bazen aynı yazılımın farklı sürümleri için bile çok farklı olabiliyor.
 
-Genellikle biz posta istemcileri için destek sunmuyoruz. Gelgelelim, [posta istemcilerinini kurma ile ilgili biraz bilgi](https://riseup.net/en/email/clients) sahibiyiz. Eğer istemciniz listedeyse oradaki bilgi gerekli değişiklikleri yapmanıza yardımcı olacaktır. 
+Genellikle biz posta istemcileri için destek sunmuyoruz. Gelgelelim, [posta istemcilerinini kurma ile ilgili biraz bilgi](https://riseup.net/en/email/clients) sahibiyiz. Eğer istemciniz listedeyse oradaki bilgi gerekli değişiklikleri yapmanıza yardımcı olacaktır.
 
 Eğer Mozilla'nın Thunderbird'ünü kullanmıyorsanız, istemcinizi onunla değiştirmeyi düşünmeniz için ısrar ediyoruz. Thunderbird makul derecede güvenli, kullanımı kolay bir özgür yazılım projesi. Denemekten zarar gelmez! [Thunderbird kurulumu için talimatlarımız](https://riseup.net/en/email/clients/thunderbird) are really good, its what we know best and can support you much easier if you use it.
 
@@ -33,11 +33,11 @@ Thunderbird'de gerekli değişiklikleri yapmak üzere aşağıdaki adımları iz
 
 İlk olarak Thunderbird'ün hangi sürümünü kullandığınızı anlamak için "Help" menüsünden "About Thunderbird"e tıklayın
 
-Kullandığınız sürümün numarasını öğrendiğinizde aşağıdaki aşamalardan sizin sürümünüzle eşleşeni izleyin. Eğer kullandığınız Thunderbird'ün sürümü 2.x veya daha eskiyse sürümü yükseltmeniz gerekmekte. Maalesef bunun nasıl yapıldığını burada anlatamayacağız ancak "Thunderbird'ün sürümünü yükseltme" diyerek çevrimiçi arama yaptığınızda gerekli bilgiyi bulabilirsiniz. 
+Kullandığınız sürümün numarasını öğrendiğinizde aşağıdaki aşamalardan sizin sürümünüzle eşleşeni izleyin. Eğer kullandığınız Thunderbird'ün sürümü 2.x veya daha eskiyse sürümü yükseltmeniz gerekmekte. Maalesef bunun nasıl yapıldığını burada anlatamayacağız ancak "Thunderbird'ün sürümünü yükseltme" diyerek çevrimiçi arama yaptığınızda gerekli bilgiyi bulabilirsiniz.
 
-### Thunderbird 3.x ve daha yeni sürümler 
+### Thunderbird 3.x ve daha yeni sürümler
 
-Thunderbird sürüm 3.x'de güvenli bağlantıları etkinleştirmek üzere gerekli değişiklikleri yapmak için lütfen aşağıdaki adımları izleyin: 
+Thunderbird sürüm 3.x'de güvenli bağlantıları etkinleştirmek üzere gerekli değişiklikleri yapmak için lütfen aşağıdaki adımları izleyin:
 
 * "Edit" menüsünden "Account Settings"i seçin
 * Hesap ayarları iletişim kutusu açıldıktan sonra riseup hesabınız için "Server Settings"i seçin
@@ -67,7 +67,7 @@ Eğer bunun gibi bir apple cihazınız var ise nasıl güvenli şekilde ayarlar�
 
 S: Eğer webmail kullanırsam, güvenli olur mu?
 
-C: Web'i kullandığınızda, bağlantınızı bilgisayarınızdan İnternetteki çeşitli sunucular aracılığı ile ziyaret etmeye çalıştığınız sayfanın web sunucusuna yaparsınız. Bu bağlantıyı "HTTP" diye anılan bir şey ile yaparsınız. Bu bağlantıda gönderdiğiniz veriler açıktan gider ve güvenli değildir. Saldırganlar, web sitesi hesaplarınıza ve ziyaretiniz sırasında gönderdiğiniz veya aldığınız tüm bilgilere ulaşabilirler. Ama umut bitmez! "HTTP"'nin bir "HTTPS" (sonundaki 'S' güvenli anlamında) adında güvenli bir versiyonu vardır. HTTPS saldırılara dayanabilecek şekilde güvenli bağlantılar kurmak üzere tasarlanmıştır. 
+C: Web'i kullandığınızda, bağlantınızı bilgisayarınızdan İnternetteki çeşitli sunucular aracılığı ile ziyaret etmeye çalıştığınız sayfanın web sunucusuna yaparsınız. Bu bağlantıyı "HTTP" diye anılan bir şey ile yaparsınız. Bu bağlantıda gönderdiğiniz veriler açıktan gider ve güvenli değildir. Saldırganlar, web sitesi hesaplarınıza ve ziyaretiniz sırasında gönderdiğiniz veya aldığınız tüm bilgilere ulaşabilirler. Ama umut bitmez! "HTTP"'nin bir "HTTPS" (sonundaki 'S' güvenli anlamında) adında güvenli bir versiyonu vardır. HTTPS saldırılara dayanabilecek şekilde güvenli bağlantılar kurmak üzere tasarlanmıştır.
 
 Daha fazla güvenlik için ziyaret etmek istediğiniz web sayfasının ziyaret etmeye niyetlendiğiniz web sayfası olduğunu doğrulayabilirsiniz. HTTPS kullanırken, ziyaret ettiğiniz sunucunun doğru sunucu olduğunu göstermeye yarayacak bir sertifika size ulaşır. Sitenin ziyaret etmek istediğiniz site olduğunu doğrulamak için [[size sunulan sertifikayı doğrulamalısınız->/certificates]].
 
@@ -95,6 +95,6 @@ C: Eğer detaylıca [riseup yardım sayfalarını](https://support.riseup.net) i
 
 Artık güvenli bağlantılar kullandığınıza göre her şey tamamen güvenli değil mi? Ne yazık ki hayır! Güvenli bağlantılar sadece verinin iletimini güvenli kılar, verinin mahremiyetini sağlamaz. Örneğin; güvenli bağlantılar aracılığı ile e-posta gönderdiğinizde, e-postanız sunucularımızdan şifreli olarak gönderilir fakat İnternette e-postazın hedefine ulaşmadan önce atlayacağı çokça başka basamak vardır. Bu basamaklar nadiren şifrelidir ve bu bir kimseye hem İnternette iletimi sırasında hem sunucuda beklerken hem de alıcının bilgisayarında e-postalarınıza erişmek için sayısız fırsat verir. Güvenli bağlantılar kullanmak gerçeklikte sadece kullanıcı adı ve parolalarınızın korunmasına yarar.
 
-E-posta iletişiminizi daha güvenli kılmak için başka neler yapabilirsiniz? Eğer e-postalarınızı uçtan uca güvenli kılmak istiyorsanız [GnuPG gibi güçlü şifreleme araçlarını](../message_security/openpgp.md) kullanmaya başlamanız ve insanların sizinle bu araçlarla iletişim kurmasını sağlamalısınız. [Thunderbird için Enigmail](../message_security/openpgp.md#enigmail) isminde, güçlü şifreleme imkanlarını kolaylıkla kullanımını sağlayan bir eklenti vardır.
+E-posta iletişiminizi daha güvenli kılmak için başka neler yapabilirsiniz? Eğer e-postalarınızı uçtan uca güvenli kılmak istiyorsanız [GnuPG gibi güçlü şifreleme araçlarını](../yazisma_guvenligi/openpgp.md) kullanmaya başlamanız ve insanların sizinle bu araçlarla iletişim kurmasını sağlamalısınız. [Thunderbird için Enigmail](../yazisma_guvenligi/openpgp.md#webmail-kullanarak-e-posta-şifrelenebilir-mi) isminde, güçlü şifreleme imkanlarını kolaylıkla kullanımını sağlayan bir eklenti vardır.
 
 Web'de güvenlik HTTPS'nin etrafında gönmektedir ve bu belirli bir sertifikanın sunucu için "geçerli" sayılıp sayılmayacağının web tarayıcısı tarafından belirlenmesini gerektirir. Bu şu anda tarayınız tarafından dağıtılan "güvenilir" sertifika otoriteleri listesi aracılığı ile olur. Bu baya tırt bir şey çünkü sizi bir kullanıcı olarak bir çeşit merkezi otoriteye bağlantı güvenliğinizi onaylaması için güvenmenizi gerektirir. Neden bir takım kendini yetkilendirmiş otoriteye güvenli bağlantılarınızda pay vermek isteyesiniz? Neden bunun tırt olduğuna ilişkin daha fazla bilgi isterseniz [sosyal yapılarımızı şekillendiren teknik mimari](https://lair.fifthhorseman.net/~dkg/tls-centralization/) hakkındaki makaleyi okumalı ve bu merkezileşmiş hiyerarşinin neden çok sorunlu olduğuna şahit olmalısınız.

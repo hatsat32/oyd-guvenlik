@@ -26,7 +26,7 @@
   - [Sertifikalar](ag_guvenligi/sertifikalar.md)
   - [StartTLS](ag_guvenligi/starttls.md)
   - [Tor](ag_guvenligi/tor.md)
-
+  - [Vpn](ag_guvenligi/vpn/vpn.md)
 ---
 
 [Kaynaklar](resources.md)
