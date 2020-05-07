@@ -14,7 +14,7 @@ Bir parola yöneticisi, size hem güçlü hem de eşsiz parolalar kullanma imkan
 
 Hangi aracı seçtiğinizden bağımsız olarak gerçekten önemli olan bir parola yöneticisi kullanmanızdır. Lütfen aşağıdaki önerileri aklınızda tutun:
 
-* **Ana Parola**: Bir parola yöneticisi kullanırken, ana parolanızı kaybetmemeniz hayati öneme sahiptir. Bunun için **[Zarola](zarola.oyd.org.tr)** kullanmanızı öneriyoruz. Bilgisayarlar için zor ama hatırlamanız için kolay bir parola tüm sayısal hayatınızın dayanacağı bir parolayı unutmamak için en garanti yoldur.
+* **Ana Parola**: Bir parola yöneticisi kullanırken, ana parolanızı kaybetmemeniz hayati öneme sahiptir. Bunun için **[Zarola](https://zarola.oyd.org.tr)** kullanmanızı öneriyoruz. Bilgisayarlar için zor ama hatırlamanız için kolay bir parola tüm sayısal hayatınızın dayanacağı bir parolayı unutmamak için en garanti yoldur.
 * **Yedekler**: Parola yöneticinizin verilerini düzenli olarak yedeklemeniz de bir o kadar önemlidir. Bulut hizmetinin kesilmesi sonunuzun gelmesi olur bu yüzden düzenli yerel yedek almak iyi bir fikirdir. Yerel yazılımlar için basitçe yedek almak yeterlidir. Ara sıra parola yöneticinizin parolaları sakladığı küçük dosyayı bir flash belleğe koyup kenara kaldırmak sizi çokça baş ağrısından kurtarabilir.
 
 Yaygın parola yöneticileri;
@@ -33,9 +33,9 @@ Güçlü ve rastgele parolaların istisnası olarak cihazlarınızın ekran kili
 
 İnsanlar, bilgisayarların aksine güvenli parolalar yaratmakça çok başarısızdır. Bırakın bilgisayar bu işi sizin için yapsın.
 
-Hatırlamanız gereken parolalar üretmek için çokça yol bulunmaktadır. Eğer parola yöneticisine bırakmak yerine hatırlamanız gereken parolalar varsa bunlar için biz [Zarola](zarola.oyd.org.tr) kullanmanızı öneriyoruz. 
+Hatırlamanız gereken parolalar üretmek için çokça yol bulunmaktadır. Eğer parola yöneticisine bırakmak yerine hatırlamanız gereken parolalar varsa bunlar için biz [Zarola](https://zarola.oyd.org.tr) kullanmanızı öneriyoruz.
 
-[Zarola](zarola.oyd.org.tr) Zarola, kolayca hatırlanabilir ve yüksek derecede güvenli parolalar oluşturabilmenizi sağlayan bir yöntemdir. İnsanlar rastgele şeyler üretemeyeceklerinden rastgelelik kaynağı olarak zar veya bozukpara kullanılır. 7776 Tane kelime içinden seçilen 7 adet ile parola oluşturulur ve hikayeleştirilerek ezberlenir. Bazen komik hikayeler bile çıkar!
+[Zarola](https://zarola.oyd.org.tr) Zarola, kolayca hatırlanabilir ve yüksek derecede güvenli parolalar oluşturabilmenizi sağlayan bir yöntemdir. İnsanlar rastgele şeyler üretemeyeceklerinden rastgelelik kaynağı olarak zar veya bozukpara kullanılır. 7776 Tane kelime içinden seçilen 7 adet ile parola oluşturulur ve hikayeleştirilerek ezberlenir. Bazen komik hikayeler bile çıkar!
 
 Konuya ilişkin Gözetim Meşru Müdafaa'nın [Güçlü Parolalar Üretmek](https://ssd.eff.org/en/module/creating-strong-passwords) rehberine bakabilirsiniz.
 

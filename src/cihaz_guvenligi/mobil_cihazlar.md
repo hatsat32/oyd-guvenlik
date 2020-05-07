@@ -109,7 +109,7 @@ Eğer cihazınızdan uzak kalacaksanız ve cihazınıza girilme ihtimali var ise
 
 ## Ekran kilidinde pin veya parola kullanın / Biyometrik kullanmayın
 
-Bilgisayarlarımızın aksine mobil cihazlarımız neredeyse sürekli açık kalırlar. Bu sebeple tüm diskiniz şifreli bile olsa açık bulunan cihazınıza her isteyen erişebiliyorsa muhtemelen pek de güvende sayılmazsınız. Ekran kilidinizi 4/6 haneli bir pin olarak belirleyip kabaca 3 ayda bir [zarola](zarola.oyd.org.tr) yöntemi ile değiştirin veya bir parola belirleyip daha uzun aralıklarla değiştirin.
+Bilgisayarlarımızın aksine mobil cihazlarımız neredeyse sürekli açık kalırlar. Bu sebeple tüm diskiniz şifreli bile olsa açık bulunan cihazınıza her isteyen erişebiliyorsa muhtemelen pek de güvende sayılmazsınız. Ekran kilidinizi 4/6 haneli bir pin olarak belirleyip kabaca 3 ayda bir [zarola](https://zarola.oyd.org.tr) yöntemi ile değiştirin veya bir parola belirleyip daha uzun aralıklarla değiştirin.
 
 Parmak izi, yüz tanıma gibi biyometrik yetkilendirme sistemleri doğaları gereği güvensizdir. Her ne kadar şirketler bunların aşılamaz olduklarını iddia etseler de çoğu zaman bu tip sistemlere karşı etkili saldırılar yapılmıştır ve en başarılısı [ebeveyninin parmağına uyuduğu sırada telefonunu dokundurup binlerce dolarlık oyun satın alan çocuğun zekasını aşamaz.](https://www.usatoday.com/story/news/nation/2016/12/28/girl-uses-sleeping-moms-thumbprint-pokemon/95907370/) Bu sebeple biyometrik giriş yöntemleri kullanacaksanız bunları ikinci aşama olarak değerlendirip hem pin/parola hem biyometrik kullanın. Şayet biyometrik verileriniz bir şekilde bir gün çalınırsa yeni bir parmak veya yüz alamayacağınızı unutmayın.
 
