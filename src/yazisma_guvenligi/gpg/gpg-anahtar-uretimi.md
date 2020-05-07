@@ -34,7 +34,7 @@ Red Hat/Fedora (RPM): `sudo yum install kleopatra`
 
 ![alt-text](kleopatra5.png "Sonuç Ekranı")
 
-* Bu aşamada anahtarınızın yedeğini alabilir ve [anahtar yönetimi](guvenlik.oyd.org.tr/anahtar-yonetimi) tavsiyelerimize göre anahtarınızın yedeğini alabilirsiniz.
+* Bu aşamada anahtarınızın yedeğini alabilir ve [anahtar yönetimi](anahtar-saklama.md) tavsiyelerimize göre anahtarınızın yedeğini alabilirsiniz.
 
 * Şayet anahtarınızı e-posta yazışması için kullanılmasını istiyorsanız, bu aşamada "Dizin Servisine Açık Anahtarı Yükle" seçeneğine tıklayarak anahtarınızı anahtar sunucularına gönderek herkes tarafından size şifreli e-posta atılabilmesini sağlayabilirsiniz.
 
@@ -42,9 +42,9 @@ __ÖNEMLİ NOT:__ Anahtar sunucusuna yüklediğiniz anahtarlar **SONSUZA** kadar
 
 # Android
 
-Android işletim sistemlerinde GnuPG kullanmak neredeyse diğer tüm imkanlardan daha kolay. [OpenKeychain](https://openkeychain.org) [F-Droid](https://f-droid.org] üzerinden indirilebilen özgür bir yazılım olarak kullanışlı arayüzü ve kolay kullanımı ile GnuPG işlemlerinin kolaylıkla yapılabilmesine ve anahtar yönetimine imkan sağlıyor.
+Android işletim sistemlerinde GnuPG kullanmak neredeyse diğer tüm imkanlardan daha kolay. [OpenKeychain](https://openkeychain.org) [F-Droid](https://f-droid.org) üzerinden indirilebilen özgür bir yazılım olarak kullanışlı arayüzü ve kolay kullanımı ile GnuPG işlemlerinin kolaylıkla yapılabilmesine ve anahtar yönetimine imkan sağlıyor.
 
-* Android mobil işletim sistemleri için [OpenKeychain](https://openkeychain.org) yazılımını [F-Droid](https://f-droid.org] reposundan veya özgür olmayan bir başka repodan indirerek telefonunuza kurun.
+* Android mobil işletim sistemleri için [OpenKeychain](https://openkeychain.org) yazılımını [F-Droid](https://f-droid.org) reposundan veya özgür olmayan bir başka repodan indirerek telefonunuza kurun.
 
 * OpenKeychain sizi şirin asmakilit karakteri ile karşılayacak ve anahtar kullanımı için seçenekler sunacaktır. Buradan "Anahtarımı oluştur" seçeneğini seçerek ilerleyin.
 
@@ -76,5 +76,3 @@ __ÖNEMLİ NOT:__ Anahtar sunucusuna yüklediğiniz anahtarlar **SONSUZA** kadar
 ![alt-text](openkeychain6.png)
 
 Tebrikler artık kullanılabilir bir GnuPG anahtarınız var! Artık hem e-postalarınızı hem de dosyalarınızı şifreleyebileceğiniz dünyaca güvenilen bir yazılımı kullanabilir konumdasınız. Bu bilgiyi çevrenizle paylaşın ve onların da kendi anahtarlarını üretip sizinle iletişime geçebilmesine yardımcı olun.
-
-
