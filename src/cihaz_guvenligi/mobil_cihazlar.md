@@ -37,16 +37,16 @@ Tavsiyemiz uygun bir cihaz alarak üzerinde GrapheneOS veya LineageOS android da
 Tavsiye edilen cihazlar:
 
 * **LinegaOS için**;
-	*[LG G3](https://wiki.lineageos.org/devices/d855) Türkiye'de kolaylıkla bulunabilen, temizi için biraz araştırma gerektiren ama zamanına göre çok iyi donanıma sahip bir cihazdır. LineageOS kurulumu rootlama gereğinden dolayı biraz baş ağrıtabilir ama fiyat/performansta çok başarılıdır.
-	*[Sony Xperia Z](https://wiki.lineageos.org/devices/yuga) Görece eski bir donanım olan Z Türkiye'de bolca ve ucuza bulunabiliyor. LineageOS kurulumu da çok kolay. Lakin donanım yaşını göstermekte ve cihazınızı sonuna kadar kullanıyorsanız sizi tatmin etmeyebilir.
-	*[Xiaomi Redmi 4(X)](https://wiki.lineageos.org/devices/santoni) Daha modern bir donanım olarak Redmi 4 performans isteyen kullanıcılar için iyi bir tercih olabilir.
+	* [LG G3](https://wiki.lineageos.org/devices/d855) Türkiye'de kolaylıkla bulunabilen, temizi için biraz araştırma gerektiren ama zamanına göre çok iyi donanıma sahip bir cihazdır. LineageOS kurulumu rootlama gereğinden dolayı biraz baş ağrıtabilir ama fiyat/performansta çok başarılıdır.
+	* [Sony Xperia Z](https://wiki.lineageos.org/devices/yuga) Görece eski bir donanım olan Z Türkiye'de bolca ve ucuza bulunabiliyor. LineageOS kurulumu da çok kolay. Lakin donanım yaşını göstermekte ve cihazınızı sonuna kadar kullanıyorsanız sizi tatmin etmeyebilir.
+	* [Xiaomi Redmi 4(X)](https://wiki.lineageos.org/devices/santoni) Daha modern bir donanım olarak Redmi 4 performans isteyen kullanıcılar için iyi bir tercih olabilir.
 
 * **GrapheneOS için**;
-	*[Pixel](https://grapheneos.org/#device-support) Google Pixel cihazların tamamına GraphenOS kurulabilmekte fakat uzun dönemli destek için Graphene 3 serisi cihazları önermekte.
+	* [Pixel](https://grapheneos.org/#device-support) Google Pixel cihazların tamamına GraphenOS kurulabilmekte fakat uzun dönemli destek için Graphene 3 serisi cihazları önermekte.
 
 ### Düşük risk
 
-Telefonunuzu kilitsiz öylece ortalıkta mı bırakıyorsunuz? O zaman ya başınıza gelecekleri hak ediyorsunuz ya da gerçekten taşınabilir cihazlarınızda hiç bir şey olmadığını düşünüyorsunuz. Ne yazık ki modern taşınabilir cihazlar İnternet'e bağlı oldukları ve kullanıldıkları sürece siz fark etmeseniz de çokça veri üretir ve kaydederler. Bu verilerden belki haberiniz yoktur ama pekala bilgili bir kişi -ki bu her bilgisayar sorunuzda aradığınız arkadaşınız bile olabilir- bu bilgilere ulaşmanın bir yolunu bilebilir. 
+Telefonunuzu kilitsiz öylece ortalıkta mı bırakıyorsunuz? O zaman ya başınıza gelecekleri hak ediyorsunuz ya da gerçekten taşınabilir cihazlarınızda hiç bir şey olmadığını düşünüyorsunuz. Ne yazık ki modern taşınabilir cihazlar İnternet'e bağlı oldukları ve kullanıldıkları sürece siz fark etmeseniz de çokça veri üretir ve kaydederler. Bu verilerden belki haberiniz yoktur ama pekala bilgili bir kişi -ki bu her bilgisayar sorunuzda aradığınız arkadaşınız bile olabilir- bu bilgilere ulaşmanın bir yolunu bilebilir.
 
 Bu sebeple riskinizin düşük olduğuna eminseniz ve yanıldığınız için pişman olmayacaksanız pekala herhangi bir telefon alıp sadece ekran kilidi kullanarak hayatınızı sürdürebilirsiniz.
 

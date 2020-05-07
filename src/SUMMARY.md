@@ -9,7 +9,7 @@
 - [Cihaz Güvenliği](cihaz_guvenligi/README.md)
   - [Yazılım Güvenliği](cihaz_guvenligi/yazilim_guvenligi.md)
   - [Cihaz Şifreleme](cihaz_guvenligi/cihaz_sifreleme.md)
-  - [Mobil Cihazlar](cihaz_guvenligi/mobile_cihazlar.md)
+  - [Mobil Cihazlar](cihaz_guvenligi/mobil_cihazlar.md)
 - [Yazışma Güvenliği](yazisma_guvenligi/README.md)
   - [Şifreli E-Posta](yazisma_guvenligi/openpgp.md)
    - [GnuPG Anahtar Üretimi](yazisma_guvenligi/gpg/gpg-anahtar-uretimi.md)
