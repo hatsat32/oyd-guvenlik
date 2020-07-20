@@ -88,8 +88,8 @@ Kurulum ve güncelleştirmemiz bittiğine göre artık tarayıcıyı kullanabili
 
 ## Tüm Trafiği Tor Ağından Geçirmek
 
-Öncelikle boş bir terminal açıp **"su"** komutunu yazarak **"Super User"** yetkisi kazanıp, daha sonra bu yetki ile tor ağını kuracağız.
-Şifrenizi giriniz ve ardından **"apt-get install tor"** yazıp "enter" tuşuna basıyoruz.
+Öncelikle boş bir terminal açıp **"su"** komutunu yazarak **"Super User" **yetkisi kazanıp, daha sonra bu yetki ile tor ağını kuracağız.
+Parolanızı giriniz ve ardından **"apt-get install tor"** yazıp "enter" tuşuna basıyoruz.
 
 ![alt-text](aptgetTor.png "Apt-get install tor")
 
