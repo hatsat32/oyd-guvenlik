@@ -1,6 +1,6 @@
 # Paperbackup ile Kağıda Anahtar Yedeği Basmak
 
-[Gnupg](gpg-anahtar-uretimi.md) ve [SSH](https://en.wikipedia.org/wiki/Secure_Shell) gibi asimetrik [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) anahtarları bilişim sistemlerine erişimde çok önemli bir yer kaplamaktadır. Bu bakımdan kullanıcıların bu anahtarlar ile şifreledikleri veya erişim imkanına sahip olduklara cihazlara bağımlılıkları oranında anahtarların da değeri artmaktadır. Bir anahtarın kaybı şifrelenmiş verilere erişimi neredeyse imkansız hale getirdiği gibi erişim imkanı kaybedilen uzak sunucuların yarattığı sorunlar da tatsız olabilmektedir. Bu bakımdan anahtarların sayısal yedeklerinin alınması ve güvende tutulması çok önemli. Bu bakımdan pek az düşünülse de **Kağıt** bu amaçla çok ideal bir ortam olabilmekte.
+[Gnupg](../gpg-anahtar-uretimi.md) ve [SSH](https://en.wikipedia.org/wiki/Secure_Shell) gibi asimetrik [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) anahtarları bilişim sistemlerine erişimde çok önemli bir yer kaplamaktadır. Bu bakımdan kullanıcıların bu anahtarlar ile şifreledikleri veya erişim imkanına sahip olduklara cihazlara bağımlılıkları oranında anahtarların da değeri artmaktadır. Bir anahtarın kaybı şifrelenmiş verilere erişimi neredeyse imkansız hale getirdiği gibi erişim imkanı kaybedilen uzak sunucuların yarattığı sorunlar da tatsız olabilmektedir. Bu bakımdan anahtarların sayısal yedeklerinin alınması ve güvende tutulması çok önemli. Bu bakımdan pek az düşünülse de **Kağıt** bu amaçla çok ideal bir ortam olabilmekte.
 
 ## Kağıdın avantajları
 
@@ -22,7 +22,7 @@
 
 Her python kodu gibi paperbackup da bir takıp bağımlılıklar içeriyor. İlk çalıştırdığınızda mutlaka bir bağımlılığın elinizde olmaması garanti gibi. Bu sebeple aşağıdaki komutu çalıştırarak muhtemel bağımlılıkları sisteminize indirip kurabilirsiniz.
 
-RPM tabanlı sistemler için: 
+RPM tabanlı sistemler için:
 `sudo yum install PyX enscript qrencode hashlib zbar`
 Debian için:
 `sudo apt-get update && sudo apt-get install PyX enscript qrencode hashlib zbar`
@@ -101,11 +101,11 @@ Paperbackup ona verdiğiniz isimle dosyayı bulunduğu dizine kaydedecektir.
 
 ### Okuma listesi ve benzer projeler
 
-https://github.com/tuxlifan/paperbackup
-http://ollydbg.de/Paperbak/
-https://github.com/Rupan/paperbak/
-https://git.teknik.io/scuti/paperback-cli
-https://github.com/colorsafe/colorsafe
-http://ronja.twibright.com/optar/
-http://www.jabberwocky.com/software/paperkey/
-https://github.com/4bitfocus/asc-key-to-qr-code
+* [https://github.com/tuxlifan/paperbackup]()
+* [http://ollydbg.de/Paperbak/]()
+* [https://github.com/Rupan/paperbak/]()
+* [https://git.teknik.io/scuti/paperback-cli]()
+* [https://github.com/colorsafe/colorsafe]()
+* [http://ronja.twibright.com/optar/]()
+* [http://www.jabberwocky.com/software/paperkey/]()
+* [https://github.com/4bitfocus/asc-key-to-qr-code]()

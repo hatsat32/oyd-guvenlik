@@ -9,13 +9,13 @@
 - [Cihaz Güvenliği](cihaz_guvenligi/README.md)
   - [Yazılım Güvenliği](cihaz_guvenligi/yazilim_guvenligi.md)
   - [Cihaz Şifreleme](cihaz_guvenligi/cihaz_sifreleme.md)
-  - [Mobil Cihazlar](cihaz_guvenligi/mobile_cihazlar.md)
+  - [Mobil Cihazlar](cihaz_guvenligi/mobil_cihazlar.md)
 - [Yazışma Güvenliği](yazisma_guvenligi/README.md)
   - [Şifreli E-Posta](yazisma_guvenligi/openpgp.md)
-   - [GnuPG Anahtar Üretimi](yazisma_guvenligi/gpg/gpg-anahtar-uretimi.md)
-   - [GnuPG Anahtarını Saklama](yazisma_guvenligi/gpg/anahtar-saklama.md)
-   - [Anahtarın Kağıt Yedeğini Almak](yazisma_guvenligi/gpg/paperbackup/paperbackup.md)
-   - [GnuPG ile E-posta Sifreleme](yazisma_guvenligi/gpg/eposta-sifreleme.md)
+    - [GnuPG Anahtar Üretimi](yazisma_guvenligi/gpg/gpg-anahtar-uretimi.md)
+    - [GnuPG Anahtarını Saklama](yazisma_guvenligi/gpg/anahtar-saklama.md)
+    - [Anahtarın Kağıt Yedeğini Almak](yazisma_guvenligi/gpg/paperbackup/paperbackup.md)
+    - [GnuPG ile E-posta Sifreleme](yazisma_guvenligi/gpg/eposta-sifreleme.md)
   - [Şifreli E-Posta Hizmetleri](yazisma_guvenligi/sifreli-eposta-hizmetleri.md)
   - [OTR İle Anlık Yazışma](yazisma_guvenligi/otr.md)
   - [OMEMO İle Anlık Yazışma](yazisma_guvenligi/omemo/omemo.md)
@@ -26,7 +26,7 @@
   - [Sertifikalar](ag_guvenligi/sertifikalar.md)
   - [StartTLS](ag_guvenligi/starttls.md)
   - [Tor](ag_guvenligi/tor.md)
-
+  - [Vpn](ag_guvenligi/vpn/vpn.md)
 ---
 
 [Kaynaklar](resources.md)

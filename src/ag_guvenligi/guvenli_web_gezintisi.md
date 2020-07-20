@@ -6,7 +6,7 @@ En bilindik dört tarayıcı, Firefox, Chrome, Internet Explorer ve Safari, yak�
 
 Bu dört tarayıcı da [[browser-score-card]] düşük puanlar aldı. Yine de, bu tarayıcılar aşağıda belirttiğimiz belli başlı eklentiler kullanılarak iyileştirilebilir.
 
-Alternatif olarak, Firefox'un, Tor Projesi tarafından daha güvenli ve anonim olmak için özelliştirilmiş versiyonu olan [[Tor Tarayıcısı => https://www.torproject.org/download/download-easy.html.en]]'nı kullanabilirsiniz.
+Alternatif olarak, Firefox'un, Tor Projesi tarafından daha güvenli ve anonim olmak için özelliştirilmiş versiyonu olan [Tor Tarayıcısı](https://www.torproject.org/download/download-easy.html.en)'nı kullanabilirsiniz.
 
 ## Ayarlarınızı Yapın
 
@@ -35,7 +35,7 @@ Flash, Adobe tarafından sunulan, pek çok güvenlik problemine sebep olan bir e
 
 ### Varsayılan arama motorunuzu değiştirin
 
-Ayarlarınızı yaparken, varsayılan arama motorunuzu [[duckduckgo.com => https://duckduckgo.com]] olarak ayarlamayı unutmayın. Riseup arama motoru olarak DuckDuckGo'yu öneriyor. [[Masaüstü => https://duck.co/help/desktop/adding-duckduckgo-to-your-browser]] veya [[mobil => https://duck.co/help/mobile]] tarayıcılar için kurulum talimatlarını inceleyin.
+Ayarlarınızı yaparken, varsayılan arama motorunuzu [duckduckgo.com](https://duckduckgo.com) olarak ayarlamayı unutmayın. Riseup arama motoru olarak DuckDuckGo'yu öneriyor. [Masaüstü](https://duck.co/help/desktop/adding-duckduckgo-to-your-browser) veya [mobil](https://duck.co/help/mobile) tarayıcılar için kurulum talimatlarını inceleyin.
 
 ## Tarayıcı eklentileri
 

@@ -2,11 +2,11 @@
 
 ## OMEMO’ya Giriş
 
-[OMEMO](https://conversations.im/omemo/) mesajlaşmanın baştan sona(end-to-end) şifrelenmesini sağlar.[OTR](mesaj_guvenligi/otr.md) ile pratik olarak ayrılan modern ihtiyaçlara yönelik özellikleri mevcuttur. 
+[OMEMO](https://conversations.im/omemo/) mesajlaşmanın baştan sona(end-to-end) şifrelenmesini sağlar.[OTR](../otr.md) ile pratik olarak ayrılan modern ihtiyaçlara yönelik özellikleri mevcuttur. 
 
 * __Şifreleme__ Bütün şifreleme cihazınızda gerçekleşir. Sohbet güvenli olmayan ağlar ve hizmet sağlayıcılar üzerinden yapılsa bile başkaları tarafından okunması engellenir.
 * __Doğrulama__ Konuştuğunuz kişilerin cihazlarının aynı cihaz olduğunu doğrulama.
-* __Perfect forward secrecy (mutlak gizlilik)__ Eğer özel anahtarlarınızın kontrolünü kaybederseniz önceki herhangi bir sohbetiniz ifşa olmaz. 
+* __Perfect forward secrecy (mutlak gizlilik)__ Eğer özel anahtarlarınızın kontrolünü kaybederseniz önceki herhangi bir sohbetiniz ifşa olmaz.
 * __İnkar Edilebilirlik__ Gönderdiğiniz mesajlar sizin tarafınızdan gönderildiğine ilişkin üçüncü kişilerce anlaşılabilecek bir emare taşımaz. Herhangi biri sohbetin bitimi ertesinde mesajları sizden gelmiş gibi gösterebilir. Bununla birlikte, sohbet sırasında sizin iletişimde olduğunuz kişi gördüğü mesajların doğrulanmış ve değiştirilmemiş olduğundan emindir.
 
 ## OTR ile OMEMO Farkı
@@ -89,5 +89,3 @@ Daha sonra ilk mesajınız ile karşı tarafın omemo anahtarı sunucudan çekil
 ![alt-text](omemo6.png)
 
 Sertifika simgesine tıklayarak tüm anahtarlara olan güveninizi işaretleyebilir anahtarları silebilirsiniz. Anahtarları doğrulamak için konuştuğunuz kişi ile ikinci farklı bir kanaldan tercihen sesli iletişim ile karşılaştırma yapabilir veya yan yana geleceğiniz bir anı bekleyebilirsiniz. Mümkün olduğu sürece **asla** körlemesine anahtarlara güvenerek yazışma yapmayın.
-
-

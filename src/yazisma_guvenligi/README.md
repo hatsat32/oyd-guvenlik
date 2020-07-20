@@ -1,6 +1,6 @@
 # Yazışma Güvenliği
 
-__Yazışma Güvenliği__ mesajlarınızın amaçlanan alıcısına gönderilirken sizin cihazınızda şifrelendiğinden ve sadece alısının okuyabileceğinden emin olmaktır. Her ne kadar [ağ güvenliği](../network_security/README.md) ve [cihaz güvenliği](../device_security/README.md) önemli olsalar da, mesaj şifrelemek çoğu durumda gereklidir:
+__Yazışma Güvenliği__ mesajlarınızın amaçlanan alıcısına gönderilirken sizin cihazınızda şifrelendiğinden ve sadece alısının okuyabileceğinden emin olmaktır. Her ne kadar [ağ güvenliği](../ag_guvenligi/) ve [cihaz güvenliği](../cihaz_guvenligi/) önemli olsalar da, mesaj şifrelemek çoğu durumda gereklidir:
 
 * __Gizlilik__: Mesajları şifrelemek, mesajın sadece amaçlanan taraflarca okunabileceğinden emin olmanın tek yoludur.
 * __Doğrulama__: Mesaj şifrelemek, mesajlaştığınız kişinin kimliğinden emin olmanın tek yoludur.

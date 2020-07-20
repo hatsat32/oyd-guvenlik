@@ -4,7 +4,7 @@
 
 <https://www.metrics.torproject.org> adresinden Tor ağ noktalarnı araştırabilir, en performanslı çalışanlarını inceleyebilirsiniz. (Muhtemelen yazının henüz bu aşamasındayken verdiğimiz linke giremeyeceksiniz. Çünkü ülkemizde Tor ağı ve Tor ağını tanıtan proje sitesi <https://www.torproject.org> yaklaşık olarak 19 Aralık 2016 tarihinden beridir yasaklı.)
 
-## Tor Ağı Nasıl Çalışır ? 
+## Tor Ağı Nasıl Çalışır ?
 
 Tor ağının başlıca amacı; kullanıcılarının internet üzerindeki kimliklerini ve aktivitelerini ağ trafiğini rastgele bağlantı noktaları üzerinden sektirerek her türlü otorite gözetiminden korumaktır.
 
@@ -14,7 +14,7 @@ Her bağlantı noktasını bir kaldırım taşı olarak düşünürseniz. Tor a�
 
 Buraya kadar genel işleyişi anlayıp benimsediyseniz yavaş yavaş tarayıcı kurulumuna geçebiliriz.
 
-## Tor Browser 
+## Tor Browser
 
 Öncelikle ehemmiyetle belirtmeliyiz ki Tor Browser bilgisayarınızın tüm trafiğini Tor ağı üzerinden yollamaz.
 Örnekle açıklamak gerekirse; Tor Browser üzerinden bağlanıp, arkaplanda "X" bir mesajlaşma programı kullanıyorsanız. Üzgünüz ki "X" programı üzerinden giden trafikte anonim değilsiniz.
@@ -23,7 +23,7 @@ Buraya kadar genel işleyişi anlayıp benimsediyseniz yavaş yavaş tarayıcı 
 
 Tor browser, Mozilla Firefox'un modifikasyona uğratılmış bir halidir.
 
-Daha sonradan kurulumu yarıda kesip bilgi vermemek adına şimdiden açıklama gereği hissediyoruz. Ülkemizde Tor ağı engellenmiş durumda olduğundan  "Bridges"(köprüler) üzerinden bağlanılabiliyor. 
+Daha sonradan kurulumu yarıda kesip bilgi vermemek adına şimdiden açıklama gereği hissediyoruz. Ülkemizde Tor ağı engellenmiş durumda olduğundan  "Bridges"(köprüler) üzerinden bağlanılabiliyor.
 
 Bütün gönüllü Tor ağ noktalarının IP adresleri internette açık bir şekilde listelenmektedir. Böylelikle otoriteler(kurumlar, kuruluşlar veya devletler) bu IP adreslerini blokladıklarında tor ağına giriş yapamazsınız. Tabiki bağlanmak imkansız değil. Bu köprüler Tor Project'in web sitesinde bahsedildiği üzere, ana Tor dizininde bulunmazlar. Halka açık olarak yayınlanan bir liste bulunmadığından otoritelerin bütün bu IP adreslerini bulup engellemesi neredeyse imkansızdır.
 
@@ -36,11 +36,11 @@ Size uygun olan dosyayı indiriniz. Şu anda biz, Debian x86_64 kullandığımı
 ### GNU/Linux
 *Türkçe (tr) 64-bit*
 
-*tor-browser-linux64-8.5.5_tr.tar.xz*
+`tor-browser-linux64-8.5.5_tr.tar.xz`
 
 dosyasını indiriyoruz.
 
-Ardından indirilen dosyanın bulunduğu dizine gidip sıkıştırılmış dosyayı aynı dizinde farklı bir klasöre çıkartıyoruz. 
+Ardından indirilen dosyanın bulunduğu dizine gidip sıkıştırılmış dosyayı aynı dizinde farklı bir klasöre çıkartıyoruz.
 
 Terminal kullanıyorsanız bunu
 
@@ -66,24 +66,24 @@ Herşeyi düzgünce yaptığınıza eminseniz nihayetinde "Bağlan" tuşuna basa
 
 ![alt-text](Browser-kurulum3.png "Kurulum 3")
 
-Tarayıcınız açılır açılmaz güncel olmadığı ile alakalı bir uyarı alabilirsiniz. Endişelenmeyin, sol üstte bulunan Tor butonundan "Tor Browser Güncelleme Denetimi" seçeneğini işaretleyerek en güncel sürüme yükseltebilirsiniz. 
+Tarayıcınız açılır açılmaz güncel olmadığı ile alakalı bir uyarı alabilirsiniz. Endişelenmeyin, sol üstte bulunan Tor butonundan "Tor Browser Güncelleme Denetimi" seçeneğini işaretleyerek en güncel sürüme yükseltebilirsiniz.
 
 ![alt-text](Browser-kurulum4.png "Kurulum 4")
 
 Kurulum ve güncelleştirmemiz bittiğine göre artık tarayıcıyı kullanabilirsiniz.
 
-*!...Unutmayın sadece tarayıcı üzerinde yaptığınız işlemlerde Tor ağına bağlısınız...!*
+**!...Unutmayın sadece tarayıcı üzerinde yaptığınız işlemlerde Tor ağına bağlısınız...!**
 
-Uyarılar:
-1- Tor Browser'ı tam ekran kullanmayın.
+**Uyarılar:**
+1. Tor Browser'ı tam ekran kullanmayın.
 
-2- Tor Browser'ı kendi dilinizde kullanmayın. Eğer biliyorsanız İngilizce veya başka dillerde kullanabilirsiniz.
+2. Tor Browser'ı kendi dilinizde kullanmayın. Eğer biliyorsanız İngilizce veya başka dillerde kullanabilirsiniz.
 
-3- User-Agent'ınızı değiştirecek güvenli pluginler kullanabilirsiniz.
+3. User-Agent'ınızı değiştirecek güvenli pluginler kullanabilirsiniz.
 
-4- Sistem saatinizin ülkenizden ileri veya geri olmasına dikkat edebilirsiniz.
+4. Sistem saatinizin ülkenizden ileri veya geri olmasına dikkat edebilirsiniz.
 
-5- Herhangi bir web sitesinin sizden alabileceği teknik bilgileri  <http://ipleak.com/full-report/> adresine girerek bakabilirsiniz.
+5. Herhangi bir web sitesinin sizden alabileceği teknik bilgileri  <http://ipleak.com/full-report/> adresine girerek bakabilirsiniz.
 
 
 ## Tüm Trafiği Tor Ağından Geçirmek
@@ -136,14 +136,14 @@ Açıldığında karşınıza yığınla yazı geldiğini göreceksiniz. Klavyen
 ![alt-text](editTorrc.png "Torrc dosyasının editlenmesi")
 
 	UseBridges1
-	
+
 	Bridge obfs4 Kendi Bridge adresleriniz
-	
+
 	ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
 
- 
+
  **CTRL-X** tuşlarına basarak dosyadan çıkma işlemini başlatın ve **"Save Modified Buffer ?"** sorusuna **"Y"** ile cevap verdikten sonra "enter" tuşuna basınız.
- 
+
  Daha sonra boş bir terminalde **"service tor status"** yazarak tor servislerinin **çalışmadığına** emin olunuz.
 
 Çalışıyorsa yeşil olarak "Active",
@@ -151,11 +151,11 @@ Açıldığında karşınıza yığınla yazı geldiğini göreceksiniz. Klavyen
 
 Eğer çalışıyorsa **service tor stop**  yazarak durdurabilirsiniz.
 
-Tor bağlantımızı ve köprülerimizi kontrol etmek için terminal satırına **"tor"** yazıp enter tuşuna basıyoruz ve 
+Tor bağlantımızı ve köprülerimizi kontrol etmek için terminal satırına **"tor"** yazıp enter tuşuna basıyoruz ve
 
 **Tor has successfully opened a circuit. Looks like client functionality is working.**
 
-**bootstrapped %100** 
+**bootstrapped %100**
 
 Yazısını gördüğünüzde köprülerimiz tam ve fonksiyonel olarak çalışıyor demektir.
 
@@ -163,7 +163,7 @@ Yazısını gördüğünüzde köprülerimiz tam ve fonksiyonel olarak çalış�
 
 Şimdi artık bilgisayarınızda **9050**.porttan tor bağlantısı yapabiliyorsunuz. Fakat halen tam olarak hazır değilsiniz. Tüm bilgisayarınızın bağlantısını bu port üzerinden yönlendirmeniz gerekecek.
 
-Öncelikle şu adresteki bash scriptini indiriniz. [Github](https://github.com/raffaele-forte/backbox-anonymous/blob/master/usr/sbin/anonymous) 
+Öncelikle şu adresteki bash scriptini indiriniz. [Github](https://github.com/raffaele-forte/backbox-anonymous/blob/master/usr/sbin/anonymous)
 
 anonymous.sh isminde bir dosyamız var artık bilgisayarımızda. Terminalden **chmod 777 anonymous.sh** komutuyla izinlerini düzenliyoruz.
 
@@ -187,7 +187,7 @@ Yani şu şekilde olmalı:
 
 CTRL-X kombinasyonu ile dosyadan çıkmak istediğimizi belirtip "Y" ile de kaydetmek istediğimizi onaylayıp terminale dönüyoruz.
 
-Şimdi macchange ver bleachbit e ihtiyacımız olacak. 
+Şimdi macchange ver bleachbit e ihtiyacımız olacak.
 
 **apt-get install bleachbit**
 
@@ -201,7 +201,7 @@ Terminalimizi açıyoruz. Önce tor servisini başlatıyoruz.
 
 **service tor start**
 
-Daha sonra 
+Daha sonra
 
 **anonymous.sh start**
 
@@ -256,7 +256,7 @@ Karşınıza ilk olarak böyle bir ekran geldiyse herşeyi doğru yapmışsını
 Bu gördüğümüz ekranda gerçek zamanlı olarak tor ağındaki Download ve Uploadlarınızı gözlemleyebilirsiniz. Ayrıca nyx ve tor ağının size teknik olarak çıkaracağı uyarılar ve hatalar da bu ekranda görüntülenir.
 
 
-Klavyenizden sağ ok tuşuna basarak **NYX** ekranları arasında geçiş yapabilirsiniz. 
+Klavyenizden sağ ok tuşuna basarak **NYX** ekranları arasında geçiş yapabilirsiniz.
 
 
 ![alt-text](nyx_circuits.png  "Nyx Açılış")
@@ -285,12 +285,12 @@ Bütün bunlar bir yanda dursun;
 
 Ağ dinleme(zehirleme) saldırıları olarak bilinen MITM saldırıları ile tor ağında giden parolalarınız vb. gizli kalması gereken bilgileriniz gittiği güvenli sandığınız o yolda başkaları tarafından rahatlıkla ele geçirilebilir. Burada toplum yararına olarak yapılan her projedeki gibi sistemin işlemesi için en büyük etkenin **güven** olduğunu görüyoruz. (siz yine de tor ağından kişisel hesaplarınıza girmeyiniz.)
 
-Bu riskleri olabildiğince minimuma indirgemek için; "**Tor over VPN**" olarak tanımlanan VPN üzerinden Tor ağına girmek gibi yöntemler kullanılmıştır. Tabiki bu sefer de herhangi bir VPN otoritesi IP adresinizi açık olarak görebilir. Fakat Tor ağındaki riskleri minimuma indirgemiş olursunuz. Bu konuda da tamamiyle kullanmış olduğunuz VPN otoritesinin bilgilerinizi saklayıp satmadığından bir şekilde emin olmanız gerekmektedir. 
+Bu riskleri olabildiğince minimuma indirgemek için; "**Tor over VPN**" olarak tanımlanan VPN üzerinden Tor ağına girmek gibi yöntemler kullanılmıştır. Tabiki bu sefer de herhangi bir VPN otoritesi IP adresinizi açık olarak görebilir. Fakat Tor ağındaki riskleri minimuma indirgemiş olursunuz. Bu konuda da tamamiyle kullanmış olduğunuz VPN otoritesinin bilgilerinizi saklayıp satmadığından bir şekilde emin olmanız gerekmektedir.
 
 Veya daha da güvenlisi kendi sunucunuzu kiralayıp, üzerine bir OpenVPN servisi kurarak kendi VPN'inizi oluşturup onun üzerinden Tor ağına çıkabilirsiniz.
 
 ## Tor Kullanarak Açığa Çıkan Vakalar
 
-Harvard üniversitesinde okuyan bir genç, vizelerine çalışmadığı için erteletmek amacıyla okuluna tor ağı üzerinden bomba tehdidi içeren bir mesaj yollar. Fakat yakalanır. 
+Harvard üniversitesinde okuyan bir genç, vizelerine çalışmadığı için erteletmek amacıyla okuluna tor ağı üzerinden bomba tehdidi içeren bir mesaj yollar. Fakat yakalanır.
 
-Bunun nedeni ise aslında çok basit. Servis sağlayıcılarınız veya internete bağlandığınız kafe, üniversite vb ortamlarda hangi saatte tor ağına bağlanıldığını rahatlıkla görebilir. Fakat tor ağında neler yapıldığını göremez. Söz konusu olan genç, tor ağına okulunun wifi erişiminden bağlandığı ve gelen bomba tehdidi de tor ağından geldiği için mesajın atıldığı tarihte ve saatte okuldan sadece "1" bilgisayardan tor ağına bağlanıldığı fark edilir. Yapılan incelemelerde mesajın söz konusu bilgisayardan atıldığı tespit edilir ve kamera görüntülerinden tarih ve saat baz alınarak kimin tarafından kullanıldığı öğrenilir ve genç, cezaya çarptırılır. 
+Bunun nedeni ise aslında çok basit. Servis sağlayıcılarınız veya internete bağlandığınız kafe, üniversite vb ortamlarda hangi saatte tor ağına bağlanıldığını rahatlıkla görebilir. Fakat tor ağında neler yapıldığını göremez. Söz konusu olan genç, tor ağına okulunun wifi erişiminden bağlandığı ve gelen bomba tehdidi de tor ağından geldiği için mesajın atıldığı tarihte ve saatte okuldan sadece "1" bilgisayardan tor ağına bağlanıldığı fark edilir. Yapılan incelemelerde mesajın söz konusu bilgisayardan atıldığı tespit edilir ve kamera görüntülerinden tarih ve saat baz alınarak kimin tarafından kullanıldığı öğrenilir ve genç, cezaya çarptırılır.

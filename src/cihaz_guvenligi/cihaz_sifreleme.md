@@ -8,7 +8,7 @@ Cihazınız şifreli değil iken çalınması kaybolması durumunda cihazınız�
 
 ## Cihazlar nasıl şifrelenir
 
-Tam disk şifreleme (full disk encryption) bazı mobil cihazlarda olağan olarak gelmekte olsa da dizüstü ile masaüstü bilgisayarlarda ve çoğu cep telefonunda elle ayarlanmalıdır. 
+Tam disk şifreleme (full disk encryption) bazı mobil cihazlarda olağan olarak gelmekte olsa da dizüstü ile masaüstü bilgisayarlarda ve çoğu cep telefonunda elle ayarlanmalıdır.
 
 Bilgisayar Kurulumları:
 
@@ -29,7 +29,7 @@ Cep Telefonu Kurulumları:
 
 ## Cihaz şifrelemenin zorlukları
 
-**Sınırları:** Cihaz şifreleme her derde deva değildir! Eğer [parolalarınız](../human_security/passwords.md) yeterince güçlü değil ise bir bilgisayar rahatlıkla parolanızı tahmin edebilir ve cihazınıza erişilebilir. Ayrıca cihaz şifreleme virüslere ve kötücül yazılımlara karşı hiç bir koruma sağlamaz. Eğer verileriniz bir bulut hizmetine yedeklendiyse ve bu hizmeti sağlayan sunucular açığa çıkar veya devletle işbirliği yaparsalarsa cihaz şifrelemesi verilerinizi korumayacaktır (kullanılan hizmet özellikle uçtan uca şifreleme desteklemiyorsa).
+**Sınırları:** Cihaz şifreleme her derde deva değildir! Eğer [parolalarınız](../beseri_guvenlik/parolalar.html) yeterince güçlü değil ise bir bilgisayar rahatlıkla parolanızı tahmin edebilir ve cihazınıza erişilebilir. Ayrıca cihaz şifreleme virüslere ve kötücül yazılımlara karşı hiç bir koruma sağlamaz. Eğer verileriniz bir bulut hizmetine yedeklendiyse ve bu hizmeti sağlayan sunucular açığa çıkar veya devletle işbirliği yaparsalarsa cihaz şifrelemesi verilerinizi korumayacaktır (kullanılan hizmet özellikle uçtan uca şifreleme desteklemiyorsa).
 
 **Yetkilendirme etkinleştirilmelidir** Cihaz şifrelemesi, yetkilendirme zorunlu değilse etkili değildir. Örneğin dizüstünü bilgisayarınıza giriş yapmanız veya cep telefonunuzun ekran kilidini bir PIN ile korumanız gibi...
 

@@ -49,9 +49,9 @@ kurulumunuza bağlı olarak size anahtarınızın parolasını soracaktır. Paro
 
 ### Android
 
-Android'de GPG istemcisi [OpenKeychain](https://www.openkeychain.org/) kullanılmakta. 
+Android'de GPG istemcisi [OpenKeychain](https://www.openkeychain.org/) kullanılmakta.
 
-* Ana ekranda size ait gizli anahtarlarınız ile tüm diğer açık anahtarlarınız listeleinir. 
+* Ana ekranda size ait gizli anahtarlarınız ile tüm diğer açık anahtarlarınız listeleinir.
 
 * Gizli anahtarınızın üstüne tıklayıp sağ üst köşeden menüyü açıp backup/yedekle seçeneğine tıklayın.
 
@@ -73,7 +73,7 @@ Anahtarınızı çok çeşitli şekillerde saklamanız mümkündür;
 
 Sabit diskler, usb bellek ve flash kartlar zamanla veri bozulmasına uğrayabilir. Sabit diskler bu bakımdan hareketli parçaları sebebi ile çok daha risk altındadır. Bu ortamları kullanırken dikkatli olunması ve iyi bir değerlendirme yapılması önerilir.
 
-Kağıt bu açıdan akıllara son gelen seçenek olsa da insanlık tarihinin en dayanıklı kayıt ortamı olarak hala tartışmasız bulunmaktadır. Bu sebeple anahtarınızın bir yedeğinin kağıda basılmış olarak bir yerde saklanması fiyat/kafa rahatlığında tartışmasızdır. Anahtarınızın --armour yani base64 encode halini bir kağıda dümdüz basıp bir kenara kaldırabileceğiniz gibi geri dönüşümü karekodlar aracılığı ile kolaylaştırmak için [paperbackup](https://github.com/intra2net/paperbackup) gibi bir araçtan da faydalanabilirsiniz. [Kağıt yedek rehberimiz size bu konuda yardımcı olabilir.](yazisma_guvenligi/gpg/gpg-kurulumu/paperbackup/paperbackup.md) Yedeklerinizi katlamadan su geçirmez bir şekilde paketleyip ışık görmeyen bir yerde saklamanız önerilir.
+Kağıt bu açıdan akıllara son gelen seçenek olsa da insanlık tarihinin en dayanıklı kayıt ortamı olarak hala tartışmasız bulunmaktadır. Bu sebeple anahtarınızın bir yedeğinin kağıda basılmış olarak bir yerde saklanması fiyat/kafa rahatlığında tartışmasızdır. Anahtarınızın --armour yani base64 encode halini bir kağıda dümdüz basıp bir kenara kaldırabileceğiniz gibi geri dönüşümü karekodlar aracılığı ile kolaylaştırmak için [paperbackup](https://github.com/intra2net/paperbackup) gibi bir araçtan da faydalanabilirsiniz. [Kağıt yedek rehberimiz size bu konuda yardımcı olabilir.](paperbackup/paperbackup.md) Yedeklerinizi katlamadan su geçirmez bir şekilde paketleyip ışık görmeyen bir yerde saklamanız önerilir.
 
 ## Kıyamet!
 
@@ -81,7 +81,7 @@ Kağıt bu açıdan akıllara son gelen seçenek olsa da insanlık tarihinin en 
 
 İptal sertifikasını oluşturmak için GNU/Linux'ta uçbirim aracılığı ile şu komutu kullanabilirsiniz.
 
-* `gpg --generate-revocation [anahtar kimliği veya e-posta adresi] > [sertifikanın kaydedileceği dizin] 
+* `gpg --generate-revocation [anahtar kimliği veya e-posta adresi] > [sertifikanın kaydedileceği dizin]
 
 * GPG'ye ciddiyetinizi belirttikten sonra iptal için bir gerekçe girip dilerseniz yazılı bir gerekçe ekleyip sertifikayı üretim için onaylayın.
 

@@ -14,7 +14,7 @@ Pek çok mahremiyet yanlısı e-posta sağlayıcısı, arayüzleri aracılığı
 
 * Bir sebepten e-postalar veya e-posta hesabı kaybedilirse, şifreli olduklarından dolayı ifşa olmaları mümkün olmayacaktır.
 
-* E-posta hizmet sağlayıcısı bir devlet tarafından kullanıcıları hakkında bilgi vermeye zorlanırsa şirket şifrelenmiş veriden ve üstveriden başka teslim edebileceği bir şey olmayacaktır. 
+* E-posta hizmet sağlayıcısı bir devlet tarafından kullanıcıları hakkında bilgi vermeye zorlanırsa şirket şifrelenmiş veriden ve üstveriden başka teslim edebileceği bir şey olmayacaktır.
 
 İki de düşünülmesi gereken zararı bulunmaktadır;
 
@@ -39,7 +39,7 @@ Uçtan uca şifreli e-posta hizmeti veren şirketler her kullanıcısı için ü
 
 * Devletlerden gelen taleplere şirketlerin sağlayabileceği sadece üstveri ve anahtarın şifreli hali olmaktadır.
 
-Her ne kadar anahtarın üretimi ve hizmetin kullanımı için gereken yazılımların "özgür" ve tarayıcıda yerel olarak çalıştığı söylense de her giriş yaptığınızda tayacınıza yüklenen javascript kodunun doğruluğunu denetleme imkanının olmayışı ve her halukarda şifreli de olsa gizli anahtarınızın şirketin sunucusuna yüklenmesi [bruteforce](...) saldırılara imkan vermesi tatsız sonuçlardır. Sayılan sebepler ile belirli bir güvenin hizmet sağlayana aktarıldığı ve bu **güvenin haksız çıkması** ihtimalinin değerlendirilmesi önemlidir.
+Her ne kadar anahtarın üretimi ve hizmetin kullanımı için gereken yazılımların "özgür" ve tarayıcıda yerel olarak çalıştığı söylense de her giriş yaptığınızda tayacınıza yüklenen javascript kodunun doğruluğunu denetleme imkanının olmayışı ve her halukarda şifreli de olsa gizli anahtarınızın şirketin sunucusuna yüklenmesi [bruteforce](https://en.wikipedia.org/wiki/Brute-force_attack) saldırılara imkan vermesi tatsız sonuçlardır. Sayılan sebepler ile belirli bir güvenin hizmet sağlayana aktarıldığı ve bu **güvenin haksız çıkması** ihtimalinin değerlendirilmesi önemlidir.
 
 Uçtan uca şifreli e-posta hizmeti veren en tanınmış iki isim [Tutanota](https://tutanota.com) ve [Protonmail](https://protonmail.com) idir. Benzer hizmetler vermelerine rağmen bu amaçla kullandıkları teknolojiler ve yaklaşımlar bir hayli farklıdır.
 
@@ -81,4 +81,4 @@ Aynı zamanda SMTP ve POP3 gibi federatif e-posta protokolleri iki hizmet taraf�
 
 Şifreli e-postayı bir hizmet olarak almak tercih sayılabilir. Kendi sunucunuzu ile e-posta işletmek ve GPG kullanmak hiç bu kadar kolay olmamıştı. Hali ile şifreli yazışmak, bunu güvenli şekilde yapmak ve anahtarınızı kendi elinizde tutmanın güvenini hissetmek için hala en iyi seçenek GPG'yi kendi yerel cihazınızda tercih ettiğiniz güvenilir bir e-posta hizmet sağlayıcı ile kullanmaktır.
 
-[GPG anahtarı oluşturmak ve kullanmak için rehberimizden yararlanabilirsiniz.](https://guvenlik.oyd.org.tr/yazisma_guvenligi/openpgp.html)
+[GPG anahtarı oluşturmak ve kullanmak için rehberimizden yararlanabilirsiniz.](../yazisma_guvenligi/openpgp.md)
