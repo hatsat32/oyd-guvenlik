@@ -142,29 +142,62 @@ VPN bağlantısı genellikle sorunsuz şekilde kurulu kalır. Fakat ağ sorunlar
 
 GNU/Linux işletim sisteminde firewall kuralları ile cihazınızın İnternet bağlantısını VPN bağlantısına sınırlandırmanız gereklidir. Bunun için sisteminizde kurulu olan dağıtıma bağlı olarak çeşitli imkanlar mümkündür.
 
-#### Iptables
+#### UFW
 
-Bir uçbirim çalıştırarak aşağıdaki komutları sırası ile belirtilen yerlere VPN sunucunuzun bilinen giriş IP adresini ekleyerek çalıştırın çalıştırın:
+Uncomplicated Firewall GNU/Linux dağıtımlarda firewall ayarlarını yapılandırmak için kullanılan
+ grafik arayüzü de bulunan bir yazılım. VPN kurulumunuzun bilgisayarınızdan dışarı tek bağlantı olması içn aşağıdaki yönergeyi takip edebilirsiniz.
 
-`sudo iptables -A INPUT -i lo -j ACCEPT`
-`sudo iptables-A INPUT -s 255.255.255.255/32 -j ACCEPT`
-`sudo iptables-A INPUT -s 192.168.0.0/16 -d 192.168.0.0/16 -j ACCEPT`
-`sudo iptables-A INPUT -s 10.0.0.0/8 -d 10.0.0.0/8 -j ACCEPT`
-`sudo iptables-A INPUT -s 172.16.0.0/12 -d 172.16.0.0/12 -j ACCEPT`
-`sudo iptables-A INPUT -p icmp -m icmp --icmp-type 8 -j ACCEPT`
-`sudo iptables-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT`
-`sudo iptables-A INPUT -i tun+ -j ACCEPT`
-`sudo iptables-A INPUT -j DROP`
-`sudo iptables-A FORWARD -i tun+ -j ACCEPT`
-`sudo iptables-A FORWARD -j DROP`
-`sudo iptables -A OUTPUT -d **[VPN SUNUCUSU IP ADRESİ]** -j ACCEPT`
-`[üstteki satırı diğer sunucular için tekrar edin]`
+* IPv6 kullanımı kapatın
 
-[Bu bölüme katkı verebilirsiniz](https://git.oyd.org.tr/oyd/guvenlik)
+IPv6 kullanımını kapatmanız VPN ayarlarınız açısından tek bir yöne odaklanmanız açısından kolaylık sağlar. Bunun için UFW'nin ayar dosyasında aşağıdaki değişikliği yapın:
 
-#### ufw
+`sudo nano /etc/default/ufw` Komutu ile editörde ayar dosyasını açın
 
-[Bu bölüme katkı verebilirsiniz](https://git.oyd.org.tr/oyd/guvenlik)
+IPV6=yes parametresini IPV6=no şeklinde değiştirip, CTRL-X ile kaydederek çıkın.
+
+* UFW'yi devredışı bırakın
+
+Ayarlarını yapacağımız UFW'yi devredışı bırakmak için aşağıdaki komutu çalıştırın:
+
+`sudo ufw disable`
+
+* Yerel ağ trafiğine izin verin
+
+Yerel ağ trafiği cihazınızın bağlı olduğu yerel ağ dahilindeki cihazlarla iletişiminiz için gereklidir. Şayet böyle bir ihtiyacınız olmadığını düşünüyorsanız bu aşamayı atlaybilirsiniz lakin neredeyse her bilgisayar kullanımı bu iletişime ihtiyaç duyduğundan aşağıdaki şekilde yerel ağ bağlantılarına izin vermek faydalı olacaktır.
+
+`sudo ufw allow in to 10.0.2.0/24`
+`sudo ufw allow in to 192.168.0.0/16`
+`sudo ufw allow out to 10.0.2.0/24`
+`sudo ufw allow out to 192.168.0.0/16`
+
+* Tüm bağlantıları reddedin
+
+Firewall ayarının temelinde her bağlantıyı baştan reddetmek ve sadece özellikle belirtilmiş bağlantıları kabul etmek bulunuyor. UFW'nin her türlü bağlantıyı reddetmesi için aşağıdaki komutu çalıştırın:
+
+`sudo ufw default deny outgoing`
+`sudo ufw default deny incoming`
+
+* VPN sunucunuza izin verin
+
+Bu noktada bilgisayarınız yerel ağ dışında hiç bir İnternet bağlantısına izin vermeyecek durumda olmalıdır. VPN sunucunuza bağlanmak için sunucunun giriş adresine UFW'de istisna tanımanız gerekli. Bunun için VPN sunucunuzun IP adresini öğrenmelisiniz. Bu bilgiye Openvpn ayar dosyasını açarak ulaşabilirsiniz. IP adresini öğrendikten sonra aşağıdaki komut ile gerekli istisnayı tanıyın:
+
+`sudo ufw allow out to [sunucu IP adresi]`
+
+* Tüm trafiği VPN'e yönlendirin
+
+Aşağıdaki komut ile cihazınızdaki tüm bağlantıları VPN'e yönlendirebilirsiniz:
+
+`sudo ufw allow out on tun0 from any to any`
+
+* Gerekli ise İnternet'ten size ulaşılmasına izin verin.
+
+Eğer İnternet üzerinden cihazınıza ulaşılması gerekli ise VPN bağlantısı üzerinden gelen bu taleplere aşağıdaki komut ile izin verebilirsiniz:
+
+`sudo ufw allow in on tun0 from any to any`
+
+* UFW'yi çalıştırın
+
+`sudo ufw enable`
 
 ### Android
 
