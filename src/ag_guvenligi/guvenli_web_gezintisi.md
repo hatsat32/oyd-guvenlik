@@ -8,34 +8,46 @@ Bu dört tarayıcı da [[browser-score-card]] düşük puanlar aldı. Yine de, b
 
 Alternatif olarak, Firefox'un, Tor Projesi tarafından daha güvenli ve anonim olmak için özelliştirilmiş versiyonu olan [Tor Tarayıcısı](https://www.torproject.org/download/download-easy.html.en)'nı kullanabilirsiniz.
 
-## Ayarlarınızı Yapın
+## Firefox'ta Ayarlarınızı Yapın
 
 ### Üçüncü taraf çerezleri devre dışı bırakın
 
-Üçüncü taraf çerezler, internette gezinirken davranışlarınızı izlemek için reklam ağları tarafından kullanılan tanımlayıcılardır.
-
 Üçüncü parti çerezler, siz internette gezinirken davranışlarınızı izlemek için reklam ağları tarafından kullanılan tanımlayıcılardır.
 
-* Firefox: Tercihler > Gizlilik ve Güvenlik > İçerik Engelleme > Özel > Çerezler > Tüm üçüncü taraf çerezleri.
-* Chrome: Ayarlar > Gelişmiş > Site Ayarları > Çerezler > Üçüncü taraf çerezlerini engelle.
+1. Sandviç menüden Tercihler'e girin. Gizlilik ayarlarını yapmak için Gizlilik ve Güvenlik'e tıklayın. Gelişmiş izleme koruması başlığı altındaki Üçüncü sırada olan "Özel" seçeneğini seçin.
 
-### Çıkışta çerezleri temizleyin
+2.En yüksek düzeyde güvenlik için sırasıyla Çerezler, Takip amaçlı içerikler, Kripto madencileri, Parmak izi toplayıcılar seçeneklerinin hepsini işaretleyerek engellenmelerini sağlayın. 
 
-Pek çok tarayıcı çerezleri gerekenden daha üzün süre saklar. En iyi seçenek çerezleri tarayıcı kapatılınca silinecek şekilde ayarlamaktır.
+3. Çerezler'in yanındaki menüden "Tüm üçüncü taraf çerezleri"ni seçin. Hemen altındaki menüden "Tüm pencerelerde" seçeneğini seçin.
 
-* Firefox: Tercihler > Gizlilik ve Güvenlik > Çerezler ve site verileri > Firefox kapatıldığında çerezleri ve site verilerini sil.
-* Chrome: Ayarlar > Gelişmiş > Site Ayarları > Çerezler > Yerel verileri sadece tarayıcımdan çıkana kadar koru.
+![alt-text](firefox.png)
 
-### Flash'ı devre dışı bırakın
+4. Aşağı inince göreceğiniz "Web sitelerine Do Not Track(İzlemeyin) sinyali gönder" ibaresinin altında "Her zaman" seçeneğini tıklayın.
 
-Flash, Adobe tarafından sunulan, pek çok güvenlik problemine sebep olan bir eklentidir. Flash'ı silmenizi veya kapatmanızı şiddetle öneririz.
+![alt-text](firefox1.png)
 
-* Firefox: Eklentiler > Yan uygulamalar > Flash > Asla etkinleştirme.
-* Chrome: Ayarlar > Gelişmiş > Site Ayarları > Flash > Sitelerin Flash çalıştırmasını engelle.
+5. Çerezler ve site verilerinin altında "Firefox kapatıldığında çerezleri ve site verilerini sil" seçeneğini işaretleyin. 
+
+6. Gezinme geçmişinizin temizlendiğinden emin olmak için; Geçmiş ayarlarının olduğu yerdeki menüden "Firefox geçmiş için özel ayarlar kullansın" seçeneğini işaretleyin. Altındaki kutucuklardan "Firefox kapatılınca geçmişi temizle"yi tıklayın.
+
+![alt-text](firefox2.png)
+
+7. İzinler başlığının altında "Açılır pencereleri engelle" ve "Siteler eklenti yüklemeye çalıştığında beni uyar" seçeneklerini seçin.
+
+![alt-text](firefox3.png)
+
+8. Firefox veri toplama ve kullanma izinleri başlığının altındaki hiçbir kutucuğu işaretlememenizi öneririz.
+
+9. Aldatıcı içerik ve tehlikeli yazılım koruması başlığının altındaki kutucukların hepsini işaretleyin.
+
+10. Sertifikalar başlığının altında "Her seferinde bana sor" ve "Sertifikaların geçerliliğini doğrulamak için OCSP otomatik yanıt sunucularını sorgula" seçeneklerini işaretleyin.
+
+![alt-text](firefox4.png)
+
 
 ### Varsayılan arama motorunuzu değiştirin
 
-Ayarlarınızı yaparken, varsayılan arama motorunuzu [duckduckgo.com](https://duckduckgo.com) olarak ayarlamayı unutmayın. Riseup arama motoru olarak DuckDuckGo'yu öneriyor. [Masaüstü](https://duck.co/help/desktop/adding-duckduckgo-to-your-browser) veya [mobil](https://duck.co/help/mobile) tarayıcılar için kurulum talimatlarını inceleyin.
+Yine tercihlerden "Arama" kısmına gelin. Varsayılan arama motoru olarak [duckduckgo.com](https://duckduckgo.com)'yu seçin. Riseup arama motoru olarak DuckDuckGo'yu öneriyor. [Masaüstü](https://duck.co/help/desktop/adding-duckduckgo-to-your-browser) veya [mobil](https://duck.co/help/mobile) tarayıcılar için kurulum talimatlarını inceleyin.
 
 ## Tarayıcı eklentileri
 
