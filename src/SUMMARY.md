@@ -28,5 +28,5 @@
   - [Tor](ag_guvenligi/tor.md)
   - [Vpn](ag_guvenligi/vpn/vpn.md)
 ---
-
+[Katkıda Bulunanlar ve Lisans](credits.md)
 [Kaynaklar](resources.md)
