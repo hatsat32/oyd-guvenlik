@@ -1,0 +1,25 @@
+# Nasıl katkı verebilirim?
+
+Güvenlik rehberine katkı vermek istiyorsanız, aşağıdaki yönergeyi takip edebilirsiniz.
+
+* Öncelikle git.oyd.org.tr üzerinde bir kullanıcı hesabı oluşturun.
+* Depoyu çatallayın, "Çatalla" düğmesi sağ üst köşededir.
+* Kendi deponuzu yerelinize klonlayın. SSH anahtarınızı eklemeniz şiddetle tavsiye edilir. SSH anahtarınızı sağ üstteki avatarınıza tıklayıp, "Ayarlar" menüsündeki "SSH/GPG Anahtarları" adımından ekleyebilirsiniz. SSH kullanmazsanız, her işleminizde tekrardan parola girmeniz gerekecektir.
+
+```
+git clone git@git.oyd.org.tr:kullanici_adi/guvenlik # SSH ile
+git clone https://git.oyd.org.tr/kullanici_adi/guvenlik.git # HTTPS ile
+```
+
+* Güvenlik rehberi, [mdBook](https://github.com/rust-lang/mdbook) kullanmaktadır. mdBook'u nasıl kurabileceğinizi README dosyasından öğrenebilirsiniz.
+* İlgili değişiklikleri yaptıktan sonra, depo ana dizininde aşağıdaki komutu çalıştırıp, web tarayıcınızdan https://127.0.0.1:3000 adresine giderek değişikliklerinizin doğru olduğuna emin olun:
+
+```
+mdbook serve
+```
+
+
+* Değişikliklerinizi göndermek için, web tarayıcınızdan ana depoya gidip, "Değişiklik istekleri" kısmına girin.
+* "Yeni değişiklik isteği" düğmesine basın, değişiklik ayrıntılarını girip değişiklik isteğinizi açın.
+
+

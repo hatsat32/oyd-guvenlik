@@ -23,7 +23,7 @@
 - [Ağ Güvenliği](ag_guvenligi/README.md)
   - [Güvenli Bağlantılar](ag_guvenligi/guvenli_baglantilar.md)
   - [Güvenli Web Gezintisi](ag_guvenligi/guvenli_web_gezintisi.md)
-  - [Sertifikalar](ag_guvenligi/sertifikalar.md)
+  - [Let's Encrypt](ag_guvenligi/letsencrypt.md)
   - [StartTLS](ag_guvenligi/starttls.md)
   - [Tor](ag_guvenligi/tor.md)
   - [Vpn](ag_guvenligi/vpn/vpn.md)
