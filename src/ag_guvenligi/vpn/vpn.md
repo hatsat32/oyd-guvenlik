@@ -151,8 +151,7 @@ GNU/Linux işletim sisteminde firewall kuralları ile cihazınızın İnternet b
 
 #### UFW
 
-Uncomplicated Firewall GNU/Linux dağıtımlarda firewall ayarlarını yapılandırmak için kullanılan
- grafik arayüzü de bulunan bir yazılım. VPN kurulumunuzun bilgisayarınızdan dışarı tek bağlantı olması içn aşağıdaki yönergeyi takip edebilirsiniz.
+Uncomplicated Firewall GNU/Linux dağıtımlarda firewall ayarlarını yapılandırmak için kullanılan grafik arayüzü de bulunan bir yazılım. VPN kurulumunuzun bilgisayarınızdan dışarı tek bağlantı olması içn aşağıdaki yönergeyi takip edebilirsiniz.
 
 **IPv6 kullanımı kapatın**
 
@@ -170,7 +169,7 @@ Ayarlarını yapacağımız UFW'yi devredışı bırakmak için aşağıdaki kom
 
 **Yerel ağ trafiğine izin verin**
 
-Şayet böyle bir ihtiyacınız olmadığını düşünüyorsanız bu aşamayı atlaybilirsiniz lakin neredeyse her bilgisayar kullanımı bu iletişime ihtiyaç duyduğundan aşağıdaki şekilde yerel ağ bağlantılarına izin vermek faydalı olacaktır.
+Yerel ağ trafiği cihazınızın bağlı olduğu yerel ağ dahilindeki cihazlarla iletişiminiz için gereklidir. Şayet böyle bir ihtiyacınız olmadığını düşünüyorsanız bu aşamayı atlaybilirsiniz lakin neredeyse her bilgisayar kullanımı bu iletişime ihtiyaç duyduğundan aşağıdaki şekilde yerel ağ bağlantılarına izin vermek faydalı olacaktır.
 
 `sudo ufw allow in to 10.0.2.0/24`
 
@@ -182,7 +181,7 @@ Ayarlarını yapacağımız UFW'yi devredışı bırakmak için aşağıdaki kom
 
 **Tüm bağlantıları reddedin**
 
-UFW'nin her türlü bağlantıyı reddetmesi için aşağıdaki komutu çalıştırın:
+Firewall ayarının temelinde her bağlantıyı baştan reddetmek ve sadece özellikle belirtilmiş bağlantıları kabul etmek bulunuyor. UFW'nin her türlü bağlantıyı reddetmesi için aşağıdaki komutu çalıştırın:
 
 `sudo ufw default deny outgoing`
 
