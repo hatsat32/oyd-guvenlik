@@ -54,9 +54,9 @@ Bu sebeple riskinizin düşük olduğuna eminseniz ve yanıldığınız için pi
 
 ## Cihazlarınızı yanınızdan ayırmayın
 
-Cihazlarınızı fiziksel olarak yanınızda tutmak her zaman iyi bir fikirdir. Aksi takdirde bir saldırganın cihazınıza girmek, verilerinizi ele geçirmek ve gelecekteki etkinliklerinizi izlemek amacı ile kötücül yazılım yülemesine fırsat doğabilir.
+Cihazlarınızı fiziksel olarak yanınızda tutmak her zaman iyi bir fikirdir. Aksi takdirde bir saldırganın cihazınıza girmek, verilerinizi ele geçirmek ve gelecekteki etkinliklerinizi izlemek amacı ile kötücül yazılım yüklemesine fırsat doğabilir.
 
-Cihazlarınızın zafiyeti tavsiye edilen donanımları kullanıp kullanmadığınıza, [şifrelemenin => cihaz-şifreleme]] etkinleştirilip etkinleştirilmediğine ve cihazınızı bir parola veya PIN ile koruyup korumadığınıza bağlıdır.lk
+Cihazlarınızın zafiyeti tavsiye edilen donanımları kullanıp kullanmadığınıza, [şifrelemenin](cihaz-şifreleme.md) etkinleştirilip etkinleştirilmediğine ve cihazınızı bir parola veya PIN ile koruyup korumadığınıza bağlıdır
 
 **Bir saldırganın cihazınıza girebilme olasılığı:**
 
@@ -141,14 +141,14 @@ Neden signal kullanmalısınız?
 
 * GSM hizmet sağlayıcınız size gönderilen her mesajın bir kopyasını tutmaktadır. Signal ile GSM hizmet sağlayıcınız ne mesajlarınıza ne de iletişimde bulunduğunuz insanlara ulaşabilir.
 * Bir saldırgan için telefon numaranızı ele geçirmek görece kolaydır. Konuştuğunuz kişinin başına bu geldiğinde Signal, kişinin "güvenlik numarası'nın" değiştiğine dair bir uyarı verir. Bu aynı zamanda biri yeni telefon edindiğinde de gerçekleşir. Güvenlik numarasını doğrulamak aranızdaki yazışmaların kimse tarafından okunmadığını garanti eder.
-* Signal aynı zamanda güvenli ses iletişimi için de kullanılabilir. GSM hizmet sağlayıcınız kimi aradığınızı, kimin sizi aradığı ve aramaların uzunluğuna ilişkin kayıt tutar. Signal ile yaptığınız aramalarda GSM servis sağlayızınız bu bilgilere ulaşamaz. Cihazınız güvenli olduğu sürece aramalarınızın içerğiği ve uzunluğu gizli kalacaktır.
+* Signal aynı zamanda güvenli ses iletişimi için de kullanılabilir. GSM hizmet sağlayıcınız kimi aradığınızı, kimin sizi aradığı ve aramaların uzunluğuna ilişkin kayıt tutar. Signal ile yaptığınız aramalarda GSM servis sağlayızınız bu bilgilere ulaşamaz. Cihazınız güvenli olduğu sürece aramalarınızın içeriği ve uzunluğu gizli kalacaktır.
 * WhatsApp, Telegram veya Wire gibi diğer "güvenli" olarak pazarlanan yazışma programları Signal ile kıyaslanınca çokça soruna sahiptir.
 
 Daha fazla bilgi için, [Security Planner / Signal](https://securityplanner.org/#/tool/signal)'e bakın.
 
 ## Silence kullanın
 
-**[Silence](https://silence.im/)** android için geliştirilmiş bir SMS (kısa mesaj servisi) yazılımıdır. Silence'i kurduktan sonra telefonunuzun standart sms programı olarak atarsınız ve tüm SMS'leriniz Silence'e gelir. Normal koşullarda hiç her SMS programı gibi sms'leriniz gelir ve gider ama Silence kullanan kişilerle anahtar değişimi yaptıktan sonra tamamen uçtan uca şifreli sms yazışması yapabilirsiniz.
+**[Silence](https://silence.im/)** android için geliştirilmiş bir SMS (kısa mesaj servisi) yazılımıdır. Silence'i kurduktan sonra telefonunuzun standart sms programı olarak atarsınız ve tüm SMS'leriniz Silence'e gelir. Normal koşullarda her SMS programı gibi sms'leriniz gelir ve gider ama Silence kullanan kişilerle anahtar değişimi yaptıktan sonra tamamen uçtan uca şifreli sms yazışması yapabilirsiniz.
 
 ## Güvenli fotoğraf çekin
 
@@ -156,6 +156,6 @@ Telefonunuzun kamerası, çektiğiniz her fotoğrafa yüksek olasılıkla hassas
 
 Fotoğraflarınızda "geotagging" sorununu engellemek için, kamera ayarlarınızı açın ve konum bilgisini kaydetme ayarlarını kapatın.
 
-Geotagging kapalı iken bile kamera yazılımınız cihazınızın modelini ve diğer potansiyel olarak hassas veriyi fotoğraflara kaydedecektir. Bu durumdan kurtulmanın en iyi yolu ayrı bir yazılımla "EXIF1 verisini fotoğraf dosyalarından silmektir. Bu yazılımlar aynı zamanda konum bilgisini de çektiğiniz geçmiş fotoğraflardan silmek için de kullanılabilir.
+Geotagging kapalı iken bile kamera yazılımınız cihazınızın modelini ve diğer potansiyel olarak hassas veriyi fotoğraflara kaydedecektir. Bu durumdan kurtulmanın en iyi yolu ayrı bir yazılımla EXIF1 verisini fotoğraf dosyalarından silmektir. Bu yazılımlar aynı zamanda konum bilgisini de çektiğiniz geçmiş fotoğraflardan silmek için de kullanılabilir.
 
 Daha fazla bilgi için: [Fotoğraflardan EXIF üstverisini silmenin 3 yolu](https://www.makeuseof.com/tag/3-ways-to-remove-exif-metadata-from-photos-and-why-you-might-want-to/).

@@ -2,7 +2,7 @@
 
 ## Gönderene asla güvenmeyin
 
-E-postanın yaşanan çoğu saldırının temel kaynağı olmasının temelinde gönderenin kimliğinin doğrulanmasının imkanı olmamasıdır.
+E-postanın yaşanan çoğu saldırının temel kaynağı olmasının nedeni gönderenin kimliğinin doğrulanmasının imkanı olmamasıdır.
 
 Tekrar edelim; Herhangi biri e-postanın gönderen bilgisini başka birinden gelmiş gibi taklit edebilir.
 
@@ -26,7 +26,7 @@ En iyisi e-postalarla gelen bağlantılara asla tıklamamaktır. Eğer e-posta i
 * Gelen bağlantıya tıklamak yerine elle yazabilir misiniz? Gönderilen bağlantı göründüğü gibi olmayabilir. Alan adları, aslına benzer eşyazımlar veya farklı harfler içeriyor olabilir (ör: rakam olan "0" ile büyük "O", veya latin ile kiril harfler gibi). Gelen bağlantı, <https://riseuρ.net> gibi görünüyor olabilir fakat aslında saldırganın web sitesi olan <https://riseuρ.net> (ikinci bağlantı yunan "p" harfi kullanmakta.) sizi yönlendiriyor olabilir. Bu tip saldırıları önlemenin en güvenli yolu ilgili bağlantıyı adres çubuğuna elle yazmaktır.
 * Alan adını tanıyor musunuz? Çoğu e-posta istemcisi, web tarayıcılarında olduğu gibi, imleci bağlantıların üzerinde tuttuğunuzda gittiği URL'yi gösterir. Eğer bağlantının gittiği yer beklenmedik veya yabancı ise, göndereni gerçek olup olmadığı yönünde teyit edin. Bağlantılar her zaman "https://" ile başlamalıdır. Eğer "data://" ile başlıyorsa bu kesinlikle bunun bir oltalama saldırısı olduğuna işarettir.
 
-Bilinmeyen kişilerden veya şüpheli görünen e-postalarla gelen bağlantılar ve dosyaları asla açmayın. Tanıdığınız kişilerin aksine bilinmeyen kimseler size gerçekten ihtiyacınız olacak bir bağlantı veya dosya göndermeyecektir. Eğer bilinmeyen bir gönderenin bağlantısı gerçekten gerekli bir bilgi içeriyorsa, bu bilgiye ayrıca yapılacak bir arama gibi daha güvenilir bir şekilde ulamak mümkündür.
+Bilinmeyen kişilerden veya şüpheli görünen e-postalarla gelen bağlantılar ve dosyaları asla açmayın. Tanıdığınız kişilerin aksine bilinmeyen kimseler size gerçekten ihtiyacınız olacak bir bağlantı veya dosya göndermeyecektir. Eğer bilinmeyen bir gönderenin bağlantısı gerçekten gerekli bir bilgi içeriyorsa, bu bilgiye ayrıca yapılacak bir arama gibi daha güvenilir bir şekilde ulaşmak mümkündür.
 
 ## Asla bir bağlantıya tıkladıktan sonra hesap girişi yapmayın
 

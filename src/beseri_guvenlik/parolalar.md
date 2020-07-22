@@ -31,7 +31,7 @@ Rastgele üretilmiş güçlü parolalar kullanın. Bir parolanın gücünü, uzu
 
 Güçlü ve rastgele parolaların istisnası olarak cihazlarınızın ekran kilitlerine koyduklarınız sayılabilir. Bu sistemler birden fazla giriş denemesini engellediklerinden ve sizin tarafınızdan ara sıra değiştirildiklerinde görece kısa olsalar da amaçlanan güvenlik için yeterlidirler.
 
-İnsanlar, bilgisayarların aksine güvenli parolalar yaratmakça çok başarısızdır. Bırakın bilgisayar bu işi sizin için yapsın.
+İnsanlar, bilgisayarların aksine güvenli parolalar yaratmakta çok başarısızdır. Bırakın bilgisayar bu işi sizin için yapsın.
 
 Hatırlamanız gereken parolalar üretmek için çokça yol bulunmaktadır. Eğer parola yöneticisine bırakmak yerine hatırlamanız gereken parolalar varsa bunlar için biz [Zarola](https://zarola.oyd.org.tr) kullanmanızı öneriyoruz.
 
