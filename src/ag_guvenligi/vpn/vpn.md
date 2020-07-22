@@ -155,13 +155,26 @@ GNU/Linux dağıtımları Linux çekirdeğinde doğrudan Openvpn ve daha yeni bi
 
 3. Ağ ayarlarından
 
+#### Terminal'den Istemci Kurulumu
+
+GNU/Linux dağıtımlarının depolarında *OpenVPN* paket olarak bulunuyor, dağıtımınızın paket yöneticisiyle yükleyebilirsiniz. Debian veya Ubuntu tabanlı bir dağıtım kullanıyorsaniz;<br>
+`sudo apt install openvpn` komutu ile OpenVPN'i yüklediğinizde  
+`/lib/systemd/system/openvpn-client@.service` servis dosyası ve ayarlar için 
+`/etc/openvpn/client` ve `/etc/openvpn/server` dizinleri oluşuyor. VPN sağlayıcınızdan veya OpenVPN sunucunuzdan edindiğiniz **istemciAyarlari.ovpn** ayar dosyasını `/etc/openvpn/client/istemciAyarlari.conf` biçiminde uzantısını değiştirip taşıyarak OpenVPN'in bu ayarları tanımasını sağlayabilirsiniz.
+  OpenVPN'i çalıştırmak için;<br>
+`openvpn --config <istemciAyarlari>.conf` komutu kullanılabilir,<br>
+servis olarak başlatmak ve durdurmak için;<br>
+`systemctl {start,stop} openvpn-client@<istemciAyarlari>.conf` komutu,<br>
+sistem açılışında çalışması için de;<br>
+`systemctl enable openvpn-client@<istemciayarlari>.conf` komutu kullanılabilir.
+
 #### Android
 
 Android işletim sistemi 7 sürüm ve sonrasında VPN desteğini işletim seviyesinde sunmaya başlamıştır. Ne yazık ki OpenVPN hala bu seçenekler arasında olmamakla birlikte özgür bir OpenVPN istemcisini Android ayarlarında VPN sağlayıcısı olarak belirlediğinizde sistemle gayet uyumlu çalışmaktadır.
 
 1. [OpenVPN for Android](https://f-droid.org/en/packages/de.blinkt.openvpn/) uygulamasını [F-Droid](https://f-droid.org/en) özgür yazılım deopsundan indirin ve cihazınıza kurun.
 
-2. OpenVPN for Android yazılımını açlıştırın ve açılan ekranda sağ üst köşedeki + simgesine tıklayarak ekleme arayüzünü açın.
+2. OpenVPN for Android yazılımını çalıştırın ve açılan ekranda sağ üst köşedeki + simgesine tıklayarak ekleme arayüzünü açın.
 
 ![alt-text](openvpn1.png)
 
@@ -275,3 +288,8 @@ Eğer İnternet üzerinden cihazınıza ulaşılması gerekli ise VPN bağlantı
 Eğer Android sürümünüz sistem çapında VPN ayarları desteklemiyor ise OpenVPN for Android'in bağlantısı kesildiği durumda cihazınızın bağlantısını kontrol etmek için [AfWall](https://f-droid.org/en/packages/dev.ukanth.ufirewall/) yazılımını kullanabilirsiniz. Bu yazılımı çalıştırmak için cihazınızın rootlu olması gerekmektedir.
 
 Afwall kullanmanın bir diğer avantajı da cihazınızdaki hangi yazılımın İnternete erişip erişmeyeceğini ve erişecekse hangi kanal üzerinden olacağını belirtebiliyor olmanız.
+
+Kaynaklar;  
+- <https://github.com/Nyr/openvpn-install.git>  
+- <https://kendibaglantim.com>
+
