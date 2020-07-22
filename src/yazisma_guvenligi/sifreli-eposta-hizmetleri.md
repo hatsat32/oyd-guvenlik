@@ -79,6 +79,6 @@ Aynı zamanda SMTP ve POP3 gibi federatif e-posta protokolleri iki hizmet taraf�
 
 # Sonuç
 
-Şifreli e-postayı bir hizmet olarak almak tercih sayılabilir. Kendi sunucunuzu ile e-posta işletmek ve GPG kullanmak hiç bu kadar kolay olmamıştı. Hali ile şifreli yazışmak, bunu güvenli şekilde yapmak ve anahtarınızı kendi elinizde tutmanın güvenini hissetmek için hala en iyi seçenek GPG'yi kendi yerel cihazınızda tercih ettiğiniz güvenilir bir e-posta hizmet sağlayıcı ile kullanmaktır.
+Şifreli e-postayı bir hizmet olarak almak tercih sayılabilir. Kendi sunucunuz ile e-posta işletmek ve GPG kullanmak hiç bu kadar kolay olmamıştı. Hali ile şifreli yazışmak, bunu güvenli şekilde yapmak ve anahtarınızı kendi elinizde tutmanın güvenini hissetmek için hala en iyi seçenek GPG'yi kendi yerel cihazınızda tercih ettiğiniz güvenilir bir e-posta hizmet sağlayıcı ile kullanmaktır.
 
 [GPG anahtarı oluşturmak ve kullanmak için rehberimizden yararlanabilirsiniz.](../yazisma_guvenligi/openpgp.md)

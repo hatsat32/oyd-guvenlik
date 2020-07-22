@@ -9,8 +9,8 @@ Bir saldırgan yazılımlarınızdaki bir zayıflığı kullanarak cihazlarını
 Otomatik Güncellemer Nasıl Açılır?
 
 * **GNU/Linux**: Çoğu dağıtımda otomatik güncelleştirmeler zaten açık gelir ve kritik güncelleştirmeler konusunda uyarılırsınız. Elle güncelleme yapmak isterseniz kullandığınız dağıtımın grafik arayüzünden faydalanabilir veya;
-	*Debian tabanlı dağıtımlar için: Terminalden **sudo apt-get update & sudo apt-get upgrade -y** komutunu kullanarak güncelleme yapabilirsiniz.
-	*RPM tabanlı dağıtımlar için: Terminalden **sudo yum update -y** komutunu kullanrak güncelleme yapabilirsiniz.
+	* Debian tabanlı dağıtımlar için: Terminalden **sudo apt-get update & sudo apt-get upgrade -y** komutunu kullanarak güncelleme yapabilirsiniz.
+	* RPM tabanlı dağıtımlar için: Terminalden **sudo yum update -y** komutunu kullanarak güncelleme yapabilirsiniz.
 * **macOS**: **Apple** menüsüne tıklayın, **Sistem tercihleri** > **App Store** > **Güncellemeleri otomatik olarak denetle**
 * **Windows**: **Başlat** çubuğuna tıklayın, daha sonra **Ayarlar** > **Güncelleme ve güvenlik** > **Windows Güncellemeleri** > **İleri seçenekler**i tıkladıktan sonra **Güncellemeler nasıl indirilsinin** altındaki **Otomatik (önerilen)**'i seçin.
 
@@ -34,11 +34,11 @@ Not: Resmi Android uygulama mağazası Google Play'i taklitçi uygulamalardan ka
 
 Mobil uygulamalar, tarayıcı eklentileri ve ücretsiz programların artması ile birçok güvenlik problemi de ortaya çıktı. Bu sebep ile güvendiğiniz kuruluşların (örneğin daha önce kullanmış olduğunuz) yazılım geliştiricileri tarafından geliştirilmeyen yazılımlardan mümkün ise kaçının.
 
-Görünürde iyi niyetli olan veya faydalı görünen yazılımlar (antivirüs tarayıcıları gibi) aslında arkaplandaki kötü hareketlerini gizliyor olabilir. Çoğu tarayıcıda ve mobil cihazda bir uygulama kurulum sırasında cihazda ulaşabileceği bilgiler ve donanımlar hakkında çeşitli izinler ister. Bu izinlerin uygulamanın beklenen amacı kapsamında kaldığına kabaca göz atmak gereklidir.Örneğin bir fener uygulaması cihazınızın rehberine erişmek veya telefon aramaları yapabilmek isterse bu yazılımı kullanmamalısınız. Aramalarınıza, kişilerinize, kameranıza, mikrofonunuza, konum servislerinize veya tüm saklama alanınıza verdiğiniz erişim iznileri hakkında çok dikkatli olunmalıdır.
+Görünürde iyi niyetli olan veya faydalı görünen yazılımlar (antivirüs tarayıcıları gibi) aslında arkaplandaki kötü hareketlerini gizliyor olabilir. Çoğu tarayıcıda ve mobil cihazda bir uygulama kurulum sırasında cihazda ulaşabileceği bilgiler ve donanımlar hakkında çeşitli izinler ister. Bu izinlerin uygulamanın beklenen amacı kapsamında kaldığına kabaca göz atmak gereklidir.Örneğin bir fener uygulaması cihazınızın rehberine erişmek veya telefon aramaları yapabilmek isterse bu yazılımı kullanmamalısınız. Aramalarınıza, kişilerinize, kameranıza, mikrofonunuza, konum servislerinize veya tüm saklama alanınıza verdiğiniz erişim izinleri hakkında çok dikkatli olunmalıdır.
 
 İndirdikten sonra verdiğiniz izinlere bakmak, cihaza ve koşula göre farklılık gösterebilir. Firefox tarayıcısında, ayarlar altında mahremiyet ve güvenlik sekmesinde verilen izinleri görebilirsiniz. Chrome ve Chromium'da, chrome://extensions/'a gidin ve her eklenti için izinlere tıklayın. iOS cihazlarında, ayarların altında tüm izinlerin listesi vardır. Her iznin altında da o izinleri kullanan uygulamalar yer alır. Android cihazlarında Ayarlar > Uygulama yöneticisinde uygulama listesini görüntüleyebilirsiniz. Her uygulamanın altında uygulamanın kullandığı izinleri gösteren bir liste vardır.
 
-Genel bir alışkanlık olarak cihazlarınızda gereksiz veya çok seyrek kullandığınız yazılımları kullanmamak gerekir. Şayet bir yazılımın sunduğu hizmeti Web'den alabiliyorsanız, yazılımını cihazınıza kurmak yerine tarayıcınız aracılığı ile web üzerinden hizmet almayı seçebilirsiniz. Genel olarak da bir yazılım hem özgür değil hem de ücret istemeden çok şey vaad ediyorsa işin içinde bir bit yeniği var mı bakmalıdır.
+Genel bir alışkanlık olarak cihazlarınızda gereksiz veya çok seyrek kullandığınız yazılımları kullanmamak gerekir. Şayet bir yazılımın sunduğu hizmeti Web'den alabiliyorsanız, yazılımını cihazınıza kurmak yerine tarayıcınız aracılığı ile web üzerinden hizmet almayı seçebilirsiniz. Genel olarak da bir yazılım hem özgür değil hem de ücret istemeden çok şey vaad ediyorsa işin içinde bir bit yeniği var mı bakılmalıdır.
 
 Maalesef dizüstü ve masaüstü bilgisayarlarındaki çoğu işletim sisteminin bir izin yönetimi yok ve yazılımlar kurulum sırasında sistem kaynaklarına erişim için izin istemiyor. Bu yüzden bilgisayarlarınıza indirdiğiniz yazılımlarda çok daha dikkatli olmanız gerekiyor.
 
