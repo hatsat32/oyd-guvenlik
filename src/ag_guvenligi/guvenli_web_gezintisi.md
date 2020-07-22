@@ -12,9 +12,14 @@ Alternatif olarak, Firefox'un, Tor Projesi tarafından daha güvenli ve anonim o
 
 ### Üçüncü taraf çerezleri devre dışı bırakın
 
-Üçüncü taraf çerezler, internette gezinirken davranışlarınızı izlemek için reklam ağları tarafından kullanılan tanımlayıcılardır.
+Üçüncü taraf çerezler, internette gezinirken davranışlarınızı izlemek için reklam ağları tarafından kullanılan tanımlayıcılardır. Çerezleri devre dışı bırakmak için tarayıcı ayarlarınızı kullanabilirsiniz.
 
-* Firefox: Tercihler > Gizlilik ve Güvenlik > İçerik Engelleme > Özel > Çerezler > Tüm üçüncü taraf çerezleri.
+* Firefox: Tercihler > Gizlilik ve Güvenlik > Sıkı > Sekmeleri Tazele
+
+![firefox tercihler](guvenli_web/firefox_tercihler.png)
+
+![sıkı tercih](guvenli_web/firefox_tercihler_siki.png)
+
 * Chrome: Ayarlar > Gelişmiş > Site Ayarları > Çerezler > Üçüncü taraf çerezlerini engelle.
 
 ### Çıkışta çerezleri temizleyin
@@ -22,6 +27,9 @@ Alternatif olarak, Firefox'un, Tor Projesi tarafından daha güvenli ve anonim o
 Pek çok tarayıcı çerezleri gerekenden daha üzün süre saklar. En iyi seçenek çerezleri tarayıcı kapatılınca silinecek şekilde ayarlamaktır.
 
 * Firefox: Tercihler > Gizlilik ve Güvenlik > Çerezler ve site verileri > Firefox kapatıldığında çerezleri ve site verilerini sil.
+
+![site verilerini sil](guvenli_web/cerezleri_sil.png)
+
 * Chrome: Ayarlar > Gelişmiş > Site Ayarları > Çerezler > Yerel verileri sadece tarayıcımdan çıkana kadar koru.
 
 ### Flash'ı devre dışı bırakın
