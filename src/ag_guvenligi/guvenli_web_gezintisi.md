@@ -14,8 +14,6 @@ Alternatif olarak, Firefox'un, Tor Projesi tarafından daha güvenli ve anonim o
 
 Üçüncü taraf çerezler, internette gezinirken davranışlarınızı izlemek için reklam ağları tarafından kullanılan tanımlayıcılardır.
 
-Üçüncü parti çerezler, siz internette gezinirken davranışlarınızı izlemek için reklam ağları tarafından kullanılan tanımlayıcılardır.
-
 * Firefox: Tercihler > Gizlilik ve Güvenlik > İçerik Engelleme > Özel > Çerezler > Tüm üçüncü taraf çerezleri.
 * Chrome: Ayarlar > Gelişmiş > Site Ayarları > Çerezler > Üçüncü taraf çerezlerini engelle.
 
