@@ -290,6 +290,6 @@ Eğer Android sürümünüz sistem çapında VPN ayarları desteklemiyor ise Ope
 Afwall kullanmanın bir diğer avantajı da cihazınızdaki hangi yazılımın İnternete erişip erişmeyeceğini ve erişecekse hangi kanal üzerinden olacağını belirtebiliyor olmanız.
 
 Kaynaklar;  
-<https://github.com/Nyr/openvpn-install.git>  
-<https://kendibaglantim.com>
+- <https://github.com/Nyr/openvpn-install.git>  
+- <https://kendibaglantim.com>
 
