@@ -170,7 +170,7 @@ Ayarlarını yapacağımız UFW'yi devredışı bırakmak için aşağıdaki kom
 
 **Yerel ağ trafiğine izin verin**
 
-Yerel ağ trafiği cihazınızın bağlı olduğu yerel ağ dahilindeki cihazlarla iletişiminiz için gereklidir. Şayet böyle bir ihtiyacınız olmadığını düşünüyorsanız bu aşamayı atlaybilirsiniz lakin neredeyse her bilgisayar kullanımı bu iletişime ihtiyaç duyduğundan aşağıdaki şekilde yerel ağ bağlantılarına izin vermek faydalı olacaktır.
+Şayet böyle bir ihtiyacınız olmadığını düşünüyorsanız bu aşamayı atlaybilirsiniz lakin neredeyse her bilgisayar kullanımı bu iletişime ihtiyaç duyduğundan aşağıdaki şekilde yerel ağ bağlantılarına izin vermek faydalı olacaktır.
 
 `sudo ufw allow in to 10.0.2.0/24`
 
@@ -182,7 +182,7 @@ Yerel ağ trafiği cihazınızın bağlı olduğu yerel ağ dahilindeki cihazlar
 
 **Tüm bağlantıları reddedin**
 
-Firewall ayarının temelinde her bağlantıyı baştan reddetmek ve sadece özellikle belirtilmiş bağlantıları kabul etmek bulunuyor. UFW'nin her türlü bağlantıyı reddetmesi için aşağıdaki komutu çalıştırın:
+UFW'nin her türlü bağlantıyı reddetmesi için aşağıdaki komutu çalıştırın:
 
 `sudo ufw default deny outgoing`
 
