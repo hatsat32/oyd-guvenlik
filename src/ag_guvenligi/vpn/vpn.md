@@ -154,7 +154,7 @@ GNU/Linux işletim sisteminde firewall kuralları ile cihazınızın İnternet b
 Uncomplicated Firewall GNU/Linux dağıtımlarda firewall ayarlarını yapılandırmak için kullanılan
  grafik arayüzü de bulunan bir yazılım. VPN kurulumunuzun bilgisayarınızdan dışarı tek bağlantı olması içn aşağıdaki yönergeyi takip edebilirsiniz.
 
-* IPv6 kullanımı kapatın
+**IPv6 kullanımı kapatın**
 
 IPv6 kullanımını kapatmanız VPN ayarlarınız açısından tek bir yöne odaklanmanız açısından kolaylık sağlar. Bunun için UFW'nin ayar dosyasında aşağıdaki değişikliği yapın:
 
@@ -162,13 +162,13 @@ IPv6 kullanımını kapatmanız VPN ayarlarınız açısından tek bir yöne oda
 
 IPV6=yes parametresini IPV6=no şeklinde değiştirip, CTRL-X ile kaydederek çıkın.
 
-* UFW'yi devredışı bırakın
+**UFW'yi devredışı bırakın**
 
 Ayarlarını yapacağımız UFW'yi devredışı bırakmak için aşağıdaki komutu çalıştırın:
 
 `sudo ufw disable`
 
-* Yerel ağ trafiğine izin verin
+**Yerel ağ trafiğine izin verin**
 
 Yerel ağ trafiği cihazınızın bağlı olduğu yerel ağ dahilindeki cihazlarla iletişiminiz için gereklidir. Şayet böyle bir ihtiyacınız olmadığını düşünüyorsanız bu aşamayı atlaybilirsiniz lakin neredeyse her bilgisayar kullanımı bu iletişime ihtiyaç duyduğundan aşağıdaki şekilde yerel ağ bağlantılarına izin vermek faydalı olacaktır.
 
@@ -180,7 +180,7 @@ Yerel ağ trafiği cihazınızın bağlı olduğu yerel ağ dahilindeki cihazlar
 
 `sudo ufw allow out to 192.168.0.0/16`
 
-* Tüm bağlantıları reddedin
+**Tüm bağlantıları reddedin**
 
 Firewall ayarının temelinde her bağlantıyı baştan reddetmek ve sadece özellikle belirtilmiş bağlantıları kabul etmek bulunuyor. UFW'nin her türlü bağlantıyı reddetmesi için aşağıdaki komutu çalıştırın:
 
@@ -188,30 +188,31 @@ Firewall ayarının temelinde her bağlantıyı baştan reddetmek ve sadece öze
 
 `sudo ufw default deny incoming`
 
-* VPN sunucunuza izin verin
+**VPN sunucunuza izin verin**
 
 Bu noktada bilgisayarınız yerel ağ dışında hiç bir İnternet bağlantısına izin vermeyecek durumda olmalıdır. VPN sunucunuza bağlanmak için sunucunun giriş adresine UFW'de istisna tanımanız gerekli. Bunun için VPN sunucunuzun IP adresini öğrenmelisiniz. Bu bilgiye Openvpn ayar dosyasını açarak ulaşabilirsiniz. IP adresini öğrendikten sonra aşağıdaki komut ile gerekli istisnayı tanıyın:
 
 `sudo ufw allow out to [sunucu IP adresi]`
 
-* Tüm trafiği VPN'e yönlendirin
+**Tüm trafiği VPN'e yönlendirin**
 
 Aşağıdaki komut ile cihazınızdaki tüm bağlantıları VPN'e yönlendirebilirsiniz:
 
 `sudo ufw allow out on tun0 from any to any`
 
-* Gerekli ise İnternet'ten size ulaşılmasına izin verin.
+**Gerekli ise İnternet'ten size ulaşılmasına izin verin**
 
 Eğer İnternet üzerinden cihazınıza ulaşılması gerekli ise VPN bağlantısı üzerinden gelen bu taleplere aşağıdaki komut ile izin verebilirsiniz:
 
 `sudo ufw allow in on tun0 from any to any`
 
-* UFW'yi çalıştırın
+**UFW'yi çalıştırın**
 
 `sudo ufw enable`
 
 ### Android
 
-Eğer Android sürümünüz sistem çapında VPN ayarları desteklemiyor ise OpenVPN for Android'in bağlantısı kesildiği durumda cihazınızın bağlantısını kontrol etmek için [AfWall](https://f-droid.org/en/packages/dev.ukanth.ufirewall/) yazılımını kullanabilirsiniz. Bu yazılımı çalıştırmak için cihazınızın rootlu olması gerekmektedir.
+Eğer Android sürümünüz sistem çapında VPN ayarları desteklemiyor ise OpenVPN for Android'in bağlantısı kesildiği durumda cihazınızın bağlantısını kontrol etmek için [AfWall](https://f-droid.org/en/packages/dev.ukanth.ufirewall/) yazılımını kullanabilirsiniz. Bu yazılımı çalıştırmak için cihazınızın rootlu olması gerekmektedir. Afwall kullanmanın bir diğer avantajı da cihazınızdaki hangi yazılımın İnternete erişip erişmeyeceğini ve erişecekse hangi kanal üzerinden olacağını belirtebiliyor olmanız.
 
-Afwall kullanmanın bir diğer avantajı da cihazınızdaki hangi yazılımın İnternete erişip erişmeyeceğini ve erişecekse hangi kanal üzerinden olacağını belirtebiliyor olmanız.
+Şayet Android sürümünüz işletim sistemi seviyesinde VPN istemcisi kontrolü imkanı sağlıyor ise rehberin Android kurulum başlığındaki önergeler yeterli işlev gösterecektir.
+
