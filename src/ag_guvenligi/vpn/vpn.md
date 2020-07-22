@@ -93,7 +93,17 @@ GNU/Linux dağıtımları Linux çekirdeğinde doğrudan Openvpn ve daha yeni bi
 
 2. Gnome'un ayarlarına isterseniz sağ üst köşeden açılan menüde **ağ ayarlarına** girerek veya etkinlikler köşesine tıklayarak menüden **ayarlara** girerek ağ ayarlarına girin.
 
-3. Ağ ayarlarından 
+3. Sağda yer alan "+" düğmesine tıklayın. 
+
+![alt-text](vpn1.png)
+
+4. Karşınıza çeşitli seçeneklerin sunulduğu "VPN Ekle" penceresi çıkacak. Burada en alttaki "Dosyadan aktar" seçeneğini seçin. .ovpn uzantılı VPN dosyasını bulun ve aktarın.
+
+![alt-text](vpn2.png)
+
+5. Eklediğiniz VPN'in yanındaki düğmeye tıklayarak kullanılabilir hale getirebilirsiniz.
+
+![alt-text](vpn3.png)
 
 ### Android
 
@@ -128,7 +138,7 @@ Android ayarlarını yaparak sisteminizin VPN bağlantısını korumasını ve k
 2. VPN ayarlarını muhtemelen en altta bulacaksınız.
 
 ![alt-text](ayarlar2.png)
-
+  
 3. Karşınıza OpenVPN for Android seçeneği çıkmış olacaktır. Yanındaki dişli simgesine tıklayarak kurulum sayfasını açın.
 
 ![alt-text](ayarlar3.png)
