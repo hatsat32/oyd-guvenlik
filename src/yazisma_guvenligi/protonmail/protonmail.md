@@ -44,14 +44,30 @@ Tebrikler, bir Protonmail kullanıcısına tek seçeneklerinin Protonmail olmad�
 
 Protonmail'den GPG kullanan bir başka adrese şifreli e-posta atmak için öncelikli olarak ilgili e-postanın açık anahtarını yazışmak istediğiniz kişinin adına rehberinize eklemeniz gerekli.
 
-Şayet GPG kullanan kişi size ilk mesajı şifreli veya imzalı attıysa "Bu ileti, henüz güvenilmeyen bir genel anahtar tarafından imzalanmıştır." ibaresi çıkacak ve yanında güven anahtarı düğmesi olacaktır. Bu özetle kişinin anahtarını kendi anahtarınızla imzalamanız ve otomatik olarak kişinin açık anahtarının adına eklenmesi ile gelecek yazışmaları otomatik olarak GPG şifreli yapacaktır.
+Şayet GPG kullanan kişi size ilk mesajı imzalı ve açık anahtarı ekli attıysa "Bu ileti, henüz güvenilmeyen bir genel anahtar tarafından imzalanmıştır." ibaresi çıkacak ve yanında güven anahtarı düğmesi olacaktır. Bu özetle kişinin anahtarını kendi anahtarınızla imzalamanız ve otomatik olarak kişinin açık anahtarının adına eklenmesi ile gelecek yazışmaları otomatik olarak GPG şifreli yapacaktır.
 
 Şayet gelen e-posta şifreli veya imzalı değilse ya da siz ilk şifreli e-postayı atacaksanız öncelikle rehberinizden şifreleme yapmak istediğiniz kişinin paneline gelin ve küçük dişli şekliyle ifade edilen gelişmiş ayarları açın.
 
 ![alt-text](proton_kisi.png)
 
-Daha sonra açılan ayarlardan anahtar yükle seçeneğini seçerek ilgili kişinin anahtar dosyasını yükleyin ve şifrele düğmesini aktif hale getirin.
+Daha sonra açılan ayarlardan anahtar yükle seçeneğini seçerek ilgili kişinin anahtar dosyasını yükleyin ve şifrele ve imzala düğmesini aktif hale getirin.
 
 ![alt-txt](proton_kisi_ayar.png)
 
-Bundan sonra kişiye atacağınız e-postalar kişinin GPG anahtarı ile şifrelenecektir.
+Bundan sonra kişiye atacağınız e-postalar kişinin GPG anahtarı ile şifrelenecek ve imzalanacaktır.
+
+## Gelişmiş Seçenekler
+
+Protonmail çeşitli GPG işlemlerini yapmak için kullanıcılarına seçenekler sunmaktadır. Bunlar arasında:
+
+* Gönderiye açık anahtar eklemek
+* Gönderiyi imzalamak
+* Her gönderiye açık anahtar eklemek
+
+### Gönderiye Açık Anahtar Eklemek ve İmzalamak
+
+Protonmail'den bir dış adrese yazışma yaparken yeni ileti ekranının konu başlığından sonraki satırında sağ taraftaki ok işaretinden açılan menü aracılığı ile ilgili iletiyi imzalayabilir ve açık anahtarınızı iletiye ekleyebilirsiniz. Bu yazdığınız kişi GPG kullanıyor ise sizden gelen e-postanın değiştirilmediğini bilebilir ve size atacağı cevabı kolaylıkla şifreleyebilir.
+
+### Her Gönderiye Açık Anahtar eklemek ve İmzalamak
+
+Bunun için Protonmail hesabınızın ayarlarına girip güvenlik sekmesinin altında bulunan "Harici PGP ayarları" bölümünden imzalama ve açık anahtar ekleme seçeneklerini etkinleştirin. Aynı bölümde "Adres Doğrulama" seçeneğini de göreceksiniz. Bu ayar ile iletişimde olduğunuz GPG kullanıcılarının anahtarlarını imzalama seçeneğine kavuşursunuz. Bu hem protonmail'in doğru anahtarı size sunduğuna güven duymadan anahtar doğrulaması yapmanızı sağlar hem de konuştuğunuz harici GPG kullanıcıları ile güven ilişkinizi sağlar.
