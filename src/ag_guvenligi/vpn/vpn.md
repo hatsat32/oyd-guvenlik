@@ -67,7 +67,7 @@ VPN kullanmaya başlamadan önce ihtiyacınız, kullandığınız cihazların du
 
 Elinizdeki cihazların sayısını ve konumlarını değerlendirin. Mobil cihazları bulundukları ağdan bağımsız olarak VPN'e bağlı kalmalarını isteyeceğinizden bu cihazların doğrudan bağlanmaları için kurulum yapmanız gerekecektir. Şayet ev ve işyeri gibi sabit bir alanda duran cihazları bağlamak veya ağ bağlantınızdaki tüm cihazları korumak istiyorsanız bir [yönlendiriciye](https://en.wikipedia.org/wiki/Router_(computing)) kurulum yapmanız faydalı olabilir. Bir yönlendiriciyi [LibreCMC](https://librecmc.org/), [OpenWRT](https://openwrt.org/) veya [DD-WRT](https://dd-wrt.com/) yükleyerek özgür kılabilir ve üzerinde OpenVPN ile tüm ağınızı kapsayacak şekilde VPN çalıştırabilirsiniz.
 
-Eğer cihazlarınız sınırlı ve belirli bir ağa bağlı değil ise doğrudan VPN sağlayıcınızın sağladığı yazılımları cihazlarınızda çalıştırarak bağlantı kurmak en kolay yol olacaktır. 
+Eğer cihazlarınız sınırlı ve belirli bir ağa bağlı değil ise doğrudan VPN sağlayıcınızın sağladığı yazılımları cihazlarınızda çalıştırarak bağlantı kurmak en kolay yol olacaktır.
 
 Bu kurulumun avantajları;
 
@@ -83,7 +83,67 @@ Dezavantajları ise;
 
 Diğer seçeneğiniz ise işletim sisteminiz tarafından desteklendiği durumlarda dahili OpenVPN istemcisi ile kurulum yapmaktır. Bu kullanım sistem kaynağınızı daha az kullanacak ve daha birleşik bir deneyim sunacaktır. Lakin ayarların bir kısmını kendiniz yapmak zorunda kalacağınızdan vakit ve emek harcamaya hazır olmanız gereklidir.
 
-### GNU/Linux
+### OpenVPN Sunucusu Kurulumu
+
+OpenVPN sunucusu kurulumu için [github.com/Nyr](https://github.com/Nyr) deposunda bulunan ve aktif olarak güncellenen bir bash betiğini kullanacağız. Bu betik Ubuntu, Debian, Centos veya Fedora dağıtımları üzerinde gerekli yüklemeleri ve ayarları yapıp kullanıma hazır bir OpenVPN sunucusu çalıştırıyor. `wget https://git.io/vpn -O openvpn-instal.sh` komutu ile betik çalışma dizinine kaydedilebilir ve `bash openvpn-install.sh` komutu ile çalıştırılabilir. Komutu gerekli paket yüklemelerini yapabilmesi ve ayar dosyalarını oluşturabilmesi için root yetkileriyle çalıştırmamız gerekmekte.
+
+1. Betik ilk olarak sunucunun ip adresslerini listeleyip, OpenVPN sunucusunun kullanması istenen ip adresinin seçilmesini istiyor.
+```bash
+Which IPv4 address should be used?
+     1) 198.51.100.202
+     2) 10.0.10.1
+IPv4 address [1]:
+```
+Kullanılmak istenen adres sıra numarasıyla seçilebilir.
+
+2. Ardından OpenVPN'in kullanması gereken protokol soruluyor;
+```bash
+Which protocol should OpenVPN use?
+   1) UDP (recommended)
+   2) TCP
+Protocol [1]:
+```
+Yine sadece enter ile önerilen seçeneği onaylayıp UDP kullanılabilir.
+
+3. OpenVPN'in kullanacağı port soruluyor ve ön tanımlı olarak 1194 seçili.
+```bash
+What port should OpenVPN listen to?
+Port [1194]:443
+```
+Bu aşamada hareket halindeyken istemcilerin dahil olacağı açık ağlarda 1194 portu engellenmiş olabileceğinden https portu olan 443'ü seçmek yerinde bir tercih olabilir.
+
+4. OpenVPN'e bağlanacak istemciler için bir DNS sunucusu seçilmesi istendiğinde öntanımlı olarak sistemin halihazırdaki ayarlarını kullanması yanında kullanımı yaygın olan bazı DNS sunucuları listeleniyor:
+```bash
+Select a DNS server for the clients:
+   1) Current system resolvers
+   2) Google
+   3) 1.1.1.1
+   4) OpenDNS
+   5) Quad9
+   6) AdGuard
+DNS server [1]:
+```
+5. Son olarak ilk istemci için bir isim girilmesi isteniyor.
+```bash
+Enter a name for the first client:
+Name [client]:
+```
+Kurulum tamamlandıktan sonra başka istemciler eklemek için betik yeniden çalıştırılabilir.
+
+Gerekli yüklemeler yapıldıktan sonra çalışmakta olan OpenVPN sunucusuna bağlanmak üzere istemci cihaza yüklenmesi gereken ayar dosyasının konumu bildiriliyor `/root/<istemciadı>.ovpn`. Bu dosyayi istemci cihaza kaydedip, istemci programa tanıtmak gerekiyor.
+
+6. Kurulumun ardından betik tekrar çalıştırılırsa yeni bir istemci ekleme, bir istemciyi kaldırma, OpenVPN sunucusunu kaldırma seçenekleri sunuluyor.
+```bash
+Select an option:
+   1) Add a new client
+   2) Revoke an existing client
+   3) Remove OpenVPN
+   4) Exit
+Option:
+```
+
+### Istemci Kurulumu
+#### GNU/Linux
 
 GNU/Linux dağıtımları Linux çekirdeğinde doğrudan Openvpn ve daha yeni bir teknoloji olarak artık [Wireguard](https://www.wireguard.com/) desteklemektedir. Masaüstü ortamları da Openvpn istemcisine doğrudan destek vermektedir. GNU/Linux dünyasında çokça masaüstü ortamı olmasından dolayı en yaygın kullanılan Gnome 3 ile rehberimiz hazırlandı lakin pek çok kullanıcı ayarların kendi cihazlarında da benzer olduklarını görecektir.
 
@@ -93,15 +153,28 @@ GNU/Linux dağıtımları Linux çekirdeğinde doğrudan Openvpn ve daha yeni bi
 
 2. Gnome'un ayarlarına isterseniz sağ üst köşeden açılan menüde **ağ ayarlarına** girerek veya etkinlikler köşesine tıklayarak menüden **ayarlara** girerek ağ ayarlarına girin.
 
-3. Ağ ayarlarından 
+3. Ağ ayarlarından
 
-### Android
+#### Terminal'den Istemci Kurulumu
+
+GNU/Linux dağıtımlarının depolarında *OpenVPN* paket olarak bulunuyor, dağıtımınızın paket yöneticisiyle yükleyebilirsiniz. Debian veya Ubuntu tabanlı bir dağıtım kullanıyorsaniz;<br>
+`sudo apt install openvpn` komutu ile OpenVPN'i yüklediğinizde  
+`/lib/systemd/system/openvpn-client@.service` servis dosyası ve ayarlar için 
+`/etc/openvpn/client` ve `/etc/openvpn/server` dizinleri oluşuyor. VPN sağlayıcınızdan veya OpenVPN sunucunuzdan edindiğiniz **istemciAyarlari.ovpn** ayar dosyasını `/etc/openvpn/client/istemciAyarlari.conf` biçiminde uzantısını değiştirip taşıyarak OpenVPN'in bu ayarları tanımasını sağlayabilirsiniz.
+  OpenVPN'i çalıştırmak için;<br>
+`openvpn --config <istemciAyarlari>.conf` komutu kullanılabilir,<br>
+servis olarak başlatmak ve durdurmak için;<br>
+`systemctl {start,stop} openvpn-client@<istemciAyarlari>.conf` komutu,<br>
+sistem açılışında çalışması için de;<br>
+`systemctl enable openvpn-client@<istemciayarlari>.conf` komutu kullanılabilir.
+
+#### Android
 
 Android işletim sistemi 7 sürüm ve sonrasında VPN desteğini işletim seviyesinde sunmaya başlamıştır. Ne yazık ki OpenVPN hala bu seçenekler arasında olmamakla birlikte özgür bir OpenVPN istemcisini Android ayarlarında VPN sağlayıcısı olarak belirlediğinizde sistemle gayet uyumlu çalışmaktadır.
 
 1. [OpenVPN for Android](https://f-droid.org/en/packages/de.blinkt.openvpn/) uygulamasını [F-Droid](https://f-droid.org/en) özgür yazılım deopsundan indirin ve cihazınıza kurun.
 
-2. OpenVPN for Android yazılımını açlıştırın ve açılan ekranda sağ üst köşedeki + simgesine tıklayarak ekleme arayüzünü açın.
+2. OpenVPN for Android yazılımını çalıştırın ve açılan ekranda sağ üst köşedeki + simgesine tıklayarak ekleme arayüzünü açın.
 
 ![alt-text](openvpn1.png)
 
@@ -137,7 +210,7 @@ Android ayarlarını yaparak sisteminizin VPN bağlantısını korumasını ve k
 
 ![alt-text](ayarlar4.png)
 
-### Yönlendirici
+#### Yönlendirici
 
 [Bu bölüme katkı verebilirsiniz](https://git.oyd.org.tr/oyd/guvenlik)
 
@@ -215,3 +288,8 @@ Eğer İnternet üzerinden cihazınıza ulaşılması gerekli ise VPN bağlantı
 Eğer Android sürümünüz sistem çapında VPN ayarları desteklemiyor ise OpenVPN for Android'in bağlantısı kesildiği durumda cihazınızın bağlantısını kontrol etmek için [AfWall](https://f-droid.org/en/packages/dev.ukanth.ufirewall/) yazılımını kullanabilirsiniz. Bu yazılımı çalıştırmak için cihazınızın rootlu olması gerekmektedir.
 
 Afwall kullanmanın bir diğer avantajı da cihazınızdaki hangi yazılımın İnternete erişip erişmeyeceğini ve erişecekse hangi kanal üzerinden olacağını belirtebiliyor olmanız.
+
+Kaynaklar;  
+- <https://github.com/Nyr/openvpn-install.git>  
+- <https://kendibaglantim.com>
+
