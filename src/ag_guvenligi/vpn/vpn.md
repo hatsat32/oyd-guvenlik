@@ -153,7 +153,17 @@ GNU/Linux dağıtımları Linux çekirdeğinde doğrudan Openvpn ve daha yeni bi
 
 2. Gnome'un ayarlarına isterseniz sağ üst köşeden açılan menüde **ağ ayarlarına** girerek veya etkinlikler köşesine tıklayarak menüden **ayarlara** girerek ağ ayarlarına girin.
 
-3. Ağ ayarlarından
+3. Sağda yer alan "+" düğmesine tıklayın. 
+
+![alt-text](vpn1.png)
+
+4. Karşınıza çeşitli seçeneklerin sunulduğu "VPN Ekle" penceresi çıkacak. Burada en alttaki "Dosyadan aktar" seçeneğini seçin. .ovpn uzantılı VPN dosyasını bulun ve aktarın.
+
+![alt-text](vpn2.png)
+
+5. Eklediğiniz VPN'in yanındaki düğmeye tıklayarak kullanılabilir hale getirebilirsiniz.
+
+![alt-text](vpn3.png)
 
 #### Terminal'den Istemci Kurulumu
 
@@ -224,7 +234,7 @@ GNU/Linux işletim sisteminde firewall kuralları ile cihazınızın İnternet b
 
 #### UFW
 
-Uncomplicated Firewall GNU/Linux dağıtımlarda firewall ayarlarını yapılandırmak için kullanılan grafik arayüzü de bulunan bir yazılım. VPN kurulumunuzun bilgisayarınızdan dışarı tek bağlantı olması içn aşağıdaki yönergeyi takip edebilirsiniz.
+Uncomplicated Firewall GNU/Linux dağıtımlarda firewall ayarlarını yapılandırmak için kullanılan grafik arayüzü de bulunan bir yazılım. VPN kurulumunuzun bilgisayarınızdan dışarı tek bağlantı olması için aşağıdaki yönergeyi takip edebilirsiniz.
 
 **IPv6 kullanımı kapatın**
 
