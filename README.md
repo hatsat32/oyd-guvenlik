@@ -1,16 +1,16 @@
 # Özgür Yazılım Derneği Güvenlik Rehberi
 
-Bu depo, [guvenlik.oyd.org.tr](https://guvenlik.oyd.org.tr) adresinde bulunan Güvenlik Rehberi'ni içerir. 
+Bu depo, [guvenlik.oyd.org.tr](https://guvenlik.oyd.org.tr) adresinde bulunan Güvenlik Rehberi'ni içerir.
 
 ## Kullanım ve test
 
-Güvenlik Rehberi, [mdBook](https://github.com/rust-lang/mdBook) ile oluşturulmuştur. 
+Güvenlik Rehberi, [mdBook](https://github.com/rust-lang/mdBook) ile oluşturulmuştur.
 
 mdBook kurulumu:
 
 ```
-wget https://github.com/rust-lang/mdBook/releases/download/v0.4.1/mdbook-v0.4.1-x86_64-unknown-linux-gnu.tar.gz -o mdbook.tar.gz
-tar xzvf mdbook.tar.gz
+wget -O mdbook.tar.gz https://github.com/rust-lang/mdBook/releases/download/v0.4.1/mdbook-v0.4.1-x86_64-unknown-linux-gnu.tar.gz
+tar -xvf mdbook.tar.gz
 sudo mv mdbook /usr/local/bin/
 ```
 
