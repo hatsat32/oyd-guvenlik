@@ -33,6 +33,7 @@ Kullanmak konusunda karar verdiğiniz bir GPG anahtarınız olduktan sonra sonra
 Libreboot imajında değişiklikler yapabilmek ve bu değişiklikleri bios çipine yükleyebilmek için gerkeli yazılımları indirmelisiniz. [Libreboot'un arşivinden](https://www.mirrorservice.org/sites/libreboot.org/release/stable/20160907/) gerekli dosyaları indirebilir imzasını GPG ile doğrulayabilirsiniz. İhtiyacınız olan cbfstool ve flashrom (dizinde flash adında) yazılımları indirdiğiniz arşivin dizininde bulunacak.
 
 Flashrom yazılımını dağıtımınızın paket depolarından da indirebilirsiniz.
+>>>>>>> 4108a03... Update 'src/cihaz_guvenligi/libreboot_grub.md'
 
 Apt paket yöneticisi kullanan dağıtımlarda (Debian, Mint, Ubuntu vb.):
 
@@ -99,8 +100,6 @@ terminaloutput --append gfxterm
 set superusers="root"
 password_pbkdf2 root grub.pbkdf2.sha512.10000.HEXDIGITS.MOREHEXDIGITS
 
-
-
 #Default to first option, automatically boot after 1 seccond
 ```
 
@@ -123,7 +122,6 @@ function try_user_config {
    done
 }
 ```
-
 
 
 ## Açık anahtarınızı hazırlayın
