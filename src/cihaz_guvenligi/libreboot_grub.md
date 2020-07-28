@@ -27,7 +27,6 @@ Bu noktada ihtiyaç ve beklentilerinize göre değerlendirmeniz gereken bir husu
 
 Kullanmak konusunda karar verdiğiniz bir GPG anahtarınız olduktan sonra sonraki aşamaya geçebilrsiniz.
 
-
 ## Gerekli yazılımları indirin
 
 Libreboot imajında değişiklikler yapabilmek ve bu değişiklikleri bios çipine yükleyebilmek için gerkeli yazılımları indirmelisiniz. [Libreboot'un arşivinden](https://www.mirrorservice.org/sites/libreboot.org/release/stable/20160907/) gerekli dosyaları indirebilir imzasını GPG ile doğrulayabilirsiniz. İhtiyacınız olan cbfstool ve flashrom (dizinde flash adında) yazılımları indirdiğiniz arşivin dizininde bulunacak.
@@ -213,6 +212,7 @@ Eğer imza sisteminin çalışıp çalışmadığını denemek isterseni. Kasıt
 
 
 ## Yapılandırmanızı kalıcı hale getirin
+>>>>>>> 278c964... libreboot düzeltmeleri
 
 Şayet grubtest.cfg yapılandırmasından memnun kaldıysanız. grubtest.cfg dosyasını grub.cfg olarak adandırıp 7. adımdan itibaren işlemleri tekrarlayın. Bundan sonra bilgisayarınız libreboot ve GRUB'ın GPG denetimi altında açılacaktır.
 
