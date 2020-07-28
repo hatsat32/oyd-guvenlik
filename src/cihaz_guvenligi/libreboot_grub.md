@@ -27,6 +27,7 @@ Bu noktada ihtiyaç ve beklentilerinize göre değerlendirmeniz gereken bir husu
 
 Kullanmak konusunda karar verdiğiniz bir GPG anahtarınız olduktan sonra sonraki aşamaya geçebilrsiniz.
 
+
 ## Gerekli yazılımları indirin
 
 Libreboot imajında değişiklikler yapabilmek ve bu değişiklikleri bios çipine yükleyebilmek için gerkeli yazılımları indirmelisiniz. [Libreboot'un arşivinden](https://www.mirrorservice.org/sites/libreboot.org/release/stable/20160907/) gerekli dosyaları indirebilir imzasını GPG ile doğrulayabilirsiniz. İhtiyacınız olan cbfstool ve flashrom (dizinde flash adında) yazılımları indirdiğiniz arşivin dizininde bulunacak.
@@ -99,6 +100,7 @@ set superusers="root"
 password_pbkdf2 root grub.pbkdf2.sha512.10000.HEXDIGITS.MOREHEXDIGITS
 
 
+
 #Default to first option, automatically boot after 1 seccond
 ```
 
@@ -123,6 +125,7 @@ function try_user_config {
 ```
 
 
+
 ## Açık anahtarınızı hazırlayın
 
 GRUB'ın kontrolleri yapacağı size ait GPG anahtarının açık anahtarının uygun formatta kaydetmeniz gerekli. Bunun için aşağıdaki komutu çalıştırın. boot.key sizin açık anahtarınız olarak dizine kaydedilecektir.
@@ -138,6 +141,7 @@ Libreboot GRUB'ın GPG anahtarınız ile imza kontrol etmesi için aşağıdaki 
 trust (cbfsdisk)/boot.key
 set check_signatures=enforce
 ```
+
 
 ## Çekirdek ve yapılandırma dosyalarını imzalayın
 
@@ -212,7 +216,6 @@ Eğer imza sisteminin çalışıp çalışmadığını denemek isterseni. Kasıt
 
 
 ## Yapılandırmanızı kalıcı hale getirin
->>>>>>> 278c964... libreboot düzeltmeleri
 
 Şayet grubtest.cfg yapılandırmasından memnun kaldıysanız. grubtest.cfg dosyasını grub.cfg olarak adandırıp 7. adımdan itibaren işlemleri tekrarlayın. Bundan sonra bilgisayarınız libreboot ve GRUB'ın GPG denetimi altında açılacaktır.
 
@@ -276,6 +279,7 @@ Ardından çalıştırılabilir yapın:
 `sudo chmod +x zz-update-signatures`
 
 Bu aşamanın ardından her çekirdek güncellemesinde ilgili betik çalışarak imzaların varlığını kontrol edecek, imza yok ise /boot dizinindeki her dosyayı imzalayacak ve ardından GRUB yapılandırmasını imzalayacaktır. Bu aşamada cihazınız sizden GPG anahtarınızın parolasını isteyecektir.
+
 
 
 ## Ek Okumalar
