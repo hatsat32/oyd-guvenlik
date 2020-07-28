@@ -34,13 +34,13 @@ Libreboot imajında değişiklikler yapabilmek ve bu değişiklikleri bios çipi
 
 Flashrom yazılımını dağıtımınızın paket depolarından da indirebilirsiniz.
 
-Debian temelli dağıtımlarda:
+Apt paket yöneticisi kullanan dağıtımlarda (Debian, Mint, Ubuntu vb.):
 
 `sudo apt-get update`
 
 `sudo apt-get install flashrom`
 
-Yum paket yöneticisi kullanan dağıtımlarda (Fedora, CentOS vb)
+Yum paket yöneticisi kullanan dağıtımlarda (Fedora, CentOS vb):
 
 `sudo yum install flashrom`
 
@@ -84,7 +84,7 @@ cbfstool dizininde libreboot.rom'un bulunduğundan emin olup aşağıdaki komutu
 
 Bir saldırganın GPG doğrulamasını aşmak için yapması gereken tek şey boot aşamasında GRUB'a doğrulama yapmamasını söylemek. Bu bakımdan Libreboot içinde çalışan GRUB'ın ayar değişiklikleri için parola talep etmesi güvenliğin anlamlı olabilmesi için şart.
 
-Bunun için [Zarola](zarola.oyd.org.tr) yöntemini kullanmanızı hararetle tavsiye ederiz. Keza bilgisayarınızın güvenliğinin ilk adımı bu parolanın güvenliğine bağlı.
+Bunun için [Zarola](https://zarola.oyd.org.tr) yöntemini kullanmanızı hararetle tavsiye ederiz. Keza bilgisayarınızın güvenliğinin ilk adımı bu parolanın güvenliğine bağlı.
 
 Bunun için bir terminalde `grub-mkpasswd-pbkdf2` komutunu çalıştırıp parolanızı girin. Çıktı şuna benzeyecektir;
 
@@ -280,10 +280,10 @@ Bu aşamanın ardından her çekirdek güncellemesinde ilgili betik çalışarak
 
 ## Ek Okumalar
 
-https://libreboot.org/docs/gnulinux/grub_hardening.html
+<https://libreboot.org/docs/gnulinux/grub_hardening.html>
 
-https://github.com/Bandie/grub2-signing-extension
+<https://github.com/Bandie/grub2-signing-extension>
 
-https://www.crowdstrike.com/blog/enhancing-secure-boot-chain-on-fedora-29/
+<https://www.crowdstrike.com/blog/enhancing-secure-boot-chain-on-fedora-29/>
 
-https://www.gnu.org/software/grub/manual/grub/html_node/Using-digital-signatures.html
+<https://www.gnu.org/software/grub/manual/grub/html_node/Using-digital-signatures.html>
