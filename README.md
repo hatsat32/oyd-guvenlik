@@ -26,7 +26,24 @@ Deployment:
 
 ## Katkıda bulunanlar
 
-TODO
+* Filiz Akın
+* Uğur Arıcı
+* Alper Atmaca
+* Tan Aytekin
+* Murat Emir Cabaroğlu
+* Onur Çelik
+* Cemre Demircioğlu
+* Mert Gör
+* Hamdi Gümüş
+* Derya Karaarslan
+* Umut Karcı
+* Özcan Oğuz
+* Furkan Senan
+* Osman Orçun Serçe
+* Zeynep Topsakal
+* Neslihan Turan
+* Yasin İsa Yıldırım
+* Mustafa Yontar
 
 ## Lisans
 
