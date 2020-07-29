@@ -1,8 +1,14 @@
 # Mesaj Disiplini
 
-## Gönderene asla güvenmeyin
+* [Gönderene asla güvenmeyin](#gonderene-guvenme)
+* [E-postalardaki bağlantılardan sakının](#eposta-baglanti)
+* [Asla bir bağlantıya tıkladıktan sonra hesap girişi yapmayın](#hesap-girisi)
+* [Dosya Eklerinden uzak durun](#dosya-eki)
+* [Ek okumalar](#ek-okuma)
 
-E-postanın yaşanan çoğu saldırının temel kaynağı olmasının temelinde gönderenin kimliğinin doğrulanmasının imkanı olmamasıdır.
+## Gönderene asla güvenmeyin<a name="gonderene-guvenme"></a>
+
+E-postanın yaşanan çoğu saldırının temel kaynağı olmasının nedeni gönderenin kimliğinin doğrulanmasının imkanı olmamasıdır.
 
 Tekrar edelim; Herhangi biri e-postanın gönderen bilgisini başka birinden gelmiş gibi taklit edebilir.
 
@@ -16,7 +22,7 @@ Genel olarak posta kutunuzda beklenmedik her e-postaya şüphe ie yaklaşmalıs�
 
 Eğer hesabınıza girildiyse; hatırlamadığınız yanıtlar, yeni girdiler, dizinler, yaratılmış filtreler veya ayarlarınızda değişiklikler görmeniz mümkündür. Bu gibi şüpheli durumlarda teknik destek almalı ve önleyici olarak parolalarınızı değiştirmelisiniz.
 
-## E-postalardaki bağlantılardan sakının
+## E-postalardaki bağlantılardan sakının<a name="eposta-baglanti"></a>
 
 Bağlantılar (linkler), çoğunlukla masum görünümlü, hatta kimi zaman e-postanın içinde gizli olmakla saldırganların bilgi çalmasının veya cihazları ele geçirmeleri için en temel yoldur.
 
@@ -26,9 +32,9 @@ En iyisi e-postalarla gelen bağlantılara asla tıklamamaktır. Eğer e-posta i
 * Gelen bağlantıya tıklamak yerine elle yazabilir misiniz? Gönderilen bağlantı göründüğü gibi olmayabilir. Alan adları, aslına benzer eşyazımlar veya farklı harfler içeriyor olabilir (ör: rakam olan "0" ile büyük "O", veya latin ile kiril harfler gibi). Gelen bağlantı, <https://riseuρ.net> gibi görünüyor olabilir fakat aslında saldırganın web sitesi olan <https://riseuρ.net> (ikinci bağlantı yunan "p" harfi kullanmakta.) sizi yönlendiriyor olabilir. Bu tip saldırıları önlemenin en güvenli yolu ilgili bağlantıyı adres çubuğuna elle yazmaktır.
 * Alan adını tanıyor musunuz? Çoğu e-posta istemcisi, web tarayıcılarında olduğu gibi, imleci bağlantıların üzerinde tuttuğunuzda gittiği URL'yi gösterir. Eğer bağlantının gittiği yer beklenmedik veya yabancı ise, göndereni gerçek olup olmadığı yönünde teyit edin. Bağlantılar her zaman "https://" ile başlamalıdır. Eğer "data://" ile başlıyorsa bu kesinlikle bunun bir oltalama saldırısı olduğuna işarettir.
 
-Bilinmeyen kişilerden veya şüpheli görünen e-postalarla gelen bağlantılar ve dosyaları asla açmayın. Tanıdığınız kişilerin aksine bilinmeyen kimseler size gerçekten ihtiyacınız olacak bir bağlantı veya dosya göndermeyecektir. Eğer bilinmeyen bir gönderenin bağlantısı gerçekten gerekli bir bilgi içeriyorsa, bu bilgiye ayrıca yapılacak bir arama gibi daha güvenilir bir şekilde ulamak mümkündür.
+Bilinmeyen kişilerden veya şüpheli görünen e-postalarla gelen bağlantılar ve dosyaları asla açmayın. Tanıdığınız kişilerin aksine bilinmeyen kimseler size gerçekten ihtiyacınız olacak bir bağlantı veya dosya göndermeyecektir. Eğer bilinmeyen bir gönderenin bağlantısı gerçekten gerekli bir bilgi içeriyorsa, bu bilgiye ayrıca yapılacak bir arama gibi daha güvenilir bir şekilde ulaşmak mümkündür.
 
-## Asla bir bağlantıya tıkladıktan sonra hesap girişi yapmayın
+## Asla Bir Bağlantıya Tıkladıktan Sonra Hesap Girişi Yapmayın<a name="hesap-girisi"></a>
 
 Eğer e-posta ile gelen bir bağlantıya tıklarsanız, açılan sayfada herhangi bir hesabınızın bilgileri ile giriş yapmamanız önemlidir. Eğer bir web sayfası sizden giriş yapmanızı isterse şu adımları takip edin:
 
@@ -39,15 +45,15 @@ Eğer e-posta ile gelen bir bağlantıya tıklarsanız, açılan sayfada herhang
 
 Bu yöntem sizi çoğu oltalama saldırısından koruyacaktır.
 
-## Eklentilerden uzak durun
+## Dosya Eklerinden Uzak Durun<a name="dosya-eki"></a>
 
-E-posta eklentileri oltalama saldırıları için aracı olmak dahil ciddi tehlikeler içerir. Eklentilerin gönderenler arasında gözlenmediği veya değiştirilmediğine dair güvence yoktur. Hali ile gönderdiğiniz eklentinin alıcıya ulaşan ile aynı olduğuna emin olamazsınız. Sizin ile alıcınız arasındaki kötücül bir sunucu, gönderinizi istediği gibi bir virus veya kötücül yazılım ile değiştirebilir. Ek olarak gönderilen ekler alıcının, kontrol edilmesi kolay olmayan e-posta kutusunda kalmaktadır. Örneğin, kredi kartı bilgilerinizi içeren bir ödeme formunu satıcıya göndermeniz durumunda satıcı silmediği sürece o bilgi kendilerine ait e-posta sunucusunda duracaktır. Bir ihlal olması durumunda, sunucuya giren saldırganlar gönderdiğiniz bilgiye de erişecektir.
+E-posta dosya ekleri, oltalama saldırıları için aracı olmak dahil ciddi tehlikeler içerir. Dosya eklerinin gönderenler arasında gözlenmediği veya değiştirilmediğine dair güvence yoktur. Hali ile gönderdiğiniz ekin alıcıya ulaşan ile aynı olduğuna emin olamazsınız. Sizin ile alıcınız arasındaki kötücül bir sunucu, gönderinizi istediği gibi bir virus veya kötücül yazılım ile değiştirebilir. Ek olarak gönderilen dosyalar alıcının, kontrol edilmesi kolay olmayan e-posta kutusunda kalmaktadır. Örneğin, kredi kartı bilgilerinizi içeren bir ödeme formunu satıcıya göndermeniz durumunda satıcı silmediği sürece o bilgi kendilerine ait e-posta sunucusunda duracaktır. Bir ihlal olması durumunda, sunucuya giren saldırganlar gönderdiğiniz bilgiye de erişecektir.
 
-E-posta eklentileri yerine, ekleri sunucuda tutup bağlantılarını e-posta ile göndermek daha iyidir. İdeali, bu bağlantıların dosyaları bir parola ile korunduğu veya bir tür yetkilendirme sistemi ile giriş yapılan ve bir süre sonra süresi geçen sistemlerle sunulmasıdır. Bu bağlantılar çoğu veri depolama sistemi tarafından kolaylıkla üretilebilmektedir. Kendi sunucunuzda duran veya uzak sunucularda çalıştırdığınız sistemler bu imkana sahip olabilir ([ör:Nextcloud](https://nextcloud.com/))
+E-posta dosya ekleri yerine, dosyaları sunucuda tutup bağlantılarını e-posta ile göndermek daha iyidir. İdeali, bu bağlantıların dosyaları bir parola ile korunduğu veya bir tür yetkilendirme sistemi ile giriş yapılan ve bir süre sonra süresi geçen sistemlerle sunulmasıdır. Bu bağlantılar çoğu veri depolama sistemi tarafından kolaylıkla üretilebilmektedir. Kendi sunucunuzda duran veya uzak sunucularda çalıştırdığınız sistemler bu imkana sahip olabilir ([ör:Nextcloud](https://nextcloud.com/))
 
 Fazladan tedbir için, şifrelenmiş dosyaları <https://share.riseup.net> üzerinden geçici bağlantılar aracılığı ile paylaşabilirsiniz.
 
-## Ek okumalar
+## Ek Okumalar<a name="ek-okuma"></a>
 
 * [Security Self-defense / How to Avoid Phishing Attacks](https://ssd.eff.org/en/module/how-avoid-phishing-attacks)
 * [Security Education Companion / Phishing and Malware](https://sec.eff.org/topics/phishing-and-malware)

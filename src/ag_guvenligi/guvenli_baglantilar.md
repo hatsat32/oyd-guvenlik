@@ -61,7 +61,7 @@ Thunderbird sürüm 3.x'de güvenli bağlantıları etkinleştirmek üzere gerek
 
 ## iOS
 
-Eğer bunun gibi bir apple cihazınız var ise nasıl güvenli şekilde ayarlarınızı değiştirebileceğinizle ilgili [talimatlarımızı](https://help.riseup.net/en/iphone-mail) inceleyebilirsiniz.
+Eğer bunun gibi bir apple cihazınız var ise nasıl güvenli şekilde ayarlarınızı değiştirebileceğinizle ilgili [talimatlarımızı](https://riseup.net/en/email/clients/ios-mail) inceleyebilirsiniz.
 
 ## SSS
 
@@ -89,7 +89,7 @@ C: TLS kullanan POP bağlantıları için 995 numaralı portu kullanın.
 
 S: Ya güvenli e-posta kullanımı ile ilgili daha fazla sorum varsa?
 
-C: Eğer detaylıca [riseup yardım sayfalarını](https://support.riseup.net) incelediyseniz ve hala sorularınız var ise sizi [riseup yardım talebi](https://support.riseup.net/en/topics/newemail_help/first) aracılığı ile sormaya davet ederiz. Kullanıcılarımıza iletişimlerini nasıl daha güvenli kıldığımızı ve tüm İnternet kullanıcılarının mahremiyetini nasıl arttırdığımızı anlatmaktan memnuniyet duyarız.
+C: Eğer detaylıca [riseup yardım sayfalarını](https://support.riseup.net) incelediyseniz ve hala sorularınız var ise sizi [riseup yardım talebi](https://support.riseup.net/en/topics/new) aracılığı ile sormaya davet ederiz. Kullanıcılarımıza iletişimlerini nasıl daha güvenli kıldığımızı ve tüm İnternet kullanıcılarının mahremiyetini nasıl arttırdığımızı anlatmaktan memnuniyet duyarız.
 
 ## Güvenli bağlantıların sınırları
 

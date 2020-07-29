@@ -25,8 +25,10 @@ Bilgisayar Kurulumları:
 Cep Telefonu Kurulumları:
 
 * **iOS**: [Security Planner / Apple iOS Şifreleme](https://securityplanner.org/#/tool/apple-ios-encryption)
-* **Android**: [Security Planner / Android Cihaz Şifreleme](https://securityplanner.org/#/tool/android-device-encryption)
-
+* **Android**: [How to Encrypt Your Android Phone (and Why You Might Want to) / Android Cihaz Şifreleme](https://www.howtogeek.com/141953/how-to-encrypt-your-android-phone-and-why-you-might-want-to/)
+* **Android**: [Full-Disk Encryption / Android Cihaz Şifreleme](https://source.android.com/security/encryption/full-disk)
+  * Önemli: Cihazınızı şifrelemeden önce cihazın şarjının %80 ve şarja bağlı olmasına dikkat ediniz. Öncesinde yedeklerinizi alınız. İki kaynağı da inceleyebilirsiniz ancak How to Encrypt Your Android Phone (and Why You Might Want to) kaynağına pratik çözüm olarak bakabilirsiniz.
+  
 ## Cihaz şifrelemenin zorlukları
 
 **Sınırları:** Cihaz şifreleme her derde deva değildir! Eğer [parolalarınız](../beseri_guvenlik/parolalar.html) yeterince güçlü değil ise bir bilgisayar rahatlıkla parolanızı tahmin edebilir ve cihazınıza erişilebilir. Ayrıca cihaz şifreleme virüslere ve kötücül yazılımlara karşı hiç bir koruma sağlamaz. Eğer verileriniz bir bulut hizmetine yedeklendiyse ve bu hizmeti sağlayan sunucular açığa çıkar veya devletle işbirliği yaparsalarsa cihaz şifrelemesi verilerinizi korumayacaktır (kullanılan hizmet özellikle uçtan uca şifreleme desteklemiyorsa).
@@ -43,5 +45,6 @@ Cep Telefonu Kurulumları:
 * [Security Planner / Windows Şireleme](https://securityplanner.org/#/tool/windows-encryption)
 * [Security Planner / Mac Şifreleme](https://securityplanner.org/#/tool/mac-encryption)
 * [Security Planner / Apple iOS Şifreleme](https://securityplanner.org/#/tool/apple-ios-encryption)
-* [Security Planner / Android Cihaz Şifreleme](https://securityplanner.org/#/tool/android-device-encryption)
+* [How to Encrypt Your Android Phone (and Why You Might Want to) / Android Cihaz Şifreleme](https://www.howtogeek.com/141953/how-to-encrypt-your-android-phone-and-why-you-might-want-to/)
+* [Full-Disk Encryption / Android Cihaz Şifreleme](https://source.android.com/security/encryption/full-disk)
 * [Security Self-defense / iPhone'nunuzu nasıl Şifrelersiniz](https://ssd.eff.org/en/module/how-encrypt-your-iphone)
