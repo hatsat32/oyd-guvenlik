@@ -2,7 +2,7 @@
 
 ## Buradan başlayın
 
-Zaman sıkıntısı mı çekiyorsunuz? Baskıyla mücadele etmek ve daha iyi bir dünya inşaa etmek için çok mu meşgulsünüz? Muhteşem! Burada bahsedeceğimiz kolay adımlarla kendinizin ve çevrenizdeki herkesin sayısal hayatını daha güvenli kılabilirsiniz.
+Zaman sıkıntısı mı çekiyorsunuz? Baskıyla mücadele etmek ve daha iyi bir dünya inşa etmek için çok mu meşgulsünüz? Muhteşem! Burada bahsedeceğimiz kolay adımlarla kendinizin ve çevrenizdeki herkesin sayısal hayatını daha güvenli kılabilirsiniz.
 
 * [Yazışma disiplinine giriş yapın](./beseri_guvenlik/mesaj_disiplini.md): Yazışma disiplinine giriş yapın: Saldırıların çoğu posta kutunuzdan gelir. E-posta ve anlık yazışma kullanırken uygun önlemleri nasıl alacağınızı öğrenin.
 * [Parola yöneticisi ve Zarola kullanın](./beseri_guvenlik/parolalar.md): Parola yöneticisi kullanarak kendinizi çok sayıda tehlikeden koruyabilirsiniz. Parola yöneticinizi de bir Zarola ile koruyarak güvenliğinizi artırabilirsiniz.
