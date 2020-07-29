@@ -1,3 +1,4 @@
+![Tor logo](tor-logo.png "Tor logo")
 # Tor
 
 Tor, trafiğini gönüllüler tarafından oluşturulan ağ noktaları (TOR Relay) üzerinden şifrelenmiş bir biçimde yönlendirerek kullanıcılarına internet üzerinde belirli konularda anonimlik sağlayan özgür bir ağ projesidir.
