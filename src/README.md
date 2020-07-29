@@ -1,8 +1,8 @@
-# Sayısal Güvenlik
+# Özgür Yazılım Derneği Dijital Güvenlik Rehberi
 
-## Buradan Başlayın
+## Buradan başlayın
 
-Zaman sıkıntısı mı çekiyorsunuz? Baskıyla mücadele etmek ve daha iyi bir dünya inşaa etmek için çok mu meşgulsünüz? Muhteşem! Burada bahsedeceğimiz kolay adımlarla kendinizin ve herkesin sayısal hayatını daha güvenli kılabilirsiniz.
+Zaman sıkıntısı mı çekiyorsunuz? Baskıyla mücadele etmek ve daha iyi bir dünya inşa etmek için çok mu meşgulsünüz? Muhteşem! Burada bahsedeceğimiz kolay adımlarla kendinizin ve çevrenizdeki herkesin sayısal hayatını daha güvenli kılabilirsiniz.
 
 * [Yazışma disiplinine giriş yapın](./beseri_guvenlik/mesaj_disiplini.md): Yazışma disiplinine giriş yapın. Saldırıların çoğu posta kutunuzdan gelir. E-posta ve anlık yazışma kullanırken uygun önlemleri nasıl alacağınızı öğrenin.
 * [Parola yöneticisi ve Zarola kullanın](./beseri_guvenlik/parolalar.md): Parola yöneticisi kullanarak kendinizi çok sayıda tehlikeden koruyabilirsiniz. Parola yöneticinizi de bir Zarola ile koruyarak güvenliğinizi artırabilirsiniz.
@@ -10,25 +10,25 @@ Zaman sıkıntısı mı çekiyorsunuz? Baskıyla mücadele etmek ve daha iyi bir
 * [Web sitelerini daha güvenli gezin](./ag_guvenligi/guvenli_web_gezintisi.md): Varsayılan tarayıcınızı ve varsayılan ayarlarını değiştirip birkaç eklenti kurarak web üzerindeki güvneliğinizi ve keyfinizi fazlasıyla arttırabilirsiniz.
 * [Yazılımlarınızı güvenli çalıştırın](./cihaz_guvenligi/yazilim_guvenligi.md): Cihazlarınızdaki yazılımları güncellemek güvenliğiniz için yapabileceğiniz en basit şeydir.
 
-## Neden Güvenlik Önemlidir
+## Güvenlik neden önemlidir?
 
 Bilgi ve iletişim (bilişim) teknolojilerinin giderek yükselen önemi bir başka olguyu daha hayatımıza getirdi: *gözetim toplumunun* yükselişi. Gözetimi, güç sahiplerinin [_hakimiyetlerini korumak için iletişim üzerinde kontrol kurması_] olarak düşünebilirsiniz.
 
-**Ulus Devletler;** yeni iletişim teknolojilerine, bu yolla yapılacak iletişimi ve kitleleri topluca kontrol etmek için gerekli altyapıları geliştirerek tepki vermiştir. Pek çok devlet aynı zamanda ahlaki değerleri olmayan özel şirketlerle insanların ve toplumun öncülerinin iletişimlerine ve cihazlarına girmek için işbirliği yapmakta.
+**Devletler;** yeni bilişim teknolojilerine, iletişimi ve kitleleri topluca kontrol etmek için gerekli altyapıları geliştirerek tepki vermiştir. Keza daha önce yapamayacakları gözetim her saniye İnternetten akan verilerle mümkün olmuştur. Pek çok devlet aynı zamanda ahlaki değerleri olmayan özel şirketlerle insanların ve sivil toplumun iletişimlerine ve cihazlarına girmek için işbirliği yapmakta.
 
-**Şirketler;** İnternet sayesinde ortaya çıkan veriye dayalı düzende rekabette sağ kalabilmek için insanların kişisel verilerini toplayıp, inceleyip sonuç çıkarmak zorunda olduklarını fark ettiler. Özellikle reklamcılık sektörü tamamen kişilerin takip edilmesi ve davranışlarının incelenmesi üzerine kurulu bir sisteme geçiş yaptı.
+**Şirketler;** İnternet sayesinde ortaya çıkan veriye dayalı düzende rekabette sağ kalabilmek için insanların kişisel verilerini toplayıp, inceleyip sonuç çıkarmanın çok karlı olduğunu fark etti. Özellikle reklamcılık sektörü tamamen kişilerin takip edilmesi ve davranışlarının incelenmesi üzerine kurulu bir sisteme geçiş yaptı. Bunun sonucu ortaya saçılmış kişisel veriler ve tarihin görmediği toplu bir gözetim oldu.
 
-**Suçlular;** kişilerin cihazlarına ve hesaplarına yapacakları saldırılar aracılığı ile yapabilecekleri şantaj ve sahteciliğin çokça karlı olduğunu farketti.
+**Suçlular;** kişilerin cihazlarına ve hesaplarına yapacakları saldırılar aracılığıyla şantaj ve sahteciliğin çokça karlı olduğunu fark etti. Devletlerin yaşanan suçlara karşı kayıtsız tavrı neredeyse suçların cezasız kalmasına neden olmaktadır. Devletler pek kadir olmalarına rağmen suçluları bahane ederek toplu gözetim sistemlerini de meşrulaştırmaya çalışmaktadır.
 
-Bu bağlamda, sayısal güvenlik hayati bir öneme sahiptir.
+Bu bağlamda, sayısal güvenlik bireylerin yaşamı için hayati bir öneme sahiptir.
 
-* Devlet gözetiminin, sosyal hareket ve ilerlemeyi bastırdığı gerçeği tarihi olarak bilinen bir gerçektir.
+* [Devlet gözetiminin](https://en.wikipedia.org/wiki/Stasi), [sosyal hareket](https://en.wikipedia.org/wiki/COINTELPRO) ve ilerlemeyi bastırdığı gerçeği tarihi olarak bilinen bir gerçektir.
 * Dolaylı bile olsa, kontrolsüz gözetimin sosyal hareketler ve insanlar üzerinde olumsuz etkileri vardır.
 * Şirket gözetimi devletlerinki kadar ciddi bir tehlikedir. Sadece şirketlerin insanlar hakkında topladığı sınırsız bilginin devletler tararfından başka amaçlarla kullanılması değil, şirketlerin tüketiciler üzerinde hiç olmadığı şekilde kontrol sahibi olması da tehlikenin bir parçasıdır.
 
 İnsanlar toplu gözetimin yükselişi hakkında bilgi edinmeye başladıklarında çoğunlukla yenik hissetmektedirler. Kimi bu durumdan kurtuluş olmadığına karar verip tüm benliklerini gözetim altında yaşamaya razı gelmekte veya tüm sayısal iletişimlerini kendilerini korumak adına sonlandırmaktadırlar. Biz üçüncü bir yol olduğuna inanıyor ve güvenlik ile mahremiyetin herkese erişilebilir olması için çalışıyoruz.
 
-## Güvenlik Önizlemi
+## Güvenlik önizlemi
 
 |Güvenlik Tipi|Bu nedir?|Ne zaman Faydalıdır?|
 |--- |--- |--- |
