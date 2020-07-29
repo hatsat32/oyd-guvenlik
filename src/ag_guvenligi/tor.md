@@ -202,6 +202,47 @@ Sonuç olarak, eklediğiniz vekil sunucusu "çevrimiçi" olarak görünmelidir.
 
 Tebrikler, Telegram'ı artık Tor üzerinden kullanıyorsunuz. Tor üzerinden yapılan sesli aramalar çok sık kesilmektedir, o yüzden "Aramalarda vekil sunucu kullan" seçeneğinin işaretini kaldırmanız arama kalitenizi artıracak, ancak trafiğinizin açıktan geçmesine sebebiyet verecektir.
 
+## Android
+
+Android üzerinde Tor kullanmak için, öncelikle özgür uygulama mağazası [F-Droid](https://f-droid.org)'i indirmeniz gerekmektedir. Bunun için cep telefonunuzdan <https://f-droid.org>'u ziyaret edebilir ya da aşağıdaki QR kodunu tarayabilirsiniz.
+
+![QR F-Droid](qr.png "F-Droid QR")
+
+F-Droid'in sitesine girdiğinizde, "F-Droid'i indir" butonuna basın. 
+
+![F-Droid](torandroid0.jpg "F-Droid QR")
+
+Sonrasında çok yüksek ihtimalle, tarayıcınızın uygulama kurma yetkisi olmadığına dair bir hata alacaksınız. "Ayarlar" butonuna basıp "Bu kaynaktan izin ver" seçeneğini aktif edin.
+ 
+![F-Droid](torandroid1.jpg "F-Droid QR")
+![F-Droid](torandroid2.jpg "F-Droid QR")
+
+Daha sonra, F-Droid kurulacaktır. F-Droid'i ilk açtığınızda depoları güncelleyecektir, bunu `apt update` gibi düşünebilirsiniz. Daha sonrasında aşağıdaki gibi bir ekran bizi karşılayacak:
+
+![F-Droid](torandroid3.jpg "F-Droid QR")
+
+Tor Browser ve Orbot gibi araçlar, F-Droid'in orijinal deposunda değil, [The Guardian Project](https://guardianproject.org)'in deposunda bulunur. Bunun için bu depoyu aktive etmemiz gerekir. Aşağıdaki adımları izleyerek bu depoyu aktive edebilirsiniz. Ayarlar sekmesinden "Depolar" seçeneğine basıp, Guardian Project seçeneğini aktive edin.
+
+![F-Droid](torandroid4.jpg "F-Droid QR")
+![F-Droid](torandroid5.jpg "F-Droid QR")
+
+Daha sonra ekranı aşağı kaydırmaya çalışarak depoları güncelleyin ve aramaya "Tor Browser" yazın. "Yükle" butonuna basarak uygulamayı kurun. Bir önceki adımdaki izi süreci tekrar karşınıza çıkacaktır.
+
+![F-Droid](torandroid6.jpg "F-Droid QR")
+
+Tor Browser'ı başlatın. Sizi şöyle bir ekran karşılayacak:
+
+![F-Droid](torandroid.jpg "F-Droid QR")
+
+Sağ üstteki dişliye tıklayın ve aşağıdaki adımları izleyin:
+
+![F-Droid](torandroid8.jpg "F-Droid QR")
+![F-Droid](torandroid11.jpg "F-Droid QR")
+
+Daha sonra geri dönün ve "Bağlan" butonuna basın. Eğer aşağıdaki gibi bir ekranla karşılaştıysanız Tor bağlantısını kurdunuz. 
+
+![F-Droid](torandroid12.jpg "F-Droid QR")
+
 ## Tor Ağının Zayıf Noktaları
 
 Genel olarak Tor ağı güvenli sayılsa da %100 güvenlik SAĞLAMAYACAKTIR. İlk bağlandığınız Tor düğümü sizin IP adresinizi bilebilir, İnternet'e çıktığınız son Tor düğümü ise nereye bağlandığınızı bilecektir.
