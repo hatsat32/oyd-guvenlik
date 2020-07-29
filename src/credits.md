@@ -14,6 +14,7 @@
 * Derya Karaarslan
 * Umut Karcı
 * Özcan Oğuz
+* Furkan Senan
 * Osman Orçun Serçe
 * Zeynep Topsakal
 * Neslihan Turan
