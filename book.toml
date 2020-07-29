@@ -4,3 +4,7 @@ authors = ["Özgür Yazılım Derneği"]
 language = "tr"
 multilingual = false
 src = "src"
+
+[output.html]
+theme = "src/theme"
+git-repository-url = "https://git.oyd.org.tr/oyd/guvenlik"
