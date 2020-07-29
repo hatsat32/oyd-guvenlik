@@ -243,6 +243,58 @@ Daha sonra geri dönün ve "Bağlan" butonuna basın. Eğer aşağıdaki gibi bi
 
 ![F-Droid](torandroid12.jpg "F-Droid QR")
 
+### Orbot ile uygulamaları Tor ile kullanmak
+
+Twitter ve Telegram gibi uygulamaları Tor üzerinden kullanabilmek için, Orbot isminde bir uygulamayı kurmanız gerekmektedir. Bu uygulamayı [F-Droid](https://f-droid.org) üzerinden indirip kurabilirsiniz. Yukarıdaki Tor Browser yönergesinde F-Droid'i nasıl kurabileceğiniz anlatılmıştır.
+
+Orbot'u F-Droid üzerinden kurun.
+
+![Orbot](orbot0.jpg "Orbot")
+
+Orbot'u açtığınızda aşağıdaki gibi bir ekran ile karşılaşacaksınız:
+
+![Orbot](orbot1.jpg "Orbot")
+
+Alt tarafta bulunan "Köprüleri kullan" seçeneğini aktif hale getirin ve seçenekleri yukarıda "Tor bağlantısı sağlanıyor" yazana kadar deneyin (bunun biraz farazi olduğunun farkındayız ancak maalesef ki köprüler bazen çalışmayabiliyor):
+
+![Orbot](orbot2.jpg "Orbot")
+
+En nihayetinde Tor ağına bağlanmış olacaksınız:
+
+![Orbot](orbot3.jpg "Orbot")
+
+Bu noktada, SOCKS proxy destekleyen uygulamalar için port numarası 9050, HTTP proxy destekleyen uygulamalar için ise 8118'dir. 
+
+#### Telegram'ın yapılandırılması
+
+Telegram uygulamasını açın ve soldaki sandviç menüden "Ayarlar" seçeneğine basın:
+
+![Orbot](orbot4.jpg "Orbot")
+
+Daha sonra açılan ayarlardan, "Veri ve Depolama" seçeneğine girin:
+
+![Orbot](orbot5.jpg "Orbot")
+
+Daha sonra en altta bulunan "Vekil sunucu" ayarlarına girin ve bilgileri aşağıdaki gibi doldurun:
+
+![Orbot](orbot7.jpg "Orbot")
+
+Eklediğiniz vekil sunucunun yanında "Bağlandı" yazıyorsa yapılandırmanız çalışıyordur. Ana ekrana döndüğünüzde, üst tarafta aşağıdaki gibi bir ikon görüyorsanız, Telegram artık Tor ağı üzerinden çalışıyor demektir:
+
+![Orbot](orbot8.jpg "Orbot")
+
+#### Twitter'ın yapılandırılması
+
+Twitter uygulamasına girdiğinizde, sol tarafı çekerek "Ayarlar" menüsüne girin.
+
+![Twitter over Tor](twitter0.jpg "Twitter over Tor")
+
+Proxy seçeneğine tıklayın ve bilgileri aşağıdaki gibi ayarlayıp kaydedin.
+
+![Twitter over Tor](twitter2.jpg "Twitter over Tor")
+
+Eğer tweetleri yenileyebiliyorsanız artık Twitter'ı Tor üzerinden kullanıyorsunuz demektir.
+
 ## Tor Ağının Zayıf Noktaları
 
 Genel olarak Tor ağı güvenli sayılsa da %100 güvenlik SAĞLAMAYACAKTIR. İlk bağlandığınız Tor düğümü sizin IP adresinizi bilebilir, İnternet'e çıktığınız son Tor düğümü ise nereye bağlandığınızı bilecektir.
