@@ -7,4 +7,9 @@ src = "src"
 
 [output.html]
 theme = "src/theme"
+default-theme = "rust"
 git-repository-url = "https://git.oyd.org.tr/oyd/guvenlik"
+
+[output.html.search]
+enable = true
+
