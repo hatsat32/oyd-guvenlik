@@ -1,6 +1,6 @@
 # Yazılım Güvenliği
 
-## Yazılımlarınızı ggüncel tutun
+## Yazılımlarınızı güncel tutun
 
 Bir saldırgan yazılımlarınızdaki bir zayıflığı kullanarak cihazlarınızın güvenliğini tehlikeye atabilir. Bu risk çoğu zaman sadece yazılımlarınızı güncel tutarak önleyebileceğiniz bir durumdur. Yazılım geliştiricileri çoğunlukla bu açıkları saldırganlar durumu keşfetmeden önce düzelterek güncellemeler aracılığı ile yamarlar. 
 
