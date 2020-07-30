@@ -1,3 +1,4 @@
+![Tor logo](tor-logo.png "Tor logo")
 # Tor
 
 Tor, trafiğini gönüllüler tarafından oluşturulan ağ noktaları (TOR Relay) üzerinden şifrelenmiş bir biçimde yönlendirerek kullanıcılarına internet üzerinde belirli konularda anonimlik sağlayan özgür bir ağ projesidir.
@@ -201,6 +202,99 @@ Sonuç olarak, eklediğiniz vekil sunucusu "çevrimiçi" olarak görünmelidir.
 ![Telegram over Tor](tortelegram4.png "Telegram over Tor")
 
 Tebrikler, Telegram'ı artık Tor üzerinden kullanıyorsunuz. Tor üzerinden yapılan sesli aramalar çok sık kesilmektedir, o yüzden "Aramalarda vekil sunucu kullan" seçeneğinin işaretini kaldırmanız arama kalitenizi artıracak, ancak trafiğinizin açıktan geçmesine sebebiyet verecektir.
+
+## Android
+
+Android üzerinde Tor kullanmak için, öncelikle özgür uygulama mağazası [F-Droid](https://f-droid.org)'i indirmeniz gerekmektedir. Bunun için cep telefonunuzdan <https://f-droid.org>'u ziyaret edebilir ya da aşağıdaki QR kodunu tarayabilirsiniz.
+
+![QR F-Droid](qr.png "F-Droid QR")
+
+F-Droid'in sitesine girdiğinizde, "F-Droid'i indir" butonuna basın. 
+
+![F-Droid](torandroid0.jpg "F-Droid QR")
+
+Sonrasında çok yüksek ihtimalle, tarayıcınızın uygulama kurma yetkisi olmadığına dair bir hata alacaksınız. "Ayarlar" butonuna basıp "Bu kaynaktan izin ver" seçeneğini aktif edin.
+ 
+![F-Droid](torandroid1.jpg "F-Droid QR")
+![F-Droid](torandroid2.jpg "F-Droid QR")
+
+Daha sonra, F-Droid kurulacaktır. F-Droid'i ilk açtığınızda depoları güncelleyecektir, bunu `apt update` gibi düşünebilirsiniz. Daha sonrasında aşağıdaki gibi bir ekran bizi karşılayacak:
+
+![F-Droid](torandroid3.jpg "F-Droid QR")
+
+Tor Browser ve Orbot gibi araçlar, F-Droid'in orijinal deposunda değil, [The Guardian Project](https://guardianproject.org)'in deposunda bulunur. Bunun için bu depoyu aktive etmemiz gerekir. Aşağıdaki adımları izleyerek bu depoyu aktive edebilirsiniz. Ayarlar sekmesinden "Depolar" seçeneğine basıp, Guardian Project seçeneğini aktive edin.
+
+![F-Droid](torandroid4.jpg "F-Droid QR")
+![F-Droid](torandroid5.jpg "F-Droid QR")
+
+Daha sonra ekranı aşağı kaydırmaya çalışarak depoları güncelleyin ve aramaya "Tor Browser" yazın. "Yükle" butonuna basarak uygulamayı kurun. Bir önceki adımdaki izi süreci tekrar karşınıza çıkacaktır.
+
+![F-Droid](torandroid6.jpg "F-Droid QR")
+
+Tor Browser'ı başlatın. Sizi şöyle bir ekran karşılayacak:
+
+![F-Droid](torandroid.jpg "F-Droid QR")
+
+Sağ üstteki dişliye tıklayın ve aşağıdaki adımları izleyin:
+
+![F-Droid](torandroid8.jpg "F-Droid QR")
+![F-Droid](torandroid11.jpg "F-Droid QR")
+
+Daha sonra geri dönün ve "Bağlan" butonuna basın. Eğer aşağıdaki gibi bir ekranla karşılaştıysanız Tor bağlantısını kurdunuz. 
+
+![F-Droid](torandroid12.jpg "F-Droid QR")
+
+### Orbot ile uygulamaları Tor ile kullanmak
+
+Twitter ve Telegram gibi uygulamaları Tor üzerinden kullanabilmek için, Orbot isminde bir uygulamayı kurmanız gerekmektedir. Bu uygulamayı [F-Droid](https://f-droid.org) üzerinden indirip kurabilirsiniz. Yukarıdaki Tor Browser yönergesinde F-Droid'i nasıl kurabileceğiniz anlatılmıştır.
+
+Orbot'u F-Droid üzerinden kurun.
+
+![Orbot](orbot0.jpg "Orbot")
+
+Orbot'u açtığınızda aşağıdaki gibi bir ekran ile karşılaşacaksınız:
+
+![Orbot](orbot1.jpg "Orbot")
+
+Alt tarafta bulunan "Köprüleri kullan" seçeneğini aktif hale getirin ve seçenekleri yukarıda "Tor bağlantısı sağlanıyor" yazana kadar deneyin (bunun biraz farazi olduğunun farkındayız ancak maalesef ki köprüler bazen çalışmayabiliyor):
+
+![Orbot](orbot2.jpg "Orbot")
+
+En nihayetinde Tor ağına bağlanmış olacaksınız:
+
+![Orbot](orbot3.jpg "Orbot")
+
+Bu noktada, SOCKS proxy destekleyen uygulamalar için port numarası 9050, HTTP proxy destekleyen uygulamalar için ise 8118'dir. 
+
+#### Telegram'ın yapılandırılması
+
+Telegram uygulamasını açın ve soldaki sandviç menüden "Ayarlar" seçeneğine basın:
+
+![Orbot](orbot4.jpg "Orbot")
+
+Daha sonra açılan ayarlardan, "Veri ve Depolama" seçeneğine girin:
+
+![Orbot](orbot5.jpg "Orbot")
+
+Daha sonra en altta bulunan "Vekil sunucu" ayarlarına girin ve bilgileri aşağıdaki gibi doldurun:
+
+![Orbot](orbot7.jpg "Orbot")
+
+Eklediğiniz vekil sunucunun yanında "Bağlandı" yazıyorsa yapılandırmanız çalışıyordur. Ana ekrana döndüğünüzde, üst tarafta aşağıdaki gibi bir ikon görüyorsanız, Telegram artık Tor ağı üzerinden çalışıyor demektir:
+
+![Orbot](orbot8.jpg "Orbot")
+
+#### Twitter'ın yapılandırılması
+
+Twitter uygulamasına girdiğinizde, sol tarafı çekerek "Ayarlar" menüsüne girin.
+
+![Twitter over Tor](twitter0.jpg "Twitter over Tor")
+
+Proxy seçeneğine tıklayın ve bilgileri aşağıdaki gibi ayarlayıp kaydedin.
+
+![Twitter over Tor](twitter2.jpg "Twitter over Tor")
+
+Eğer tweetleri yenileyebiliyorsanız artık Twitter'ı Tor üzerinden kullanıyorsunuz demektir.
 
 ## Tor Ağının Zayıf Noktaları
 
