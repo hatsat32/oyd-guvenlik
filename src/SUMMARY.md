@@ -27,6 +27,8 @@
   - [Let's Encrypt](ag_guvenligi/letsencrypt.md)
   - [Tor](ag_guvenligi/tor.md)
   - [VPN](ag_guvenligi/vpn/vpn.md)
+  - [Shadow Proxy](ag_guvenligi/shadow.md)
+
 ---
 [Katkıda Bulunanlar ve Lisans](credits.md)
 [Kaynaklar](resources.md)
