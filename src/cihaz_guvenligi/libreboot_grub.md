@@ -1,28 +1,25 @@
-# Libreboot ve GPG ile boot güvenliği
+# Libreboot ve GnuPG ile boot güvenliği
 
-Libreboot GPG ile birlikte bilgisayarınızı daha güvenlli hale getirebilir. Bunun için öncelikle bir bilgisayarın nasıl çalıştığını ve açılmak için içinden geçtiği süreçlerin anlaşılması gereklidir.
+Libreboot, GnuPG ile birlikte bilgisayarınızı daha güvenlli hale getirebilir. Bunun için öncelikle bir bilgisayarın nasıl çalıştığını ve açılmak için içinden geçtiği süreçlerin anlaşılması gereklidir.
 
-Bir bilgisayar hayatına elektrik ile başladığında şunlar sıra ile gerçekleşir;
+Bir bilgisayar hayatına elektrik ile başladığında sırasıyla aşağıdaki adımlar gerçekleşir:
 
-..
-Anakarttaki bir hafızadan Libreboot(nedir?) RAM'e yüklenir ve çalışmaya başlar.
-Libreboot bir bootloader olan GRUB'ı yükler
-GRUB /boot sektöründe bulunan ayar dosyasına bağlı olarak Linux'u yani çekirdeği yükler
-Çekirdek donanımları devreye alarak işletim sistemini yükler.
-Bilgisayarınız açılır.
+1. Anakarttaki bir hafızadan Libreboot RAM'e yüklenir ve çalışmaya başlar.
+2. Libreboot bir bootloader olan GRUB'ı yükler
+3. GRUB /boot sektöründe bulunan ayar dosyasına bağlı olarak Linux'u yani çekirdeği yükler
+4. Çekirdek donanımları devreye alarak işletim sistemini yükler.
+5. Bilgisayarınız açılır.
 
 Bu sürecin güvenliği her aşamanın bir sonraki aşamanın istenilen şekilde ve bilinen kaynaktan yüklenmesinin sağlanması ile mümkündür.
 
-...
+Libreboot kendi dahilinde GRUB çalıştırır. Bu bakımdan Libreboot kurulu bir cihazda kullanılabilecek biri depolama aygıtında, biri BIOS çipinde olmak üzere iki GRUB bulunur. Libreboot çalışma aşamasında BIOS çipinde bulunan GRUB ile sistemde bulunan GRUB'ı yükler.
 
-Libreboot kendi dahilinde GRUB çalıştırır. Bu bakımdan Libreboot kurulu bir cihazda kullanılabilecek biri depolama aygıtında, biri bios çipinde olmak üzere iki GRUB bulunur. Libreboot çalışma aşamasında bios çipinde bulunan GRUB ile sistemde bulunan GRUB'ı yükler.
-
-GPG ile Libreboot'un GRUB'ın kurulumunu ve yüklenecek çekirdeklerin değiştirilmediğini doğrulaması için ayarlarda bir miktar değişiklik yapmak gerekli.
+GnuPG ile Libreboot'un GRUB'ın kurulumunu ve yüklenecek çekirdeklerin değiştirilmediğini doğrulaması için ayarlarda bir miktar değişiklik yapmak gerekli.
 
 
-## Bir GPG anahtarı edinin
+## Bir GnuPG anahtarı edinin
 
-Grub kriptografik olarak çekirdek ve ayar dosyalarını denetlemek için GPG kullanmakta ve kullanılacak anahtarı sizin üretmeniz gerekmekte. Şayet halihazırda bir GPG anahtarınız yok ise sadece bu amaçla veya genel olarak kullanılmak üzere bir GPG anahtarı üretebilirsiniz. Bunun için [GPG rehberinden](/yazisma_guvenligi/gpg/gpg-anahtar-uretimi.md) yararlanabilirsiniz.
+GRUB, kriptografik olarak çekirdek ve ayar dosyalarını denetlemek için GnuPG kullanmakta ve kullanılacak anahtarı sizin üretmeniz gerekmekte. Şayet halihazırda bir GPG anahtarınız yok ise sadece bu amaçla veya genel olarak kullanılmak üzere bir GnuPG anahtarı üretebilirsiniz. Bunun için [GPG rehberinden](/yazisma_guvenligi/gpg/gpg-anahtar-uretimi.md) yararlanabilirsiniz.
 
 Bu noktada ihtiyaç ve beklentilerinize göre değerlendirmeniz gereken bir husus bulunmakta. Şayet kişisel GPG anahtarınızı sürekli olarak kullanacaksanız bu anahtarın bir noktada açığa çıkması veya kaybedilmesi tehlikesini de göze alıyor olacaksınız. Aynı zamanda anahtarınız cihazlarınızda ve belki başka cihazlarda tarafınızdan kullanılabileceği üzere bir noktada arzunuza aykırı olarak ayar dosyası veya çekirdek imzalamakta kullanılabilir siz bunu fark etmeden.
 
@@ -33,22 +30,22 @@ Kullanmak konusunda karar verdiğiniz bir GPG anahtarınız olduktan sonra sonra
 
 ## Gerekli yazılımları indirin
 
-Libreboot imajında değişiklikler yapabilmek ve bu değişiklikleri bios çipine yükleyebilmek için gerkeli yazılımları indirmelisiniz. [Libreboot'un arşisinden](https://www.mirrorservice.org/sites/libreboot.org/release/stable/20160907/) gerekli dosyaları indirebilir imzasını GPG ile doğrulayabilirsiniz. İhtiyacınız olan cbfstool ve flashrom (dizinde flash adında) yazılımları indirdiğiniz arşivin dizininde bulunacak.
+Libreboot imajında değişiklikler yapabilmek ve bu değişiklikleri bios çipine yükleyebilmek için gerkeli yazılımları indirmelisiniz. [Libreboot'un arşivinden](https://www.mirrorservice.org/sites/libreboot.org/release/stable/20160907/) gerekli dosyaları indirebilir imzasını GPG ile doğrulayabilirsiniz. İhtiyacınız olan cbfstool ve flashrom (dizinde flash adında) yazılımları indirdiğiniz arşivin dizininde bulunacak.
 
-Flashrom yazılımını dağıtımınızın reposunda da bulabilirsiniz.
+Flashrom yazılımını dağıtımınızın paket depolarından da indirebilirsiniz.
 
-Debian Dağıtımlarda:
+Debian temelli dağıtımlarda:
 
 `sudo apt-get update`
 
 `sudo apt-get install flashrom`
 
-Yum yönetici kullanan dağıtımlarda (Fedora, Centos)
+Yum paket yöneticisi kullanan dağıtımlarda (Fedora, CentOS vb)
 
 `sudo yum install flashrom`
 
 
-## Değiştirilecek Libreboot imajını elde edin.
+## Değiştirilecek Libreboot imajını elde edin
 
 Bu noktada iki seçeneğiniz bulunuyor. Şayet cihazınızda halihazırda Libreboot yüklü ise cihazınızın ROM'undan doğrudan imajı alabilir ve üzerinde değişiklik yapabilirsiniz.
 
@@ -72,7 +69,7 @@ Yukarıdaki örnekte çip boyutu 8mb görünmektedir.
 Dilediğiniz arşiv yöneticisi ile cihazınıza uygun olan imajı çıkarabilirsiniz.
 
 
-## ROM imajından grubtest.cfg dosyasını çıkarın.
+## ROM imajından grubtest.cfg dosyasını çıkarın
 
 ROM imajında yapılacak değişiklikler için cbfstool yazılımı kullanılmakta. Bunun için çıkardığınız libreboot.rom dosyasını cbfstool'un bulunduğu dizine ekleyin.
 
@@ -83,7 +80,7 @@ cbfstool dizininde libreboot.rom'un bulunduğundan emin olup aşağıdaki komutu
 `./cbfstool libreboot.rom extract -n grubtest.cfg -f grubtest.cfg`
 
 
-## GRUB Güvenliği için Parola belirleyin.
+## GRUB Güvenliği için parola belirleyin
 
 Bir saldırganın GPG doğrulamasını aşmak için yapması gereken tek şey boot aşamasında GRUB'a doğrulama yapmamasını söylemek. Bu bakımdan Libreboot içinde çalışan GRUB'ın ayar değişiklikleri için parola talep etmesi güvenliğin anlamlı olabilmesi için şart.
 
@@ -215,14 +212,14 @@ Herhangi bir şey yanlış ise ve cihazınız açılmaz ise. Bilgisayarınızı 
 Eğer imza sisteminin çalışıp çalışmadığını denemek isterseni. Kasıtlı olarak imzalı dosyaların imzalarını kaldırıp grubtest.cfg ile bilgisayarınızı başlatırsanız hata almanız gerekir. Bu şekilde yapılandırmanızın doğru ve imza denetlediğini görebilirsiniz.
 
 
-## Yapılandırmanızı kalıcı hale getirin.
+## Yapılandırmanızı kalıcı hale getirin
 
 Şayet grubtest.cfg yapılandırmasından memnun kaldıysanız. grubtest.cfg dosyasını grub.cfg olarak adandırıp 7. adımdan itibaren işlemleri tekrarlayın. Bundan sonra bilgisayarınız libreboot ve GRUB'ın GPG denetimi altında açılacaktır.
 
 **Çekirdek veya GRUB yapılandırmalarınıza güncelleme geldiği durumlarda imzaları yenilemeyi ihmal etmeyin**
 
 
-## İmzalama işlemini otomatik kılın.
+## İmzalama işlemini otomatik kılın
 
 Güncellemeler size pek belli etmeden gerçekleşebilir kurulumunuza bağlı olarak. Bu durumlarda güncellenen çekirdek ve grub yapılandırma dosyası libreboot'un bir sonraki açılışta cihazınızı çalıştırmayı reddetmesi ile sonuçlanabilir. Bu durumda libreboot'u imza kontrolü olmadan çalıştırabilirsiniz parolasını girerek lakin gereksiz paniğe yol açmamak adına işletim sisteminizin çekirdeğinizi her güncellediği esnada imzalarını da yenilemesini sağlayabilirsiniz. Bunun için aşağıdakiler gereklidir;
 
@@ -278,7 +275,7 @@ Ardından çalıştırılabilir yapın:
 
 `sudo chmod +x zz-update-signatures`
 
-Bu aşamanın ardından her çekirdek güncellemesinde ilgili betik çalışarak imzaların varlığını kontrol edecek, imza yok ise /boot dizinindeki her dosyayı imzalayacak ve ardından grub yapılandırmasını imzalayacaktır. Bu aşamada cihazınız sizden GPG anahtarınızın parolasını isteyecektir.
+Bu aşamanın ardından her çekirdek güncellemesinde ilgili betik çalışarak imzaların varlığını kontrol edecek, imza yok ise /boot dizinindeki her dosyayı imzalayacak ve ardından GRUB yapılandırmasını imzalayacaktır. Bu aşamada cihazınız sizden GPG anahtarınızın parolasını isteyecektir.
 
 
 ## Ek Okumalar
@@ -290,4 +287,3 @@ https://github.com/Bandie/grub2-signing-extension
 https://www.crowdstrike.com/blog/enhancing-secure-boot-chain-on-fedora-29/
 
 https://www.gnu.org/software/grub/manual/grub/html_node/Using-digital-signatures.html
-

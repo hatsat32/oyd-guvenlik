@@ -1,9 +1,22 @@
 ![Tor logo](tor-logo.png "Tor logo")
 # Tor
 
+* [Tor ağı nasıl çalışır?](#tor-agi-nasil-calisir)
+* [Tor Browser](#tor-browser)
+* [GNU/Linux'ta Tor Browser kurulumu](#tor-gnu)
+* [GNU/Linux'ta uygulamaları Tor üzerinden kullanmak (Tor proxy)](#tor-proxy-gnu)
+* [GNU/Linux'ta Telegram'ı Tor üzerinden kullanmak](#telegram-over-tor-gnu)
+* [Android'e Tor Browser kurulumu](#android)
+* [Android'e Orbot kurulumu](#orbot)
+* [Android'de Telegram'ı Tor üzerinden kullanmak](#telegram-android)
+* [Android'de Twitter'ı Tor üzerinden kullanmak](#twitter)
+* [Tor'un zayıflıkları](#tor-zayif-noktalar)
+* [Tor ile açığa çıkan vakalar](#tor-vakalar)
+
+
 Tor, trafiğini gönüllüler tarafından oluşturulan ağ noktaları (TOR Relay) üzerinden şifrelenmiş bir biçimde yönlendirerek kullanıcılarına internet üzerinde belirli konularda anonimlik sağlayan özgür bir ağ projesidir.
 
-## Tor ağı nasıl çalışır?
+## Tor ağı nasıl çalışır?<a name="tor-agi-nasil-calisir"></a>
 
 Tor ağının başlıca amacı; kullanıcılarının internet üzerindeki kimliklerini ve aktivitelerini ağ trafiğini rastgele bağlantı noktaları üzerinden sektirerek her türlü otorite gözetiminden korumaktır.
 
@@ -13,12 +26,12 @@ Her bağlantı noktasını bir kaldırım taşı olarak düşünürseniz, Tor a�
 
 Buraya kadar genel işleyişi anlayıp benimsediyseniz yavaş yavaş tarayıcı kurulumuna geçebiliriz.
 
-## Tor Browser
+## Tor Browser<a name="tor-browser"></a>
 
 Öncelikle, ehemmiyetle belirtmeliyiz ki Tor Browser bilgisayarınızın tüm trafiğini Tor ağı üzerinden **yollamaz.**  
 Örneğin, Tor Browser ile gezinirken, arkaplanda "X" bir mesajlaşma programı kullanıyorsanız, "X" programı üzerinden giden trafik Tor'dan geçmeyecek, dolayısıyla anonim olmayacaktır.
 
-Tor Browser, Mozilla Firefox'un bir çatallamasıdır (fork). 
+Tor Browser, Mozilla Firefox'un bir çatallamasıdır (fork).
 
 Ülkemizde Tor ağının bilinen düğümleri engellenmiş durumda olduğundan Tor ağına köprüleri (bridges) kullanarak bağlanabiliyoruz.
 
@@ -42,7 +55,7 @@ Bunların hiçbirine erişemiyorsanız, <gettor@torproject.org> adresine, işlet
 
 Bu noktadan itibaren işletim sisteminize göre:
 
-### GNU/Linux
+### GNU/Linux<a name="tor-gnu"></a>
 
 *Türkçe (tr) 64-bit*
 
@@ -92,11 +105,11 @@ Yapmanız gereken birkaç ayar daha var. Sağ üst köşedeki kalkan düğmesine
 
 ![Tor hardening](tor7.png "Kurulum 4")
 
-Bu sayfayı en yukarıya kaydırdığınızda, yani "Gizlilik ve Güvenlik" menüsünün en üstünde, "Onion Hizmetleri" başlığını göreceksiniz. Bu ayarı da "Her zaman" olarak değiştirin. Bu ayarı aktive ettiğinizde, eğer bir web sitesinin .onion uzantılı Tor servisi varsa, Tor tarayıcısı otomatik olarak .onion'lu servise bağlanacaktır. Bu özelliğin kullanılabilmesini sağlayan şey, "Onion-Location" HTTP başlığıdır, ayrıntılı bilgi için [burayı ziyaret edebilirsiniz](https://community.torproject.org/onion-services/advanced/onion-location/). 
+Bu sayfayı en yukarıya kaydırdığınızda, yani "Gizlilik ve Güvenlik" menüsünün en üstünde, "Onion Hizmetleri" başlığını göreceksiniz. Bu ayarı da "Her zaman" olarak değiştirin. Bu ayarı aktive ettiğinizde, eğer bir web sitesinin .onion uzantılı Tor servisi varsa, Tor tarayıcısı otomatik olarak .onion'lu servise bağlanacaktır. Bu özelliğin kullanılabilmesini sağlayan şey, "Onion-Location" HTTP başlığıdır, ayrıntılı bilgi için [burayı ziyaret edebilirsiniz](https://community.torproject.org/onion-services/advanced/onion-location/).
 
 ![Tor hardening](tor8.png "Kurulum 4")
 
-Bu ayarı açmadığınızda da, girdiğiniz sitenin .onion servisi varsa tarayıcınızın çubuğunda şöyle bir düğme çıkar: 
+Bu ayarı açmadığınızda da, girdiğiniz sitenin .onion servisi varsa tarayıcınızın çubuğunda şöyle bir düğme çıkar:
 
 ![Tor hardening](tor9.png "Kurulum 4")
 
@@ -115,7 +128,7 @@ Bunu denemek için, Özgür Yazılım Derneği'nin sitesini kullanabilirsiniz. <
 4. **HİÇBİR ARAÇ SİZİ TAMAMEN ANONİM YAPMAZ.**
 
 
-## Uygulamaları Tor üzerinden kullanmak
+## Uygulamaları Tor üzerinden kullanmak (Tor proxy)<a name="tor-proxy-gnu"></a>
 
 Telegram gibi uygulamaları Tor üzerinden kullanabilmeniz için öncelikle sisteminize `tor` paketini kurmanız gerekmektedir. Bunun için, bir Terminal açıp aşağıdaki komutları sırasıyla yazabilirsiniz:
 
@@ -124,7 +137,7 @@ sudo apt-get update
 sudo apt-get -y install tor obfs4proxy
 ```
 
-Daha sonra, `sudo systemctl stop tor` yazarak Tor servisini durdurun. Çünkü bağlanabilmek için köprülere ihtiyaç duyacaksınız. 
+Daha sonra, `sudo systemctl stop tor` yazarak Tor servisini durdurun. Çünkü bağlanabilmek için köprülere ihtiyaç duyacaksınız.
 
 Daha önceden indirmiş olduğunuz "Tor Browser" ile <https://bridges.torproject.org/> adresine bağlanıp "Get Bridges" maddesine tıklayın.
 
@@ -145,7 +158,7 @@ Nihayetinde çözdüğünüzde karşınıza gelecek ekran aşağıdaki gibi olac
 
 gibi bir format ile 3 adet köprünüz olacak.
 
-Daha sonra, Terminal'de aşağıdaki komutu çalıştırın: 
+Daha sonra, Terminal'de aşağıdaki komutu çalıştırın:
 
 `sudo nano /etc/tor/torrc`
 
@@ -179,7 +192,7 @@ Yukarıdaki yazıyı görüyorsanız proxy çalışıyor demektir. Daha sonra a�
 
 Artık **9050** numaralı portu kullanarak uygulamaları Tor'a bağlayabilirsiniz.
 
-### Telegram'ı Tor üzerinden kullanmak
+### Telegram'ı Tor üzerinden kullanmak<a name="telegram-over-tor-gnu"></a>
 
 Telegram'ı Tor üzerinden kullanabilmek için, Telegram'ın sol üst köşesindeki sandviç menüye basıp, ayarlar menüsüne gelin.
 
@@ -203,18 +216,18 @@ Sonuç olarak, eklediğiniz vekil sunucusu "çevrimiçi" olarak görünmelidir.
 
 Tebrikler, Telegram'ı artık Tor üzerinden kullanıyorsunuz. Tor üzerinden yapılan sesli aramalar çok sık kesilmektedir, o yüzden "Aramalarda vekil sunucu kullan" seçeneğinin işaretini kaldırmanız arama kalitenizi artıracak, ancak trafiğinizin açıktan geçmesine sebebiyet verecektir.
 
-## Android
+## Android<a name="android"></a>
 
 Android üzerinde Tor kullanmak için, öncelikle özgür uygulama mağazası [F-Droid](https://f-droid.org)'i indirmeniz gerekmektedir. Bunun için cep telefonunuzdan <https://f-droid.org>'u ziyaret edebilir ya da aşağıdaki QR kodunu tarayabilirsiniz.
 
 ![QR F-Droid](qr.png "F-Droid QR")
 
-F-Droid'in sitesine girdiğinizde, "F-Droid'i indir" butonuna basın. 
+F-Droid'in sitesine girdiğinizde, "F-Droid'i indir" butonuna basın.
 
 ![F-Droid](torandroid0.jpg "F-Droid QR")
 
 Sonrasında çok yüksek ihtimalle, tarayıcınızın uygulama kurma yetkisi olmadığına dair bir hata alacaksınız. "Ayarlar" butonuna basıp "Bu kaynaktan izin ver" seçeneğini aktif edin.
- 
+
 ![F-Droid](torandroid1.jpg "F-Droid QR")
 ![F-Droid](torandroid2.jpg "F-Droid QR")
 
@@ -240,11 +253,11 @@ Sağ üstteki dişliye tıklayın ve aşağıdaki adımları izleyin:
 ![F-Droid](torandroid8.jpg "F-Droid QR")
 ![F-Droid](torandroid11.jpg "F-Droid QR")
 
-Daha sonra geri dönün ve "Bağlan" butonuna basın. Eğer aşağıdaki gibi bir ekranla karşılaştıysanız Tor bağlantısını kurdunuz. 
+Daha sonra geri dönün ve "Bağlan" butonuna basın. Eğer aşağıdaki gibi bir ekranla karşılaştıysanız Tor bağlantısını kurdunuz.
 
 ![F-Droid](torandroid12.jpg "F-Droid QR")
 
-### Orbot ile uygulamaları Tor ile kullanmak
+### Orbot ile uygulamaları Tor ile kullanmak<a name="orbot"></a>
 
 Twitter ve Telegram gibi uygulamaları Tor üzerinden kullanabilmek için, Orbot isminde bir uygulamayı kurmanız gerekmektedir. Bu uygulamayı [F-Droid](https://f-droid.org) üzerinden indirip kurabilirsiniz. Yukarıdaki Tor Browser yönergesinde F-Droid'i nasıl kurabileceğiniz anlatılmıştır.
 
@@ -264,9 +277,9 @@ En nihayetinde Tor ağına bağlanmış olacaksınız:
 
 ![Orbot](orbot3.jpg "Orbot")
 
-Bu noktada, SOCKS proxy destekleyen uygulamalar için port numarası 9050, HTTP proxy destekleyen uygulamalar için ise 8118'dir. 
+Bu noktada, SOCKS proxy destekleyen uygulamalar için port numarası 9050, HTTP proxy destekleyen uygulamalar için ise 8118'dir.
 
-#### Telegram'ın yapılandırılması
+#### Telegram'ın yapılandırılması<a name="telegram-android"></a>
 
 Telegram uygulamasını açın ve soldaki sandviç menüden "Ayarlar" seçeneğine basın:
 
@@ -284,7 +297,7 @@ Eklediğiniz vekil sunucunun yanında "Bağlandı" yazıyorsa yapılandırmanız
 
 ![Orbot](orbot8.jpg "Orbot")
 
-#### Twitter'ın yapılandırılması
+#### Twitter'ın yapılandırılması<a name="twitter"></a>
 
 Twitter uygulamasına girdiğinizde, sol tarafı çekerek "Ayarlar" menüsüne girin.
 
@@ -296,7 +309,7 @@ Proxy seçeneğine tıklayın ve bilgileri aşağıdaki gibi ayarlayıp kaydedin
 
 Eğer tweetleri yenileyebiliyorsanız artık Twitter'ı Tor üzerinden kullanıyorsunuz demektir.
 
-## Tor Ağının Zayıf Noktaları
+## Tor Ağının Zayıf Noktaları<a name="tor-zayif-noktalar"></a>
 
 Genel olarak Tor ağı güvenli sayılsa da %100 güvenlik SAĞLAMAYACAKTIR. İlk bağlandığınız Tor düğümü sizin IP adresinizi bilebilir, İnternet'e çıktığınız son Tor düğümü ise nereye bağlandığınızı bilecektir.
 
@@ -304,13 +317,13 @@ Genel olarak Tor ağı güvenli sayılsa da %100 güvenlik SAĞLAMAYACAKTIR. İl
 
 Bütün bunlar bir yanda dursun;
 
-Ağ dinleme (zehirleme) saldırıları olarak bilinen MITM saldırıları ile Tor ağında giden parolalarınız gibi gizli kalması gereken bilgileriniz, güvenli sandığınız o yolda başkaları tarafından rahatlıkla ele geçirilebilir. Burada toplum yararına yapılan her projedeki gibi sistemin işlemesi için en büyük etkenin **güven** olduğunu görüyoruz. 
+Ağ dinleme (zehirleme) saldırıları olarak bilinen MITM saldırıları ile Tor ağında giden parolalarınız gibi gizli kalması gereken bilgileriniz, güvenli sandığınız o yolda başkaları tarafından rahatlıkla ele geçirilebilir. Burada toplum yararına yapılan her projedeki gibi sistemin işlemesi için en büyük etkenin **güven** olduğunu görüyoruz.
 
 Bu riskleri olabildiğince minimuma indirgemek için; "**Tor over VPN**" olarak tanımlanan VPN üzerinden Tor ağına girmek gibi yöntemler kullanılmaktadır. Tabii ki bu durumda da herhangi bir VPN otoritesi IP adresinizi açık olarak görebilir. Fakat Tor ağındaki riskleri minimuma indirgemiş olursunuz. Bu konuda da tamamıyla kullanmış olduğunuz VPN otoritesinin bilgilerinizi saklayıp satmadığından bir şekilde emin olmanız gerekmektedir.
 
 Farklı bir seçenek ise kendi sunucunuzu kiralayıp, üzerine bir OpenVPN servisi kurarak kendi VPN'inizi oluşturup onun üzerinden Tor ağına çıkmanız olabilir. Bu konuda Özgür Yazılım Derneği'nin bir projesi olan [Kendi Bağlantım](https://kendibaglantim.org)'ı inceleyebilirsiniz.
 
-## Tor kullanarak açığa çıkan vakalar
+## Tor kullanarak açığa çıkan vakalar<a name="tor-vakalar"></a>
 
 Harvard Üniversitesi'nde okuyan bir öğrenci, çalışmadığı vizelerini erteletebilmek amacıyla okuluna Tor ağı üzerinden bomba ihbarında bulunur, fakat yakalanır.
 

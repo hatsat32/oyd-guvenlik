@@ -5,7 +5,7 @@
 - [Beşeri Güvenlik](beseri_guvenlik/README.md)
   - [Mesaj Disiplini](beseri_guvenlik/mesaj_disiplini.md)
   - [Parolalar](beseri_guvenlik/parolalar.md)
-  - [Çift Aşamalı Doğrulama](beseri_guvenlik/2fa.md)
+  - [Çift Aşamalı Doğrulama (2FA)](beseri_guvenlik/2fa.md)
 - [Cihaz Güvenliği](cihaz_guvenligi/README.md)
   - [Yazılım Güvenliği](cihaz_guvenligi/yazilim_guvenligi.md)
   - [Cihaz Şifreleme](cihaz_guvenligi/cihaz_sifreleme.md)
@@ -15,7 +15,7 @@
     - [GnuPG Anahtar Üretimi](yazisma_guvenligi/gpg/gpg-anahtar-uretimi.md)
     - [GnuPG Anahtarını Saklama](yazisma_guvenligi/gpg/anahtar-saklama.md)
     - [Anahtarın Kağıt Yedeğini Almak](yazisma_guvenligi/gpg/paperbackup/paperbackup.md)
-    - [GnuPG ile E-posta Sifreleme](yazisma_guvenligi/gpg/eposta-sifreleme.md)
+    - [GnuPG ile E-posta Şifreleme](yazisma_guvenligi/gpg/eposta-sifreleme.md)
   - [Şifreli E-Posta Hizmetleri](yazisma_guvenligi/sifreli-eposta-hizmetleri.md)
   - [Anlık Yazışma](yazisma_guvenligi/anlik_yazisma.md)
     - [OTR İle Anlık Yazışma](yazisma_guvenligi/otr.md)
@@ -27,7 +27,7 @@
   - [Let's Encrypt](ag_guvenligi/letsencrypt.md)
   - [Tor](ag_guvenligi/tor.md)
   - [VPN](ag_guvenligi/vpn/vpn.md)
-  - [Shadow Proxy](ag_guvenligi/shadow.md)
+  - [Shadowsocks Proxy](ag_guvenligi/shadowsocks.md)
 
 ---
 [Katkıda Bulunanlar ve Lisans](credits.md)
