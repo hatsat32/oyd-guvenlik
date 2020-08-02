@@ -16,8 +16,8 @@ Planlamanızı sağduyu ile yapın. Her tedbir planlaması gibi bir risk yöneti
 Dizüstünüzü kaybetmeniz, sabit sürücünüzün bozulması, telefonunuzu kaybetmeniz, evinizi su basması vs..
 
 2. Anahtarımı kaybetmeme sebep olacak tehlikelerin gerçekleşme ihtimalleri nedir?
-Sıklıkla seyyahat ediyorsanız ve anahtarınızın tek kopyası dizüstünüzde ise mesela yüksek
-Bir afete uğrama ihtimaliniz ise düşük
+Mesela sıklıkla seyyahat ediyorsanız ve anahtarınızın tek kopyası dizüstünüzde ise kaybetme olasılığınız yüksek
+Bir afete uğrama ihtimaliniz ise düşük.
 
 3. Anahtarımı kaybedersem ne kadar üzülürüm?
 Tüm e-postalarınızı, dosyalarınızı anahtarınız ile şifreliyorsanız kesinlikle günlerce ağlarsınız.
@@ -25,11 +25,11 @@ Ara sıra gpg ile yazışıyor, anahtarınızı imzalatmıyor ve önemli görmü
 
 4. Ne kadar zaman ve kaynak ayırabilirim?
 7 kıtada 3 farklı konumda titanyuma kazınmış yedekler alabiliyorsanız ne güzel...
-Bir saatiniz var ise bu işe zaman ayırabilecek hızlıca elinizdekileri kullanabilirsiniz.
+Bu işe ayırabilecek bir saatiniz var ise hızlıca elinizdekileri kullanabilirsiniz.
 
 ## Yedekleme
 
-Yedeklemek anlam bakımından elinizdeki bir verinin kötü bir ihtimale karşı bir kopyasının alınmasını ve saklanmasını ifade eder. GPG anahtarınızı kullanabilmek için muhtemelen bir cihazda tutuyor olacaksınız. İki veya daha cihazınızda bu anahtarın olması kötü de olsa bir nevi yedekleme sayılabilir.
+Yedeklemek anlam bakımından elinizdeki bir verinin kötü bir ihtimale karşı bir kopyasının alınmasını ve saklanmasını ifade eder. GPG anahtarınızı kullanabilmek için muhtemelen bir cihazda tutuyor olacaksınız. İki veya daha fazla cihazınızda bu anahtarın olması kötü de olsa bir nevi yedekleme sayılabilir.
 
 Şayet vaktiniz yoksa veya anahtarınız o kadar önemli değil ise basitçe anahtarınızı dilediğiniz bir kayıt medyasına kopyasını alıp evinizin bir köşesine kaldırabiliriniz. Bu her halukarda offline bir yedeğinizin bildiğiniz bir yerde durmasının rahatlığını size verir.
 
@@ -87,7 +87,7 @@ Kağıt bu açıdan akıllara son gelen seçenek olsa da insanlık tarihinin en 
 
 * Anahtara ait parolanızı girdiğinizde iptal sertifikanız kaydedilmiş olacaktır. Bu dosyayı sayısal olarak veya bir kağıda bastırıp güvenli bir yerde saklayın.
 
-* Şayet iptal sertifikasını kullanmanız gerekirse iptal sertifikasını anahtar gibi import/içe aktar seçeneği ile GPG'ye girip `gpg --send-keys [iptal sertifikasının dizini]` komutunu kullanarak sunuculardaki anahtaırnızı iptal edebilirsiniz.
+* Şayet iptal sertifikasını kullanmanız gerekirse iptal sertifikasını anahtar gibi import/içe aktar seçeneği ile GPG'ye girip `gpg --send-keys [iptal sertifikasının dizini]` komutunu kullanarak sunuculardaki anahtarınızı iptal edebilirsiniz.
 
 ## Önerimiz
 

@@ -67,13 +67,13 @@ Protonmail ile Tutanota'nın en büyük ayrılıklarından biri burada ortaya ç
 
 #### Şifreleme Teknolojileri
 
-Protonmail ile Tutanota arasındaki en önemli farklardan bir tanesi kullandıkları şifreleme teknolojilerinin farklılığından gelmekte. Protonmail uzun zamandır e-posta şifreleme için kullanılan GnuPG yazılımı üzerine kurulu bir sistem. Tutanota ise simetrik şifreleme algoritması olan AES128 ile asimetrik RSA2048 algoritmasının bir birleşimini kullanmakta. Algoritmaların geçmişi ve güvenliği bakımından hiç bir fark olmamakla hizmetin özgürlüğü açısından çok önemli pratik bir fark ortaya koymakta bu durum.
+Protonmail ile Tutanota arasındaki en önemli farklardan bir tanesi kullandıkları şifreleme teknolojilerinin farklılığından gelmekte. Protonmail uzun zamandır e-posta şifreleme için kullanılan GnuPG yazılımı üzerine kurulu bir sistem. Tutanota ise simetrik şifreleme algoritması olan AES128 ile asimetrik RSA2048 algoritmasının bir birleşimini kullanmakta. Algoritmaların geçmişi ve güvenliği bakımından hiç bir fark bulunmamakla birlikte bu durum hizmetin özgürlüğü açısından çok önemli pratik bir fark ortaya koymakta.
 
 #### Hizmet Özgürlüğü
 
 Muhtemelen Tutanota ve Protonmail arasındaki en önemli fark hizmetlerinin özgürlüğü. Tutanota şifreleme imkanını doğal olarak sadece kendi kullanıcıları arasında sağlayabilmekte ve federatif e-posta sisteminde ayrı bir [walled garden](https://www.fsf.org/blogs/community/iphone) olarak bulunmakta. Dışarıdan bir kullanıcının şifreli olarak Tutanota kullanıcısına e-posta atması şu an itibari ile mümkün değil fakat [GPG uyumluluğu üzerine çalışacaklarına dair bir açıklamaları bulunmakta.](https://www.reddit.com/r/tutanota/comments/9blzp4/support_for_pgpgpg/)
 
-Protonmail ise GPG ile çalışmakta ve yakın zamanda kendi kullanıcılarının GPG anahtarlarının indirilebileceği [anahtar sunucularını](hkps://api.protonmail.ch) devreye almış durumdalar. Hala Android ve IOS istemcilerinden hizmet sağlayıcılar arası şifreleme konusunda sorun çekilse de webmail üzerinden yapılan yazışmalarda gelen e-posta GPG ile şifreli ise Protonmail doğrudan anahtarı indirip cevapları şifreli olarak gönderebiliyor. Bu bakımdan Protonmail dışı kişilerle şifreli yazışmak gün itibari ile mümkün ve görece kolay.
+Protonmail ise GPG ile çalışmakta ve yakın zamanda kendi kullanıcılarının GPG anahtarlarının indirilebileceği [anahtar sunucularını](hkps://api.protonmail.ch) devreye almış durumda. Hala Android ve IOS istemcilerinden hizmet sağlayıcılar arası şifreleme konusunda sorun çekilse de webmail üzerinden yapılan yazışmalarda gelen e-posta GPG ile şifreli ise Protonmail doğrudan anahtarı indirip cevapları şifreli olarak gönderebiliyor. Bu bakımdan Protonmail dışı kişilerle şifreli yazışmak gün itibari ile mümkün ve görece kolay.
 
 Aynı zamanda SMTP ve POP3 gibi federatif e-posta protokolleri iki hizmet tarafından da doğrudan desteklenmemekte. Sadece Protonmail [kendi köprü yazılımları](https://protonmail.com/bridge/) ile buna imkan vermekte. Bu yazılım gün itibari ile özgür olmadığından ve GNU/Linux paketi hala beta aşamasında bulunduğundan hala tam bir özellik olarak sayılması zor.
 

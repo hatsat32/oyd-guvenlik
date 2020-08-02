@@ -50,15 +50,15 @@ Her hesabın güvenli parolalar ile korunması önemlidir, öyle ki bir hesaba e
 
 ## Eşsiz parolalar kullanın<a name="essiz-parola"></a>
 
-Eşsiz parolalar kullanmak üçüncü parti hizmetleri kullanmadaki riskleri en aza indirir. Şayet bir parolayı birden fazla hesap için kullanırsanız, bir hesaptan sızan kullanıcı adı ve parolalar ile diğer hesaplarınıza sızabilir. Farklı servisler için farklı parala kullanmak tutmanız hesaplarınızı birbirinden izole ederek riski azaltacaktır. Bir parola yöneticisi kullanmak bunu yapmayı oldukça kolaylaştırır.
+Eşsiz parolalar kullanmak üçüncü parti hizmetleri kullanmadaki riskleri en aza indirir. Şayet bir parolayı birden fazla hesap için kullanırsanız, bir hesaptan sızan kullanıcı adı ve parolalar ile diğer hesaplarınıza sızılabilir. Farklı servisler için farklı parolalar kullanmak hesaplarınızı birbirinden izole ederek riski azaltacaktır. Bir parola yöneticisi kullanmak bunu yapmayı oldukça kolaylaştırır.
 
 ## Parolalarınızı gizli tutun<a name="gizli-parola"></a>
 
-Bir bilişim personeli dahi teknik destek için parolalarınızı sorsa parolanızı asla vermeyin. Neredeyse her hesap ve sistem parola sıfırlanmasına olanak tanımaktadır Meşru olarak herhangi bir IT uzmanı size parolanızı sormadan bakım amaçlı parolanızı sıfırlayabilmektedir. Bu tip sistemler aynı zamanda erişimleri takip altında tutar ve sizi sıfırlama hakkında bilgilendirir. Sizin de her yönetici erişiminden sonra parolanızı değiştirmeniz gerekmekir. Bunun için sadece söz konusu sistemlere erişiminizin olması gerekir ve bu sistemler ornaizasyon içerisinde hesabınızdaki değişikliğin kim tarafından yapıldığı konusunda size bilgi verir.
+Bir bilişim personeli dahi teknik destek için parolalarınızı sorsa parolanızı asla vermeyin. Neredeyse her hesap ve sistem parola sıfırlanmasına olanak tanımaktadır. Meşru olarak herhangi bir IT uzmanı size parolanızı sormadan bakım amaçlı parolanızı sıfırlayabilmektedir. Bu tip sistemler aynı zamanda erişimleri takip altında tutar ve sizi sıfırlama hakkında bilgilendirir. Sizin de her yönetici erişiminden sonra parolanızı değiştirmeniz gerekmekir. Bunun için sadece söz konusu sistemlere erişiminizin olması gerekir ve bu sistemler organizasyon içerisinde hesabınızdaki değişikliğin kim tarafından yapıldığı konusunda size bilgi verir.
 
 ## Kurumsal ve kişisel parolalarınızı ayırın<a name="kurumsal-kisisel-parola"></a>
 
-Kurumsal parolalar, kurumunuzun sistemlerine ve sayısal kimliklerine erişim sağlayan herhangi bir paroladır. Bunlar gerçekten önemli bilgiler olduğundan kişilerin kendi kişisel hesaplarına girmek için kullandıklarından farklı olmalı ve ayrı olarak saklanmalıdır. Kurumsal parolanızı, parola yöneticisinde ayrı bir giriş veya farklı bir parola dosyası kullanarak veya tamamen farklı bir parola yöneticisi seçerek saklayabilirsiniz.
+Bir kurumsal parola, kurumunuzun sistemlerine ve sayısal kimliklerine erişim sağlayan herhangi bir paroladır. Bunlar gerçekten önemli bilgiler olduklarından kişilerin kendi kişisel hesaplarına girmek için kullandıklarından farklı olmalı ve ayrı olarak saklanmalıdır. Kurumsal parolanızı, parola yöneticisinde ayrı bir giriş veya farklı bir parola dosyası kullanarak veya tamamen farklı bir parola yöneticisi seçerek saklayabilirsiniz.
 
 ## Ek okuma listesi<a name="ek-okuma"></a>
 

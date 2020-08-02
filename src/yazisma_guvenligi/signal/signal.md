@@ -5,7 +5,7 @@
 ## Avantajları
 
 * __Şifreleme__ Signal, tüm yazışma ve görüşmeleri cihazınızda konuştuğunuz kişiye özel ürettiği anahtar ile şifreler. Bu sayede yazışmanın gönderildiği aşamada ne ağı takip edenler ne de Signal'in kendi sunucuları yazışmalarınızın içeriğine ulaşamaz.
-* __Bütünlük__ Signal kullanırken eğer konuştuğunuz kişiler ile *güvenlik numarasınızı* bir karekodu taratarak veya parmak izini karşılaştırarak doğrularsanız iletişimizde araya kimsenin girmediğine emin olabilirsiniz. Signal bu numaranın bir sebeple değiştiği durumlarda belirgin şekilde kullanıcılarını uyararak güvenliğin eksildiğini bildirir.
+* __Bütünlük__ Signal kullanırken eğer konuştuğunuz kişiler ile *güvenlik numaranızı* bir karekodu taratarak veya parmak izini karşılaştırarak doğrularsanız iletişimizde araya kimsenin girmediğine emin olabilirsiniz. Signal bu numaranın bir sebeple değiştiği durumlarda belirgin şekilde kullanıcılarını uyararak güvenliğin eksildiğini bildirir.
 * __Perfect forward secrecy (mutlak gizlilik)__ Eğer özel anahtarlarınızın kontrolünü kaybederseniz önceki herhangi bir sohbetiniz ifşa olmaz.
 
 ## Dezavantajları
@@ -18,7 +18,7 @@
 
 ### Mobil Platformlar
 
-Android veya IOS çalıştıran cihazlarda Signal kullanmak, herhangi bir yazılımı kurmak kadar kolaydır. Playstore veya Appstore'dan arama yapıp Signali kurabilirsiniz. 
+Android veya IOS çalıştıran cihazlarda Signal kullanmak, herhangi bir yazılımı kurmak kadar kolaydır. Playstore veya Appstore'dan arama yapıp Signal'i kurabilirsiniz. 
 
 Bu şekilde kurulum yaptığınız durumda Signal'in Google'ın bildirim ve harita hizmetlerine ait bağımlılıklarını içeren versiyonunu kuracağınızı aklınızda bulundurmalısınız. Ne yazık ki Signal bu bağımlılıkları kullanmakta israr ettiği ve belirli yazılım özgürlüklerini göz ardı ettiğinden F-droid depolarında yer bulmamakta. Bu yüzden Android versiyonunun [APK](https://signal.org/android/apk/) kurulum dosyasını indirmelisiniz. **MUTLAKA** indirdiğiniz dosyanın parmak izi doğrulamasını yapın. Bunun için bir GNU/Linux bilgisayarda uç birimde aşağıdaki komutu çalıştırarak Signal'in indirme sayfasında verdiği parmak izi karşılaştırılabilir;
 
@@ -43,4 +43,4 @@ Flatpak kullananlar dağıtımlarından bağımsız olarak Signal masaüstü ist
 
 * Sesli aramalarınızı da Signal aracılığı ile yapabilirsiniz. Bu size olağan aramalara göre çok daha yüksek mahremiyet sağlayacaktır. Çevreniz ile kullanmanız önerilir. Bazı kullanıcılar VPN ile signal kullanırken ses bağlantı sorunları yaşayabilmektedir.
 
-* Signal ve geliştiriciliğini yapan [Open Whisper Systems](https://signal.org/) pek özgürlük taraftarı değiltir. Moxie Merlinspike, özgür olan signal'in Google servisleri içermeyen [LibreSignal forkunu yasal tehditler](https://github.com/LibreSignal/LibreSignal/issues/37#issuecomment-217211165) ile ortadan kaldırmıştır. Hali ile Signal bir gün kullanıcılarına sırtını dönerse Signal'i kendi sunucunuz ile kullanmak için çokça çaba harcamanız ve bağlantılarınızı kaybetmeniz olasıdır.
+* Signal ve geliştiriciliğini yapan [Open Whisper Systems](https://signal.org/) pek özgürlük taraftarı değildir. Moxie Merlinspike, özgür olan signal'in Google servisleri içermeyen [LibreSignal forkunu yasal tehditler](https://github.com/LibreSignal/LibreSignal/issues/37#issuecomment-217211165) ile ortadan kaldırmıştır. Hali ile Signal bir gün kullanıcılarına sırtını dönerse Signal'i kendi sunucunuz ile kullanmak için çokça çaba harcamanız ve bağlantılarınızı kaybetmeniz olasıdır.

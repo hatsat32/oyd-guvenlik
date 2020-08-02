@@ -1,6 +1,6 @@
 # Yazışma Güvenliği
 
-__Yazışma Güvenliği__ mesajlarınızın amaçlanan alıcısına gönderilirken sizin cihazınızda şifrelendiğinden ve sadece alıcısının okuyabileceğinden emin olmaktır. Her ne kadar [ağ güvenliği](../ag_guvenligi/) ve [cihaz güvenliği](../cihaz_guvenligi/) önemli olsalar da, mesaj şifrelemek çoğu durumda gereklidir:
+__Yazışma Güvenliği__ mesajlarınızın gönderilirken sizin cihazınızda şifrelendiğinden ve sadece amaçlanan alıcısının okuyabileceğinden emin olmaktır. Her ne kadar [ağ güvenliği](../ag_guvenligi/) ve [cihaz güvenliği](../cihaz_guvenligi/) önemli olsalar da, mesaj şifrelemek çoğu durumda gereklidir:
 
 * __Gizlilik__: Mesajları şifrelemek, mesajın sadece amaçlanan taraflarca okunabileceğinden emin olmanın tek yoludur.
 * __Doğrulama__: Mesaj şifrelemek, mesajlaştığınız kişinin kimliğinden emin olmanın tek yoludur.
@@ -33,9 +33,9 @@ Her ne kadar en yüksek korumayı sağlasa da, açık anahtar şifreleme kullanm
 
 ### Şifreli Mesajlaşmanın Sınırları
 
-Her ne kadar şifreleme ile e-postanızın içeriğini saklayabiliyor olsanız da şifreleme kime veya kimden e-posta aldığınızı *saklamaz* Bu açık anahtar şifrelemesi ile bile pek çok kişisel bilginin güvende olmadığı anlamına gelir.
+Her ne kadar şifreleme ile e-postanızın içeriğini saklayabiliyor olsanız da şifreleme kime e-posta gönderdiğinizi ve kimden e-posta aldığınızı *saklamaz*. Bu açık anahtar şifrelemesi ile bile pek çok kişisel bilginin güvende olmadığı anlamına gelir.
 
-Neden? Bir kimsenin gönderdiğiniz e-postanın içeriği hakkında hiçbir şey bilmediğini düşünün fakat kiminle e-postalaştığınızı, ne sıklıkla bunu yaptığınızı ve başlıkları biledildiklerini hayal edin. Bu bilgi bağlantılarınız, alışkanlıklarınız, tanıdıklarınız ile ilgi ve etkinlikleriniz hakkında çokça şey söyleyecektir.
+Neden? Bir kimsenin gönderdiğiniz e-postanın içeriği hakkında hiçbir şey bilmediğini düşünün, fakat kiminle e-postalaştığınız, ne sıklıkla bunu yaptığınız ve başlıklar biliniyor olacaklar. Bu bilgi bağlantılarınız, alışkanlıklarınız, tanıdıklarınız ile ilgi ve etkinlikleriniz hakkında çokça şey söyleyecektir.
 
 İlişkilerinizi gizli tutabilmenin tek yolu buna saygı gösterecek servis sağlayıcılar aracılığı ile iletişim kurmaktır. [[Radikal servis sağlayıcılar litemize->radical-servers]] bu tip hizmet sağlayıcıları incelemek adına göz atabilirsiniz.
 

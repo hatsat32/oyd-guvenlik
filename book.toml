@@ -9,6 +9,7 @@ src = "src"
 theme = "src/theme"
 default-theme = "rust"
 git-repository-url = "https://git.oyd.org.tr/oyd/guvenlik"
+git-repository-icon = "fa-git" #|fa-git-square
 
 [output.html.search]
 enable = true
