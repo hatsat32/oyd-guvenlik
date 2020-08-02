@@ -10,7 +10,7 @@ Cihazınızı içinde bulunduğunuz duruma göre seçmelisiniz:
 
 ### Yüksek risk
 
-Eğer riskiniz yüksek ise, **cep telefonunuzu hassas hiç bir şey için kullanmayın**. Bunun sebebi, tüm telefonların "baseband modemi" olarak adlandırılan, sizi kablosuz telefon ağına ("hücresel ağ") bağlayan bir donanım içermesidir. Bu modemler özel mülk ve tonla uzaktan kötüye kullanılabilecek güvenlik açığı içermektedir. Bir kere aşıldıktan sonra, baseband modem iletişiminizi takip etmek ve kişisel verilerinizi elde etmek için kullanılabilir.
+Eğer riskiniz yüksek ise, **cep telefonunuzu hassas hiç bir şey için kullanmayın**. Bunun sebebi, tüm telefonların "baseband modemi" olarak adlandırılan, sizi kablosuz telefon ağına ("hücresel ağ") bağlayan bir donanım içermesidir. Bu modemler özel mülktür ve tonla uzaktan kötüye kullanılabilecek güvenlik açığı içermektedir. Bir kere aşıldıktan sonra, baseband modem iletişiminizi takip etmek ve kişisel verilerinizi elde etmek için kullanılabilir.
 
 [Replicant](https://www.replicant.us/) tamamen özgür bir Android dağıtımı olarak sadece belirli cihazlar üzerinde çalışmaktadır. Çalıştığı cihazların temel özelliği baseband modemi işlemciden izole etmenin bir imkanı olmasıdır. Şayet mobil cihaz kullanmanız gerekiyorsa ve bu cihaz ile önemli veriler işleyecek iseniz Replicant kurulu bir telefon iyi bir tercih olabilir.
 
@@ -129,7 +129,7 @@ Bankanızdan gelen 2FA kodları, sevdiklerinizden gelen yazışmalar, en güncel
 
 ## Bilmediğiniz cihazlara bağlamayın
 
-Bu öneri hem tanınmadık Wi-Fi ağlarını hem de artık her yerde bulunan USB şarj çıkışlarını kapsar. Cihazınızı bu bilinmeyen ortamlara maruz bırakmak sizi riske sokabilir. Ya kendi şarj cihazınızı kullanın ya da zorundaysanız bu tip çıkışları kullanmaya [USB kondom](https://en.wikipedia.org/wiki/Juice_jacking#Mitigation) kullanın. Ayrıca yeni Android sürümlerinde "Şarj için USB" diye bir seçenek de vardır.
+Bu öneri hem tanınmadık Wi-Fi ağlarını hem de artık her yerde bulunan USB şarj çıkışlarını kapsar. Cihazınızı bu bilinmeyen ortamlara maruz bırakmak sizi riske sokabilir. Ya kendi şarj cihazınızı kullanın ya da bu tip çıkışları kullanmak zorundaysanız [USB kondom](https://en.wikipedia.org/wiki/Juice_jacking#Mitigation) kullanın. Ayrıca yeni Android sürümlerinde "Şarj için USB" diye bir seçenek de vardır.
 
 ## Kablosuz aygıtlarınızı kullanmıyorsanız kapatın
 

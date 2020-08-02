@@ -4,7 +4,7 @@
 
 Bu soru anlamsız gelse de güvenli kılınmadan önce bir sistemin ne olduğu az da olsa anlaşılmalıdır. E-posta İnternet'in ilk mesajlaşma yöntemidir. Bu bakımdan üzerine onlarca alternatif geliştirilmiş olsa da hala baskın iletişim aracı olarak hayatımızdaki yerini sürdürmektedir.
 
-E-posta aynı zamanda tasarımı gereği bir çok aracıya güvenmenizi gerektiren, güvenli kılması zor bir sistemdir. TLS kullanımın yaygınlaştığı görece yakın bir zamana kadar gönderilen her e-posta tüm içeriği ile birlikte aktarım sırasında, ulaştığı sunucuda ve iletildiği diğer her kanalda okunabilir durumdaydı. [Edward Snowden](https://en.wikipedia.org/wiki/Edward_Snowden) tarafından ortaya çıkarılan sırların ışığıda Amerika Birleşik Devletlerinin istihbarat örgütlerinin **TÜM DÜNYANIN** e-postalarını kaydettiği ve analiz ettiği ortaya çıkmıştır.
+E-posta aynı zamanda tasarımı gereği bir çok aracıya güvenmenizi gerektiren, güvenli kılması zor bir sistemdir. TLS[^1] kullanımının yaygınlaştığı görece yakın bir zamana kadar gönderilen her e-posta tüm içeriği ile birlikte aktarım sırasında, ulaştığı sunucuda ve iletildiği diğer her kanalda okunabilir durumdaydı. [Edward Snowden](https://en.wikipedia.org/wiki/Edward_Snowden) tarafından ortaya çıkarılan sırların ışığıda Amerika Birleşik Devletlerinin istihbarat örgütlerinin **TÜM DÜNYANIN** e-postalarını kaydettiği ve analiz ettiği ortaya çıkmıştır.
 
 TLS ile genel olarak e-posta sunucunuz ile aranızdaki iletişim ve çoğunlukla da gönderdiğiniz e-postanın alıcısının kullandığı sunucu arasındaki iletişim şifreli olsa da sunucularda duran e-postalar hala okunabilir durumdadır. Gözetim kapitalizminin bir unsuru olarak şayet bir şey yapılabiliyor ise muhtemelen yapılıyordur ve gerçek şu ki e-postalarınız okunuyor, size bunun üzerinden reklam satılıyor!
 
@@ -52,4 +52,6 @@ Güven ağı GPG'nin temel güven ilişkisinin temelidir. GPG kullanıcıları t
 * **ASLA** ama asla gizli anahtarınızı kimse ile paylaşmayın, umumi bir cihaza kaydetmeyin ve uzak sunucuya yüklemeyin.
 * *[ZAROLA KULLANIN!](https://zarola.oyd.org.tr)* çünkü anahtarınızın güvenliği bu parolanızın güvenliğine bağlıdır.
 * Çevrenizde bir CryptoParty yapın ki arkadaşlarınıza da GnuPG kullanmayı öğretip anahtarlarınızı imzalayarak kendi güven ağınızı oluşturun.
-* İçeriğinden bağımsız olarak şifreli e-postalar gönderin. Bu gerçekten hem sizin hem tüm toplum için önemlidir. Şayet sadece gerektiğinde şifreleme yaparsanız analiz edilmesi gereken iletişim miktarı hatrısayılır miktarda azılacaktır ve bir örüntü ortaya çıkacaktır. Havadan sudan bile şifreli yazışın!
+* İçeriğinden bağımsız olarak şifreli e-postalar gönderin. Bu gerçekten hem sizin hem tüm toplum için önemlidir. Şayet sadece gerektiğinde şifreleme yaparsanız analiz edilmesi gereken iletişim miktarı hatrısayılır miktarda azalacaktır ve bir örüntü ortaya çıkacaktır. Havadan sudan bile şifreli yazışın!
+---
+[^1]: Transport Layer Security <https://tr.wikipedia.org/wiki/Transport_Layer_Security>

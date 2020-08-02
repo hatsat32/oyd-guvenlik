@@ -2,7 +2,7 @@
 
 ## OMEMO’ya Giriş
 
-[OMEMO](https://conversations.im/omemo/) mesajlaşmanın baştan sona(end-to-end) şifrelenmesini sağlar.[OTR](../otr.md) ile pratik olarak ayrılan modern ihtiyaçlara yönelik özellikleri mevcuttur. 
+[OMEMO](https://conversations.im/omemo/) mesajlaşmanın baştan sona(end-to-end) şifrelenmesini sağlar. [OTR](../otr.md) ile pratik olarak ayrılan modern ihtiyaçlara yönelik özellikleri mevcuttur. 
 
 * __Şifreleme__ Bütün şifreleme cihazınızda gerçekleşir. Sohbet güvenli olmayan ağlar ve hizmet sağlayıcılar üzerinden yapılsa bile başkaları tarafından okunması engellenir.
 * __Doğrulama__ Konuştuğunuz kişilerin cihazlarının aynı cihaz olduğunu doğrulama.
@@ -13,7 +13,7 @@
 
 OTR ile OMEMO'yu ayıran iki önemli fark bulunmakta.
 
-* OTR herkesin şanslı iseler bir bilgisayarı bulunduğu ve "online" olmanın istisna olduğu bir zamanda tasarlanmış bir yazılım. Bu sebeple anlık olarak iki cihaz arasında iletişim kurmaya imkan vermekte her oturum sırasında. Hali ile bugün alışılan grup yazışmalarının yapılması mümkün değil. OMEMO ise grup yazışmalarına imkan tanımakta.
+* OTR herkesin şanslı iseler bir bilgisayarı bulunduğu ve "online" olmanın istisna olduğu bir zamanda tasarlanmış bir yazılım. Bu sebeple anlık olarak iki cihaz arasında, oturum sırasında iletişim kurmaya imkan vermekte. Hali ile bugün alışılan grup yazışmalarının yapılması mümkün değil. OMEMO ise grup yazışmalarına imkan tanımakta.
 
 * OTR iki cihazın da oturum başlangıcında İnternet'e bağlı olmalarını gerektirmekte. Bu sebepten offline olarak atılan mesajların alıcısına ulaşması mümkün olmamakta. OMEMO ise çift anahtarlama imkanı ile offline olarak atılan mesajların sunucuda belirli bir süre saklanarak daha sonra bağlanan alıcısına gönderilmesine imkan veriyor.
 
@@ -56,7 +56,7 @@ Pidgin Mac’te çalıştırılabilir ve eksik de olsa OMEMO eklentisi olan [lib
 
 ## Hesabınıza giriş yapın veya yeni hesap oluşturun
 
-Şayet bir sunucuda XMPP hesabınız var ise kullanıcı adı ve parolasını girerek bağlantı sağlayabilirsiniz. Şayet bir XMPP hesabınız yok ise XMPP istemcileri hesap eklerken "bu sunucuda hesap aç" anlamında bir seçeneği işleyerek girdiğiniz bilgilerle kullanıcı oluşturma imkanı vermekte.
+Şayet bir sunucuda XMPP hesabınız var ise kullanıcı adı ve parolasını girerek bağlantı sağlayabilirsiniz. Şayet bir XMPP hesabınız yok ise XMPP istemcileri hesap eklerken "bu sunucuda hesap aç" anlamında bir seçeneği işaretleyerek girdiğiniz bilgilerle, bu özelliği kullanan sunucularda kullanıcı oluşturma imkanı vermekte.
 
 Aşağıdaki sunucuları tercihinizde değerlendirebilirsiniz;
 
@@ -84,8 +84,8 @@ OMEMO ile yazışmaya başlamak için öncelikle konuşma penceresinde mesja kut
 ![alt-text](omemo4.png)
 ![alt-text](omemo5.png)
 
-Daha sonra ilk mesajınız ile karşı tarafın omemo anahtarı sunucudan çekilecek ve size güvenip güvenmediğiniz sorulacak. Bu ekrande size ait tüm cihazların anahtarları ile karşı tarafın kullandığı tüm anahtarlar listelenecektir.
+Daha sonra ilk mesajınız ile karşı tarafın OMEMO anahtarı sunucudan çekilecek ve size güvenip güvenmediğiniz sorulacak. Bu ekranda size ait tüm cihazların anahtarları ile karşı tarafın kullandığı tüm anahtarlar listelenecektir.
 
 ![alt-text](omemo6.png)
 
-Sertifika simgesine tıklayarak tüm anahtarlara olan güveninizi işaretleyebilir anahtarları silebilirsiniz. Anahtarları doğrulamak için konuştuğunuz kişi ile ikinci farklı bir kanaldan tercihen sesli iletişim ile karşılaştırma yapabilir veya yan yana geleceğiniz bir anı bekleyebilirsiniz. Mümkün olduğu sürece **asla** körlemesine anahtarlara güvenerek yazışma yapmayın.
+Sertifika simgesine tıklayarak tüm anahtarlara olan güveninizi işaretleyebilir anahtarları silebilirsiniz. Anahtarları doğrulamak için konuştuğunuz kişi ile ikinci farklı bir kanaldan tercihen sesli iletişim ile karşılaştırma yapabilir veya yan yana geleceğiniz bir anı bekleyebilirsiniz. Mümkün olduğu sürece anahtarlara **asla** körlemesine güvenerek yazışma yapmayın.

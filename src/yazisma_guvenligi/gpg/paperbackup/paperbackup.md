@@ -1,10 +1,10 @@
 # Paperbackup ile Kağıda Anahtar Yedeği Basmak
 
-[Gnupg](../gpg-anahtar-uretimi.md) ve [SSH](https://en.wikipedia.org/wiki/Secure_Shell) gibi asimetrik [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) anahtarları bilişim sistemlerine erişimde çok önemli bir yer kaplamaktadır. Bu bakımdan kullanıcıların bu anahtarlar ile şifreledikleri veya erişim imkanına sahip olduklara cihazlara bağımlılıkları oranında anahtarların da değeri artmaktadır. Bir anahtarın kaybı şifrelenmiş verilere erişimi neredeyse imkansız hale getirdiği gibi erişim imkanı kaybedilen uzak sunucuların yarattığı sorunlar da tatsız olabilmektedir. Bu bakımdan anahtarların sayısal yedeklerinin alınması ve güvende tutulması çok önemli. Bu bakımdan pek az düşünülse de **Kağıt** bu amaçla çok ideal bir ortam olabilmekte.
+[Gnupg](../gpg-anahtar-uretimi.md) ve [SSH](https://en.wikipedia.org/wiki/Secure_Shell) gibi asimetrik [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) anahtarları bilişim sistemlerine erişimde çok önemli bir yer kaplamaktadır. Bu bakımdan kullanıcıların bu anahtarlar ile şifreledikleri veya erişim imkanına sahip oldukları cihazlara bağımlılıkları oranında anahtarların da değeri artmaktadır. Bir anahtarın kaybı şifrelenmiş verilere erişimi neredeyse imkansız hale getirdiği gibi erişim imkanı kaybedilen uzak sunucuların yarattığı sorunlar da tatsız olabilmektedir. Bu bakımdan anahtarların sayısal yedeklerinin alınması ve güvende tutulması çok önemli. Bu bakımdan pek az düşünülse de **Kağıt** bu amaçla çok ideal bir ortam olabilmekte.
 
 ## Kağıdın avantajları
 
-* __Uzun ömürlülük__:Kağıt taş dışında bugüne kadar veri taşımayı başarmış en eski ortamlardan bir tanesi. [Antik Mısır papirusları](https://en.wikipedia.org/wiki/History_of_writing#Writing_materials) milattan önce 3000 yılına kadar gitmekte. İlginç şekilde kitap gibi bir yığın halinde bulundurulduğunda yangına karşı da bir hayli dayanıklıdır. Bu bakımdan yangına uğramış pek çok yapıdan kitaplar kısmi zararlarla kurtarılabilmiştir. Günümüzde suya dayanıklı kağıt ve baskı teknolojilerinin geliştirilmesi ile birlikte, asitsiz kağıt üstüne tonerle yapılmış bir baskıyı ömür bakımından yenebilecek pek az kayıt imkanı bulunmaktadır.
+* __Uzun ömürlülük__:Kağıt taş dışında bugüne kadar veri taşımayı başarmış en eski ortamlardan bir tanesi. [Antik Mısır papirüsleri](https://en.wikipedia.org/wiki/History_of_writing#Writing_materials) milattan önce 3000 yılına kadar gitmekte. İlginç şekilde kitap gibi bir yığın halinde bulundurulduğunda yangına karşı da bir hayli dayanıklıdır. Bu bakımdan yangına uğramış pek çok yapıdan kitaplar kısmi zararlarla kurtarılabilmiştir. Günümüzde suya dayanıklı kağıt ve baskı teknolojilerinin geliştirilmesi ile birlikte, asitsiz kağıt üstüne tonerle yapılmış bir baskıyı ömür bakımından yenebilecek pek az kayıt imkanı bulunmaktadır.
 
 * __Maliyet__:Kağıt Mb başına en ucuz kayıt medyası olmasa da şifreleme anahtarları gibi küçük verileri kaydetmek için çok ekonomik bir tercih. Bir yazıcı ve 5-20 sayfa arası kağıt ile bir Gnupg anahtarı rahatlıkla yedeklenebilmekte. Baskı maliyetinin 5 krş civarında olduğunu varsayarsak 1 liranın altında yedekler almak mümkün. Aynı zamanda baskıyı yapan makineyi de satın almanız gerekmemekte. Aynı zamanda evinize giren bir hırsız harddiskinize göz dikebilir fakat kimsenin bir deste kağıdı alma arzusu taşıyacağı düşünülmez.
 
@@ -20,7 +20,7 @@
 
 [Paperbackup](https://github.com/intra2net/paperbackup) küçük bir python kodu aracılığı ile ASCII sayısal verilerin kolayca kağıt yedeklerinin çıkarılmasını sağlayan bir program.
 
-Her python kodu gibi paperbackup da bir takıp bağımlılıklar içeriyor. İlk çalıştırdığınızda mutlaka bir bağımlılığın elinizde olmaması garanti gibi. Bu sebeple aşağıdaki komutu çalıştırarak muhtemel bağımlılıkları sisteminize indirip kurabilirsiniz.
+Her python kodu gibi paperbackup da bir takım bağımlılıklar içeriyor. İlk çalıştırdığınızda mutlaka bir bağımlılığın elinizde olmaması garanti gibi. Bu sebeple aşağıdaki komutu çalıştırarak muhtemel bağımlılıkları sisteminize indirip kurabilirsiniz.
 
 RPM tabanlı sistemler için:
 `sudo yum install PyX enscript qrencode hashlib zbar`
@@ -58,7 +58,7 @@ Vkx3aGQ2SmVyMWJKcllIbjJmc0FqblFqeDNNdFM3MXFMSApBUT09Cj1IUTlJCi0tLS0tRU5EIFBH
 
 -----END PRIVATE KEY-----
 
-Eğer yedeğini almak istediğiniz veri başka bir şey ise aşağıdaki komut aracılığı ile base64 enode ederek yedeklemeye hazır edebilirsiniz. Unutmayın ki yedekleyeceğiniz veriden %25 daha büyük bir sonuç elde edeceksiniz ve her sayfaya 10 Kb veri için 15 sayfa elde edeceksiniz.
+Eğer yedeğini almak istediğiniz veri başka bir şey ise aşağıdaki komut aracılığı ile base64 encode ederek yedeklemeye hazır edebilirsiniz. Unutmayın ki yedekleyeceğiniz veriden %25 daha büyük bir sonuç elde edeceksiniz ve her sayfaya 10 Kb veri için 15 sayfa elde edeceksiniz.
 
 `base64 -w 65 [yedeklenecek verinin dizini] > [kaydedilecek dizin]`
 
@@ -85,7 +85,7 @@ Betik işini yaptıktan sonra çalıştırdığınız dizinde şu şekilde bir P
 
 ### Yedeği bastırma
 
-Yedeğinizi bastırmak konusunda karar size kalmış durumda. Temel olarak dikkat etmeniz gereken unsurlardan biri eğer güvenlik gerektiren bir yedeği şifresiz olarak yedeklediyseniz baskı aracınıza ve ona ulaşmak için kullandığınız bağlandıya (ör. Yerel ağ yazıcısı) güvenip güvenmediğiniz sorusudur. Bu bakımdan en güvenilir yöntem PDF dosyasını bir USB belleğe alarak doğrudan yazıcıdan bastırmak veya bilgisayarınıza yazıcıyı USB ile bağlamaktır.
+Yedeğinizi bastırmak konusunda karar size kalmış durumda. Temel olarak dikkat etmeniz gereken unsurlardan biri eğer güvenlik gerektiren bir yedeği şifresiz olarak yedeklediyseniz baskı aracınıza ve ona ulaşmak için kullandığınız bağlantıya (ör. Yerel ağ yazıcısı) güvenip güvenmediğiniz sorusudur. Bu bakımdan en güvenilir yöntem PDF dosyasını bir USB belleğe alarak doğrudan yazıcıdan bastırmak veya bilgisayarınıza yazıcıyı USB ile bağlamaktır.
 
 Kağıt ve yazdırma yöntemi size kalmış. Her türlü baskı beklentilerinizi fazlasıyla karşılayacak kadar uzun ömürlü olacaktır. Lakin asitsiz kağıda toner baskı en iyi sonucu size sağlayacaktır hem baskı kalitesi hem de ömür bakımından.
 
@@ -93,7 +93,7 @@ Yedeklernizi bastırdıktan sonra katlamayın ve bir zarf içinde veya daha iyis
 
 ### Kurtarma
 
-Öncelikle kağıt yedeğinizin mümkün olan en yüksek çözünürlükte tarayın. Taramanızın sonucu olan PDF dosyasını paperbackup dizinine taşıyın ve aşağıdaki komut ile geri kurtarabilirsiniz.
+Öncelikle kağıt yedeğinizin mümkün olan en yüksek çözünürlükte tarayın. Taramanızın sonucu olan PDF dosyasını paperbackup dizinine taşıdıktan sonra aşağıdaki komut ile kurtarabilirsiniz.
 
 `./paperrestore.sh [kurtarılacak PDF dizini] > kurtarma`
 

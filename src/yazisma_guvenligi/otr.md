@@ -34,7 +34,7 @@ Pidgin Mac’te çalıştırılabilir fakat onun yerine Adium kullanmak çok dah
 
 ## Hesabınıza giriş yapın veya yeni hesap oluşturun
 
-Şayet bir sunucuda XMPP hesabınız var ise kullanıcı adı ve parolasını girerek bağlantı sağlayabilirsiniz. Şayet bir XMPP hesabınız yok ise bu aşamada kayıt imkanı veren bir sunucuda hesap açabilirsiniz. Tek yapmanız gereken kendinize bir
+Şayet bir sunucuda XMPP hesabınız var ise kullanıcı adı ve parolasını girerek bağlantı sağlayabilirsiniz. Şayet bir XMPP hesabınız yok ise bu aşamada kayıt imkanı veren bir sunucuda hesap açabilirsiniz. Tek yapmanız gereken kendinize bir sunucu seçmek.
 
 Aşağıdaki sunucuları tercihinizde değerlendirebilirsiniz;
 
@@ -48,7 +48,7 @@ Kayıt için (kullanıcı adı)@jabber.calyxinstitute.org alan adı kullanılabi
 
 ## OTR kurulumu
 
-Şimdi hem Pidgin ve OTR kurulu olduğuna göre
+Şimdi hem Pidgin hem OTR kurulu olduğuna göre
 
 * Ana pencereden Tools > Plugins’i seçin
 
@@ -56,7 +56,7 @@ Kayıt için (kullanıcı adı)@jabber.calyxinstitute.org alan adı kullanılabi
 
 * Listeden XMPP hesabınızı seçin ve Generate’e basın
 
-* __ÖNEMLİ NOT!__: "Default OTR Settings" altında hem *Require private messaging* hem de *Don’t log OTR conversations* seçeneklerini işaretleyin. Bu seçenekler yalnızca şifrelenmiş sohbetler yapmanızı ve sohbetlerin kaydının tutulmadığını temin eder. Fakat aklınızda olsun ki konuştuğunuz kişinin sohbetin kaydını tutma ihtimali her zaman vardır. Karşınızdaki kişiye sohbetinizin kaydını tutup tutmadığını sormak iyi bir fikisr.
+* __ÖNEMLİ NOT!__: "Default OTR Settings" altında hem *Require private messaging* hem de *Don’t log OTR conversations* seçeneklerini işaretleyin. Bu seçenekler yalnızca şifrelenmiş sohbetler yapmanızı ve sohbetlerin kaydının tutulmamasını temin eder. Fakat aklınızda olsun ki konuştuğunuz kişinin sohbetin kaydını tutma ihtimali her zaman vardır. Karşınızdaki kişiye sohbetinizin kaydını tutup tutmadığını sormak iyi bir fikirdir.
 
 ## Rehbere Arkadaş Ekleme
 
