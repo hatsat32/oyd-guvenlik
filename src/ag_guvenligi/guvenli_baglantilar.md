@@ -1,4 +1,4 @@
-# Güvenli Bağlantılar
+# DEPRECATED: Güvenli Bağlantılar
 
 ## Güvenli bağlantılar nelerdir?
 
