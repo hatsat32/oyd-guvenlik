@@ -1,4 +1,4 @@
-# Sayısal Güvenlik
+![ÖYD Güvenlik](guvenlik_logo.svg "ÖYD Güvenlik")
 
 ## Buradan Başlayın
 
