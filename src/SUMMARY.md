@@ -22,7 +22,6 @@
     - [OMEMO İle Anlık Yazışma](yazisma_guvenligi/omemo/omemo.md)
     - [Signal İle Anlık Yazışma](yazisma_guvenligi/signal/signal.md)
 - [Ağ Güvenliği](ag_guvenligi/README.md)
-  - [Güvenli Bağlantılar](ag_guvenligi/guvenli_baglantilar.md)
   - [Güvenli Web Gezintisi](ag_guvenligi/guvenli_web_gezintisi.md)
   - [Let's Encrypt](ag_guvenligi/letsencrypt.md)
   - [Tor](ag_guvenligi/tor.md)
