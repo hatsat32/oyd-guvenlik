@@ -38,7 +38,7 @@
 
     --table-border-color: hsl(210, 25%, 13%);
     --table-header-bg: hsl(210, 25%, 28%);
-    --table-alternate-bg: hsl(210, 25%, 11%);
+    --table-alternate-bg: #9C7A98;
 
     --searchbar-border-color: #848484;
     --searchbar-bg: #424242;
@@ -190,7 +190,7 @@
     --quote-border: hsl(60, 5%, 70%);
     --table-border-color: hsl(60, 9%, 82%);
     --table-header-bg: #83577D;
-    --table-alternate-bg: hsl(60, 9%, 84%);
+    --table-alternate-bg: #9C7A98;
     --searchbar-border-color: #aaa;
     --searchbar-bg: #fafafa;
     --searchbar-fg: #000;

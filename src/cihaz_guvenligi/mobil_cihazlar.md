@@ -39,7 +39,7 @@ Tavsiye edilen cihazlar:
 * **LineageOS için**;
 	* [LG G3](https://wiki.lineageos.org/devices/d855) Türkiye'de kolaylıkla bulunabilen, temizi için biraz araştırma gerektiren ama zamanına göre çok iyi donanıma sahip bir cihazdır. LineageOS kurulumu rootlama gereğinden dolayı biraz baş ağrıtabilir ama fiyat/performansta çok başarılıdır. Ancak LG G3 cihazlar, kronik olarak anakart arızası yaşayabilmektedir. Bu durumu göz önünde bulundurmanızı tavsiye ederiz.
 	* [Sony Xperia Z](https://wiki.lineageos.org/devices/yuga) Görece eski bir donanım olan Z Türkiye'de bolca ve ucuza bulunabiliyor. LineageOS kurulumu da çok kolaydır. Lakin donanım yaşını gösterdiği için cihazınızı sonuna kadar kullanıyorsanız sizi tatmin etmeyebilir.
-	* [Xiaomi Redmi Note 7](https://wiki.lineageos.org/devices/lavander) Çok daha modern bir donanım olarak Redmi Note 7 performans isteyen kullanıcılar için iyi bir tercih olabilir. USB-C desteklediği için de geleceğe dönük rahat etmenizi sağlar. Ancak NFC desteği **bulunmamaktadır**.
+	* [Xiaomi Redmi Note 7](https://wiki.lineageos.org/devices/lavender) Çok daha modern bir donanım olarak Redmi Note 7 performans isteyen kullanıcılar için iyi bir tercih olabilir. USB-C desteklediği için de geleceğe dönük rahat etmenizi sağlar. Ancak NFC desteği **bulunmamaktadır**.
 
 * **GrapheneOS için**;
 	* [Pixel serisi](https://grapheneos.org/#device-support) Google Pixel cihazların tamamına GraphenOS kurulabilmekte fakat uzun dönemli destek için Graphene 3 serisi cihazları önermektedir.

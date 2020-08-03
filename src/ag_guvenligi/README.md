@@ -6,7 +6,7 @@
 
 Peki İnternet'in paydaşları olarak bizler neler yapabiliriz? Ağ güvenliği bilgisayarınızı ve iletişiminizi ağ üzerinde nasıl koruyabileceğinize dair tavsiyeler içermektedir.
 
-* [TOR - The Onion Router](tor.md)
+* [Tor](tor.md)
 * [VPN - Virtual Private Network](vpn/vpn.md)
-* [TLS - Transport Layer Security](tls.md)
-* [Shadow Socks](shadow.md)
+* ~~[TLS - Transport Layer Security](tls.md)~~
+* [Shadowsocks](shadow.md)
