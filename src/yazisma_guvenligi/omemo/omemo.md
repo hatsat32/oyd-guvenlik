@@ -9,9 +9,9 @@
 * __Perfect forward secrecy (mutlak gizlilik)__ Eğer özel anahtarlarınızın kontrolünü kaybederseniz önceki herhangi bir sohbetiniz ifşa olmaz.
 * __İnkar Edilebilirlik__ Gönderdiğiniz mesajlar sizin tarafınızdan gönderildiğine ilişkin üçüncü kişilerce anlaşılabilecek bir emare taşımaz. Herhangi biri sohbetin bitimi ertesinde mesajları sizden gelmiş gibi gösterebilir. Bununla birlikte, sohbet sırasında sizin iletişimde olduğunuz kişi gördüğü mesajların doğrulanmış ve değiştirilmemiş olduğundan emindir.
 
-## OTR ile OMEMO Farkı
+## OTR ile OMEMO'nun farkı
 
-OTR ile OMEMO'yu ayıran iki önemli fark bulunmakta.
+OTR ile OMEMO'yu ayıran iki önemli fark vardır.
 
 * OTR herkesin şanslı iseler bir bilgisayarı bulunduğu ve "online" olmanın istisna olduğu bir zamanda tasarlanmış bir yazılım. Bu sebeple anlık olarak iki cihaz arasında, oturum sırasında iletişim kurmaya imkan vermekte. Hali ile bugün alışılan grup yazışmalarının yapılması mümkün değil. OMEMO ise grup yazışmalarına imkan tanımakta.
 
@@ -52,7 +52,7 @@ Ertesinde available (indirme) sekmesinden OMEMO eklentisini indirip kurabilir ve
 
 ### Mac
 
-Pidgin Mac’te çalıştırılabilir ve eksik de olsa OMEMO eklentisi olan [libpurple](https://github.com/gkdr/lurch) ile kullanılabilir veya Gajim'in [rehberini](https://dev.gajim.org/gajim/gajim/-/wikis/Gajim-0.16-MacOS) takip edebilirsiniz.
+Pidgin isimli yazılımı yükleyip, Pidgin için OMEMO eklentisi olan [lurch](https://github.com/gkdr/lurch)'u üzerine kurarak OMEMO'yu kullanabilirsiniz. Ayrıca Gajim'in [rehberini](https://dev.gajim.org/gajim/gajim/-/wikis/Gajim-0.16-MacOS) takip edebilirsiniz. (_lurch hala geliştirilme aşamasında olan deneysel bir eklentidir._)
 
 ## Hesabınıza giriş yapın veya yeni hesap oluşturun
 
@@ -60,7 +60,7 @@ Pidgin Mac’te çalıştırılabilir ve eksik de olsa OMEMO eklentisi olan [lib
 
 Aşağıdaki sunucuları tercihinizde değerlendirebilirsiniz;
 
-[Calyx Institute](https://www.calyxinstitute.org/) - Çok geniş XMPP kullanıcı kitlesine hizmet veren bir Dernek. Sayısal haklar alanında çalışmalar sürdüren derneğin XMPP sunucusu anonim kayıt kabul ediyor.
+[Calyx Institute](https://www.calyxinstitute.org/) - Çok geniş bir XMPP kullanıcı kitlesine hizmet veren bir dernektir. Dijital haklar alanında çalışmalar sürdüren derneğin XMPP sunucusu anonim kayıt kabul ediyor.
 Kayıt için (kullanıcı adı)@jabber.calyxinstitute.org alan adı kullanılabilir.
 
 [Conversations](https://conversations.im/#xmpp) - Conversations yazılımının kendi sunucusu. Şayet özgür yazılıma destek olunmak istiyorsanız ücretli bu hizmeti tercih edebilirsiniz. İlk altı ay ücretsiz kullanım imkanı vermekte.

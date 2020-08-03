@@ -42,23 +42,23 @@ Güçlü parolalar rastgele üretilirler. Bir parolanın gücünü, uzunluğu ve
 
 Hatırlamanız gereken parolalar üretmek için pek çok yol bulunmaktadır. Eğer parola yöneticisi kullanıyorsanız bırakın uygulama sizin için üretsin. Ancak kendiniz hatırlaması kolay güçlü parolalar oluşturmak istiyorsanız biz [Zarola](https://zarola.oyd.org.tr) kullanmanızı öneriyoruz.
 
-[Zarola](https://zarola.oyd.org.tr) Zarola, kolayca hatırlanabilir ve yüksek derecede güvenli parolalar oluşturabilmenizi sağlayan bir yöntemdir. İnsanlar rastgele şeyler üretemeyeceklerinden rastgelelik kaynağı olarak zar veya bozukpara kullanılır. 7776 Tane kelime içinden seçilen 7 adet ile parola oluşturulur ve hikayeleştirilerek ezberlenir. Bazen komik hikayeler bile çıkar!
+[Zarola](https://zarola.oyd.org.tr), kolayca hatırlanabilir ve yüksek derecede güvenli parolalar oluşturabilmenizi sağlayan bir yöntemdir. İnsanlar rastgele şeyler üretemeyeceklerinden rastgelelik kaynağı olarak zar veya bozukpara kullanılır. 7776 Tane kelime içinden seçilen 7 adet ile parola oluşturulur ve hikayeleştirilerek ezberlenir. Bazen komik hikayeler bile çıkar!
 
-Konuya ilişkin Gözetim Meşru Müdafaa'nın(Security Self-defense) [Güçlü Parolalar Üretmek](https://ssd.eff.org/en/module/creating-strong-passwords) rehberine bakabilirsiniz.
+Konuya ilişkin Security Self-defense'in "[Güçlü Parolalar Üretmek](https://ssd.eff.org/en/module/creating-strong-passwords)" rehberine bakabilirsiniz.
 
-Her hesabın güvenli parolalar ile korunması önemlidir, öyle ki bir hesaba erişim çoğunlukla diğer hesap ve sistemlere giriş için de kullanılabilir. Bu özellikle hesaplarınızı sıfırlama imkanı olan her **e-posta hesabı** için geçerlidir (genellikle "parolamı unuttum" bağlantıları ile).
+Her hesabın güvenli ve eşsiz bir parola ile korunması önemlidir, çünkü bir hesaba erişim bazen diğer hesap ve sistemlere erişim hakkı doğurabilir. Bu durum, özellikle hesaplarınızı sıfırlama imkanı olan her **e-posta hesabı** için geçerlidir (genellikle "parolamı unuttum" bağlantıları ile).
 
 ## Eşsiz parolalar kullanın<a name="essiz-parola"></a>
 
-Eşsiz parolalar kullanmak üçüncü parti hizmetleri kullanmadaki riskleri en aza indirir. Şayet bir parolayı birden fazla hesap için kullanırsanız, bir hesaptan sızan kullanıcı adı ve parolalar ile diğer hesaplarınıza sızılabilir. Farklı servisler için farklı parolalar kullanmak hesaplarınızı birbirinden izole ederek riski azaltacaktır. Bir parola yöneticisi kullanmak bunu yapmayı oldukça kolaylaştırır.
+Eşsiz parolalar kullanmak üçüncü parti hizmetleri kullanırken alınan riskleri en aza indirir. Şayet bir parolayı birden fazla hesap için kullanırsanız, bir hesaptan sızan kullanıcı adı ve parolalar ile diğer hesaplarınıza sızılabilir. Farklı servisler için farklı parolalar kullanmak hesaplarınızı birbirinden izole ederek riski azaltacaktır. Bir parola yöneticisi kullanmak bunu yapmayı oldukça kolaylaştırır.
 
 ## Parolalarınızı gizli tutun<a name="gizli-parola"></a>
 
-Bir bilişim personeli dahi teknik destek için parolalarınızı sorsa parolanızı asla vermeyin. Neredeyse her hesap ve sistem parola sıfırlanmasına olanak tanımaktadır. Meşru olarak herhangi bir IT uzmanı size parolanızı sormadan bakım amaçlı parolanızı sıfırlayabilmektedir. Bu tip sistemler aynı zamanda erişimleri takip altında tutar ve sizi sıfırlama hakkında bilgilendirir. Sizin de her yönetici erişiminden sonra parolanızı değiştirmeniz gerekmekir. Bunun için sadece söz konusu sistemlere erişiminizin olması gerekir ve bu sistemler organizasyon içerisinde hesabınızdaki değişikliğin kim tarafından yapıldığı konusunda size bilgi verir.
+Parolalarınızı her kim sorarsa sorsun asla kimseye vermeyin (Evet, teknik destek vermek için soran IT personeline de vermeyin.). Neredeyse her hesap ve sistem parola sıfırlamasına olanak tanımaktadır. Herhangi bir IT uzmanı, size parolanızı sormadan bakım amaçlı parolanızı sıfırlayabilmektedir. Bu tip sistemler aynı zamanda erişimleri takip altında tutar, sizi sıfırlama hakkında bilgilendirir ve her yönetici erişiminden sonra parolanızı değiştirmeniz istenir. Bunun için sadece söz konusu sistemlere erişiminizin olması yeterlidir.
 
 ## Kurumsal ve kişisel parolalarınızı ayırın<a name="kurumsal-kisisel-parola"></a>
 
-Bir kurumsal parola, kurumunuzun sistemlerine ve sayısal kimliklerine erişim sağlayan herhangi bir paroladır. Bunlar gerçekten önemli bilgiler olduklarından kişilerin kendi kişisel hesaplarına girmek için kullandıklarından farklı olmalı ve ayrı olarak saklanmalıdır. Kurumsal parolanızı, parola yöneticisinde ayrı bir giriş veya farklı bir parola dosyası kullanarak veya tamamen farklı bir parola yöneticisi seçerek saklayabilirsiniz.
+Burada kurumsal paroladan kasıt, kurumunuzun sistemlerine ve dijital kimliklerine erişim sağlayan herhangi bir paroladır. Bunlar gerçekten önemli bilgiler olduklarından, kişilerin kendi kişisel hesaplarına girmek için kullandıkları parolalardan farklı olmalı ve ayrı olarak saklanmalıdır. Kurumsal parolanızı, parola yöneticisinde ayrı bir giriş veya farklı bir parola dosyası kullanarak, ya da tamamen farklı bir parola yöneticisi seçerek saklayabilirsiniz.
 
 ## Ek okuma listesi<a name="ek-okuma"></a>
 

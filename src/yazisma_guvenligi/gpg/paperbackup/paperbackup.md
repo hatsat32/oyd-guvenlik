@@ -1,43 +1,44 @@
 # Paperbackup ile Kağıda Anahtar Yedeği Basmak
 
-[Gnupg](../gpg-anahtar-uretimi.md) ve [SSH](https://en.wikipedia.org/wiki/Secure_Shell) gibi asimetrik [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) anahtarları bilişim sistemlerine erişimde çok önemli bir yer kaplamaktadır. Bu bakımdan kullanıcıların bu anahtarlar ile şifreledikleri veya erişim imkanına sahip oldukları cihazlara bağımlılıkları oranında anahtarların da değeri artmaktadır. Bir anahtarın kaybı şifrelenmiş verilere erişimi neredeyse imkansız hale getirdiği gibi erişim imkanı kaybedilen uzak sunucuların yarattığı sorunlar da tatsız olabilmektedir. Bu bakımdan anahtarların sayısal yedeklerinin alınması ve güvende tutulması çok önemli. Bu bakımdan pek az düşünülse de **Kağıt** bu amaçla çok ideal bir ortam olabilmekte.
+[GnuPG](../gpg-anahtar-uretimi.md) ve [SSH](https://en.wikipedia.org/wiki/Secure_Shell) gibi araçlar ile kullandığımız asimetrik [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) anahtarları bilişim sistemlerine erişimde çok önemli bir yer kaplamaktadır. Bu bakımdan kullanıcıların bu anahtarlar ile şifreledikleri veya erişim imkanına sahip oldukları cihazlara bağımlılıkları oranında anahtarların da değeri artmaktadır. Bir anahtarın kaybı, şifrelenmiş verilere erişimi neredeyse imkansız hale getirdiği gibi erişim imkanı kaybedilen uzak sunucuların yarattığı sorunlar da tatsız olabilmektedir. Bu bakımdan anahtarların yedeklerinin alınması ve güvende tutulması çok önemlidir. Bu bakımdan pek az düşünülse de **kağıt** bu amaç için çok ideal bir ortamdır.
 
 ## Kağıdın avantajları
 
-* __Uzun ömürlülük__:Kağıt taş dışında bugüne kadar veri taşımayı başarmış en eski ortamlardan bir tanesi. [Antik Mısır papirüsleri](https://en.wikipedia.org/wiki/History_of_writing#Writing_materials) milattan önce 3000 yılına kadar gitmekte. İlginç şekilde kitap gibi bir yığın halinde bulundurulduğunda yangına karşı da bir hayli dayanıklıdır. Bu bakımdan yangına uğramış pek çok yapıdan kitaplar kısmi zararlarla kurtarılabilmiştir. Günümüzde suya dayanıklı kağıt ve baskı teknolojilerinin geliştirilmesi ile birlikte, asitsiz kağıt üstüne tonerle yapılmış bir baskıyı ömür bakımından yenebilecek pek az kayıt imkanı bulunmaktadır.
+* __Uzun ömürlülük__: Kağıt, taş dışında bugüne kadar veri taşımayı başarmış en eski ortamlardan bir tanesidir. [Antik Mısır papirüsleri](https://en.wikipedia.org/wiki/History_of_writing#Writing_materials)'nin tarihi M.Ö 3000 yılına kadar gitmektedir. İlginç bir şekilde papirüs, kitap gibi bir yığın halinde bulundurulduğunda yangına karşı da bir hayli dayanıklıdır. Bu sayede kitaplar, yangına uğramış pek çok yapıdan kısmi zararlarla kurtarılabilmiştir. Günümüzde suya dayanıklı kağıtlar ve baskı teknolojilerinin geliştirilmesi ile birlikte, asitsiz kağıtların üzerine tonerle yapılmış bir baskıyı ömür bakımından yenebilecek pek az kayıt imkanı bulunmaktadır.
 
-* __Maliyet__:Kağıt Mb başına en ucuz kayıt medyası olmasa da şifreleme anahtarları gibi küçük verileri kaydetmek için çok ekonomik bir tercih. Bir yazıcı ve 5-20 sayfa arası kağıt ile bir Gnupg anahtarı rahatlıkla yedeklenebilmekte. Baskı maliyetinin 5 krş civarında olduğunu varsayarsak 1 liranın altında yedekler almak mümkün. Aynı zamanda baskıyı yapan makineyi de satın almanız gerekmemekte. Aynı zamanda evinize giren bir hırsız harddiskinize göz dikebilir fakat kimsenin bir deste kağıdı alma arzusu taşıyacağı düşünülmez.
+* __Maliyet__: Kağıt, MB başına en ucuz kayıt medyası olmasa da şifreleme anahtarları gibi küçük verileri kaydetmek için çok ekonomik bir tercihtir. Bir yazıcı ve 5-20 sayfa arası kağıt ile bir GnuPG anahtarı rahatlıkla yedeklenebilmektedir. Baskı maliyetinin 0,05 TL civarında olduğunu varsayarsak, 1 liranın altında bir maliyetle yedekler almak mümkündür. Aynı zamanda evinize giren bir hırsız hard diskinize veya hard diskinizin takılı olduğu makineye göz dikebilir, fakat kimsenin bir deste kağıdı alma arzusu taşıyacağı düşünülmez.
 
-* __Saklama Kolaylığı__:Kağıt yedekleri saklamak için çok özel şartlara ihtiyacınız yok. Sabit sürücü ve benzeri sayısal kayıt ortamlarını nem, sıcaklık, sarsıntı gibi öğelerden korumak zorunda olduğunuz gibi kimi zamanlarda en iyi koşullarda saklanmalarına rağmen [bozulmaları mümkün olabilmekte.](https://www.backblaze.com/blog/hard-drive-failure-rates-q1-2017/) Buna karşı bir poşete konmuş kağıt siz onu unutsanız dahi olduğu yerde sağlam kalmaya devam edecek ve gerekirse gözünüz ile okunmanıza da imkan verecektir.
+* __Saklama kolaylığı__: Kağıt yedekleri saklamak için çok özel şartlara ihtiyacınız yoktur. Sabit sürücü ve benzeri dijital kayıt ortamlarını nem, sıcaklık, sarsıntı gibi öğelerden korumak zorunda olduğunuz gibi, kimi zaman en iyi koşullarda saklanmalarına rağmen [bozulmaları mümkündür](https://www.backblaze.com/blog/hard-drive-failure-rates-q1-2017/). Buna karşın, bir poşete konmuş kağıtlar siz onları unutsanız dahi olduğu yerde sağlam kalmaya devam edecek ve gerekirse gözünüzle okunmanıza da imkan verecektir.
 
 ## Kağıdın dezavantajları
 
-* __Oluşturma__:Sayısal verilerin kağıt yedeklerini oluşturmak görece zor bir işlem. Sayısal veriyi bir sayısal ortama aktarmak günümüzde çocuk oyuncağı kıvamında fakat kağıt gibi anolog bir sisteme bunu güvenle ve emin şekilde aktarmak can sıkıcı olabilmekte. Aynı zamanda sayısal verilerin bastırılabilir şekilde encode edilmesi ve büyük boyutlu verilerin baskısının çok zaman ve kaynak harcaması bu durumu daha kolay kılmamakta.
+* __Oluşturma__: Dijital verilerin kağıt yedeklerini oluşturmak görece zor bir işlemdir. Dijital veriyi başka bir dijital ortama aktarmak günümüzde çocuk oyuncağı kıvamındadır, fakat kağıt gibi analog bir sisteme bunu güvenle ve emin bir şekilde aktarmak can sıkıcı olabilmektedir. Aynı zamanda dijital verilerin bastırılabilir şekilde kodlanmasının (encode) ve büyük boyutlu verilerin bastırılmasının çok fazla zaman ve kaynak harcaması bu durumu zorlaştırmaktadır.
 
-* __Kurtarma__:Yedekten kurtarma yapılamıyorsa yapılan şeye yedek demek pek mümkün olmaz. Kağıdın bu konudaki avantajı aynı zamanda bir dezavantaj da taşımakta. Bastırdığınız kağıt üzerindeki sayısal veriyi tekrar bilgisayara geçirmek için karekodlar, datamatrix veya [OCR](https://en.wikipedia.org/wiki/Optical_character_recognition) gibi teknikleri kullanmanız gerekli. Bu amaçla tarayıcı ile kağıdı taramalı ve hatasız şekilde veriyi geri alabilmelisiniz. Tabii en son çare olarak veriyi tek tek elle girme imkanınız da bulunmakta fakat bu gerçekten son çare olacak kadar zahmetli bir süreç.
+* __Kurtarma__: Eğer yedekten kurtarma yapılamıyorsa, yapılan şeye yedek demek pek mümkün değildir. Kağıdın bu konudaki avantajı, aynı zamanda bir dezavantajdır. Bastırdığınız kağıt üzerindeki dijital veriyi tekrar bilgisayara geçirmek için karekodlar, datamatrix veya [OCR](https://en.wikipedia.org/wiki/Optical_character_recognition) gibi teknikleri kullanmanız gerekmektedir. Bunun için bir tarayıcı vasıtasıyla kağıdı taramanız gerekecektir. En son çare olarak veriyi tek tek elle girme imkanınız da bulunmaktadır, fakat bu gerçekten son çare olacak kadar zahmetli bir süreçtir.
 
 ## Paperbackup
 
-[Paperbackup](https://github.com/intra2net/paperbackup) küçük bir python kodu aracılığı ile ASCII sayısal verilerin kolayca kağıt yedeklerinin çıkarılmasını sağlayan bir program.
+[Paperbackup](https://github.com/intra2net/paperbackup), ASCII olarak kodlanmış dijital verilerin kağıt yedeklerinin kolayca çıkartılmasını sağlayan bir yazılımdır. Python ile geliştirilmiştir.
 
-Her python kodu gibi paperbackup da bir takım bağımlılıklar içeriyor. İlk çalıştırdığınızda mutlaka bir bağımlılığın elinizde olmaması garanti gibi. Bu sebeple aşağıdaki komutu çalıştırarak muhtemel bağımlılıkları sisteminize indirip kurabilirsiniz.
+Her Python kodu gibi `paperbackup` da bir takım bağımlılıklara sahiptir. Aşağıdaki komutu çalıştırarak gereken bağımlılıkları sisteminize indirip kurabilirsiniz.
 
-RPM tabanlı sistemler için:
-`sudo yum install PyX enscript qrencode hashlib zbar`
-Debian için:
+RPM kullanan dağıtımlar için (Red Hat, Fedora, CentOS vb.):  
+`sudo yum install PyX enscript qrencode hashlib zbar`  
+APT kullanan dağıtımlar için (Debian, Ubuntu, Mint vb.):  
 `sudo apt-get update && sudo apt-get install PyX enscript qrencode hashlib zbar`
 
 ### Anahtar veya veri yedeğini oluşturma
 
-Öncelikle yedeğini alacağımız verinin ASCII veya base64 encode edilmiş haline ihtiyacımız var.
+Öncelikle yedeğini alacağımız verinin ASCII olmasına veya dosya normalde binary ise base64 ile kodlanmış (encode) haline ihtiyacımız var.
 
-Gnupg anahtarımızın yedeğini şu şekilde alırsak ortaya çıkan anahtar dosyası yedeklenmeye uygun olacaktır.
+GnuPG anahtarınızın yedeklemeye uygun halini çıkartmak için şu komutu çalıştırabilirsiniz:
 
 `gpg --export-secret-key --armour [anahtar ID] > anahtar_sec.asc`
 
-alınan çıktı bir metin editörü ile incelenirse şu şekilde görünmesi gerekli.
+Alınan çıktı, bir metin editörüyle açıldığında şu şekilde görünmelidir:
 
------BEGIN PRIVATE KEY-----
+```
+-----BEGIN RSA PRIVATE KEY-----
 
 MVp4OTNhQXNrSXNibzB2K1F0bEU3SzJ5MVhVSDdXc2F1eVZ5L0JidjREcjAKNU1xMzVMTnl0TDZp
 ZDdpeXhKVlNoR3B5R0xCNU0zSkZ3Tk40SndrODM4a1hQSkQreW55SWdwS2ttRGdYNFNNQgpqSmxZ
@@ -56,29 +57,30 @@ QUhtbjczcFZsbnpaL2RYSFpuCkVHNEl5NG15ZjByZUFTVTk3U0NZbW9sbWl6WTJjVDhhaFFOVWU4
 VXk1cGlGcjRWb01OVktzVWl1REJaMVlDUEkKcXI5cGk3eWN0ZlRscUxWRitscHpZRE5ZRjZtK0JH
 Vkx3aGQ2SmVyMWJKcllIbjJmc0FqblFqeDNNdFM3MXFMSApBUT09Cj1IUTlJCi0tLS0tRU5EIFBH
 
------END PRIVATE KEY-----
+-----END RSA PRIVATE KEY-----
+```
 
-Eğer yedeğini almak istediğiniz veri başka bir şey ise aşağıdaki komut aracılığı ile base64 encode ederek yedeklemeye hazır edebilirsiniz. Unutmayın ki yedekleyeceğiniz veriden %25 daha büyük bir sonuç elde edeceksiniz ve her sayfaya 10 Kb veri için 15 sayfa elde edeceksiniz.
+Eğer yedeğini almak istediğiniz veri başka bir şey ise, aşağıdaki komut aracılığıyla base64 ile kodlayarak yedeklemeye hazır hale getirebilirsiniz. Yedekleyeceğiniz veriden yaklaşık %25 daha büyük bir sonuç elde edeceğinizi unutmayın.
 
-`base64 -w 65 [yedeklenecek verinin dizini] > [kaydedilecek dizin]`
+`base64 -w 65 [yedeklenecek verinin yolu] > [kaydedilecek dosyanın yolu]`
 
-Bununla birlikte yedeklenecek verinizi veya anahtarınızı hazır etmiş bulunmaktasınız.
+Yedeklenecek anahtarı veya veriyi hazır ettikten sonra, `paperbackup`ı kurun.
 
 ### Kağıt yedeği hazırlama
 
-Öncelikle [Paperbackup git deposundan](https://github.com/intra2net/paperbackup) sağdaki yeşil indir düğmesi ile gerekli dosyaları indirin veya aşağıdaki komut ile git deposunu kopyalayın.
+Öncelikle [Paperbackup git deposuna](https://github.com/intra2net/paperbackup) gidin ve sağdaki yeşil renkli "İndir" düğmesini kullanarak `paperbackup`ı indirin. Ayrıca aşağıdaki komut ile git deposunu bilgisayarınıza klonlayabilirsiniz.
 
 `git clone https://github.com/intra2net/paperbackup`
 
-Programı indirdiğiniz dizine gidin.
+İndirdiğiniz dosyayı bir yere çıkartın ve aşağıdaki komut ile `paperbackup`ın olduğu dizine gidin.
 
 `cd [paperbackup dizini]`
 
-Daha sonra kağıt yedeğinizin PDF dosyasını hazırlamak için aşağıdaki komutu kullanabilirsiniz.
+Daha sonra kağıt yedeğinizi PDF formatında hazırlamak için aşağıdaki komutu kullanabilirsiniz.
 
 `python3 paperbackup.py [yedek dosyasının dizini]`
 
-Betik işini yaptıktan sonra çalıştırdığınız dizinde şu şekilde bir PDF dosyası sizi karşılayacak.
+Betik işini yaptıktan sonra, çalıştırdığınız dizinde şu şekilde bir PDF dosyası sizi karşılayacak.
 
 ![alt-text](paperbackup1.png "Karekodlar")
 ![alt-text](paperbackup2.png "ASCII Yedek")
@@ -93,7 +95,7 @@ Yedeklernizi bastırdıktan sonra katlamayın ve bir zarf içinde veya daha iyis
 
 ### Kurtarma
 
-Öncelikle kağıt yedeğinizin mümkün olan en yüksek çözünürlükte tarayın. Taramanızın sonucu olan PDF dosyasını paperbackup dizinine taşıdıktan sonra aşağıdaki komut ile kurtarabilirsiniz.
+Öncelikle kağıt yedeğinizi mümkün olan en yüksek çözünürlükte tarayın. Taramanızın sonucu olan PDF dosyasını `paperbackup` dizinine taşıdıktan sonra aşağıdaki komut ile kurtarabilirsiniz.
 
 `./paperrestore.sh [kurtarılacak PDF dizini] > kurtarma`
 
@@ -101,11 +103,11 @@ Paperbackup ona verdiğiniz isimle dosyayı bulunduğu dizine kaydedecektir.
 
 ### Okuma listesi ve benzer projeler
 
-* [https://github.com/tuxlifan/paperbackup]()
-* [http://ollydbg.de/Paperbak/]()
-* [https://github.com/Rupan/paperbak/]()
-* [https://git.teknik.io/scuti/paperback-cli]()
-* [https://github.com/colorsafe/colorsafe]()
-* [http://ronja.twibright.com/optar/]()
-* [http://www.jabberwocky.com/software/paperkey/]()
-* [https://github.com/4bitfocus/asc-key-to-qr-code]()
+* <https://github.com/tuxlifan/paperbackup>
+* <http://ollydbg.de/Paperbak/>
+* <https://github.com/Rupan/paperbak/>
+* <https://git.teknik.io/scuti/paperback-cli>
+* <https://github.com/colorsafe/colorsafe>
+* <http://ronja.twibright.com/optar/>
+* <http://www.jabberwocky.com/software/paperkey/>
+* <https://github.com/4bitfocus/asc-key-to-qr-code>

@@ -14,7 +14,7 @@
 * [Tor ile açığa çıkan vakalar](#tor-vakalar)
 
 
-Tor, trafiğini gönüllüler tarafından oluşturulan ağ noktaları (TOR Relay) üzerinden şifrelenmiş bir biçimde yönlendirerek kullanıcılarına internet üzerinde belirli konularda anonimlik sağlayan özgür bir ağ projesidir.
+Tor, trafiğini gönüllüler tarafından oluşturulan ağ noktaları (Tor relay) üzerinden şifrelenmiş bir biçimde yönlendirerek kullanıcılarına İnternet üzerinde belirli ölçüde anonimlik sağlayan özgür bir ağ projesidir.
 
 ## Tor ağı nasıl çalışır?<a name="tor-agi-nasil-calisir"></a>
 
@@ -28,7 +28,7 @@ Buraya kadar genel işleyişi anlayıp benimsediyseniz yavaş yavaş tarayıcı 
 
 ## Tor Browser<a name="tor-browser"></a>
 
-Öncelikle, ehemmiyetle belirtmeliyiz ki Tor Browser bilgisayarınızın tüm trafiğini Tor ağı üzerinden **yollamaz.**  
+Öncelikle şunu asla unutmayın, Tor Browser bilgisayarınızın tüm trafiğini Tor ağı üzerinden **geçirmez.**  
 Örneğin, Tor Browser ile gezinirken, arkaplanda "X" bir mesajlaşma programı kullanıyorsanız, "X" programı üzerinden giden trafik Tor'dan geçmeyecek, dolayısıyla anonim olmayacaktır.
 
 Tor Browser, Mozilla Firefox'un bir çatallamasıdır (fork).
