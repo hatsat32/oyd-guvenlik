@@ -1,4 +1,4 @@
-![ÖYD Güvenlik](guvenlik_logo.svg "ÖYD Güvenlik")
+![ÖYD Güvenlik](README/guvenlik_logo.svg "ÖYD Güvenlik")
 
 ## Buradan başlayın
 

@@ -82,8 +82,8 @@ Daha sonra kağıt yedeğinizi PDF formatında hazırlamak için aşağıdaki ko
 
 Betik işini yaptıktan sonra, çalıştırdığınız dizinde şu şekilde bir PDF dosyası sizi karşılayacak.
 
-![alt-text](paperbackup1.png "Karekodlar")
-![alt-text](paperbackup2.png "ASCII Yedek")
+![alt-text](paperbackup/paperbackup1.png "Karekodlar")
+![alt-text](paperbackup/paperbackup2.png "ASCII Yedek")
 
 ### Yedeği bastırma
 

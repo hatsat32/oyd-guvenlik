@@ -18,21 +18,21 @@ Her gün, muhtemelen en sık kullandığınız yazılım web tarayıcınızdır.
 
 3. Çerezler'in yanındaki menüden "Tüm üçüncü taraf çerezleri"ni seçin. Hemen altındaki menüden "Tüm pencerelerde" seçeneğini seçin.
 
-![alt-text](firefox.png)
+![alt-text](guvenli_web_gezintisi/firefox.png)
 
 4. Aşağı inince göreceğiniz "Web sitelerine Do Not Track (İzlemeyin) sinyali gönder" ibaresinin altında "Her zaman" seçeneğini tıklayın.
 
-![alt-text](firefox1.png)
+![alt-text](guvenli_web_gezintisi/firefox1.png)
 
 5. Çerezler ve site verilerinin altında "Firefox kapatıldığında çerezleri ve site verilerini sil" seçeneğini işaretleyin.
 
 6. Gezinme geçmişinizin temizlendiğinden emin olmak için; Geçmiş ayarlarının olduğu yerdeki menüden "Firefox geçmiş için özel ayarlar kullansın" seçeneğini işaretleyin. Altındaki kutucuklardan "Firefox kapatılınca geçmişi temizle"yi tıklayın.
 
-![alt-text](firefox2.png)
+![alt-text](guvenli_web_gezintisi/firefox2.png)
 
 7. İzinler başlığının altında "Açılır pencereleri engelle" ve "Siteler eklenti yüklemeye çalıştığında beni uyar" seçeneklerini seçin.
 
-![alt-text](firefox3.png)
+![alt-text](guvenli_web_gezintisi/firefox3.png)
 
 8. Firefox veri toplama ve kullanma izinleri başlığının altındaki hiçbir kutucuğu işaretlememenizi öneririz.
 
@@ -40,7 +40,7 @@ Her gün, muhtemelen en sık kullandığınız yazılım web tarayıcınızdır.
 
 10. Sertifikalar başlığının altında "Her seferinde bana sor" ve "Sertifikaların geçerliliğini doğrulamak için OCSP otomatik yanıt sunucularını sorgula" seçeneklerini işaretleyin.
 
-![alt-text](firefox4.png)
+![alt-text](guvenli_web_gezintisi/firefox4.png)
 
 ### Varsayılan arama motorunuzu değiştirin
 

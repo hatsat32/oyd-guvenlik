@@ -36,15 +36,15 @@ Red Hat ve Fedora (RPM):
 
 Bu aşamadan sonra Gajim'i sisteminizde OMEMO eklentisi ile çalıştırabiliyor olacaksınız.
 
-![alt-text](omemo1.png)
+![alt-text](omemo/omemo1.png)
 
 OMEMO eklentisini etkinleştirmek için Gajim menüsünden plugins (eklentiler) kısmına girin.
 
-![alt-text](omemo2.png)
+![alt-text](omemo/omemo2.png)
 
 Ertesinde available (indirme) sekmesinden OMEMO eklentisini indirip kurabilir ve yüklenenler sekmesinden etkinleştirebilirsiniz.
 
-![alt-text](omemo3.png)
+![alt-text](omemo/omemo3.png)
 
 ### Android
 
@@ -81,11 +81,11 @@ Kayıt için (kullanıcı adı)@jabber.calyxinstitute.org alan adı kullanılabi
 
 OMEMO ile yazışmaya başlamak için öncelikle konuşma penceresinde mesja kutusunun yanındaki asma kilit sembolünden OMEMO'yu seçmekle başlayın.
 
-![alt-text](omemo4.png)
-![alt-text](omemo5.png)
+![alt-text](omemo/omemo4.png)
+![alt-text](omemo/omemo5.png)
 
 Daha sonra ilk mesajınız ile karşı tarafın OMEMO anahtarı sunucudan çekilecek ve size güvenip güvenmediğiniz sorulacak. Bu ekranda size ait tüm cihazların anahtarları ile karşı tarafın kullandığı tüm anahtarlar listelenecektir.
 
-![alt-text](omemo6.png)
+![alt-text](omemo/omemo6.png)
 
 Sertifika simgesine tıklayarak tüm anahtarlara olan güveninizi işaretleyebilir anahtarları silebilirsiniz. Anahtarları doğrulamak için konuştuğunuz kişi ile ikinci farklı bir kanaldan tercihen sesli iletişim ile karşılaştırma yapabilir veya yan yana geleceğiniz bir anı bekleyebilirsiniz. Mümkün olduğu sürece anahtarlara **asla** körlemesine güvenerek yazışma yapmayın.
