@@ -25,5 +25,5 @@ Bu durumun değişmesi gerekiyor! Hem Facebook'un elinde kullanıcılarının ve
 |Yazılım|Temel Özellikleri|İyi yönleri|
 |--- |--- |--- |
 |[OTR](otr.md)|Perfect forward secrecy (mutlak gizlilik), inkar edilebilirlik, federatif|[XMPP](https://en.wikipedia.org/wiki/XMPP) üzerinden her türlü iletişim kanalında kullanılabilir. 2004'ten beri kullanılmaktadır.
-|[OMEMO](./omemo/omemo.md)|Perfect forward secrecy (mutlak gizlilik), inkar edilebilirlik, federatif|OTR'nin çoklu cihaz desteği getirilmiş modern versiyonu.|
-|[Signal](./signal/signal.md)|Modern kriptografi, kullanıcı dostu arayüz, grup desteği, yaygın kullanım|Sıkça tavsiye edilen modern görünümlü bir mobil temelli yazılım. Kullanıcı sayısı giderek artmakta fakat [federasyon düşmanı](https://www.oyd.org.tr/en/articles/signal/).|
+|[OMEMO](./omemo.md)|Perfect forward secrecy (mutlak gizlilik), inkar edilebilirlik, federatif|OTR'nin çoklu cihaz desteği getirilmiş modern versiyonu.|
+|[Signal](./signal.md)|Modern kriptografi, kullanıcı dostu arayüz, grup desteği, yaygın kullanım|Sıkça tavsiye edilen modern görünümlü bir mobil temelli yazılım. Kullanıcı sayısı giderek artmakta fakat [federasyon düşmanı](https://www.oyd.org.tr/en/articles/signal/).|
