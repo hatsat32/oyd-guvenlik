@@ -16,7 +16,6 @@ Libreboot kendi dahilinde GRUB çalıştırır. Bu bakımdan Libreboot kurulu bi
 
 GnuPG ile Libreboot'un GRUB'ın kurulumunu ve yüklenecek çekirdeklerin değiştirilmediğini doğrulaması için ayarlarda bir miktar değişiklik yapmak gerekli.
 
-
 ## Bir GnuPG anahtarı edinin
 
 GRUB, kriptografik olarak çekirdek ve ayar dosyalarını denetlemek için GnuPG kullanmakta ve kullanılacak anahtarı sizin üretmeniz gerekmekte. Şayet halihazırda bir GPG anahtarınız yok ise sadece bu amaçla veya genel olarak kullanılmak üzere bir GnuPG anahtarı üretebilirsiniz. Bunun için [GPG rehberinden](/yazisma_guvenligi/gpg/gpg-anahtar-uretimi.md) yararlanabilirsiniz.
@@ -27,13 +26,11 @@ Bu noktada ihtiyaç ve beklentilerinize göre değerlendirmeniz gereken bir husu
 
 Kullanmak konusunda karar verdiğiniz bir GPG anahtarınız olduktan sonra sonraki aşamaya geçebilrsiniz.
 
-
 ## Gerekli yazılımları indirin
 
 Libreboot imajında değişiklikler yapabilmek ve bu değişiklikleri bios çipine yükleyebilmek için gerkeli yazılımları indirmelisiniz. [Libreboot'un arşivinden](https://www.mirrorservice.org/sites/libreboot.org/release/stable/20160907/) gerekli dosyaları indirebilir imzasını GPG ile doğrulayabilirsiniz. İhtiyacınız olan cbfstool ve flashrom (dizinde flash adında) yazılımları indirdiğiniz arşivin dizininde bulunacak.
 
 Flashrom yazılımını dağıtımınızın paket depolarından da indirebilirsiniz.
->>>>>>> 4108a03... Update 'src/cihaz_guvenligi/libreboot_grub.md'
 
 Apt paket yöneticisi kullanan dağıtımlarda (Debian, Mint, Ubuntu vb.):
 
@@ -44,7 +41,6 @@ Apt paket yöneticisi kullanan dağıtımlarda (Debian, Mint, Ubuntu vb.):
 Yum paket yöneticisi kullanan dağıtımlarda (Fedora, CentOS vb):
 
 `sudo yum install flashrom`
-
 
 ## Değiştirilecek Libreboot imajını elde edin
 
@@ -69,7 +65,6 @@ Yukarıdaki örnekte çip boyutu 8mb görünmektedir.
 
 Dilediğiniz arşiv yöneticisi ile cihazınıza uygun olan imajı çıkarabilirsiniz.
 
-
 ## ROM imajından grubtest.cfg dosyasını çıkarın
 
 ROM imajında yapılacak değişiklikler için cbfstool yazılımı kullanılmakta. Bunun için çıkardığınız libreboot.rom dosyasını cbfstool'un bulunduğu dizine ekleyin.
@@ -79,7 +74,6 @@ Terminalde cbfstool dizininde iken `./cbfstool libreboot.rom print` komutu ile R
 cbfstool dizininde libreboot.rom'un bulunduğundan emin olup aşağıdaki komutu çalıştırarak grubtest.cfg dosyasını çıkarabilirsiniz.
 
 `./cbfstool libreboot.rom extract -n grubtest.cfg -f grubtest.cfg`
-
 
 ## GRUB Güvenliği için parola belirleyin
 
@@ -123,13 +117,11 @@ function try_user_config {
 }
 ```
 
-
 ## Açık anahtarınızı hazırlayın
 
 GRUB'ın kontrolleri yapacağı size ait GPG anahtarının açık anahtarının uygun formatta kaydetmeniz gerekli. Bunun için aşağıdaki komutu çalıştırın. boot.key sizin açık anahtarınız olarak dizine kaydedilecektir.
 
 `gpg --export > boot.key`
-
 
 ## GRUB'ın imza kontrolünü açın
 
@@ -139,7 +131,6 @@ Libreboot GRUB'ın GPG anahtarınız ile imza kontrol etmesi için aşağıdaki 
 trust (cbfsdisk)/boot.key
 set check_signatures=enforce
 ```
-
 
 ## Çekirdek ve yapılandırma dosyalarını imzalayın
 
@@ -162,7 +153,6 @@ Dosyaları imzalamak için aşağıdaki komutu listedeki dosyalar için tek tek 
 Her işlem sonrasında imzalanan dosyanın adı ile bir .sig dosyası oluşacaktır. Boot dizini altındaki dosyaları imzalamak için root yetkisine ihtiyacınız var. GPG'yi root yetkisi ile çalıştırdığınızda anahtarınız root kullanıcısında olmadığından anahtar bulunamadığına dair hata alabilirsiniz. Bunun için en kolay yol anahtarınısı root kullanıcısına da import edip işlemlerinizi bu şekilde yapmanız olabilir. **bu kötü bir yöntem başka çıkarı yok mu**?
 
 her .sig dosyasını ilgili dosyanın yanına ekledikten sonra ROM'un hazırlanmasına ve yüklenmesine geçilebilir.
-
 
 ## Libreboot ROM'una grubtest.cfg'nin yazılması
 
@@ -192,7 +182,6 @@ Ardından yeni dosyalarımızı Libreboot.rom'un içine eklenmesi gerekiyor.
 
 Artık libreboot.rom dosyanız bios çipinize yazılmaya hazır.
 
-
 ## ROM'a libreboot.rom imajının yazılması
 
 libreboot.rom dosyasını "flash" dosyasının bulunduğu dizine alın ve ardından aşağıdaki komutu çalıştırarak çipe imajı yazın.
@@ -203,7 +192,6 @@ libreboot.rom dosyasını "flash" dosyasının bulunduğu dizine alın ve ardın
 
 `sudo ./flash forceupdate libreboot.rom`
 
-
 ## Bilgisayarınızı yeniden başlatın ve denemenizi yapın
 
 ROM yazıldıktan sonra bilgisayarınızı yeniden başlatıp yaptığınız değişikliklerin çalışıp çalışmadığını deneyebilirsiniz. Ekranınız açılır açılmaz birkaç kere boşluk tuşuna basıp gelen GRUB ekranında ` Load test configuration (grubtest.cfg) inside of CBFS` seçeneğini seçin. Gelen ekrandan bilgisayarınızı başlattığınızda sorunsuz şekilde çalışıyorsa her şey yolunda demektir.
@@ -212,13 +200,11 @@ Herhangi bir şey yanlış ise ve cihazınız açılmaz ise. Bilgisayarınızı 
 
 Eğer imza sisteminin çalışıp çalışmadığını denemek isterseni. Kasıtlı olarak imzalı dosyaların imzalarını kaldırıp grubtest.cfg ile bilgisayarınızı başlatırsanız hata almanız gerekir. Bu şekilde yapılandırmanızın doğru ve imza denetlediğini görebilirsiniz.
 
-
 ## Yapılandırmanızı kalıcı hale getirin
 
 Şayet grubtest.cfg yapılandırmasından memnun kaldıysanız. grubtest.cfg dosyasını grub.cfg olarak adandırıp 7. adımdan itibaren işlemleri tekrarlayın. Bundan sonra bilgisayarınız libreboot ve GRUB'ın GPG denetimi altında açılacaktır.
 
 **Çekirdek veya GRUB yapılandırmalarınıza güncelleme geldiği durumlarda imzaları yenilemeyi ihmal etmeyin**
-
 
 ## İmzalama işlemini otomatik kılın
 
@@ -277,8 +263,6 @@ Ardından çalıştırılabilir yapın:
 `sudo chmod +x zz-update-signatures`
 
 Bu aşamanın ardından her çekirdek güncellemesinde ilgili betik çalışarak imzaların varlığını kontrol edecek, imza yok ise /boot dizinindeki her dosyayı imzalayacak ve ardından GRUB yapılandırmasını imzalayacaktır. Bu aşamada cihazınız sizden GPG anahtarınızın parolasını isteyecektir.
-
-
 
 ## Ek Okumalar
 

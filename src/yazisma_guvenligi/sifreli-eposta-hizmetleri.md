@@ -32,7 +32,6 @@ Söz konusu imkanı sağlayan pek çok e-posta sağlayıcısı olmakla birlikte 
 [Posteo](htpps://posteo.de)
 [Fastmail](htpps://fastmail.com)
 
-
 ## Uçtan Uca Şifreli E-posta
 
 Uçtan uca şifreli e-posta hizmeti veren şirketler her kullanıcısı için üyelik sırasında bir anahtar oluşturmakta ve bu anahtar aracılığı ile çoğunlukla sadece kendi üyeleri arasındaki yazışmaları şifreleyebilmektedir. Hizmet sağlayıcının dışındaki e-posta kullanıcılarına bir parola ile şifrelenmiş e-posta atabilmek mümkün olsa da bu standart olarak sağlanmamakta ve olağan kullanım için kimi zaman zahmetli olmaktadır. Bu hizmetler ile;
@@ -47,16 +46,13 @@ Uçtan uca şifreli e-posta hizmeti veren en tanınmış iki isim [Tutanota](htt
 
 ### Tutanota vs Protonmail
 
-
 #### Ücretsiz Üyelik
 
 Protonmail de Tutanota da giriş seviyesi temel güvenlik özelliklerinin sunulduğu bedava hesaplar vermekte. Bu bakımdan şayet ihtiyaçlarınız sınırlı ve bütçeniz dar ise iki hizmet sağlayıcıdan da bedava hizmet almanız mümkün.
 
-
 #### Anonim Üyelik ve Ödeme
 
 Teoride her iki şirket de anonim üyelik veriyor ve cryptoparalar ile ödeme kabul ediyor fakat Protonmail pratik olarak anonim üyeliği daha zor kılıyor. Muhtemelen boşuna açılan bedava hesapları azaltmak adına bir çaba olsa da güvenlik ihtiyacının bir parçası olabilecek anonimliği bozan bu çabanın iyi olmadığı kesin.
-
 
 #### Fiyat
 
@@ -67,16 +63,13 @@ Protonmail'in gün itibari ile en ucuz ücretli üyeliği 4 Avro/aylık olmakla 
 
 Her iki hizmet de GNU/Linux dahil olmak üzere tüm platformlarda istemci bulunduruyor. Lakin Protonmail SMTP protokolü ile yerel e-posta istemcilerinin kullanılabilmesi için bir köprü yazılımı da geliştirmiş ve bunu ücret ödeyen kullanıcılarına sunuyor durumda. Böylece isteyenler Thunderbird gibi kendi e-posta istemcileri ile Protonmail'i kullanabilmekte. Tutanota ise sadece webmail ve kendi istemcileri ile kullanıma imkan veriyor.
 
-
 #### Yazılım Özgürlüğü
 
 Protonmail ile Tutanota'nın en büyük ayrılıklarından biri burada ortaya çıkıyor. Protonmail yazılım özgürlüğü konusunda verdiği sözleri zamanında tutamamakta. Şu anda sadece webmail ve köprü yazılımı özgür olmakla, diğer tüm platformlar için olan yazılımları mülk konumunda bulunuyor. Tutanota ise tam tersine tüm yazılımlarını özgür geliştirmekte ve Android istemcisi [F-droid'den](https://f-droid.org) bile indirilebiliyor. [Hatta Tutanota özgür yazılıma özgür yazılım diyen nadir şirketlerden biri](https://tutanota.com/blog/posts/desktop-clients/)
 
-
 #### Şifreleme Teknolojileri
 
 Protonmail ile Tutanota arasındaki en önemli farklardan bir tanesi kullandıkları şifreleme teknolojilerinden gelmekte. Protonmail uzun zamandır e-posta şifreleme için kullanılan GnuPG yazılımı üzerine kurulu bir sistem. Tutanota ise simetrik şifreleme algoritması olan AES128 ile asimetrik RSA2048 algoritmasının bir birleşimini kullanmakta. Algoritmaların geçmişi ve güvenliği bakımından gözle görülecek bir fark bulunmamakla birlikte, bu durum hizmetin özgürlüğü açısından çok önemli pratik bir fark ortaya koymakta. Keza Protonmail diğer GPG istemcileri ile şifreli iletişim kurabilirken Tutanota bu imkandan yararlanamamakta.
-
 
 #### Hizmet Özgürlüğü
 

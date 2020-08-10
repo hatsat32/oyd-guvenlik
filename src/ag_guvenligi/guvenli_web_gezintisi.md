@@ -1,6 +1,5 @@
 # Güvenli Web Gezintisi
 
-
 ## Web tarayıcınızı seçin
 
 En bilindik dört tarayıcı, Firefox, Chrome, Internet Explorer ve Safari, yakın geçmişte ciddi güvenlik sorunları açığa çıkardı. Tercihiniz ne olursa olsun, en güncel sürümü kullandığınızdan emin olmalısınız.
@@ -9,9 +8,7 @@ Bu dört tarayıcı da [[browser-score-card]] düşük puanlar aldı. Yine de, b
 
 Alternatif olarak, Firefox'un, Tor Projesi tarafından daha güvenli ve anonim olmak için özelliştirilmiş versiyonu olan [Tor Tarayıcısı](https://www.torproject.org/download/download-easy.html.en)'nı kullanabilirsiniz.
 
-
 ## Firefox'ta Ayarlarınızı Yapın
-
 
 ### Üçüncü taraf çerezleri devre dışı bırakın
 
@@ -47,21 +44,17 @@ Alternatif olarak, Firefox'un, Tor Projesi tarafından daha güvenli ve anonim o
 
 ![alt-text](firefox4.png)
 
-
 ### Varsayılan arama motorunuzu değiştirin
 
 Yine tercihlerden "Arama" kısmına gelin. Varsayılan arama motoru olarak [duckduckgo.com](https://duckduckgo.com)'u seçin. Riseup arama motoru olarak DuckDuckGo'yu öneriyor. [Masaüstü](https://duck.co/help/desktop/adding-duckduckgo-to-your-browser) veya [mobil](https://duck.co/help/mobile) tarayıcılar için kurulum talimatlarını inceleyin.
-
 
 ## Tarayıcı eklentileri
 
 Eklentiler aksi belirtilmedikçe Firefox ve Chrome ile uyumludur.
 
-
 ### Başlıca eklentiler
 
 Aşağıdaki eklentiler, herkesin sürekli olarak kullanmasını önerdiğimiz başlıca eklentilerdir. Stabil ve açık kaynak olan bu eklentiler, web sitelerinin bozulmasına çok nadir sebep olurlar.
-
 
 
 |||
@@ -74,7 +67,6 @@ Kullanım notları;
 
 - IP adres sızıntıları; Tüm tarayıcılar sesli ve görüntülü konferanslar sırasında gerçek IP adresinizi sızdırır. Eğer VPN veya Tor ile birlikte sesli veya görüntülü konuşma gerçekleştiriyorsanız, uBlock ayarlarında WebRTC IP sızıntılarını engelleyen ayarı aktif etmelisiniz.
 - uBlock gelişmiş mod; Eğer uBlock'u [gelişmiş modda](https://github.com/gorhill/uBlock/wiki/Advanced-user-features) kullanıyorsanız, ayriyeten Privacy Badger kullanmanız gerek yoktur.
-
 
 ### Gelişmiş Eklentiler
 
@@ -98,7 +90,6 @@ Chrome için:
 
 * [µMatrix](https://chrome.google.com/webstore/detail/%C2%B5matrix/ogfcmafjalglgifnmanfmnieipoejdcf) seçici olarak JavaScript'i, eklentileri veya diğer kaynakları engellemenize ve üçüncü-taraf kaynakları kontrol etmenizi sağlar. Bunun yanında mahremiyetinizi korumak için user-agent maskeleme, referer engelleme gibi ek özellikler sunar. NoScript ve RequestPolicy yerine kullanılabilir.
 * [CanvasFingerPrintBlock](https://chrome.google.com/webstore/detail/canvasfingerprintblock/ipmjngkmngdcdpmgmiebdmfbkcecdndc) HTML5 canvas desteğini belirli siteler için devre dışı bırakmanızı sağlar (eklenti kaynak kodu kapalıdır).
-
 
 ### Zararlı veya önerilmeyen eklentiler
 

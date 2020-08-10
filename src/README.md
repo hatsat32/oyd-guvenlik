@@ -9,16 +9,6 @@ Zaman sıkıntısı mı çekiyorsunuz? Baskıyla mücadele etmek ve daha iyi bir
 * [Cihazlarınızı şifreleyin](./cihaz_guvenligi/cihaz_sifreleme.md): Tam disk şifreleme kullanması çok kolay, pek çok işletim sisteminde dahili olarak gelen ve cihazlarınızdaki verilerin korunmasında çok etkili bir sistemdir.
 * [Web sitelerini daha güvenli gezin](./ag_guvenligi/guvenli_web_gezintisi.md): Varsayılan tarayıcınızı ve birkaç küçük ayarı değiştirip iki-üç eklenti kurarak web üzerindeki güvenliğinizi ve keyfinizi fazlasıyla artırabilirsiniz.
 * [Yazılımlarınızı güvenli çalıştırın](./cihaz_guvenligi/yazilim_guvenligi.md): Özgür yazılımlar kullanmak ve yazılımları güncellemek, güvenliğiniz için basit ama etkin adımlardır.
-=======
-Zaman sıkıntısı mı çekiyorsunuz? Baskıyla mücadele etmek ve daha iyi bir dünya inşaa etmek için çok mu meşgulsünüz? Muhteşem! Burada bahsedeceğimiz kolay adımlarla kendinizin ve çevrenizdeki herkesin sayısal hayatını daha güvenli kılabilirsiniz.
-
-* [Yazışma disiplinine giriş yapın](./beseri_guvenlik/mesaj_disiplini.md): Saldırıların çoğu e-posta kutunuzdan veya telefonunuza gelir. E-posta ve anlık yazışma kullanırken uygun önlemleri nasıl alacağınızı öğrenin.
-* [Parola yöneticisi ve Zarola kullanın](./beseri_guvenlik/parolalar.md): Parola yöneticisi kullanarak kendinizi çok sayıda tehlikeden koruyabilirsiniz. Parola yöneticinizi, Zarola ile koruyarak güvenliğinizi artırabilirsiniz.
-* [Cihazlarınızı şifreleyin](./cihaz_guvenligi/cihaz_sifreleme.md): Tam disk şifreleme kullanması çok kolay, pek çok işletim sisteminde dahili olarak gelen ve cihazlarınızdaki verilerin korunmasında çok etkili bir sistemdir.
-* [Web sitelerini daha güvenli gezin](./ag_guvenligi/guvenli_web_gezintisi.md): Varsayılan tarayıcınızı ve varsayılan ayarlarını değiştirip birkaç eklenti kurarak web üzerindeki güvneliğinizi ve keyfinizi fazlasıyla arttırabilirsiniz.
-* [Yazılımlarınızı güvenli çalıştırın](./cihaz_guvenligi/yazilim_guvenligi.md): Özgür yazılımlar kullanmak ve yazılımları güncellemek güvenliğiniz için yapabileceğiniz en basit şeydir.
-
->>>>>>> af31c78... çeşitli değişiklikler
 
 
 ## Güvenlik neden önemlidir?

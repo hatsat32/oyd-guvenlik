@@ -1,7 +1,6 @@
 # Beşeri Güvenlik
 
-
-## Her sistemin en zayıf halkası insandır
+## Her sistemin en zayıf halkası **insandır**
 
 Dünyanın en iyi algoritmaları, şifreleme yazılımları, güvenlik duvarları veya çelik kapıları, kullanan kişilerin dikkati ve özeni kadar güvenlidir. Parolanız "1234" ise veya gelen her e-postayı açıp içindekilere tıklayıp bilgisayarınıza kuruyorsanız sizi hiçbir şey koruyamaz. 
 

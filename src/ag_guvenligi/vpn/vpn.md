@@ -2,8 +2,6 @@
 
 VPN temel olarak iki yerel ağın güvensiz İnternet bağlantısı üzerinden birbirine güvenli şekilde bağlanabilmesi için geliştirilmiş bir teknolojidir. Basitçe iki bilgisayarın birbirine şifrelenmiş bir kanal üzerinden bağlanmasını sağlar. Temel olarak şirketlerin ağ altyapılarına uzaktan güvenli erişim için tasarlanmış olmasına rağmen günümüzde en yaygın kullanımı kullanıcıları tehlikeli ağlardan güvenli şekilde İnternet'e erişmesini sağlamak üzerinedir.
 
-
-
 ## VPN ne işe yarar?
 
 VPN temel olarak size şunları sağlar;
@@ -14,7 +12,6 @@ VPN temel olarak size şunları sağlar;
 
 * VPN kimi koşullar için yeterince anonimlik sağlamamakla beraber, bağlı olduğunuz VPN sunucusundaki herkes ile aynı IP adresini paylaştığınızdan kalabalığın içine karışmış olursunuz.
 
-
 ## Neden VPN kullanmalıyım?
 
 VPN kullanmak için çok çeşitli sebepleriniz olabilir;
@@ -24,8 +21,6 @@ VPN kullanmak için çok çeşitli sebepleriniz olabilir;
 * Ağ üzerinden iletişiminizi denetleyen, takip eden, kaydeden kişilere karşı mahremiyetinizi korumak istiyorsunuzdur.
 
 * Bağlı olduğunuz yerel ağ üzerinden size yöneltilebilecek saldırılara karşı korumaya ihtiyacınız vardır.
-
-
 
 ## Ücretsiz VPN olur mu?
 
@@ -49,7 +44,6 @@ Bu duruma istisna sayılabilecek birkaç örnek bulunmakta. Bu istisnalar, düny
 
 [ProtonVPN](https://protonvpn.com)
 
-
 ## VPN hizmeti seçerken nelere dikkat etmeliyim?
 
 * **[Özgür yazılım](https://oyd.org.tr/yazilar/ozgur-yazilim/)** kullanmayan hiç bir VPN sağlayıcıya güvenmeyin. VPN ile tüm ağ trafiğinizi teslim ettiğiniz bir şirketin kullandığı yazılımların sizin özgürlüğünüze karşı olması hiç güven telkin eden bir unsur değildir.
@@ -66,10 +60,7 @@ Bu duruma istisna sayılabilecek birkaç örnek bulunmakta. Bu istisnalar, düny
 
 * Bir VPN sağlayıcı sizden kayıt için hiç bir kişisel veri talep etmemelidir. Buna ödeme imkanları arasında kriptoparalar ve posta yolu ile nakit gönderimi gibi anonim seçenekler bulundurmak da dahildir. Nihayetinde VPN sağlayıcınıza güveniyor olacaksınız kimliğiniz için fakat şirkete güvenseniz bile devletler ve kötücül saldırıların ihtimali hala asgari veriyi teslim etmeniz için geçerli gerekçelerdir.
 
-
-
 ## VPN Kurulumu
-
 
 ### VPN Kullanım Stratejisi
 
@@ -92,7 +83,6 @@ Dezavantajları ise;
 * Sistem ayarlarının yapılabilmesi için yazılımın yönetici yetkisi ile çalışmasının gerekmesi.
 
 Diğer seçeneğiniz ise işletim sisteminiz tarafından desteklendiği durumlarda dahili OpenVPN istemcisi ile kurulum yapmaktır. Bu kullanım sistem kaynağınızı daha az kullanacak ve daha birleşik bir deneyim sunacaktır. Lakin ayarların bir kısmını kendiniz yapmak zorunda kalacağınızdan vakit ve emek harcamaya hazır olmanız gereklidir. Bunu VPN sisteminin arkaplanını öğrenmek ve hatalarınızı görmek için bir fırsat olarak düşünebilirsiniz.
-
 
 ### OpenVPN Sunucusu Kurulumu
 
@@ -155,7 +145,6 @@ Option:
 
 ### Istemci Kurulumu
 
-
 #### GNU/Linux
 
 GNU/Linux dağıtımları Linux çekirdeğinde doğrudan Openvpn ve daha yeni bir teknoloji olarak artık [Wireguard](https://www.wireguard.com/) desteklemektedir. Masaüstü ortamları da Openvpn istemcisine doğrudan destek vermektedir. GNU/Linux dünyasında çokça masaüstü ortamı olmasından dolayı en yaygın kullanılan Gnome 3 ile rehberimiz hazırlandı lakin pek çok kullanıcı ayarların kendi cihazlarında da benzer olduklarını görecektir.
@@ -215,7 +204,6 @@ sistem açılışında çalışması için de;
 
 komutları kullanılabilir.
 
-
 #### Android
 
 Android işletim sistemi 7. sürüm ve sonrasında VPN desteğini işletim seviyesinde sunmaya başlamıştır. Ne yazık ki OpenVPN hala bu seçenekler arasında olmamakla birlikte özgür bir OpenVPN istemcisini Android ayarlarında VPN sağlayıcısı olarak belirlediğinizde sistemle gayet uyumlu çalışmaktadır.
@@ -258,21 +246,17 @@ Android ayarlarını yaparak sisteminizin VPN bağlantısını korumasını ve k
 
 ![alt-text](ayarlar4.png)
 
-
 #### Yönlendirici
 
 [Bu bölüme katkı verebilirsiniz](https://git.oyd.org.tr/oyd/guvenlik)
-
 
 ## VPN Bağlantısının Kesilmesi Sorunsalı
 
 VPN bağlantısı genellikle sorunsuz şekilde kurulu kalır. Fakat ağ sorunları, İnternet kesintisi veya mobil cihazlarda bağlantı kayıpları VPN bağlantısının kimi zaman düşmesine sebep olur. Bu durumda cihazınızda özellikle bir ayar yapmadıysanız tüm bağlantınız hiç kesintiye uğramadan yerel İnternet bağlantınız üzerinden sürecektir. Bu mahremiyetiniz ve güvenliğiniz için bir sorun oluşturabilir.
 
-
 ### GNU/Linux
 
 GNU/Linux işletim sisteminde firewall kuralları ile cihazınızın İnternet bağlantısını VPN bağlantısına sınırlandırmanız gereklidir. Bunun için sisteminizde kurulu olan dağıtıma bağlı olarak çeşitli imkanlar mümkündür.
-
 
 #### UFW
 
@@ -333,7 +317,6 @@ Eğer İnternet üzerinden cihazınıza ulaşılması gerekli ise VPN bağlantı
 **UFW'yi çalıştırın**
 
 `sudo ufw enable`
-
 
 ### Android
 
