@@ -8,50 +8,44 @@ E-posta aynı zamanda tasarımı gereği bir çok aracıya güvenmenizi gerektir
 
 TLS ile genel olarak e-posta sunucunuz ile aranızdaki iletişim ve çoğunlukla da gönderdiğiniz e-postanın alıcısının kullandığı sunucu arasındaki iletişim şifreli olsa da sunucularda duran e-postalar hala okunabilir durumdadır. Gözetim kapitalizminin bir unsuru olarak şayet bir şey yapılabiliyor ise muhtemelen yapılıyordur ve gerçek şu ki e-postalarınız okunuyor, size bunun üzerinden reklam satılıyor!
 
-## E-posta Nasıl Şifrelenir
+## E-posta nasıl şifrelenir?
 
-GnuPG'ye hoşgeldiniz. Bugün bildiğimiz ismiyle GNU Privacy Guard sadece e-posta şifrelemek için değil neredeyse bilgisayarınızda yapabileceğiniz her kriptografik işlem için kullanılabilecek çok amaçlı bir yazılımdır.
+GnuPG'ye hoşgeldiniz. Bugün bildiğimiz ismiyle "GNU Privacy Guard", sadece e-posta şifrelemek için değil neredeyse bilgisayarınızda yapabileceğiniz her kriptografik işlem için kullanılabilecek çok amaçlı bir yazılımdır.
 
-Pretty Good Privacy ismi ile Philiph Zimmerman tarafından 80'lerde ABD'de yazılan PGP ülkedeki gelmesi beklenen şifreleme yasaklarına karşı geliştirilip dünya ile paylaşılmıştır. ABD ve RSA şirketinin davası üzerine yazılımın kaynak kodu anayasal korumadan faydalanmak adına kitap olarak basılıp yayınlanmış ve Zimmarman'ın PGP'yi satması ile bugün özgür bir yazılım olarak GnuPG ismi ile hayatına devam etmektedir.
+"Pretty Good Privacy" ismi ile Phil Zimmerman tarafından 80'lerde ABD'de yazılan PGP, ülkedeki gelmesi beklenen şifreleme yasaklarına karşı geliştirilip dünya ile paylaşılmıştır. ABD ve RSA şirketinin davası üzerine yazılımın kaynak kodu, anayasal korumadan faydalanmak adına kitap olarak basılıp yayınlanmış ve Zimmerman'ın PGP'yi satması ile bugün özgür bir yazılım olarak GnuPG ismi ile hayatına devam etmektedir.
 
-GPG ile e-postalarınızı ve eklerini şifreleyebilir, size ulaşan e-postanın değiştirilmediğini bilebilir veya gönderen kişinin kimliğini doğrulayabilirsiniz. GPG merkezi bir otoriteye dayanmadan insanların arasında bir güven ilişkisi kurulmasına imkan verir.
+GnuPG ile e-postalarınızı ve eklerini şifreleyebilir, size ulaşan e-postanın değiştirilmediğini bilebilir veya gönderen kişinin kimliğini doğrulayabilirsiniz. GnuPG, merkezi bir otoriteye dayanmadan insanların arasında bir güven ilişkisi kurulmasına imkan verir.
 
-[GPG kurulumu için rehberimize danışabilirsiniz](gpg/gpg-anahtar-uretimi.md)
+GnuPG kurulumu için [rehberimize danışabilirsiniz](gpg/gpg-anahtar-uretimi.md).
 
-## Webmail Kullanarak e-posta şifrelenebilir mi?
+## Webmail kullanarak e-posta şifrelenebilir mi?
 
-Açıkçası, şifreli e-posta göndermenin en iyi yolu [Thunderbird](https://www.thunderbird.net/en-US/) gibi bir istemci ile [Enigmail](https://www.enigmail.net) benzeri bir eklenti kullanmaktır.
+Açıkçası, şifreli e-posta göndermenin en iyi yolu [Thunderbird](https://www.thunderbird.net/en-US/) gibi bir istemci ile [Enigmail](https://www.enigmail.net) benzeri bir eklenti kullanmaktır. Ancak [Mailvelope](https://www.mailvelope.com/en/) veya [FireGnuPG](http://tr.getfiregpg.org/s/home) gibi eklentiler ile bu mümkündür.
 
 ## Şifrelenmiş e-posta neyi korumaz?
 
-[Mailvelope](https://www.mailvelope.com/en/) eklentisi tarayıcınıza kurabileceğiniz ve girdiğiniz webmail üzerinden GPG şifreli yazışma yapmanıza imkan sağlayan bir tarayıcı eklentisi. Kurulumu biraz daha karmaşık olacak olsa da web üzerinden e-postalarınızı yönetme ihtiyacınız varsa değerlendirilebilir bir seçenek.
+Her şifreleme yöntemi gibi, e-posta gibi asimetrik bir iletişim yöntemini şifrelemeye çalışmanın da bazı eksiklikleri ve dikkat edilmesi gereken noktaları vardır.
 
-Kimi e-posta sağlayıcılar kendi yazılımları aracılığı ile GPG destekli şifreli e-posta hizmeti sunmakta. Bunun için [şifreli e-posta hizmetleri](sifreli-eposta-hizmetleri.md) rehberimize danışabilirsiniz.
+* GnuPG, kullandığınız yönteme göre e-postalarınızın başlığını **şifrelemeyebilir**. Çoğunlukla e-postanın başlığı e-postanızın içeriği hakkında çok şey söyleyebileceği için bu hususa dikkat edilmelidir. Başlıkları şifrelemek daha sonra posta kutusunda e-posta aramayı çok zor kılacağı gibi e-postaları şifrelememek de mesajların içeriğini ifşa etmek anlamına gelebilir. Bu bakımdan tercihin bilinçli yapılması önemlidir.
 
-## Şifrelenmiş E-posta Neyi Korumaz
+* GnuPG ile şifrelemiş olsanız dahi e-postalarınızın iletilebilmesi için bir takım bilgilerin açık olarak aktarılması gerekecektir. Bunu üzerine adres ve isim yazmadığınız bir postanın iletilememesi ile kıyaslayabilirsiniz. Bu durumdan dolayı sunucuları veya iletişimi gözleyebilen biri kimlerle ilişki içinde olduğunuzu [üstveri](https://en.wikipedia.org/wiki/Metadata) (metadata) aracılığıyla öğrenebilir.
 
-Her şifreleme yöntemi gibi e-posta gibi asimetrik bir iletişim yöntemini şifrelemenin de bazı eksiklikleri ve dikkat edilmesi gereken noktaları vardır.
-
-* Kullandığınız yönteme göre GPG e-postalarınızın başlığını şifrelemeyebilir. Çoğunlukla e-postanın başlığı e-postanızın içeriği hakkında çokça şey söyleyebileceği için bu hususa dikkat edilmelidir. Başlıkları şifrelemek daha sonra posta kutusunda e-posta aramayı çok zor kılacağı gibi e-posta şifrelememek de mesajların içeriğini ifşa etmek anlamına gelebilir. Bu bakımdan tercihin bilinçli yapılması önemlidir.
-
-* GPG ile şifrelemiş olsanız dahi e-postalarınızın iletilebilmesi için bir takım bilgilerin açık olarak aktarılması gerekecektir. Bunu üzerine adres ve isim yazmadığınız bir postanın iletilemeyeceği ile kıyaslayabilirsiniz. Bu durumdan dolayı sunucuları veya iletişimi gözleyebilen biri kimlerle ilişki içinde olduğunuzu [üstveri](https://en.wikipedia.org/wiki/Metadata) aracılığı öğrenebilir.
-
-* GPG uzun vadeli, kişilerin kimliği ile sıkı sıkıya bağlı anahtarlar kullanır. Bu bakımdan imzalanmış bir e-postanın kimden geldiğini inkar etmek mümkün olmadığı gibi kullanılan anahtarların bir şekilde ortaya çıkması durumunda, eski iletişimler de okunabilir hale gelecektir. Şifreli e-postaları bir zaman açabilme ümidi ile saklayan bir kurum (bkz. NSA) bir gün e-postalarınızı okuyabilir. Bu elbette e-postaları şifrelememek için bir bahane değil ama bazı durumlarda dikkate alınması gereken bir risktir.
+* GnuPG uzun vadeli, kişilerin kimliği ile sıkı sıkıya bağlı anahtarlar kullanır. Bu bakımdan imzalanmış bir e-postanın kimden geldiğini inkar etmek mümkün olmadığı gibi kullanılan anahtarların bir şekilde ortaya çıkması durumunda, eski iletişimler de okunabilir hale gelecektir. Şifreli e-postaları bir zaman açabilme ümidi ile saklayan bir kurum (bkz. NSA) bir gün e-postalarınızı okuyabilir. Bu elbette e-postaları şifrelememek için bir bahane değildir ama bazı durumlarda dikkate alınması gereken bir risktir.
 
 ## Peki anahtarların aitliğini kim doğrular?
 
-Bu sorunun basit cevabı; herkes ve kimsedir.
+Bu sorunun basit cevabı, herkes ve hiç kimsedir.
 
 Bir GnuPG anahtarına olan güven tamamen o anahtarı kullanan kişinin o anahtarı kullandığını bilmenize dayanır. Bu o kişiyi gerçekten tanımanız ve güvenli bir kanal veya yüz yüze anahtarın parmak izini doğrulamanız anlamına gelebileceği gibi, kriptografik olarak kullanılan anahtarı imzalayan kişilerden birini ve anahtarını tanımanız da olabilir.
 
-Güven ağı GPG'nin temel güven ilişkisinin temelidir. GPG kullanıcıları tanıdıkları ve güvendikleri kişilerin anahtarlarını imzalarlar. Bu imzalar bir süre sonra tanıdıkların tanıdıkları şekilde bir ağa dönüşür ve iki kişi birbirini tanımasa dahi bir seviyeye kadar tanımadığı ama tanıdığının tanıdığı bir kişinin anahtarına güvenebilir.
+Güven ağı GnuPG'nin temel güven ilişkisinin temelidir. GnuPG kullanıcıları tanıdıkları ve güvendikleri kişilerin anahtarlarını imzalarlar. Bu imzalar bir süre sonra tanıdıkların tanıdıkları şekilde bir ağa dönüşür ve iki kişi birbirini tanımasa dahi bir seviyeye kadar tanımadığı ama tanıdığının tanıdığı bir kişinin anahtarına güvenebilir.
 
 ## Şifreli e-posta hakkında tavsiyeler nelerdir?
 
-* Gizli anahtlarınızı şifreli bir ortamda çevrimdışı olarak saklayın. Bu anahtarınızın, cihazınız çalınır, kaybolur veya el koyulursa ele geçmesini engeller.
+* Gizli anahtarlarınızı şifreli bir ortamda çevrimdışı olarak saklayın. Bu anahtarınızın, cihazınız çalınır, kaybolur veya el koyulursa ele geçmesini engeller. Bunun için [kağıt bir yedek](yazisma_guvenligi/gpg/paperbackup/paperbackup.md) almayı düşünebilirsiniz.
 * **ASLA** ama asla gizli anahtarınızı kimse ile paylaşmayın, umumi bir cihaza kaydetmeyin ve uzak sunucuya yüklemeyin.
-* *[ZAROLA KULLANIN!](https://zarola.oyd.org.tr)* çünkü anahtarınızın güvenliği bu parolanızın güvenliğine bağlıdır.
-* Çevrenizde bir CryptoParty yapın ki arkadaşlarınıza da GnuPG kullanmayı öğretip anahtarlarınızı imzalayarak kendi güven ağınızı oluşturun.
-* İçeriğinden bağımsız olarak şifreli e-postalar gönderin. Bu gerçekten hem sizin hem tüm toplum için önemlidir. Şayet sadece gerektiğinde şifreleme yaparsanız analiz edilmesi gereken iletişim miktarı hatrısayılır miktarda azalacaktır ve bir örüntü ortaya çıkacaktır. Havadan sudan bile şifreli yazışın!
+* **[ZAROLA KULLANIN!](https://zarola.oyd.org.tr)**. Çünkü anahtarınızın güvenliği anahtar parolanızın güvenliğine bağlıdır.
+* Çevrenizde bir CryptoParty yapın ve bu sayede arkadaşlarınıza da GnuPG kullanmayı öğretip anahtarlarınızı imzalayarak kendi güven ağınızı oluşturun. [Özgür Yazılım Derneği](https://oyd.org.tr) ve [Hackerspace Istanbul](https://hackerspace.ist) düzenli aralıklarla [CryptoParty](https://cryptoparty.online)'ler düzenlemektedir.
+* İçeriğinin gizliliğinden bağımsız olarak şifreli e-postalar gönderin. Bu gerçekten hem sizin hem tüm toplum için önemlidir. Şayet sadece gerektiğinde şifreleme yaparsanız analiz edilmesi gereken iletişim miktarı hatrı sayılır miktarda azalacaktır ve bir örüntü ortaya çıkacaktır. Havadan sudan bile şifreli yazışın!
 ---
 [^1]: Transport Layer Security <https://tr.wikipedia.org/wiki/Transport_Layer_Security>
