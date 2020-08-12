@@ -1,14 +1,14 @@
-# Protonmail ile GPG Kullanımı
+# Protonmail ile GnuPG Kullanımı
 
-## Protonmail Nedir?
+## Protonmail nedir?
 
-[Protonmail](https://protonmail.com) şifreli bir e-posta hizmetidir. Güvenlik rehberinin detaylıca incelediği şifreli e-posta hizmet sağlayıcıları arasında Protonmail'i ayıran özellik GPG şifrelemenin hizmetin temelinde olmasıdır. Bu Protonmail kullanıcılarının Protonmail dışındak diğer e-posta adreslerine GPG şifreli e-posta atabilmelerini ve diğer e-posta adreslerinden GPG şifreli e-posta alıp tarayıcıdan okuyabilmelerine imkan veriyor. Bu bakımdan Protonmail kullanıcıları uçtan uca şifrelemeye sadece Protonmail kullanıcıları arasında değil tüm GPG kullanıcıları arasında sahip oluyorlar.
+[Protonmail](https://protonmail.com) şifreli bir e-posta hizmetidir. Güvenlik rehberinin detaylıca incelediği şifreli e-posta hizmet sağlayıcıları arasında Protonmail'i ayıran özellik GnuPG şifrelemenin hizmetin temelinde olmasıdır. Bu Protonmail kullanıcılarının Protonmail dışındak diğer e-posta adreslerine GnuPG şifreli e-posta atabilmelerini ve diğer e-posta adreslerinden GnuPG şifreli e-posta alıp tarayıcıdan okuyabilmelerine imkan veriyor. Bu bakımdan Protonmail kullanıcıları uçtan uca şifrelemeye sadece Protonmail kullanıcıları arasında değil tüm GnuPG kullanıcıları arasında sahip oluyorlar.
 
-Protonmail kullanmak elde edebileceğiniz en güvenli GPG kurulumu değildir. Protonmail'e her girdiğinizde tarayıcınıza gelen javascript kodunu doğrulamanız mümkün değildir. Protonmail'in istemcileri de ne yazık ki hala özgür değil. Bunun tek istisnası smtp ile Protonmail hesabınıza bağlanmanızı sağlayan [köprü(bridge)](https://protonmail.com/bridge) yazılımı. Her ne kadar Protonmail size yukarıdaki gerekçeler ile en iyi sonucu vermeyecek de olsa, pek çok Protonmail kullanıcısı ile çokça tehdit modeline yeterli güvenli yazışma yapmak ve gerekirse diğer GPG kullanıcıları ile yazışmanız çok kolay. Karar size kalmış.
+Protonmail kullanmak elde edebileceğiniz en güvenli GnuPG kurulumu değildir. Protonmail'e her girdiğinizde tarayıcınıza gelen javascript kodunu doğrulamanız mümkün değildir. Protonmail'in istemcileri de ne yazık ki hala özgür değil. Bunun tek istisnası smtp ile Protonmail hesabınıza bağlanmanızı sağlayan [köprü(bridge)](https://protonmail.com/bridge) yazılımı. Her ne kadar Protonmail size yukarıdaki gerekçeler ile en iyi sonucu vermeyecek de olsa, pek çok Protonmail kullanıcısı ile çokça tehdit modeline yeterli güvenli yazışma yapmak ve gerekirse diğer GnuPG kullanıcıları ile yazışmanız çok kolay. Karar size kalmış.
 
-## Protonmail'e GPG ile E-posta Atmak
+## Protonmail'e GnuPG ile E-posta Atmak
 
-GPG şifrelemesi yapmak için ilk gereken şey yazışacağınız Protonmail adresine ait anahtarı elde etmek. Bunun için;
+GnuPG şifrelemesi yapmak için ilk gereken şey yazışacağınız Protonmail adresine ait anahtarı elde etmek. Bunun için;
 
 * Yazıştığınız kişiden anahtarını e-posta ekine koymasını isteyebilirsiniz. Bu durumda gelen anahtarı import edip hiç sorun çekmeden kullanmaya başlayabilirsiniz.
 
@@ -18,7 +18,7 @@ GPG şifrelemesi yapmak için ilk gereken şey yazışacağınız Protonmail adr
 
 ### Protonmail Anahtar Sunucusundan Anahtar Çekmek
 
-Anahtar sunucuları GPG kullanımının temel araçlarından biri. Bir firhist olan bu sunuculardan Protonmail'de sadece kendi anahtarlarını içerecek şekilde bir tane bulunduruyor. Protonmail'in sunucusu diğer sunucularla eşitlenmediğinden sadece bu sunucuya tam Protonmail adresi ile istek atarak cevap almanız mümkün.
+Anahtar sunucuları GnuPG kullanımının temel araçlarından biri. Bir firhist olan bu sunuculardan Protonmail'de sadece kendi anahtarlarını içerecek şekilde bir tane bulunduruyor. Protonmail'in sunucusu diğer sunucularla eşitlenmediğinden sadece bu sunucuya tam Protonmail adresi ile istek atarak cevap almanız mümkün.
 
 Uçbirimde:
 
@@ -40,11 +40,11 @@ Uçbirimde:
 
 Tebrikler, bir Protonmail kullanıcısına tek seçeneklerinin Protonmail olmadığını göstermiş oldunuz. Protonmail'e atacağınız e-postaların ekine açık anahtarınızı eklemeniz veya e-postayı şifreli atmanız durumunda Protonmail sadece **web** istemcisinden otomatik olarak şifreli yanıt atacaktır. Android ve OS istemcilerde sorun çıktığı görülmüştür. Hali ile yazıştığınız kişiyi bu konuda bilgilendirmeniz önerilir. Sizin açık anahtarınızı Protonmail hesaplarında sizin adınıza eklemeleri gereklidir sorunsuz bir iletişim için.
 
-## Protonmail'den Diğer Adreslere GPG Şifreli E-posta Atmak
+## Protonmail'den Diğer Adreslere GnuPG Şifreli E-posta Atmak
 
-Protonmail'den GPG kullanan bir başka adrese şifreli e-posta atmak için öncelikli olarak ilgili e-postanın açık anahtarını yazışmak istediğiniz kişinin adına rehberinize eklemeniz gerekli.
+Protonmail'den GnuPG kullanan bir başka adrese şifreli e-posta atmak için öncelikli olarak ilgili e-postanın açık anahtarını yazışmak istediğiniz kişinin adına rehberinize eklemeniz gerekli.
 
-Şayet GPG kullanan kişi size ilk mesajı imzalı ve açık anahtarı ekli attıysa "Bu ileti, henüz güvenilmeyen bir genel anahtar tarafından imzalanmıştır." ibaresi çıkacak ve yanında güven anahtarı düğmesi olacaktır. Bu özetle kişinin anahtarını kendi anahtarınızla imzalamanız ve otomatik olarak kişinin açık anahtarının adına eklenmesi ile gelecek yazışmaları otomatik olarak GPG şifreli yapacaktır.
+Şayet GnuPG kullanan kişi size ilk mesajı imzalı ve açık anahtarı ekli attıysa "Bu ileti, henüz güvenilmeyen bir genel anahtar tarafından imzalanmıştır." ibaresi çıkacak ve yanında güven anahtarı düğmesi olacaktır. Bu özetle kişinin anahtarını kendi anahtarınızla imzalamanız ve otomatik olarak kişinin açık anahtarının adına eklenmesi ile gelecek yazışmaları otomatik olarak GnuPG şifreli yapacaktır.
 
 Şayet gelen e-posta şifreli veya imzalı değilse ya da siz ilk şifreli e-postayı atacaksanız öncelikle rehberinizden şifreleme yapmak istediğiniz kişinin paneline gelin ve küçük dişli şekliyle ifade edilen gelişmiş ayarları açın.
 
@@ -54,11 +54,11 @@ Daha sonra açılan ayarlardan anahtar yükle seçeneğini seçerek ilgili kişi
 
 ![alt-txt](proton_kisi_ayar.png)
 
-Bundan sonra kişiye atacağınız e-postalar kişinin GPG anahtarı ile şifrelenecek ve imzalanacaktır.
+Bundan sonra kişiye atacağınız e-postalar kişinin GnuPG anahtarı ile şifrelenecek ve imzalanacaktır.
 
 ## Gelişmiş Seçenekler
 
-Protonmail çeşitli GPG işlemlerini yapmak için kullanıcılarına seçenekler sunmaktadır. Bunlar arasında:
+Protonmail çeşitli GnuPG işlemlerini yapmak için kullanıcılarına seçenekler sunmaktadır. Bunlar arasında:
 
 * Gönderiye açık anahtar eklemek
 * Gönderiyi imzalamak
@@ -66,8 +66,8 @@ Protonmail çeşitli GPG işlemlerini yapmak için kullanıcılarına seçenekle
 
 ### Gönderiye Açık Anahtar Eklemek ve İmzalamak
 
-Protonmail'den bir dış adrese yazışma yaparken yeni ileti ekranının konu başlığından sonraki satırında sağ taraftaki ok işaretinden açılan menü aracılığı ile ilgili iletiyi imzalayabilir ve açık anahtarınızı iletiye ekleyebilirsiniz. Bu yazdığınız kişi GPG kullanıyor ise sizden gelen e-postanın değiştirilmediğini bilebilir ve size atacağı cevabı kolaylıkla şifreleyebilir.
+Protonmail'den bir dış adrese yazışma yaparken yeni ileti ekranının konu başlığından sonraki satırında sağ taraftaki ok işaretinden açılan menü aracılığı ile ilgili iletiyi imzalayabilir ve açık anahtarınızı iletiye ekleyebilirsiniz. Bu yazdığınız kişi GnuPG kullanıyor ise sizden gelen e-postanın değiştirilmediğini bilebilir ve size atacağı cevabı kolaylıkla şifreleyebilir.
 
 ### Her Gönderiye Açık Anahtar eklemek ve İmzalamak
 
-Bunun için Protonmail hesabınızın ayarlarına girip güvenlik sekmesinin altında bulunan "Harici PGP ayarları" bölümünden imzalama ve açık anahtar ekleme seçeneklerini etkinleştirin. Aynı bölümde "Adres Doğrulama" seçeneğini de göreceksiniz. Bu ayar ile iletişimde olduğunuz GPG kullanıcılarının anahtarlarını imzalama seçeneğine kavuşursunuz. Bu hem protonmail'in doğru anahtarı size sunduğuna güven duymadan anahtar doğrulaması yapmanızı sağlar hem de konuştuğunuz harici GPG kullanıcıları ile güven ilişkinizi sağlar.
+Bunun için Protonmail hesabınızın ayarlarına girip güvenlik sekmesinin altında bulunan "Harici PGP ayarları" bölümünden imzalama ve açık anahtar ekleme seçeneklerini etkinleştirin. Aynı bölümde "Adres Doğrulama" seçeneğini de göreceksiniz. Bu ayar ile iletişimde olduğunuz GnuPG kullanıcılarının anahtarlarını imzalama seçeneğine kavuşursunuz. Bu hem protonmail'in doğru anahtarı size sunduğuna güven duymadan anahtar doğrulaması yapmanızı sağlar hem de konuştuğunuz harici GnuPG kullanıcıları ile güven ilişkinizi sağlar.

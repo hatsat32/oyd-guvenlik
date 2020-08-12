@@ -1,107 +1,105 @@
 # Libreboot ve GnuPG ile boot güvenliği
 
-Libreboot, GnuPG ile birlikte bilgisayarınızı daha güvenlli hale getirebilir. Bunun için öncelikle bir bilgisayarın nasıl çalıştığını ve açılmak için içinden geçtiği süreçlerin anlaşılması gereklidir.
+Libreboot, GnuPG ile birlikte bilgisayarınızı daha güvenli hale getirebilir. Bunun için öncelikle bir bilgisayarın nasıl çalıştığını ve açılmak için içinden geçtiği süreçlerin anlaşılması gereklidir.
 
 Bir bilgisayar hayatına elektrik ile başladığında sırasıyla aşağıdaki adımlar gerçekleşir:
 
-1. Anakarttaki bir hafızadan Libreboot RAM'e yüklenir ve çalışmaya başlar.
-2. Libreboot bir bootloader olan GRUB'ı yükler
-3. GRUB /boot sektöründe bulunan ayar dosyasına bağlı olarak Linux'u yani çekirdeği yükler
+1. Libreboot, anakarttaki bir hafızadan RAM'e yüklenir ve çalışmaya başlar.
+2. Libreboot, bir önyükleyici (bootloader) olan GRUB'ı yükler.
+3. GRUB `/boot` dizininde bulunan ayar dosyasına bağlı olarak Linux'u yani çekirdeği yükler.
 4. Çekirdek donanımları devreye alarak işletim sistemini yükler.
 5. Bilgisayarınız açılır.
 
-Bu sürecin güvenliği her aşamanın bir sonraki aşamanın istenilen şekilde ve bilinen kaynaktan yüklenmesinin sağlanması ile mümkündür.
+Bu sürecin güvenliği, her aşamanın kendinden sonraki aşamayı istenilen şekilde ve bilinen kaynaktan yüklenmesinin sağlanması ile mümkündür.
 
-Libreboot kendi dahilinde GRUB çalıştırır. Bu bakımdan Libreboot kurulu bir cihazda kullanılabilecek biri depolama aygıtında, biri BIOS çipinde olmak üzere iki GRUB bulunur. Libreboot çalışma aşamasında BIOS çipinde bulunan GRUB ile sistemde bulunan GRUB'ı yükler.
+Libreboot, kendi dahilinde GRUB'ı çalıştırır. Bu bakımdan Libreboot kurulu bir cihazda kullanılabilecek biri depolama aygıtında, biri BIOS çipinde olmak üzere iki GRUB bulunur. Libreboot çalışma aşamasında BIOS çipinde bulunan GRUB'ı kullanarak sistemde bulunan GRUB'ı yükler.
 
-GnuPG ile Libreboot'un GRUB'ın kurulumunu ve yüklenecek çekirdeklerin değiştirilmediğini doğrulaması için ayarlarda bir miktar değişiklik yapmak gerekli.
+GnuPG ile Libreboot'un GRUB'ın kurulumunu ve yüklenecek çekirdeklerin değiştirilmediğini doğrulaması için ayarlarda bir miktar değişiklik yapmak gerekmektedir.
 
-## Bir GnuPG anahtarı edinin
+## Bir GnuPG anahtarı oluşturun
 
-GRUB, kriptografik olarak çekirdek ve ayar dosyalarını denetlemek için GnuPG kullanmakta ve kullanılacak anahtarı sizin üretmeniz gerekmekte. Şayet halihazırda bir GPG anahtarınız yok ise sadece bu amaçla veya genel olarak kullanılmak üzere bir GnuPG anahtarı üretebilirsiniz. Bunun için [GPG rehberinden](/yazisma_guvenligi/gpg/gpg-anahtar-uretimi.md) yararlanabilirsiniz.
+GRUB, kriptografik olarak çekirdek ve ayar dosyalarını denetlemek için GnuPG kullanmaktadır. Şifreleme esnasında kullanılacak anahtarın kullanıcı tarafından üretilmesi gerekmektedir. Eğer halihazırda bir GnuPG anahtarınız yoksa, sadece bu amaçla kullanmak için veya genel olarak kullanılmak üzere bir GnuPG anahtarı üretebilirsiniz. Bunun için [GnuPG anahtar üretimi](/yazisma_guvenligi/gpg/gpg-anahtar-uretimi.md) rehberinden yararlanabilirsiniz.
 
-Bu noktada ihtiyaç ve beklentilerinize göre değerlendirmeniz gereken bir husus bulunmakta. Şayet kişisel GPG anahtarınızı sürekli olarak kullanacaksanız bu anahtarın bir noktada açığa çıkması veya kaybedilmesi tehlikesini de göze alıyor olacaksınız. Aynı zamanda anahtarınız cihazlarınızda ve belki başka cihazlarda tarafınızdan kullanılabileceği üzere bir noktada arzunuza aykırı olarak ayar dosyası veya çekirdek imzalamakta kullanılabilir siz bunu fark etmeden.
+Bu noktada, ihtiyaç ve beklentilerinize göre değerlendirmeniz gereken bir husus vardır. Eğer kişisel GnuPG anahtarınızı sürekli olarak kullanacaksanız, bu anahtarın bir noktada açığa çıkması veya kaybedilmesi tehlikesini de göze almanız gerekecektir. Aynı zamanda bu durum, siz farkında olmadan anahtarınız kullanılarak çekirdeklerin veya ayar dosyalarının sizin anahtarınızla imzalanabileceği anlamına da gelmektedir. Bu sebepten dolayı anahtarınızı bir [zarola](https://zarola.oyd.org.tr) ile korumanızı ve [kağıt bir yedeğini almanızı](/yazisma_guvenligi/gpg/paperbackup/paperbackup.md) şiddetle tavsiye ederiz.
 
-Şayet boot güvenliğiniz için bu risk fazla ise sadece Libreboot ile kullanılmak üzere bir anahtar oluşturup bunu güvenli şekilde saklayabilirsiniz ve sadece gerektiğinde kullanabilirsiniz. Elbette bu durum az kullanılan anahtarı kaybetmeniz, parolasını unutmanız tehlikesini de göz önüne almanız gerekli. Hiç değilse elinizin altında olmayışının can sıkıcılığına da göğüs germeniz gerekebilir.
-
-Kullanmak konusunda karar verdiğiniz bir GPG anahtarınız olduktan sonra sonraki aşamaya geçebilrsiniz.
+GnuPG anahtarınızı oluşturduktan sonra sonraki aşamaya geçebilirsiniz.
 
 ## Gerekli yazılımları indirin
 
-Libreboot imajında değişiklikler yapabilmek ve bu değişiklikleri bios çipine yükleyebilmek için gerkeli yazılımları indirmelisiniz. [Libreboot'un arşivinden](https://www.mirrorservice.org/sites/libreboot.org/release/stable/20160907/) gerekli dosyaları indirebilir imzasını GPG ile doğrulayabilirsiniz. İhtiyacınız olan cbfstool ve flashrom (dizinde flash adında) yazılımları indirdiğiniz arşivin dizininde bulunacak.
+Libreboot imajında değişiklikler yapabilmek ve bu değişiklikleri BIOS çipine yükleyebilmek için bazı yazılımlara ihtiyaç vardır. [Libreboot'un arşivinden](https://www.mirrorservice.org/sites/libreboot.org/release/stable/20160907/) gerekli dosyaları indirebilir, indirilen dosyaların imzalarını GnuPG ile doğrulayabilirsiniz. İhtiyacınız olan `cbfstool` ve `flashrom` (dizinde flash adında) yazılımları indirdiğiniz arşivin dizininde bulunmaktadır.
 
 Flashrom yazılımını dağıtımınızın paket depolarından da indirebilirsiniz.
 
-Apt paket yöneticisi kullanan dağıtımlarda (Debian, Mint, Ubuntu vb.):
+APT paket yöneticisi kullanan dağıtımlarda (Debian, Mint, Ubuntu vb.):
 
 `sudo apt-get update`
 
 `sudo apt-get install flashrom`
 
-Yum paket yöneticisi kullanan dağıtımlarda (Fedora, CentOS vb):
+Yum paket yöneticisi kullanan dağıtımlarda (Fedora, CentOS vb.):
 
 `sudo yum install flashrom`
 
 ## Değiştirilecek Libreboot imajını elde edin
 
-Bu noktada iki seçeneğiniz bulunuyor. Şayet cihazınızda halihazırda Libreboot yüklü ise cihazınızın ROM'undan doğrudan imajı alabilir ve üzerinde değişiklik yapabilirsiniz.
+Bu noktada iki seçenek bulunmaktadır. Şayet cihazınızda halihazırda Libreboot yüklüyse, cihazınızın ROM'undan doğrudan imajı çekebilir ve üzerinde değişiklik yapabilirsiniz.
 
 * Bunun için aşağıdaki komutu çalıştırabilirsiniz;
 
-`sudo flashrom -p internal -r ~/libreboot.rom`
+`sudo flashrom -p internal -r libreboot.rom`
 
-ROM imajı **libreboot.rom** olarak belirttiğiniz dizine kaydolacaktır.
+ROM imajı **libreboot.rom** olarak bulunduğunuz dizine kaydolacaktır.
 
-* Şayet ROM imajını indirip değişikliklerinizi yapmak isterseniz;
+* Eğer ROM imajını indirip değişikliklerinizi yapmak isterseniz, Libreboot imajını [buradan](https://www.mirrorservice.org/sites/libreboot.org/release/stable/20160907/rom/grub/) indirebilirsiniz.
 
-[Libreboot imajını indirin](https://www.mirrorservice.org/sites/libreboot.org/release/stable/20160907/rom/grub/)
-
-Çip boyutunu öğrenmek için `flashrom -p internal` komutunu kullandığınızda size aşağıdaki gibi bir sonuç döndürecektir.
+Çipin boyutunu öğrenmek için, `flashrom -p internal` komutunu çalıştırın. Aşağıdaki gibi bir çıktı elde etmeniz gerekmektedir:
 
 > Found Macronix flash chip "MX25L6406E/MX25L6408E" (8192 kB, SPI) \
 > mapped at physical address 0x00000000ff800000.
 
-Yukarıdaki örnekte çip boyutu 8mb görünmektedir.
+Yukarıdaki örnekte, çip boyutu 8 MB olarak görünmektedir.
 
 Dilediğiniz arşiv yöneticisi ile cihazınıza uygun olan imajı çıkarabilirsiniz.
 
 ## ROM imajından grubtest.cfg dosyasını çıkarın
 
-ROM imajında yapılacak değişiklikler için cbfstool yazılımı kullanılmakta. Bunun için çıkardığınız libreboot.rom dosyasını cbfstool'un bulunduğu dizine ekleyin.
+ROM imajında yapılacak değişiklikler için `cbfstool` yazılımını kullanabilirsiniz. Bunun için çıkardığınız `libreboot.rom` dosyasını `cbfstool`'un bulunduğu dizine koyun.
 
-Terminalde cbfstool dizininde iken `./cbfstool libreboot.rom print` komutu ile ROM imajında bulunan dosyaları listeleyebilirsiniz. İmaj içinde grub.cfg ve grubtest.cfg adlı iki grub ayar dosyası görülecektir. grub.cfg Libreboot'un temel kullandığı yapılandırma dosyası olmakla öncelikle denemek amacı ile grubtest.cfg dosyası ile deneme yapmak önemlidir. Böylece yapılandırmadan memnun olduktan sonra grub.cfg dosyası ile test dosyasını değiştirip cihazınızı güvenli şekilde hazır hale getirebilirsiniz.
+Terminalde `cbfstool` dizininde iken `./cbfstool libreboot.rom print` komutu ile ROM imajında bulunan dosyaları listeleyebilirsiniz. İmaj içinde `grub.cfg` ve `grubtest.cfg` adlı iki GRUB ayar dosyası görülecektir. `grub.cfg`, Libreboot'un temel kullandığı yapılandırma dosyasıdır. Öncelikle  `grubtest.cfg` dosyasını düzenleyerek bir deneme yapılandırması oluşturun. Böylece, yapılandırmadan memnun olduktan sonra `grub.cfg` dosyası ile test dosyasını değiştirip cihazınızı güvenli şekilde hazır hale getirebilirsiniz.
 
-cbfstool dizininde libreboot.rom'un bulunduğundan emin olup aşağıdaki komutu çalıştırarak grubtest.cfg dosyasını çıkarabilirsiniz.
+`cbfstool` dizininde `libreboot.rom`'un bulunduğundan emin olup, aşağıdaki komutu çalıştırarak `grubtest.cfg` dosyasını çıkarabilirsiniz.
 
 `./cbfstool libreboot.rom extract -n grubtest.cfg -f grubtest.cfg`
 
-## GRUB Güvenliği için parola belirleyin
+## GRUB güvenliği için parola belirleyin
 
-Bir saldırganın GPG doğrulamasını aşmak için yapması gereken tek şey boot aşamasında GRUB'a doğrulama yapmamasını söylemek. Bu bakımdan Libreboot içinde çalışan GRUB'ın ayar değişiklikleri için parola talep etmesi güvenliğin anlamlı olabilmesi için şart.
+Bir saldırganın GnuPG doğrulamasını aşmak için yapması gereken tek şey, boot aşamasında GRUB'a doğrulama yapmamasını söylemektir. Bu bakımdan, Libreboot içinde çalışan GRUB'ın ayar değişiklikleri için parola talep etmesi güvenliğin anlamlı olabilmesi için şarttır.
 
-Bunun için [Zarola](https://zarola.oyd.org.tr) yöntemini kullanmanızı hararetle tavsiye ederiz. Keza bilgisayarınızın güvenliğinin ilk adımı bu parolanın güvenliğine bağlı.
+Bunun için [Zarola](https://zarola.oyd.org.tr) yöntemini kullanmanızı şiddetle tavsiye ederiz. Çünkü bilgisayarınızın güvenliğinin ilk adımı bu parolanın güvenliğine bağlıdır.
 
-Bunun için bir terminalde `grub-mkpasswd-pbkdf2` komutunu çalıştırıp parolanızı girin. Çıktı şuna benzeyecektir;
+Bunun için bir terminal açıp, `grub-mkpasswd-pbkdf2` komutunu çalıştırıp parolanızı girebilirsiniz. Çıktı şuna benzeyecektir:
 
-`grub.pbkdf2.sha512.10000.HEXDIGITS.MOREHEXDIGITS`
+```
+grub.pbkdf2.sha512.10000.B08007ADC512E1BB058D62132F94A6EBF96E27511538F1F9ED59B3DE0556FA70A63F617C56D532C499D2E42AABF6B9F8F5EDAC604DC88567268A2D63DF0325F3.A9392DB618EE22AC423CB490B9809B08FB003FBA63B04F310DCD776335282B5D57134671248C711D9D60A7E9A220821B6701EB038F1368D87B66FC632B73801B
+```
 
-grubtest.cfg dosyasını seçtiğiniz düzenleyici ile terminalden aldığınız parola özüt değerini aşağıdaki şekilde girin.
+Seçtiğiniz metin editörü ile `grubtest.cfg` dosyasına, bir önceki adımda aldığınız parola özüt (hash) değerini aşağıdaki şekilde girin.
 
 ```
 gfxpayload=keep
 terminaloutput --append gfxterm
 
 set superusers="root"
-password_pbkdf2 root grub.pbkdf2.sha512.10000.HEXDIGITS.MOREHEXDIGITS
+password_pbkdf2 root grub.pbkdf2.sha512.10000.B08007ADC512E1BB058D62132F94A6EBF96E27511538F1F9ED59B3DE0556FA70A63F617C56D532C499D2E42AABF6B9F8F5EDAC604DC88567268A2D63DF0325F3.A9392DB618EE22AC423CB490B9809B08FB003FBA63B04F310DCD776335282B5D57134671248C711D9D60A7E9A220821B6701EB038F1368D87B66FC632B73801B
 
 #Default to first option, automatically boot after 1 seccond
 ```
 
-Her açılışta GRUB'a parola girmemek için standart yükleme seçeneğini paroladan ari kılmak yerinde olacaktır. GRUB GPG ile kontrolleri yapacağı için bu güvenlik açısından bir sorun teşkil etmeyecektir. Bunun için `--unrestricted` parametresini aşağıdaki gibi ekleyin.
+Her açılışta GRUB'a parola girmemek için, standart yükleme seçeneğini parola gerektirmeyen bir şekilde ayarlamak yerinde olacaktır. GRUB, GnuPG ile kontrolleri yapacağı için bu işlem güvenlik açısından bir sorun teşkil etmeyecektir. Bunun için `--unrestricted` parametresini aşağıdaki gibi ekleyin.
 
 `menuentry 'Load Operating System (incl. fully encrypted disks)  [o]' --hotkey='o' --unrestricted {`
 
-Harddiskte bulunan GRUB'ın GPG güvenliğini geçememesi için alağıdaki gibi unset superusers satırının başına "#" koyarak devredışı bırakılması gerekiyor.
+Sabit diskinizde bulunan GRUB'ın GnuPG güvenliğini geçememesi için aşağıdaki gibi `unset superusers` satırının başına `#` koyarak devre dışı bırakılması gerekmektedir.
 
 ```
 function try_user_config {
@@ -119,13 +117,13 @@ function try_user_config {
 
 ## Açık anahtarınızı hazırlayın
 
-GRUB'ın kontrolleri yapacağı size ait GPG anahtarının açık anahtarının uygun formatta kaydetmeniz gerekli. Bunun için aşağıdaki komutu çalıştırın. boot.key sizin açık anahtarınız olarak dizine kaydedilecektir.
+GRUB'ın kontrolleri yapacağı GnuPG anahtarınızın açık anahtarını (public key) uygun formatta kaydetmeniz gerekmektedir. Bunun için aşağıdaki komutu çalıştırın. Açık anahtarınız, `boot.key` ismiyle bulunduğunuz dizine kaydedilecektir. (_Birden fazla GnuPG anahtarınız varsa, `--export` parametresinden sonra anahtar ID'nizi ya da e-posta adresinizi girmeniz gerekmektedir._)
 
 `gpg --export > boot.key`
 
 ## GRUB'ın imza kontrolünü açın
 
-Libreboot GRUB'ın GPG anahtarınız ile imza kontrol etmesi için aşağıdaki parametreyi grubtest.cfg yapılandırma dosyasına menü girdilerinden üste koyun.
+Libreboot GRUB'ın imzaları GnuPG anahtarınızla kontrol etmesi için aşağıdaki parametreyi `grubtest.cfg` yapılandırma dosyasında menü girdilerinden üste ekleyin.
 
 ```
 trust (cbfsdisk)/boot.key
@@ -134,7 +132,7 @@ set check_signatures=enforce
 
 ## Çekirdek ve yapılandırma dosyalarını imzalayın
 
-Libreboot'un kontrol etmesi gereken dosyalara anahtarınız ile imza atmanız gerekmektedir. İmzalanacak dosyalar aşağıdaki gibidir;
+Libreboot'un kontrol etmesi gereken dosyalara kendi anahtarınızla imza atmanız gerekmektedir. İmzalanacak dosyalar aşağıdaki gibidir;
 
 ```
 /boot/initramd veya initramfs
@@ -150,13 +148,13 @@ Dosyaları imzalamak için aşağıdaki komutu listedeki dosyalar için tek tek 
 
 `gpg -u [anahtar ID veya e-postanız] --detach-sign [imzalanacak dosya]`
 
-Her işlem sonrasında imzalanan dosyanın adı ile bir .sig dosyası oluşacaktır. Boot dizini altındaki dosyaları imzalamak için root yetkisine ihtiyacınız var. GPG'yi root yetkisi ile çalıştırdığınızda anahtarınız root kullanıcısında olmadığından anahtar bulunamadığına dair hata alabilirsiniz. Bunun için en kolay yol anahtarınısı root kullanıcısına da import edip işlemlerinizi bu şekilde yapmanız olabilir. **bu kötü bir yöntem başka çıkarı yok mu**?
+Her işlem sonrasında imzalanan dosyanın adı ile bir .sig dosyası oluşacaktır. Boot dizini altındaki dosyaları imzalamak için root yetkisine ihtiyacınız vardır. GnuPG'yi root yetkisi ile çalıştırdığınızda, anahtarınız root kullanıcısının anahtarlığında olmadığından ilgili anahtarın bulunamadığına dair bir hata alabilirsiniz. Bunun için çalıştırdığınız GnuPG komutlarına `--homedir /home/kullaniciadi/.gnupg` parametresini ekleyerek GnuPG'nin anahtarınızın bulunduğu dizinde çalışmasını sağlayabilirsiniz.
 
-her .sig dosyasını ilgili dosyanın yanına ekledikten sonra ROM'un hazırlanmasına ve yüklenmesine geçilebilir.
+Her bir .sig dosyasını ilgili dosyanın yanına ekledikten sonra ROM'un hazırlanmasına ve yüklenmesine geçebilirsiniz.
 
 ## Libreboot ROM'una grubtest.cfg'nin yazılması
 
-Aşağıdaki dosyaları cbftool dizininin altına alın:
+Aşağıdaki dosyaları `cbfstool` dizininin altına alın:
 
 ```
 boot.key
@@ -164,7 +162,7 @@ grubtest.cfg
 grubtest.cfg.sig
 ```
 
-Daha sonra ROM içindeki eski dosyaların silinmesi gerekiyor. Bunun için aşağıdaki komutu sırası ile çalıştırın.
+Daha sonra ROM'un içindeki eski dosyaların silinmesi gerekmektedir. Bunun için aşağıdaki komutları sırasıyla çalıştırın:
 
 `./cbfstool libreboot.rom remove -n boot.key`
 
@@ -172,7 +170,7 @@ Daha sonra ROM içindeki eski dosyaların silinmesi gerekiyor. Bunun için aşa�
 
 `./cbfstool libreboot.rom remove -n grubtest.cfg.sig`
 
-Ardından yeni dosyalarımızı Libreboot.rom'un içine eklenmesi gerekiyor.
+Ardından yeni dosyalarımızın `libreboot.rom`'un içine eklenmesi gerekmektedir. Bunun için:
 
 `./cbfstool libreboot.rom add -n boot.key -f boot.key -t raw`
 
@@ -180,41 +178,38 @@ Ardından yeni dosyalarımızı Libreboot.rom'un içine eklenmesi gerekiyor.
 
 `./cbfstool libreboot.rom add -n grubtest.cfg.sig -f grubtest.cfg.sig -t raw`
 
-Artık libreboot.rom dosyanız bios çipinize yazılmaya hazır.
+Artık `libreboot.rom` dosyanız BIOS çipinize yazılmaya hazır.
 
 ## ROM'a libreboot.rom imajının yazılması
 
-libreboot.rom dosyasını "flash" dosyasının bulunduğu dizine alın ve ardından aşağıdaki komutu çalıştırarak çipe imajı yazın.
+`libreboot.rom` dosyasını "flash" dosyasının bulunduğu dizine alın ve ardından aşağıdaki komutu çalıştırarak çipe imajı yazın.
 
 `sudo ./flash update libreboot.rom`
 
-Şayet doğru ROM imajını seçtiğinizden emin olmanıza rağmen uyumsuzluk hatası alıyorsanız yazım işlemini zorla yapabilirsiniz. **kullandığınız ROM imajının doğrul olduğundan emin olun**
+Eğer doğru ROM imajını seçtiğinizden emin olmanıza rağmen uyumsuzluk hatası alıyorsanız yazım işlemini zorla yapabilirsiniz.  
+**KESİNLİKLE GARANTİSİ YOKTUR, BİLGİSAYARINIZI KULLANILAMAZ HALE GETİREBİLİRSİNİZ.**
 
 `sudo ./flash forceupdate libreboot.rom`
 
 ## Bilgisayarınızı yeniden başlatın ve denemenizi yapın
 
-ROM yazıldıktan sonra bilgisayarınızı yeniden başlatıp yaptığınız değişikliklerin çalışıp çalışmadığını deneyebilirsiniz. Ekranınız açılır açılmaz birkaç kere boşluk tuşuna basıp gelen GRUB ekranında ` Load test configuration (grubtest.cfg) inside of CBFS` seçeneğini seçin. Gelen ekrandan bilgisayarınızı başlattığınızda sorunsuz şekilde çalışıyorsa her şey yolunda demektir.
+ROM yazıldıktan sonra, bilgisayarınızı yeniden başlatıp yaptığınız değişikliklerin çalışıp çalışmadığını deneyebilirsiniz. Ekranınız açılır açılmaz birkaç kere boşluk tuşuna basıp, gelen GRUB ekranında `Load test configuration (grubtest.cfg) inside of CBFS` seçeneğini seçin. Gelen ekrandan bilgisayarınızı başlattığınızda sorunsuz şekilde çalışıyorsa her şey yolunda demektir.
 
-Herhangi bir şey yanlış ise ve cihazınız açılmaz ise. Bilgisayarınızı kapatıp yeniden açtığınızda olağan yapılandırmanız ile açılacaktır.
+Herhangi bir şey yanlışsa ve cihazınız açılmazsa, bilgisayarınızı kapatıp yeniden açtığınızda olağan yapılandırmanız ile açılacaktır, panik yapmayın.
 
-Eğer imza sisteminin çalışıp çalışmadığını denemek isterseni. Kasıtlı olarak imzalı dosyaların imzalarını kaldırıp grubtest.cfg ile bilgisayarınızı başlatırsanız hata almanız gerekir. Bu şekilde yapılandırmanızın doğru ve imza denetlediğini görebilirsiniz.
+Eğer imza sisteminin çalışıp çalışmadığını denemek isterseniz, kasıtlı olarak imzalı dosyalarını silip `grubtest.cfg` ile bilgisayarınızı başlatmaya çalışırsanız hata almanız lazımdır. Bu şekilde yapılandırmanızın doğru olduğunu ve imzaları denetlediğini görebilirsiniz.
 
 ## Yapılandırmanızı kalıcı hale getirin
 
-Şayet grubtest.cfg yapılandırmasından memnun kaldıysanız. grubtest.cfg dosyasını grub.cfg olarak adandırıp 7. adımdan itibaren işlemleri tekrarlayın. Bundan sonra bilgisayarınız libreboot ve GRUB'ın GPG denetimi altında açılacaktır.
+Eğer `grubtest.cfg` yapılandırmasından memnun kaldıysanız, `grubtest.cfg` dosyasını `grub.cfg` olarak adlandırıp 7. adımdan itibaren işlemleri tekrarladığınızda, bilgisayarınız Libreboot ve GRUB'ın GnuPG denetimi altında açılacaktır.
 
-**Çekirdek veya GRUB yapılandırmalarınıza güncelleme geldiği durumlarda imzaları yenilemeyi ihmal etmeyin**
+**Çekirdek veya GRUB yapılandırmalarınıza güncelleme geldiği durumlarda imzaları yenilemeyi ihmal etmeyin, aksi takdirde bilgisayarınız açılmaz.**
 
-## İmzalama işlemini otomatik kılın
+## İmzalama işlemini otomatikleştirmek
 
-Güncellemeler size pek belli etmeden gerçekleşebilir kurulumunuza bağlı olarak. Bu durumlarda güncellenen çekirdek ve grub yapılandırma dosyası libreboot'un bir sonraki açılışta cihazınızı çalıştırmayı reddetmesi ile sonuçlanabilir. Bu durumda libreboot'u imza kontrolü olmadan çalıştırabilirsiniz parolasını girerek lakin gereksiz paniğe yol açmamak adına işletim sisteminizin çekirdeğinizi her güncellediği esnada imzalarını da yenilemesini sağlayabilirsiniz. Bunun için aşağıdakiler gereklidir;
+Güncellemeler, kurulumunuza bağlı olarak kendiliğinden ve sessizce gerçekleşebilmektedir. Bu durum, güncellenen çekirdek ve GRUB yapılandırma dosyası imzalanmayacağı için, Libreboot'un bir sonraki açılışta cihazınızı çalıştırmayı reddetmesi ile sonuçlanabilir. Bu durumda Libreboot'u, parolasını girerek, imza kontrolü olmadan çalıştırabilirsiniz. Ancak gereksiz paniğe yol açmamak adına, işletim sisteminizin çekirdeğinizi her güncellediğinde imzalarını da yenilemesini sağlayabilirsiniz. Bunun için küçük bir betiğe ihtiyacınız vardır. Bu betiğin olduğu gibi çalışabilmesi için özel anahtarınızı (private key) root kullanıcısının anahtarlığına koyabilir (`gpg --import ile`) ya da betiğin içerisinde `gpg` ile başlayan tüm komutların sonuna `--homedir /home/kullaniciadiniz/.gnupg` parametresini ekleyebilirsiniz.
 
-* Çalışan sisteminizde imzalama için kullandığınız GPG anahtarınızın bir kopyasının root kullanıcısında bulunması
-
-* Küçük bir betiği ilgili dizine koymanız
-
-[Grub2-signing-extention](https://github.com/Bandie/grub2-signing-extension/blob/master/sbin/grub-update-kernel-signature) betiğini indirebilir veya aşağıdaki şeklinden kopyalayabilirsiniz.
+[grub2-signing-extension](https://github.com/Bandie/grub2-signing-extension/blob/master/sbin/grub-update-kernel-signature) betiğini bağlantıdan indirebilir veya aşağıdan kopyalayabilirsiniz.
 
 ```
 #!/bin/bash
@@ -254,15 +249,15 @@ fi
 
 Betiği aşağıdaki dizine **zz-update-signatures** adıyla kaydedin:
 
-**Dizindeki betikler isimlerine göre sıra ile çağrıldıklarından betiğinizin alfabeye göre sonda yer alması gerekiyor.**
+**Dizindeki betikler isimlerine göre sırayla çağrıldıklarından betiğinizin alfabetik olarak sonda yer alması gerekiyor.**
 
 `/etc/kernelpostinst.d/`
 
-Ardından çalıştırılabilir yapın:
+Ardından dosyaya çalıştırma izni verin:
 
 `sudo chmod +x zz-update-signatures`
 
-Bu aşamanın ardından her çekirdek güncellemesinde ilgili betik çalışarak imzaların varlığını kontrol edecek, imza yok ise /boot dizinindeki her dosyayı imzalayacak ve ardından GRUB yapılandırmasını imzalayacaktır. Bu aşamada cihazınız sizden GPG anahtarınızın parolasını isteyecektir.
+Bu aşamanın ardından, her çekirdek güncellemesinde ilgili betik çalışarak imzaların varlığını kontrol edecek, imza yoksa `/boot` dizinindeki her dosyayı imzalayacak ve ardından GRUB yapılandırmasını imzalayacaktır. Bu aşamada cihazınız sizden GnuPG anahtarınızın parolasını isteyecektir.
 
 ## Ek Okumalar
 
