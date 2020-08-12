@@ -6,7 +6,7 @@ Kimi basit davranış değişiklikleri ile genel olarak kendinizi zor bir hedef 
 
 ## Cihazlarınızı yanınızdan ayırmayın
 
-Cihazlarınıza erişilmediğinin en önemli delili gözünüzü üzerlerinden ayırmamnız olur.
+Cihazlarınıza erişilmediğinin en önemli delili gözünüzü üzerlerinden ayırmamanız olur.
 
 ## Cihazlarınızı gözetim altında tutun
 
