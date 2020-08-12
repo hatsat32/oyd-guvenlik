@@ -2,31 +2,29 @@
 
 ## Web tarayıcınızı seçin
 
-En bilindik dört tarayıcı, Firefox, Chrome, Internet Explorer ve Safari, yakın geçmişte ciddi güvenlik sorunları açığa çıkardı. Tercihiniz ne olursa olsun, en güncel sürümü kullandığınızdan emin olmalısınız.
+Her gün, muhtemelen en sık kullandığınız yazılım web tarayıcınızdır. Bu sebepten dolayı, web tarayıcınızın güvenli ve özgür olması çok kritiktir. Mozilla Firefox kullanın!
 
-Bu dört tarayıcı da [[browser-score-card]] düşük puanlar aldı. Yine de, bu tarayıcılar aşağıda belirttiğimiz belli başlı eklentiler kullanılarak iyileştirilebilir.
+[Firefox'u buraya tıklayarak indirebilirsiniz.](https://getfirefox.com)
 
-Alternatif olarak, Firefox'un, Tor Projesi tarafından daha güvenli ve anonim olmak için özelliştirilmiş versiyonu olan [Tor Tarayıcısı](https://www.torproject.org/download/download-easy.html.en)'nı kullanabilirsiniz.
-
-## Firefox'ta Ayarlarınızı Yapın
+## Firefox'ta ayarlarınızı yapın
 
 ### Üçüncü taraf çerezleri devre dışı bırakın
 
-Üçüncü parti çerezler, siz internette gezinirken davranışlarınızı izlemek için reklam ağları tarafından kullanılan tanımlayıcılardır.
+Üçüncü parti çerezler, siz İnternet'te gezinirken davranışlarınızı izlemek için reklam ağları tarafından kullanılan tanımlayıcılardır.
 
 1. Sandviç menüden Tercihler'e girin. Gizlilik ayarlarını yapmak için Gizlilik ve Güvenlik'e tıklayın. Gelişmiş izleme koruması başlığı altındaki Üçüncü sırada olan "Özel" seçeneğini seçin.
 
-2.En yüksek düzeyde güvenlik için sırasıyla Çerezler, Takip amaçlı içerikler, Kripto madencileri, Parmak izi toplayıcılar seçeneklerinin hepsini işaretleyerek engellenmelerini sağlayın. 
+2.En yüksek düzeyde güvenlik için sırasıyla Çerezler, Takip amaçlı içerikler, Kripto madencileri, Parmak izi toplayıcılar seçeneklerinin hepsini işaretleyerek engellenmelerini sağlayın.
 
 3. Çerezler'in yanındaki menüden "Tüm üçüncü taraf çerezleri"ni seçin. Hemen altındaki menüden "Tüm pencerelerde" seçeneğini seçin.
 
 ![alt-text](firefox.png)
 
-4. Aşağı inince göreceğiniz "Web sitelerine Do Not Track(İzlemeyin) sinyali gönder" ibaresinin altında "Her zaman" seçeneğini tıklayın.
+4. Aşağı inince göreceğiniz "Web sitelerine Do Not Track (İzlemeyin) sinyali gönder" ibaresinin altında "Her zaman" seçeneğini tıklayın.
 
 ![alt-text](firefox1.png)
 
-5. Çerezler ve site verilerinin altında "Firefox kapatıldığında çerezleri ve site verilerini sil" seçeneğini işaretleyin. 
+5. Çerezler ve site verilerinin altında "Firefox kapatıldığında çerezleri ve site verilerini sil" seçeneğini işaretleyin.
 
 6. Gezinme geçmişinizin temizlendiğinden emin olmak için; Geçmiş ayarlarının olduğu yerdeki menüden "Firefox geçmiş için özel ayarlar kullansın" seçeneğini işaretleyin. Altındaki kutucuklardan "Firefox kapatılınca geçmişi temizle"yi tıklayın.
 
@@ -50,7 +48,7 @@ Yine tercihlerden "Arama" kısmına gelin. Varsayılan arama motoru olarak [duck
 
 ## Tarayıcı eklentileri
 
-Eklentiler aksi belirtilmedikçe Firefox ve Chrome ile uyumludur.
+Eklentiler aksi belirtilmedikçe Firefox ve Chrome (mülk yazılım!) ile uyumludur.
 
 ### Başlıca eklentiler
 
