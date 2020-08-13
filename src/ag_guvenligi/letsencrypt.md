@@ -1,6 +1,6 @@
 # Let's Encrypt
 
-![Let's Encrypt](letsencrypt.svg)  
+![Let's Encrypt](letsencrypt/letsencrypt.svg)  
 **Let's Encrypt**, kar amacı gütmeyen bir _sertifika otoritesidir_. Let's Encrypt sayesinde ücretsiz olarak SSL/TLS sertifikası edinebilirsiniz.
 
 SSL/TLS sertifikaları, normalde ortak olarak kabul edilmiş bilinen sertifika otoriteleri tarafından belirli bir ücret karşılığında edinilebilirdi. Let's Encrypt, SSL/TLS sertifikalarını herkes için erişilebilir hale getirmiştir. 2020 Şubat ayı itibarıyla, Let's Encrypt **1 milyar** sertifika dağıtmıştır. Firefox istatistiklerine göre, Let's Encrypt'ten önce erişilen web sitelerinin yalnızca %26'sı SSL/TLS sertifikasına sahipken, bugün bu oran %85'e ulaşmıştır. [^1]
@@ -15,7 +15,7 @@ CertBot, sertifikanızı otomatik olarak oluşturup gereken web sunucunuza kurac
 
 **Not:** _Bu noktadan itibaren, Ubuntu üzerinde Nginx kullandığınız varsayılacaktır._
 
-![CertBot menü](certbot.png)
+![CertBot menü](letsencrypt/certbot.png)
 
 Daha sonra gelen sayfadaki yönergeleri takip edebilirsiniz. 
 

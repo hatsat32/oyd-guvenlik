@@ -151,21 +151,21 @@ GNU/Linux dağıtımları Linux çekirdeğinde doğrudan Openvpn ve daha yeni bi
 
 1. Öncelikle VPN sağlayıcınızdan ".ovpn" uzantısı ile OpenVPN config dosyasını indirin. Ovpn dosyaları bir metindir ve sunucu ayarları ile bağlanmanız için gereken anahtarı içerir. Şayet VPN sağlayıcınız bağlantı için bir kullanıcı adı ve parola gerektiriyor ise bunu da bir kenara not alın.
 
-![alt-text](anahtar.png)
+![alt-text](vpn/anahtar.png)
 
 2. Gnome'un ağ ayarlarına isterseniz sağ üst köşeden açılan menüde **ağ ayarlarına** girerek veya etkinlikler köşesine tıklayarak menüden **ayarlara** girerek ulaşabilirsiniz.
 
 3. Sağda yer alan "+" düğmesine tıklayın. 
 
-![alt-text](vpn1.png)
+![alt-text](vpn/vpn1.png)
 
 4. Karşınıza çeşitli seçeneklerin sunulduğu "VPN Ekle" penceresi çıkacak. Burada en alttaki "Dosyadan aktar" seçeneğini seçin. .ovpn uzantılı VPN dosyasını bulun ve aktarın.
 
-![alt-text](vpn2.png)
+![alt-text](vpn/vpn2.png)
 
 5. Eklediğiniz VPN'in yanındaki düğmeye tıklayarak kullanılabilir hale getirebilirsiniz.
 
-![alt-text](vpn3.png)
+![alt-text](vpn/vpn3.png)
 
 #### Terminal'den Istemci Kurulumu
 
@@ -212,19 +212,19 @@ Android işletim sistemi 7. sürüm ve sonrasında VPN desteğini işletim seviy
 
 2. OpenVPN for Android yazılımını çalıştırın ve açılan ekranda sağ üst köşedeki + simgesine tıklayarak ekleme arayüzünü açın.
 
-![alt-text](openvpn1.png)
+![alt-text](vpn/openvpn1.png)
 
 3. Karşınıza gelen ekrandan **içe aktar** veya **import** düğmesine tıklayarak config dosyasını seçme aşamasına gelin.
 
-![alt-text](openvpn2.png)
+![alt-text](vpn/openvpn2.png)
 
 4. Açılan dosya yöneticisinden VPN sağlayıcınızdan indirdiğiniz .ovpn dosyasını bulun ve tıklayın.
 
-![alt-text](openvpn3.png)
+![alt-text](vpn/openvpn3.png)
 
 5. Ertesinde çıkan ekranda config dosyanızın detayları görülecektir. tik işaretine tıklayarak kurulumu tamamlayın.
 
-![alt-text](openvpn4.png)
+![alt-text](vpn/openvpn4.png)
 
 6. Artık OpenVPN for Android VPN bağlantınızı kurmaya hazır.
 
@@ -232,19 +232,19 @@ Android ayarlarını yaparak sisteminizin VPN bağlantısını korumasını ve k
 
 1. Cihazınızın ayarlarına gidin ve **ağ ve internet** veya **network and internet** ayarlarına girin.
 
-![alt-text](ayarlar1.png)
+![alt-text](vpn/ayarlar1.png)
 
 2. VPN ayarlarını muhtemelen en altta bulacaksınız.
 
-![alt-text](ayarlar2.png)
+![alt-text](vpn/ayarlar2.png)
 
 3. Karşınıza OpenVPN for Android seçeneği çıkmış olacaktır. Yanındaki dişli simgesine tıklayarak kurulum sayfasını açın.
 
-![alt-text](ayarlar3.png)
+![alt-text](vpn/ayarlar3.png)
 
 4. Çıkan ayarlardan **Always-on VPN** veya **sürekli bağlı VPN** ile **Block connections without VPN** veya **VPN kesilince bağlantıları engelle** seçeneklerini etkinleştirin.
 
-![alt-text](ayarlar4.png)
+![alt-text](vpn/ayarlar4.png)
 
 #### Yönlendirici
 

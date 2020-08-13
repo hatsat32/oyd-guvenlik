@@ -1,4 +1,4 @@
-![Tor logo](tor-logo.png "Tor logo")
+![Tor logo](tor/tor-logo.png "Tor logo")
 # Tor
 
 * [Tor ağı nasıl çalışır?](#tor-agi-nasil-calisir)
@@ -20,7 +20,7 @@ Tor, trafiğini gönüllüler tarafından oluşturulan ağ noktaları (Tor relay
 
 Tor ağının başlıca amacı; kullanıcılarının internet üzerindeki kimliklerini ve aktivitelerini ağ trafiğini rastgele bağlantı noktaları üzerinden sektirerek her türlü otorite gözetiminden korumaktır.
 
-![alt-text](how-tor-works.png "Tor Ağı Nasıl Çalışır?")
+![alt-text](tor/how-tor-works.png "Tor Ağı Nasıl Çalışır?")
 
 Her bağlantı noktasını bir kaldırım taşı olarak düşünürseniz, Tor ağı sizin ve bağlanmak istediğiniz hedefin arasında rastgele kaldırım taşlarından oluşturulmuş bir yol yaratır. Böylelikle sizden çıkan trafiğin nereye gittiği veya karşıdan gelen bilginin kime geldiğini sadece giriş ve çıkış noktaları bilebilir. (Bu aynı zamanda Tor ağının bir zayıflığıdır ve ileriki başlıklarda değinilecektir.)
 
@@ -76,42 +76,42 @@ Oluşturulan dizin içinde "Tor Browser Setup" veya "start-tor-browser.desktop" 
 _Not: "Tor Browser Setup" isimli dosyaya çift tıkladığınızda "Güvenilmeyen uygulama" konulu bir uyarı alabilirsiniz. "Güven ve başlat" butonuna tıklayıp kurulumu başlatıyoruz._
 
 Karşınıza şöyle bir ekranın gelmesi gerekiyor.
-![Tor ilk ekran](tor1.png "Kurulum 1")
+![Tor ilk ekran](tor/tor1.png "Kurulum 1")
 
 "Yapılandır" butonuna basarak devam ediniz.
 
-![Tor yapılandırma](Browser-kurulum2.png "Kurulum 2")
+![Tor yapılandırma](tor/Browser-kurulum2.png "Kurulum 2")
 
 Karşınıza gelen ayarlardan,
 "Bulunduğum ülkede Tor engelleniyor" seçeneğini işaretleyin ve ardından çıkan seçeneklerden "Bir hazır köprü seçin"e tıklayıp türünü "obfs4" olarak değiştirin.
 
 Her şeyi doğru yaptığınıza eminseniz nihayetinde "Bağlan" tuşuna basarak Tor bağlantınızı başlatabilirsiniz.
 
-![Tor yükleme ekranı](tor3.png "Kurulum 3")
+![Tor yükleme ekranı](tor/tor3.png "Kurulum 3")
 
 Tarayıcınız açılır açılmaz aşağıdaki gibi bir uyarı alacaksınız. Dil ayarınızı İngilizce yapmak anonimliğinizi artıracaktır, çünkü dünyadaki İnternet kullanıcılarının dörtte üçü İnternet'i İngilizce kullanmaktadır. Tercihinize göre "Evet" diyip devam edin.
 
-![Tor İngilizce sorusu](tor4.png "Kurulum 3")
+![Tor İngilizce sorusu](tor/tor4.png "Kurulum 3")
 
 Kurulum ve güncelleştirmemiz bittiğine göre artık tarayıcıyı kullanabilirsiniz. Ufak bir test yapmak isterseniz, Özgür Yazılım Derneği'nin Tor adresine girebilirsiniz:
 
 `http://oyd647g3rtaqoqf4ejv43zdjmhmfhhx6f474bonalquwezfjda4ybyyd.onion/`
 
-![alt-text](tor5.png "Kurulum 4")
+![alt-text](tor/tor5.png "Kurulum 4")
 
 Yapmanız gereken birkaç ayar daha var. Sağ üst köşedeki kalkan düğmesine basıp, "Gelişmiş güvenlik düzeyi ayarları" menüsüne girin. Daha sonra burada, "Güvenlik Düzeyi"ni "Daha Güvenli" olarak seçin. Burada istiyorsanız "En Güvenli" seçeneğini de seçebilirsiniz, ancak JavaScript'lerin engelleneceğini, fontlar veya görseller gibi pek çok site bileşeninin doğru görüntülenemeyebileceğini unutmayın.
 
-![Tor hardening](tor6.png "Kurulum 4")
+![Tor hardening](tor/tor6.png "Kurulum 4")
 
-![Tor hardening](tor7.png "Kurulum 4")
+![Tor hardening](tor/tor7.png "Kurulum 4")
 
 Bu sayfayı en yukarıya kaydırdığınızda, yani "Gizlilik ve Güvenlik" menüsünün en üstünde, "Onion Hizmetleri" başlığını göreceksiniz. Bu ayarı da "Her zaman" olarak değiştirin. Bu ayarı aktive ettiğinizde, eğer bir web sitesinin .onion uzantılı Tor servisi varsa, Tor tarayıcısı otomatik olarak .onion'lu servise bağlanacaktır. Bu özelliğin kullanılabilmesini sağlayan şey, "Onion-Location" HTTP başlığıdır, ayrıntılı bilgi için [burayı ziyaret edebilirsiniz](https://community.torproject.org/onion-services/advanced/onion-location/).
 
-![Tor hardening](tor8.png "Kurulum 4")
+![Tor hardening](tor/tor8.png "Kurulum 4")
 
 Bu ayarı açmadığınızda da, girdiğiniz sitenin .onion servisi varsa tarayıcınızın çubuğunda şöyle bir düğme çıkar:
 
-![Tor hardening](tor9.png "Kurulum 4")
+![Tor hardening](tor/tor9.png "Kurulum 4")
 
 Bunu denemek için, Özgür Yazılım Derneği'nin sitesini kullanabilirsiniz. <https://oyd.org.tr>'ye gittiğinizde Tor tarayıcı ".onion available" uyarısı verecektir.
 
@@ -141,18 +141,18 @@ Daha sonra, `sudo systemctl stop tor` yazarak Tor servisini durdurun. Çünkü b
 
 Daha önceden indirmiş olduğunuz "Tor Browser" ile <https://bridges.torproject.org/> adresine bağlanıp "Get Bridges" maddesine tıklayın.
 
-![alt-text](torprojectBridges.png "Tor Project Bridges")
+![alt-text](tor/torprojectBridges.png "Tor Project Bridges")
 
 Açılan pencereden **"Pluggable transport"** seçeneğini **"obfs4"** olarak seçin ve "Get Bridges" butonuna basın.
 
 
-![alt-text](obfs4GetBridges.png "Get Bridges")
+![alt-text](tor/obfs4GetBridges.png "Get Bridges")
 
 Karşınıza karışık bir **CAPTCHA** gelecek. Çözene kadar bırakmamanızı tavsiye ediyoruz. Biraz zor olabilir :)
 
 Nihayetinde çözdüğünüzde karşınıza gelecek ekran aşağıdaki gibi olacaktır.
 
-![alt-text](obfs4Bridges.png "Obfs4 Bridges")
+![alt-text](tor/obfs4Bridges.png "Obfs4 Bridges")
 
 `obfs4 Bridge_IPadresi:PORT FINGERPRINT sertifika`
 
@@ -164,7 +164,7 @@ Daha sonra, Terminal'de aşağıdaki komutu çalıştırın:
 
 Şöyle bir ekran karşınıza gelecektir:
 
-![alt-text](editTorrc.png "Torrc dosyasının editlenmesi")
+![alt-text](tor/editTorrc.png "Torrc dosyasının editlenmesi")
 
 Uygun bulduğunuz bir yere, aldığınız köprüleri aşağıdaki formatla yerleştirin:
 
@@ -196,23 +196,23 @@ Artık **9050** numaralı portu kullanarak uygulamaları Tor'a bağlayabilirsini
 
 Telegram'ı Tor üzerinden kullanabilmek için, Telegram'ın sol üst köşesindeki sandviç menüye basıp, ayarlar menüsüne gelin.
 
-![Telegram over Tor](tortelegram0.png "Telegram over Tor")
+![Telegram over Tor](tor/tortelegram0.png "Telegram over Tor")
 
 Daha sonra açılan menüden, "Gelişmiş" seçeneğine tıklayın.
 
-![Telegram over Tor](tortelegram1.png "Telegram over Tor")
+![Telegram over Tor](tor/tortelegram1.png "Telegram over Tor")
 
 En üstte yer alan "Ağ ve vekil sunucusu" bölümündeki "Bağlantı türü"ne tıklayın.
 
-![Telegram over Tor](tortelegram2.png "Telegram over Tor")
+![Telegram over Tor](tor/tortelegram2.png "Telegram over Tor")
 
 Açılan menüden, "Özel vekil sunucusu kullan" seçeneğine basın ve yapılandırmayı aşağıdaki gibi oluşturun:
 
-![Telegram over Tor](tortelegram3.png "Telegram over Tor")
+![Telegram over Tor](tor/tortelegram3.png "Telegram over Tor")
 
 Sonuç olarak, eklediğiniz vekil sunucusu "çevrimiçi" olarak görünmelidir.
 
-![Telegram over Tor](tortelegram4.png "Telegram over Tor")
+![Telegram over Tor](tor/tortelegram4.png "Telegram over Tor")
 
 Tebrikler, Telegram'ı artık Tor üzerinden kullanıyorsunuz. Tor üzerinden yapılan sesli aramalar çok sık kesilmektedir, o yüzden "Aramalarda vekil sunucu kullan" seçeneğinin işaretini kaldırmanız arama kalitenizi artıracak, ancak trafiğinizin açıktan geçmesine sebebiyet verecektir.
 
@@ -220,42 +220,42 @@ Tebrikler, Telegram'ı artık Tor üzerinden kullanıyorsunuz. Tor üzerinden ya
 
 Android üzerinde Tor kullanmak için, öncelikle özgür uygulama mağazası [F-Droid](https://f-droid.org)'i indirmeniz gerekmektedir. Bunun için cep telefonunuzdan <https://f-droid.org>'u ziyaret edebilir ya da aşağıdaki QR kodunu tarayabilirsiniz.
 
-![QR F-Droid](qr.png "F-Droid QR")
+![QR F-Droid](tor/qr.png "F-Droid QR")
 
 F-Droid'in sitesine girdiğinizde, "F-Droid'i indir" butonuna basın.
 
-![F-Droid](torandroid0.jpg "F-Droid QR")
+![F-Droid](tor/torandroid0.jpg "F-Droid QR")
 
 Sonrasında çok yüksek ihtimalle, tarayıcınızın uygulama kurma yetkisi olmadığına dair bir hata alacaksınız. "Ayarlar" butonuna basıp "Bu kaynaktan izin ver" seçeneğini aktif edin.
 
-![F-Droid](torandroid1.jpg "F-Droid QR")
-![F-Droid](torandroid2.jpg "F-Droid QR")
+![F-Droid](tor/torandroid1.jpg "F-Droid QR")
+![F-Droid](tor/torandroid2.jpg "F-Droid QR")
 
 Daha sonra, F-Droid kurulacaktır. F-Droid'i ilk açtığınızda depoları güncelleyecektir, bunu `apt update` gibi düşünebilirsiniz. Daha sonrasında aşağıdaki gibi bir ekran bizi karşılayacak:
 
-![F-Droid](torandroid3.jpg "F-Droid QR")
+![F-Droid](tor/torandroid3.jpg "F-Droid QR")
 
 Tor Browser ve Orbot gibi araçlar, F-Droid'in orijinal deposunda değil, [The Guardian Project](https://guardianproject.org)'in deposunda bulunur. Bunun için bu depoyu aktive etmemiz gerekir. Aşağıdaki adımları izleyerek bu depoyu aktive edebilirsiniz. Ayarlar sekmesinden "Depolar" seçeneğine basıp, Guardian Project seçeneğini aktive edin.
 
-![F-Droid](torandroid4.jpg "F-Droid QR")
-![F-Droid](torandroid5.jpg "F-Droid QR")
+![F-Droid](tor/torandroid4.jpg "F-Droid QR")
+![F-Droid](tor/torandroid5.jpg "F-Droid QR")
 
 Daha sonra ekranı aşağı kaydırmaya çalışarak depoları güncelleyin ve aramaya "Tor Browser" yazın. "Yükle" butonuna basarak uygulamayı kurun. Bir önceki adımdaki izi süreci tekrar karşınıza çıkacaktır.
 
-![F-Droid](torandroid6.jpg "F-Droid QR")
+![F-Droid](tor/torandroid6.jpg "F-Droid QR")
 
 Tor Browser'ı başlatın. Sizi şöyle bir ekran karşılayacak:
 
-![F-Droid](torandroid.jpg "F-Droid QR")
+![F-Droid](tor/torandroid.jpg "F-Droid QR")
 
 Sağ üstteki dişliye tıklayın ve aşağıdaki adımları izleyin:
 
-![F-Droid](torandroid8.jpg "F-Droid QR")
-![F-Droid](torandroid11.jpg "F-Droid QR")
+![F-Droid](tor/torandroid8.jpg "F-Droid QR")
+![F-Droid](tor/torandroid11.jpg "F-Droid QR")
 
 Daha sonra geri dönün ve "Bağlan" butonuna basın. Eğer aşağıdaki gibi bir ekranla karşılaştıysanız Tor bağlantısını kurdunuz.
 
-![F-Droid](torandroid12.jpg "F-Droid QR")
+![F-Droid](tor/torandroid12.jpg "F-Droid QR")
 
 ### Orbot ile uygulamaları Tor ile kullanmak<a name="orbot"></a>
 
@@ -263,19 +263,19 @@ Twitter ve Telegram gibi uygulamaları Tor üzerinden kullanabilmek için, Orbot
 
 Orbot'u F-Droid üzerinden kurun.
 
-![Orbot](orbot0.jpg "Orbot")
+![Orbot](tor/orbot0.jpg "Orbot")
 
 Orbot'u açtığınızda aşağıdaki gibi bir ekran ile karşılaşacaksınız:
 
-![Orbot](orbot1.jpg "Orbot")
+![Orbot](tor/orbot1.jpg "Orbot")
 
 Alt tarafta bulunan "Köprüleri kullan" seçeneğini aktif hale getirin ve seçenekleri yukarıda "Tor bağlantısı sağlanıyor" yazana kadar deneyin (bunun biraz farazi olduğunun farkındayız ancak maalesef ki köprüler bazen çalışmayabiliyor):
 
-![Orbot](orbot2.jpg "Orbot")
+![Orbot](tor/orbot2.jpg "Orbot")
 
 En nihayetinde Tor ağına bağlanmış olacaksınız:
 
-![Orbot](orbot3.jpg "Orbot")
+![Orbot](tor/orbot3.jpg "Orbot")
 
 Bu noktada, SOCKS proxy destekleyen uygulamalar için port numarası 9050, HTTP proxy destekleyen uygulamalar için ise 8118'dir.
 
@@ -283,29 +283,29 @@ Bu noktada, SOCKS proxy destekleyen uygulamalar için port numarası 9050, HTTP 
 
 Telegram uygulamasını açın ve soldaki sandviç menüden "Ayarlar" seçeneğine basın:
 
-![Orbot](orbot4.jpg "Orbot")
+![Orbot](tor/orbot4.jpg "Orbot")
 
 Daha sonra açılan ayarlardan, "Veri ve Depolama" seçeneğine girin:
 
-![Orbot](orbot5.jpg "Orbot")
+![Orbot](tor/orbot5.jpg "Orbot")
 
 Daha sonra en altta bulunan "Vekil sunucu" ayarlarına girin ve bilgileri aşağıdaki gibi doldurun:
 
-![Orbot](orbot7.jpg "Orbot")
+![Orbot](tor/orbot7.jpg "Orbot")
 
 Eklediğiniz vekil sunucunun yanında "Bağlandı" yazıyorsa yapılandırmanız çalışıyordur. Ana ekrana döndüğünüzde, üst tarafta aşağıdaki gibi bir ikon görüyorsanız, Telegram artık Tor ağı üzerinden çalışıyor demektir:
 
-![Orbot](orbot8.jpg "Orbot")
+![Orbot](tor/orbot8.jpg "Orbot")
 
 #### Twitter'ın yapılandırılması<a name="twitter"></a>
 
 Twitter uygulamasına girdiğinizde, sol tarafı çekerek "Ayarlar" menüsüne girin.
 
-![Twitter over Tor](twitter0.jpg "Twitter over Tor")
+![Twitter over Tor](tor/twitter0.jpg "Twitter over Tor")
 
 Proxy seçeneğine tıklayın ve bilgileri aşağıdaki gibi ayarlayıp kaydedin.
 
-![Twitter over Tor](twitter2.jpg "Twitter over Tor")
+![Twitter over Tor](tor/twitter2.jpg "Twitter over Tor")
 
 Eğer tweetleri yenileyebiliyorsanız artık Twitter'ı Tor üzerinden kullanıyorsunuz demektir.
 

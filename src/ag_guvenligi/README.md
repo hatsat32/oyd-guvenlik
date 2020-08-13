@@ -7,6 +7,6 @@
 Peki İnternet'in paydaşları olarak bizler neler yapabiliriz? Ağ güvenliği bilgisayarınızı ve iletişiminizi ağ üzerinde nasıl koruyabileceğinize dair tavsiyeler içermektedir.
 
 * [Tor](tor.md)
-* [VPN - Virtual Private Network](vpn/vpn.md)
+* [VPN - Virtual Private Network](vpn.md)
 * ~~[TLS - Transport Layer Security](tls.md)~~
 * [Shadowsocks](shadow.md)
