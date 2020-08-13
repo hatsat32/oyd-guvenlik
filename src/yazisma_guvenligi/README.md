@@ -42,4 +42,6 @@ Neden? Bir kimsenin gönderdiğiniz e-postanın içeriği hakkında hiçbir şey
 ## Mesaj Şifreleme Kullanın
 
 * [Şifreli E-Posta](openpgp.md)
-* [Kayıt Dışı Mesajlaşma](otr.md)
+* [OTR](otr.md)
+* [OMEMO](omemo.md)
+* [Signal](signal.md)
