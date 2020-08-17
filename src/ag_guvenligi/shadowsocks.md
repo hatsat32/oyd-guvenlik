@@ -20,6 +20,8 @@ Karşınıza iki seçenek çıkacaktır: Glibc ve MUSL. Tercihimiz Glibc olacak 
 
 "shadowsocks-v1.8.12.x86_64-unknown-linux-gnu.tar.xz" dosyasını indirdikten sonra sunucuda dosyayı açıp içindeki dört çalıştırılabilir dosyayı, komut dizinlerinden birine koyun. /usr/local/sbin/ dizinini tercih edilebilir çünkü bu dizinin amacı root yetkisi ile çalıştırılacak ama paket yöneticisi vasıtasıyla kurulmamış uygulamaları barındırmaktır.
 
+*shadowsocks*ı debian, archlinux ve fedora depolarından, sırasıyla; `apt install shadowsocks`, `pacman -S shadowsocks` ve `dnf install python3-shadowsocks` komutlarıyla da sisteminize kurabilirsiniz.
+
 Daha sonrasında /etc/ dizini altında shadowsocks-config.json adında bir dosya oluşturup içine aşağıdakileri yazın;
 
 ```json
