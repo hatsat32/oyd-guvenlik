@@ -28,7 +28,7 @@ Daha sonrasında /etc/ dizini altında shadowsocks-config.json adında bir dosya
 "server_port": 8388,
 "password":"<güvenli bir parola>",
 "timeout":300,
-"method":"aes-256-gcm"
+"method":"aes-256-cfb"
 }
 ```
 
@@ -40,9 +40,9 @@ Daha sonrasında /etc/ dizini altında shadowsocks-config.json adında bir dosya
 
 - _timeout_ bağlantı zaman aşımının belirlendiği ayar kalemi, 300 saniye makul bir süre.
 
-- _method_ şifreleme algoritmanız bu bölümde belirlenir, tercihimiz aes-256-gcm. Bu algoritma [256 bitlik bir anahtar kullanarak simetrik](https://en.wikipedia.org/wiki/Symmetric-key_algorithm) blok şifreleme yapan bir algoritma. Genel ihtiyaçlara yetecek kadar hızlı ve şu an desteklenen en güçlü algoritma.
+- _method_ şifreleme algoritmanız bu bölümde belirlenir, tercihimiz aes-256-cfb. Bu algoritma [256 bitlik bir anahtar kullanarak simetrik](https://en.wikipedia.org/wiki/Symmetric-key_algorithm) blok şifreleme yapan bir algoritma. Genel ihtiyaçlara yetecek kadar hızlı ve şu an desteklenen en güçlü algoritma.
 
-Bu dosyayı kaydettikten sonra servis yöneticinize bir servis yazmanız gerekmekte. Bu kısım tercihinize kalmış, lakin örnek sunucumuz systemd kullandığından systemd için basit bir servisi aşağıdaki gibi yazabilirsiniz:
+Bu dosyayı kaydettikten sonra servis yöneticinize bir servis yazmanız gerekmekte. Örneğin, kullanımı yaygın olan _systemd_ için, aşağıdaki satırları `/usr/lib/systemd/system/shadowsocks.service` adında bir dosyaya kaydederek bu servisi oluşturabilirsiniz:
 
 ```
 [Unit]
@@ -56,10 +56,15 @@ ExecStart=/usr/local/sbin/ssserver -c /etc/shadowsocks-config.json
 WantedBy=multi-user.target
 ```
 
-Daha sonrasında bu servisi aktif hale getirip başlangıçta çalışacak şekilde ayarlanması gerekiyor. Ardından shadowsocks sunucunuz hizmet vermeye hazır olacak.
-
-[systemd'de bu servisin aktif hale getirilmesini anlatarak katkıda bulunabilirsiniz](https:/git.oyd.org.tr)
-
+`shadowsocks.service` dosyasını oluşturduktan sonra kullanabileceğiniz aşagıdaki üç satır, shadowsocks sunucunuz için, systemd'ye sırasıyla _baslat_/_durdur_/_yenidenBaşlat_/_etkinleştir_/_devreDışıBırak_ komutlarını verir:
+```
+systemctl start shadowsocks.service
+systemctl stop shadowsocks.service
+systemctl restart shadowsocks.service
+systemctl enable shadowsocks.service
+systemctl disable shadowsocks.service
+```
+Bir _servisi etkinleştimek_ sistem başladığında servisin de otomatik olarak başlamasını sağlar. Bu ayarı kapatmak için de servisi _devreDışıBirak_ırız
 
 ### İstemci Tarafında
 
@@ -73,7 +78,7 @@ Teknik olarak sunucu tarafındaki ayarların aynısı istemci için de geçerli 
 "local_port": 1080,
 "password":"<güvenli bir parola>",
 "timeout":300,
-"method":"aes-256-gcm"
+"method":"aes-256-cfb"
 }
 ```
 
@@ -81,7 +86,7 @@ Teknik olarak sunucu tarafındaki ayarların aynısı istemci için de geçerli 
 
 - _local_port_ kalemi, istemci olarak kullandığınız bilgisayarda, localhost’ta hangi port üzerinden socks5 yayını yapacağınının seçildiği yer. Bazı istemciler bu ayarı kullanmamakta (android istemcisi, android’in kendi VPN altyapısını kullandığından yerel bir socks5 bağlantısı yerine tüm trafiği yönetebilmekte) lakin shadowsocks-rust istemcisi ve diğer bir çok istemci bu ayarı kullanıyor.
 
-Son olarak da systemd servis dosyamı şu şekilde düzenleyin:
+Son olarak da systemd servis dosyasını \(`/lib/systemd/system/shadowsocks-client.service`) şu sekilde düzenleyebilirsiniz:
 
 ```
 [Unit]
@@ -94,8 +99,10 @@ ExecStart=/usr/local/sbin/sslocal -c /etc/shadowsocks-config.json
 [Install]
 WantedBy=multi-user.target
 ```
+`systemctl [<start>|<stop>|<restart>|<enable>|<disable>] shadowsocks.service`
+Komutlarını istemci tarafında da kullanabilirsiniz.
 
-Ve hepsi bu kadar! Artık socks5 destekleyen yazılımlarınızı shadowsocks proxy’si üzerinden internete, farklı bir noktadan çıkartabilirsiniz. Örnek olarak Firefox, Thunderbird ve Telegram uygulamaları üzerinde bu proxy’i kullanabilirsiniz. 
+Ve hepsi bu kadar! Artık socks5 destekleyen yazılımlarınızı shadowsocks proxy’si üzerinden internete, farklı bir noktadan çıkartabilirsiniz. Örnek olarak Firefox, Thunderbird ve Telegram uygulamaları üzerinde bu proxy’i kullanabilirsiniz.
 
 Eğer bütün trafiğinizi shadowsocks üzerinden yönlendirmek isterseniz iptables ve redsocks uygulamaları ile bunu sağlayabilirsiniz.
 
