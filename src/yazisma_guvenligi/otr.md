@@ -15,7 +15,7 @@
 
 #### Alt+F2’ye basın ve çalıştırın:
 `gnome-terminal`
-#### Yeni terminal penceresine aşağıdaki satırı kopyalayın ve Enter’a basın:
+#### Yeni uçbirim penceresine aşağıdaki satırı kopyalayın ve Enter’a basın:
 `sudo apt-get install pidgin-otr`
 #### Pidgin’i çalıştırmak için Alt+F2’ye basın ve yazın:
 `pidgin`

@@ -9,10 +9,10 @@
   - [OpenVPN Sunucusu Kurulumu](#openvpn-sunucusu-kurulumu)
   - [İstemci Kurulumu](#İstemci-kurulumu)
     - [GNU/Linux - Masaüstü](#gnulinux---masaüstü)
-    - [GNU/Linux - Terminal](#gnulinux---terminal)
+    - [GNU/Linux - Uçbirim](#gnulinux---uçbirim)
     - [Android](#android)
     - [OpenWRT Yönlendirici](#openwrt-yönlendirici)
-      - [Terminal ile](#openwrt---terminal)
+      - [Uçbirim ile](#openwrt---uçbirim)
       - [Web arayüzü ile](#openwrt---luci)
 - [VPN Bağlantısının Kesilmesi Sorunsalı](#vpn-bağlantısının-kesilmesi-sorunsalı)
   - [GNU/Linux](#gnulinux)
@@ -186,7 +186,7 @@ GNU/Linux dağıtımları Linux çekirdeğinde, doğrudan OpenVPN'i ve artık, d
 
 ![alt-text](vpn/vpn3.png)
 
-#### GNU/Linux - Terminal
+#### GNU/Linux - Uçbirim
 
 1. Kullandığınız GNU/Linux dağıtımının depolsundan *OpenVPN*'i dağıtımınızın paket yöneticisiyle yükleyebilirsiniz.
   - __apt__ paket yöneticisi kullanan dağıtımlarda \(Debian, Trisquel, Linux/Mint, Ubuntu...);
@@ -271,7 +271,7 @@ Android ayarlarını yaparak sisteminizin VPN bağlantısını korumasını ve k
 
 Bir OpenWRT yönlendiriciyi OpenVPN istemcisi olarak ayarlamak için `ssh` ile komut satırı ya da bir Web tarayıcısı ile LuCi arayüzü kullanılabilir.
 
-##### OpenWRT - Terminal
+##### OpenWRT - Uçbirim
 OpenWRT yönlendiriciyi OpenVPN istemcisi haline getirmek için `ssh` ile bağlandıktan sonra aşağıdaki işlemler uygulanmalı.
 
 1. Gerekli paket yüklenir;  

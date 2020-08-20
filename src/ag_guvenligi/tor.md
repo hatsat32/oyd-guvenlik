@@ -65,7 +65,7 @@ dosyasını indirin.
 
 Ardından indirilen dosyanın bulunduğu dizine gidip sıkıştırılmış dosyayı  çıkartın.
 
-Terminal kullanıyorsanız bunu
+Uçbirim kullanıyorsanız bunu
 
 `tar -xJvf tor-browser-linux64-9.5.3_tr.tar.xz`
 
@@ -130,7 +130,7 @@ Bunu denemek için, Özgür Yazılım Derneği'nin sitesini kullanabilirsiniz. <
 
 ## Uygulamaları Tor üzerinden kullanmak (Tor proxy)
 
-Telegram gibi uygulamaları Tor üzerinden kullanabilmeniz için öncelikle sisteminize `tor` paketini kurmanız gerekmektedir. Bunun için, bir Terminal açıp aşağıdaki komutları sırasıyla yazabilirsiniz:
+Telegram gibi uygulamaları Tor üzerinden kullanabilmeniz için öncelikle sisteminize `tor` paketini kurmanız gerekmektedir. Bunun için, bir Uçbirim açıp aşağıdaki komutları sırasıyla yazabilirsiniz:
 
 ```
 sudo apt-get update
@@ -158,7 +158,7 @@ Nihayetinde çözdüğünüzde karşınıza gelecek ekran aşağıdaki gibi olac
 
 gibi bir format ile 3 adet köprünüz olacak.
 
-Daha sonra, Terminal'de aşağıdaki komutu çalıştırın:
+Daha sonra, Uçbirim'de aşağıdaki komutu çalıştırın:
 
 `sudo nano /etc/tor/torrc`
 
@@ -178,7 +178,7 @@ ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
 
 Sırasıyla Ctrl+O ve Ctrl+X yaparak çıkın.
 
-Tor proxy'nizin çalışıp çalışmadığını Terminal'e `tor` yazıp deneyebilirsiniz.
+Tor proxy'nizin çalışıp çalışmadığını Uçbirim'e `tor` yazıp deneyebilirsiniz.
 
 ```
 Tor has successfully opened a circuit. Looks like client functionality is working.
