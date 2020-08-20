@@ -11,7 +11,9 @@
     - [GNU/Linux - Masaüstü](#gnulinux---masaüstü)
     - [GNU/Linux - Terminal](#gnulinux---terminal)
     - [Android](#android)
-    - [Yönlendirici](#yönlendirici)
+    - [OpenWRT Yönlendirici](#openwrt-yönlendirici)
+      - [Terminal ile](#openwrt---terminal)
+      - [Web arayüzü ile](#openwrt---luci)
 - [VPN Bağlantısının Kesilmesi Sorunsalı](#vpn-bağlantısının-kesilmesi-sorunsalı)
   - [GNU/Linux](#gnulinux)
     - [UFW](#ufw)
@@ -265,9 +267,97 @@ Android ayarlarını yaparak sisteminizin VPN bağlantısını korumasını ve k
 
 ![alt-text](vpn/ayarlar4.png)
 
-#### Yönlendirici
+#### OpenWRT Yönlendirici
 
-[Bu bölüme katkı verebilirsiniz](https://git.oyd.org.tr/oyd/guvenlik)
+Bir OpenWRT yönlendiriciyi OpenVPN istemcisi olarak ayarlamak için `ssh` ile komut satırı ya da bir Web tarayıcısı ile LuCi arayüzü kullanılabilir.
+
+##### OpenWRT - Terminal
+OpenWRT yönlendiriciyi OpenVPN istemcisi haline getirmek için `ssh` ile bağlandıktan sonra aşağıdaki işlemler uygulanmalı.
+
+1. Gerekli paket yüklenir;  
+```sh
+opkg update
+opkg install openvpn-openssl
+```
+
+2. Firewall ayarları;  
+UCI(unifiedConfigurationInterface) kullanılarak ayar dosyasını el ile düzenlemeye gerek duymadan yapılabilir;
+```bash
+uci rename firewall.@zone[0]="lan"
+uci rename firewall.@zone[1]="wan"
+uci rename firewall.@forwarding=[0]="lan_wan"
+uci del_list firewall.wan.device="tun0"
+uci add_list firewall.wan.device="tun0"
+uci commit firewall
+/etc/init.d/firewall restart
+```
+3. VPN ayarları;  
+VPN sunucusundan edinilen `.ovpn` uzantılı istemci ayarlar dosyasını, openvpn servisinin ön tanımlı ayarlarıyla okuması için uzantısını `.conf`'a dönüştürerek `/etc/openvpn` dizinine yerleştirmek gerekir.
+```sh
+mkdir -p /etc/openvpn
+cp <istemci>.ovpn /etc/openvpn/<istemci>.conf
+```
+ - VPN servisinin gereğinden fazla yetkiyle çalışmaması için çalışacağı kullanıcı ve grup tanımı, 2. adımda yapılan firewall ayarlarıyla uyumlu olması için de aygıt tanımı aşağıdaki üç satırın _\<istemci\>.conf_'a eklenmesiyle yapılır. Dosyada önceden tanımlanmış _user_, _group_ ve _dev_ ile başlayan satırlar varsa satırbaşlarına '#' eklenerek geçersiz kılınmalı veya silinmeliler.
+```sh
+user nobody
+group nogroup
+dev tun0
+```
+ - VPN sunucusuna bağlanmak için kullanıcı adı ve parola kullanılması gerekiyorsa bunları, üstte kullanıcı adı altta parola olarak iki satır halinde `<istemci>.auth` dosyasına kaydedilmeli ve `<istemci>.conf`'ta bu dosya tanıtılmalı.
+```
+cat <<EOL|tee /etc/openvpn/<istemci>.auth
+KULLANICI_ADI
+PAROLA
+EOL
+cat <<EOL|tee -a /etc/openvpn/<istemci>.conf
+auth-user-pass <istemci>.auth
+EOL
+```
+  - İlgili dosya izinlerini sadece root kullanıcısının okuyup yazabileceği hale getirmek yararlı bir pratiktir.  
+`chmod -R 600 /etc/openvpn`
+
+4. openvpn servisi yeniden başlatıldığında bağlantı diğer cihazlar için de hazır olacak.  
+`/etc/init.d/openvpn restart`  
+* VPN bağlantısı kontrol etmek için internette görünen IP adresi komut satırında  
+`dig +short myip.opendns.com @resolver2.opendns.com` komutuyla veya bir web tarayıcısında <https://ipleak.net> adresinin ziyaret edilmesiyle öğrenilebilir.
+
+Kaynak: <https://openwrt.org/docs/guide-user/services/vpn/openvpn/client>
+
+##### OpenWRT - LuCi
+
+1. ___Gerekli iki paket yüklenir: openvpn-openssl luci-app-openvpn___  
+__System>Software__ sayfasında __Actions: Update lists...__ ile paket listesi güncellendikten sonra __Filter__ kutusu ile arama yapılabilir.  
+![owrtLuci_1.1](vpn/vpnWrtLuci_1.1.png) ![owrtLuci_1.2](vpn/vpnWrtLuci_1.2.png)
+![owrtLuci_1.3](vpn/vpnWrtLuci_1.3.png) ![owrtLuci_1.4](vpn/vpnWrtLuci_1.4.png)
+![owrtLuci_1.5](vpn/vpnWrtLuci_1.5.png)  
+_luci-app-openvpn_ paketi yüklendikten sonra yönlendiriciye yeniden bağlanıldığında üst menüye _VPN_ başlığı eklenmiş olacaktır.  
+![owrtLuci_1.6](vpn/vpnWrtLuci_1.6.png)
+
+2. ___OpenVPN ayarları:___  
+__VPN>OpenVPN__ sayfasında __OVPN configuration file upload: Browse__ ile `.ovpn` uzantılı dosya seçilip bağlantıya bir isim verildikten sonra _Upload_ butonu ile dosya yüklenir. Aynı sayfadaki listeye eklenmiş olduğu görülecektir.  
+![owrtLuci_2.1](vpn/vpnWrtLuci_2.1.png)
+   - OpenVPN sunucusuna kullanıcı adı ve parola ile bağlanılması gerekiyorsa listede bağlantının yanındaki _Edit_ butonuna tıklanarak açılan sayfada alttaki kutuya, parola alt satırda olacak sekilde iki satır halinde yazılır ve üstteki kutuya __auth-user-pass /etc/openvpn/<BAĞLANTI_ADI>.auth__ satırı eklenir.  
+![owrtLuci_2.2](vpn/vpnWrtLuci_2.2.png)
+
+3. ___OpenVPN istemcisini başlatma:___  
+__Start__ butonu ile servis başlamazsa önce solundaki __Enable__ kutusunu işaretleyip __Save & Apply__ butonun ile kaydetmek sorunu çözecektir. OpenVPN istemcisinin yönlendirici çalıştırıldığında başlaması ve hep açık kalması için __Enable__ kutusu işaretli olmalıdır.
+- Bu aşamada OpenVPN çalıştığında yönlendirici VPN'e bağlı ve ona bağlı diğer aygıtların internet bağlantıları kesilmiş olacak.
+
+4. ___LAN (Yerel ağ) aygıtlarının VPN'e yönlendirilmesi:___  
+ Bu işlem için __Network>Interfaces__ veya __Network>Firewall__ sayfalarından biri kullanılılır;  
+
+   4.a. __Network>Firewall__ sayfasıyla: kırmızı ile belirginleştirilmiş __wan__ bölgesinin ayarları __Edit__ butonuyla açılır. Pencerede __Advanced Settings__ sekmesindeki __Covered devices__ aygıt listesinden __tun0__ aygıtı işaretlenir ve kaydedilir.  
+![owrtLuci8](vpn/vpnWrtLuci_4.a.1.png)
+![owrtLuci8](vpn/vpnWrtLuci_4.a.2.png)
+![owrtLuci8](vpn/vpnWrtLuci_4.a.3.png)  
+   4.b. __Network>Interfaces__ sayfasıyla: __Add new Interface__ butonu ile VPN bağlantısı yeni bir arayüz olarak tanımlanır, açılan pencerede  "_name_ = tun0", "_Protocol_ = Unmanaged", "_Interface_ = tun0" olarak doldurulup __Create Interface__ butonuna tıklanır, __General Settings__ sekmesinde __Bring up on boot__ işareti kaldırılır. __Firewall Settings__ sekmesinde __Create / Assign Firewall-zone__ açılır listesinden __wan__ seçilir ve kaydedilir.  
+![owrtLuci](vpn/vpnWrtLuci_4.b.1.png)
+![owrtLuci](vpn/vpnWrtLuci_4.b.2.png)
+![owrtLuci](vpn/vpnWrtLuci_4.b.3.png)
+![owrtLuci](vpn/vpnWrtLuci_4.b.4.png)
+![owrtLuci](vpn/vpnWrtLuci_4.b.5.png)
+
+Kaynak: <https://openwrt.org/docs/guide-user/services/vpn/openvpn/client-luci>
 
 ## VPN Bağlantısının Kesilmesi Sorunsalı
 
@@ -343,6 +433,8 @@ Eğer Android sürümünüz sistem çapında VPN ayarları desteklemiyor ise Ope
 
 Şayet Android sürümünüz işletim sistemi seviyesinde VPN istemcisi kontrolü imkanı sağlıyor ise rehberin Android kurulum başlığındaki önergeler yeterli işlev gösterecektir.
 
+---
 Kaynaklar;  
 - <https://github.com/Nyr/openvpn-install.git>  
 - <https://kendibaglantim.com>
+- <https://openwrt.org/docs/guide-user/services/vpn/openvpn/client>
