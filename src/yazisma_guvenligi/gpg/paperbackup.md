@@ -25,7 +25,7 @@ Her Python kodu gibi `paperbackup` da bir takım bağımlılıklara sahiptir. A�
 RPM kullanan dağıtımlar için (Red Hat, Fedora, CentOS vb.):  
 `sudo yum install PyX enscript qrencode hashlib zbar`  
 APT kullanan dağıtımlar için (Debian, Ubuntu, Mint vb.):  
-`sudo apt-get update && sudo apt-get install PyX enscript qrencode hashlib zbar`
+`sudo apt-get update && sudo apt-get install python3-pyx enscript python3-qrencode hashlib python3-zbar`
 
 ### Anahtar veya veri yedeğini oluşturma
 
