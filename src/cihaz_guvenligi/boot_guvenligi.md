@@ -11,3 +11,14 @@ Bilgisayarınızında ilk çalışan yazılım anakartınızda küçük bir ROM 
 
 
 ## Boot nasıl gerçekleşir?
+
+Bilgisayarınızı açtığınız andan itibaren, sisteminizde yüklü olan çeşitli yazılımlar, çalışarak işletim sisteminiz yükleninceye kadar sırası ile çalışarak birbirlerini yüklerler. Bu zincirleme işlem işletim sisteminiz ile bilgisayarın donanımları arasındaki uyumu sağlar.
+
+Bilgisayarınızda ilk çalışan yazılım 
+
+[Buraya katkı verebilirsiniz]
+
+
+
+[Libreboot ve GPG ile Boot Güvenliği](libreboot_grub.md)
+[UEFI ile /boot Sektörü Şifreleme](sifreli_boot.md)
