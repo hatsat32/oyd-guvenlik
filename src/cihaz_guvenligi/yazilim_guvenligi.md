@@ -9,8 +9,8 @@ Bir saldırgan, yazılımlarınızdaki bir zayıflığı kullanarak cihazların�
 Otomatik güncellemeler nasıl açılır?
 
 * **GNU/Linux**: Çoğu dağıtımda otomatik güncelleştirmeler zaten açık gelir ve kritik güncelleştirmeler konusunda uyarılırsınız. Elle güncelleme yapmak isterseniz kullandığınız dağıtımın grafik arayüzünden faydalanabilir veya;
-	* APT kullanan dağıtımlar için (Debian, Ubuntu vs.): Terminalden **sudo apt-get update & sudo apt-get upgrade -y** komutunu kullanarak güncelleme yapabilirsiniz.
-	* RPM kullanan dağıtımlar için (Red Hat, Fedora, CentOS vs.): Terminalden **sudo yum update -y** komutunu kullanarak güncelleme yapabilirsiniz.
+	* APT kullanan dağıtımlar için (Debian, Ubuntu vs.): Uçbirimden **sudo apt-get update & sudo apt-get upgrade -y** komutunu kullanarak güncelleme yapabilirsiniz.
+	* RPM kullanan dağıtımlar için (Red Hat, Fedora, CentOS vs.): Uçbirimden **sudo yum update -y** komutunu kullanarak güncelleme yapabilirsiniz.
 * **macOS**: **Apple** menüsüne tıklayın, **Sistem tercihleri** > **App Store** > **Güncellemeleri otomatik olarak denetle**
 * **Windows**: **Başlat** çubuğuna tıklayın, daha sonra **Ayarlar** > **Güncelleme ve güvenlik** > **Windows Güncellemeleri** > **İleri seçenekler**i tıkladıktan sonra **Güncellemeler nasıl indirilsin** seçeneğinin altındaki **Otomatik (önerilen)**'i seçin.
 
