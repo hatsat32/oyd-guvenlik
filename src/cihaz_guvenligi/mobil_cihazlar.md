@@ -10,7 +10,7 @@ Cihazınızı içinde bulunduğunuz duruma göre seçmelisiniz:
 
 #### Yüksek risk
 
-Eğer riskiniz yüksek ise, **cep telefonunuzu hassas hiç bir şey için kullanmayın**. Bunun sebebi, tüm telefonların sizi kablosuz telefon ağına ("hücresel ağ") bağlayan, "[baseband modem]" olarak adlandırılan bir donanım içermesidir. Bu modemler özel mülktür ve tonla uzaktan kötüye kullanılabilecek güvenlik açığı içermektedir. Bir kere aşıldıktan sonra, baseband modem iletişiminizi takip etmek ve kişisel verilerinizi elde etmek için kullanılabilir.
+Eğer riskiniz yüksek ise, **cep telefonunuzu hassas hiç bir şey için kullanmayın**. Bunun sebebi, tüm telefonların sizi kablosuz telefon ağına (hücresel ağ) bağlayan, "[baseband modem]" olarak adlandırılan bir donanım içermesidir. Bu modemler özel mülktür ve tonla uzaktan kötüye kullanılabilecek güvenlik açığı içermektedir. Bir kere aşıldıktan sonra, baseband modem iletişiminizi takip etmek ve kişisel verilerinizi elde etmek için kullanılabilir.
 
 [Replicant][] tamamen özgür bir Android dağıtımı olarak sadece belirli cihazlar üzerinde çalışmaktadır. Çalıştığı cihazların temel özelliği [baseband modem]'i işlemciden izole etmenin bir imkanı olmasıdır. [Replicant] aynı zamanda, cihaz  üzerindeki, Wi-Fi, Bluetooth, GPS gibi donanımları özgür sürücüleri bulunmadığı için çalıştırmaz. Şayet mobil cihaz kullanmanız gerekiyorsa ve bu cihaz ile önemli veriler işleyecekseniz [Replicant] kurulu bir telefon iyi bir tercih olabilir.
 
