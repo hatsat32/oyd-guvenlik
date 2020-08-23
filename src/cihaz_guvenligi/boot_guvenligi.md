@@ -38,5 +38,6 @@ Sisteminizdeki UEFI veya Libreboot bir önyükleyici çalıştıracaktır. GNU/L
 
 ## Boot güvenliğine giriş yapın
 
-[Libreboot ve GPG ile Boot Güvenliği](libreboot_grub.md)
-[UEFI ile /boot Sektörü Şifreleme](sifreli_boot.md)
+* [Libreboot ve GPG ile Boot Güvenliği](libreboot_grub.md)
+
+* [UEFI ile /boot Sektörü Şifreleme](sifreli_boot.md)
