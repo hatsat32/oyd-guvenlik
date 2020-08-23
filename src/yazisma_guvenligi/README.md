@@ -1,45 +1,53 @@
 # Yazışma Güvenliği
 
-__Yazışma Güvenliği__ mesajlarınızın gönderilirken sizin cihazınızda şifrelendiğinden ve sadece amaçlanan alıcısının okuyabileceğinden emin olmaktır. Her ne kadar [ağ güvenliği](../ag_guvenligi/) ve [cihaz güvenliği](../cihaz_guvenligi/) önemli olsalar da, mesaj şifrelemek çoğu durumda gereklidir:
+__Yazışma Güvenliği__Mesajların iletildiği hat üzerinde sunucu dahil kimsenin okuyamamasıdır. Bunun için gönderilecek mesajların cihazları terk etmeden şifrelenmesi gereklidir. [ağ güvenliği](../ag_guvenligi/) ve [cihaz güvenliği](../cihaz_guvenligi/) mesajların mahremiyetini ve güvenliğini bir noktaya kadar sağlasa da uçtan uca şifreleme aşağıdaki özellikleri iletişiminizin güvenliğine ekler:
 
-* __Gizlilik__: Mesajları şifrelemek, mesajın sadece amaçlanan taraflarca okunabileceğinden emin olmanın tek yoludur.
-* __Doğrulama__: Mesaj şifrelemek, mesajlaştığınız kişinin kimliğinden emin olmanın tek yoludur.
+* __Gizlilik__: Mesajların şifrelenmesi, sadece gönderilmek istenen kişinin bu mesajları okuyabileceğinin garantisidir.
+* __Doğrulama__: Mesajların şifrelenmesi ve imzalanması yazışılan kişinin kimliğinden emin olmanın tek yoludur.
 
-Mesaj şifrelemek kimi zaman zorlu olabilir:
+Şifreli yazışma yapmak bir miktar emek gerektirmektedir:
 
-* __Bir cihaz sahibi olmalısınız__: Mesaj şifrelemenin fikri, mesajlarınızın şifrelenmesi için bir başka üçüncü kişiye güvenmemenizdir. Bu sebeple tüm şifreleme sizin cihazınızda gerçekleştiğinden bir cihaz sahibi olmanız gereklidir.
-* __Meşakatli öğrenme süreci__: Şifreleme yazılımlarını doğru kullanmak için hatrı sayılır bir öğrenme sürecini; açık anahtar, özel anahtar, anahtarlıklar gibi kavramlar için geçirmeniz gerekir.
-* __Sınırlı kullanıcı sayısı__: Mesaj şifreleme kullanmak, sadece size aynı yazılımı kullanan kişilerle güvenli iletişim kurabilmeniz anlamına gelir.
+* __Bir cihaz sahibi olmalısınız__: Mesaj şifrelemenin temeli, mesajlarınızın şifrelenmesi için bir başka kişiye güvenmemekte yatar. Bu sebeple tüm şifreleme işlemi sizin cihazınızda gerçekleştiğinden, bu işlemi yapmaya yeterli bir cihaz sahibi olmanız gereklidir.
+* __Meşakatli öğrenme süreci__: Şifreleme yazılımlarını doğru kullanabilmek için bir miktar deneyim gereklidir. Açık anahtar, özel anahtar, imzalama gibi kavramlara farkındalık sahibi olmanız süreci güvenli yürütebilmeniz için elzemdir.
+* __Sınırlı kullanıcı sayısı__: Ne yazık ki herkes şifreli yazışabileceğiniz kişiler bugünlerde görece yaz. Yazılımlardaki gelişme ve güvenlik endişeleri ile bu sayı giderek artsa bile çevrenizdeki insanlara konu hakkında bilgi verip yardım etmeniz gerekebilir.
 
-Barizdir ki bu tedbirler cihazınızın güvenliği delindiyse bir işe yaramayacaktır.
+Mesajlarınızın güvenliğinin cihazınızın güvenliğinden geçtiğini de unutmamalısınız. Dünyanın en ileri şifreleme teknolojileri şifrelemenin yapıldığı cihaz kadar güvenli olabilir. Bu sebepten [cihaz güvenliği](/cihaz_guvenigi/README.md) konusunda dikkat etmelisiniz.
 
-## Mesaj Şifreleme Hakkında
 
-Bu sayfalarda anılan "mesaj şifreleme" teknik olarak "açık-anahtar kriptografidir" ve şu şekilde çalışmaktadır:
+## Mesaj şifreleme hakkında
 
-* __Özel anahtar__: Herkes kendi özel anahtarına sahiptir. İsimden anlaşılabileceği gibi, bu anahtar gizli tutulmalıdır. Bu anahtarı size şifrelenen mesajları okumak için kullanırsınız.
+Bugün iletişim için kullanılan en yaygın şifreleme yöntemi [açık anahtar şifrelemesi veya asimetrik şifrelemedir.](https://en.wikipedia.org/wiki/Public-key_cryptography)
 
-* __Açık anahtar__: Herkes bir açık anahtara da sahiptir. Bu anahtar genellikle her yere yayınlanır. Şayet bir kimse size şifreli mesaj göndermek istiyorsa sizin açık anahtarınızı kullanarak mesajını şifreler. Sadece açık anahtarın çifti olan özel anahtara sahip olan kişi mesajı deşifre edebilir.
+* __Özel anahtar__: Şifreli iletişime taraf olacak herkes bir özel anahtar sahibidir. Bu anahtar isminden de anlaşılacağı üzere gizli kalmalıdır keza şifrelenmiş mesajların açılması ancak bu anahtarla mümkündür. Bu anahtar aynı zamanda kişilerin kimliklerini ve mesajlarının doğruluğunu kanıtlamak için yapacakları imzalama işlemini de sağlar.
 
-### Mesaj şifrelemeyi öğrenmek için öneriler
+* __Açık anahtar__: Her özel anahtar bir açık anahtar içerir. Açık anahtar bir mesajın sadece şifrelenmesini sağlar fakat şifreyi çözemez. Açık anahtar ile şifrelenen bir veri ancak özel anahtar ile açılabilir. Bu tek yönlü ilişki sayesinde açık anahtar ile herkes özel anahtarın sahibine başkaca bir bilgiye gerek olmadan şifreleme yapabilir. Açık anahtar bu sebepten anahtar sunucularında, e-posta eklerinde yayınlanır.
 
-Her ne kadar en yüksek korumayı sağlasa da, açık anahtar şifreleme kullanmak bir maceradır. Yolculuğunuzu daha az korkutucu kılmak için aşağıdakileri aklınızda tutmanızı öneririz:
+Asimetrik şifreleme pek çok sistemde kullanılmakla en yaygın ve bilinen uygulaması [GnuPG](openpgp.md) ile şifreli e-posta yazışmasıdır. GPG kendini kanıtlamış çok amaçlı bir yazılım olarak pek çok amaçla şifreleme yapmak için kullanılabilir.
 
-* __Kendinizi adamaya hazır olun__: Açık anahtar şifrelemesini kullanmak bir çok yeni yetenek ve jargonu öğrenmeye hevesli olmayı gerektirir. Açık anahtar kullanımının genel kabulüne daha çokça vakit olduğundan bu emeği harcamak faydasız gibi görünebilir fakat kritik kitleye ulaşmak için bizim gibi erkenden bu işe girenlerin olması gereklidir.
+GnuPG gibi yazılımlar kullanıcıların anahtarlarını yönetmesini gerektirse bile günümüzde pek çok yazılım bu gerekliliği ortadan kaldırmakta. Özellikle [anlık yazışma](anlik_yazisma.md) yazılımları kullanıcılarına basit arayüzler aracılığı ile görece kolay şifreleme imkanları sunmaktadır. Arkaplanda çalışan kriptografi açık/özel anahtar ikilisine dayalı olsa da kullanıcıların bu anahtarlarla hiç bir ilgileri olmamaktadır. Bu durum kimi taraflarca güvenli yazışmayı kolaylaştırdığı için övülmekte kimileri tarafından ise kullanıcıları bilgiden yalıtarak özel sistemlere mahkum ettiği iddia edilmektedir.
 
-* __Şifreli arkadaşlar edinin__: çoğu iletişiminiz şifreli olmasa bile kendinize açık anahtar şifreleme antrenmanı yapabileceğiniz bir arkadaş bulup kendisi ile güvenli iletişim kurun.
 
-* __Hevesli insanlara takılın__: açık anahtar şifrelemesi kullanan insanlar genellikle bu konuda reklam yapmaya ve diğer insanlara yardım etmeye çok heveslidiler. Sorularınızı cevaplayacak ve size destek olacak böyle birini bulun.
+### Şifreli yazışmaya giriş yapmak için öneriler
 
-### Şifreli Mesajlaşmanın Sınırları
+Şifreleme teknolojileri çağdaş yaşamın en güvenli iletişim imkanlarını sağlayacak olsa da kimi zaman zorluklar ve anlaşılmazlıklar da getirebilmektedir. Şayet güvenliğinizi şifreleme teknolojileri ile sağlamaya hazırlanıyorsanı aşağıdaki önerilerimizi aklınızda tutmanızı dileriz:
 
-Her ne kadar şifreleme ile e-postanızın içeriğini saklayabiliyor olsanız da şifreleme kime e-posta gönderdiğinizi ve kimden e-posta aldığınızı *saklamaz*. Bu açık anahtar şifrelemesi ile bile pek çok kişisel bilginin güvende olmadığı anlamına gelir.
+* __Kendinizi adamaya hazır olun__: Şifreleme teknolojileri, pek çok insan için hiç duyulmamış terimler ve becerileri de yanında getirmektedir. Şayet kullanıcısına kolaylık(!) sunan bir yazılım kullanmıyoranız bu jargon ve becerileri de elde etmeniz gerekecektir. Hali ile okumaya ve öğrenmeye zaman ve emek ayırmaya hazır olmalısınız. Aynı zamanda edindiğiniz deneyimi çevrenizle paylaşıp başkaca insanların güvenlik süreçlerini kolaylaştırabilirsiniz.
 
-Neden? Bir kimsenin gönderdiğiniz e-postanın içeriği hakkında hiçbir şey bilmediğini düşünün, fakat kiminle e-postalaştığınız, ne sıklıkla bunu yaptığınız ve başlıklar biliniyor olacaklar. Bu bilgi bağlantılarınız, alışkanlıklarınız, tanıdıklarınız ile ilgi ve etkinlikleriniz hakkında çokça şey söyleyecektir.
+* __Şifreli arkadaşlar edinin__: Komik gelse de çoğu zaman şifreli iletişim yapmanın en zor tarafı konuşacak birini bulmaktır. Günümüzde şifreli iletişim teknolojileri yaygınlık kazansa da hala [özür olmayan yazılımlar](https://oyd.org.tr/yazilar/ozgur-yazilim/) kullananlar çoğunlukta. Bu sebepten çevrenize yardım ederek sizinle ve başkaları ile güvenli yazışmalarını sağlamak zorunda kalabilirsiniz.
 
-İlişkilerinizi gizli tutabilmenin tek yolu buna saygı gösterecek servis sağlayıcılar aracılığı ile iletişim kurmaktır. [[Radikal servis sağlayıcılar litemize->radical-servers]] bu tip hizmet sağlayıcıları incelemek adına göz atabilirsiniz.
+* __Hevesli insanlara takılın__: Şifreleme ve güvenli iletişim konusunda zaman ve emek harcamış insanlar genel olarak deneyimlerini paylaşmak konusunda heveslidir. Şayet aklınıza takılan sorular var ise veya insanlara yardım etme isteği taşıyorsanız çevrenizde bu konuda çalışma yapmakta olan topluluk veya insanlarla temasa geçin. Size zevkle yardımcı olacaklardır.
 
-## Mesaj Şifreleme Kullanın
+
+### Şifreli mesajlaşmanın sınırları
+
+Şifreleme her ne kadar e-postalarınızın, mesajlarınızın içeriğini saklayabiliyor olsa da [üstveri](https://en.wikipedia.org/wiki/Metadata) **bu korumanın kapsamına girmez.** Üstveri kimin kiminle yazıştığını, ne zaman yazıştığını ağ üzerindeki diğer kişilere açık edebilir. Bunu mektubunuzun üstüne adres yazmak zorunda olmanızla kıyaslayabilirsiniz. Bu sebepten şifrelemenin her soruna çözüm olmadığına dikkat etmelisiniz.
+
+Kimin kiminle yazıştığının bilinmesinin neden önemli olduğunu merak edebilirsiniz. İnsanlar ve ilişkileri hakkında bilgi toplamak için her zaman mesajların içeriğine ulaşılması gerekmeyebilir. Bu bakımdan sadece kimin kiminle, ne sıklıkla yazıştığı hakkında toplanan veri herkesin sosyal çevresini ve kişilerin birbirine olan önemini ortaya koyacaktır. Buradan hareketleriniz, sosyal yaşantınızdaki değişiklikler gibi çokça önemli bilgi mesajlarınızın içeriği okunmadan dahi elde edilebilir. ABD istihbarat teşkilatının eski bir başkanı, insanları üstveriye bağlı olarak öldürdüklerine dair bir açıklama bile yapmıştır.
+
+Bu bakımdan ilişkilerinizi gizli tutabilmek önemlidir. Bunun için size ve iletişiminizin mahremiyetine saygı gösteren hizmet sağlayıcılardan hizmet alabilir veya temel iletişim imkanlarınızı sağlayacak sunucuları kendiniz işletebilirsiniz. Rehberimizde konuya ilişkin pek çok yardımcı kaynak bulabilirsiniz.
+
+
+## Yazışma güvenliğine giriş yapın
 
 * [Şifreli E-Posta](openpgp.md)
 * [OTR](otr.md)
