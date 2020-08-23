@@ -72,8 +72,9 @@ Gelen soruyu evet olarak cevaplamanız durumunda Silence karşı tarafa anahtar 
 
 Her uçtan uca şifreleme aracında olduğu gibi Silence kullanırken de konuştuğunuz kişiler ile anahtarlarınızı **mutlaka** doğrulamalısınız. Aksi halde iletişimizin arasına giren kötü niyetli bir kişinin iletişiminizi [takip edebilir veya dilediği gibi değiştirebilir](https://en.wikipedia.org/wiki/Man-in-the-middle_attack). Bunu engellemek için konuştuğunuz kişinin bölümüne gelip asmakilit simgesine tıklayıp "verify identity" (kimlik doğrula) bölümünü açıp ilgili alandaki size ve karşı tarafa ait anahtarların doğru olduğunu kontrol etmelisiniz.
 
-![alt-text](silence/verify.png)
 ![alt-text](silence/anahtarlar.png)
+
+![alt-text](silence/verify.png)
 
 Bunu doğrulamayı tercihen sesli bir iletişim kanalı üzerinden yapabilirsiniz. GSM araması yerine [signal](signal.md) veya Jitsi araması yaparak daha güvenli bir doğrulama gerçekleştirebilirsiniz. Her halukarda en iyisi bu karşılaştırmayı yüzyüze yapmaktır. Bu durumda anahtarların göründüğü ekranın sağ üst köşesindeki karekod okutma imkanı çok kolaylık sağlayacaktır. Açılan menüden kendi anahtarınızı karekod olarak göstermeyi veya karşı tarafın karekodunu taramayı seçebilirsiniz.
 
