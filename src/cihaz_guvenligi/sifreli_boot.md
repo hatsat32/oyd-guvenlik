@@ -6,15 +6,15 @@ GNU/Linux dağıtımlarının kurulum aşamasında sunduğu tam disk şifreleme 
 
 ## Boot sektörünü şifrelemek ne sağlar?
 
-* Boot sektörünün şifrelenmesi bilgisayarınıza kapalı iken erişen fiziken erişen bir kişinin kötücül bir çekirdek veya grub yapılandırmasını sürücünüze yazarak bilgisayarınızın güvenliğini elinizden almasına yüksek oranda engel olur. 
+Boot sektörünün şifrelenmesi bilgisayarınıza kapalı iken erişen fiziken erişen bir kişinin kötücül bir çekirdek veya grub yapılandırmasını sürücünüze yazarak bilgisayarınızın güvenliğini elinizden almasına yüksek oranda engel olur. 
 
 ## Boot sektörünün şifrelenmesi
 
 **UYARI: Bu rehberde yapacağınız işlemler işletim sisteminizin çalışmamasına sebebiyet verebilir. Yedek almadan bu rehberde anlatılanları uygulamamanız hararetle önerilir**
 
-Bu rehber anlatımında [Cryptsetup-team](https://cryptsetup-team.pages.debian.net/cryptsetup/encrypted-boot.html) rehberini esas almış ve kimi noktalarda değişiklikler vardır. Test Fedora 31 dağıtımı ile UEFI kullanan Dell XPS 13 cihaz üzerinde yapmıştır.
+Bu rehber anlatımında [Cryptsetup-team](https://cryptsetup-team.pages.debian.net/cryptsetup/encrypted-boot.html) rehberini esas almış ve kimi noktalarda değişiklikler getirmiştir. Test Fedora 31 dağıtımı ile UEFI kullanan Dell XPS 13 cihaz üzerinde yapmıştır.
 
-Öncelikle bilgisayarınızın kurulum aşamasında LUKS şifreleme ile kurulduğu varsayımı ile aşağıdaki komut ile sürücünüzün düzenine bakın.
+Öncelikle bilgisayarınızın kurulum aşamasında LUKS şifreleme ile kurulduğu varsayımı ile aşağıdaki komut aracılığıyla sürücünüzün düzenine bakın.
 
 ```
 root@debian:~# lsblk -o NAME,FSTYPE,MOUNTPOINT /dev/sda
@@ -29,9 +29,9 @@ sda
 ```
 Yukarıda bulunan /boot olarak işaretli olan "sda1" kurulumumuzun konusu olan donanımı ifade etmektedir. Bu değer sizin cihazınızda farklı olabilir. **Doğru cihazı seçtiğinizden emin olun.** Bu rehberde hep sda1 olarak kullanılacaktır.
 
-Boot sektörünü şifrelemek için ilgili sektör silip tekrar yapılandırılacağı için öncelikle /boot altında olan dosyaların bir kopyasının alınması gerekmektedir. Sisteminizde bu rehber dahilinde yapacağınız pek çok işlem root yetkisi gerektrmektedir. Başlamak için;
+Boot sektörünü şifrelemek için ilgili sektör silip tekrar yapılandırılacağı için öncelikle /boot altında olan dosyaların bir kopyasının alınması gerekmektedir. Sisteminizde bu rehber dahilinde yapacağınız pek çok işlem root yetkisi gerektirmektedir. Başlamak için;
 
-/boot dizinini salt-okunur olarak mount edin.
+/boot dizinini salt-okunur olarak bağlayın edin.
 
 `mount -oremount,ro /boot`
 
@@ -43,11 +43,11 @@ Boot sektörünü şifrelemek için ilgili sektör silip tekrar yapılandırıla
 
 `tar -C /boot --acls --xattrs --one-file-system -cf /tmp/boot.tar .`
 
-/boot dizinini unmount edin.
+/boot dizinini çıkarın.
 
 `umount /boot`
 
-Eğer /boot/efi gibi alt noktalar var ise cihazınızda onları da unmount edin.
+Eğer /boot/efi gibi alt noktalar var ise cihazınızda onları da çıkarın.
 
 `umount /boot/efi`
 
@@ -55,11 +55,13 @@ Eğer /boot/efi gibi alt noktalar var ise cihazınızda onları da unmount edin.
 
 /boot sektörünün olacağı cihazı LUKS1 ile şifreleyin.
 
-**Şayet cihazınızın /root sektörü de şifreli ise aşağıda belirleyeceğiniz parolanın farklı olması durumunda bilgisayarınızın her açılışında 3 kere parola girmeniz gerekeceğini hatırlatmak isteriz. Bu durumu önlemenin çeşitli yolları olsa da güvenlik endişeniz yüksek ise 3 kere parola girmeye katlanmanız veya aynı parolayı hem /boot hem /root sektörleri için belirlemenizi öneririz. Şayet aynı parolayı kullanırsanız işletim sisteminiz otomatik otomatik olarak 1 parolayı girişini atlayacaktır.**
+**ÖNEMLİ NOT: Şayet cihazınızın /root sektörü de şifreli ise aşağıda belirleyeceğiniz parolanın farklı olması durumunda bilgisayarınızın her açılışında 3 kere parola girmeniz gerekeceğini hatırlatmak isteriz. Bu durumu önlemenin çeşitli yolları olsa da güvenlik endişeniz yüksek ise 3 kere parola girmeye katlanmanız veya aynı parolayı hem /boot hem /root sektörleri için belirlemenizi öneririz. Şayet aynı parolayı kullanırsanız işletim sisteminiz otomatik otomatik olarak 1 parola girişini atlayacaktır.**
+
+
+`cryptsetup luksFormat --type luks1 /dev/sda1`
+
 
 ```
-cryptsetup luksFormat --type luks1 /dev/sda1
-
 WARNING!
 ========
 This will overwrite data on /dev/sda1 irrevocably.
