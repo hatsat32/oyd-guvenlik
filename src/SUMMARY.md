@@ -25,7 +25,7 @@
     - [OTR İle Anlık Yazışma](yazisma_guvenligi/otr.md)
     - [OMEMO İle Anlık Yazışma](yazisma_guvenligi/omemo.md)
     - [Signal İle Anlık Yazışma](yazisma_guvenligi/signal.md)
-    - [Silence İle SMS Şifreleme](yasisma_guvenligi/silence.md)
+    - [Silence İle SMS Şifreleme](yazisma_guvenligi/silence.md)
 - [Ağ Güvenliği](ag_guvenligi/README.md)
   - [Güvenli Web Gezintisi](ag_guvenligi/guvenli_web_gezintisi.md)
   - [Tor](ag_guvenligi/tor.md)
