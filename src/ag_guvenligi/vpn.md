@@ -1,6 +1,25 @@
 # VPN (Virtual Private Network)
 
-VPN temel olarak iki yerel ağın güvensiz İnternet bağlantısı üzerinden birbirine güvenli şekilde bağlanabilmesi için geliştirilmiş bir teknolojidir. Basitçe iki bilgisayarın birbirine şifrelenmiş bir kanal üzerinden bağlanmasını sağlar. Temel olarak şirketlerin ağ altyapılarına uzaktan güvenli erişim için tasarlanmış olmasına rağmen günümüzde en yaygın kullanımı kullanıcıları tehlikeli ağlardan güvenli şekilde İnternet'e erişmesini sağlamak üzerinedir.
+- [VPN ne işe yarar?](#vpn-ne-işe-yarar)
+- [Neden VPN kullanmalıyım?](#neden-vpn-kullanmalıyım)
+- [Ücretsiz VPN olur mu?](#Ücretsiz-vpn-olur-mu)
+- [VPN hizmeti seçerken nelere dikkat emeliyim?](#vpn-hizmeti-seçerken-nelere-dikkat-etmeliyim)
+- [VPN Kurulumu](#vpn-kurulumu)
+  - [VPN Kullanım Stratejisi](#vpn-kullanım-stratejisi)
+  - [OpenVPN Sunucusu Kurulumu](#openvpn-sunucusu-kurulumu)
+  - [İstemci Kurulumu](#İstemci-kurulumu)
+    - [GNU/Linux - Masaüstü](#gnulinux---masaüstü)
+    - [GNU/Linux - Uçbirim](#gnulinux---uçbirim)
+    - [Android](#android)
+    - [OpenWRT Yönlendirici](#openwrt-yönlendirici)
+      - [Uçbirim ile](#openwrt---uçbirim)
+      - [Web arayüzü ile](#openwrt---luci)
+- [VPN Bağlantısının Kesilmesi Sorunsalı](#vpn-bağlantısının-kesilmesi-sorunsalı)
+  - [GNU/Linux](#gnulinux)
+    - [UFW](#ufw)
+  - [Android](#android-1)
+
+VPN temel olarak; iki cihazın, yerel ağlarının güvensiz İnternet bağlantısı üzerinden birbirine güvenli şekilde bağlanabilmesi için geliştirilmiş bir teknolojidir. İki bilgisayarın birbirine şifrelenmiş bir kanal üzerinden bağlanmasını sağlar. Temel olarak şirketlerin ağ altyapılarına uzaktan güvenli erişim için tasarlanmış olan VPN'in günümüzde en yaygın kullanımı, kullanıcılarının tehlikeli ağlardan güvenli şekilde İnternet'e erişmesini sağlamaktır.
 
 ## VPN ne işe yarar?
 
@@ -8,9 +27,9 @@ VPN temel olarak size şunları sağlar;
 
 * İletişiminizi cihazınız ile VPN sağlayıcınız arasında şifreleyerek gözetime, engele veya değiştirilmeye uğramasına engel olur.
 
-* VPN'e bağlı olduğunuz sürece VPN sağlayıcınızın sunucusundan çıkış yapacağınız için girdiğiniz web siteleri veya kullandığınız hizmetler VPN IP adresinizi göreceğinden kim olduğunuzu siz belirtmediğiniz sürece bilemeyecektir.
+* VPN'e bağlı olduğunuz sürece VPN sağlayıcınızın sunucusundan çıkış yapacağınız için girdiğiniz web siteleri veya kullandığınız hizmetler VPN IP adresinizi göreceğinden, kim olduğunuzu siz belirtmediğiniz sürece bilmeleri zorlaşacaktır.
 
-* VPN kimi koşullar için yeterince anonimlik sağlamamakla beraber, bağlı olduğunuz VPN sunucusundaki herkes ile aynı IP adresini paylaştığınızdan kalabalığın içine karışmış olursunuz.
+* VPN kimi koşullar için yeterince anonimlik sağlamamakla beraber, eğer ortak bir VPN sunucusu kullanıyorsanız, bağlı olduğunuz VPN sunucusundaki herkes ile aynı IP adresini paylaştığınızdan kalabalığın içine karışmış olursunuz.
 
 ## Neden VPN kullanmalıyım?
 
@@ -24,13 +43,13 @@ VPN kullanmak için çok çeşitli sebepleriniz olabilir;
 
 ## Ücretsiz VPN olur mu?
 
-Türkiye'de ve dünyada yaşanan her engelleme ve sansür girişiminde akla ilk gelen şey VPN idir. Neredeyse her tavsiye ise **bedava** VPN hizmetleri üzerinden yürür. Doğal olarak çoğu insanın sansür durumunda tek amacı sansürü aşarak ihtiyaç duydukları bilgiye veya hizmete erişmek olduğundan ve VPN teknolojisi hakkında kısıtlı bilgiye sahip olmalarından dolayı, olası tehlikelerin üzerine düşünmedikleri söylenebilir. Bir VPN hizmet sağlayıcısı sunucusuna bağlı olduğunuz sürece;
+Türkiye'de ve dünyada yaşanan her engelleme ve sansür girişiminde akla ilk gelen çözüm VPN'dir. Neredeyse her tavsiye ise **bedava** VPN hizmetleri üzerinden yürür. Doğal olarak sansür durumunda VPN kullanan çoğu insanın, tek amacı sansürü aşarak ihtiyaç duyduğu bilgiye veya hizmete erişmek ve VPN teknolojisi hakkındaki bilgisi kısıtlı olduğundan, olası tehlikelerin üzerine düşünmediği söylenebilir. Bir VPN hizmet sağlayıcısı, sunucusuna bağlı olduğunuz sürece;
 
 * Sizin IP adresinizi ve buna bağlı olarak konumunuzu bilebilir.
 
-* Ziyaret ettiğiniz web sitelerini, kullandığınız hizmetleri [içeriğini bilemese](tls.md) bile kaydedebilir.
+* Ziyaret ettiğiniz web sitelerini ve kullandığınız hizmetleri, [içeriğini bilemese](https://tr.wikipedia.org/wiki/Transport_Layer_Security) bile kaydedebilir.
 
-* Şayet tarayıcı eklentisi şeklinde VPN istemcisi kurulduysa kötücül bir eklenti tüm tarama verisine erişebilir.
+* Şayet VPN istemcisi bir tarayıcı eklentisi şeklinde kurulduysa, kötücül bir eklenti tüm tarama verisine erişebilir.
 
 * Dikkatli olunmazsa kötücül bir VPN sunucusu iletişimizin arasına girip verilerinizi çalabilir, size istenmeyen reklamlar sunabilir veya cihazınıza zarar vermeye çalışabilir.
 
@@ -48,13 +67,13 @@ Bu duruma istisna sayılabilecek birkaç örnek bulunmakta. Bu istisnalar, düny
 
 * **[Özgür yazılım](https://oyd.org.tr/yazilar/ozgur-yazilim/)** kullanmayan hiç bir VPN sağlayıcıya güvenmeyin. VPN ile tüm ağ trafiğinizi teslim ettiğiniz bir şirketin kullandığı yazılımların sizin özgürlüğünüze karşı olması hiç güven telkin eden bir unsur değildir.
 
-* Kayıt tutmama politikası pek çok VPN servisinin iddiasıdır. Bu, sunucularına yapılan bağlantılara ilişkin kayıtların hiç tutulmadığını ifade eder. Elbette geçmişte bunun sadece bir iddia olduğu ve doğrulanamayacağını gösteren sözünü tutmamış [VPN şirketleri](https://www.comparitech.com/blog/vpn-privacy/ufo-vpn-data-exposure/) vardır. Bazı hizmet sağlayıcılar sunucularında sabit sürücü bile bulundurmadıklarını ifade etmektedir. Bu konuda diğer konularda olduğu gibi VPN sağlayıcının sözüne güvenmek zorunluluğu olduğundan daha önce devletlere bilgi sağlayıp sağlamadığına bakılması önemli olabilir. [PureVPN](https://restoreprivacy.com/vpn-logs-lies/) vakası incelemeye değer bir örnek bu konuda. Daha sonra VPN sağlayıcının geçmişi, kaç yıldır hizmette olduğu ve bağımsız birinci elden deneyim ve yorumları okumak faydalıdır.
+* Kayıt tutmama politikası pek çok VPN servisinin iddiasıdır. Bu, sunucularına yapılan bağlantılara ilişkin kayıtların hiç tutulmadığını ifade eder. Elbette geçmişte bunun sadece bir iddia olduğu ve doğrulanamayacağını gösteren sözünü tutmamış [VPN şirketleri](https://www.comparitech.com/blog/vpn-privacy/ufo-vpn-data-exposure/) vardır. Bazı hizmet sağlayıcılar sunucularında sabit sürücü bile bulundurmadıklarını ifade etmektedir. Bu konuda diğer konularda olduğu gibi VPN sağlayıcının sözüne güvenmek zorunluluğu olduğundan daha önce devletlere bilgi sağlayıp sağlamadığına bakılması önemli olabilir. [PureVPN](https://restoreprivacy.com/vpn-logs-lies/) vakası bu konuda incelenmeye değer bir örnek. Daha sonra VPN sağlayıcının geçmişini, kaç yıldır hizmette olduğunu ve birinci elden, bağımsız kullanıcı deneyim ve yorumlarını okumak faydalıdır.
 
-* VPN sağlayıcınızın özgür yazılım olan [OpenVpn](https://openvpn.net/) desteklediğinden ve yapılandırma (config) dosyalarını sizin ile paylaştığından emin olun. Bu sayede GNU/Linux ve Android işletim sistemi sahip cihazlarınızda kolaylıkla yerleşik VPN istemcilerini kullanabilirsiniz. Bu imkan aynı zamanda VPN sağlayıcının yazılımına mahkum kalmamanızı da garanti eder.
+* VPN sağlayıcınızın özgür yazılım olan [OpenVpn](https://openvpn.net/) desteklediğinden ve yapılandırma (config) dosyalarını sizinle paylaştığından emin olun. Bu sayede GNU/Linux ve Android işletim sistemine sahip cihazlarınızda kolaylıkla yerleşik VPN istemcilerini kullanabilirsiniz. Bu imkan aynı zamanda VPN sağlayıcının yazılımına mahkum kalmamanızı da garanti eder.
 
 * ABD, Birleşik Krallık ve Almanya gibi ülkelerin Internet kullanıcılarını gözetlemek ve profillemek için çokça çabaya giriştiği ve yasal(!) imkanları kullanarak pek çok şirketten zorla veri aldığı bilinmektedir. Bu bakımdan VPN sağlayıcınızın bu konuda kötü bir geçmişi olmayan ve hukuki güvenlik bakımından iyi sayılan ülkelerden seçmeniz kesinlikle tavsiye edilir. Hollanda veri merkezlerinin hızından dolayı, İsviçre'de AB hukuk sisteminin dışında ve mahremiyet yanlısı sağlam hukuk sisteminden dolayı tercih edilmektedir.
 
-* VPN sağlayıcınızın mutlaka bağlantı için farklı protokollere izin verdiğinden emin olun. Çoğu VPN engellemesi standart portlar ve protokollere yönelir. Şayet elinizde geniş bir bağlantı imkanı olursa bu tip yasakları aşmanız çok kolaylaşacaktır. Bunlar arasında en önemlileri [SSL tünelleme](https://en.wikipedia.org/wiki/Secure_Socket_Tunneling_Protocol), [SSH tünelleme](https://en.wikipedia.org/wiki/Tunneling_protocol#Secure_Shell_tunneling) yer almaktadır.
+* VPN sağlayıcınızın mutlaka bağlantı için farklı protokollere izin verdiğinden emin olun. Çoğu VPN engellemesi standart portlar ve protokollere yönelir. Şayet elinizde geniş bir bağlantı imkanı olursa bu tip yasakları aşmanız kolaylaşacaktır. Bunlar arasında en önemlileri [SSL tünelleme](https://en.wikipedia.org/wiki/Secure_Socket_Tunneling_Protocol), [SSH tünelleme](https://en.wikipedia.org/wiki/Tunneling_protocol#Secure_Shell_tunneling) yer almaktadır.
 
 * Herhangi bir bağlantı kısıtlaması özgürlüğünüze karşı bir harekettir. Bu bakımdan bir VPN sağlayıcı sizin torrent kullanmanıza veya indirme hızınıza karışıyorsa hem bir çeşit kayıt tutuyordur hem de bağlantı özgürlüğünüzü sınırlıyordur.
 
@@ -86,7 +105,7 @@ Diğer seçeneğiniz ise işletim sisteminiz tarafından desteklendiği durumlar
 
 ### OpenVPN Sunucusu Kurulumu
 
-OpenVPN sunucusu kurulumu için [github.com/Nyr](https://github.com/Nyr) deposunda bulunan ve aktif olarak güncellenen bir bash betiğini kullanacağız. Bu betik Ubuntu, Debian, Centos veya Fedora dağıtımları üzerinde gerekli yüklemeleri ve ayarları yapıp kullanıma hazır bir OpenVPN sunucusu çalıştırıyor. `wget https://git.io/vpn -O openvpn-instal.sh` komutu ile betik çalışma dizinine kaydedilebilir ve `bash openvpn-install.sh` komutu ile çalıştırılabilir. Komutu gerekli paket yüklemelerini yapabilmesi ve ayar dosyalarını oluşturabilmesi için root yetkileriyle çalıştırmamız gerekmekte.
+OpenVPN sunucusu kurulumu için [github.com/Nyr](https://github.com/Nyr) deposunda bulunan ve aktif olarak güncellenen bir bash betiğini kullanabilirsiniz. Bu betik Ubuntu, Debian, Centos veya Fedora dağıtımları üzerinde gerekli yüklemeleri ve ayarları yapıp kullanıma hazır bir OpenVPN sunucusu çalıştırıyor. `wget https://git.io/vpn -O openvpn-install.sh` komutu ile betik çalışma dizinine kaydedilebilir ve `bash openvpn-install.sh` komutu ile çalıştırılabilir. Komutu gerekli paket yüklemelerini yapabilmesi ve ayar dosyalarını oluşturabilmesi için root yetkileriyle çalıştırmamız gerekmekte.
 
 1. Betik ilk olarak sunucunun ip adresslerini listeleyip, OpenVPN sunucusunun kullanması istenen ip adresinin seçilmesini istiyor.
 ```bash
@@ -97,7 +116,7 @@ IPv4 address [1]:
 ```
 Kullanılmak istenen adres sıra numarasıyla seçilebilir.
 
-2. Ardından OpenVPN'in kullanması gereken protokol soruluyor;
+2. Ardından OpenVPN'in kullanması istenen protokol soruluyor;
 ```bash
 Which protocol should OpenVPN use?
    1) UDP (recommended)
@@ -131,7 +150,7 @@ Name [client]:
 ```
 Kurulum tamamlandıktan sonra başka istemciler eklemek için betik yeniden çalıştırılabilir.
 
-Gerekli yüklemeler yapıldıktan sonra çalışmakta olan OpenVPN sunucusuna bağlanmak üzere istemci cihaza yüklenmesi gereken ayar dosyasının konumu bildiriliyor `/root/<istemciadı>.ovpn`. Bu dosyayi istemci cihaza kaydedip, istemci programa tanıtmak gerekiyor.
+Gerekli yüklemeler yapıldıktan sonra çalışmakta olan OpenVPN sunucusuna bağlanmak üzere istemci cihaza yüklenmesi gereken ayar dosyasının konumu bildiriliyor `/root/<istemciadı>.ovpn`. Bu dosyayı istemci cihaza kaydedip, istemci programa tanıtmak gerekiyor.
 
 6. Kurulumun ardından betik tekrar çalıştırılırsa yeni bir istemci ekleme, bir istemciyi kaldırma, OpenVPN sunucusunu kaldırma seçenekleri sunuluyor.
 ```bash
@@ -143,13 +162,13 @@ Select an option:
 Option:
 ```
 
-### Istemci Kurulumu
+### İstemci Kurulumu
 
-#### GNU/Linux
+#### GNU/Linux - Masaüstü
 
-GNU/Linux dağıtımları Linux çekirdeğinde doğrudan Openvpn ve daha yeni bir teknoloji olarak artık [Wireguard](https://www.wireguard.com/) desteklemektedir. Masaüstü ortamları da Openvpn istemcisine doğrudan destek vermektedir. GNU/Linux dünyasında çokça masaüstü ortamı olmasından dolayı en yaygın kullanılan Gnome 3 ile rehberimiz hazırlandı lakin pek çok kullanıcı ayarların kendi cihazlarında da benzer olduklarını görecektir.
+GNU/Linux dağıtımları Linux çekirdeğinde, doğrudan OpenVPN'i ve artık, daha yeni bir teknoloji olan [Wireguard](https://www.wireguard.com/)'ı desteklemektedir. Masaüstü ortamları da Openvpn istemcisine doğrudan destek vermektedir. GNU/Linux dünyasında çokça masaüstü ortamı olmasından dolayı, rehberimiz en yaygın kullanılan Gnome 3 ile hazırlandı lakin pek çok kullanıcı ayarların kendi cihazlarında da benzer olduklarını görecektir.
 
-1. Öncelikle VPN sağlayıcınızdan ".ovpn" uzantısı ile OpenVPN config dosyasını indirin. Ovpn dosyaları bir metindir ve sunucu ayarları ile bağlanmanız için gereken anahtarı içerir. Şayet VPN sağlayıcınız bağlantı için bir kullanıcı adı ve parola gerektiriyor ise bunu da bir kenara not alın.
+1. Öncelikle VPN sağlayıcınızdan ".ovpn" uzantısı ile OpenVPN config dosyasını indirin. Ovpn dosyaları bir metindir ve sunucu ayarları ile bağlanmanız için gereken anahtarı ve sertifikaları içerir. Şayet VPN sağlayıcınız bağlantı için bir kullanıcı adı ve parola gerektiriyor ise bunu da bir kenara not alın.
 
 ![alt-text](vpn/anahtar.png)
 
@@ -159,7 +178,7 @@ GNU/Linux dağıtımları Linux çekirdeğinde doğrudan Openvpn ve daha yeni bi
 
 ![alt-text](vpn/vpn1.png)
 
-4. Karşınıza çeşitli seçeneklerin sunulduğu "VPN Ekle" penceresi çıkacak. Burada en alttaki "Dosyadan aktar" seçeneğini seçin. .ovpn uzantılı VPN dosyasını bulun ve aktarın.
+4. Karşınıza çeşitli seçeneklerin sunulduğu "VPN Ekle" penceresi çıkacak. Burada en alttaki "Dosyadan aktar" seçeneğini seçin. `.ovpn` uzantılı VPN dosyasını bulun ve aktarın.
 
 ![alt-text](vpn/vpn2.png)
 
@@ -167,30 +186,32 @@ GNU/Linux dağıtımları Linux çekirdeğinde doğrudan Openvpn ve daha yeni bi
 
 ![alt-text](vpn/vpn3.png)
 
-#### Terminal'den Istemci Kurulumu
+#### GNU/Linux - Uçbirim
 
-GNU/Linux dağıtımlarının depolarında *OpenVPN* paket olarak bulunuyor, dağıtımınızın paket yöneticisiyle yükleyebilirsiniz. Debian veya Ubuntu tabanlı bir dağıtım kullanıyorsaniz aşağıdaki komut ile openvpn'i kurabilirsiniz;
-
-`sudo apt install openvpn` 
+1. Kullandığınız GNU/Linux dağıtımının depolsundan *OpenVPN*'i dağıtımınızın paket yöneticisiyle yükleyebilirsiniz.
+  - __apt__ paket yöneticisi kullanan dağıtımlarda \(Debian, Trisquel, Linux/Mint, Ubuntu...);
+`sudo apt-get install openvpn` 
+  - __rpm__ paket yöneticisi kullanan dağıtımlarda \(CentOS, Fedora...) ise;
+`sudo dnf install openvpn`
+komutu ile OpenVPN'i sisteminize kurabilirsiniz.
 
 OpenVPN'i yüklediğinizde aşağıdaki dizinler oluşur:
 
 `/lib/systemd/system/openvpn-client@.service` (servis dosyası)
 
-
 `/etc/openvpn/client` ve `/etc/openvpn/server` (ayar dosyaları)
 
-VPN sağlayıcınızdan veya OpenVPN sunucunuzdan edindiğiniz **.ovpn** ayar dosyasının uzantısını aşağıdaki komut ile .ovpn'den .conf'a değiştirin:
+2. VPN sağlayıcınızdan veya OpenVPN sunucunuzdan edindiğiniz **.ovpn** ayar dosyasının uzantısını aşağıdaki komut ile .ovpn'den .conf'a değiştirin:
 
-`mv (istemciAyarlari).ovpn (istemciayarlari).conf`
+`mv <istemciAyarlari>.ovpn <istemciAyarlari>.conf`
 
-Daha sonra değiştirdiğiniz dosyayı ilgili dizine taşıyın:
+3. Daha sonra değiştirdiğiniz dosyayı ilgili dizine taşıyın:
 
-`sudo mv (istemciayarlari).conf /etc/openvpn/client/istemciAyarlari.conf` 
+`sudo mv <istemciAyarlari>.conf /etc/openvpn/client/<istemciAyarlari>.conf`
 
 OpenVPN'in bu aşamadan sonra VPN sağlayıcınızın ayarlarını tanıyacaktır.
 
-OpenVPN'i çalıştırmak için aşağıdaki komutu kullanabilirsiniz;
+4. OpenVPN'i çalıştırmak için aşağıdaki komutu kullanabilirsiniz;
 
 `openvpn --config <istemciAyarlari>.conf`
 
@@ -198,7 +219,7 @@ Servis olarak başlatmak ve durdurmak için;
 
 `systemctl {start,stop} openvpn-client@<istemciAyarlari>.conf` 
 
-sistem açılışında çalışması için de;
+Sistem açılışında çalışması için de;
 
 `systemctl enable openvpn-client@<istemciayarlari>.conf` 
 
@@ -246,9 +267,97 @@ Android ayarlarını yaparak sisteminizin VPN bağlantısını korumasını ve k
 
 ![alt-text](vpn/ayarlar4.png)
 
-#### Yönlendirici
+#### OpenWRT Yönlendirici
 
-[Bu bölüme katkı verebilirsiniz](https://git.oyd.org.tr/oyd/guvenlik)
+Bir OpenWRT yönlendiriciyi OpenVPN istemcisi olarak ayarlamak için `ssh` ile komut satırı ya da bir Web tarayıcısı ile LuCi arayüzü kullanılabilir.
+
+##### OpenWRT - Uçbirim
+OpenWRT yönlendiriciyi OpenVPN istemcisi haline getirmek için `ssh` ile bağlandıktan sonra aşağıdaki işlemler uygulanmalı.
+
+1. Gerekli paket yüklenir;  
+```sh
+opkg update
+opkg install openvpn-openssl
+```
+
+2. Firewall ayarları;  
+UCI(unifiedConfigurationInterface) kullanılarak ayar dosyasını el ile düzenlemeye gerek duymadan yapılabilir;
+```bash
+uci rename firewall.@zone[0]="lan"
+uci rename firewall.@zone[1]="wan"
+uci rename firewall.@forwarding=[0]="lan_wan"
+uci del_list firewall.wan.device="tun0"
+uci add_list firewall.wan.device="tun0"
+uci commit firewall
+/etc/init.d/firewall restart
+```
+3. VPN ayarları;  
+VPN sunucusundan edinilen `.ovpn` uzantılı istemci ayarlar dosyasını, openvpn servisinin ön tanımlı ayarlarıyla okuması için uzantısını `.conf`'a dönüştürerek `/etc/openvpn` dizinine yerleştirmek gerekir.
+```sh
+mkdir -p /etc/openvpn
+cp <istemci>.ovpn /etc/openvpn/<istemci>.conf
+```
+ - VPN servisinin gereğinden fazla yetkiyle çalışmaması için çalışacağı kullanıcı ve grup tanımı, 2. adımda yapılan firewall ayarlarıyla uyumlu olması için de aygıt tanımı aşağıdaki üç satırın _\<istemci\>.conf_'a eklenmesiyle yapılır. Dosyada önceden tanımlanmış _user_, _group_ ve _dev_ ile başlayan satırlar varsa satırbaşlarına '#' eklenerek geçersiz kılınmalı veya silinmeliler.
+```sh
+user nobody
+group nogroup
+dev tun0
+```
+ - VPN sunucusuna bağlanmak için kullanıcı adı ve parola kullanılması gerekiyorsa bunları, üstte kullanıcı adı altta parola olarak iki satır halinde `<istemci>.auth` dosyasına kaydedilmeli ve `<istemci>.conf`'ta bu dosya tanıtılmalı.
+```
+cat <<EOL|tee /etc/openvpn/<istemci>.auth
+KULLANICI_ADI
+PAROLA
+EOL
+cat <<EOL|tee -a /etc/openvpn/<istemci>.conf
+auth-user-pass <istemci>.auth
+EOL
+```
+  - İlgili dosya izinlerini sadece root kullanıcısının okuyup yazabileceği hale getirmek yararlı bir pratiktir.  
+`chmod -R 600 /etc/openvpn`
+
+4. openvpn servisi yeniden başlatıldığında bağlantı diğer cihazlar için de hazır olacak.  
+`/etc/init.d/openvpn restart`  
+* VPN bağlantısı kontrol etmek için internette görünen IP adresi komut satırında  
+`dig +short myip.opendns.com @resolver2.opendns.com` komutuyla veya bir web tarayıcısında <https://ipleak.net> adresinin ziyaret edilmesiyle öğrenilebilir.
+
+Kaynak: <https://openwrt.org/docs/guide-user/services/vpn/openvpn/client>
+
+##### OpenWRT - LuCi
+
+1. ___Gerekli iki paket yüklenir: openvpn-openssl luci-app-openvpn___  
+__System>Software__ sayfasında __Actions: Update lists...__ ile paket listesi güncellendikten sonra __Filter__ kutusu ile arama yapılabilir.  
+![owrtLuci_1.1](vpn/vpnWrtLuci_1.1.png) ![owrtLuci_1.2](vpn/vpnWrtLuci_1.2.png)
+![owrtLuci_1.3](vpn/vpnWrtLuci_1.3.png) ![owrtLuci_1.4](vpn/vpnWrtLuci_1.4.png)
+![owrtLuci_1.5](vpn/vpnWrtLuci_1.5.png)  
+_luci-app-openvpn_ paketi yüklendikten sonra yönlendiriciye yeniden bağlanıldığında üst menüye _VPN_ başlığı eklenmiş olacaktır.  
+![owrtLuci_1.6](vpn/vpnWrtLuci_1.6.png)
+
+2. ___OpenVPN ayarları:___  
+__VPN>OpenVPN__ sayfasında __OVPN configuration file upload: Browse__ ile `.ovpn` uzantılı dosya seçilip bağlantıya bir isim verildikten sonra _Upload_ butonu ile dosya yüklenir. Aynı sayfadaki listeye eklenmiş olduğu görülecektir.  
+![owrtLuci_2.1](vpn/vpnWrtLuci_2.1.png)
+   - OpenVPN sunucusuna kullanıcı adı ve parola ile bağlanılması gerekiyorsa listede bağlantının yanındaki _Edit_ butonuna tıklanarak açılan sayfada alttaki kutuya, parola alt satırda olacak sekilde iki satır halinde yazılır ve üstteki kutuya __auth-user-pass /etc/openvpn/<BAĞLANTI_ADI>.auth__ satırı eklenir.  
+![owrtLuci_2.2](vpn/vpnWrtLuci_2.2.png)
+
+3. ___OpenVPN istemcisini başlatma:___  
+__Start__ butonu ile servis başlamazsa önce solundaki __Enable__ kutusunu işaretleyip __Save & Apply__ butonun ile kaydetmek sorunu çözecektir. OpenVPN istemcisinin yönlendirici çalıştırıldığında başlaması ve hep açık kalması için __Enable__ kutusu işaretli olmalıdır.
+- Bu aşamada OpenVPN çalıştığında yönlendirici VPN'e bağlı ve ona bağlı diğer aygıtların internet bağlantıları kesilmiş olacak.
+
+4. ___LAN (Yerel ağ) aygıtlarının VPN'e yönlendirilmesi:___  
+ Bu işlem için __Network>Interfaces__ veya __Network>Firewall__ sayfalarından biri kullanılılır;  
+
+   4.a. __Network>Firewall__ sayfasıyla: kırmızı ile belirginleştirilmiş __wan__ bölgesinin ayarları __Edit__ butonuyla açılır. Pencerede __Advanced Settings__ sekmesindeki __Covered devices__ aygıt listesinden __tun0__ aygıtı işaretlenir ve kaydedilir.  
+![owrtLuci8](vpn/vpnWrtLuci_4.a.1.png)
+![owrtLuci8](vpn/vpnWrtLuci_4.a.2.png)
+![owrtLuci8](vpn/vpnWrtLuci_4.a.3.png)  
+   4.b. __Network>Interfaces__ sayfasıyla: __Add new Interface__ butonu ile VPN bağlantısı yeni bir arayüz olarak tanımlanır, açılan pencerede  "_name_ = tun0", "_Protocol_ = Unmanaged", "_Interface_ = tun0" olarak doldurulup __Create Interface__ butonuna tıklanır, __General Settings__ sekmesinde __Bring up on boot__ işareti kaldırılır. __Firewall Settings__ sekmesinde __Create / Assign Firewall-zone__ açılır listesinden __wan__ seçilir ve kaydedilir.  
+![owrtLuci](vpn/vpnWrtLuci_4.b.1.png)
+![owrtLuci](vpn/vpnWrtLuci_4.b.2.png)
+![owrtLuci](vpn/vpnWrtLuci_4.b.3.png)
+![owrtLuci](vpn/vpnWrtLuci_4.b.4.png)
+![owrtLuci](vpn/vpnWrtLuci_4.b.5.png)
+
+Kaynak: <https://openwrt.org/docs/guide-user/services/vpn/openvpn/client-luci>
 
 ## VPN Bağlantısının Kesilmesi Sorunsalı
 
@@ -324,6 +433,8 @@ Eğer Android sürümünüz sistem çapında VPN ayarları desteklemiyor ise Ope
 
 Şayet Android sürümünüz işletim sistemi seviyesinde VPN istemcisi kontrolü imkanı sağlıyor ise rehberin Android kurulum başlığındaki önergeler yeterli işlev gösterecektir.
 
+---
 Kaynaklar;  
 - <https://github.com/Nyr/openvpn-install.git>  
 - <https://kendibaglantim.com>
+- <https://openwrt.org/docs/guide-user/services/vpn/openvpn/client>

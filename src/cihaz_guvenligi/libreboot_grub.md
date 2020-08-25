@@ -65,7 +65,7 @@ Dilediğiniz arşiv yöneticisi ile cihazınıza uygun olan imajı çıkarabilir
 
 ROM imajında yapılacak değişiklikler için `cbfstool` yazılımını kullanabilirsiniz. Bunun için çıkardığınız `libreboot.rom` dosyasını `cbfstool`'un bulunduğu dizine koyun.
 
-Terminalde `cbfstool` dizininde iken `./cbfstool libreboot.rom print` komutu ile ROM imajında bulunan dosyaları listeleyebilirsiniz. İmaj içinde `grub.cfg` ve `grubtest.cfg` adlı iki GRUB ayar dosyası görülecektir. `grub.cfg`, Libreboot'un temel kullandığı yapılandırma dosyasıdır. Öncelikle  `grubtest.cfg` dosyasını düzenleyerek bir deneme yapılandırması oluşturun. Böylece, yapılandırmadan memnun olduktan sonra `grub.cfg` dosyası ile test dosyasını değiştirip cihazınızı güvenli şekilde hazır hale getirebilirsiniz.
+Uçbirimde `cbfstool` dizininde iken `./cbfstool libreboot.rom print` komutu ile ROM imajında bulunan dosyaları listeleyebilirsiniz. İmaj içinde `grub.cfg` ve `grubtest.cfg` adlı iki GRUB ayar dosyası görülecektir. `grub.cfg`, Libreboot'un temel kullandığı yapılandırma dosyasıdır. Öncelikle  `grubtest.cfg` dosyasını düzenleyerek bir deneme yapılandırması oluşturun. Böylece, yapılandırmadan memnun olduktan sonra `grub.cfg` dosyası ile test dosyasını değiştirip cihazınızı güvenli şekilde hazır hale getirebilirsiniz.
 
 `cbfstool` dizininde `libreboot.rom`'un bulunduğundan emin olup, aşağıdaki komutu çalıştırarak `grubtest.cfg` dosyasını çıkarabilirsiniz.
 
@@ -77,7 +77,7 @@ Bir saldırganın GnuPG doğrulamasını aşmak için yapması gereken tek şey,
 
 Bunun için [Zarola](https://zarola.oyd.org.tr) yöntemini kullanmanızı şiddetle tavsiye ederiz. Çünkü bilgisayarınızın güvenliğinin ilk adımı bu parolanın güvenliğine bağlıdır.
 
-Bunun için bir terminal açıp, `grub-mkpasswd-pbkdf2` komutunu çalıştırıp parolanızı girebilirsiniz. Çıktı şuna benzeyecektir:
+Bunun için bir uçbirim açıp, `grub-mkpasswd-pbkdf2` komutunu çalıştırıp parolanızı girebilirsiniz. Çıktı şuna benzeyecektir:
 
 ```
 grub.pbkdf2.sha512.10000.B08007ADC512E1BB058D62132F94A6EBF96E27511538F1F9ED59B3DE0556FA70A63F617C56D532C499D2E42AABF6B9F8F5EDAC604DC88567268A2D63DF0325F3.A9392DB618EE22AC423CB490B9809B08FB003FBA63B04F310DCD776335282B5D57134671248C711D9D60A7E9A220821B6701EB038F1368D87B66FC632B73801B

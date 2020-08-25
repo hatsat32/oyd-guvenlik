@@ -9,4 +9,4 @@ Peki İnternet'in paydaşları olarak bizler neler yapabiliriz? Ağ güvenliği 
 * [Tarayıcınız](guvenli_web_gezintisi.md)
 * [Tor](tor.md)
 * [VPN - Virtual Private Network](vpn.md)
-* [Shadowsocks](shadow.md)
+* [Shadowsocks](shadowsocks.md)
