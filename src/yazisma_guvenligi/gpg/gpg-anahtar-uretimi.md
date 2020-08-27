@@ -12,6 +12,8 @@ Debian/Ubuntu (APT): `sudo apt-get install kleopatra`
 
 Red Hat/Fedora (RPM): `sudo yum install kleopatra`
 
+Microsoft Windows   : [Gpg4win](https://www.gpg4win.org/download.html)
+
 * Kurulum tamamlandıktan sonra Kleopatrayı dilediğiniz şekilde çalıştırın ve anahtarların listelendiği alan ile birlikte Kleopatra sizi karşılayacak.
 
 ![alt-text](gpg-anahtar-uretimi/kleopatra1.png "Kleopatra ana ekranı")
