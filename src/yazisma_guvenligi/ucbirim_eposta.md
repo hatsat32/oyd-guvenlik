@@ -102,13 +102,13 @@ Mesajı yapıştırdıktan sonra `ctrl + D` ile işlemi sonlandırabilirsiniz. G
 
 ```
 gpg: encrypted with 4096-bit RSA key, ID 6619345C6DF49077, created 2016-10-26
-      "Alper Atmaca <info@alperatmaca.com.tr>"
+      "Alper Atmaca <xxxxxxxxxxxxxxxxxxxx>"
 entropi ne süpergpg: Signature made Pzt 24 Ağu 2020 22:41:49 +03
 gpg:                using RSA key 8F2E9434DDFF4613F6829D8B471A839AB4DD8E6D
-gpg: Good signature from "Alper Atmaca <info@alperatmaca.com.tr>" [ultimate]
-gpg:                 aka "Alper Atmaca <alperatmaca@riseup.net>" [ultimate]
-gpg:                 aka "Alper Atmaca <alperatmaca@gmail.com>" [ultimate]
-gpg:                 aka "Alper Atmaca <alper@oyd.org.tr>" [ultimate]
+gpg: Good signature from "Alper Atmaca <xxxxxxxxxxxxxxxx>" [ultimate]
+gpg:                 aka "Alper Atmaca <xxxxx@riseup.net>" [ultimate]
+gpg:                 aka "Alper Atmaca <xxxxxx@gmail.com>" [ultimate]
+gpg:                 aka "Alper Atmaca <xxxxx@oyd.org.tr>" [ultimate]
 gpg:                 aka "Alper Atmaca (alperatmaca@gmail.com) <alperatmaca@gmail.com>" [ultimate]
 
 ```
