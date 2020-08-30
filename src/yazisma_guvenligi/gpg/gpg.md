@@ -32,7 +32,7 @@ Her seviyeden kullanıcı için kullanım tavsiye ve rehberlerimize göz atabili
 
 * [GPG anahtarını güvenle saklamak](anahtar-saklama.md)
 
-* [GPG anahtaırnın kağıt yedeğini almak](paperbackup.md)
+* [GPG anahtarının kağıt yedeğini almak](paperbackup.md)
 
 * [GPG ile uçbirimde işlemler](ucbirim_gpg.md)
 

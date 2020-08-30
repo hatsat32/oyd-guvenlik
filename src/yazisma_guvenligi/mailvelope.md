@@ -8,7 +8,7 @@ Her halukarda şifreli e-posta kullanmanın görece en güvensiz yolunun bir tar
 
 Başlangıç olarak Mailvelope'u tarayıcınıza bir eklenti olarak kurmalısınız. Bunun için tarayıcınızın sağladığı eklenti yöneticisinden arama yaparak ilgili bağlantı aracılığı ile kurulumu kolaylıkla gerçekleştirebilirsiniz.
 
-![	-text](mailvelope/kurulum.png)
+![alt-text](mailvelope/kurulum.png)
 
 Kurulumun ardından Mailvelope sizi şifreleme için gerekli kurulumu tamamlamak üzere menüsüne yönlendirecek sayfayı açacaktır. "Let's start" düğmesi ile ayarları yapmaya başlayabilirsiniz.
 
