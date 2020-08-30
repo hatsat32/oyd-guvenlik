@@ -1,4 +1,4 @@
-# Harici Bellekleri LUKS ile Şifrelemek
+# Harici Bellekleri Şifrelemek
 
 Harici bellekler ortaya çıktıkları ilk günlerden itibaren giderek hayatımızda daha fazla yer edindiler. Öncelikle görece taşınabilir sabit sürücülerden başlayan taşınabilir kayıt ortamları, [NAND](https://en.wikipedia.org/wiki/NAND_flash_memory) hafıza aygıtlarının yani bugün usb bellek olarak bilinen donanımların yaygınlaşması ile veri taşımanın en pratik yöntemi haline geldiler.
 
@@ -88,8 +88,6 @@ Karşınıza gelen ekrandan yeni biriminize bir isim verip ekran görüntüsünd
 ![alt-text](luks_usb/gd_bolumlendir3.png)
 
 Bu noktada Gnome Disks size parolanızı soracaktır. Bu parola doğrudan şifrelediğiniz verilerin güvenliği olduğundan kullandığınız [parolanın güvenli olmasına](beseri_guvenlik/parolalar.md) özen göstermelisiniz. Yazılımın sunduğu **güvenlik ölçer çok güvenilir değildir**. Bir [Zarola](https://zarola.oyd.org.tr) size güvenlik ve hatırlanabilirlik açısından en iyi sonucu verecektir.
-
-![alt-text](luks_usb/gd_bolumlendir3.png)
 
 "Oluştur" düğmesine tıklamanız ile Gnome Disks LUKS bölümünüz oluşturmaya başlayacaktır. İşlem bittiğinde anaekranda aşağıdaki görüntü ile karşılacaksınız. Bu noktadan sonra harici depolama aygıtınız kullanıma hazırdır!
 
@@ -183,7 +181,7 @@ Kullanmak istediğiniz yazılımı seçtikten sonra karşınıza gelen ekranda; 
 
 ![alt-text](luks_usb/siri_olustur.png)
 
-![alt-text](luks_usb/siri_olustur1.png)
+![alt-text](luks_usb/siri_olustur2.png)
 
 Bir süre sonra SiriKali ana ekranında aşağıdaki şekilde oluşturulmuş dizininizi ve şu anda yüklendiği alanı göreceksiniz.
 
