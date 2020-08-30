@@ -2,28 +2,28 @@
 
 ## OTR’ye Giriş
 
-[Off-the-Record Mesajlaşma (OTR)](https://en.wikipedia.org/wiki/Off-the-Record_Messaging) mesajlaşmanın baştan sona(end-to-end) şifrelenmesini sağlar. Pek çok özelliği vardır:
+[Off-the-Record Mesajlaşma (OTR)](https://en.wikipedia.org/wiki/Off-the-Record_Messaging) mesajlaşmanın [uçtan uca][uçtan uca şifreleme](end-to-end) şifrelenmesini sağlar. Pek çok özelliği vardır:
 
 * __Şifreleme__ Bütün şifreleme cihazınızda gerçekleşir. Sohbet güvenli olmayan ağlar ve hizmet sağlayıcılar üzerinden yapılsa bile başkaları tarafından okunması engellenir.
 * __Doğrulama__ Konuştuğunuz kişilerin iddia ettikleri kişiler olup olmadığını doğrulayabilirsiniz.
-* __Perfect forward secrecy (mutlak gizlilik)__ Eğer özel anahtarlarınızın kontrolünü kaybederseniz önceki herhangi bir sohbetiniz ifşa olmaz. 
+* __Perfect forward secrecy (mutlak gizlilik)__ Eğer özel anahtarlarınızın kontrolünü kaybederseniz önceki herhangi bir sohbetiniz ifşa olmaz.
 * __İnkar Edilebilirlik__ Gönderdiğiniz mesajlar sizin tarafınızdan gönderildiğine ilişkin üçüncü kişilerce anlaşılabilecek bir emare taşımaz. Herhangi biri sohbetin bitimi ertesinde mesajları sizden gelmiş gibi gösterebilir. Bununla birlikte, sohbet sırasında sizin iletişimde olduğunuz kişi gördüğü mesajların doğrulanmış ve değiştirilmemiş olduğundan emindir.
 
 ## OTR'yi Yükleme
 
 ### GNU/Linux
 
-#### Alt+F2’ye basın ve çalıştırın:
+1. bir terminal çalıştırın:
 `gnome-terminal`
-#### Yeni uçbirim penceresine aşağıdaki satırı kopyalayın ve Enter’a basın:
+2. Yeni uçbirim penceresine aşağıdaki satırı kopyalayın ve Enter’a basın:
 `sudo apt-get install pidgin-otr`
-#### Pidgin’i çalıştırmak için Alt+F2’ye basın ve yazın:
+3. Pidgin’i çalıştırmak için Alt+F2’ye basın ve yazın:
 `pidgin`
 
 ### Android
 
-[F-droid](https://f-droid.org/) veya bir başka kaynaktan [Conversations Legacy](https://conversations.im/) indirin. Conversations Legacy'nin Pix-art gibi başka forkları da olmasına rağmen özellikle onları tercih etmenizi gerektirecek bir sebep olmadıkça Conversations en iyi tercih olacaktır.
-
+[F-droid](https://f-droid.org/) veya bir başka kaynaktan ~~[Conversations Legacy](https://conversations.im/)~~ [aTalk][] indirin. [aTalk] f-droid deposunda, OTR destekleyen tek uygulamadır.
+[aTalk]:https://github.com/cmeng-git/atalk-android
 ### Windows
 
 <https://pidgin.im/download> adresini ziyaret edin.
@@ -34,7 +34,7 @@ Pidgin Mac’te çalıştırılabilir fakat onun yerine Adium kullanmak çok dah
 
 ## Hesabınıza giriş yapın veya yeni hesap oluşturun
 
-Şayet bir sunucuda XMPP hesabınız var ise kullanıcı adı ve parolasını girerek bağlantı sağlayabilirsiniz. Şayet bir XMPP hesabınız yok ise bu aşamada kayıt imkanı veren bir sunucuda hesap açabilirsiniz. Tek yapmanız gereken kendinize bir sunucu seçmek.
+Şayet bir sunucuda XMPP(Jabber) hesabınız var ise kullanıcı adı ve parolasını girerek bağlantı sağlayabilirsiniz. Şayet bir XMPP hesabınız yok ise bu aşamada kayıt imkanı veren bir sunucuda hesap açabilirsiniz. Tek yapmanız gereken kendinize bir sunucu seçmek.
 
 Aşağıdaki sunucuları tercihinizde değerlendirebilirsiniz;
 
@@ -44,7 +44,6 @@ Kayıt için (kullanıcı adı)@jabber.calyxinstitute.org alan adı kullanılabi
 [Conversations](https://conversations.im/#xmpp) - Conversations yazılımının kendi sunucusu. Şayet özgür yazılıma destek olunmak istiyorsanız ücretli bu hizmeti tercih edebilirsiniz. İlk altı ay ücretsiz kullanım imkanı vermekte.
 
 [Riseup](https://www.riseup.net) - Riseup teknoloji kolektifinin ücretsiz hizmetlerinden biri de XMPP. Doğrudan kayıt imkanı vermediği için bir Riseup hesabı sahibi olmanızı gerektiriyor.
-
 
 ## OTR kurulumu
 
@@ -85,3 +84,5 @@ Yukarıdaki konuşmada bahsedilen anda yalnızca iki kişinin bulunması sorulan
 Bu da yatak odanıza aldığınız kişilere güvendiğinizi farzeden güvenli bir soru.
 
 "Saçımın rengi ne?" veya "Köpeğimin adı ne?" gibi sorular güvenli sayılmaz çünkü herhangi biri bu soruların cevaplarını kolaylıkla tahmin edebilir.
+
+[uçtan uca şifreleme]:https://tr.wikipedia.org/wiki/Uçtan_uca_şifreleme
