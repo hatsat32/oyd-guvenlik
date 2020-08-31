@@ -13,3 +13,4 @@ Birkaç basit adımla çok ciddi tehlikeleri berteraf edebilirsiniz. Aşağıdak
 * [Mesaj Disiplini](mesaj_disiplini.md)
 * [Parolalar](parolalar.md)
 * [2FA](2fa.md)
+* [Fiziki Güvenlik](fiziki_guvenlik.md)
