@@ -1,6 +1,6 @@
-# Anahtar yönetimi
+# GPG Anahtarının Korunması
 
-**Anahtar yönetimi** GPG'nin en tehlikeli ve önemli parçasıdır. Öyle ki; GPG'nin tüm gücü şifreleme imkanını tamamen sizin elinize vermesidir. Elbette büyük güç büyük sorumlulukla gelmekte ve bu sorumluluk da kendi anahtarınızı kendinizin yönetmesi olmakta. Anahtarı kaybetmenizin bedeli şifrelediğiniz verileri sonsuza kadar kaybetmeniz olacağı gibi anahtarınızın kaybı tüm kimliğinizin ile birlikte anahtardan dolayı size duyulan güveninde yok olmasına sebep olacaktır.
+**Anahtar Korunması** GPG'nin en tehlikeli ve önemli parçasıdır. Öyle ki; GPG'nin tüm gücü şifreleme imkanını tamamen sizin elinize vermesidir. Elbette büyük güç büyük sorumlulukla gelmekte ve bu sorumluluk da kendi anahtarınızı kendinizin yönetmesi olmakta. Anahtarı kaybetmenizin bedeli şifrelediğiniz verileri sonsuza kadar kaybetmeniz olacağı gibi anahtarınızın kaybı tüm kimliğinizin ile birlikte anahtardan dolayı size duyulan güveninde yok olmasına sebep olacaktır.
 
 Doğru bir anahtar yönetiminin birkaç unsuru bulunmakta:
 

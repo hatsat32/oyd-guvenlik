@@ -29,6 +29,8 @@ Açıkçası, şifreli e-posta göndermenin en iyi yolu [Thunderbird](https://ww
 
 Şayet kullandığınız e-posta hizmeti istemci üzerinden bağlanmanıza imkan vermiyor veya başka bir sebepten istemci kullanmak istemiyorsanız bir tarayıcı eklentisi ile e-postalarınız şifrelemeniz mümkün. [Mailvelope](https://www.mailvelope.com/en/) veya [FireGnuPG](http://tr.getfiregpg.org/s/home) gibi eklentiler tarayıcınızda şifreleme işlemini gerçekleştirebilir.
 
+Şifreli e-posta imkanını webmail olarak sunan hizmet sağlayıcılar da bulunmaktadır. Söz konusu şirketlerin sayısı günümüzde giderek artmakta olsa da farklı teknolojilerle farklı çözümler sunan bir tanesini seçmek için [şifreli e-posta hizmetleri](sifreli-eposta-hizmetleri.md) rehberimize başvurabilirsiniz.
+
 
 ## Şifrelenmiş e-posta neyi korumaz?
 
