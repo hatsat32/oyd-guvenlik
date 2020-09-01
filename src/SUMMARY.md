@@ -9,6 +9,7 @@
   - [Fiziki Güvenlik](beseri_guvenlik/fiziki_guvenlik.md)
      - [Haven ile Ortam İzlemesi](beseri_guvenlik/haven.md)
      - [Oje ve Entropi ile Cihaz Güvenliği](beseri_guvenlik/oje.md)
+     - [Private Lock ile Kapkaç Tedbiri](beseri_guvenlik/private_lock.md)
 - [Cihaz Güvenliği](cihaz_guvenligi/README.md)
   - [Yazılım Güvenliği](cihaz_guvenligi/yazilim_guvenligi.md)
   - [Cihaz Şifreleme](cihaz_guvenligi/cihaz_sifreleme.md)
