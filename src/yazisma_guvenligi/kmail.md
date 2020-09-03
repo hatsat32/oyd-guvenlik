@@ -4,7 +4,7 @@ Kmail GNU/Linux dağıtımlarında yaygın olarak kullanılan KDE masaüstü ort
 
 ## Kmail kurulumu
 
-Kmail'i bilgisayarnıza işletim sisteminizin paket yöneticisinden kolaylıkla kurabilirsiniz. Şayet KDE masaüstü ortamını kullanmıyorsanız KDE'ye özel bir takım bağımlılıkları da indirmeniz ve kurmanız gerekeceğinden kurulum boyutunuz bir miktar büyüyebilir.
+Kmail'i bilgisayarnıza işletim sisteminizin paket yöneticisinden kolaylıkla kurabilirsiniz. Şayet KDE masaüstü ortamını kullanmıyorsanız KDE'ye özel birtakım bağımlılıkları da indirmeniz ve kurmanız gerekeceğinden kurulum boyutunuz bir miktar büyüyebilir.
 
 Bilgisayarınıza Kmail kurulumu yapmak için:
 
@@ -37,7 +37,7 @@ Bir parola belirleyip anahtar kurulumunuzu "next" tuşu ile ilerleyerek başlata
 
 **ÖNEMLİ NOT:** Şayet bu anahtarı kullanmaya ve saklamaya hazır değilseniz veya sadece bir deneme yapıyorsanız paroladan sonra gelen "publish this key on public key server" tıkını kaldırmanız önerilir. Keza sunucuya yüklenen GPG anahtarları bir daha silinemez sadece iptal edilebilir. Bu konuda detaylı bilgi almak için [GPG rehberine](gpg/gpg.md) danışabilirsiniz.
 
-Ayarlarınızı tamamladıktan ve anahtarınızı belirledikten sonra Kmail sunucu ayarlarınızın bulunamamış olması durumunda yapmanız için aşağıdak seçenekler sunacaktır. Buradan Generic IMAP veya POP3 tercih edileblir.
+Ayarlarınızı tamamladıktan ve anahtarınızı belirledikten sonra Kmail sunucu ayarlarınızın bulunamamış olması durumunda yapmanız için aşağıdak seçenekler sunacaktır. Buradan Generic IMAP veya POP3 tercih edilebilir.
 
 ![alt-text](kmail/kmail_wizard2.png)
 

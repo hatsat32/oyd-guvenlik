@@ -40,7 +40,7 @@ Uçtan uca şifreli e-posta hizmeti veren şirketler her kullanıcısı için ü
 
 * Devletlerden gelen taleplere şirketlerin sağlayabileceği sadece üstveri, anahtarın şifreli hali ve şifreli yazışmalar olmaktadır.
 
-Her ne kadar anahtarın üretimi ve hizmetin kullanımı için gereken yazılımlar "özgür" ve tarayıcıda yerel olarak çalışsa da her giriş yaptığınızda tarayıcınıza yüklenen javascript kodunun doğruluğunu denetleme imkanının olmayışı ve her halukarda şifreli de olsa gizli anahtarınızın şirketin sunucusuna yüklenmesi ile [bruteforce](https://en.wikipedia.org/wiki/Brute-force_attack) saldırılara imkan vermesi tatsız sonuçlardır. Sayılan sebepler ile belirli bir güvenin hizmet sağlayana aktarıldığı ve bu **güvenin haksız çıkması** ihtimalinin değerlendirilmesi önemlidir.
+Her ne kadar anahtarın üretimi ve hizmetin kullanımı için gereken yazılımlar "özgür" ve tarayıcıda yerel olarak çalışsa da her giriş yaptığınızda tarayıcınıza yüklenen javascript kodunun doğruluğunu denetleme imkanının olmayışı ve her halükarda şifreli de olsa gizli anahtarınızın şirketin sunucusuna yüklenmesi ile [kaba kuvvet(bruteforce)](https://en.wikipedia.org/wiki/Brute-force_attack) saldırılarına imkan vermesi tatsız sonuçlardır. Sayılan sebepler ile belirli bir güvenin hizmet sağlayana aktarıldığı ve bu **güvenin haksız çıkması** ihtimalinin değerlendirilmesi önemlidir.
 
 Uçtan uca şifreli e-posta hizmeti veren en tanınmış iki isim [Tutanota](https://tutanota.com) ve [Protonmail](https://protonmail.com) idir. Benzer hizmetler vermelerine rağmen bu amaçla kullandıkları teknolojiler ve yaklaşımlar bir hayli farklıdır.
 
@@ -56,7 +56,7 @@ Teoride her iki şirket de anonim üyelik veriyor ve cryptoparalar ile ödeme ka
 
 #### Fiyat
 
-Protonmail'in gün itibari ile en ucuz ücretli üyeliği 4 Avro/aylık olmakla ayda 1 Avro'ya hizmet veren Tutanotaya göre 4 kat daha pahalı durumda. Protonmail bunu nükleer sığınaklarının maliyetine ve İsviçre'de bulunmalarına bağlamakta. Tutanota ise Almanya'da çeşitli veri merkezlerinde sunuuclarını çalıştırmakta. Fiyatlandırma konusundaki inandırıcılık kullanıcıya kalmış durumda.
+Protonmail'in gün itibari ile en ucuz ücretli üyeliği 4 Avro/aylık olmakla ayda 1 Avro'ya hizmet veren Tutanotaya göre 4 kat daha pahalı durumda. Protonmail bunu nükleer sığınaklarının maliyetine ve İsviçre'de bulunmalarına bağlamakta. Tutanota ise Almanya'da çeşitli veri merkezlerinde sunucularını çalıştırmakta. Fiyatlandırma konusundaki inandırıcılık kullanıcıya kalmış durumda.
 
 
 #### Platform Yaygınlığı

@@ -17,7 +17,7 @@ OTR ile OMEMO'yu ayıran iki önemli fark vardır.
 
 * OTR iki cihazın da oturum başlangıcında İnternet'e bağlı olmalarını gerektirmekte. Bu sebepten offline olarak atılan mesajların alıcısına ulaşması mümkün olmamakta. OMEMO ise çift anahtarlama imkanı ile offline olarak atılan mesajların sunucuda belirli bir süre saklanarak daha sonra bağlanan alıcısına gönderilmesine imkan veriyor.
 
-* OTR insana dayalı bir güven sistemine sahip. İnsanların kişisel olmayan cihazları kullanmalarının çok yaygın olduğu dönemde iletişimde bulundukları kişilerin gerçekten iddia ettikleri kişi olduklarını doğrulanması elzem görülmüş. Bugün ise herkes kişisel cihaz sahibi ve cihazları kriptografik anahtarlar aracılığı ile doğrulamak çok daha kolay bir yöntem olduğundan OMEMO tarafından cihaza günven prensibi kabul edilmiştir.
+* OTR insana dayalı bir güven sistemine sahip. İnsanların kişisel olmayan cihazları kullanmalarının çok yaygın olduğu dönemde iletişimde bulundukları kişilerin gerçekten iddia ettikleri kişi olduklarını doğrulanması elzem görülmüş. Bugün ise herkes kişisel cihaz sahibi ve cihazları kriptografik anahtarlar aracılığı ile doğrulamak çok daha kolay bir yöntem olduğundan OMEMO tarafından cihaza güven prensibi kabul edilmiştir.
 
 ## OMEMO'yu Yükleme
 
@@ -79,7 +79,7 @@ Kayıt için (kullanıcı adı)@jabber.calyxinstitute.org alan adı kullanılabi
 
 ## Arkadaşları Doğrulama
 
-OMEMO ile yazışmaya başlamak için öncelikle konuşma penceresinde mesja kutusunun yanındaki asma kilit sembolünden OMEMO'yu seçmekle başlayın.
+OMEMO ile yazışmaya başlamak için öncelikle konuşma penceresinde mesaj kutusunun yanındaki asma kilit sembolünden OMEMO'yu seçmekle başlayın.
 
 ![alt-text](omemo/omemo4.png)
 ![alt-text](omemo/omemo5.png)
