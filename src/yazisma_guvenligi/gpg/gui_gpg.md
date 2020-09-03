@@ -112,7 +112,7 @@ Umumi anahtar gibi özel anahtar da aynı menüden "Gizli anahtarı dışa aktar
 
 ![alt-text](gui_gpg/parola.png)
 
-**ÖNEMLİ NOT:**Özel anahtar güvenliğiniz için çok önemlidir. Bu anahtarı ele geçiren bir kişi sizi taklit edebilir ve şifrelediğiniz dosyaları açabilir. Bu sebeple bu anahtarı kimse ile paylaşmamalı ve anahtar dosyalarını çok dikkatli saklamalısınız.
+**ÖNEMLİ NOT:** Özel anahtar güvenliğiniz için çok önemlidir. Bu anahtarı ele geçiren bir kişi sizi taklit edebilir ve şifrelediğiniz dosyaları açabilir. Bu sebeple bu anahtarı kimse ile paylaşmamalı ve anahtar dosyalarını çok dikkatli saklamalısınız.
 
 ## Sunucuya anahtar göndermek
 
