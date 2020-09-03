@@ -2,7 +2,7 @@
 
 ## OMEMO’ya Giriş
 
-[OMEMO](https://conversations.im/omemo/) mesajlaşmanın baştan sona(end-to-end) şifrelenmesini sağlar. [OTR](../otr.md) ile pratik olarak ayrılan modern ihtiyaçlara yönelik özellikleri mevcuttur. 
+[OMEMO](https://conversations.im/omemo/) mesajlaşmanın baştan sona(end-to-end) şifrelenmesini sağlar. [OTR](otr.md) ile pratik olarak ayrılan modern ihtiyaçlara yönelik özellikleri mevcuttur. 
 
 * __Şifreleme__ Bütün şifreleme cihazınızda gerçekleşir. Sohbet güvenli olmayan ağlar ve hizmet sağlayıcılar üzerinden yapılsa bile başkaları tarafından okunması engellenir.
 * __Doğrulama__ Konuştuğunuz kişilerin cihazlarının aynı cihaz olduğunu doğrulama.
