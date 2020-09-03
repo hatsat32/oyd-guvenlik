@@ -32,11 +32,11 @@ Anahtarınızı yüklemek için sunucunun web sayfasındaki upload(yükle) bağl
 
 ![alt-text](wkd/openpgporg.png)
 
-![alt-text](gui_gpg/openpgporg_up.png)
+![alt-text](wkd/openpgporg_up.png)
 
 Anahtarınızı yüklemenizin ardından openpgp.org sizden anahtarınızda bulunan e-posta adreslerine bir doğrulama e-postası atarak sizden doğrulama talep edecektir.
 
-![alt-text](gui_gpg/openpgporg_up2.png)
+![alt-text](wkd/openpgporg_up2.png)
 
 Bu işlemleri gerçekleştirmeniz ardından anahtarınız sunucuda listelenmeye başlayacaktır. Tek yapmanız gereken açılış ekranındaki arama barından **tam e-posta** adresi ile arama yapmak.
 
@@ -49,5 +49,7 @@ Bu işlemleri gerçekleştirmeniz ardından anahtarınız sunucuda listelenmeye 
 Giderek yaygınlık kazanmakta olan WKD kimi e-posta sağlayıcılar tarafından otomatik olarak desteklenmeye başlamıştır. Aşağıdaki e-posta sağlayıcılar [gnupg.org](https://wiki.gnupg.org/WKD) WKD desteklemektedir.
 
 [Posteo](https://posteo.de)
+
 [Protonmail](https://protonmail.com)
+
 [netzguerilla](https://netzguerilla.net/)
