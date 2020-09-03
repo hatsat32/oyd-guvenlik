@@ -81,7 +81,7 @@ Kağıt bu açıdan akıllara son gelen seçenek olsa da insanlık tarihinin en 
 
 İptal sertifikasını oluşturmak için GNU/Linux'ta uçbirim aracılığı ile şu komutu kullanabilirsiniz.
 
-* `gpg --generate-revocation [anahtar kimliği veya e-posta adresi] > [sertifikanın kaydedileceği dizin]
+* `gpg --generate-revocation [anahtar kimliği veya e-posta adresi] > [sertifikanın kaydedileceği dizin]`
 
 * GPG'ye ciddiyetinizi belirttikten sonra iptal için bir gerekçe girip dilerseniz yazılı bir gerekçe ekleyip sertifikayı üretim için onaylayın.
 

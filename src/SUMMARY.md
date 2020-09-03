@@ -28,7 +28,7 @@
     - [GnuPG Grafik Arayüz Kullanımı](yazisma_guvenligi/gpg/gui_gpg.md)
     - [GnuPG Komut Satırı Kullanımı](yazisma_guvenligi/gpg/ucbirim_gpg.md)
     - [GnuPG Güven Ağı](yazisma_guvenligi/gpg/wot.md)
-    - [GnuPG Web Anahtar Dizini](yazisma_guvenligi/gpg/wot.md)
+    - [GnuPG Web Anahtar Dizini](yazisma_guvenligi/gpg/wkd.md)
   - [Şifreli E-Posta](yazisma_guvenligi/openpgp.md)
     - [Thunderbird/Enigmail ile E-posta Şifreleme](yazisma_guvenligi/thunderbird_enigmail.md)
     - [Kmail ile E-posta Şifreleme](yazisma_guvenligi/kmail.md)

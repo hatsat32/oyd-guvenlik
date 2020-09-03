@@ -58,7 +58,7 @@ Fakat tehdit modelinize bağlı olarak daha güvenlik işlevi gösterebilecek bi
 
 * yetkilendirme anahtarınızın ortaya çıkması bu anahtara bağlı olarak giriş yaptığınız tüm sistemlerin ele geçirilmesi anlamına gelebilir.
 
-Bu neden ile GPG'nin kalıcı anahtar modelini biraz kullanım pürüzü yaratacak da olsa elle [geçici(ephemeral)](https://cryptography.fandom.com/wiki/Ephemeral_key) anahtar modeline çevirebilirsiniz. Bu yöntem bir bakııma [OTR](yazisma_guvenligi/otr.md) ve [OMEMO](yazisma_guvenligi/omemo.md) sistemlerinde kullanılan yönteme benzemekle fark olarak her mesajda değil sizin belirleyeceğiniz daha uzun aralıklarda değişim yapmanızı gerektirir.
+Bu neden ile GPG'nin kalıcı anahtar modelini biraz kullanım pürüzü yaratacak da olsa elle [geçici(ephemeral)](https://cryptography.fandom.com/wiki/Ephemeral_key) anahtar modeline çevirebilirsiniz. Bu yöntem bir bakııma [OTR](../otr.md) ve [OMEMO](../omemo.md) sistemlerinde kullanılan yönteme benzemekle fark olarak her mesajda değil sizin belirleyeceğiniz daha uzun aralıklarda değişim yapmanızı gerektirir.
 
 Basitçe ifade etmek gerekirse;
 
@@ -183,7 +183,7 @@ GPG size parolanızı soracaktır. Burada bir [**Zarola**](https://zarola.oyd.or
 
 Bu aşamadan sonra cihazınız anakartınızın köşelerinde kalmış entropi için çırpınıp size anahtarınızı üretecektir. Bu süreç `/dev/random` aygıtınızda kalan entropi miktarı ve yenilenme hızına bağlı olarak yavaş olabilir. Bilgisayarınız ile bir şeyler yaparak bu süreci hızlandırabilirsiniz. Anahtarınız hazır olduğunda GPG sizi aşağıdaki çıktı ile karşılayacaktır.
 
-``
+```
 (A)dı ve Soyadı, (Y)orum, (E)posta alanlarını değiştir ya da (T)amam/Çı(k)? t
 Bir miktar rasgele bayt üretilmesi gerekiyor. İlk üretim sırasında biraz
 hareket (klavyeyi kullanmak, fareyi hareket ettirmek, disklerden yararlanmak)
@@ -381,7 +381,7 @@ Artık cihazlarınızda kullanacağınız sıyrılmış alt anahtarlarınızı d
 
 Ürettiğiniz anahtarlarınızı daha güvenli kullanmak isterseniz bir Gnupg akıllı karta veya Yubikey gibi bir donanıma aktarabilirsiniz. Bu konuda yardıma ihtiyaç duyarsanız rehberlerimize danışabilirsiniz.
 
-[Yubikey rehberi yazarak katkıda bulunabilirsiniz]
+[Yubikey rehberi yazarak katkıda bulunabilirsiniz](https://git.oyd.org.tr/oyd/guvenlik/issues/59)
 
 [GnuPG akıllı kart rehberi yazarak katkıda bulunabilirsiniz]
 

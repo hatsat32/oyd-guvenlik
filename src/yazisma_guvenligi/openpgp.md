@@ -56,7 +56,7 @@ Bu sistem elbette mükemmel değildir. Bugün anahtar sunucuları, özellikle ta
 
 ## Şifreli e-posta hakkında tavsiyeler nelerdir?
 
-* Gizli anahtarlarınızı şifreli bir ortamda çevrimdışı olarak saklayın. Bu anahtarınızın, cihazınız çalınır, kaybolur veya el koyulursa ele geçmesini engeller. Bunun için [kağıt bir yedek](yazisma_guvenligi/gpg/paperbackup/paperbackup.md) almayı düşünebilirsiniz.
+* Gizli anahtarlarınızı şifreli bir ortamda çevrimdışı olarak saklayın. Bu anahtarınızın, cihazınız çalınır, kaybolur veya el koyulursa ele geçmesini engeller. Bunun için [kağıt bir yedek](gpg/paperbackup.md) almayı düşünebilirsiniz.
 * **ASLA** ama asla gizli anahtarınızı kimse ile paylaşmayın, umumi bir cihaza kaydetmeyin ve uzak sunucuya yüklemeyin.
 * **[ZAROLA KULLANIN!](https://zarola.oyd.org.tr)**. Çünkü anahtarınızın güvenliği anahtar parolanızın güvenliğine bağlıdır.
 * Çevrenizde bir CryptoParty yapın ve bu sayede arkadaşlarınıza da GnuPG kullanmayı öğretip anahtarlarınızı imzalayarak kendi güven ağınızı oluşturun. [Özgür Yazılım Derneği](https://oyd.org.tr) ve [Hackerspace Istanbul](https://hackerspace.ist) düzenli aralıklarla [CryptoParty](https://cryptoparty.online)'ler düzenlemektedir.
