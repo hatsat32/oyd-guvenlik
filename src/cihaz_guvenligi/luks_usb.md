@@ -30,7 +30,7 @@ Gnome-disk yazılımı bilgisayarınızda kurulu dağıtıma göre "Disks" veya 
 
 `gnome-disk`
 
-Şayet sisteminizde kurulu değil ise aşağıdaki komutlarla gerekli paketleeri kurabilirsiniz.
+Şayet sisteminizde kurulu değil ise aşağıdaki komutlarla gerekli paketleri kurabilirsiniz.
 
 `sudo apt-get install cryptsetup gnome-disk-utility`
 
@@ -117,7 +117,7 @@ USB belleğinizi iki ayrı bölüme ayırarak bir kısmını LUKS ile şifreleyi
 
 **NOT:**Şifresiz bölümün birinci bölümde olması gereklidir. Aksi halde Microsoft Windows cihazlar aygıtı tanımayacaktır.
 
-Tüm belleğin LUKS ile şifrelendiği şekilde cihazınızı biçimlendirdikten sonra. Bölüm oluşturma aşamasında, LUKS bölümü oluşturmadan önce cihazı iki bölüme bölmek gereklidir. Bunun için biçimsiz sürücüde bölüm oluşturmak içn + simgesine basıp bölümlendirme menüsüne gelin.
+Tüm belleğin LUKS ile şifrelendiği şekilde cihazınızı biçimlendirdikten sonra. Bölüm oluşturma aşamasında, LUKS bölümü oluşturmadan önce cihazı iki bölüme bölmek gereklidir. Bunun için biçimsiz sürücüde bölüm oluşturmak için + simgesine basıp bölümlendirme menüsüne gelin.
 
 Şifresiz önbölüm için tercih ettiğiniz miktarı belirleyip "ileri" tıklayın.
 
@@ -189,7 +189,7 @@ Bir süre sonra SiriKali ana ekranında aşağıdaki şekilde oluşturulmuş diz
 
 Bağlanan bölümü çıkarmak için satıda sağ tıklayıp "unmount" seçeneğini seçin. Listeden bölümünüz eksilecektir.
 
-SiriKali otomatik olarak ev dizininizin altında .SiriKali isminde bir noktaya yeni bölümünüzü bağlamaktadır. Bu standart noktayı ayarlardan değiştirebilir veya bağlama sırasında başka bir dizin seçebilirsiniz.
+SiriKali otomatik olarak ev dizininizin altında. SiriKali isminde bir noktaya yeni bölümünüzü bağlamaktadır. Bu standart noktayı ayarlardan değiştirebilir veya bağlama sırasında başka bir dizin seçebilirsiniz.
 
 USB belleğinizde kurulum sırasında verdiğiniz isimle yeni bir dizin oluştuğunu ve içinde saçma sapan dosyalar bulunduğunu görebilirsiniz. Bu sizin şifreli dosyalarınızın bulunduğu dizindir ve dosyalarınıza erişebilmek için SiriKali'ye bu dizini göstermeniz gerekecektir. Ana ekrandan "mount volume" seçeneğini seçerek işleme başlayın.
 
@@ -209,7 +209,7 @@ SiriKali'nin kriptografik işlemi yapması bir süre alabilir.
 
 Şifreleme araçları, özellikle özgür ve güvenilir olanlar, ne yazık ki haklı olarak GNU/Linux işletim sistemlerinde bulunmakta ve sadece LUKS gibi çok ender yazılımlar her dağıtımda standart olarak gelmekte. Bu sebepten neredeyse her şifreleme yazılımının bir şekilde kullanılan bilgisayarlara haricen kurulması gerekmekte.
 
-Buna istisna olarak Veracrypt ve [Cryptomator](https://cryptomator.org/) verilebilecekse de çoğu zaman bu yazılımların bir mobil versiyonu usb bellek üzerinde bulundurulmak ve takılan cihazda çalıştırılarak deşifre işleminin gerçekleştirilmesi gerekmekte. Bu hem takılan cihazın yetkisine bağlı olarak işe yaramayabilir hem de bir binary dosyayı USB bellekte sağdan sola taşıyarak güvenlik sorunu yaratılmasına neden olur.
+Buna istisna olarak Veracrypt ve [Cryptomator](https://cryptomator.org/) verilebilecekse de çoğu zaman bu yazılımların bir mobil versiyonu usb bellek üzerinde bulundurulmak ve takılan cihazda çalıştırılarak deşifre işleminin gerçekleştirilmesi gerekmekte. Bu hem takılan cihazın yetkisine bağlı olarak işe yaramayabilir hem de bir ikili(binary) dosyayı USB bellekte sağdan sola taşıyarak güvenlik sorunu yaratılmasına neden olur.
 
 Aynı zamanda güvenilir olmayan cihazlarda hem parolanızı girmek hem de şifreli dosyalarınızı açmak onların güvenliğini ciddi oranda zedeleyecektir. Bu neden ile USB belleğinizde bulunan şifreli dosyalarınızı güvenmediğiniz cihazlarda açmanız önerilmez.
 
@@ -233,7 +233,7 @@ Bu işlemi gerçekleştirmek için ne yazık ki uçbirim kullanmanız gerekmekte
 
 Bu tip cihazlar her zaman cihaz üzerindeki bir donanıma bağlı olarak şifreleme yaparlar. Bu kimi tehdit modelleri için yeterli olsa bile bilmediğiniz bir donanıma ve muhtemelen zayıf bir parolanın güvenliğine kalırsınız. Şayet şifreleme sizin için küçük bir önlem ise ve usb belleğinize koşulsuz şartsız her cihazda ulaşmak istiyorsanız bu yolu kullanabilir çok önemli dosyalarınızı ayrıca şifreleyebilirsiniz.
 
-2. Parmakizi ile çalışan bellekler gördüm bunlara ne demeli?
+2. Parmak izi ile çalışan bellekler gördüm bunlara ne demeli?
 
 Biyometrik veriler ile şifreleme güvenliği ne yazık ki kabul edilemez. Bu hem biyometrik verilerin düşük güvenlik seviyesinden kaynaklanır hem de bir saldırganın sizi kolaylıkla parmakiziniz için zorlaması veya kandırması mümkündür. Yukarıdaki önerimiz bu durum için de geçerlidir.
 
