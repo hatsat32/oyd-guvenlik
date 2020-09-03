@@ -229,8 +229,7 @@ Bu işlemi gerçekleştirmek için ne yazık ki uçbirim kullanmanız gerekmekte
 
 ## Sıkça Sorulan Sorular
 
-1. Bir marka çok güvedd if=/dev/urandom of=/dev/sdX bs=4096 status=progress
-nli, üç harfli algoritmalı usb bellekler satıyor, bunlar güvenli mi?
+1. Bir marka çok güveli, üç harfli algoritmalı usb bellekler satıyor, bunlar güvenli mi?
 
 Bu tip cihazlar her zaman cihaz üzerindeki bir donanıma bağlı olarak şifreleme yaparlar. Bu kimi tehdit modelleri için yeterli olsa bile bilmediğiniz bir donanıma ve muhtemelen zayıf bir parolanın güvenliğine kalırsınız. Şayet şifreleme sizin için küçük bir önlem ise ve usb belleğinize koşulsuz şartsız her cihazda ulaşmak istiyorsanız bu yolu kullanabilir çok önemli dosyalarınızı ayrıca şifreleyebilirsiniz.
 
