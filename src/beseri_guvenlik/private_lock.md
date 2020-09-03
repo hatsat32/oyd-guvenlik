@@ -2,7 +2,7 @@
 
 Günümüzde neredeyse yaşam zorunluluğu haline gelmiş mobil cihazlardan olan akıllı telefonlar, en önemli verilerimizi tuttuğumuz araçlar konumundalar. Bu durum söz konusu cihazları ciddi bir mahremiyet ve güvenlik riski haline de getirmekte.
 
-Mobil cihazlar, çalınma ve kaybolma riski içinde kullanıldıklarından [şifreleme](cihaz_guvenligi/cihaz_sifreleme.md) neredeyse zaruri bir güvenlik tedbiri. Lakin bilgisayarlara nazaran mobil cihazlar neredeyse hiç kapatılmadığından şifreleme anahtarları sürekli olarak RAM üzerinde durmakta ve ekran kilidinin açık olduğu her an cihazın içeriğindeki neredeyse tüm bilgiler cihazı elinde tutanın insafına kalmakta.
+Mobil cihazlar, çalınma ve kaybolma riski içinde kullanıldıklarından [şifreleme](../cihaz_guvenligi/cihaz_sifreleme.md) neredeyse zaruri bir güvenlik tedbiri. Lakin bilgisayarlara nazaran mobil cihazlar neredeyse hiç kapatılmadığından şifreleme anahtarları sürekli olarak RAM üzerinde durmakta ve ekran kilidinin açık olduğu her an cihazın içeriğindeki neredeyse tüm bilgiler cihazı elinde tutanın insafına kalmakta.
 
 Bu tehlikenin gerçekleşme riski teorik bir tartışma değil. [Birleşik Krallık'ta bir polis teşkilatı yasal olarak bir zanlıya kapkaç yaparak](https://www.bbc.com/news/uk-38183819) söz konusu imkanın gerçek hayatta kullanımının mümkün olduğunu herkse göstermiş bulunuyor. Buna telefonu elinizden alıp akla hayale gelmeyecek şeyler yapabilecek yakınlarınız ve arkadaşlarınızı da eklerseniz konuya karşı tedbir almak yerinde görülebilir.
 
@@ -17,7 +17,7 @@ Bu tehlikenin gerçekleşme riski teorik bir tartışma değil. [Birleşik Krall
 
 Private Lock fazlasıyla basit bir yazılım. 0-40 arasında derecelendirilen değer cihazınızdaki jiroskop sensörüne bağlı olarak hangi kuvvetlerde cihazınızın kilitleneceğini belirlemekte. Hemen altta bulunan dairede ise cihazınızın sensöründen o anda gelen tepkinin değeri verilmekte. Dairenin tamamen yeşil olması durumunda telefonunuz kilitlenmekte. 0 ile 40 arasındaki dereceyi ayarlayarak telefonunuzun içine düşebileceği fiziki koşulları deneme yolu ile uygun ayarı bulmanız gerekli. Bir arkadaşınızdan telefonu elinizden olabildiğince nazik şekilde habersiz kapmasını isteyin. Telefonunuz kilitleninceye kadar ayarı uygun şekilde düzenleyin.
 
-**NOT:**Ayarı çok düşük yapmanız durumunda olağan kullanımlar sırasında da can sıkıcı kilitlenmelerle karşılaşabilirsiniz.
+**NOT:** Ayarı çok düşük yapmanız durumunda olağan kullanımlar sırasında da can sıkıcı kilitlenmelerle karşılaşabilirsiniz.
 
 ## Ayarlar
 

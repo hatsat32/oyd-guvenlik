@@ -8,7 +8,7 @@ GPG'nin man sayfası çok kalabalıktır. Bu rehberde son kullanıcıya lazım o
 
 ## Şifreleme ve İmzalama
 
-[Uçbirim aracılığı ile e-posta](yazilim_guvenligi/ucbirim_eposta.md) şifreleme, imzalama ve deşifre rehberine bu başlıktaki detaylar için başvurulabilir.
+[Uçbirim aracılığı ile e-posta](../ucbirim_eposta.md) şifreleme, imzalama ve deşifre rehberine bu başlıktaki detaylar için başvurulabilir.
 
 ## Simetrik şifreleme
 

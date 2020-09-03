@@ -35,7 +35,7 @@ Bir GPG anahtarınız yok ise Kmail size bir anahtar oluşturmayı veya var olan
 
 Bir parola belirleyip anahtar kurulumunuzu "next" tuşu ile ilerleyerek başlatabilirsiniz. GPG anahtarınızın güvenliği bu parolaya bağlı olacağı ve e-postalarınızı okumak için bu parolayı belirli aralıklarla girmeniz gerekeceğinden hem güvenli hem de hatırlanabilir bir parolaya ihtiyacınız bulunmakta. Kmail bu noktada bir parola gücü ölçeri bulunduruyor olsa da bu parolanızın güvenliği konusunda çok kısıtlı bir görev görebilir. GPG parolası olarak [**Zarola**](https://zarola.oyd.org.tr) kullanmanız hararetle tavsiye edilir.
 
-**ÖNEMLİ NOT:** Şayet bu anahtarı kullanmaya ve saklamaya hazır değilseniz veya sadece bir deneme yapıyorsanız paroladan sonra gelen "publish this key on public key server" tıkını kaldırmanız önerilir. Keza sunucuya yüklenen GPG anahtarları bir daha silinemez sadece iptal edilebilir. Bu konuda detaylı bilgi almak için [GPG rehberine](yazisma_guvenligi/gpg/gpg.md) danışabilirsiniz.
+**ÖNEMLİ NOT:** Şayet bu anahtarı kullanmaya ve saklamaya hazır değilseniz veya sadece bir deneme yapıyorsanız paroladan sonra gelen "publish this key on public key server" tıkını kaldırmanız önerilir. Keza sunucuya yüklenen GPG anahtarları bir daha silinemez sadece iptal edilebilir. Bu konuda detaylı bilgi almak için [GPG rehberine](gpg/gpg.md) danışabilirsiniz.
 
 Ayarlarınızı tamamladıktan ve anahtarınızı belirledikten sonra Kmail sunucu ayarlarınızın bulunamamış olması durumunda yapmanız için aşağıdak seçenekler sunacaktır. Buradan Generic IMAP veya POP3 tercih edileblir.
 
@@ -61,7 +61,7 @@ Karşınıza gelecek yeni mesaj ekranında şifreleme hali hazırda açık olaca
 
 ![alt-text](kmail/new3.png)
 
-Şayet GPG anahtarı yönetimi konusunda yardım ihtiyacınız var ise yine bir KDE yazılımı olan [Kleopatra ile GPG işlemleri](yazilim_guvenligi/gpg/gui_gpg.md) rehberinden yardım alabilirsiniz. 
+Şayet GPG anahtarı yönetimi konusunda yardım ihtiyacınız var ise yine bir KDE yazılımı olan [Kleopatra ile GPG işlemleri](gpg/gui_gpg.md) rehberinden yardım alabilirsiniz. 
 
 Gönder demeniz ile birlikte e-postanız şifrelenip imzalanarak karşı tarafa gönderilecektir.
 
