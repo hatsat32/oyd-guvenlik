@@ -22,8 +22,8 @@
 
 ### Android
 
-[F-droid](https://f-droid.org/) veya bir başka kaynaktan ~~[Conversations Legacy](https://conversations.im/)~~ [aTalk][] indirin. [aTalk] f-droid deposunda, OTR destekleyen tek uygulamadır.
-[aTalk]:https://github.com/cmeng-git/atalk-android
+[F-droid](https://f-droid.org/) veya bir başka kaynaktan ~~[Conversations Legacy](https://conversations.im/)~~ veya [aTalk](https://github.com/cmeng-git/atalk-android) indirin. [aTalk](https://f-droid.org/en/packages/org.atalk.android/) f-droid deposunda, OTR destekleyen tek uygulamadır.
+
 ### Windows
 
 <https://pidgin.im/download> adresini ziyaret edin.
