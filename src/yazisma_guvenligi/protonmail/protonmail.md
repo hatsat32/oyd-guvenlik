@@ -2,7 +2,7 @@
 
 ## Protonmail nedir?
 
-[Protonmail](https://protonmail.com) şifreli bir e-posta hizmetidir. Güvenlik rehberinin detaylıca incelediği şifreli e-posta hizmet sağlayıcıları arasında Protonmail'i ayıran özellik GnuPG şifrelemenin hizmetin temelinde olmasıdır. Bu Protonmail kullanıcılarının Protonmail dışındak diğer e-posta adreslerine GnuPG şifreli e-posta atabilmelerini ve diğer e-posta adreslerinden GnuPG şifreli e-posta alıp tarayıcıdan okuyabilmelerine imkan veriyor. Bu bakımdan Protonmail kullanıcıları uçtan uca şifrelemeye sadece Protonmail kullanıcıları arasında değil tüm GnuPG kullanıcıları arasında sahip oluyorlar.
+[Protonmail](https://protonmail.com) şifreli bir e-posta hizmetidir. Güvenlik rehberinin detaylıca incelediği şifreli e-posta hizmet sağlayıcıları arasında Protonmail'i ayıran özellik GnuPG şifrelemenin hizmetin temelinde olmasıdır. Bu Protonmail kullanıcılarının Protonmail dışındaki diğer e-posta adreslerine GnuPG şifreli e-posta atabilmelerini ve diğer e-posta adreslerinden GnuPG şifreli e-posta alıp tarayıcıdan okuyabilmelerine imkan veriyor. Bu bakımdan Protonmail kullanıcıları uçtan uca şifrelemeye sadece Protonmail kullanıcıları arasında değil tüm GnuPG kullanıcıları arasında sahip oluyorlar.
 
 Protonmail kullanmak elde edebileceğiniz en güvenli GnuPG kurulumu değildir. Protonmail'e her girdiğinizde tarayıcınıza gelen javascript kodunu doğrulamanız mümkün değildir. Protonmail'in istemcileri de ne yazık ki hala özgür değil. Bunun tek istisnası smtp ile Protonmail hesabınıza bağlanmanızı sağlayan [köprü(bridge)](https://protonmail.com/bridge) yazılımı. Her ne kadar Protonmail size yukarıdaki gerekçeler ile en iyi sonucu vermeyecek de olsa, pek çok Protonmail kullanıcısı ile çokça tehdit modeline yeterli güvenli yazışma yapmak ve gerekirse diğer GnuPG kullanıcıları ile yazışmanız çok kolay. Karar size kalmış.
 
@@ -10,7 +10,7 @@ Protonmail kullanmak elde edebileceğiniz en güvenli GnuPG kurulumu değildir. 
 
 GnuPG şifrelemesi yapmak için ilk gereken şey yazışacağınız Protonmail adresine ait anahtarı elde etmek. Bunun için;
 
-* Yazıştığınız kişiden anahtarını e-posta ekine koymasını isteyebilirsiniz. Bu durumda gelen anahtarı import edip hiç sorun çekmeden kullanmaya başlayabilirsiniz.
+* Yazıştığınız kişiden anahtarını e-posta ekine koymasını isteyebilirsiniz. Bu durumda gelen anahtarı içeri aktarıp hiç sorun çekmeden kullanmaya başlayabilirsiniz.
 
 * E-posta şifreli ise arkanıza yaslanıp şifreli cevap verebilirsiniz. Keza Enigmail otomatik olarak şifreli gelen e-postanın anahtarını bulacaktır.
 
@@ -18,7 +18,7 @@ GnuPG şifrelemesi yapmak için ilk gereken şey yazışacağınız Protonmail a
 
 ### Protonmail Anahtar Sunucusundan Anahtar Çekmek
 
-Anahtar sunucuları GnuPG kullanımının temel araçlarından biri. Bir firhist olan bu sunuculardan Protonmail'de sadece kendi anahtarlarını içerecek şekilde bir tane bulunduruyor. Protonmail'in sunucusu diğer sunucularla eşitlenmediğinden sadece bu sunucuya tam Protonmail adresi ile istek atarak cevap almanız mümkün.
+Anahtar sunucuları GnuPG kullanımının temel araçlarından biri. Bir fihrist olan bu sunuculardan Protonmail'de sadece kendi anahtarlarını içerecek şekilde bir tane bulunduruyor. Protonmail'in sunucusu diğer sunucularla eşitlenmediğinden sadece bu sunucuya tam Protonmail adresi ile istek atarak cevap almanız mümkün.
 
 Uçbirimde:
 
