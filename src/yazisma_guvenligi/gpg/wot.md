@@ -8,7 +8,7 @@ Basitçe güven ağı, tanıdıklarınızın tanıdıklarına güvenmenizdir. Ay
 
 GnuPG sadece bir şifreleme aracı değil aynı zamanda bir kimlik aracıdır. Bu kriptografik imza yöntemi ile anahtarın sahibinin bir bilginin kendisine ait olduğunu kanıtlaması gibi kendisinin söylediği kişi olduğunu da kanıtlamasını sağlar. Bu neden ile GPG inkar edilebilir şifreleme sunmaz ve bu neden ile çoğu GPG kullanıcı anahtarlarında gerçek adlarını ve e-posta adreslerini bulundurur. Çünkü amaç kişinin kendini kanıtlamasıdır.
 
-Pek çok devlet ve şirket kaynaklı kimlik yönetim sisteminin aksine GPG merkezi bir otoriteye dayanmaz. Bu neden ile herhangi bir kişi istediği isimle veya bilgiyle [bir anahtar oluşturabilir](gpg-anahtar-uretimi.md) ve bunu hiç bir sorunun sorulmadığı anahtar sunucularına yükleyebilir. Bu sebepten [tanınmış kişilerin ismine pek çok sahte anahtar bulunmakta](https://keyserver.ubuntu.com/pks/lookup?search=richard+stallman&fingerprint=on&op=index), [gerçek insanların anahtarlarında da belki binlerce sahte imza](https://keyserver.ubuntu.com/pks/lookup?search=0xF2AD85AC1E42B367&fingerprint=on&op=index) bulunmakta. Bu vahşi batı düzenine çözüm olarak kısmen daha [merkezi sistemler](https://keys.openpgp.org) ve [başkaca güven kaynakları ile desteklenmiş çözümler](wkd.md) önerilmekte ise de güven ağı hala bireyin en güçlü olduğu, en özgürlükçü sistemdir.
+Pek çok devlet ve şirket kaynaklı kimlik yönetim sisteminin aksine GPG merkezi bir otoriteye dayanmaz. Bu neden ile herhangi bir kişi istediği isimle veya bilgiyle [bir anahtar oluşturabilir](gpg-anahtar-uretimi.md) ve bunu hiçbir sorunun sorulmadığı anahtar sunucularına yükleyebilir. Bu sebepten [tanınmış kişilerin ismine pek çok sahte anahtar bulunmakta](https://keyserver.ubuntu.com/pks/lookup?search=richard+stallman&fingerprint=on&op=index), [gerçek insanların anahtarlarında da belki binlerce sahte imza](https://keyserver.ubuntu.com/pks/lookup?search=0xF2AD85AC1E42B367&fingerprint=on&op=index) bulunmakta. Bu vahşi batı düzenine çözüm olarak kısmen daha [merkezi sistemler](https://keys.openpgp.org) ve [başkaca güven kaynakları ile desteklenmiş çözümler](wkd.md) önerilmekte ise de güven ağı hala bireyin en güçlü olduğu, en özgürlükçü sistemdir.
 
 ## Güven ağı nasıl kurulur
 
@@ -48,7 +48,7 @@ Kendi güven ağınızı oluşturduktan sonra yapmanız gereken tek şey bu ağ�
 
 Neredeyse 30 yıldır hayatta olan güven ağı dünyada kabul edilmiş kimi kurallara göre işler. Bu kurallara bağlı olarak güven ağınızı oluşturmak hem sizin hem de **tüm GPG kullanıcıları için çok ama çok önemlidir.**
 
-1. Yüzyüze tanışmadığınız kimsenin anahtarını imzalamayın
+1. Yüz yüze tanışmadığınız kimsenin anahtarını imzalamayın
 2. Tanıştığınız kişilerin söyledikleri kişiler olduğunu mümkün ise birden fazla fotoğraflı resmi kimlik ile doğrulayın
 3. Anahtar parmakizlerinin tamamını kontrol edin ve anahtardaki bilgilerin kimliklerindeki bilgiler ile eşleştiğinden emin olun.
 
