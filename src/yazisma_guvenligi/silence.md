@@ -4,7 +4,7 @@
 
 [SMS veya kısa mesaj servisi](https://en.wikipedia.org/wiki/Short_Message_Service) cep telefonlarına gelen ilk yazılı iletişim sistemidir. Bu amaçla günümüzde artık kişiler arasındaki iletişim için pek kullanılmasa da GSM sistemleri tarafından hala desteklenmekte ve [2FA](/beseri_guvenlik/2fa.md) için sıklıkla kullanılmaktadır.
 
-SMS'ler operatörlerin elinde bulunan anahtarlarla telefon ile baz istasyonu arasında şifrelenmektedir. Lakin anahtar kullanıcının kontorlünde olmadığından uçtan uca şifrelemenin sağlayacağı güvenliği veya operatör ile uyması gereken kanunlara karşı mahremiyeti sunamayacaktır. [Aynı zamanda GSM ağındaki SMS şifrelemenin dayanıklılığı da şüphelidir.](https://www.schneier.com/blog/archives/2019/11/eavesdropping_o_8.html)
+SMS'ler operatörlerin elinde bulunan anahtarlarla telefon ile baz istasyonu arasında şifrelenmektedir. Lakin anahtar kullanıcının kontrolünde olmadığından uçtan uca şifrelemenin sağlayacağı güvenliği veya operatör ile uyması gereken kanunlara karşı mahremiyeti sunamayacaktır. [Aynı zamanda GSM ağındaki SMS şifrelemenin dayanıklılığı da şüphelidir.](https://www.schneier.com/blog/archives/2019/11/eavesdropping_o_8.html)
 
 ## SMS şifreleme gerekli midir
 
@@ -33,7 +33,7 @@ Sonrasında size gelen mesajlara iletildi raporu gönderip gördermemek konusund
 
 ![alt-text](silence/iletim.png)
 
-Ardından Silence sizi ana ekranı ile başbaşa bırakacaktır. Bu noktadan sonra kimi ayarlara müdahale edebilir ve yazılımı tanımaya başlayabilirsiniz. Ana ekrande 3 adet düğme bulunur.
+Ardından Silence sizi ana ekranı ile baş başa bırakacaktır. Bu noktadan sonra kimi ayarlara müdahale edebilir ve yazılımı tanımaya başlayabilirsiniz. Ana ekrande 3 adet düğme bulunur.
 
 ![alt-text](silence/anaekran.png)
 
@@ -51,7 +51,7 @@ Mahremiyet (privacy) ayarları da Silence'ın kullanımına ilişkin önemli aya
 
 ![alt-text](silence/parola.png)
 
-Menü de "kimlik anahtarınız" (Your Identity Key) menüsünde, Silence'ın SMS'lerinizi şifrelemekte kullandığı anahtarın parmak izini bulabilirsiniz. Bu parmakizi sizi tanımlamakta ve Silence ile şifreli yazıştığınız kişiler bu anahtara güvenmektedirler. Bu kimlik bilgisini web sitenizde yayınlayabilir, çevrenize çeşitli kanallardan duyurabilirsiniz. Böylece size ilk defa şifreli SMS atacaklar yazışmanın güvenli olduğunu doğrulayabilir. Bu anahtar telefonunuzu değiştirmeniz, yeniden kurmanız veya Silence'ı yedeklemeden kaldırmanız durumunda **kaybolacaktır.** Bu neden ile şifreli bir yedeği dışa aktarıp güvenli şekilde saklayarak anahtarınızı koruyabilirsiniz.
+Menü de "kimlik anahtarınız" (Your Identity Key) menüsünde, Silence'ın SMS'lerinizi şifrelemekte kullandığı anahtarın parmak izini bulabilirsiniz. Bu parmak izi sizi tanımlamakta ve Silence ile şifreli yazıştığınız kişiler bu anahtara güvenmektedirler. Bu kimlik bilgisini web sitenizde yayınlayabilir, çevrenize çeşitli kanallardan duyurabilirsiniz. Böylece size ilk defa şifreli SMS atacaklar yazışmanın güvenli olduğunu doğrulayabilir. Bu anahtar telefonunuzu değiştirmeniz, yeniden kurmanız veya Silence'ı yedeklemeden kaldırmanız durumunda **kaybolacaktır.** Bu neden ile şifreli bir yedeği dışa aktarıp güvenli şekilde saklayarak anahtarınızı koruyabilirsiniz.
 
 ![alt-text](silence/kimlik.png)
 
@@ -59,26 +59,26 @@ Menü de "kimlik anahtarınız" (Your Identity Key) menüsünde, Silence'ın SMS
 
 ![alt-text](silence/mesaj.png)
 
-Karşınıza gelen ekranda kişinin isminin yanında bulunan açık konumdaki asmakilit sembolüne tıklayın ve ardından "Güvenli oturum başlat" (start secure session) düğmesine tıklayın.
+Karşınıza gelen ekranda kişinin isminin yanında bulunan açık konumdaki asma kilit sembolüne tıklayın ve ardından "Güvenli oturum başlat" (start secure session) düğmesine tıklayın.
 
 ![alt-text](silence/session.png)
 ![alt-text](silence/init.png)
 
-Gelen soruyu "evet" olarak cevaplamanız durumunda Silence karşı tarafa anahtar değişimi için bir SMS gönderecektir. Konuşmak istediğiniz kişi Silence kullanıyor ise kendisine sizin onun ile güvenli oturum başlatmak istediğinize dair bir bildirim düşecektir. Kişinin bu bildirimi olumlu cevaplaması ile size anahtar değişimini tamamlayacak bir SMS gelecek ve kişinin isminin yanındaki asmakilit sembolü kapalı konuma geçecektir.
+Gelen soruyu "evet" olarak cevaplamanız durumunda Silence karşı tarafa anahtar değişimi için bir SMS gönderecektir. Konuşmak istediğiniz kişi Silence kullanıyor ise kendisine sizin onun ile güvenli oturum başlatmak istediğinize dair bir bildirim düşecektir. Kişinin bu bildirimi olumlu cevaplaması ile size anahtar değişimini tamamlayacak bir SMS gelecek ve kişinin isminin yanındaki asma kilit sembolü kapalı konuma geçecektir.
 
 ![alt-text](silence/kilit.png)
 
 ## Anahtarların doğrulanması
 
-Her uçtan uca şifreleme aracında olduğu gibi Silence kullanırken de konuştuğunuz kişiler ile anahtarlarınızı **mutlaka** doğrulamalısınız. Aksi halde iletişimizin arasına giren kötü niyetli bir kişinin iletişiminizi **[takip edebilir veya dilediği gibi değiştirebilir](https://en.wikipedia.org/wiki/Man-in-the-middle_attack).** Bunu engellemek için konuştuğunuz kişinin bölümüne gelip asmakilit simgesine tıklayıp "verify identity" (kimlik doğrula) bölümünü açıp ilgili alandaki size ve karşı tarafa ait anahtarların doğru olduğunu kontrol etmelisiniz.
+Her uçtan uca şifreleme aracında olduğu gibi Silence kullanırken de konuştuğunuz kişiler ile anahtarlarınızı **mutlaka** doğrulamalısınız. Aksi halde iletişimizin arasına giren kötü niyetli bir kişinin iletişiminizi **[takip edebilir veya dilediği gibi değiştirebilir](https://en.wikipedia.org/wiki/Man-in-the-middle_attack).** Bunu engellemek için konuştuğunuz kişinin bölümüne gelip asma kilit simgesine tıklayıp "verify identity" (kimlik doğrula) bölümünü açıp ilgili alandaki size ve karşı tarafa ait anahtarların doğru olduğunu kontrol etmelisiniz.
 
 ![alt-text](silence/anahtarlar.png)
 
 ![alt-text](silence/verify.png)
 
-Bunu doğrulamayı tercihen sesli bir iletişim kanalı üzerinden yapabilirsiniz. GSM araması yerine [signal](signal.md) veya Jitsi araması yaparak daha güvenli bir doğrulama gerçekleştirebilirsiniz. Her halukarda en iyisi bu karşılaştırmayı yüzyüze yapmaktır. Bu durumda anahtarların göründüğü ekranın sağ üst köşesindeki karekod okutma imkanı çok kolaylık sağlayacaktır. Açılan menüden kendi anahtarınızı karekod olarak göstermeyi veya karşı tarafın karekodunu taramayı seçebilirsiniz.
+Bunu doğrulamayı tercihen sesli bir iletişim kanalı üzerinden yapabilirsiniz. GSM araması yerine [signal](signal.md) veya Jitsi araması yaparak daha güvenli bir doğrulama gerçekleştirebilirsiniz. Her halükarda en iyisi bu karşılaştırmayı yüz yüze yapmaktır. Bu durumda anahtarların göründüğü ekranın sağ üst köşesindeki karekod okutma imkanı çok kolaylık sağlayacaktır. Açılan menüden kendi anahtarınızı karekod olarak göstermeyi veya karşı tarafın karekodunu taramayı seçebilirsiniz.
 
 ![alt-text](silence/karekod.png)
 ![alt-text](silence/karekod_menu.png)
 
-Bu noktadan sonra Silence anahtar değişimi yaptığınız kişi ile şifreli olarak SMS alıp gönderecektir. Siz ise bu durumu asmakilit sembolünden başka hiç bir noktada fark etmeyecek ve rahatlık içinde iletişiminizi sürdürebileceksiniz.
+Bu noktadan sonra Silence anahtar değişimi yaptığınız kişi ile şifreli olarak SMS alıp gönderecektir. Siz ise bu durumu asma kilit sembolünden başka hiçbir noktada fark etmeyecek ve rahatlık içinde iletişiminizi sürdürebileceksiniz.

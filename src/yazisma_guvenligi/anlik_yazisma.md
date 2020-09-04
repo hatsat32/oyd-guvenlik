@@ -2,7 +2,7 @@
 
 ## Anlık Yazışma Nedir?
 
-Bir zamanlar İnternet üzerinden yapılan iletişimin küçük bir kısmı olan "chat" taşınabilir cihazların, özellikle mobil İnternet bağlantısının gelişmesi ile tüm günlük iletişimin en temel özelliği haline gelmiş durumda. Özellikle klasik GSM hizmeti olan SMS ve MMS'in dudak uçuklatan fiyatlarının yanında neredeyse hiç bir maliyet olmadan her türlü veriyi sorunsuzca aktarabilme gücü iletişimin yönünü anlık yazışma yönünde değiştirmiştir. Süreç, SMS fiyatlarının da maliyetiyle arasındaki farkın azalmasını beraberinde getirmiştir.
+Bir zamanlar İnternet üzerinden yapılan iletişimin küçük bir kısmı olan "chat" taşınabilir cihazların, özellikle mobil İnternet bağlantısının gelişmesi ile tüm günlük iletişimin en temel özelliği haline gelmiş durumda. Özellikle klasik GSM hizmeti olan SMS ve MMS'in dudak uçuklatan fiyatlarının yanında neredeyse hiçbir maliyet olmadan her türlü veriyi sorunsuzca aktarabilme gücü iletişimin yönünü anlık yazışma yönünde değiştirmiştir. Süreç, SMS fiyatlarının da maliyetiyle arasındaki farkın azalmasını beraberinde getirmiştir.
 
 Keza anlık yazışma yaygınlaşana kadar İnternet'te kullanılan en yaygın iletişim aracı e-posta, uzunca düşünülmüş bir mektup gibi anlık iletişim ihtiyaçlarını karşılamadığından, günlük iletişimin anlık yazışma yazılımlarına akması doğaldır. Aynı zamanda grup yazışmaları ve hiyerarşik sıralama pek çok topluluk için de örgütlenme açısından çok faydalı sonuçlar verebilmektedir.
 
@@ -27,4 +27,4 @@ Bu durumun değişmesi gerekiyor! Hem Facebook'un elinde kullanıcılarının ve
 | [OTR](otr.md) | Perfect forward secrecy (mutlak gizlilik), inkar edilebilirlik, federatif | [XMPP](https://en.wikipedia.org/wiki/XMPP)(Jabber) üzerinden her platform üzerinde kullanılabilir. 2004'ten beri kullanılmaktadır. |
 | [OMEMO](./omemo.md) | Perfect forward secrecy (mutlak gizlilik), inkar edilebilirlik, federatif | OTR'nin çoklu cihaz desteği getirilmiş modern versiyonu. |
 | [Signal](./signal.md) | Modern kriptografi, kullanıcı dostu arayüz, grup desteği, yaygın kullanım | Sıkça tavsiye edilen modern görünümlü bir mobil temelli yazılım. Kullanıcı sayısı giderek artmakta fakat [federasyon düşmanı](https://www.oyd.org.tr/en/articles/signal/). |
-| [Silence]() | GSM ve SMS üzerinden çalışmaktadır | İnterten olmadan kullanılır |
+| [Silence]() | GSM ve SMS üzerinden çalışmaktadır | İnternet olmadan kullanılır |

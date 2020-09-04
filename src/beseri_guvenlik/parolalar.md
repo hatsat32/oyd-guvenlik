@@ -42,7 +42,7 @@ Güçlü parolalar rastgele üretilirler. Bir parolanın gücünü, uzunluğu ve
 
 Hatırlamanız gereken parolalar üretmek için pek çok yol bulunmaktadır. Eğer parola yöneticisi kullanıyorsanız bırakın uygulama sizin için üretsin. Ancak kendiniz hatırlaması kolay güçlü parolalar oluşturmak istiyorsanız biz [Zarola](https://zarola.oyd.org.tr) kullanmanızı öneriyoruz.
 
-[Zarola](https://zarola.oyd.org.tr), kolayca hatırlanabilir ve yüksek derecede güvenli parolalar oluşturabilmenizi sağlayan bir yöntemdir. İnsanlar rastgele şeyler üretemeyeceklerinden rastgelelik kaynağı olarak zar veya bozukpara kullanılır. 7776 Tane kelime içinden seçilen 7 adet ile parola oluşturulur ve hikayeleştirilerek ezberlenir. Bazen komik hikayeler bile çıkar!
+[Zarola](https://zarola.oyd.org.tr), kolayca hatırlanabilir ve yüksek derecede güvenli parolalar oluşturabilmenizi sağlayan bir yöntemdir. İnsanlar rastgele şeyler üretemeyeceklerinden rastgelelik kaynağı olarak zar veya bozuk para kullanılır. 7776 Tane kelime içinden seçilen 7 adet ile parola oluşturulur ve hikayeleştirilerek ezberlenir. Bazen komik hikayeler bile çıkar!
 
 Konuya ilişkin Security Self-defense'in "[Güçlü Parolalar Üretmek](https://ssd.eff.org/en/module/creating-strong-passwords)" rehberine bakabilirsiniz.
 

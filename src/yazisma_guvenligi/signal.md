@@ -20,7 +20,7 @@
 
 Android veya IOS çalıştıran cihazlarda Signal kullanmak, herhangi bir yazılımı kurmak kadar kolaydır. Playstore veya Appstore'dan arama yapıp Signal'i kurabilirsiniz. 
 
-Bu şekilde kurulum yaptığınız durumda Signal'in Google'ın bildirim ve harita hizmetlerine ait bağımlılıklarını içeren versiyonunu kuracağınızı aklınızda bulundurmalısınız. Ne yazık ki Signal bu bağımlılıkları kullanmakta israr ettiği ve belirli yazılım özgürlüklerini göz ardı ettiğinden F-droid depolarında yer bulmamakta. Bu yüzden Android versiyonunun [APK](https://signal.org/android/apk/) kurulum dosyasını indirmelisiniz. **MUTLAKA** indirdiğiniz dosyanın parmak izi doğrulamasını yapın. Bunun için bir GNU/Linux bilgisayarda uç birimde aşağıdaki komutu çalıştırarak Signal'in indirme sayfasında verdiği parmak izi karşılaştırılabilir;
+Bu şekilde kurulum yaptığınız durumda Signal'in Google'ın bildirim ve harita hizmetlerine ait bağımlılıklarını içeren versiyonunu kuracağınızı aklınızda bulundurmalısınız. Ne yazık ki Signal bu bağımlılıkları kullanmakta ısrar ettiği ve belirli yazılım özgürlüklerini göz ardı ettiğinden F-droid depolarında yer bulmamakta. Bu yüzden Android versiyonunun [APK](https://signal.org/android/apk/) kurulum dosyasını indirmelisiniz. **MUTLAKA** indirdiğiniz dosyanın parmak izi doğrulamasını yapın. Bunun için bir GNU/Linux bilgisayarda uç birimde aşağıdaki komutu çalıştırarak Signal'in indirme sayfasında verdiği parmak izi karşılaştırılabilir;
 
 `keytool -list -printcert -jarfile [apk'nın yolu]`
 
@@ -34,9 +34,9 @@ Flatpak kullananlar dağıtımlarından bağımsız olarak Signal masaüstü ist
 
 ## İpuçları ve Öneriler
 
-* Signal mahremiyet vaadeden bir platform değildir. Tüm kullanıcılarını, kimliklerine sıkı sıkıya bağlı ve anonimlikten uzak cep telefonu numarası ile tanımlar. Telefon numarası anonimliğin güvenlik için gerektiği durumlarda ciddi tehlikeli bir veridir. Bu bakımdan Signal'den beklentiniz anonimlik olmamalıdır.
+* Signal mahremiyet vadeden bir platform değildir. Tüm kullanıcılarını, kimliklerine sıkı sıkıya bağlı ve anonimlikten uzak cep telefonu numarası ile tanımlar. Telefon numarası anonimliğin güvenlik için gerektiği durumlarda ciddi tehlikeli bir veridir. Bu bakımdan Signal'den beklentiniz anonimlik olmamalıdır.
 
-* Signal'i kullandığınız kişiler ile anahtarlarınızı doğrulamazsanız şifrelemenin güvenliğini ciddi miktarda zayıflatmış olursunuz. Bu tip saldırılar hem [devletler tarafından](https://yro.slashdot.org/story/18/11/07/2156241/police-decrypt-258000-messages-after-breaking-pricey-ironchat-crypto-app) hem de kötücül amaçlı bireyler tarafından gerçekleştirilebilmekte. Konuşma penceresinde kişi ismine tıkladıktan sonra açılan menünün en altında "Güvenlik numarasını görüntüle" bölümündeki numaraları **SIGNAL HARİCİ** bir kanaldan doğrulayabilir. Yanyana iken gösterilen karekodu taratarak doğrulama yapabilirsiniz.
+* Signal'i kullandığınız kişiler ile anahtarlarınızı doğrulamazsanız şifrelemenin güvenliğini ciddi miktarda zayıflatmış olursunuz. Bu tip saldırılar hem [devletler tarafından](https://yro.slashdot.org/story/18/11/07/2156241/police-decrypt-258000-messages-after-breaking-pricey-ironchat-crypto-app) hem de kötücül amaçlı bireyler tarafından gerçekleştirilebilmekte. Konuşma penceresinde kişi ismine tıkladıktan sonra açılan menünün en altında "Güvenlik numarasını görüntüle" bölümündeki numaraları **SIGNAL HARİCİ** bir kanaldan doğrulayabilir. Yan yana iken gösterilen karekodu taratarak doğrulama yapabilirsiniz.
 
 ![alt-text](signal/signal1.png)
 ![alt-text](signal/signal2.png)

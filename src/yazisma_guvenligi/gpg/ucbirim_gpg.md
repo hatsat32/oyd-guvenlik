@@ -48,7 +48,7 @@ Detached veya ayrık imza, imzalanan veri ile imza bloğunun ayrı dosyalar olma
 
 `gpg --detached-sign [dosya dizini]`
 
-Şayet imzayı metin olarak aktarmayı düşünüyorsanız `--armor` paramteresini ekleyerek base64 kodlama ile aynı işlemi gerçekleştirebilirsiniz.
+Şayet imzayı metin olarak aktarmayı düşünüyorsanız `--armor` parameteresini ekleyerek base64 kodlama ile aynı işlemi gerçekleştirebilirsiniz.
 
 `gpg --detached-sign --armor [dosya dizini]`
 
@@ -64,7 +64,7 @@ GPG ile imzalanmış bir metni doğrulamak için aşağıdaki komutu kullanıp m
 
 ## Umumi anahtarları listeleme
 
-GPG kullanımı iletişime geçeceğiniz kişilerin umumi anahtarlarını da bulundurmanızı gerektirmekte. Bu anahtarlar bir firhist gibi cihazınızda tutulmaktadır. Bunları listelemek için aşağıdaki komutu kullanabilirsiniz.
+GPG kullanımı iletişime geçeceğiniz kişilerin umumi anahtarlarını da bulundurmanızı gerektirmekte. Bu anahtarlar bir fihrist gibi cihazınızda tutulmaktadır. Bunları listelemek için aşağıdaki komutu kullanabilirsiniz.
 
 `gpg --list-keys`
 

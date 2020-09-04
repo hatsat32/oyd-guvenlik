@@ -32,7 +32,7 @@ Bu noktadan sonra Mailvelop'da bir özel anahtarınız bulunmakla size gelen şi
 
 ## E-posta alan adının yetkilendirilmesi
 
-Mailvelope hangi alan adlarında çalışacağına dair izin istemektedir. şayet önceden e-posta hizmet sağlayıcı olarak Mailvelope tarafından tanınan e-postalardan birini kullanmıyorsanız (ör: Riseup) e-postanıza tarayıcınızdan gidiğinizde Mailvelope'ı bu alan adına yetkilendirmeniz gereklidir.
+Mailvelope hangi alan adlarında çalışacağına dair izin istemektedir. Şayet önceden e-posta hizmet sağlayıcı olarak Mailvelope tarafından tanınan e-postalardan birini kullanmıyorsanız (ör: Riseup) e-postanıza tarayıcınızdan gidiğinizde Mailvelope'ı bu alan adına yetkilendirmeniz gereklidir.
 
 Bunu yapmanın en kolay yolu e-postanıza girip Mailvelope eklenti simgesine tıklayıp "Authorize this domain" tuşu ile alan adını yetkilendirmektir.
 

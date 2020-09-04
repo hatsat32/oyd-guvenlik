@@ -1,6 +1,6 @@
 # Fiziki Güvenlik
 
-Bir cihazın güvenliği sadece yazılımsal değil aynı zamanda donanımsal koşullara da bağlıdır. Teknik olarak cihazınıza uzaktan gelebilecek tehlikelere karşı tedbir alsanız bile cihazınıza fiziken erişimi olan bir saldırganın, çok daha etkili ve görünmez saldırılarına maruz kalmanız işten bile değildir. Bu tip saldırılara karşı alınabilecek tedbirler yine fiziki olmaktadır.
+Bir cihazın güvenliği sadece yazılımsal değil aynı zamanda donanımsal koşullara da bağlıdır. Teknik olarak cihazınıza uzaktan gelebilecek tehlikelere karşı tedbir alsanız bile cihazınıza fiziki erişimi olan bir saldırganın, çok daha etkili ve görünmez saldırılarına maruz kalmanız işten bile değildir. Bu tip saldırılara karşı alınabilecek tedbirler yine fiziki olmaktadır.
 
 Fiziki erişimi ile gerçekleştirilebilecek saldırılar, basit bir web araması ile elde öğrenilebileceklerden ulus devlet seviyesinde kaynakları gerektiren yöntemlere uzanmaktadır. Bu bakımdan fiziki erişim ile yapılabilecek saldırılar sadece filmlerde görülebilecek cinsten zorlukta değildir.
 
@@ -22,7 +22,7 @@ Bu iki koşulu size tehlike oluşturabilecek saldırıların imkanları ile kıy
 
 ## Cihazlarınızı gözetim altında tutun
 
-Şayet cihazlarınızı taşıyamıyor veya taşımak istemiyorsanız, cihazlarınızı sürekli gözetim altında bulundurmayı değerlendirebilirsiniz. Bu cihazlarınıza yapılacak bir müdahaleyi engellemeyecek olsa da saldırganı caydırabilir, sizden habersiz müdahale edemeyecek olduğundan dolayı saldırının anlamını yitirmesine neden olabilir veya durumun farkında olmayan bir saldırganı kayıt altına alabilir. Her halukarda kayıt sisteminizin de güvenliğini düşünmeniz ve gözetim sisteminizin sizi olası durumlarda uyaracağından ve kayıtlara kolayca müdahale edilemeyeceğinden emin olmanız gerekir. Şayet hiç bakmadığınız veya baktığınızda silinmiş bir kamera kaydı bir girişimi kaydetse bile çok işinize yaramayacaktır.
+Şayet cihazlarınızı taşıyamıyor veya taşımak istemiyorsanız, cihazlarınızı sürekli gözetim altında bulundurmayı değerlendirebilirsiniz. Bu cihazlarınıza yapılacak bir müdahaleyi engellemeyecek olsa da saldırganı caydırabilir, sizden habersiz müdahale edemeyecek olduğundan dolayı saldırının anlamını yitirmesine neden olabilir veya durumun farkında olmayan bir saldırganı kayıt altına alabilir. Her halükarda kayıt sisteminizin de güvenliğini düşünmeniz ve gözetim sisteminizin sizi olası durumlarda uyaracağından ve kayıtlara kolayca müdahale edilemeyeceğinden emin olmanız gerekir. Şayet hiç bakmadığınız veya baktığınızda silinmiş bir kamera kaydı bir girişimi kaydetse bile çok işinize yaramayacaktır.
 
 Bu amaçla tasarlanmış ilginç projelerden biri olarak [Guardian Project](https://guardianproject.info/) tarafından geliştirilen [Haven](https://github.com/guardianproject/haven/releases) dikkate değerdir. Bir android telefonu güvenli bir gözetim aracına çevirmeye yarayan Haven, cihazın sensörleri ve kamerası ile izlediği alandaki değişiklikleri kaydedip kullanıcısına Signal ve TOR üzerinden haber verebilmekte.
 
@@ -46,7 +46,7 @@ Cihazınızın /boot sektörünü ve tüm açılış aşamalarını kriptografik
 
 ### Fiziki güvenlik tedbirleri
 
-Cihazınıza fiziken girişimde bulunmak genellikle bir biçimde cihazınızın açılmasını gerektirebilir. Bu cihazın donanımlarına bir ekleme yapmak veya ram ve sabit sürücü gibi donanımların çıkarılarak/değiştirilerek müdahale edilmesi olabileceği gibi kabaca kilidi açık cihazınızın elinizden kapılması da olabilir. Bir saldırganın yapacağı değişikliklerin ifşa olacağını fark etmesi hem caydırıcı hem de genel olarak güven verici bir önlemdir.
+Cihazınıza fiziki girişimde bulunmak genellikle bir biçimde cihazınızın açılmasını gerektirebilir. Bu cihazın donanımlarına bir ekleme yapmak veya ram ve sabit sürücü gibi donanımların çıkarılarak/değiştirilerek müdahale edilmesi olabileceği gibi kabaca kilidi açık cihazınızın elinizden kapılması da olabilir. Bir saldırganın yapacağı değişikliklerin ifşa olacağını fark etmesi hem caydırıcı hem de genel olarak güven verici bir önlemdir.
 
 * [Simli Oje ve Entropi ile Fiziki Güvenlik](oje.md)
 

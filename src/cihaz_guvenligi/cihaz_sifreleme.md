@@ -17,7 +17,7 @@ Bilgisayar Kurulumları:
   * "Ev Dizini" Şifreleme: Bu yaklaşımda ise işletim sistemi **şifrelenmez**. Kişisel verileriniz korunacaktır fakat bir saldırganın cihazınıza eriştiğinde işletim sisteminize etki edecek bir değişiklik yapmasını engellemeyecektir.
 
 * **Windows**: [Security Planner / Windows Şifrelemesi](https://securityplanner.org/#/tool/windows-encryption)
-  * Önemli: Microsoft, standart olarak şifreleme anahtarlarınızı uzak sunucularda yedeklemektedir. Bu Microsoft'un ve işbirliği yaptığı her devletin cihazınızı kolaylıkla deşifre edebilmesi demektir. Eğer bir devletin cihazınızın içeriğine erişmesinden endişeli iseniz bu "özelliği" devre dışı bırakmalısınız ve [yeni anahtarlar üretmelisiniz](https://theintercept.com/2015/12/28/recently-bought-a-windows-computer-microsoft-probably-has-your-encryption-key/).
+  * Önemli: Microsoft, standart olarak şifreleme anahtarlarınızı uzak sunucularda yedeklemektedir. Bu Microsoft'un ve iş birliği yaptığı her devletin cihazınızı kolaylıkla deşifre edebilmesi demektir. Eğer bir devletin cihazınızın içeriğine erişmesinden endişeli iseniz bu "özelliği" devre dışı bırakmalısınız ve [yeni anahtarlar üretmelisiniz](https://theintercept.com/2015/12/28/recently-bought-a-windows-computer-microsoft-probably-has-your-encryption-key/).
 
 * **macOS**: [Security Planner / Mac Şifreleme](https://securityplanner.org/#/tool/mac-encryption)
 
@@ -31,7 +31,7 @@ Cep Telefonu Kurulumları:
 
 ## Cihaz şifrelemenin zorlukları
 
-**Sınırları:** Cihaz şifreleme her derde deva değildir! Eğer [parolalarınız](../beseri_guvenlik/parolalar.html) yeterince güçlü değil ise bir bilgisayar rahatlıkla parolanızı tahmin edebilir ve cihazınıza erişilebilir. Ayrıca cihaz şifreleme virüslere ve kötücül yazılımlara karşı hiç bir koruma sağlamaz. Eğer verileriniz bir bulut hizmetine yedeklendiyse ve bu hizmeti sağlayan sunucular açığa çıkar veya devletle işbirliği yaparsalarsa cihaz şifrelemesi verilerinizi korumayacaktır (kullanılan hizmet özellikle uçtan uca şifreleme desteklemiyorsa).
+**Sınırları:** Cihaz şifreleme her derde deva değildir! Eğer [parolalarınız](../beseri_guvenlik/parolalar.html) yeterince güçlü değil ise bir bilgisayar rahatlıkla parolanızı tahmin edebilir ve cihazınıza erişilebilir. Ayrıca cihaz şifreleme virüslere ve kötücül yazılımlara karşı hiçbir koruma sağlamaz. Eğer verileriniz bir bulut hizmetine yedeklendiyse ve bu hizmeti sağlayan sunucular açığa çıkar veya devletle iş birliği yaparsalarsa cihaz şifrelemesi verilerinizi korumayacaktır (kullanılan hizmet özellikle uçtan uca şifreleme desteklemiyorsa).
 
 **Yetkilendirme etkinleştirilmelidir**  
 Cihaz şifrelemesi, yetkilendirme zorunlu değilse etkili değildir. Örneğin dizüstünü bilgisayarınıza giriş yapmanız veya cep telefonunuzun ekran kilidini bir PIN ile korumanız gibi...
