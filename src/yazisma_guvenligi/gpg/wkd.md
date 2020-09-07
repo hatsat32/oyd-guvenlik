@@ -46,7 +46,7 @@ Bu işlemleri gerçekleştirmeniz ardından anahtarınız sunucuda listelenmeye 
 
 ## WKD destekleyen e-posta sağlayıcılar
 
-Giderek yaygınlık kazanmakta olan WKD kimi e-posta sağlayıcılar tarafından otomatik olarak desteklenmeye başlamıştır. Aşağıdaki e-posta sağlayıcılar [gnupg.org](https://wiki.gnupg.org/WKD) WKD desteklemektedir.
+Giderek yaygınlık kazanmakta olan WKD kimi e-posta sağlayıcılar tarafından otomatik olarak desteklenmeye başlamıştır. Aşağıdaki e-posta sağlayıcıların [gnupg.org](https://wiki.gnupg.org/WKD) listesinde WKD desteklediği belirtilmiştir.
 
 [Posteo](https://posteo.de)
 
