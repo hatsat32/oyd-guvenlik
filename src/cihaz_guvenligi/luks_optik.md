@@ -30,8 +30,6 @@ Optik disklerin mekanik parçalar içermemesi ve dış etmenlere olan dayanıkl�
 
 * Offline tutulması gereken hassas verilerin yedeklenmesi ve saklanması
 
-* 
-
 ### Optik disklern taşıma kullanımı
 
 Optik disklerin en değerli kullanımlarından biri veri taşıma ihtiyacında ortaya çıkmaktadır. Optik disklerin ucuz olmaları ve ince yapıları sebebi ile gözden çıkarılabilir şekilde çeşitli aracılar veya riskli alanlardan taşınması mümkün olmaktadır.
@@ -42,23 +40,52 @@ Optik disklerin en değerli kullanımlarından biri veri taşıma ihtiyacında o
 
 * El koyulması durumunda ekonomik bir endişeye yol açmaması
 
-* 
-
 ## Optik disklerin teknik faydaları
 
 Veri güvenliğinin operasyonel koşullarında bir verinin optik disk üzerinde tutulması veya işlenmesinin olası faydaları bulunmaktadır.
 
 * Optik diskler çok hızlı şekilde imha edilebilirler.
 
-* Optik diskler bir kere yazıldıktan sonra değiştirilemedikleri için üzerindeki verilerin değiştirilmesi mümkün değildir.
+* Optik diskler bir kere yazıldıktan sonra değiştirilemedikleri için üzerindeki verilerin bütünlüğünü korurlar.
 
+* Optik diskler kolayca depolanabilir ve fazla yer kaplamazlar. Hareketli parça içermediklerinden mekanik olarak görece dayanıklı sayılırlar.
 
+## Şifreli optik disk oluşturmak
 
+Bir optik diskteki verileri şifrelemenin pek çok yolu bulunmakta. [GPG kullanarak tüm dosyaları şifreleyip](yazisma_guvenligi/gpg/gui_gpg.md) diske yazmak mümkün olduğu gibi [uzak sunucudaki dosyaların şifrelendiği](cihaz_guvenligi/uzaksunucu.md) şekilde şifrelenne dizini olduğu gibi diske yazdımak mümkün.
 
+Bu rehber Luks ile bir optik diskin şifrelenmesini anlatacaktır. Bu yöntemin yukarıdaki seçeneklere göre birkaç faydası bulunmakta.
 
+* Tüm GNU/Linux sistemler Luks aygıtları otomatik olarak açabilmekte ve dosya sistemini gösterebilmekte. Bu sebepten diskin kullanımı çok kolaylaşmakta.
 
+* Crypfs ve GPG gibi ayrı bir yazılımın kullanımına gerek kalmadan deşifre işlemi yapılabilmekte.
 
+* Dosya dizinleri ve boyutları gibi üstverilerin ifşası engellenebilmekte.
 
+Bu rehberi takip edebilmek için bir herhangi bir GNU/Linux dağıtımını kullanmanız, root erişimine ve bir disk yazıcıya sahip olmanız gerekmekte. Rehber DVD kapasitesini esas almakla birlikte boyutları dilediğiniz şekilde değiştirmeniz mümkündür.
 
+### Boş bir dosya yaratın
 
+İçine verilerin yazılacağı boş bir dosyaya ihtiyaç duyulmakta. Bunu basitçe `/dev/zero` ile sıfır yazarak yaratabilecek olsak da şifreli verinin diskteki boşluk alanlardan ayırt edilememesi için aşağıdaki şekilde rastgele verilerden bir dosya oluşturun.
 
+`dd if=/dev/urandom of=disk.img bs=1M count=4400`
+
+Count değerini kullandığınız medyanın boyutuna göre ayarlayabilirsiniz. Yukarıdaki komut 4.4Gb boyutunda disk.img adlı bir dosya oluşturacaktır.
+
+### Luks dosyasını oluşturup dosyalarınızı ekleyin
+
+Aşağıdaki komut sırası ile Luks imajını oluşturup dosyalarınızı yedekleyebilirsiniz. Dosyalarınızın konumunu <yedeklenecek dizin yolu> ile belirtlen yere koymayı ihmal etmeyin.
+
+`sudo losetup /dev/loop1 disk.img && cryptsetup luksFormat /dev/loop1 && cryptsetup luksOpen /dev/loop1 yedekdisk && genisoimage -R -J -joliet-long -graft-points -V backup -o /dev/mapper/yedekdisk <yedeklenecek dizinin yolu>`
+
+Yukarıdaki çeşitli komutlar sıra ile çalışacak ve size sıra ile kullanmak istediğiniz parolayı iki kere soracak ve ardından gösterdiğiniz dizindeki dosyaları oluşturulan dosyaya şifreli olarak aktaracaktır.
+
+### Luks dosyasını kapatın
+
+Dosyanın oluşturulması tamamlandıktan sonra aşağıdaki komut ile bilgisayarınızda bağlı bulunan aygıtları kaldırarak imaj dosyasının işleminin tamamlayın.
+
+`sudo cryptsetup luksClose /dev/mapper/yedekdisk && losetup -d /dev/loop1`
+
+### disk.img dosyasını yazın
+
+Tercihiniz olan bir yazdırma yazılımı ile disk.img dosyasını diskinize yazabilirsiniz. Yazma işleminin bitmesinin ardından diskinizi cihazınıza taktığınızda şayet otomatik başlatma ayarlı ise diskinizin parolası sorulacak ve doğru girmeniz durumunda dosya yöneticinizde disk içeriğini şifresiz olarak görebileceksiniz.
