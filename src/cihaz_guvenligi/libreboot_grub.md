@@ -251,13 +251,17 @@ Betiği aşağıdaki dizine **zz-update-signatures** adıyla kaydedin:
 
 **Dizindeki betikler isimlerine göre sırayla çağrıldıklarından betiğinizin alfabetik olarak sonda yer alması gerekiyor.**
 
-`/etc/kernelpostinst.d/`
+`/etc/kernel/postinst.d/`
 
 Ardından dosyaya çalıştırma izni verin:
 
 `sudo chmod +x zz-update-signatures`
 
 Bu aşamanın ardından, her çekirdek güncellemesinde ilgili betik çalışarak imzaların varlığını kontrol edecek, imza yoksa `/boot` dizinindeki her dosyayı imzalayacak ve ardından GRUB yapılandırmasını imzalayacaktır. Bu aşamada cihazınız sizden GnuPG anahtarınızın parolasını isteyecektir.
+
+## İşler ters giderse
+
+[Buraya Katkı Verebilirsiniz.](https://oyd.org.tr)
 
 ## Ek Okumalar
 
