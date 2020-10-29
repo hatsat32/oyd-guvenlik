@@ -8,7 +8,7 @@ andOTP'yi tüm Android yazılımı dağıtan depolarda bulmanız mümkündür. T
 
 F-droid'de `andOTP` ismini aratıp `install(yükle)` seçeneği ile kurulumunuzu başlatın ve çıkan ekranda tekrar yükleye basarak kurulumunuzu tamamlayın.
 
-![alt-text](andotp/fdroid1.png =250x)
+![alt-text](andotp/fdroid1.png =250x250)
 ![alt-text](andotp/fdroid2.png)
 ![alt-text](andotp/fdroid3.png)
 ![alt-text](andotp/fdroid4.png)
