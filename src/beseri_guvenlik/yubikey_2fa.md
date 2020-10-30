@@ -1,3 +1,3 @@
-# Yubikey ile U2F Kurulumu
+# Yubikey ile 2FA Kurulumu
 
 [Bu sayfaya katkı verebilirsiniz.](https://git.oyd.org.tr/oyd/guvenlik)

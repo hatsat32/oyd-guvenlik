@@ -12,13 +12,13 @@ Günümüzdeki tüm genel son kullanıcı ürünleri gibi mobil cihazlar da özg
 
 * Yazılım özgürlüğü: Günümüzdeki yazılım özgürlüğü mücadelesinin çizgisinde mobil cihazların da yazılımsal özgürlüğü hala ilerleme aşamasında. Bilgisayarlar gibi firmware seviyesinden işletim sistemi ile kullanıcı yazılımlarına kadar pek çok yazılım üreticilerden geldiği hali ile özgür olmamakta. İşletim sistemi ve yazılımlar görece özgürleştirilebilse de hala firmware seviyesi mülk olarak kullanılmak zorunda. Bu bilinmezlikle birlikte bir güvenlik riskini de orta çıkarmakta.
 
-* GSM mahremiyeti: Baseband modem GSM şebekesine bağlantı kuran donanım olarak mobil cihazlarda donanım ve yazılım özgürlüğünün en büyük düşmanı konumunda. Baseband çoğu cihazda ana işlemci ile doğrudan bağlantı halinde, RAM'i ortak kullanmakta ve dilediği veriye ulaşıp işlem yapabilmekte. Bu cihazın yazılımının eski ve özgür olmaması bir risk oluşturmakta ve bu durumun [kötüye kullanıldığı bilinmekte.](https://money.cnn.com/2014/06/06/technology/security/nsa-turn-on-phone/index.html) GSM'in güvenli olduğu varsayılsa bile sistemin tasarımı gereği hizmet sağlayıcı ve uzantısı olarak devletler tüm kullanıcıların anlık olarak nerede olduğunu ve kullanım bilgilerini elde edebilmekte. Bu mahremiyet sorunu duruma göre bir güvenlik sorununa da dönüşebilmekte.
+* GSM mahremiyeti: Baseband modem, GSM şebekesine bağlantı kuran donanım olarak mobil cihazlarda donanım ve yazılım özgürlüğünün en büyük düşmanı konumunda. Baseband çoğu cihazda ana işlemci ile doğrudan bağlantı halinde, RAM'i ortak kullanmakta ve dilediği veriye ulaşıp işlem yapabilmekte. Bu cihazın yazılımının eski ve özgür olmaması bir risk oluşturmakta ve bu durumun [kötüye kullanıldığı bilinmekte.](https://money.cnn.com/2014/06/06/technology/security/nsa-turn-on-phone/index.html) GSM'in güvenli olduğu varsayılsa bile sistemin tasarımı gereği hizmet sağlayıcı ve uzantısı olarak devletler tüm kullanıcıların anlık olarak nerede olduğunu ve kullanım bilgilerini elde edebilmekte. Bu mahremiyet sorunu duruma göre bir güvenlik sorununa da dönüşebilmekte.
 
 ## Risk değerlendirmesi
 
-Mobil cihazların günümüz kullanıcıları için hem mahremiyet hem de güvenlik açısından pek çok istenmeyecek özelliği bulunmaktadır. Bu özelliklerin kimi doğal olarak var olmakta kimileri ise kasıtlı olarak kişileri ve bilgilerini ticarileştirme amacı ile kötüye kullanılmaktadır.
+Mobil cihazların günümüz kullanıcıları için hem mahremiyet hem de güvenlik açısından pek çok istenmeyecek özelliği bulunmaktadır. Bu özelliklerin kimi doğal olarak var olmakta kimileri ise kasıtlı olarak kişileri ve bilgilerini kontrol etmek amacı ile kötüye kullanılmaktadır.
 
-Bugün genel bir tavsiye olarak güvenlik ihtiyacının yüksek olduğu durumlarda ve tehlike doğurabilecek bilgilerin işlenmesinde mobil cihazların kullanılması önerilmez. Hem donanımsal bilinmezlik hem de gerekli güvenlik ihtiyacının karşılanmasının mobil cihazın avantajlarını ortadan çok yüksek oranda kaldırmasından dolayı önemli durumlarda uygun donanımların seçilmesi yerinde olur.
+Bugün genel bir tavsiye olarak güvenlik ihtiyacının yüksek olduğu durumlarda ve tehlike doğurabilecek bilgilerin işlenmesinde mobil cihazların kullanılması önerilmez. Hem donanımsal bilinmezlik hem de gerekli güvenlik ihtiyacının karşılanmasının mobil cihazın avantajlarını çok yüksek oranda ortadan kaldırmasından dolayı kritik kullanımlarda uygun donanımların seçilmesi yerinde olur.
 
 Şayet kullanım ihtiyacı mobil bir donanımı gerektiriyor ve bu gereklilik öngörülen riskleri aşacak durumda ise değerlendirmenin yapılarak gerekli tedbirlerin alınması ile riskin en aza indirilmesi mümkündür.
 
@@ -34,17 +34,26 @@ Yukarıdaki soruların cevaplarına göre en uygun cihaz ve kullanım tasarımı
 
 Aşağıda çeşitli kullanım senaryoları belirlenmiştir. Buna göre uygun kullanım önerileri de bulunmaktadır.
 
-1. Mutlaka bağlı olmalıyım
-2. wifi wifi
+1. Sürekli bağlantı
+2. wifi - wifi
 3. Harici wifi modem
 4. şifreleme
 
-### GSM modemli cihaz kullanımı
+### Sürekli bağlantı ihtiyacı ve GSM destekli cihazlar
 
-Şayet durumun değerlendirmeniz sonucunda modern cep telefonu kullanımı alışkanlıklarını sürdürmek zorundaysanız Baseband modemi taşıyan bir cihazı alıp kullanmanız gerekli. Bu teorik olarak özgür olmayan ve kürsel bir ağ ile sürekli bağlantı kurma imkanına sahip bir işlemciyi cihazınızın üzerinde yetki sahibi olabileceği riskini de taşımak anlamına gelmekte. Genel kanı, özellikle hedef alınmayacaksanız veya hedef gözetmeyen toplu bir gözetim/saldırının nesnesi olma ihtimaliniz düşük ise bu tehlikeyi taşımanın makul kabul edildiği yönündedir.
+Şayet durumun değerlendirmeniz sonucunda modern cep telefonu kullanımı alışkanlıklarını sürdürmek zorundaysanız Baseband modemi taşıyan bir cihazı alıp kullanmak zorunda kalacaksınız. Bu teorik olarak özgür olmayan ve kürsel bir ağ ile sürekli bağlantı kuran bir işlemciyi cihazınızın üzerinde yetki sahibi olabileceği riskini de taşımak anlamına gelmekte. Genel kanı, özellikle hedef alınmayacaksanız veya hedef gözetmeyen toplu bir gözetim/saldırının nesnesi olma ihtimaliniz düşük ise bu tehlikeyi taşımanın makul olduğu yönündedir.
 
-Bu noktada cihaz tercihiniz söz konusu riskinizi azaltabilir. [Baseband izolasyonu](https://www.replicant.us/freedom-privacy-security-issues.php) cihazların ana işlemcisi ile baseband modeminin birbirinden ayrı olmasını ifade etmektedir. Bu şekilde tasarlanmış cihazlarda işletim sisteminin ve işlediği bilgilerin modem tarafından görülmesi mümkün olmadığı gibi modem sisteme doğrudan müdahale edememekte. Bu anlamda işletim sistemi modemi kapatmak istediğinde (uçak modu) modemin gerçekten kapandığına inanmak mümkün olabilmekte.
+Bu noktada yapacağınız cihaz tercihi baseband modemden doğan endişelerinizi azaltabilir. [Baseband izolasyonu](https://www.replicant.us/freedom-privacy-security-issues.php) cihazların ana işlemcisi ile baseband modeminin birbirinden ayrı olmasını ifade etmektedir. Bu şekilde tasarlanmış cihazlarda işletim sisteminin ve işlediği bilgilerin modem tarafından görülmesi mümkün olmadığı gibi modem sisteme doğrudan müdahale edememekte. Bu anlamda işletim sistemi modemi kapatmak istediğinde (uçak modu) modemin gerçekten kapandığına inanmak mümkün olabilmekte.
 
+Hangi telefonların bu imkanı sunduğunu öğrenmek ise başlı başına bir sorun olabilmekte. [Replicant projesinin](https://www.replicant.us/) tercih ettiği cihazlar özellikle baseband izolasyonu imkanı sağlamakta. [GrapheneOS](https://grapheneos.org) projesi de sanallaştırma aracılığı ile cihaz işlemcisi ile basband arasında bağlantıları kontrol edebilmekte. [Pinephone](https://www.pine64.org) da [wifi ve modem donanımlarını işlemciden ayrı tutmakta.](https://www.pine64.org/2020/01/24/setting-the-record-straight-pinephone-misconceptions/) Benzer şekilde [Librem5](https://puri.sm/products/librem-5/) cihazlar da baseband modem'i sistemde ayrı çalıştırmakta.
+
+Sayılan cihazların ya modern kullanım için eski ya da Türkiye'de bulunması zor cihazlar olması gerçeği söz konusu tavsiyeyi bir noktada boşa çıkarmakta. Bir cihazın izolasyon konusundaki kapasitesini öğrenmek çoğu zamandan pek de kolay bulunmayan tasarım detaylarını incelemeyi gerektirdiğinden yeni cihazların keşfi kolay olmamakta.
+
+Şayet sayılan projelere dahil bir cihazı kullanma imkanınız var ise GSM şebekesini kullanırken en azından cihazınızı kontrol altında tumanız mümkün olabilir.
+
+## Wifi
+
+Günümüzdeki internet üzerinden iletişim hizmet ve sistemlerinin gelişmişliği altında artık sesli ve yazılı iletişimin sadece internet bağlantısı ile sağlanması çok kolaylaşmış durumda. [Signal](yazisma_guvenligi/signal.md) veya [Jitsi](https://meet.jit.si) gibi araçların sağladığı imkanlar ile artık GSM ses bağlantısına ihtiyaç eskisi kadar yok. Bu neden ile bir kişi internet bağlantısını sağlayabildiği her yerden iletişim kurması mümkündür.
 
 
 

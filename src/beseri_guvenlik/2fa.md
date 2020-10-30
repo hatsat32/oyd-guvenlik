@@ -20,10 +20,14 @@ Bugün bankacılık işlemleri yapan neredeyse herkes 2FA'nın en yaygın metodu
 
 	* [FreeOTP+](https://github.com/helloworld1/FreeOTPPlus) ve [andOTP](https://github.com/andOTP/andOTP), Android cihazlarınızda 2FA kodları üretmek için kullanabileceğiniz özgür yazılımlardır.
 
+[andOTP kullanım rehberi](beseri_guvenlik/andotp.md)
+
 * **Donanımsal anahtarlar ile**: Özellikle çift aşamalı yetkilendirme için tasarlanmış cihazlar güvenlik için en iyi çözümdür. Lakin donanımların pahalı olması sebebi ile pek az hizmet bu yöntemi tercih etmektedir. Bu amaçla kendi cihazınızı alıp yazılım yerine bu cihazlar ile kod üretimi yapabilirsiniz.
 
 	* [Yubikey](https://www.yubico.com): Sadece bir 2FA cihazı olmaktan çok daha fazlasını yapabilen en yaygın kullanılan çift aşamalı yetkilendirme cihazıdır. Birden fazla protokolü desteklemekle tavsiye edilebilecek ilk üründür.
 	* [RSA Tokens](https://community.rsa.com/community/products/securid/hardware-tokens): Bulabilir ve kullanabilirseniz RSA donanımlarını kod tabanlı 2FA uygulamalarında kullanabilirsiniz.
+
+[Yubikey 2FA rehberi](beseri_guvenlik/yubikey_2fa.md)
 
 ## 2FA kullanırken nelere dikkat edilmeli?
 
