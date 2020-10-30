@@ -108,7 +108,7 @@ Ve hepsi bu kadar! Artık socks5 destekleyen yazılımlarınızı shadowsocks pr
 
 Eğer bütün trafiğinizi shadowsocks üzerinden yönlendirmek isterseniz iptables ve redsocks uygulamaları ile bunu sağlayabilirsiniz.
 
-[iptables ve redsocks ile yönlendirme yapılmasını anlatarak bu rehbere katkı verebilirsiniz.](https://git.oyd.org.tr)
+[iptables ve redsocks ile yönlendirme yapılmasını anlatarak bu rehbere katkı verebilirsiniz.](https://git.oyd.org.tr/oyd/guvenlik)
 
 Android temelli cihazlar üzerinde de shadowsocks kullanılabilir. Android VPN ayarlarından "Sürekli VPN modu" etkinleştirilerek bağlantının sürekliliği sağlanabilir.Bu sayede cihazdan geçen bütün trafik sunucunuz üzerinden internete çıkar, güvenli olmayan ağlarda iletişiminiz takip edilemez ve bütün trafik tek bir IP adresine doğru gözükür.
 

@@ -16,4 +16,4 @@ Bu duruma en kolay çare başkalarının bilgisayarın kullanmamak olabilir. Bun
 
 
 
-[Bu bölüme katkı verebilirsiniz](https://git.oyd.org.tr)
+[Bu bölüme katkı verebilirsiniz](https://git.oyd.org.tr/oyd/guvenlik)
