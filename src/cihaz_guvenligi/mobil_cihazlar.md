@@ -8,11 +8,7 @@ Söz konusu mobil cihazlar olunca çalınma, kaybolma ve bir şekilde istenmeyen
 
 Günümüzdeki tüm genel son kullanıcı ürünleri gibi mobil cihazlar da özgürlük düşüncesi ile imal edilmemektedirler. Özgür olmayan sistemlerin üreticilerine hizmet ettiği gerçeği kullanıcıların güvenliğini de belirsizlik içine itmektedir.
 
-<<<<<<< HEAD
 * Donanım özgürlüğü: Modern bilişim aygıtlarının donanı seviyesindeki özgürlüğü neredeyse yok denecek düzeydedir. [Tamir etme](https://oyd.org.tr/yazilar/donanim-ozgurlugu/)imkanlarının kısıtlanmasından, [DRM](https://oyd.org.tr/yazilar/drm/) uygulamalarına kadar pek çok yansıma gözlemlenebilir. Bu durumu değiştirmek üzere [projeler](https://www.pine64.org/pinephone/) var olsa da çip üreticileri gibi alternatifi zor bulunan kritik parçaların ayakbağı özgür donanımların elde edilmesine hala engel olmaktadır.
-=======
-Eğer riskiniz yüksek ise, **cep telefonunuzu hassas hiçbir şey için kullanmayın**. Bunun sebebi, tüm telefonların sizi kablosuz telefon ağına (hücresel ağ) bağlayan, "[baseband modem][]" olarak adlandırılan bir donanım içermesidir. Bu modemler özel mülktür ve uzaktan kötüye kullanılabilecek pek çok güvenlik açığı içermektedir. Bir kere aşıldıktan sonra, [baseband modem] iletişiminizi takip etmek ve kişisel verilerinizi elde etmek için kullanılabilir.
->>>>>>> 6807e00a2b0f975f38fc8d9fb647201fc4670ac2
 
 * Yazılım özgürlüğü: Günümüzdeki yazılım özgürlüğü mücadelesinin çizgisinde mobil cihazların da yazılımsal özgürlüğü hala ilerleme aşamasında. Bilgisayarlar gibi firmware seviyesinden işletim sistemi ile kullanıcı yazılımlarına kadar pek çok yazılım üreticilerden geldiği hali ile özgür olmamakta. İşletim sistemi ve yazılımlar görece özgürleştirilebilse de hala firmware seviyesi mülk olarak kullanılmak zorunda. Bu bilinmezlikle birlikte bir güvenlik riskini de orta çıkarmakta.
 
@@ -72,53 +68,3 @@ Günümüzdeki internet üzerinden iletişim hizmet ve sistemlerinin gelişmişl
 
 
 
-<<<<<<< HEAD
-=======
-Her türlü tedbiri almış olabilirsiniz ama bir an vardır ki cihazınız olabildiğince korunaksızdır. Telefonunuzu kullandığınız an! Bu noktada hem cihazınız açık hem de ekran kilidi yok. Pratik olarak o anda telefonu elinde bulunduran herkes neredeyse her işlemi cihazınız ile yapabilir, [bu bir şaka değil](https://www.bbc.com/news/uk-38183819). Haliyle telefonunuzun elinizden kapılması durumunda tedbir almak için [Privatelock](https://f-droid.org/en/packages/com.wesaphzt.privatelock/) kullanabilirsiniz.
-
-### Bildirimlerin kilit ekranında görülmesine izin vermeyin
-
-Bankanızdan gelen 2FA kodları, sevdiklerinizden gelen yazışmalar, en güncel dedikodular ve hepsi açıkça cihazınızın kilit ekranında görünüyorsa mahremiyetiniz ile birlikte güvenliğiniz de olduğu gibi çöpe gidebilir. Ayarlarınızdan kilit ekranında görülecekleri sınırlayın.
-
-### Bilmediğiniz cihazlara bağlamayın
-
-Bu öneri hem tanınmadık Wi-Fi ağlarını hem de artık her yerde bulunan USB şarj çıkışlarını kapsar. Cihazınızı bu bilinmeyen ortamlara maruz bırakmak sizi riske sokabilir. Ya kendi şarj cihazınızı kullanın ya da bu tip çıkışları kullanmak zorundaysanız [USB kondom](https://en.wikipedia.org/wiki/Juice_jacking#Mitigation) kullanın. Ayrıca yeni Android sürümlerinde "Şarj için USB" diye bir seçenek de vardır.
-
-### Kablosuz aygıtlarınızı kullanmıyorsanız kapatın
-
-Wi-Fi ve Bluetooth gibi teknolojiler kablosuz olarak sizinle ilgili pek çok veriyi ortalığa saçabilirler. Bunun yanı sıra takip edilmeniz için de elverişli bir araç olarak kullanılabilirler. Bu sebeple kullanmadığınız her zaman bu donanımları kapatın.
-
-### Signal kullanın
-
-**Signal** özgür bir anlık yazışma yazılımı olarak telefonunuzla gelen normal yazışmaya güvenli bir alternatif oluşturmaktadır. WhatsApp veya Telegram gibi çalışsa da çok daha güvenlidir.
-
-Neden Signal kullanmalısınız?
-
-* GSM hizmet sağlayıcınız size gönderilen her mesajın bir kopyasını tutmaktadır. Signal ile GSM hizmet sağlayıcınız ne mesajlarınıza ne de iletişimde bulunduğunuz insanlara ulaşabilir.
-* Bir saldırgan için telefon numaranızı ele geçirmek görece kolaydır. Konuştuğunuz kişinin başına bu geldiğinde Signal, kişinin "güvenlik numarası'nın" değiştiğine dair bir uyarı verir. Bu aynı zamanda biri yeni telefon edindiğinde de gerçekleşir. Güvenlik numarasını doğrulamak aranızdaki yazışmaların kimse tarafından okunmadığını garanti eder.
-* Signal aynı zamanda güvenli ses iletişimi için de kullanılabilir. GSM hizmet sağlayıcınız kimi aradığınızı, kimin sizi aradığı ve aramaların uzunluğuna ilişkin kayıt tutar. Signal ile yaptığınız aramalarda GSM servis sağlayızınız bu bilgilere ulaşamaz. Cihazınız güvenli olduğu sürece aramalarınızın içeriği ve uzunluğu gizli kalacaktır.
-* WhatsApp, Telegram veya Wire gibi diğer "güvenli" olarak pazarlanan yazışma programları Signal ile kıyaslanınca çokça soruna sahiptir.
-
-Daha fazla bilgi için, [Security Planner / Signal](https://securityplanner.org/#/tool/signal)'e bakın.
-
-### Silence kullanın
-
-**[Silence](https://silence.im/)**, Android için geliştirilmiş bir SMS (kısa mesaj servisi) yazılımıdır. Silence'ı kurduktan sonra telefonunuzun standart SMS programı olarak atarsınız ve tüm SMS'leriniz Silence'e gelir. Normal koşullarda her SMS programı gibi SMS'leriniz gelir ve gider ama Silence kullanan kişilerle anahtar değişimi yaptıktan sonra tamamen uçtan uca şifreli SMS yazışması yapabilirsiniz.
-
-### Fotoğraf çekerken güvenlik
-
-Telefonunuzun kamerası, çektiğiniz her fotoğrafa yüksek olasılıkla hassas çokça veriyi eklemektedir. İnternet'te paylaştığınız bir gönderinin nasıl kullanılacağını bilemeyeceğinizden, fotoğrafların taşıdığı kişisel veriyi paylaşmadan önce silmek iyi bir fikirdir.
-
-Fotoğraflarınızda "konum etiketi(geotagging)" sorununu engellemek için, kamera ayarlarınızı açın ve konum bilgisini kaydetme ayarlarını kapatın.
-
-Konum etiketi kapalı iken bile kamera yazılımınız cihazınızın modelini ve diğer potansiyel olarak hassas veriyi fotoğraflara kaydedecektir. Bu durumdan kurtulmanın en iyi yolu ayrı bir yazılımla EXIF verisini fotoğraf dosyalarından silmektir. Bu yazılımlar aynı zamanda konum bilgisini de çektiğiniz geçmiş fotoğraflardan silmek için de kullanılabilir.
-
-Daha fazla bilgi için: [Fotoğraflardan EXIF üstverisini silmenin 3 yolu](https://www.makeuseof.com/tag/3-ways-to-remove-exif-metadata-from-photos-and-why-you-might-want-to/).
-
-[replicant]:https://replicant.us
-[lineageos]:https://lineageos.org
-[grapheneos]:https://grapheneos.org
-[lineageos devices]:https://wiki.lineageos.org/devices/
-[grapheneos devices]:https://grapheneos.org/faq#device-support
-[baseband modem]:https://en.wikipedia.org/wiki/Baseband_processor
->>>>>>> 6807e00a2b0f975f38fc8d9fb647201fc4670ac2
