@@ -16,4 +16,4 @@ Yetkilendirme sistemlerine sunulabilecek diğer girdiler; tek kullanımlık kodl
 
 [Parmakizi ile yetkilendirme](cihaz_guvenligi/parmak_pam.md)
 
-[Bu bölüme katkı verebilirsiniz](https://git.oyd.org.tr)
+[Bu bölüme katkı verebilirsiniz](https://git.oyd.org.tr/oyd/guvenlik)

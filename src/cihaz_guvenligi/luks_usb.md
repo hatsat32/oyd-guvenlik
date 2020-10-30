@@ -99,13 +99,13 @@ Bu noktada Gnome Disks size parolanızı soracaktır. Bu parola doğrudan şifre
 
 Gnome Disks kullanmak istemiyor veya kullanamıyor iseniz aynı işlemleri uçbirimden de yapmanız mümkündür. Bunun için aşağıdaki adımları takip edebilirsiniz.
 
-[Buraya katkı verebilirsiniz](https://git.oyd.org.tr)
+[Buraya katkı verebilirsiniz](https://git.oyd.org.tr/oyd/guvenlik)
 
 ### Veracrypt
 
 [Veracrypt](https://en.wikipedia.org/wiki/VeraCrypt), Truecrypt yazılımının devamı olan özgür bir şifreleme aracıdır. [Truecrypt esrarlı ortadan kayboluşu](https://en.wikipedia.org/wiki/TrueCrypt#End_of_life_and_license_version_3.1) ardından özgür bir yazılım olarak hayatına başlayan Veracrypt, tam disk şifreleme, dosya, dizin ve dosya sistemi şifrelemede ender olan bir özellik olarak [inkar edilebilir şifreleme](https://en.wikipedia.org/wiki/Deniable_encryption) imkanı sunmakta. Bu bakımdan kendi başına bir rehber gerektirmekte. 
 
-[Buraya katkı verebilirsiniz](https://git.oyd.org.tr)
+[Buraya katkı verebilirsiniz](https://git.oyd.org.tr/oyd/guvenlik)
 
 ## Cihazın bir bölümünü şifrelemek
 
