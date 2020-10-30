@@ -36,6 +36,6 @@ Her seviyeden kullanıcı için kullanım tavsiye ve rehberlerimize göz atabili
 
 * [GPG ile uçbirimde işlemler](ucbirim_gpg.md)
 
-* [GPG ile graik arayüzde işlemler](gui_gpg.md)
+* [GPG ile grafik arayüzde işlemler](gui_gpg.md)
 
-* [GPG ile e-posta şifreleme](yazisma_guvenligi/openpg.md)
+* [GPG ile e-posta şifreleme](yazisma_guvenligi/openpgp.md)
