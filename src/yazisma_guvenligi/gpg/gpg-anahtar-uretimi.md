@@ -22,11 +22,11 @@ Microsoft Windows   : [Gpg4win](https://www.gpg4win.org/download.html)
 
 ![alt-text](gpg-anahtar-uretimi/kleopatra2.png "Anahtar Çifti Oluşturma Ekranı")
 
-* Kleopatra size isminizi ve e-posta adresinizi soracaktır. Burada doğru bilgiler vermek zorunda değilsiniz. __Lakin__ GnuPG insanların kimliklerini oluşturmak ve buna güven duyulmasını sağlamak amacı ile kullanılmaktadır. Bu anahtar sizin kimliğinizi ve sizi tanıyan insanların size güvenmesi demek olacağından bu anahtarla yapacağınız işlemlerin size ait olduğunu kanıtlamanızı sağlar. Bu sebep ile gerçek bilgiler kullanmanızı öneririz. **Her halde** dilediğiniz bu bilgileri değiştirmenize engel olan bir durum yok.
+* Kleopatra size isminizi ve e-posta adresinizi soracaktır. Burada doğru bilgiler vermek zorunda değilsiniz. __Lakin__ GnuPG insanların kimliklerini oluşturmak ve buna güven duyulmasını sağlamak amacı ile kullanılmaktadır. Bu anahtar sizin kimliğinizi ve sizi tanıyan insanların size güvenmesi demek olacağından bu anahtarla yapacağınız işlemlerin size ait olduğunu kanıtlamanızı sağlar. Bu sebep ile gerçek bilgiler kullanmanızı öneririz. **Her halükarda** dilediğiniz bu bilgileri değiştirmenize engel olan bir durum yok.
 
 ![alt-text](gpg-anahtar-uretimi/kleopatra3.png "ID Bilgilerinin Girimi")
 
-* 'Gelişmiş Ayarlar' tıklandığında üretilecek anahtarınıza ilişkin bir takım teknik veriler karşınıza çıkacaktır. "Anahtar Malzemesi" olarak garipçe çevrilmiş bölümde kullanılacak anahtarın tipi ve boyutu girilmekte. RSA standart olmakla anahtar boyutunu en yüksek olan **4096** bit'e yükseltmeniz anahtarınızın geleceği için **hararetle** tavsiye edilir. Şayet anahtarınız ile [SSH](https://en.wikipedia.org/wiki/Secure_Shell) kullanma arzunuz varsa şu aşamada "Yetkilendirme/Authentication" kutusunu işaretleyerek devam edebilirsiniz. Geçerlilik süresi ise anahtarınızı kaybetmeniz durumunda belirli bir tarihten sonra anahtarınızın kendiliğinden kullanılmaz olmasını sağlar. O tarih geldiğinde anahtarınızı tekrar yenileyebilirsiniz. Tercihen **2-3** yıl seçmeniz önerilir.
+* 'Gelişmiş Ayarlar' tıklandığında üretilecek anahtarınıza ilişkin birtakım teknik veriler karşınıza çıkacaktır. "Anahtar Malzemesi" olarak garipçe çevrilmiş bölümde kullanılacak anahtarın tipi ve boyutu girilmekte. RSA standart olmakla anahtar boyutunu en yüksek olan **4096** bit'e yükseltmeniz anahtarınızın geleceği için **hararetle** tavsiye edilir. Şayet anahtarınız ile [SSH](https://en.wikipedia.org/wiki/Secure_Shell) kullanma arzunuz varsa şu aşamada "Yetkilendirme/Authentication" kutusunu işaretleyerek devam edebilirsiniz. Geçerlilik süresi ise anahtarınızı kaybetmeniz durumunda belirli bir tarihten sonra anahtarınızın kendiliğinden kullanılmaz olmasını sağlar. O tarih geldiğinde anahtarınızı tekrar yenileyebilirsiniz. Tercihen **2-3** yıl seçmeniz önerilir.
 
 ![alt-text](gpg-anahtar-uretimi/kleopatra4.png "Anahtar Özellikleri")
 
@@ -48,11 +48,11 @@ Android işletim sistemlerinde GnuPG kullanmak neredeyse diğer tüm imkanlardan
 
 * Android mobil işletim sistemleri için [OpenKeychain](https://openkeychain.org) yazılımını [F-Droid](https://f-droid.org) reposundan veya özgür olmayan bir başka repodan indirerek telefonunuza kurun.
 
-* OpenKeychain sizi şirin asmakilit karakteri ile karşılayacak ve anahtar kullanımı için seçenekler sunacaktır. Buradan "Anahtarımı oluştur" seçeneğini seçerek ilerleyin.
+* OpenKeychain sizi şirin asma kilit karakteri ile karşılayacak ve anahtar kullanımı için seçenekler sunacaktır. Buradan "Anahtarımı oluştur" seçeneğini seçerek ilerleyin.
 
 ![alt-text](gpg-anahtar-uretimi/openkeychain1.png "OpenKeychain Karşılama Ekranı")
 
-* OpenKeychain size adınızı veya rumuzunuzu soracaktır. Burada doğru bilgiler vermek zorunda değilsiniz. __Lakin__ GnuPG insanların kimliklerini oluşturmak ve buna güven duyulmasını sağlamak amacı ile kullanılmaktadır. Bu anahtar sizin kimliğinizi ve sizi tanıyan insanların size güvenmesi demek olacağından bu anahtarla yapacağınız işlemlerin size ait olduğunu kanıtlamanızı sağlar. Bu sebep ile gerçek bilgiler kullanmanızı öneririz. **Her halde** dilediğiniz bu bilgileri değiştirmenize engel olan bir durum yok.
+* OpenKeychain size adınızı veya rumuzunuzu soracaktır. Burada doğru bilgiler vermek zorunda değilsiniz. __Lakin__ GnuPG insanların kimliklerini oluşturmak ve buna güven duyulmasını sağlamak amacı ile kullanılmaktadır. Bu anahtar sizin kimliğinizi ve sizi tanıyan insanların size güvenmesi demek olacağından bu anahtarla yapacağınız işlemlerin size ait olduğunu kanıtlamanızı sağlar. Bu sebep ile gerçek bilgiler kullanmanızı öneririz. **Her halükarda** dilediğiniz bu bilgileri değiştirmenize engel olan bir durum yok.
 
 ![alt-text](gpg-anahtar-uretimi/openkeychain2.png "İsim Girişi")
 
@@ -66,7 +66,7 @@ Android işletim sistemlerinde GnuPG kullanmak neredeyse diğer tüm imkanlardan
 
 __ÖNEMLİ NOT:__ Anahtar sunucusuna yüklediğiniz anahtarlar **SONSUZA** kadar sunucularda kalacaktır. Bu bakımdan anahtarınızı kullanacağınızdan ve/veya anahtarı iptal etmek için gerekenlere sahip olduğunuzdan emin olmadan anahtarı sunuculara göndermeyin. Gizli anahtara ve parolasına veya bir iptal sertifikasına sahip değilseniz sunucudaki anahtarlar son kullanma tarihine kadar geçerli kalır.
 
-* Anahtarınızı üretmeye geçmeden, sağ üst köşede bulunan menüden "Anahtar yapılandırmasını değiştir" seçeneğini seçerek anahtarınızın bazı standart ayarlarını deiştirmek isteyebilirsiniz.
+* Anahtarınızı üretmeye geçmeden, sağ üst köşede bulunan menüden "Anahtar yapılandırmasını değiştir" seçeneğini seçerek anahtarınızın bazı standart ayarlarını değiştirmek isteyebilirsiniz.
 **Parola:** OpenKeychain üretilen anahtarlara bir parola ile korumamaktadır. Bu sebepten bir [**zarola**](https://zarola.oyd.org.tr) ile anahtarınızı şifrelemenizi öneririz.
 **Alt Anahtarlar:** OpenKeychain standart olarak en yüksek güvenlikteki anahtar boyutu olan 4096 bit kullanmamakta. Bunu şifreleme hızı için yapsa da uzun vadede kullanacağınız anahtarlarınızın boyutunun 4096 bit olması uzun vadede faydalı olabilir. Dilerseniz bu aşamada SSH gibi yetkilendirme sistemlerinde kullanılmak üzere başkaca bir alt anahtar daha ekleyebilirsiniz.
 

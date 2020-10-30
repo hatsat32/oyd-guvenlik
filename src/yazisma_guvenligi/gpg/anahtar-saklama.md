@@ -4,7 +4,7 @@
 
 Doğru bir anahtar yönetiminin birkaç unsuru bulunmakta:
 
-* __Yedekleme__ GPG ile tüm şifreleme cihazınızda gerçekleştiğinden ve sorumluluğu da size ait olduğundan, anahtarınızı bir aksilik durumunda geri verecek bir otorite(!) bulunmaz. Gizli anaharınızın yedeğini uygun şekilde almanız gereklidir.
+* __Yedekleme__ GPG ile tüm şifreleme cihazınızda gerçekleştiğinden ve sorumluluğu da size ait olduğundan, anahtarınızı bir aksilik durumunda geri verecek bir otorite(!) bulunmaz. Gizli anahtarınızın yedeğini uygun şekilde almanız gereklidir.
 * __Saklama__ GPG anahtarınızı yedeklediğiniz kayıt medyasının ve konumunun doğru ve ihtiyaçlarınıza uygun olarak seçilmiş olması gereklidir. Her kayıt medyasının bir tür saklama sorunu içerdiğini ve bu yedekleri kime teslim ettiğiniz veya nereye koyduğunuz gelecek için önemlidir.
 * __Planlama__ GPG anahtarınızın başına gelebilecekleri düşünerek buna uygun planlama yapmanız gerekir. Aksi halde tedbirin sınırı olmayacağından gereğinden fazla çaba harcamanız mümkündür.
 
@@ -16,8 +16,7 @@ Planlamanızı sağduyu ile yapın. Her tedbir planlaması gibi bir risk yöneti
 Dizüstünüzü kaybetmeniz, sabit sürücünüzün bozulması, telefonunuzu kaybetmeniz, evinizi su basması vs..
 
 2. Anahtarımı kaybetmeme sebep olacak tehlikelerin gerçekleşme ihtimalleri nedir?
-Mesela sıklıkla seyyahat ediyorsanız ve anahtarınızın tek kopyası dizüstünüzde ise kaybetme olasılığınız yüksek
-Bir afete uğrama ihtimaliniz ise düşük.
+Mesela sıklıkla seyahat ediyorsanız ve anahtarınızın tek kopyası dizüstünüzde ise kaybetme olasılığınız yüksek. Bir afete uğrama ihtimaliniz ise düşük.
 
 3. Anahtarımı kaybedersem ne kadar üzülürüm?
 Tüm e-postalarınızı, dosyalarınızı anahtarınız ile şifreliyorsanız kesinlikle günlerce ağlarsınız.
@@ -31,7 +30,7 @@ Bu işe ayırabilecek bir saatiniz var ise hızlıca elinizdekileri kullanabilir
 
 Yedeklemek anlam bakımından elinizdeki bir verinin kötü bir ihtimale karşı bir kopyasının alınmasını ve saklanmasını ifade eder. GPG anahtarınızı kullanabilmek için muhtemelen bir cihazda tutuyor olacaksınız. İki veya daha fazla cihazınızda bu anahtarın olması kötü de olsa bir nevi yedekleme sayılabilir.
 
-Şayet vaktiniz yoksa veya anahtarınız o kadar önemli değil ise basitçe anahtarınızı dilediğiniz bir kayıt medyasına kopyasını alıp evinizin bir köşesine kaldırabiliriniz. Bu her halukarda offline bir yedeğinizin bildiğiniz bir yerde durmasının rahatlığını size verir.
+Şayet vaktiniz yoksa veya anahtarınız o kadar önemli değil ise basitçe anahtarınızı dilediğiniz bir kayıt medyasına kopyasını alıp evinizin bir köşesine kaldırabilirsiniz. Bu her halükarda offline bir yedeğinizin bildiğiniz bir yerde durmasının rahatlığını size verir.
 
 Anahtarınıza önem veriyorsanız veya kaybetmenizin ciddiyeti her türlü önlemi almanızı gerektirecek düzeydeyse en az iki kopyanın mümkünse farklı kayıt ortamlarında (dvd vd usb bellek gibi) aynı tehlike modelini içermeyen farklı konumlarda (eviniz ve şehir dışındaki arkadaşınız gibi) bulundurulması gerekliliklerinizi karşılayabilir.
 
@@ -51,7 +50,7 @@ kurulumunuza bağlı olarak size anahtarınızın parolasını soracaktır. Paro
 
 Android'de GPG istemcisi [OpenKeychain](https://www.openkeychain.org/) kullanılmakta.
 
-* Ana ekranda size ait gizli anahtarlarınız ile tüm diğer açık anahtarlarınız listeleinir.
+* Ana ekranda size ait gizli anahtarlarınız ile tüm diğer açık anahtarlarınız listelenir.
 
 * Gizli anahtarınızın üstüne tıklayıp sağ üst köşeden menüyü açıp backup/yedekle seçeneğine tıklayın.
 

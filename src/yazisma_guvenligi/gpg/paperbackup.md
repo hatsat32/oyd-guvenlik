@@ -20,7 +20,7 @@
 
 [Paperbackup](https://github.com/intra2net/paperbackup), ASCII olarak kodlanmış dijital verilerin kağıt yedeklerinin kolayca çıkartılmasını sağlayan bir yazılımdır. Python ile geliştirilmiştir.
 
-Her Python kodu gibi `paperbackup` da bir takım bağımlılıklara sahiptir. Aşağıdaki komutu çalıştırarak gereken bağımlılıkları sisteminize indirip kurabilirsiniz.
+Her Python kodu gibi `paperbackup` da birtakım bağımlılıklara sahiptir. Aşağıdaki komutu çalıştırarak gereken bağımlılıkları sisteminize indirip kurabilirsiniz.
 
 RPM kullanan dağıtımlar için (Red Hat, Fedora, CentOS vb.):  
 `sudo yum install PyX enscript qrencode hashlib zbar`  

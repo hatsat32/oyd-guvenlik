@@ -41,7 +41,7 @@ Current recipients:
 Enter the user ID.  End with an empty line: 
 
 ```
-Alıcınızın kullandığı anahtarda belirttiği e-posta adresini girip "enter" tuşuna basın ve başka bir alıcı yok ise tekrar gelen ekrande bir adres girmeden "enter" tuşlayın.
+Alıcınızın kullandığı anahtarda belirttiği e-posta adresini girip "enter" tuşuna basın ve başka bir alıcı yok ise tekrar gelen ekranda bir adres girmeden "enter" tuşlayın.
 
 Terminal sizi yanıp sönen imleci ile karşılayacaktır. Buraya mesajınızı yazın veya kopyalayın. Her şeyin yerinde göründüğünü düşündüğünüzde aşağıdaki tuş kombinasyonu ile işlemi tamamlayın.
 

@@ -15,7 +15,7 @@ Zaman sıkıntısı mı çekiyorsunuz? Baskıyla mücadele etmek ve daha iyi bir
 
 Bilgi ve iletişim (bilişim) teknolojilerinin giderek yükselen önemi bir başka olguyu daha hayatımıza getirdi: *gözetim toplumunun* yükselişi. Gözetimi, güç sahiplerinin [_hakimiyetlerini korumak için iletişim üzerinde kontrol kurması_] olarak düşünebilirsiniz.
 
-**Devletler;** yeni bilişim teknolojilerine, iletişimi ve kitleleri topluca kontrol etmek için gerekli altyapıları geliştirerek tepki vermiştir. Keza daha önce yapamayacakları gözetim her saniye İnternetten akan verilerle mümkün olmuştur. Pek çok devlet aynı zamanda ahlaki değerleri olmayan özel şirketlerle, insanların ve sivil toplumun iletişimine ve cihazlarına girmek için işbirliği yapmaktadır.
+**Devletler;** yeni bilişim teknolojilerine, iletişimi ve kitleleri topluca kontrol etmek için gerekli altyapıları geliştirerek tepki vermiştir. Keza daha önce yapamayacakları gözetim her saniye İnternetten akan verilerle mümkün olmuştur. Pek çok devlet aynı zamanda ahlaki değerleri olmayan özel şirketlerle, insanların ve sivil toplumun iletişimine ve cihazlarına girmek için iş birliği yapmaktadır.
 
 **Şirketler;** İnternet sayesinde ortaya çıkan veriye dayalı düzende rekabette sağ kalabilmek için insanların kişisel verilerini toplayıp, inceleyip sonuç çıkarmakta çok kar olduğunu fark etti. Özellikle reklamcılık sektörü tamamen kişilerin takip edilmesi ve davranışlarının incelenmesi üzerine kurulu bir sisteme geçiş yaptı. Bunun sonucu ortaya saçılmış kişisel veriler ve tarihin görmediği toplu bir gözetim oldu.
 
@@ -25,7 +25,7 @@ Bu bağlamda, sayısal güvenlik bireylerin yaşamı için hayati bir öneme sah
 
 * [Devlet gözetiminin](https://en.wikipedia.org/wiki/Stasi), [sosyal hareket](https://en.wikipedia.org/wiki/COINTELPRO) ve ilerlemeyi bastırdığı gerçeği tarihi olarak bilinen bir gerçektir.
 * Dolaylı bile olsa, kontrolsüz gözetimin sosyal hareketler ve insanlar üzerinde olumsuz etkileri vardır.
-* Şirket gözetimi devletlerinki kadar ciddi bir tehlikedir. Sadece şirketlerin insanlar hakkında topladığı sınırsız bilginin devletler tararfından başka amaçlarla kullanılması değil, [şirketlerin insanlar üzerinde ve dolayısı ile sosyal düzen üzerinde hiç olmadığı şekilde kontrol sahibi olması](https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal) da tehlikenin bir parçasıdır.
+* Şirket gözetimi devletlerinki kadar ciddi bir tehlikedir. Sadece şirketlerin insanlar hakkında topladığı sınırsız bilginin devletler tarafından başka amaçlarla kullanılması değil, [şirketlerin insanlar üzerinde ve dolayısı ile sosyal düzen üzerinde hiç olmadığı şekilde kontrol sahibi olması](https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal) da tehlikenin bir parçasıdır.
 
 İnsanlar toplu gözetimin yükselişi ve boyutları hakkında bilgi edinmeye başladıklarında çoğunlukla yenik hissetmektedirler. Kimi bu durumdan kurtuluş olmadığına karar verip tüm benliklerini gözetim altında yaşamaya razı gelmekte veya tüm sayısal iletişimlerini kendilerini korumak adına sonlandırmaktadırlar. Biz üçüncü bir yol olduğuna inanıyor ve güvenlik ile mahremiyetin herkese erişilebilir olması için çalışıyoruz.
 
@@ -37,6 +37,6 @@ Bu bağlamda, sayısal güvenlik bireylerin yaşamı için hayati bir öneme sah
 |[Beşeri Güvenlik](./beseri_guvenlik)|**Davranışlarınız** ile ilgili yapabileceğiniz küçük değişiklikler.|İnsan hatalarının bir güvenlik sistemindeki *zayıf halka* olmasını engeller.|
 |[Cihaz Güvenliği](./cihaz_guvenligi)|**Bilgisayar ve telefonlarınızı** saldırılara daha dayanıklı kılacak adımlar.|Cihazınızın *fiziksel* olarak saldırganların eline geçmesi durumunda bilinen saldırılara karşı dayanıklı kılmak yararlıdır.|
 |[Yazışma Güvenliği](./yazisma_guvenligi)|**her mesajı** gönderir veya alırken şifrelenin yolları.|Eğer belirli bir mesajın gönderilir ve depolanırken **mahremiyetini** teminat altına almak için gereklidir.|
-|[Ağ Güvenliği](./ag_guvenligi)|Sizi takip eden siteleri engellemek ve **İnternet trafiğinizi** şifrelemek.|Davranışsal takiplere, hesap çalınmalarına, sansüre, sosyal ağ takibine, dinlemlere ve reklamlara karşı korunmaya yardımcı olur|
+|[Ağ Güvenliği](./ag_guvenligi)|Sizi takip eden siteleri engellemek ve **İnternet trafiğinizi** şifrelemek.|Davranışsal takiplere, hesap çalınmalarına, sansüre, sosyal ağ takibine, dinlemlere ve reklamlara karşı korunmaya yardımcı olur.|
 
 Ayrıca daha fazla güvenlik rehberi için [güvenlik okuma listesi](./resources.md) sayfasını inceleyebilirsiniz.

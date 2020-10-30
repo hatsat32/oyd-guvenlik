@@ -8,7 +8,7 @@ Güvenlik insanda başlar. Her sistemin güvenliğinin insanda başlayıp insand
 
 Sadece mahremiyetinizi koruyor olsanız da dünyanın en önemli haberlerini savaş bölgelerinden de geçiriyor olsanız güvenlik amacını yerine getirebilmenin koşulu öğrenmek ve eğitimden geçmektedir. İhtiyaçlarınızı ve tehlikeleri belirledikten sonra hiç aksatmadan planınıza sağdık kalmak ve değişimlere uyum sağlamak zorundasınız. Aksi halde bugün değil ise yarın güvenliğiniz aşınacaktır.
 
-Birkaç basit adımla çok ciddi tehlikeleri berteraf edebilirsiniz. Aşağıdaki rehberlerimiz size bu konuda yol göstermeye hazırdır.
+Birkaç basit adımla çok ciddi tehlikeleri bertaraf edebilirsiniz. Aşağıdaki rehberlerimiz size bu konuda yol göstermeye hazırdır.
 
 * [Mesaj Disiplini](mesaj_disiplini.md)
 * [Parolalar](parolalar.md)

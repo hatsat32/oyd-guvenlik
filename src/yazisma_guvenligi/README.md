@@ -24,14 +24,14 @@ Bugün iletişim için kullanılan en yaygın şifreleme yöntemi [açık anahta
 
 Asimetrik şifreleme pek çok sistemde kullanılmakla en yaygın ve bilinen uygulaması [GnuPG](openpgp.md) ile şifreli e-posta yazışmasıdır. GPG kendini kanıtlamış çok amaçlı bir yazılım olarak pek çok amaçla şifreleme yapmak için kullanılabilir.
 
-GnuPG gibi yazılımlar kullanıcıların anahtarlarını yönetmesini gerektirse bile günümüzde pek çok yazılım bu gerekliliği ortadan kaldırmakta. Özellikle [anlık yazışma](anlik_yazisma.md) yazılımları kullanıcılarına basit arayüzler aracılığı ile görece kolay şifreleme imkanları sunmaktadır. Arkaplanda çalışan kriptografi açık/özel anahtar ikilisine dayalı olsa da kullanıcıların bu anahtarlarla hiç bir ilgileri olmamaktadır. Bu durum kimi taraflarca güvenli yazışmayı kolaylaştırdığı için övülmekte kimileri tarafından ise kullanıcıları bilgiden yalıtarak özel sistemlere mahkum ettiği iddia edilmektedir.
+GnuPG gibi yazılımlar kullanıcıların anahtarlarını yönetmesini gerektirse bile günümüzde pek çok yazılım bu gerekliliği ortadan kaldırmakta. Özellikle [anlık yazışma](anlik_yazisma.md) yazılımları kullanıcılarına basit arayüzler aracılığı ile görece kolay şifreleme imkanları sunmaktadır. Arkaplanda çalışan kriptografi açık/özel anahtar ikilisine dayalı olsa da kullanıcıların bu anahtarlarla hiçbir ilgileri olmamaktadır. Bu durum kimi taraflarca güvenli yazışmayı kolaylaştırdığı için övülmekte kimileri tarafından ise kullanıcıları bilgiden yalıtarak özel sistemlere mahkum ettiği iddia edilmektedir.
 
 
 ### Şifreli yazışmaya giriş yapmak için öneriler
 
-Şifreleme teknolojileri çağdaş yaşamın en güvenli iletişim imkanlarını sağlayacak olsa da kimi zaman zorluklar ve anlaşılmazlıklar da getirebilmektedir. Şayet güvenliğinizi şifreleme teknolojileri ile sağlamaya hazırlanıyorsanı aşağıdaki önerilerimizi aklınızda tutmanızı dileriz:
+Şifreleme teknolojileri çağdaş yaşamın en güvenli iletişim imkanlarını sağlayacak olsa da kimi zaman zorluklar ve anlaşılmazlıklar da getirebilmektedir. Şayet güvenliğinizi şifreleme teknolojileri ile sağlamaya hazırlanıyorsanız aşağıdaki önerilerimizi aklınızda tutmanızı dileriz:
 
-* __Kendinizi adamaya hazır olun__: Şifreleme teknolojileri, pek çok insan için hiç duyulmamış terimler ve becerileri de yanında getirmektedir. Şayet kullanıcısına kolaylık(!) sunan bir yazılım kullanmıyoranız bu jargon ve becerileri de elde etmeniz gerekecektir. Hali ile okumaya ve öğrenmeye zaman ve emek ayırmaya hazır olmalısınız. Aynı zamanda edindiğiniz deneyimi çevrenizle paylaşıp başkaca insanların güvenlik süreçlerini kolaylaştırabilirsiniz.
+* __Kendinizi adamaya hazır olun__: Şifreleme teknolojileri, pek çok insan için hiç duyulmamış terimler ve becerileri de yanında getirmektedir. Şayet kullanıcısına kolaylık(!) sunan bir yazılım kullanmıyorsanız bu jargon ve becerileri de elde etmeniz gerekecektir. Hali ile okumaya ve öğrenmeye zaman ve emek ayırmaya hazır olmalısınız. Aynı zamanda edindiğiniz deneyimi çevrenizle paylaşıp başkaca insanların güvenlik süreçlerini kolaylaştırabilirsiniz.
 
 * __Şifreli arkadaşlar edinin__: Komik gelse de çoğu zaman şifreli iletişim yapmanın en zor tarafı konuşacak birini bulmaktır. Günümüzde şifreli iletişim teknolojileri yaygınlık kazansa da hala [özür olmayan yazılımlar](https://oyd.org.tr/yazilar/ozgur-yazilim/) kullananlar çoğunlukta. Bu sebepten çevrenize yardım ederek sizinle ve başkaları ile güvenli yazışmalarını sağlamak zorunda kalabilirsiniz.
 

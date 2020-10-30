@@ -4,7 +4,7 @@
 
 Çift aşamalı doğrulama veya kısa adı ile 2FA (Two Factor Authentication) bir sisteme veya hesaba erişim için iki farklı girdinin gerekmesi demektir. Genellikle girdilerin kaynaklarının veya elde edilme şekillerinin farklı olması istenir. Sadece parola ile giriş yapılan sistemlerde "parola" bilinen bir şey olarak bir aşamayı ifade eder. Bunun yanında bir başka "şey" daha gerekmesi durumunda ikinci aşama elde edilmiş olur.
 
-Bugün bankacılık işlemleri yapan neredeyse herkes 2FA'nın en yaygın metoduna aşinadır. Bankacılık sistemine giriş yaptığınızda banka sizden parolanızı girmenizi istediği gibi bir de atılan SMS'teki kodu girmenizi ister. Bu durumda parolanız **bildiğiniz** bir şey olarak ilk aşamayı SMS'in gönderdildiği SIM kart da **sahip olduğunuz** ikinci aşamayı oluşturur. Bu bakımdan bir kişinin hesabınıza erişmek için hem parolanızı öğrenmesi hem de SIM kartınız ile birlikte onun parolasını da bilmesi gereklidir.
+Bugün bankacılık işlemleri yapan neredeyse herkes 2FA'nın en yaygın metoduna aşinadır. Bankacılık sistemine giriş yaptığınızda banka sizden parolanızı girmenizi istediği gibi bir de atılan SMS'teki kodu girmenizi ister. Bu durumda parolanız **bildiğiniz** bir şey olarak ilk aşamayı, SMS'in gönderildiği SIM kart da **sahip olduğunuz** ikinci aşamayı oluşturur. Bu bakımdan bir kişinin hesabınıza erişmek için hem parolanızı öğrenmesi hem de SIM kartınız ile birlikte onun parolasını da bilmesi gereklidir.
 
 ## 2FA neden önemlidir?
 

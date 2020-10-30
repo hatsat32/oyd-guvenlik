@@ -38,7 +38,7 @@ E-posta gibi asimetrik bir iletişim yöntemini şifrelemeye çalışmanın baz�
 
 * GnuPG, kullandığınız yönteme göre e-postalarınızın başlığını **şifrelemeyebilir**. Çoğunlukla e-postanın başlığı e-postanızın içeriği hakkında çok şey söyleyebileceği için bu hususa dikkat edilmelidir. Başlıkları şifrelemek de posta kutusunda e-posta aramayı çok zor kılmaktadır. Bu bakımdan tercihin bilinçli yapılması önemlidir.
 
-* GnuPG ile şifrelemiş olsanız dahi e-postalarınızın iletilebilmesi için bir takım bilgilerin açık olarak aktarılması gereklidir. Bunu üzerine adres ve isim yazmadığınız bir postanın iletilememesi ile kıyaslayabilirsiniz. Bu durumdan dolayı kullandığınız sunucuyu veya ağ iletişiminizi gözleyebilen biri kimlerle ilişki içinde olduğunuzu [üstveri](https://en.wikipedia.org/wiki/Metadata) (metadata) aracılığıyla öğrenebilir.
+* GnuPG ile şifrelemiş olsanız dahi e-postalarınızın iletilebilmesi için birtakım bilgilerin açık olarak aktarılması gereklidir. Bunu üzerine adres ve isim yazmadığınız bir postanın iletilememesi ile kıyaslayabilirsiniz. Bu durumdan dolayı kullandığınız sunucuyu veya ağ iletişiminizi gözleyebilen biri kimlerle ilişki içinde olduğunuzu [üstveri](https://en.wikipedia.org/wiki/Metadata) (metadata) aracılığıyla öğrenebilir.
 
 * GnuPG anahtarları uzun vadeli ve sizinle ilişkilendirilmiş anahtarlar kullanır. Bu bakımdan imzalanmış bir e-postanın kimden geldiğini inkar etmek mümkün olmadığı gibi kullanılan anahtarların bir şekilde ortaya çıkması durumunda, eski iletişimler de okunabilir hale gelecektir. Şifreli e-postaları ileride bir zaman açabilme ümidi ile saklayan bir kurum (bkz. NSA) bir gün anahtarınızın ifşa olması durumunda e-postalarınızı geriye dönük olarak okuyabilir. Bu elbette e-postaları şifrelememek için bir bahane değildir ama bazı durumlarda dikkate alınması gereken bir risktir.
 
@@ -51,7 +51,7 @@ Bir GnuPG anahtarına olan güven tamamen o anahtarı kullanan kişinin o kişi 
 
 Güven ağı (web of trust) GnuPG'nin güven ilişkisinin temelidir. GnuPG kullanıcıları tanıdıkları ve güvendikleri kişilerin anahtarlarını imzalarlar. Bu imzalar bir süre sonra tanıdıkların tanıdıkları şekilde bir ağa dönüşür ve iki kişi birbirini tanımasa dahi bir seviyeye kadar birbirlerinin anahtarına güven duyabilirler.
 
-Bu sistem elbette mükemmel değildir. Bugün anahtar sunucuları, özellikle tanınan kişilerin, sahte anahtarları ile doludur. Bu sahte anahtarlarda pek çok sahte imza bulmak da mümkündür. Bu sebeple [WKS](https://www.gnupg.org/documentation/manuals/gnupg/gpg_002dwks_002dserver.html) gibi sistemler görece güvenli ve kolay anahtar dağıtımı yöntemleri geliştirilmektedir. Lakin hiç bir sistem sorunsuz değildir ve anahtar güvenliğine sağduyu ile yaklaşılmalıdır.
+Bu sistem elbette mükemmel değildir. Bugün anahtar sunucuları, özellikle tanınan kişilerin, sahte anahtarları ile doludur. Bu sahte anahtarlarda pek çok sahte imza bulmak da mümkündür. Bu sebeple [WKS](https://www.gnupg.org/documentation/manuals/gnupg/gpg_002dwks_002dserver.html) gibi sistemler görece güvenli ve kolay anahtar dağıtımı yöntemleri geliştirilmektedir. Lakin hiçbir sistem sorunsuz değildir ve anahtar güvenliğine sağduyu ile yaklaşılmalıdır.
 
 
 ## Şifreli e-posta hakkında tavsiyeler nelerdir?

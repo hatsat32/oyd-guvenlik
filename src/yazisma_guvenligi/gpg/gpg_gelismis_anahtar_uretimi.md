@@ -10,7 +10,7 @@ Anahtarın üretimi sırasında kullanılan bilgisayar çok önemli bir girdinin
 
 [Tails rehberinin yazılmasına katkı verebilirsiniz](https://git.oyd.org.tr/oyd/guvenlik/issues/46)
 
-Bir diğer seçenek ise anahtarınızı bir güvenlik donanımı olan [Gnupg akıllı kart](https://www.floss-shop.de/en/security-privacy/smartcards/13/openpgp-smart-card-v3.3?number=654010) veya [Yubikey](https://www.yubico.com/products/) üzerinde üretmektir. Bu yöntemin faydası güvenlik donanımından başka bilgisayarın hiç bir sistemi anahtarla temas etmemiş olacaktır. Tüm kriptografik işlemler bu cihaz üzerinde güvenli olarak gerçekleşeceğinden birden fazla cihazda güvenli şekilde anahtarınızı kullanmak da kolaylaşmaktadır. Akıllı kart üzerinde anahtar oluşturmanın kötü tarafı ise yedekleme imkanınızın olmamasıdır. Şayet kartınızı kaybeder veya bir sebepten bozarsanız anahtarınız sonsuza kadar şifrelediğiniz verilerle birlikte kaybolacaktır. Akıllı kart kullanmak ama yedek de almak istiyorsanız anahtarınızı bilgisayarda üretip ardından akıllı karta yüklemeniz de mümkündür.
+Bir diğer seçenek ise anahtarınızı bir güvenlik donanımı olan [Gnupg akıllı kart](https://www.floss-shop.de/en/security-privacy/smartcards/13/openpgp-smart-card-v3.3?number=654010) veya [Yubikey](https://www.yubico.com/products/) üzerinde üretmektir. Bu yöntemin faydası güvenlik donanımından başka bilgisayarın hiçbir sistemi anahtarla temas etmemiş olacaktır. Tüm kriptografik işlemler bu cihaz üzerinde güvenli olarak gerçekleşeceğinden birden fazla cihazda güvenli şekilde anahtarınızı kullanmak da kolaylaşmaktadır. Akıllı kart üzerinde anahtar oluşturmanın kötü tarafı ise yedekleme imkanınızın olmamasıdır. Şayet kartınızı kaybeder veya bir sebepten bozarsanız anahtarınız sonsuza kadar şifrelediğiniz verilerle birlikte kaybolacaktır. Akıllı kart kullanmak ama yedek de almak istiyorsanız anahtarınızı bilgisayarda üretip ardından akıllı karta yüklemeniz de mümkündür.
 
 [Akıllı kart ve Yubikey rehberi yazarak bu rehbere katkı verebilirsiniz](https://git.oyd.org.tr/oyd/guvenlik/issues/59)
 
@@ -54,7 +54,7 @@ Fakat tehdit modelinize bağlı olarak daha güvenlik işlevi gösterebilecek bi
 
 * Şifreleme anahtarınız çalınan dizüstü bilgisayarınız ile birlikte açığa çıkarsa geçmişe dönük olarak tüm iletişim ve şifreli dosyalarınızın açılması mümkündür.
 
-* İmza anahtarınız benzer bir talihi paylaşırsa bir salırgan bu anahtarı kullanarak sizi taklit edebilir; kullandığınız amaca bağlı olarak size ait görünen metin, dosya ve kod yaratabilir.
+* İmza anahtarınız benzer bir talihi paylaşırsa bir saldırgan bu anahtarı kullanarak sizi taklit edebilir; kullandığınız amaca bağlı olarak size ait görünen metin, dosya ve kod yaratabilir.
 
 * yetkilendirme anahtarınızın ortaya çıkması bu anahtara bağlı olarak giriş yaptığınız tüm sistemlerin ele geçirilmesi anlamına gelebilir.
 
@@ -309,7 +309,7 @@ ssb   rsa4096 2020-08-25 [A] [son kullanma tarihi: 2021-08-25]
 
 Ana anahtarı alt anahtarlardan ayırmanın GPG'de belirgin bir yolu bulunmamakta. Bu amacı gerçekleştirmek için biraz dolambaçlı bir yol kullanmak gerekiyor.
 
-**ÖNEMLİ NOT:** Bu bölümde anahtar üzerinde geri döndürülemez işlemler yapılacağından ve işlemlerin bir kısmı yedekten anahtar almayı gerekli kıldığından tüm anahtarınızın yedeğni aldığınızdan emin olun.
+**ÖNEMLİ NOT:** Bu bölümde anahtar üzerinde geri döndürülemez işlemler yapılacağından ve işlemlerin bir kısmı yedekten anahtar almayı gerekli kıldığından tüm anahtarınızın yedeğini aldığınızdan emin olun.
 
 Öncelikle anahtarınızın alt anahtarlarını dışarı çıkartmanız gerekmekte. Bu aşamada anahtarın UID'sini belirtmeniz gerekmekte keza e-posta ile bu işlem gerçekleşmiyor.
 
