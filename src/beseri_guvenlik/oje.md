@@ -50,13 +50,13 @@ Ojenin iyice tutunabilmesi uygulanacağı alanın temizliğine bağlı. Bu bakı
 
 Şayet mühürün dayanıklılığına ciddi bir yatırım yapmak istiyorsanız uygulama alanını zımparalayarak tutunmayı arttırabilirsiniz ama pek çok durum için bu aşırı olacaktır. Aynı zamanda vida delikleri derin olan cihazlarda deliği bir kağıt veya pamuk ile kapatmak ojenin içeri kaçmasını engelleyecektir.
 
-![alt-text](beseri_guvenlik/oje/tipa.jpg)
+![alt-text](oje/tipa.jpg)
 
 ### Ojenizi sürün
 
 Uygulama alanına simli ojenizi damlatarak veya bolca sürerek uygulayın. Burada amaç birleşik ve parçalı olmayan kalın bir tabaka elde etmek. Ojenizden yeterince simin yüzeye aktarıldığından emin olun. İşlemin ertesinde ojeye kuruması için yeterli süreyi tanıyın.
 
-![alt-text](beseri_guvenlik/oje/oje.jpg)
+![alt-text](oje/oje.jpg)
 
 ### Mühürlerin fotoğrafını çekin
 
