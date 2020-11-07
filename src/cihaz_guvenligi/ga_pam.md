@@ -8,7 +8,7 @@ Google-authenticator(GA) GNU/Linux cihazlarda login ekranlarında parola ile bir
 
 Debian sistemlerde: `sudo apt-get install google-authenticator libpam-google-authenticator`
 
-RPM tabanlı sistemlerde: `sudo yum instlal google-authenticator libpam-google-authenticator`
+RPM tabanlı sistemlerde: `sudo yum install google-authenticator libpam-google-authenticator`
 
 Kurulumun tamamlanmasının ardından GA'nın ayarlarını yaparak cihazınızda bir anahtar oluşturmak bunu kullandığınız mobil cihazdaki bir OTP yazılımına aktarmak için aşağıdaki komutu uçbirimde çalıştırın.
 
