@@ -54,6 +54,7 @@
     - [Terminal ile E-posta Şifreleme](yazisma_guvenligi/ucbirim_eposta.md)
   - [Şifreli E-Posta Hizmetleri](yazisma_guvenligi/sifreli-eposta-hizmetleri.md)
     - [ProtonMail](yazisma_guvenligi/protonmail/protonmail.md)
+    - [Tutanota](yazisma_guvenligi/tutanota.md)
   - [Anlık Yazışma](yazisma_guvenligi/anlik_yazisma.md)
     - [OTR İle Anlık Yazışma](yazisma_guvenligi/otr.md)
     - [OMEMO İle Anlık Yazışma](yazisma_guvenligi/omemo.md)
