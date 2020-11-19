@@ -29,177 +29,149 @@ Fastboot'un güncel bir kopyasını edinmeniz ve işletim sisteminizde PATH çev
 Dağıtım paketlerinin listesi:
 
 
-* __Arch Linux:__ `android-tools` fastboot ve diğer gerekli araçları getirmekte ve 
+* __Arch Linux:__ `android-tools` fastboot ve diğer gerekli araçları getirmekte ve adb gibi başka araçların kurulmasına ihtiyaç duymamakta. adroid-udev fastboot ve adb'nin yerel oturumda root yetkisi olmadan çalışabilmesini sağlayacak udev kuralları içermekte.
+* __Debian:__ Gelen paketler hem çalışmamakta hem de eski sürümlerden oluşmakta, kurulumda kullanmayın (üstteki paragrafa bakın)
+* __Ubuntu:__ Gelen paketler hem çalışmamakta hem de eski sürümlerden oluşmakta, kurulumda kullanmayın (üstteki paragrafa bakın)
 
-android-tools provides fastboot and other useful tools not required for installation such as adb. android-udev provides udev rules allowing fastboot and adb to work in local sessions without root.
-* __Debian:__ package is both broken and out-of-date, do not use (see paragraph above)
-* __Ubuntu:__ package is both broken and out-of-date, do not use (see paragraph above)
+### platform-tools haricen kurulumu
 
-Standalone platform-tools
+Eğer işletim sisteminiz fastboot'un uygun bir sürümünü içermiyor ve repolarında bulundurmuyor ise platform-tools'un harici bir sürümünü Google'dan kurmayı değerlendirebilirsiniz. Eğer Android SDK kurulumunuz var ise veya geliştirme ile uğraşacaksanız platform-tools' paketlerini Android SDK paket yöneticisi ile kurabilir ve güncel tutabilirsiniz. Android SDK hariden veya Android Studio aracılığı ile elde edilebilir.
 
-If your operating system doesn't make a proper version of fastboot available, consider using the standalone releases of platform-tools from Google. If you have the Android SDK or intend to do development work, you install the platform-tools package via the Android SDK package manager which can be used to keep it up-to-date. The Android SDK is available by itself or can be obtained via Android Studio.
+Platform-tools'u indirmek doğrulamak ve çıkartmak için GNU/Linux işletim sisteminde:
 
-To download, verify and extract the standalone platform-tools on Linux:
+`curl -O https://dl.google.com/android/repository/platform-tools_r30.0.4-linux.zip`
 
-curl -O https://dl.google.com/android/repository/platform-tools_r30.0.4-linux.zip
-echo '5be24ed897c7e061ba800bfa7b9ebb4b0f8958cc062f4b2202701e02f2725891  platform-tools_r30.0.4-linux.zip' | sha256sum -c
-unzip platform-tools_r30.0.4-linux.zip
+`echo '5be24ed897c7e061ba800bfa7b9ebb4b0f8958cc062f4b2202701e02f2725891  platform-tools_r30.0.4-linux.zip' | sha256sum -c`
 
-To download, verify and extract the standalone platform-tools on macOS:
+**Not:** Yukarıda belirtilen sha256 değeri zaman içinde güncellenen paketler nedeni ile değişmiş olabilir. Bu değerin kolaylıkla bulunabildiği tek yer [GrapheneOS kurulum sayfası](https://grapheneos.org/install) olduğundan kurulumdan önce değişikliklere göz atmakta fayda var.
 
-curl -O https://dl.google.com/android/repository/fbad467867e935dce68a0296b00e6d1e76f15b15.platform-tools_r30.0.4-darwin.zip
-echo 'SHA256 (fbad467867e935dce68a0296b00e6d1e76f15b15.platform-tools_r30.0.4-darwin.zip) = e0db2bdc784c41847f854d6608e91597ebc3cef66686f647125f5a046068a890' | shasum -c
-tar xvf fbad467867e935dce68a0296b00e6d1e76f15b15.platform-tools_r30.0.4-darwin.zip
+`unzip platform-tools_r30.0.4-linux.zip`
 
-To download, verify and extract the standalone platform-tools on Windows:
-
-curl.exe -O https://dl.google.com/android/repository/platform-tools_r30.0.4-windows.zip
-(Get-FileHash platform-tools_r30.0.4-windows.zip).hash -eq "413182fff6c5957911e231b9e97e6be4fc6a539035e3dfb580b5c54bd5950fee"
-tar xvf platform-tools_r30.0.4-windows.zip
-
-Next, add the tools to your PATH in the current shell so they can be used without referencing them by file path, enabling usage by the flashing script.
-
-On Linux and macOS:
+Daha sonra aracı işletim sisteminizin PATH yoluna eklemek ve her seferinde doğrudan yolunu göstermeden çalıştırmak için GNU/Linux'da aşağıdaki komutu kullanabilirsiniz:
 
 export PATH="$PWD/platform-tools:$PATH"
 
-On Windows:
-
-$env:Path = "$pwd\platform-tools;$env:Path"
+Tercih ederseniz indirdiğiniz paketin dizinine gidip fastboot binary dosyasının bulunduğu dizinde uçbirimde başına `./` koyarak fastboot'u çalıştırmanız mümkün.
 
 Sample output from fastboot --version afterwards:
 
+Kurulumun ardından `fastboot --version` komutunun çıktısı:
+
+```
 fastboot version 30.0.4-6686687
 Installed as /home/username/downloads/platform-tools/fastboot
+```
 
-This is a temporary change to PATH for the current shell and will need to be done again if you open a new terminal. Make sure that the fastboot command works in the current shell before trying to run the flashing script.
-Obtaining signify
+Bu açık olan uçbirime ait geçici bir PATH kaydı olmakla birlikte eğer yeni bir uç birim açarsanız tekrar yukarıdaki şekilde kaydedilmesi gerekir. Kurulum betiğini çalıştırmadan önce fastboot komutunun kullandığınız uçbirimde çalıştığından emin olun.
 
-To verify the download of the OS beyond the security offered by HTTPS, you can use the signify tool. If you do not have a way to obtain signify from a package repository you're already trusting, it does not make sense to use it. GrapheneOS releases are hosted on our servers and we do not have third party mirrors. A compromised signify would be able to compromise your OS and the GrapheneOS download due to the lack of an application security model on traditional operating systems. It would be worse than not trying to verify the signatures. It's far less likely that our servers would be compromised than someone's GitHub account or GitHub itself. You're already trusting these installation instructions from our site, which is hosted on the same static web server infrastructure as the releases.
+### Signify'ın kurulması
 
-List of distribution packages:
+HTTPS'nin sunabildiğinin güvencenin ötesinde indirilen işletim sisteminin doğrulanabilmesi için signify aracını kullanabilirsiniz. Eğer signify paketini güvendiğiniz bir paket yöneticisinden elde edemiyorsanız signify kullanmanın çok da bir anlamı bulunmamakta. GrapheneOS sürümleri kendi sunucumuzda bulundurulmakta ve üçüncü taraflarca sunulan mirror'ları kullanmamaktayız. Kötücül bir signify kurulumu tüm işletim sisteminizi ve GrapheneOS imajınızı da geleneksel işletim sistemlerindeki tehdit yönetimi eksikliğinden dolayı tehlikeye atabilir. Bu durumda signify kullanmak hiç kullanmamaktan daha kötü olabilir. Sunucularımızın kötücül davranması rastgele birinin GitHub hesabının veya GitHub'ın kendisinin kötücül olmasından daha düşük bir ihtimal. Her halukarda bu rehbere kurulum için güvenmektesiniz ki yayınlanan sürümlerle bu web sitesi aynı sunucu üzerinde bulunmakta.
+
+**Not:** Yukarıdaki not hali ile GrapheneOS'in sitesi için geçerli durumda. Şu anda üçüncü bir tarafın rehberini okumakta olduğunuzdan şüphe duyduğunuz durumlarda yukarıdaki tehdit modeline bağlı olarak [GrapheneOS web sitesini](https://grapheneos.org) referans almanız önerilir.
+
+Dağıtımlarda bulunan Signify paket listesi:
 
     Arch Linux: signify
-    Debian: signify-openbsd with the command renamed to signify-openbsd
-    Ubuntu: signify-openbsd with the command renamed to signify-openbsd
+    Debian: signify-openbsd
+    Ubuntu:signify-openbsd
 
 On Debian-based distributions, the signify package and command are an unmaintained mail-related tool for generating mail signatures (not cryptographic signatures) with the final releases from 2003-2004 made directly by the developer via the Debian package without upstream releases. Please pressure them to correct this usability issue.
-Enabling OEM unlocking
 
-OEM unlocking needs to be enabled from within the operating system.
 
-Enable the developer options menu by going to Settings ➔ About phone and pressing on the build number menu entry until developer mode is enabled.
+### OEM kilidinin kaldırılma ayarı
 
-Next, go to Settings ➔ System ➔ Advanced ➔ Developer options and toggle on the 'Enable OEM unlocking' setting. This requires internet access on devices with Google Play services as part of Factory Reset Protection (FRP) for anti-theft protection.
-Unlocking the bootloader
+OEM kilidinin kaldırılması için işletim sistemi içinden izin verilmesi gerekli.
 
-First, boot into the bootloader interface. You can do this by turning off the device and then turning it on by holding both the Volume Down and Power buttons.
+Geliştirici ayarlarını Ayarlar menüsünden -> About phone (telefon hakkında) sekmesi altında bulunan "build number" bölümüne geliştirici modunun aktive edildiğine dair mesaj gelinceye kadar tıklayarak açabilirsiniz.
 
-Unlock the bootloader to allow flashing the OS and firmware:
+Daha sonra Settings(ayarlar) -> System(sistem) -> Advenced(gelişmiş) -> Developer Options(geliştirici seçenekleri) yolunu takip edip "Enable OEM unlocking"(OEM kilidini kaldır) sçeeneğini seçebilirsiniz. Bu Google Play hizmetleri ile gelen cihazlarda hırsızlığa karşı fabrika ayarlarına geri döndürme koruması kapsamında internet bağlantısı gerektirecektir.
 
-fastboot flashing unlock
+### Bootloader'in kilidini kaldırmak
 
-The command needs to be confirmed on the device and will wipe all data.
-Obtaining factory images
+Öncelikle cihazın bootloader ekranına girmeniz gerekli. Bunu cihazı kapatıp ardından ses kısma düğmesini ile güç düğmesine aynı anda basıp tutarak gerçekleştirebilirsiniz.
 
-You need to obtain the GrapheneOS factory images for your device to proceed with the installation process.
+Bootloader kilidini işletim sistemi ve firmware yüklemek için kaldırın:
 
-You can either download the files with your browser or using a command like curl. It's generally easier to use the command-line since you're already using it for the rest of the installation process, so these instructions use curl.
+`fastboot flashing unlock`
 
-On Windows, remove PowerShell's legacy curl alias for the current shell to avoid needing to reference it as curl.exe instead of curl:
+**Not:** Bu komutu telefonu bağladığınız bilgisayar üzerinden fastboot'un çalıştığı uçbirimden çalıştırmanız gerekiyor.
 
-Remove-Item Alias:Curl
+Komutun telefon üzerinden onaylanması gerekli. Onayın ardından cihazdan tüm verinin silinecektir.
 
-Download the factory images public key (factory.pub) in order to verify the factory images:
+### Fabrika imajının indirilmesi
 
-curl -O https://releases.grapheneos.org/factory.pub
+Kurulum işlemini tamamlayabilmek için cihazınıza uygun GrapheneOS fabrika imajına ihtiyacınız olacak.
 
-This is the content of factory.pub:
+Dilerseniz dosyaları web tarayıcınız ile doğrudan indirebilir veya curl benzeri bir komut kullanabilirsiniz. Genellikle komut satırı kullanmak hali hazırda kurulumun kalanında kullanacak olduğunuzu düşünürsek daha kolaydır. Curl ile işlemi gerçekleştirmek için talimatlar aşağıda bulunmakta.
 
+Fabrika imajları doğrulamak için gerekli olan umumi anahtarın (factory.pub) indirmek için:
+
+`curl -O https://releases.grapheneos.org/factory.pub`
+
+factory.pub'un içeriği şu şekildedir:
+
+```
 untrusted comment: GrapheneOS factory images public key
 RWQZW9NItOuQYJ86EooQBxScfclrWiieJtAO9GpnfEjKbCO/3FriLGX3
+```
+Umumi anahtar aynı zamanda Twitter'deki resmi @GrapheneOS hesabında, /u/GrapheneOS Reddit hesabında ve GitHub'da bulunabilir. Kullanımda olan anahtar bir yenisi ile değiştirildiğinde eskisi ile imzalanmakta.
 
-The public key has also been published via the official @GrapheneOS Twitter account, the /u/GrapheneOS Reddit account and is available on GitHub. When the current signing key is replaced, the new key will be signed with it.
+Fabrika imajlarını indirme sayfasından indirmek için; örneğin Pixel 3 XL için 2020.05.05.02 (crosshatch) sürümünü indirmek için:
 
-Download the factory images for the device from the releases page. For example, to download the 2020.05.05.02 release for the Pixel 3 XL (crosshatch):
-
+```
 curl -O https://releases.grapheneos.org/crosshatch-factory-2020.05.05.02.zip
 curl -O https://releases.grapheneos.org/crosshatch-factory-2020.05.05.02.zip.sig
+```
 
-Verify the factory images using the signature if you were able to obtain signify from trusted package repositories (see above):
+Signify yazılımını güvenli şekilde edinebildiyseniz imzaları aşağıdaki komut ile doğrulayabilirsiniz:
 
-signify -Cqp factory.pub -x crosshatch-factory-2020.05.05.02.zip.sig && echo verified
+`signify -Cqp factory.pub -x crosshatch-factory-2020.05.05.02.zip.sig && echo verified`
 
-This will output verified if verification is successful. If something goes wrong, it will output an error message rather than verified.
-Flashing factory images
+**Not:** Her ne kadar komut signify olarak komutu çağırmış olsa da komutun Debian ve Ubuntu'da `signify-openbsd` olduğunu hatırlatmak gerkeli.
 
-The initial install will be performed by flashing the factory images. This will replace the existing OS installation and wipe all the existing data.
+Bu komut eğer doğrulama başarılı ise "verified" çıktısı verecektir. Eğer bir şey yanlış giderse hata alacaksınız.
 
-Reboot into the bootloader interface to begin the flashing procedure.
+### Fabrika imajının flashlanması
 
-Next, extract the factory images.
+İlk kurulum fabrika imajının flashlanması ile gerçekleştirilmekte. Bu var olan işletim sistemini kaldırıp tüm yükli veriyi yok edecektir.
 
-On Linux:
+Kurulum işlemine başlamak için cihazda bootloader ekranına gidin.
 
-unzip crosshatch-factory-2020.05.05.02.zip
+Ardından fabrika imajlarını çıkartın.
 
-On macOS and Windows:
+GNU/Linux'da:
 
-tar xvf crosshatch-factory-2020.05.05.02.zip
+**Not:** Bu işlemi fabrika imajını indirdiğiniz dizinde yapmanız gerekli.
 
-Move into the directory:
+`unzip crosshatch-factory-2020.05.05.02.zip`
 
-cd crosshatch-factory-2020.05.05.02
+Çıkarttığınız dizine gidin:
 
-Flash the images with the flash-all script in the directory.
+`cd crosshatch-factory-2020.05.05.02`
 
-On Linux and macOS:
+İmajı dizindeki `flash-all` betiği ile kurun:
 
-./flash-all.sh
+`./flash-all.sh`
 
-On Windows:
+Flash işleminin bitmesini bekleyin ve ardından cihazı kullanmadan önce bootloader'i tekrar kilitleyin keza kilitleme işlemi cihazdaki tüm verileri yok edecektir.
 
-./flash-all.bat
+### Bootloader'i kilitlemek
 
-Wait for the flashing process to complete and proceed to locking the bootloader before using the device as locking wipes the data again.
-Troubleshooting
+Bootloader'in kilitlenmesi boot aşamasındaki doğrulama için önemlidir. Bu aynı zamanda fastboot'un başka flashlamalar veya veri silmek için kullanılmasının da önüne geçer. Doğrulanmış boot cihaz işletim sistemine yapılan herhangi bir müdahaleyi (vbmeta, boot/dtbo, product, system, vendor) engelleyecektir ve değiştirilmiş/bozulmuş herhangi bir verinin okunmasına mani olacaktır. Eğer değişiklikler fark edilirse hata koruması veriyi orjinal haline getirmeye çalışır ve düzeltme sonrasında doğrulama gerçekleştirilebilir ki bu kötücül olmayan bozulmalara karşı son derece etkilidir.
 
-A common issue on Linux distributions is that they mount the default temporary file directory /tmp as tmpfs which results in it being backed by memory and swap rather than persistent storage. By default, the size is 50% of the available virtual memory. This is often not enough for the flashing process, especially since /tmp is shared between applications and users. To use a different temporary directory if your /tmp doesn't have enough space available:
+Bootloader ekranında kilitleme için:
 
-mkdir tmp
-TMPDIR="$PWD/tmp" ./flash-all.sh
+`fastboot flashing lock`
 
-A majority of failed flashes tend to be caused by substandard USB connectors, plugging in via hubs or bad cables which aren't properly up to the USB standard. The scrollback from a failed flash will contain valuable diagnostic information which is essential in knowing where and how the process went wrong.
+Komutun telefon üzerinden onaylanması gerekli. Onayın ardından cihazdan tüm verinin silinecektir.
 
-Front I/O ports on desktop computer cases and USB 3.1 or USB C on many laptops often aren't implemented properly or are broken in subtle ways, which may cause flashing to fail even on a USB port that works for other peripherals. Older Linux kernels that predate version 5 may have inadequate or patchwork support for USB C or USB 3. If you are installing from a Linux distribution, ensure your distribution uses a modern kernel.
+### Oem kilidinin kapatılması
 
-Always use a high quality USB A to USB C cable with a rear USB port directly on your motherboard, and never use a USB hub for flashing. Never install from a virtual machine; USB passthrough in software emulation may be broken or inadequate and this can cause the flashing to fail.
-Locking the bootloader
+OEm kilidinin kaldırılması için gereken ayar cihaz açıldıktan sonra tekrar geliştirici seçeneklerinden kapatılabilir.
 
-Locking the bootloader is important as it enables full verified boot. It also prevents using fastboot to flash, format or erase partitions. Verified boot will detect modifications to any of the OS partitions (vbmeta, boot/dtbo, product, system, vendor) and it will prevent reading any modified / corrupted data. If changes are detected, error correction data is used to attempt to obtain the original data at which point it's verified again which makes verified boot robust to non-malicious corruption.
+### Kurulumun doğrulanması
 
-In the bootloader interface, set it to locked:
+Auditor ve kullanımı ile ilgili bilgiyi [GraphenOS'in rehberinden edinebilirsiniz](https://attestation.app/tutorial)
 
-fastboot flashing lock
-
-The command needs to be confirmed on the device since it needs to perform a factory reset.
-
-Unlocking the bootloader again will perform a factory reset.
-Disabling OEM unlocking
-
-OEM unlocking can be disabled again in the developer settings menu within the operating system after booting it up again.
-Verifying installation
-
-Verified boot authenticates and validates the firmware images and OS from the hardware root of trust. Since GrapheneOS supports full verified boot, the OS images are entirely verified. However, it's possible that the computer you used to flash the OS was compromised, leading to flashing a malicious verified boot public key and images. To detect this kind of attack, you can use the Auditor app included in GrapheneOS in the Auditee mode and verify it with another Android device in the Auditor mode. The Auditor app works best once it's already paired with a device and has pinned a persistent hardware-backed key and the attestation certificate chain. However, it can still provide a bit of security for the initial verification via the attestation root. Ideally, you should also do this before connecting the device to the network, so an attacker can't proxy to another device (which stops being possible after the initial verification). Further protection against proxying the initial pairing will be provided in the future via optional support for ID attestation to include the serial number in the hardware verified information to allow checking against the one on the box / displayed in the bootloader. See the Auditor tutorial for a guide.
-
-After the initial verification, which results in pairing, performing verification against between the same Auditor and Auditee (as long as the app data hasn't been cleared) will provide strong validation of the identity and integrity of the device. That makes it best to get the pairing done right after installation. You can also consider setting up the optional remote attestation service.
-Replacing GrapheneOS with the stock OS
-
-Installation of the stock OS via the stock factory images is the same process described above. However, before locking, there's an additional step to fully revert the device to a clean factory state.
-
-The GrapheneOS factory images flash a non-stock Android Verified Boot key which needs to be erased to fully revert back to a stock device state. After flashing the stock factory images and before locking the bootloader, you should erase the custom Android Verified Boot key to untrust it:
-
-fastboot erase avb_custom_key
-
-
-[Bu bölüme katkı verebilirsiniz](https://git.oyd.org.tr/oyd/guvenlik)
+[Mobil cihazlara ilişkin genel tedbirler](mobil_cihaz_tavsiyeler.md)
