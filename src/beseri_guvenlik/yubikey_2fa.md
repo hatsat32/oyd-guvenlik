@@ -56,6 +56,14 @@ Yukarıdaki seçenek en yaygın kabul gören standartları kullandığından ço
 
 Şayet Yubikey'in kod üretmeden önce düğmesine basılmasını bir güvenlik ihtiyacı olarak isterseniz komutu `-t` parametresi ile verebilirsiniz. Böylece bilgisayarınıza takılı durumda Yubikey'den kod istendiğinde Yubikey sizden onay isteyecektir. Bu cihazdaki her yazılımın siz farkına varmadan kod talep edebilmesinin önüne geçer.
 
+Şayet OTP kodlarınızın Yubikey'i eline geçirenlerde sorunsuzce elde edilmesinin önüne geçmek isterseniz bir pin ile koruma altına alabilirsiniz. Bunun için aşağıdaki komutu kullanıp pin belirleyebilirsiniz.
+
+`ykman oath set-password`
+
+Parola/pin'inizi iki kere girdikten sonra yubikey'den otp token almak için bu bilgiyi sunmanız gerekecektir. Dilerseniz güvendiğiniz cihazlarda bu parolanın hatırlanmasını sağlayabilirsiniz. Bilgisayarınızda bunun için aşağıdaki komutu çalıştırıp pin/parolanızı girin.
+
+`ykman oath remember-password`
+
 Token'i cihaza yazabildiğinizden emin olmak ve kod almak için aşağıdaki komutları kullanabilirsiniz:
 
 Tüm token'ları almak için: `ykman oath code`
@@ -104,7 +112,19 @@ Yubikey'inizi cihaza her okuttuğunuzda Yubico Authenticator çalışacak ve siz
 
 ## U2F kurulumu
 
-[Bu bölüme katkı verebilirsiniz.](https://git.oyd.org.tr/oyd/guvenlik)
+FIDO U2F tarayıcı temelli bir yetkilendirme sistemi. Kurulumu kolay olmakla birlikte ileriki zamanlarda bu durum değişebilecek olmakla birlikte daha az hizmet tarafından desteklenmekte. U2F kurulumu destekleyen bir hizmete Yubikey kurulumu yapmak çok basit. Güvenlik ayarlarında güvenlik anahtarı (security token) başlıklı bir bölüm bulunuyor ise Yubikey ile U2F kurulumu yapabilirsiniz.
 
+![alt-text](yubikey_2fa/ga1.png)
+![alt-text](yubikey_2fa/ga2.png)
 
-[Bu sayfaya katkı verebilirsiniz.](https://git.oyd.org.tr/oyd/guvenlik)
+Kurulumu başlattıktan sonra çeşitli şekillerde sizden Yubikey'inizi bağlamanız ve dokunarak etkinleştirmeniz istenecektir. Bu noktada Firefox size sitenin yetkilendirme talep ettiğine dair bir uyarı çıkaracaktır.
+
+![alt-text](yubikey_2fa/uyari.png)
+![alt-text](yubikey_2fa/bekleme1.png)
+![alt-text](yubikey_2fa/bekleme2.png)
+
+Kaydın başarılı olması üzerine hesabınıza anahtarınız tanımlanacaktır.
+
+Bu durumda kaydettiğiniz yubikey'in kaybolması durumunda **hesabınıza erişemez** hale gelebilirsiniz. Bu neden ile ikinci bir güvenlik tedbirini daha kaydederek bu duruma engel olmanız mümkün. Bunun için [Akıllı cihaz üzerinden OTP kullanımını](andotp.png) tavsiye ederiz.
+
+Yubikey'de U2F yetkilendirmesine pin veya parola ile tedbir koyulamamakta. Bu nedenle Yubikey'inizi elinde bulunduran biri herhangi bir sorun çekmeden ikinci faktör olarak cihazınızı kullanabilir. Bu sebepten **Yubikey'inizi iyi korumanız önerilir.** Bu tehdit modeli sizin için geçerli ise Yubikey ile TOTP OTP kullanımı pin ile korunabildiğinden daha güvenli olacaktır.

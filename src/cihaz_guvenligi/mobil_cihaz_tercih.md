@@ -1,14 +1,18 @@
-### Hangi mobil cihaz benim için uygun?
+# Mobil Cihaz Tercihi
 
 Cihazınızı içinde bulunduğunuz duruma göre seçmelisiniz:
 
-* **Yüksek Risk**: Bir devletin veya uzman ajanlık şirketlerinin hedefi olacağınızdan şüpheleniyorsanız.
-* **Orta Risk**: Hali hazırda hedef olmadığınız halde bir saldırganın cihazlarınıza fiziksel erişim sağlaması durumunda kolay lokma olmayı tercih etmiyorsanız.
-* **Düşük Risk**: Taşınabilir cihazlarınızı hassas veriler için kullanmıyorsanız.
+* **Yüksek Risk**: Şayet ulus devletler ve şirketler gibi yüksek bütçeli bir grubun hedefi olduğunuzu veya olabileceğinizi öngörüyorsanız.
+* **Orta Risk**: Hali hazırda hedef olmadığınız ve ihtimal görmediğiniz halde bir görece yüksek kabiliyetlere sahip saldırgana karşı kolay lokma olmayı tercih etmiyorsanız.
+* **Düşük Risk**: Taşınabilir cihazlarınızı hassas veriler için kullanmıyor veya düşük miktarda veri işliyorsanız.
 
-#### Yüksek risk
+## Yüksek risk
 
-Eğer riskiniz yüksek ise, **cep telefonunuzu hassas hiç bir şey için kullanmayın**. Bunun sebebi, tüm telefonların sizi kablosuz telefon ağına (hücresel ağ) bağlayan, "[baseband modem][]" olarak adlandırılan bir donanım içermesidir. Bu modemler özel mülktür ve uzaktan kötüye kullanılabilecek pek çok güvenlik açığı içermektedir. Bir kere aşıldıktan sonra, [baseband modem] iletişiminizi takip etmek ve kişisel verilerinizi elde etmek için kullanılabilir.
+Eğer riskiniz yüksek ise, **telefonları hassas hiç bir şey için kullanmamanız tavsiye edilir**. Bunun pek çok sebebi bulunmakta:
+
+1. Sorunların başında tüm telefonların sizi kablosuz telefon ağına (hücresel ağ) bağlayan, "[baseband modem][]" olarak adlandırılan bir donanım içermesi ve bu cihazların doğal olarak bir takip sistemi olmasıdır. Bu modemler özel mülktür ve uzaktan kötüye kullanılabilecek pek çok güvenlik açığı içerme ihtimalini taşımaktadır. Bu açıklar takip edilmenizden, tüm iletişiminizin ve ortamınızın dinlenmesine kadar ilerleyebilir.
+
+2. 
 
 [Replicant][] tamamen özgür bir Android dağıtımı olarak sadece belirli cihazlar üzerinde çalışmaktadır. Çalıştığı cihazların temel özelliği [baseband modem]'i işlemciden izole etmenin bir imkanı olmasıdır. [Replicant] aynı zamanda, cihaz  üzerindeki, Wi-Fi, Bluetooth, GPS gibi donanımları özgür sürücüleri bulunmadığı için çalıştırmaz. Şayet mobil cihaz kullanmanız gerekiyorsa ve bu cihaz ile önemli veriler işleyecekseniz [Replicant] kurulu bir telefon iyi bir tercih olabilir.
 
