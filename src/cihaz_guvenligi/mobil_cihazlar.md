@@ -64,4 +64,5 @@ Modern cihazlardaki GSM modem izolasyonunun sıkıntısı ve wifi bulunmayan ala
 
 
 [Hangi Mobil Cihaz](cihaz_guvenligi/mobil_cihaz_tercih.md)
+
 [Mobil Cihaz Genel Tavsiyeler](cihaz_guvenligi/mobil_cihaz_tavsiyeler.md)

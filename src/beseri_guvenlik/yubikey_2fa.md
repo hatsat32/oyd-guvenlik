@@ -37,7 +37,7 @@ OTP soft token olarak mobil cihazlarda kullanılması düşünüldüğünden bir
 ![alt-text](yubikey_2fa/karekod.png)
 ![alt-text](yubikey_2fa/sir.png)
 
-`ykman` Yubikey'leri uçbirimden kullanmaya ve programlamaya yaran bir yazılım. Bu yazılım ile hizmet sağlayıcı tarafından verilen bilgileri cihaza işlenebilmekte. Bunun için aşağıdaki komutu kullanabilirsiniz.
+`ykman` Yubikey'leri uçbirimden kullanmaya ve programlamaya yarayan bir yazılım. Bu yazılım ile hizmet sağlayıcı tarafından verilen bilgileri cihaza işlenebilmekte. Bunun için aşağıdaki komutu kullanabilirsiniz.
 
 `ykman oath add [token'e vermek istediğiniz isim]`
 
@@ -56,7 +56,7 @@ Yukarıdaki seçenek en yaygın kabul gören standartları kullandığından ço
 
 Şayet Yubikey'in kod üretmeden önce düğmesine basılmasını bir güvenlik ihtiyacı olarak isterseniz komutu `-t` parametresi ile verebilirsiniz. Böylece bilgisayarınıza takılı durumda Yubikey'den kod istendiğinde Yubikey sizden onay isteyecektir. Bu cihazdaki her yazılımın siz farkına varmadan kod talep edebilmesinin önüne geçer.
 
-Şayet OTP kodlarınızın Yubikey'i eline geçirenlerde sorunsuzce elde edilmesinin önüne geçmek isterseniz bir pin ile koruma altına alabilirsiniz. Bunun için aşağıdaki komutu kullanıp pin belirleyebilirsiniz.
+Şayet OTP kodlarınızın Yubikey'i eline geçirenlerde sorunsuzca elde edilmesinin önüne geçmek isterseniz bir pin ile koruma altına alabilirsiniz. Bunun için aşağıdaki komutu kullanıp pin belirleyebilirsiniz.
 
 `ykman oath set-password`
 
@@ -74,7 +74,7 @@ Token'i başarılı şekilde üretebildikten sonra kullandığınız hizmet sağ
 
 ![alt-text](yubikey_2fa/onay.png)
 
-İşlemin başarılı olmasının ertesinde hizmet sağlayıcınız tarafından bir miktar tek kullanımlık parola oluşturulup size sunulacaktır. Bu kodlar OTP olmadan giriş imkanı sağlacığından **dikkatli saklanmalıdır**. Bu kodlar ile şayet cihazınıza erişiminizi kaybederseniz hesabınıza erişim imkanı tanımaktadır. Bunları yazdırıp **güvenli bir yerde** saklamanız önerilir.
+İşlemin başarılı olmasının ertesinde hizmet sağlayıcınız tarafından bir miktar tek kullanımlık parola oluşturulup size sunulacaktır. Bu kodlar OTP olmadan giriş imkanı sağlayacağından **dikkatli saklanmalıdır**. Bu kodlar ile şayet cihazınıza erişiminizi kaybederseniz hesabınıza erişim imkanı tanımaktadır. Bunları yazdırıp **güvenli bir yerde** saklamanız önerilir.
 
 ![alt-text](yubikey_2fa/scratch.png)
 

@@ -64,4 +64,4 @@ Son olarak ssh servisini aşağıdaki komut ile yeniden başlatın:
 
 **Yukarıdaki ayarlarda bir hata yapmış olmanız durumunda sunuya erişiminizi kaybedebilirsiniz**
 
-Bu sebepten ötürü hali hazırda açık olan ssh erişiminizi açık bırakarak bir başka uçbirimden sunucuya tekrar ssh çekerek OTP kurulumunuzun çalışıp çalışmadığını deneyebilirsiniz.
+Bu sebepten ötürü hali hazırda açık olan ssh erişiminizi açık bırakarak bir başka uçbirimden sunucuya tekrar SSH bağlantısı kurarak OTP kurulumunuzun çalışıp çalışmadığını deneyebilirsiniz.

@@ -18,13 +18,11 @@ Desteklenen cihazlardan birine sahip olmanız gerekli. Cihazınızın kilidinin 
 
 Cihazın standart işletim sistemini güncellemek ve buradaki önergeleri takip etmeden önce en güncel firmware'i çalıştırdığından emin olmakta fayda var. Bu şekilde olası sorunlara, eksik özelliklere ve eski sürümlerdeki diğer değişikliklerle karşılaşmanın önüne geçilebilir. Dilerseniz cihazınızı online olarak güncelleyebilir veya Pixel cihazlara has tam güncelleme paketini yükleyebilirsiniz.
 
-These instructions use command-line tools. On Windows, use PowerShell rather than the legacy Command Prompt.
-
 Bu rehber komut satırı araçları kullanmakta. Windows'ta eski komut satırı yerine PowerShell kullanılmakta.
 
 ### Fastboot kurulumu
 
-Fastboot'un güncel bir kopyasını edinmeniz ve işletim sisteminizde PATH çevresel değişkenine ekli olmalıdır. `fastboot --version` komutunu çalıştırarak hangi sürüme sahip olduğunuzu görebilirsiniz. Sürümünüz en az ** 29.0.6. ** olmalıdır. Dağıtımınızın paket yöneticisini kurulum için kullanabilirsiniz lakin pek çok paket deposu fastboot'un geliştirici sürümünü bulundurmakta, standart versiyon platform-tools (adb, fastboot, etc) kendilerine göre düzenleyip güncel tutmamakta.
+Fastboot'un güncel bir kopyasını edinmeniz ve işletim sisteminizde PATH çevresel değişkenine ekli olmalıdır. `fastboot --version` komutunu çalıştırarak hangi sürüme sahip olduğunuzu görebilirsiniz. Sürümünüz en az **29.0.6.** olmalıdır. Dağıtımınızın paket yöneticisini kurulum için kullanabilirsiniz lakin pek çok paket deposu fastboot'un geliştirici sürümünü bulundurmakta, standart versiyon platform-tools (adb, fastboot, etc) kendilerine göre düzenleyip güncel tutmamakta.
 
 Dağıtım paketlerinin listesi:
 
@@ -35,7 +33,7 @@ Dağıtım paketlerinin listesi:
 
 ### platform-tools haricen kurulumu
 
-Eğer işletim sisteminiz fastboot'un uygun bir sürümünü içermiyor ve repolarında bulundurmuyor ise platform-tools'un harici bir sürümünü Google'dan kurmayı değerlendirebilirsiniz. Eğer Android SDK kurulumunuz var ise veya geliştirme ile uğraşacaksanız platform-tools' paketlerini Android SDK paket yöneticisi ile kurabilir ve güncel tutabilirsiniz. Android SDK hariden veya Android Studio aracılığı ile elde edilebilir.
+Eğer işletim sisteminiz fastboot'un uygun bir sürümünü içermiyor ve repolarında bulundurmuyor ise platform-tools'un harici bir sürümünü Google'dan kurmayı değerlendirebilirsiniz. Eğer Android SDK kurulumunuz var ise veya geliştirme ile uğraşacaksanız platform-tools' paketlerini Android SDK paket yöneticisi ile kurabilir ve güncel tutabilirsiniz. Android SDK, haricen veya Android Studio aracılığı ile elde edilebilir.
 
 Platform-tools'u indirmek doğrulamak ve çıkartmak için GNU/Linux işletim sisteminde:
 
@@ -49,11 +47,9 @@ Platform-tools'u indirmek doğrulamak ve çıkartmak için GNU/Linux işletim si
 
 Daha sonra aracı işletim sisteminizin PATH yoluna eklemek ve her seferinde doğrudan yolunu göstermeden çalıştırmak için GNU/Linux'da aşağıdaki komutu kullanabilirsiniz:
 
-export PATH="$PWD/platform-tools:$PATH"
+`export PATH="$PWD/platform-tools:$PATH"`
 
 Tercih ederseniz indirdiğiniz paketin dizinine gidip fastboot binary dosyasının bulunduğu dizinde uçbirimde başına `./` koyarak fastboot'u çalıştırmanız mümkün.
-
-Sample output from fastboot --version afterwards:
 
 Kurulumun ardından `fastboot --version` komutunun çıktısı:
 
@@ -75,9 +71,6 @@ Dağıtımlarda bulunan Signify paket listesi:
     Arch Linux: signify
     Debian: signify-openbsd
     Ubuntu:signify-openbsd
-
-On Debian-based distributions, the signify package and command are an unmaintained mail-related tool for generating mail signatures (not cryptographic signatures) with the final releases from 2003-2004 made directly by the developer via the Debian package without upstream releases. Please pressure them to correct this usability issue.
-
 
 ### OEM kilidinin kaldırılma ayarı
 
