@@ -23,5 +23,3 @@ Yetkilendirme güvenliği için ikinci faktör olarak kullanılabilecek sistemle
 [Yubikey ile yetkilendirme](cihaz_guvenligi/yubikey_pam.md)
 
 [Parmak izi ile yetkilendirme](cihaz_guvenligi/parmak_pam.md)
-
-[Bu bölüme katkı verebilirsiniz](https://git.oyd.org.tr)

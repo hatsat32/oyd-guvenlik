@@ -37,7 +37,6 @@ Aşağıda çeşitli kullanım senaryoları belirlenmiştir. Buna göre uygun ku
 1. Sürekli bağlantı
 2. wifi - wifi
 3. Harici wifi modem
-4. şifreleme
 
 ### Sürekli bağlantı ihtiyacı ve GSM destekli cihazlar
 
@@ -51,20 +50,19 @@ Sayılan cihazların ya modern kullanım için eski ya da Türkiye'de bulunması
 
 Şayet sayılan projelere dahil bir cihazı kullanma imkanınız var ise GSM şebekesini kullanırken en azından cihazınızı kontrol altında tumanız mümkün olabilir.
 
-## Wifi
+### Wifi
 
-Günümüzdeki internet üzerinden iletişim hizmet ve sistemlerinin gelişmişliği altında artık sesli ve yazılı iletişimin sadece internet bağlantısı ile sağlanması çok kolaylaşmış durumda. [Signal](yazisma_guvenligi/signal.md) veya [Jitsi](https://meet.jit.si) gibi araçların sağladığı imkanlar ile artık GSM ses bağlantısına ihtiyaç eskisi kadar yok. Bu neden ile bir kişi internet bağlantısını sağlayabildiği her yerden iletişim kurması mümkündür.
+Günümüzdeki internet üzerinden iletişim hizmet ve sistemlerinin gelişmişliği altında artık sesli ve yazılı iletişimin sadece internet bağlantısı ile sağlanması çok kolaylaşmış durumda. [Signal](yazisma_guvenligi/signal.md) veya [Jitsi](https://meet.jit.si) gibi araçların sağladığı imkanlar ile artık GSM ses bağlantısına ihtiyaç eskisi kadar yok. Bu neden ile bir kişi internet bağlantısını sağlayabildiği her yerden iletişim kurması mümkün.
 
+Buna e-posta gibi diğer iletişim ihtiyaçlarının da çoğunlukla İnternet üzerine taşındığı gözönüne alındığında bir kişinin GSM şebekesinin sağladığı klasik ses ve yazılı (SMS) bağlantı imkanlarına ihtiyacının az olması muhtemel. Özellikle [VOIP](https://en.wikipedia.org/wiki/VoIP) benzeri klasik telefon hizmetini İnternet üzerinden sağlayan servislerle telefon ihtiyacının da karşılanabilmesi mümkün.
+
+Özellikle büyük şehirlerde pek çok yerde wifi bağlantısının bulunabildiği durumlarda GSM modemi içermeyen veya izolasyonu yeterli olan bir cihazı sadece wifi üzerinden kullanmak fikri değerlendirilebilir.
+
+### Harici wifi modem
+
+Modern cihazlardaki GSM modem izolasyonunun sıkıntısı ve wifi bulunmayan alanlarda bağlantı ihtiyacı için bugünlerde yaygın şekilde kullanılan wifi hotspot olarak da bilinen 4G modemlerin kullanılan mobil cihaz ile eş olarak kullanılması bir seçenek. Bu kurulum hem kişilere iyi derecede bir baseband izolasyonu sağlarken hem de kişilerin sürekli bağlantı ihtiyaçlarını karşılayabilir. Lakin GSM sistemlerinin mahremiyet yönünden getirdiği sorunlar ve bu durumun yansıması olabilecek güvenlik endişelerini ortadan kaldırmamakta.
 
 
 [Hangi Mobil Cihaz](cihaz_guvenligi/mobil_cihaz_tercih.md)
 
-
-
-
-
-
-
-
-
-
+[Mobil Cihaz Genel Tavsiyeler](cihaz_guvenligi/mobil_cihaz_tavsiyeler.md)

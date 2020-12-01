@@ -30,7 +30,7 @@ Optik disklerin mekanik parçalar içermemesi ve dış etmenlere olan dayanıkl�
 
 * Offline tutulması gereken hassas verilerin yedeklenmesi ve saklanması
 
-### Optik disklern taşıma kullanımı
+### Optik disklerin taşıma kullanımı
 
 Optik disklerin en değerli kullanımlarından biri veri taşıma ihtiyacında ortaya çıkmaktadır. Optik disklerin ucuz olmaları ve ince yapıları sebebi ile gözden çıkarılabilir şekilde çeşitli aracılar veya riskli alanlardan taşınması mümkün olmaktadır.
 
@@ -52,9 +52,9 @@ Veri güvenliğinin operasyonel koşullarında bir verinin optik disk üzerinde 
 
 ## Şifreli optik disk oluşturmak
 
-Bir optik diskteki verileri şifrelemenin pek çok yolu bulunmakta. [GPG kullanarak tüm dosyaları şifreleyip](yazisma_guvenligi/gpg/gui_gpg.md) diske yazmak mümkün olduğu gibi [uzak sunucudaki dosyaların şifrelendiği](cihaz_guvenligi/uzaksunucu.md) şekilde şifrelenne dizini olduğu gibi diske yazdımak mümkün.
+Bir optik diskteki verileri şifrelemenin pek çok yolu bulunmakta. [GPG kullanarak tüm dosyaları şifreleyip](yazisma_guvenligi/gpg/gui_gpg.md) diske yazmak mümkün olduğu gibi [uzak sunucudaki dosyaların şifrelendiği](cihaz_guvenligi/uzaksunucu.md) şekilde şifrelenen dizini olduğu gibi diske yazdımak da mümkün.
 
-Bu rehber Luks ile bir optik diskin şifrelenmesini anlatacaktır. Bu yöntemin yukarıdaki seçeneklere göre birkaç faydası bulunmakta.
+Bu rehber [Luks](https://en.wikipedia.org/wiki/LUKS) ile bir optik diskin şifrelenmesini anlatacaktır. Bu yöntemin yukarıdaki seçeneklere göre birkaç faydası bulunmakta.
 
 * Tüm GNU/Linux sistemler Luks aygıtları otomatik olarak açabilmekte ve dosya sistemini gösterebilmekte. Bu sebepten diskin kullanımı çok kolaylaşmakta.
 

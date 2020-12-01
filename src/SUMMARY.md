@@ -33,7 +33,7 @@
   - [Optik Diskler](cihaz_guvenligi/luks_optik.md)
   - [Uzak sunucu](cihaz_guvenligi/uzaksunucu.md)
      - [SSH Güvenliği](cihaz_guvenligi/ssh.md)
-     - [2FA Erişimi](cihaz_guvenligi/sunucu_2fa.md)
+     - [SSH ile OTP Kullanımı](cihaz_guvenligi/sunucu_2fa.md)
   - [Yönlendirici Güvenliği](cihaz_guvenligi/yonlendirici.md)
      - [Librecmc](cihaz_guvenligi/librecmc.md)
      - [Openwrt](cihaz_guvenligi/openwrt.md)
