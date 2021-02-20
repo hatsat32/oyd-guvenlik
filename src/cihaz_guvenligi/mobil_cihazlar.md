@@ -63,6 +63,6 @@ Buna e-posta gibi diğer iletişim ihtiyaçlarının da çoğunlukla İnternet �
 Modern cihazlardaki GSM modem izolasyonunun sıkıntısı ve wifi bulunmayan alanlarda bağlantı ihtiyacı için bugünlerde yaygın şekilde kullanılan wifi hotspot olarak da bilinen 4G modemlerin kullanılan mobil cihaz ile eş olarak kullanılması bir seçenek. Bu kurulum hem kişilere iyi derecede bir baseband izolasyonu sağlarken hem de kişilerin sürekli bağlantı ihtiyaçlarını karşılayabilir. Lakin GSM sistemlerinin mahremiyet yönünden getirdiği sorunlar ve bu durumun yansıması olabilecek güvenlik endişelerini ortadan kaldırmamakta.
 
 
-[Hangi Mobil Cihaz](cihaz_guvenligi/mobil_cihaz_tercih.md)
+[Hangi Mobil Cihaz](mobil_cihaz_tercih.md)
 
-[Mobil Cihaz Genel Tavsiyeler](cihaz_guvenligi/mobil_cihaz_tavsiyeler.md)
+[Mobil Cihaz Genel Tavsiyeler](mobil_cihaz_tavsiyeler.md)
