@@ -1,8 +1,8 @@
 # LineageOS ile Mobil Cihaz Güvenliği
 
-LineageOS, mobile cihazlar için Android tabanli bir işletim sistemidir. Privacy Guard gibi araçlarla verileriniz hakkında azami kontrol sahibi olmanızı sağlar. Her ay güvenlik güncellemeleri gönderen, güvenlik odaklı bir dağıtımdır. Tüm işlemlerin öncesinde şarjınızın %60'ın üstünde olduğundan ve verilerinizi yedeklediğinizden emin olun. İşlem sonunda telefonunuzdaki tüm veriler silinecektir.
+LineageOS, mobil cihazlar için Android tabanlı bir işletim sistemidir. Privacy Guard gibi araçlarla verileriniz hakkında azami kontrol sahibi olmanızı sağlar. Hiçbir Google servisini kullanmaksızın (dolayısıyla verilerinizi Google ile paylaşmaksızın) kullanabileceğiniz bir Android dağıtımıdır. Her ay güvenlik güncellemeleri gönderen, güvenlik odaklı bir dağıtımdır. Tüm işlemlerin öncesinde şarjınızın %60'ın üstünde olduğundan ve verilerinizi yedeklediğinizden emin olun. İşlem sonunda telefonunuzdaki tüm veriler silinecektir.
 
-_Bu döküman "Xiaomi Redmi 8" cihazına kuruluma göre oluşturulmuştur._
+_Bu döküman "Xiaomi Redmi Note 8" cihazına kuruluma göre oluşturulmuştur._
 
 _Rehber boyunca mobil cihazınızı kullandığınız her durumda aşağıdaki başlıktaki adımları yapmılmış olduğunu kontrol edin. Cihazınızı bilgisayara bağladığınızda sizden USB hata ayıklama izni isterse bu izni verin._
 ## Cihazınızda geliştirici seçeneklerini ve USB hata ayıklamayı aktifleştirin
@@ -23,7 +23,7 @@ Kurulum için kullanacağımız yazılımlar olan ADB ve Fastboot programların�
 ## Bootloader kilidini açın
 Bu işlemin tamamlanması için 7 gün beklemeniz gerekmektedir. Bu bölümdeki işlemler için ne yazık ki içinde Windows işletim sistemi çalışan bir cihaza ihtiyacınız olacak. Windows kurulu bilgisayara [MI Unlock Tool'u](https://xiaomitools.com/download/mi-flash-unlock-tool-v3-5-1030-37/) kurunuz. 
 
-### İlk işlemler
+### Ön işlemler
 
 * Programı çalıştırın.
 * Feragatnameyi kabul edin.
@@ -33,13 +33,13 @@ Bu işlemin tamamlanması için 7 gün beklemeniz gerekmektedir. Bu bölümdeki 
 
 * Mobil cihazınızı USB girişinden bilgisayara bağlayıp _ses kısma ve güç butonlarına_ aynı anda basarak boot loader ekranına girin ve kilidi açmak üzere artık tıklanabilir olan _unlock_ butonuna tıklayın.
 * Karşınıza gelen güvenlik uyarısını okuyun ve devam etmek istiyorsanız yine de kilidi açmak üzere _unlock anyway_ butonuna tıklayın.
-* Yüklenme ekranının ardından 7 gün sonra cihazınızın bootloader kilidinin açılacağına dair bir uyarı göreceksiniz.
+* Yüklenme ekranının ardından 7 gün sonra (bu süre değişkenlik gösterebilir) cihazınızın bootloader kilidinin açılacağına dair bir uyarı göreceksiniz.
 
 ![alt-text](lineageos/unlockFirstProcess2.png)
 
 _Bu esnada tekrar MI hesabı eklemeyin, aksi halde tekrar beklemek durumunda kalacaksınız._
 
-### 7 gün sonraki işlemler
+### Süre dolduktan sonraki işlemler
 * Süre dolduktan sonra tekrar Windows cihazınızda kurulu olan _MI Unlock Tool_ programını açın.
 * Eğer hesabınıza tekrar giriş yapmanızı istiyorsa, _İlk işlemler_ başlığındaki giriş adımlarını tekrar edin.
 * Cihazınızın _ses kısma ve güç butonlarına_ aynı anda basarak boot loader ekranına girin.
@@ -47,18 +47,18 @@ _Bu esnada tekrar MI hesabı eklemeyin, aksi halde tekrar beklemek durumunda kal
 
 ![alt-text](lineageos/unlockSecondProcess.png)
 
-## Fastboot ile Lineage Recovery programını kurun
-* Özelleşririlmiş recovery'nin son sürümünü [buradan](https://download.lineageos.org/ginkgo) (.img dosyaları) indiriniz.
-* Cihazınızı USB ile bilgisayarınıza bağlayın. Geliştirici modunun açık olduğundan, USB hata ayıklamaya izin verdiğinizden emin olduktan sonra `adb devices` komutuyla cihazınızı görmeniz gerekir.
+## Fastboot ile Lineage Recovery imajını kurun
+* Recovery imajının son sürümünü [buradan](https://download.lineageos.org/ginkgo) (.img dosyaları) indiriniz.
+* Cihazınızı USB ile bilgisayarınıza bağlayın. Geliştirici seçeneklerinin açık olduğundan, USB hata ayıklamaya izin verdiğinizden emin olduktan sonra `adb devices` komutuyla cihazınızı görmeniz gerekir.
 * Bağlantının sağlandığından emin olduktan sonra `adb reboot bootloader` komutuyla fastboot moduna girin. Bu moda _ses kısma ve güç butonlarına_ aynı anda basarak da girebilirsiniz. 
-* Cihazınız fastboot moduna girdiğinde `fastboot devices` komutunu çalıştırdığınızda cihazınızı listelemesi gerekir. Böylece fastboot yazılımının cihazınızı bulduğundan emin oluruz. 
+* Cihazınız fastboot moduna girdiğinde bilgisayarınızdan `fastboot devices` komutunu çalıştırdığınızda cihazınızın listelenmesi gerekir. Böylece fastboot yazılımının cihazınızı bulduğundan emin oluruz. 
 * Ardından `fastboot flash recovery <indirdiğiniz-recovery-imajı>.img` komutu ile recovery imajıyla cihazınızı flaşlayın.
-* Kapalı durumdaki cihazınızı _ses açma ve güç butonlarına_ (dikkat edin bu sefer ses açma:)) aynı anda basarak kurtarma modunda açın.
+* Kapalı durumdaki cihazınızı _ses açma ve güç butonlarına_ (dikkat edin bu sefer ses açma) aynı anda basarak recovery (kurtarma) modunda açın.
 
-## Kurtarma modunda adb ile LineageOS kurun
+## Kurtarma modunda ADB ile LineageOS'i kurun
 
 * LineageOS kurulum paketini [indirin](https://download.lineageos.org/ginkgo). 
-    * Kurulum paketini doğrulamak için doğrulama yazılımını kurunuz.
+    * Kurulum paketini doğrulamak için doğrulama yazılımını kurun.
 	```
 	git clone https://github.com/LineageOS/update_verifier
 	cd update_verifier
