@@ -23,9 +23,18 @@
 Her Python kodu gibi `paperbackup` da birtakım bağımlılıklara sahiptir. Aşağıdaki komutu çalıştırarak gereken bağımlılıkları sisteminize indirip kurabilirsiniz.
 
 RPM kullanan dağıtımlar için (Red Hat, Fedora, CentOS vb.):  
-`sudo yum install PyX enscript qrencode hashlib zbar`  
+
+```bash
+sudo yum install PyX enscript qrencode hashlib zbar
+python3 -m pip install hashlib Pillow
+```
+
 APT kullanan dağıtımlar için (Debian, Ubuntu, Mint vb.):  
-`sudo apt-get update && sudo apt-get install python3-pyx enscript python3-qrencode hashlib python3-zbar`
+
+```bash
+sudo apt-get update && sudo apt-get install python3-pyx enscript python3-qrencode python3-zbar
+python3 -m pip install hashlib Pillow
+```
 
 ### Anahtar veya veri yedeğini oluşturma
 
