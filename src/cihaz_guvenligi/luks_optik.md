@@ -1,5 +1,7 @@
 # Optik Diskleri Şifrelemek
 
+<!-- toc -->
+
 Optik diskler genellikle 8cm çapında lazer ile üzerine veri kaydedilen kayıt ortamlarıdır. Dünya tarihinde ilk yaygın kullanımı olan [LaserDisk](https://duckduckgo.com/l/?kh=-1&uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLaserDisc) teknolojisinin [format savaşlarını](https://en.wikipedia.org/wiki/Format_war) kaybetmesinin ardından [Compact Disk veya kısa adı ile CD](https://en.wikipedia.org/wiki/Compact_Disc) dünyadaki optik disk kullanımının gerçekten yaygınlaşmasına öncülük etmiştir. CD teknolojisini [Digital Versatile Disk veya DVD](https://en.wikipedia.org/wiki/DVD) izlemiş ve görsel sanat eserlerinin dağıtımında yaygınlık kazanmıştır.
 
 Optik diskler üretildikleri tarihte bilgisayar kullanıcıları için sihirli sayılabilecek araçlardı. [Yaygın olarak "disket" olarak bilinen Floppy Disk](https://en.wikipedia.org/wiki/Floppy_disk) ile kıyaslanınca, bir CD-ROM neredeyse **500** kat kapasiteye sahiptir. Aynı zamanda optik disklerin 2000'lerin başlarında kullanıma giren flash belleklere nazaran çok daha ucuz olması uzun bir süre optik kayıt ortamlarının veri taşımanın ilk tercihi olmasına sebep olmuştur.

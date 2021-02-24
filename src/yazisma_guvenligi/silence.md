@@ -1,18 +1,20 @@
 # Silence ile SMS Şifreleme
 
-## SMS'ler neden şifrelenmelidir
+<!-- toc -->
+
+## SMS'ler neden şifrelenmelidir?
 
 [SMS veya kısa mesaj servisi](https://en.wikipedia.org/wiki/Short_Message_Service) cep telefonlarına gelen ilk yazılı iletişim sistemidir. Bu amaçla günümüzde artık kişiler arasındaki iletişim için pek kullanılmasa da GSM sistemleri tarafından hala desteklenmekte ve [2FA](/beseri_guvenlik/2fa.md) için sıklıkla kullanılmaktadır.
 
 SMS'ler operatörlerin elinde bulunan anahtarlarla telefon ile baz istasyonu arasında şifrelenmektedir. Lakin anahtar kullanıcının kontrolünde olmadığından uçtan uca şifrelemenin sağlayacağı güvenliği veya operatör ile uyması gereken kanunlara karşı mahremiyeti sunamayacaktır. [Aynı zamanda GSM ağındaki SMS şifrelemenin dayanıklılığı da şüphelidir.](https://www.schneier.com/blog/archives/2019/11/eavesdropping_o_8.html)
 
-## SMS şifreleme gerekli midir
+## SMS şifreleme gerekli midir?
 
 Çoğu günümüz kullanıcısının SMS'i unuttuğu düşünüldüğünde SMS'in gerekliliği veya zaten kullanılmayan bir şeyin şifrelenmesi sorgulanabilir. SMS'i mobil cihazlarla iletişimimiz yönünden önemli kılan bir özelliği vardır: İnternet gerektirmemesi. Mobil İnternet iletişiminin veya genel olarak İnternet erişiminin kesildiği, engellendiği veya bulunulan alan dolayısı ile mümkün olmadığı durumlarda SMS kullanılabilir tek yazılı iletişim sistemidir. Aynı zamanda sesli aramaya göre çok daha az bant genişliği kullandığından afetlerde veya baz istasyonu kapasitesinin dar olduğu bölgelerde başarılı şekilde kullanılabilmektedir.
 
 Bu sebepte ötürü SMS ile şifreli yazışma yapabilmek kimi olasılıklarda yapılabilecek tek şifreli iletişim olabilir. Bu sebepten SMS şifrelemeye bugünden başlanması ve hazır tutulması sadece günlük mahremiyetinizi ve güvenliğinizi arttırmaz aynı zamanda olası bir durumda iletişiminizi güvenli tutmaya imkan sağlar.
 
-## SMS nasıl şifrelenir
+## SMS nasıl şifrelenir?
 
 SMS temelde mesaj başına 160 karakter metin aktarımı sağlar. Bu bakımdan haricen şifrelenmiş bir veriyi mesaj olarak göndermenizde bir engel yoktur. Dilerseniz [GPG](yazisma_guvenligi/eposta-sifreleme.md) ile bir mesajı şifreleyip SMS ile uzun da olsa göndermeniz mümkündür. Bu yöntem kesinlikle pratik olmamakla birlikte gerektiğinde kullanılabilir.
 

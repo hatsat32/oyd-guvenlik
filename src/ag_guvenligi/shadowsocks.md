@@ -6,6 +6,7 @@ Shadowsocks, akan veriyi şifrelemek için [AES](https://en.wikipedia.org/wiki/A
 
 Shadowsocks’u diğer proxy yöntemlerinden ayrıştıran bir nokta da TCP’nin yanında UDP trafiğini de taşıyabilmesidir. Ek olarak bir eklenti sistemi de bulunmaktadır ve [v2ray](https://github.com/v2ray/v2ray-core) bu eklentilerden en popüleridir. v2ray'ın kullanım amacı akan verinin şeklini gizlemektir. Bu eklenti sayesinde akan trafik HTTP, HTTPS veya QUIC protokolleri gibi bir ağda doğal olarak beklenen trafiği taklit edebilir.
 
+<!-- toc -->
 
 ## Basit bir sunucu istemci kurulumu
 

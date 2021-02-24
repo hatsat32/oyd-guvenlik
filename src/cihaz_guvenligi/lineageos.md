@@ -1,5 +1,7 @@
 # LineageOS ile Mobil Cihaz Güvenliği
 
+<!-- toc -->
+
 LineageOS, mobil cihazlar için Android tabanlı bir işletim sistemidir. Privacy Guard gibi araçlarla verileriniz hakkında azami kontrol sahibi olmanızı sağlar. Hiçbir Google servisini kullanmaksızın (dolayısıyla verilerinizi Google ile paylaşmaksızın) kullanabileceğiniz bir Android dağıtımıdır. Her ay güvenlik güncellemeleri gönderen, güvenlik odaklı bir dağıtımdır. Tüm işlemlerin öncesinde şarjınızın %60'ın üstünde olduğundan ve verilerinizi yedeklediğinizden emin olun. İşlem sonunda telefonunuzdaki tüm veriler silinecektir.
 
 _Bu döküman "Xiaomi Redmi Note 8" cihazına kuruluma göre oluşturulmuştur._

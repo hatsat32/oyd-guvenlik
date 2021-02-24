@@ -1,5 +1,7 @@
 # Simli Oje ve Entropi ile Fiziki Cihaz Güvenliği
 
+<!-- toc -->
+
 [Fiziksel güvenlik](fiziki_guvenlik.md) cihazların güvenliğinin sağlanması açısından ciddi bir endişe olarak var olmakta. Her ne kadar [boot güvenliği](cihaz_guvenligi/boot_guvenligi.md) veya [şifreleme](cihaz_guvenligi/cihaz_sifreleme.md) gibi yazılımsal kaynaklı güvenlik tedbirleri kimi saldırıları engelleyebilecek olsa da fiziken cihaza yerleştirilecek bir cihaz aracılığı ile gerçekleştirilebilecek saldırılara karşı çok az koruma sağlamaktadır.
 
 Fiziki tedbirlerin amaçlarından biri de kullanılan cihazlara yapılabilecek fiziki müdahalelerin nasıl engellenebileceği veya yapılan müdahalelerin nasıl fark edilebileceğinden oluşmakta. Keza donanıma yapılan bir müdahalenin doğrulanması kimi zaman imkansıza yakın olabilecek olduğundan pratik olarak soruna getirilebilecek en iyi çözüm müdahalenin olmadığından emin olmaktan geçmekte.

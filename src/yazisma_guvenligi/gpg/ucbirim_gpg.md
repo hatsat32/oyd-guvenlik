@@ -1,5 +1,7 @@
 ## GPG ile Komut Satırında işlemler
 
+<!-- toc -->
+
 GPG temel olarak komut satırında çalışan bir yazılımdır. Bu bakımdan grafik arayüzler tarafından sunulmayan pek çok faydalı özelliği uçbirim aracılığı ile kullanmak ve kimi zaman grafik arayüzlerin sunduğu işlevleri daha kolay yerine getirmek mümkündür. Pek çok kullanıcı için uçbirim korkutucu olabilmektedir. Lakin her Gnu/Linux cihazda bir uçbirim ve GPG kurulu olduğu düşünüldüğünde GPG'nin evrensel kullanımı uçbirimde toplanmaktadır.
 
 GPG'nin man sayfası çok kalabalıktır. Bu rehberde son kullanıcıya lazım olabilecek temel ve orta seviyedeki işlevler ipuçları ile birlikte sunulacaktır. Şayet GPG ile ilgili daha çok şey öğrenmek istenirse aşağıdaki komut ile man sayfasının okunması veya pratik olarak yardım sayfasının çağrılması mümkündür.

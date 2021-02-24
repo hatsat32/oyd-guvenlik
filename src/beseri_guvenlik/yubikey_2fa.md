@@ -1,5 +1,7 @@
 # Yubikey ile 2FA Kurulumu
 
+<!-- toc -->
+
 [Yubikey](https://yubico.com) çok amaçlı kriptografik bir güvenlik anahtarıdır. Günümüzde en yaygın kullanılan cihaz olmakla pek çok hizmet tarafından desteklenmekte ve fazlasıyla kullanım alanı bulmakta. Yubikey Neo'dan sonra özgür donanımları terk eden Yubico artık özel mülk sistemler üretmekte ve bu konuda bir [açıklamaları bulunmakta.](https://www.yubico.com/blog/secure-hardware-vs-open-source/)
 
 Yubikey'in en yaygın kullanımlarından biri çevrimiçi hizmetlerde ikinci faktör olarak kullanımıdır. Bu amaçla Yubikey'ler birden fazla sistemi desteklemektedir.

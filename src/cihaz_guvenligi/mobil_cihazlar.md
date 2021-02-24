@@ -1,5 +1,7 @@
 # Mobil Cihazlar
 
+<!-- toc -->
+
 Taşınabilir cihazlar günlük hayatın vazgeçilmez parçaları haline gelmiş durumdalar. Artık bilgisayar denilince dizüstü bilgisaylar akla gelmekte, her telefon kullanıcısı bir şekilde "akıllı" mobil cihazlar kullanmakta. Bu gelişme insanların sürekli bağlı kalmasını ve tüm toplumsal örgütlenmenin bu bağlılığa dayanmasına sebep olmakta ve bu cihazlarla ürettilen bilgi giderek artmakta.
 
 Söz konusu mobil cihazlar olunca çalınma, kaybolma ve bir şekilde istenmeyen ellere düşme ihtimali taşınabilirliklerinden dolayı çok olası olmakta. Bu durum cihazların bilinçli veya bilinçsiz olarak içerdikleri çok miktardaki kişisel ve değerli bilgi ile birleştiğinde konuya ilişkin güvenlik tedbirlerinin de özellikle değerlendirilmesi gerekmekte.

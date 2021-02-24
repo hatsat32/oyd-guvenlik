@@ -1,11 +1,6 @@
 # Parolalar
 
-* [Parola yöneticisi kullanın](#parola-yoneticisi)
-* [Güçlü Parolalar Kullanın](#guclu-parola)
-* [Eşsiz parolalar kullanın](#essiz-parola)
-* [Parolalarınızı gizli tutun](#gizli-parola)
-* [Kurumsal ve kişisel parolalarınızı ayırın](#kurumsal-kisisel-parola)
-* [Ek okuma listesi](#ek-okuma)
+<!-- toc -->
 
 ## Parola yöneticisi kullanın<a name="parola-yoneticisi"></a>
 

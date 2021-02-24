@@ -4,6 +4,8 @@ GnuPG'nin en önemli özelliklerinden biri, imzalama yoluyla bütünlük ve kiml
 
 Git commit'leri GnuPG ile imzalandığında ilgili kodu yazan kişinin gerçekten istenen kişi olduğu doğrulanmış olur ve böylece projeye istenmeyen kodların sokulması veya olası bir giriş bilgilerinin çalınması durumunda projenin sabote edilmesi engellenir.
 
+<!-- toc -->
+
 ## GitHub'a GnuPG anahtarının eklenmesi
 
 GitHub üzerinde GnuPG ile imzalanmış commit'lerin gözükmesi için öncelikle GitHub hesabınıza GnuPG anahtarınızı eklemeniz gerekir. Bunun için hesabınıza giriş yaptıktan sonra, sağ üst köşedeki profil fotoğrafınıza tıklayıp, "Settings"e basın.

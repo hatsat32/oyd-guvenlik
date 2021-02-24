@@ -1,5 +1,7 @@
 # Şifreli E-posta Hizmetleri
 
+<!-- toc -->
+
 [Edward Snowden'in](https://en.wikipedia.org/wiki/Edward_Snowden) kamuya açıkladığı gerçeklerden sonra şifreli e-posta hizmetleri fazlasıyla tartışılmış ve konuşulmuştur. Özellikle [Lavabit'in](https://en.wikipedia.org/wiki/Lavabit) muhtemelen [FBI](https://www.fbi.gov/) baskısı sebebi ile kapatılmasından sonra benzer şifreli e-posta hizmetlerine ilişkin merak ve tartışma daha da arttı. Şifreli e-posta hizmetlerini bir ihtiyaç olarak görüldüğünden günümüzde giderek daha fazla şifreli e-posta'yı bir web arayüzü üzerinden hizmet olarak sunan şirketlerin sayısı artmaktadır. Her güvenlik aracı gibi bu hizmetlerin de bir kullanım alanı ve sınırları bulunmaktadır.
 
 ## Şifreli e-posta hizmeti nedir?
