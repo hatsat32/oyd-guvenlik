@@ -1,5 +1,7 @@
 # GrapheneOS Kurulumu
 
+<!-- toc -->
+
 GrapheneOS güvenlik odaklı bir Android projesi. Proje Google Pixel cihazların donanımsal özellikleri ile birlikte güvenlik özelliklerinin varsayılan olarak geldiği bir dağıtım sağlamakta.
 
 GrapheneOS'in kurulumu proje tarafından hazırlanan rehber ve betik sayesinde fazlasıyla kolay. Bu rehber [Grapheneos'in web sitesindeki](https://grapheneos.org/install) kurulum rehberinden çeviridir. Keza proje kısıtlı sayıda cihazda çalıştığından kurulum fazlasıyla belgelenmiş ve iyileştirilmiş durumda. Kimi değişiklikler ise kolaylık ve anlaşılırlık amacı ile eklenmiştir rehbere.

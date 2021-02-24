@@ -1,5 +1,7 @@
 # Kleopatra ile GPG İşlemleri
 
+<!-- toc -->
+
 [Kleopatra](https://kde.org/applications/en/utilities/org.kde.kleopatra) tüm işletim sistemleri ile kullanılabilir bir GPG önyüzüdür. [Kolay GPG anahtar üretimi](gpg-anahtar-uretimi.md) rehberinde kullanılan bu yazılım aynı zamanda GPG ile yapılabilen kimi kriptografik işlemleri de kullanıcılarına sunmaktadır.
 
 Kleopatra'yı yüklemek için aşağıdaki komutları kullanabilir veya dağıtımınızın grafik yükleyicisini kullanabilirsiniz;

@@ -1,5 +1,7 @@
 # Güvenli Web Gezintisi
 
+<!-- toc -->
+
 ## Web tarayıcınızı seçin
 
 Her gün, muhtemelen en sık kullandığınız yazılım web tarayıcınızdır. Bu sebepten dolayı, web tarayıcınızın güvenli ve özgür olması çok kritiktir. Mozilla Firefox kullanın!

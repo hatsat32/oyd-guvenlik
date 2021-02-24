@@ -1,5 +1,7 @@
 # OMEMO
 
+<!-- toc -->
+
 ## OMEMO’ya Giriş
 
 [OMEMO](https://conversations.im/omemo/) mesajlaşmanın baştan sona(end-to-end) şifrelenmesini sağlar. [OTR](otr.md) ile pratik olarak ayrılan modern ihtiyaçlara yönelik özellikleri mevcuttur. 

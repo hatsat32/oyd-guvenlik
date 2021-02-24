@@ -1,5 +1,7 @@
 # Mobil Cihaz Tercihi
 
+<!-- toc -->
+
 Cihazınızı içinde bulunduğunuz duruma göre seçmelisiniz:
 
 * **Yüksek Risk**: Şayet ulus devletler ve şirketler gibi yüksek bütçeli bir grubun hedefi olduğunuzu veya olabileceğinizi öngörüyorsanız.

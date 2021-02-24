@@ -1,5 +1,7 @@
 # Tutanota ile Şifreli Yazışma
 
+<!-- toc -->
+
 ## Tutanota nedir?
 
 [Tutanota](https://tutanota.com/) şifreli e-posta hizmeti almak için tercih edebileceğiniz servislerden birisi. Tutanota kullanıcıları kendi aralarında varsayılan olarak e-postaları şifrelenerek iletişim kurabilirler. Tutanota kullanmayan birisine şifreli e-posta atmak istediğinizde ise sizin belirleyeceğiniz bir parola ile karşı tarafa e-postanız şifrelenerek gönderilir. Tutanotanın henüz [GnuPG](./gpg/gpg.md) desteği bulunmamakta bu neden ile GnuPG ile şifrelenmiş eposta gönderemez veya alamazsınız. 

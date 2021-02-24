@@ -1,5 +1,7 @@
 # Kmail ile GPG Şifreli E-posta
 
+<!-- toc -->
+
 Kmail GNU/Linux dağıtımlarında yaygın olarak kullanılan KDE masaüstü ortamının e-posta istemcisidir. KDE'nin diğer e-posta istemcilerine göre avantajı herhangi bir eklenti veya ayar gerektirmeden GPG desteği vermesi. Bu bakımdan GPG şifreli imzalamaya bilgisayar üzerinden giriş yapmanın en kolay yolu sayılabilir.
 
 ## Kmail kurulumu

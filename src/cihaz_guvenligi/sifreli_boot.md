@@ -1,5 +1,7 @@
 # /boot sektörünü şifrelemek
 
+<!-- toc -->
+
 Boot sektöründe bulunan çekirdek ve grub yapılandırma dosyalarınızdan doğabilecek tehlikeleri /boot sektörünü şifreleyerek yüksek oranda bertaraf edebilirsiniz.
 
 GNU/Linux dağıtımlarının kurulum aşamasında sunduğu tam disk şifreleme /boot sektörünü **şifrelemez**. Bu tercihin pratik sebepleri bulunmakla birlikte bir gün tercihen bu yapılandırmanın seçilebilmesi dağıtımlar yönünden gereklidir.

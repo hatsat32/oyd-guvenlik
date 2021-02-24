@@ -1,10 +1,6 @@
 # Mesaj Disiplini
 
-* [Gönderene asla güvenmeyin](#gonderene-guvenme)
-* [E-postalardaki bağlantılardan sakının](#eposta-baglanti)
-* [Asla bir bağlantıya tıkladıktan sonra hesap girişi yapmayın](#hesap-girisi)
-* [Dosya eklerinden uzak durun](#dosya-eki)
-* [Ek okumalar](#ek-okuma)
+<!-- toc -->
 
 ## Gönderene asla güvenmeyin<a name="gonderene-guvenme"></a>
 

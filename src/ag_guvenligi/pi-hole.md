@@ -2,6 +2,8 @@
 
 ![Pi Hole](pi_hole/pi-hole-logo.png)
 
+<!-- toc -->
+
 ## Pi Hole nedir?
 
 Pi Hole, ev ağları gibi özel ağlarda kullanmak için geliştirilmiş, ağ seviyesinde reklam ve takipçileri engellemenize yarayan özgür bir yazılımdır. Pi Hole sayesinde ağınıza bağlanan tüm cihazların DNS istekleri Pi Hole üzerinden geçerek filtrelenir ve reklam/takip amaçlı istekler engellenmiş olur. Tarayıcılar gibi geniş spektrumlu engelleyicilerin kullanılamadığı uygulamaları veya PlayStation gibi eklenti desteği bulunmayan cihazları da reklam ve takip amaçlı isteklere karşı koruyabilirsiniz. 

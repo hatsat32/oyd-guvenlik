@@ -1,5 +1,7 @@
 # Harici Bellekleri Şifrelemek
 
+<!-- toc -->
+
 Harici bellekler ortaya çıktıkları ilk günlerden itibaren giderek hayatımızda daha fazla yer edindiler. Öncelikle görece taşınabilir sabit sürücülerden başlayan taşınabilir kayıt ortamları, [NAND](https://en.wikipedia.org/wiki/NAND_flash_memory) hafıza aygıtlarının yani bugün usb bellek olarak bilinen donanımların yaygınlaşması ile veri taşımanın en pratik yöntemi haline geldiler.
 
 Hem fiyatların azalması hem de kapasitenin geometrik artışı usb bellekleri ve usb harici harddiskleri çok cazip araçlar haline getirmekte. Lakin pek çok önemli verinin taşındığı, saklandığı bu donanımların hayatımıza getirdiği en büyük tehlike yine bu kadar tutulmaları ile aynı olan taşınabilirlikleri. USB hafıza aygıtları; kolaylıkla unutulabilmekte, çalınabilmekte ve gerekirse bir saldırgan tarafından rahatça kurcalanabilmekte. Bu sebepten taşınabilir veri depolama aygıtlarının da şifrelenerek güvenli kılınması gerekli.

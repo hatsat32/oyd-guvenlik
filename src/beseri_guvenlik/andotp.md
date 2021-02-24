@@ -1,5 +1,7 @@
 # andOTP ile OTP Kurulumu
 
+<!-- toc -->
+
 [andOTP](https://github.com/andOTP/andOTP) Android işletim sisteminde kullanılabilen özgür bir OTP yazılımıdır. [F-droid](https://f-droid.org/en/packages/org.shadowice.flocke.andotp/) aracılığı ile kurabileceğiniz andOTP'yi [Freeotp ve Freeotp+](https://search.f-droid.org/?q=freeotp&lang=en) yazılımlarından ayıran şifreli veri tabanı, [GPG şifreleme](yazisma_guvenligi/gpg/gpg.md) ve anahtar dışa aktarım gibi daha gelişmiş özellikleridir. Bu bakımdan andOTP neredeyse tüm OTP yazılımları gibi işlev görse de kullanım özellikleri bakımından daha ileri seçenekler sunmaktadır.
 
 ## Kurulum

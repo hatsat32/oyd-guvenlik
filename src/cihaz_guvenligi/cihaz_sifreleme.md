@@ -1,5 +1,7 @@
 # Cihaz Şifreleme
 
+<!-- toc -->
+
 ## Cihazlarınızı neden şifrelemelisiniz?
 
 Cihazlarınızı şifrelemekle, cihazınızın depolama alanındaki; işletim sisteminizi, kurduğunuz yazılımları ve kişisel verilerinizi içeren bölümleri cihazınız kapalıyken parolasını bilmeyenlere karşı erişilmez kılarsınız.

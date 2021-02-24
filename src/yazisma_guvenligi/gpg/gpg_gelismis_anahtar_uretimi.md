@@ -1,5 +1,7 @@
 # İleri Anahtar Üretimi
 
+<!-- toc -->
+
 GPG, RSA algoritmasına dayalı asimetrik şifreleme kullanmaktadır. RSA anahtar çiftinin uzun dönem kullanılması ve hali ile saklanması gereklidir. Bu bakımdan hem üretimi hem de saklanması bakımından dikkat gösterilmesi gereklidir. Özellikle şifreleme ihtiyacınız mahremiyet beklentisini aşıp güvenlik gerektiren durumlara yönelik ise anahtar üretimi gibi kritik bir aşamayı olabilecek en az etmen ve şüphe ile yürütmek gerekmektedir.
 
 ## Güvenli ortam

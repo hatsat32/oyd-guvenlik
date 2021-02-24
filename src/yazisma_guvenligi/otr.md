@@ -1,5 +1,7 @@
 # OTR (Off-The-Record Messaging)
 
+<!-- toc -->
+
 ## OTR’ye Giriş
 
 [Off-the-Record Mesajlaşma (OTR)](https://en.wikipedia.org/wiki/Off-the-Record_Messaging) mesajlaşmanın [uçtan uca][uçtan uca şifreleme](end-to-end) şifrelenmesini sağlar. Pek çok özelliği vardır:

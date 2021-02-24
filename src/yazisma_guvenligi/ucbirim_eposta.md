@@ -1,5 +1,7 @@
 # Uçbirim ile E-posta Şifrelemek
 
+<!-- toc -->
+
 Şayet oldschool yöntemi benimsemek isterseniz e-posta şifrelemek adına, bu işlemi terminalden yapmaktan daha iyi bir yol bulamazsınız! GPG ilk ortaya çıktığında kullanımı terminalden bir mesajı şifrelemek göndermek üzere e-posta istemcisine yapıştırmak ve tekrar aynı yoldan deşifre etmekten geçiyordu. Günümüzde [Thunderbirg/Enigmail](thunderbird_enigmail.md) gibi yazışmayı çok kolaylaştıran arayüzler geliştirilmiş olsa da terminalden bu işlemi gerçekleştirebilmek hala temel düzeyde faydalı olabilmektedir.
 
 ## E-postanızı yazın

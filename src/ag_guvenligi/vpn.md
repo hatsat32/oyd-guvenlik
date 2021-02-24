@@ -2,24 +2,7 @@
 
 ![VPN](vpn/vpn.jpg)
 
-- [VPN ne işe yarar?](#vpn-ne-işe-yarar)
-- [Neden VPN kullanmalıyım?](#neden-vpn-kullanmalıyım)
-- [Ücretsiz VPN olur mu?](#Ücretsiz-vpn-olur-mu)
-- [VPN hizmeti seçerken nelere dikkat emeliyim?](#vpn-hizmeti-seçerken-nelere-dikkat-etmeliyim)
-- [VPN Kurulumu](#vpn-kurulumu)
-  - [VPN Kullanım Stratejisi](#vpn-kullanım-stratejisi)
-  - [OpenVPN Sunucusu Kurulumu](#openvpn-sunucusu-kurulumu)
-  - [İstemci Kurulumu](#İstemci-kurulumu)
-    - [GNU/Linux - Masaüstü](#gnulinux---masaüstü)
-    - [GNU/Linux - Uçbirim](#gnulinux---uçbirim)
-    - [Android](#android)
-    - [OpenWRT Yönlendirici](#openwrt-yönlendirici)
-      - [Uçbirim ile](#openwrt---uçbirim)
-      - [Web arayüzü ile](#openwrt---luci)
-- [VPN Bağlantısının Kesilmesi Sorunsalı](#vpn-bağlantısının-kesilmesi-sorunsalı)
-  - [GNU/Linux](#gnulinux)
-    - [UFW](#ufw)
-  - [Android](#android-1)
+<!-- toc -->
 
 VPN temel olarak; iki cihazın, yerel ağlarının güvensiz İnternet bağlantısı üzerinden birbirine güvenli şekilde bağlanabilmesi için geliştirilmiş bir teknolojidir. İki bilgisayarın birbirine şifrelenmiş bir kanal üzerinden bağlanmasını sağlar. Temel olarak şirketlerin ağ altyapılarına uzaktan güvenli erişim için tasarlanmış olan VPN'in günümüzde en yaygın kullanımı, kullanıcılarının tehlikeli ağlardan güvenli şekilde İnternet'e erişmesini sağlamaktır.
 

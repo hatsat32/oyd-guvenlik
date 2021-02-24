@@ -1,18 +1,7 @@
 ![Tor logo](tor/tor-logo.png "Tor logo")
 # Tor
 
-* [Tor ağı nasıl çalışır?](#tor-ağı-nasıl-çalışır)
-* [Tor Browser](#tor-browser)
-  * [GNU/Linux'ta Tor Browser kurulumu](#gnulinux)
-* [GNU/Linux'ta uygulamaları Tor üzerinden kullanmak (Tor proxy)](#uygulamaları-tor-üzerinden-kullanmak-tor-proxy)
-  * [GNU/Linux'ta Telegram'ı Tor üzerinden kullanmak](#telegramı-tor-üzerinden-kullanmak)
-* [Android'e Tor Browser kurulumu](#android)
-  * [Android'e Orbot kurulumu](#orbot-ile-uygulamaları-tor-ile-kullanmak)
-    * [Android'de Telegram'ı Tor üzerinden kullanmak](#telegramın-yapılandırılması)
-    * [Android'de Twitter'ı Tor üzerinden kullanmak](#twitterın-yapılandırılması)
-* [Tor'un zayıflıkları](#tor-ağının-zayıf-noktaları)
-* [Tor ile açığa çıkan vakalar](#tor-kullanarak-açığa-çıkan-vakalar)
-
+<!-- toc -->
 
 Tor, trafiğini gönüllüler tarafından oluşturulan ağ noktaları (Tor relay) üzerinden şifrelenmiş bir biçimde yönlendirerek kullanıcılarına İnternet üzerinde belirli ölçüde anonimlik sağlayan özgür bir ağ projesidir.
 
