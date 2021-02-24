@@ -48,6 +48,7 @@
     - [GnuPG Komut Satırı Kullanımı](yazisma_guvenligi/gpg/ucbirim_gpg.md)
     - [GnuPG Güven Ağı](yazisma_guvenligi/gpg/wot.md)
     - [GnuPG Web Anahtar Dizini](yazisma_guvenligi/gpg/wkd.md)
+    - [GnuPG ile Git Kullanımı](yazisma_guvenligi/gpg/gpg-git.md)
   - [Şifreli E-Posta](yazisma_guvenligi/openpgp.md)
     - [Thunderbird/Enigmail ile E-posta Şifreleme](yazisma_guvenligi/thunderbird_enigmail.md)
     - [Kmail ile E-posta Şifreleme](yazisma_guvenligi/kmail.md)
