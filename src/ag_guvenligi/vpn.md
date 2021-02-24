@@ -1,5 +1,7 @@
 # VPN (Virtual Private Network)
 
+![VPN](vpn/vpn.jpg)
+
 - [VPN ne işe yarar?](#vpn-ne-işe-yarar)
 - [Neden VPN kullanmalıyım?](#neden-vpn-kullanmalıyım)
 - [Ücretsiz VPN olur mu?](#Ücretsiz-vpn-olur-mu)
