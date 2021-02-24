@@ -44,11 +44,8 @@ Bunu yapmanın en kolay yolu e-postanıza girip Mailvelope eklenti simgesine tı
 
 ## Gelen şifreli e-postayı açmak
 
-Size gelen şifreli e-postaları Mailvelope bu aşamadan sonra otomatik olarak algılayacaktır. Gelen bir e-postayı açtığınızda Mailvelope şifreli ver* [Gönderene asla güvenmeyin](#gonderene-guvenme)
-* [E-postalardaki bağlantılardan sakının](#eposta-baglanti)
-* [Asla bir bağlantıya tıkladıktan sonra hesap girişi yapmayın](#hesap-girisi)
-* [Dosya eklerinden uzak durun](#dosya-eki)
-* [Ek okumalar](#ek-okuma)
+Size gelen şifreli e-postaları Mailvelope bu aşamadan sonra otomatik olarak algılayacaktır. Gelen bir e-postayı açtığınızda Mailvelope şifreli veriyi görecek ve size bu mesajı görmek isteyip istemediğinizi soracaktır. "Show message" düğmesi ile mesajı görüntülemeyi seçin ve ardından gerekiyor ise anahtarınızın parolasını girin.
+
 ![alt-text](mailvelope/mesaj.png)
 
 ![alt-text](mailvelope/recv.png)
@@ -107,10 +104,6 @@ Güvenlik ayarları birkaç temel güvenlik seçeneği içermekte.
 
 * Bunların arasında anahtarınızın parolasının hatırlanması ve hatırlanacak sürenin girileceği alan bulunmaktadır. Bu süreyi görece kısa tutmanız veya hiç kullanmamanız önerilir. Kullanım alışkanlıklarınıza göre bu süreyi dilediğiniz gibi ayarlayabilirsiniz.
 
-* En altta bulunan "Ope* [Gönderene asla güvenmeyin](#gonderene-guvenme)
-* [E-postalardaki bağlantılardan sakının](#eposta-baglanti)
-* [Asla bir bağlantıya tıkladıktan sonra hesap girişi yapmayın](#hesap-girisi)
-* [Dosya eklerinden uzak durun](#dosya-eki)
-* [Ek okumalar](#ek-okuma)nPGP settings" altındaki seçenek gönderilen iletilerde şifreleme için Mailvelope kullanıldığının belirtilmesine ilişkindir. Alıcınız veya diğer üçüncü kişi için bu bilginin bir önemi olmadığından ve sizin hakkınızda gereksiz bir bilgiyi üçüncü kişilere aktardığından bu seçeneğin işaretlenerek mahremiyetinizi koruyabilirsiniz.
+* En altta bulunan "OpenPGP settings" altındaki seçenek gönderilen iletilerde şifreleme için Mailvelope kullanıldığının belirtilmesine ilişkindir. Alıcınız veya diğer üçüncü kişi için bu bilginin bir önemi olmadığından ve sizin hakkınızda gereksiz bir bilgiyi üçüncü kişilere aktardığından bu seçeneğin işaretlenerek mahremiyetinizi koruyabilirsiniz.
 
 ![alt-text](mailvelope/ayarlar_guvenlik.png)

@@ -19,11 +19,7 @@ PGP'nin Zimmermann tarafından şirketleştirilmesi üzerine [Özgür Yazılım 
 ## GPG kullanmak
 
 GPG genel olarak kullanılması zor görülen bir yazılımdır. Bu görüş yazılımın neredeyse 30 yıllık geçmişinde teknik çevrelerce kullanılmasından gelmekte ise de son yıllarda özellikle mahremiyet endişesinin yükselişte olduğu günümüzde son kullanıcı için fazlasıyla kullanışlı yazılımlar geliştirilmiştir. Bu bakımdan artık GPG sadece siyah beyaz uçbirimde çalışan bir yazılım olmaktan çıkmış ve her seviyeden bilgisayar kullanıcısının kolaylıkla kullanabileceği bir hal almıştır.
-* [Gönderene asla güvenmeyin](#gonderene-guvenme)
-* [E-postalardaki bağlantılardan sakının](#eposta-baglanti)
-* [Asla bir bağlantıya tıkladıktan sonra hesap girişi yapmayın](#hesap-girisi)
-* [Dosya eklerinden uzak durun](#dosya-eki)
-* [Ek okumalar](#ek-okuma)
+
 Elbette GPG kullanıcılarını küçük çocuklar gibi gören ve onların iyiliğini(!) onların adına ve çoğu zaman onlara rağmen düşünen diğer güvenlik vadeden yazılımlar gibi değildir. GPG kullanıcıların kendilerine ve çevrelerine olan güvenine dayanır. [Bu bakımdan GPG gücü ve hali ile sorumluluğu koşulsuz şartsız kullanıcılara verir.](https://oyd.org.tr/en/articles/defense-of-gpg/)
 
 Bu rehber ile GPG kullanımını herkes için kolaylaştırmak ve anlaşılabilir kılmak amaçlanmıştır. Bunu yaparken GPG'nin kullanıcıya aktardığı güç korunmaya çalışılmıştır. Bu bakımdan kullanıcının güvenlik ve sorumluklarını sınırlandıran uygulamalara yer verilmemiştir. 
