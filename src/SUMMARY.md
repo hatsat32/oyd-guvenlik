@@ -62,6 +62,7 @@
     - [Silence ile SMS Şifreleme](yazisma_guvenligi/silence.md)
 - [Ağ Güvenliği](ag_guvenligi/README.md)
   - [Güvenli Web Gezintisi](ag_guvenligi/guvenli_web_gezintisi.md)
+  - [Pi Hole ile Ev Ağını Güvene Almak](ag_guvenligi/pi-hole.md)
   - [Tor](ag_guvenligi/tor.md)
   - [VPN](ag_guvenligi/vpn.md)
   - [Shadowsocks Proxy](ag_guvenligi/shadowsocks.md)
