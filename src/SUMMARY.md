@@ -13,6 +13,7 @@
      - [Oje ve Entropi ile Cihaz Güvenliği](beseri_guvenlik/oje.md)
      - [Private Lock ile Kapkaç Tedbiri](beseri_guvenlik/private_lock.md)
      - [Locker ile Ekran Kilidi Güvenliği](beseri_guvenlik/locker.md)
+     - [Yazıcılarınızdaki tehlike: Machine Identification Code](beseri_guvenlik/mic.md)
 - [Cihaz Güvenliği](cihaz_guvenligi/README.md)
   - [Yazılım Güvenliği](cihaz_guvenligi/yazilim_guvenligi.md)
   - [Boot Güvenliği](cihaz_guvenligi/boot_guvenligi.md)
