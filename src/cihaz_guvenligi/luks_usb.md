@@ -50,7 +50,7 @@ sda                      8:0    0 223,6G  0 disk
 ├─sda2                   8:2    0     1K  0 part  
 ├─sda5                   8:5    0   731M  0 part  /boot
 └─sda6                   8:6    0 222,4G  0 part  
-  └─sda6_crypt         253:0    0 222,3G  0 crypt 
+  └─sda6_crypt         253:0    0 222,3G  0 crypt
     ├─vgxubuntu-root   253:1    0 221,4G  0 lvm   /
     └─vgxubuntu-swap_1 253:2    0   976M  0 lvm   [SWAP]
 sdb                      8:16   1   7,3G  0 disk  
@@ -103,9 +103,106 @@ Gnome Disks kullanmak istemiyor veya kullanamıyor iseniz aynı işlemleri uçbi
 
 [Buraya katkı verebilirsiniz](https://git.oyd.org.tr/oyd/guvenlik)
 
-### Veracrypt
+### Veracrypt ile Şifrelenmiş Dosya Oluşturma
 
-[Veracrypt](https://en.wikipedia.org/wiki/VeraCrypt), Truecrypt yazılımının devamı olan özgür bir şifreleme aracıdır. [Truecrypt esrarlı ortadan kayboluşu](https://en.wikipedia.org/wiki/TrueCrypt#End_of_life_and_license_version_3.1) ardından özgür bir yazılım olarak hayatına başlayan Veracrypt, tam disk şifreleme, dosya, dizin ve dosya sistemi şifrelemede ender olan bir özellik olarak [inkar edilebilir şifreleme](https://en.wikipedia.org/wiki/Deniable_encryption) imkanı sunmakta. Bu bakımdan kendi başına bir rehber gerektirmekte. 
+[Veracrypt](https://en.wikipedia.org/wiki/VeraCrypt), Truecrypt yazılımının devamı olan özgür bir şifreleme aracıdır. [Truecrypt esrarlı ortadan kayboluşu](https://en.wikipedia.org/wiki/TrueCrypt#End_of_life_and_license_version_3.1) ardından özgür bir yazılım olarak hayatına başlayan Veracrypt, tam disk şifreleme, dosya, dizin ve dosya sistemi şifrelemede ender olan bir özellik olarak [inkar edilebilir şifreleme](https://en.wikipedia.org/wiki/Deniable_encryption) imkanı sunmakta.
+
+Bununla birlikte, eğer Windows kullanıcısıysanız tam disk şifrelemek için mülk bir yazılım olan BitLocker yerine VeraCrypt kullanabilirsiniz. Tam disk şifreleme özelliği GNU/Linux ve macOS sistemlerde kullanılamamakta, ancak diğer özellikler tüm platformlarda rahatlıkla kullanılabilmektedir. İnkar edilebilir şifreleme özelliği ise kendi başına bir rehber gerektirmekte.
+
+Bu rehberde VeraCrypt GUI ile Ubuntu 20.04 sistemde şifrelenmiş dosya oluşturma anlatılacak. Ancak hiçbir işletim sisteminde uygulayacağımız adımlar arasında bir fark yok. [Bu adresten](https://www.veracrypt.fr/en/Downloads.html) işletim sisteminize uygun olan dosyayı indirerek başlayabilirsiniz.    
+
+![alt-text](luks_usb/vera1.PNG)
+
+Sayfayı biraz aşağı kaydırarak diğer GNU/Linux dağıtımları için yer alan kurulum paketlerini görebilirsiniz. `apt` ve `yum` üzerinden çekilerek kurulan programlar bazen güncel sürüm olmadığı veya programların güncel sürümleri geç geldiği için güvenliğimizi riske atmamak adına en güncel sürümleri VeraCrypt'in web sitesinden takip edebiliriz. İndirme işlemini gerçekleştirdikten sonra kurulum paketinin bulunduğu dizinde Terminal açarak
+
+`sudo dpkg -i veracypt-1.24-Update7-Ubuntu-20.04-amd64.deb && sudo apt install -f`
+
+yazıp kurulumu gerçekleştirebilirsiniz. Eğer Terminal ekranına aşina değilseniz dosya yöneticiniz üzerinden, indirdiğiniz VeraCrypt paketine gelip çift tık yaparak **Yazılım Kur** programıyla kurulum işlemini gerçekleştirebilirsiniz.
+
+![alt-text](luks_usb/vera4.PNG)
+
+**Not:** Lisans kısmında **Sahipli/Proprietary** yazmasının sebebi; TrueCrypt projesinin son sürümünün [özgür olmayan bir açık kaynak lisansına sahip olması](https://en.wikipedia.org/wiki/TrueCrypt#License_and_source_model) (TrueCrypt License 3.0) ve VeraCrypt ekibinin bu projenin üzerine geliştirme yapmasından kaynaklanıyor. Ancak VeraCrypt projesinin kaynak kodları; TrueCrypt License 3.0 ve özgür yazılım lisanslarından biri olan Apache License v2.0 ile [karma lisanslanmıştır](https://github.com/veracrypt/VeraCrypt/blob/master/License.txt).
+
+Kurulumun ardından programı başlattığınızda karşınıza şu ekran çıkacak:
+
+![alt-text](luks_usb/vera5.PNG)
+
+İlk defa bir şifreleme yapacağımız için **Create Volume** butonuna tıklıyoruz. Ardından çıkan ekranda şifreli bir dosya oluşturacağımız için **Create an encrypted file container** seçeneğini işaretliyoruz.
+
+![alt-text](luks_usb/vera6.PNG)
+
+Sonraki ekrana geçtiğimizde Volume Type ekranında **Standard VeraCrypt volume** seçeneğini işaretliyoruz. **Hidden VeraCrypt Volume** [için katkı verebilirsiniz](https://git.oyd.org.tr/oyd/guvenlik).
+
+![alt-text](luks_usb/vera7.PNG)
+
+Ardından, şifrelemek istediğimiz dosyanın bulunduğu dizine gelmeniz gerekiyor. Sadece bu işlem için oluşturduğunuz veya gözden çıkardığınız herhangi bir dosya seçmelisiniz (.jpg, .deb, .png veya Terminal üzerinden `touch` ile oluşturduğunuz bir dosya olabilir). Bu kısımda; önceden indirmiş olduğum, Resimler dizinindeki **gnu_love.png** dosyasını kullandım. Dosyanın boyutunun şu an bir önemi yok. Daha sonra biçimlendirmeden önce boyutunu belirleyeceğiz. Bu dosyanın tek amacı, VeraCrypt aracılığıyla parola ve anahtar dosya (keyfile) kullandığınızda sisteminize USB gibi bağlanarak oluşturduğunuz dosya ve dizinleri bu alana aktarmaktır.
+
+![alt-text](luks_usb/vera8.PNG)   
+
+![alt-text](luks_usb/vera9.PNG)  
+
+**Kaydet/Save** butonuna bastıktan sonra karşınıza şöyle bir ekran gelecek, **Yerine Koy/Replace**'e basıp devam edebilirsiniz, artık .png sadece uzantı isminden ibaret:
+
+![alt-text](luks_usb/vera10.PNG)  
+
+![alt-text](luks_usb/vera11.PNG)  
+
+Sonraki adımda şifrelemek için kullanmak istediğimiz algoritma ve özüt algoritma (Hash Algorithm) soruluyor. Bu adımda kullanmak istediğiniz şifreleme algoritmasıyla ilgili kısa bilgiler de görebilirsiniz. AES ve SHA-512 ihtiyaçlarımızı karşılamak için şu anda yeterli.
+
+![alt-text](luks_usb/vera12.PNG)  
+
+Sonrasında ihtiyaç duyduğumuz alan miktarını belirliyoruz. Sistem faaliyetlerini zora sokmayacak ve gerek duyulduğunda başka bir cihaza veya ortama daha rahat aktarabileceğimiz bir alan miktarı belirleyebiliriz. Cihazda 37.5 GiB (Gigabyte) boş alan varmış. Örnek amaçlı 5 MiB (Megabyte) bir alan ayırıyorum. Ancak sayı girdiğiniz bölgenin yanındaki butondan ihtiyacınıza göre MiB veya GiB seçebilirsiniz.
+
+![alt-text](luks_usb/vera13.PNG)  
+
+İhtiyaç duyduğumuz alan miktarını belirledikten sonra artık bu dosyayı kullanabilmek için parola belirlemeniz lazım. Kolay hatırlanabilir ve entropi değeri yüksek bir parola oluşturmak için [Zarola/Diceware](https://zarola.oyd.org.tr/) kullanabilirsiniz. Daha fazla güvenlik sağlamak isterseniz [PIM](https://security.stackexchange.com/a/181728) ve keyfile/anahtardosya da belirleyebilirsiniz.
+
+![alt-text](luks_usb/vera14.PNG)  
+
+Ve biçimlendirme adımına geçebiliriz. İhtiyaçlarınıza göre veya başka cihazlarda da kullanabilmeniz için biçimlendirme seçeneklerinden birini seçmelisiniz. Bu dosyayı GNU/Linux sistemlerde kullanmayı planladığım ve öncesinde az bir alan belirlediğim için FAT biçimlendirme metodu benim için en uygun seçenek olarak görünüyor. Ayrıca sizde **Quick Format/Hızlı Biçimlendirme** seçeneği açık görünüyorsa bunu seçmemeniz tavsiye edilir. Çünkü bu seçenek belirlediğimiz alanın tamamının şifrelenmesinin önüne geçiyor.
+
+![alt-text](luks_usb/vera15.PNG)  
+
+Bu adımda artık biçimlendirmeden önceki son hazırlığımızı yapıyoruz. İmleci VeraCrypt penceresinin üzerinde rastgele yerlere götürerek mor renkli barı doldurmaya çalışmalıyız. Bu eylemin amacı ise - açıklamada da belirtildiği üzere - şifreleme anahtarlarının kriptografik gücünü artırmak.
+
+![alt-text](luks_usb/vera16.PNG)
+
+Bar dolduktan sonra, ilk aşamalarda seçmiş olduğumuz dosyanın (benim seçtiğim gnu_love.png dosyası) **gerçekten başka bir şey için kullanmadığınızdan son kez emin olmanız lazım**. Bunun için karşınıza son bir uyarı çıkacak. Artık her şeyin doğruluğundan eminseniz çıkan uyarıda **Evet/Yes** seçeneğine tıklayarak VeraCrypt alanınızı oluşturabilirsiniz.
+
+![alt-text](luks_usb/vera17.PNG)
+
+![alt-text](luks_usb/vera18.PNG)
+
+Başka bir işlem yapmak isteyip istemediğinizi soran son bir ekranın ardından artık bu pencereyi kapatabiliriz.
+
+![alt-text](luks_usb/vera19.PNG)
+
+Oluşturduğumuz dosyayı artık VeraCrypt aracılığıyla sistemimize bağlayabiliriz. Bunun için herhangi bir slotu seçili bırakıp **Select File** ile biçimlendirmiş olduğumuz dosyayı bulup seçmemiz gerekiyor. Ardından **Mount** ile sistemimize bağlayabiliriz.
+
+![alt-text](luks_usb/vera22.PNG)
+
+Karşımıza çıkan ekranda parolamızı girip onayladıktan sonra (belirlediğimiz alanın büyüklüğüne ve seçtiğimiz şifreleme algoritmalarının yeteneklerine göre) bir süre bekliyoruz.
+
+![alt-text](luks_usb/vera23.PNG)
+
+Ve artık sistemimize bağlanmış bir yeni dizin var.
+
+![alt-text](luks_usb/vera24.PNG)
+
+Slotun üstüne çift tıklayıp veya dosya yöneticisinde Diğer Konumlar sekmesi üzerinden VeraCrypt tarafından bize atanan dizine (`/media/veracrypt1`) ulaşabiliriz. Artık korumak istediğimiz verileri ve dosyaları buraya taşıyabiliriz. Önceden hazırlamış olduğum **gizlibilgi** isimli metin dosyasını bu dizinin içine taşıyorum. Taşıdıktan sonra VeraCrypt üzerinden **Unmount** yapıyorum ve artık sistemde (`/media/veracrypt1` dizininde) herhangi bir bağlı dizin görünmeyecektir.
+
+**UYARI:** Erişim için kullandığınız dosya artık sizin VeraCrypt alanınız. Bu yüzden, bu dosyanın silinmesi veya bozulması durumlarında kaydettiğiniz bilgileri hiçbir şekilde geri elde edemeyebilirsiniz.  
+
+![alt-text](luks_usb/vera29.PNG)
+![alt-text](luks_usb/vera27.PNG)
+
+Oluşturduğumuz alanı tekrar VeraCrypt üzerinden sisteme bağladığımızda karşımıza yine aynı dizin ve dosyalar çıkacaktır. Tekrar **gizlibilgi** metin dosyasına baktığımda karşılaştığım şey, taşımadan önce oluşturduğum şeklinden farksız.
+
+![alt-text](luks_usb/vera28.PNG)
+
+
+Artık oluşturduğunuz alanda istediğiniz gibi değişiklik yapabilir, erişim için kullandığınız dosyayı harici belleklere aktarabilir veya yedekleyebilirsiniz.
+
 
 [Buraya katkı verebilirsiniz](https://git.oyd.org.tr/oyd/guvenlik)
 
@@ -115,7 +212,7 @@ USB belleğinizin tamamını şifrelemek çoğu zaman bu belleğe güvenli şeki
 
 ### LUKS ile kısmi şifreleme
 
-USB belleğinizi iki ayrı bölüme ayırarak bir kısmını LUKS ile şifreleyip bir kısmını açık bırakmak mümkündür. Bu belleğinizin bir kısmını olağan dosya aktarımları için kullanılabilir kılarken aynı aygıtı güvenli şekilde veri bulundurmak için de kullanabileceğiniz anlamına gelir. 
+USB belleğinizi iki ayrı bölüme ayırarak bir kısmını LUKS ile şifreleyip bir kısmını açık bırakmak mümkündür. Bu belleğinizin bir kısmını olağan dosya aktarımları için kullanılabilir kılarken aynı aygıtı güvenli şekilde veri bulundurmak için de kullanabileceğiniz anlamına gelir.
 
 **NOT:**Şifresiz bölümün birinci bölümde olması gereklidir. Aksi halde Microsoft Windows cihazlar aygıtı tanımayacaktır.
 
