@@ -171,9 +171,9 @@ Kurulumun ardından Sirikali'yi çalıştırdığınızda aşağıdaki gibi basi
 
 Şifreli bir dosya dizini oluşturmak için "Create Volume" düğmesine tıklayıp çıkan şifreleme araçlarından birini seçmelisiniz. Şifreleme araçları farklı özellikler sunmakla tercihinizi aşağıdaki bilgilere göre yapabilirsiniz:
 
-* CryFS: Görece yeni bir yazılım olmakla birlikte sunduğu özellikler bakımında önem arz ediyor. CryFS dizinde bulunan dosyaları sabit bloklar şeklinde şifrelemekte ve bu sayede dosya düzeni ve üstveriye ilişkin bilgi sızdırmamakta. Bu özellik nedeni ile diğer tercihlere göre daha yavaş çalışması söz konusu.
+* CryFS: Görece yeni bir yazılım olmakla birlikte sunduğu özellikler bakımında önem arz ediyor. CryFS dizinde bulunan dosyaları sabit bloklar şeklinde şifrelemekte ve bu sayede dosya düzeni ve üstveriye ilişkin bilgi sızdırmamakta. Bu özellik nedeni ile diğer tercihlere göre daha yavaş çalışması söz konusu. Bu durum özellikle ağ üzerinden yapılan işlemlerde sorun çıkarabilir. [Copyleft](https://www.gnu.org/licenses/copyleft.en.html) GPL lisansı ile dağıtılması bir avantaj olarak görülebilir.
 
-* gocryptfs: CryFS'nin aksine dizin yapısını ve dosyaları koruyarak şifrelemekte. Bu sayede şifrelenne dizinin birebir bir kopyası oluşturulmakta. Aynı zamanda reverse(ters) mod sahibi olduğu için belirli dizinlerin yedeklenmesinde faydalı olmakta. gocryptfs dosyaların boyutları, oluşturulma zamanları ve dizin hiyerarşisi hakkında üstveriyi korumamakta.
+* gocryptfs: CryFS'nin aksine dizin yapısını ve dosyaları koruyarak şifrelemekte. Bu sayede şifrelenen dizinin birebir bir kopyası oluşturulmakta. Aynı zamanda reverse(ters) mod sahibi olduğu için belirli dizinlerin yedeklenmesinde faydalı olmakta. gocryptfs dosyaların boyutları, oluşturulma zamanları ve dizin hiyerarşisi hakkında üstveriyi korumamakta.
 
 * Encfs: Köklü bir geçmişi olmasına rağmen 2014'te fark edilen açıklarından dolayı kullanılması artık önerilmemekte.
 
