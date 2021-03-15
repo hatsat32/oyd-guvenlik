@@ -150,6 +150,15 @@ Giriş yaptıktan sonra şöyle bir panel sizi karşılayacak:
 
 Buradan bazı alan adlarına izin verebilir, yeni alan adlarını kara listenize ekleyebilirsiniz. Bunun haricinde yerel DNS kayıtları oluşturabilir, örneğin `masaustu.lan` alan adının masaüstü bilgisayarınıza yönlenmesini sağlayabilirsiniz.
 
+## Bilinen sorunlar ve çözümler
+#### Pi Hole kendi kendine çalışmayı durduruyor
+
+Pi Hole'un bazı durumlarda kendi kendine çalışmayı durdurup isteklere yanıt vermemesi durumu oluşabilmektedir. Bu durum, sistem saatinizin ayarlı olmamasından kaynaklanmaktadır. Sorunu aşağıdaki komutu kullanarak `ntp` servisini kurup, sistem saatinizi zaman sunucularıyla senkronize ederek çözebilirsiniz.
+
+```
+sudo apt-get install ntp
+```
+
 ## Sonuç
 
 Artık Pi Hole sayesinde daha güvenli bir ağa sahip oldunuz, ancak Pi Hole'un yetenekleri bununla sınırlı değil elbette. [Resmi web sitesinde](https://pi-hole.net) yer alan belgelerde, tüm trafiği Tor üzerinden yönlendirmekten Pi Hole üzerinde basit bir web sunucusu çalıştırmaya kadar pek çok ek özelliği nasıl kullanabileceğiniz anlatılıyor. Keyifli okumalar dileriz.
