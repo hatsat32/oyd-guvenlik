@@ -14,6 +14,7 @@ Eğer ABD sınırından geçmeyi planlıyorsanız, sınır personeli verileriniz
 * **Verilerinizi yedekleyin.** Cihazlarınız alıkonulursa verilerinize erişebilmek için uzak ve güvenli bir konumda verilerinizi yedekte tutun.
 * **Cihazlarınızı tamamen kapatın.** Cold boot gibi saldırılara karşı cihazlarınızı kapalı konumda tutun.
 * **Parmak izi kullanmayın.** Sınırdaki bir ajanın parmağınızı zorla kavrayıp okuyucuya bastırması çok kolaydır, bunu unutmayın.
+* **Mümkünse cihazlarınızı ojeleyin.** Cihazlarınızın açılıp açılmadığını anlamak için faydalı olacaktır. Nasıl yapacağınızı öğrenmek için [rehberimize](../beseri-guvenlik/oje.md) bakabilirsiniz.
 * **Tüm hesaplarınızdan çıkış yapın.** Eğer cihazınızda yine de veri tutuyorsanız, uzak sunuculara bağlanan hesaplarınızdan çıkış yapın.
 * **Rahat olun.** Aşırı güvenlik, her zaman güvenlik demek değildir. Çok üst düzey güvenlik tedbirleri ortada hiçbir şey yokken sınır görevlilerini şüphelendirebilir.
 * **En yakın konsolosluğun numarasını bir kenara yazın.** Yaşanabilecek ciddi sorunlar halinde son çare olarak ulaşabilmeniz için en yakın konsolosluğun iletişim bilgilerini bir kağıda not alın.
