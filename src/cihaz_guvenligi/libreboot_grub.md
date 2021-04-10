@@ -1,5 +1,7 @@
 # Libreboot ve GnuPG ile boot güvenliği
 
+<!-- toc -->
+
 Libreboot, GnuPG ile birlikte bilgisayarınızı daha güvenli hale getirebilir. Bunun için öncelikle bir bilgisayarın nasıl çalıştığını ve açılmak için içinden geçtiği süreçlerin anlaşılması gereklidir.
 
 Bir bilgisayar hayatına elektrik ile başladığında sırasıyla aşağıdaki adımlar gerçekleşir:

@@ -1,5 +1,7 @@
 # Mobil Cihaz Kullanımına İlişkin Genel Tedbirler
 
+<!-- toc -->
+
 ## Cihazlarınızı yanınızdan ayırmayın
 
 Cihazlarınızı fiziksel olarak yanınızda tutmak her zaman iyi bir fikirdir. Aksi takdirde bir saldırganın cihazınıza müdahale etmek, verilerinizi ele geçirmek ve gelecekteki etkinliklerinizi izlemek amacı ile kötücül yazılım yüklemesine fırsat doğabilir.

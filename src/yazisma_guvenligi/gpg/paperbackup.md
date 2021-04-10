@@ -1,5 +1,7 @@
 # Paperbackup ile Kağıda Anahtar Yedeği Basmak
 
+<!-- toc -->
+
 [GnuPG](gpg-anahtar-uretimi.md) ve [SSH](https://en.wikipedia.org/wiki/Secure_Shell) gibi araçlar ile kullandığımız asimetrik [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) anahtarları bilişim sistemlerine erişimde çok önemli bir yer kaplamaktadır. Bu bakımdan kullanıcıların bu anahtarlar ile şifreledikleri veya erişim imkanına sahip oldukları cihazlara bağımlılıkları oranında anahtarların da değeri artmaktadır. Bir anahtarın kaybı, şifrelenmiş verilere erişimi neredeyse imkansız hale getirdiği gibi erişim imkanı kaybedilen uzak sunucuların yarattığı sorunlar da tatsız olabilmektedir. Bu bakımdan anahtarların yedeklerinin alınması ve güvende tutulması çok önemlidir. Bu bakımdan pek az düşünülse de **kağıt** bu amaç için çok ideal bir ortamdır.
 
 ## Kağıdın avantajları
@@ -23,9 +25,18 @@
 Her Python kodu gibi `paperbackup` da birtakım bağımlılıklara sahiptir. Aşağıdaki komutu çalıştırarak gereken bağımlılıkları sisteminize indirip kurabilirsiniz.
 
 RPM kullanan dağıtımlar için (Red Hat, Fedora, CentOS vb.):  
-`sudo yum install PyX enscript qrencode hashlib zbar`  
+
+```bash
+sudo yum install PyX enscript qrencode hashlib zbar
+python3 -m pip install hashlib Pillow
+```
+
 APT kullanan dağıtımlar için (Debian, Ubuntu, Mint vb.):  
-`sudo apt-get update && sudo apt-get install python3-pyx enscript python3-qrencode hashlib python3-zbar`
+
+```bash
+sudo apt-get update && sudo apt-get install python3-pyx enscript python3-qrencode python3-zbar
+python3 -m pip install hashlib Pillow
+```
 
 ### Anahtar veya veri yedeğini oluşturma
 

@@ -1,5 +1,7 @@
 # Yönlendirici Güvenliği
 
+<!-- toc -->
+
 Evinizin köşesinde unuttuğunuz, telefon kablosuna bağlı ve sadece İnternet bağlantınız kesildiğinde hatırladığınız küçük siyah kutular güvenliğiniz için önemli bir rol üstlenmektedirler. Bu cihazlar sizi internet servis sağlayıcınıza, cihazlarınızı da bir yerel ağ altında birbirine bağlar.
 
 Modem ile yönlendirici teknik olarak farklı şeylerdir. [Modem (modulator demodulator kelimelerinin birleşimi)](https://en.wikipedia.org/wiki/Modem) iki nokta arasında bağlantı kurularak veri aktarılmasını sağlayan bir cihazdır. Bir zamanların çevirmeli bağlantı için kullanılan 56k modemleri gibi [ADSL](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) ve [VDSL](https://en.wikipedia.org/wiki/VDSL) teknolojileri de sizi internet servis sağlayıcınıza bağlar. Dünya'da kullanımı artık yok olmakta olsa da Türkiye hala fiberoptik altyapı eksikliği altında bu teknolojileri yaygın olarak kullanmaya devam etmektedir.

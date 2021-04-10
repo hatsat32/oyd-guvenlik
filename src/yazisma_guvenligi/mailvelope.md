@@ -1,5 +1,7 @@
 # Mailvelope ile Webmail Üzerinde Şifreleme
 
+<!-- toc -->
+
 Mailvelope özgür bir tarayıcı eklentisi olarak webmail olarak tarayıcı üzerinde kullanılan e-posta hizmetleri ile GPG şifreli e-postalaşmaya imkan sağlar. Mailvelope kullanarak e-posta kullanım alışkanlıklarınızda fazla değişikliğe gitmeden güvenli yazışma yapmaya kolaylıkla başlayabilirsiniz.
 
 Her halukarda şifreli e-posta kullanmanın görece en güvensiz yolunun bir tarayıcı eklentisi kullanmak olduğunu belirtmek gereklidir. Bu yöntem ile sizin ile iletişiminiz arasında fazlasıyla yazılıma güven duymanız gerekmektedir. Tarayıcınız, eklenti ve kullandığı diğer sistemler diğer şifreleme yöntemlerine göre daha geniş bir saldırı alanına sahiptir. Bu bakımdan basitçe mahremiyetinizi korumaktan fazlasına ihtiyacınız var ama görece sorunsuz bir şifreleme istiyorsanız [Thunderbird ve Enigmail](thunderbird_enigmail.md) ile şifrelemeyi tercih edebilirsiniz.

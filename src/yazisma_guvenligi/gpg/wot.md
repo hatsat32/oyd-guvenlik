@@ -1,5 +1,7 @@
 # GPG Anahtarları ile Güven Ağı Oluşturmak
 
+<!-- toc -->
+
 Güven ağı en basit anlamı ile bir kimlik yönetimi şeklidir. Günlük hayatımızda kimin kim olduğunu söyleyenin bir çeşit otorite olması durumunun aksine güven ağında her kişi kimliğinin ve topluluğun güveninin kaynağıdır.
 
 Basitçe güven ağı, tanıdıklarınızın tanıdıklarına güvenmenizdir. Aynı şekilde sizi tanıyan insanlara güvenenler de sizin söylediğiniz kişi olduğunuza güvenir.

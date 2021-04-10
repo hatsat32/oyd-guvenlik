@@ -1,5 +1,7 @@
 # Protonmail ile GnuPG Kullanımı
 
+<!-- toc -->
+
 ## Protonmail nedir?
 
 [Protonmail](https://protonmail.com) şifreli bir e-posta hizmetidir. Güvenlik rehberinin detaylıca incelediği şifreli e-posta hizmet sağlayıcıları arasında Protonmail'i ayıran özellik GnuPG şifrelemenin hizmetin temelinde olmasıdır. Bu Protonmail kullanıcılarının Protonmail dışındaki diğer e-posta adreslerine GnuPG şifreli e-posta atabilmelerini ve diğer e-posta adreslerinden GnuPG şifreli e-posta alıp tarayıcıdan okuyabilmelerine imkan veriyor. Bu bakımdan Protonmail kullanıcıları uçtan uca şifrelemeye sadece Protonmail kullanıcıları arasında değil tüm GnuPG kullanıcıları arasında sahip oluyorlar.

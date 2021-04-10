@@ -1,11 +1,6 @@
 # Parolalar
 
-* [Parola yöneticisi kullanın](#parola-yoneticisi)
-* [Güçlü Parolalar Kullanın](#guclu-parola)
-* [Eşsiz parolalar kullanın](#essiz-parola)
-* [Parolalarınızı gizli tutun](#gizli-parola)
-* [Kurumsal ve kişisel parolalarınızı ayırın](#kurumsal-kisisel-parola)
-* [Ek okuma listesi](#ek-okuma)
+<!-- toc -->
 
 ## Parola yöneticisi kullanın<a name="parola-yoneticisi"></a>
 
@@ -18,21 +13,22 @@ Bir parola yöneticisi, size hem güçlü hem de eşsiz parolalar kullanma imkan
 İyi bir parola yöneticisinde dikkat edilmesi gereken üç önemli özelliği vardır:
 
 * **Yerel Uygulama**: Parolalarınızı, bir ana parola ile şifreleyerek saklayan özel bir uygulamadır. Bu oldukça güvenilir bir seçenek olmakla birlikte birden fazla cihaz arasında eşitlemeyi güçleştirecektir.
-* **Bulut Hizmetleri**: Genellikle ücretli olmakla parolalarınızı cihazlarınızdan bağımsız olarak saklayan bir hizmeti ifade eder. Bulut hizmetleri aracılığı ile parolalarınıza heryerden ulaşmanın kolaylığı olmakla birlikte dezavantajı daha az güvenliğe sahip olmasıdır.
+* **Bulut Hizmetleri**: Genellikle ücretli olmakla parolalarınızı cihazlarınızdan bağımsız olarak saklayan bir hizmeti ifade eder. Bulut hizmetleri aracılığı ile parolalarınıza her yerden ulaşmanın kolaylığı olmakla birlikte dezavantajı daha az güvenliğe sahip olmasıdır. 
 * **Tarayıcı Eklentileri**: Hem yerel uygulama hem de bulut hizmeti olarak sunulan parola yöneticileri çoğunlukla, parolalarınıza kolaylıkla erişebilmeniz için bir tarayıcı eklentisine sahiptirler. Bu eklentiler rahatlık sağlar fakat daha az güvenlidirler.
+* **Özgür Yazılım**: Kullanacağınız parola yöneticisi muhakkak özgür bir yazılım olmalıdır. Nasıl çalıştığını bilemediğiniz bir yazılıma parolalarınızı teslim etmek güvenli değildir.
 
 Hangi aracı seçtiğinize bakmaksızın gerçekten önemli olan bir parola yöneticisi kullanmanızdır. Lütfen aşağıdaki önerileri aklınızda tutun:
 
 * **Ana Parola**: Bir parola yöneticisi kullanırken, ana parolanızı kaybetmemeniz hayati önem taşır. Ana parolayı unutma ihtimaline karşı bir yere bu parolayı not edebilirsiniz. Ama güçlü ve unutulması zor bir ana parola üretmek için **[Zarola](https://zarola.oyd.org.tr)** kullanmanızı öneriyoruz. Bilgisayarlar için zor ama hatırlamanız için kolay bir parola tüm sayısal hayatınızın dayanacağı bir parolayı unutmamak için en garanti yoldur.
-* **Yedekler**: Parola yöneticinizin verilerini düzenli olarak yedeklemeniz de bir o kadar önemlidir. Bulut hizmeti yedekleme işini sizin için yaparken yerel yedeklerinizi düzenli olarak almanız yararınıza olacaktır. Yerel uygulamalar için veri dosyasının yedeğini almak yeterlidir. Ara sıra parola yöneticinizin parolaları sakladığı küçük dosyayı bir flash belleğe koyup kenara kaldırmak sizi çokça baş ağrısından kurtarabilir.
+* **Yedekler**: Parola yöneticinizin verilerini düzenli olarak yedeklemeniz de bir o kadar önemlidir. Bulut hizmeti yedekleme işini sizin için yaparken yerel yedeklerinizi düzenli olarak almanız yararınıza olacaktır. Yerel uygulamalar için veri dosyasının yedeğini almak yeterlidir. Ara sıra parola yöneticinizin parolaları sakladığı küçük dosyayı bir USB belleğe koyup kenara kaldırmak sizi çokça baş ağrısından kurtarabilir.
 
 Yaygın parola yöneticileri;
 
-*  Keepass ve KeepassX (yerel uygulama) ciddi şekilde önerilen iki yerel parola yöneticisidir. Bu iki araç aynı şifreli dosya tipini kullanmakta ve neredeyse her bilgisayarda çalışabilmektedir.
+*  [KeePassXC](https://keepassxc.org/): (yerel uygulama) Kullanım kolaylığı açısından tavsiye edilen yerel parola yöneticisidir. Neredeyse her bilgisayarda çalışabilmektedir ve Nextcloud ile eşitlenebilir.
    * [Security Self-defense / How to: Use KeepPassXC](https://ssd.eff.org/en/module/how-use-keepassxc)
    * [Security In-a-box / KeePass overview](https://securityinabox.org/en/guide/keepass/windows)
-* LassPass (Bulut uygulaması)
-* 1Password(bulut & yerel uygulaması)
+* [Pass](https://passwordstore.org): GnuPG ve Git ile çalışan bir parola yöneticisidir. Eğer GnuPG'ye ve Git'e biraz hakimseniz, kesinlikle `pass` kullanmanız tavsiye edilir. Pass, parolalarınızı GnuPG anahtarınızla şifreler ve uzak bir Git sunucusuyla eşitleyebilir. Android istemcisi ve Firefox eklentisi mevcuttur.
+* [Bitwarden](https://bitwarden.com/): Tamamen uzak sunucuda çalışan ve pek çok platform için istemcileri bulunan bir parola yöneticisidir.
 
 ## Güçlü Parolalar Kullanın<a name="guclu-parola"></a>
 

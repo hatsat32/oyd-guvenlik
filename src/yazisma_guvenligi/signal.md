@@ -1,5 +1,7 @@
 # Signal
 
+<!-- toc -->
+
 [Signal App](https://www.signal.org) Android, GNU/Linux, iOS ve Windows cihazlarda çalışan, OTR'nin takipçisi olan [OMEMO](https://conversations.im/omemo/) protokolüne benzer bir yapı ile çalışan bir anlık yazışma yazılımıdır. [Open Whishper Systems](https://en.wikipedia.org/wiki/Open_Whisper_Systems) tarafından geliştirilen yazılım pek çok güvenlik uzmanı tarafından başarılı bulunmaktadır. 
 
 ## Avantajları

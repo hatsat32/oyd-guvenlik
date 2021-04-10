@@ -1,5 +1,7 @@
 # Fiziki Güvenlik
 
+<!-- toc -->
+
 Bir cihazın güvenliği sadece yazılımsal değil aynı zamanda donanımsal koşullara da bağlıdır. Teknik olarak cihazınıza uzaktan gelebilecek tehlikelere karşı tedbir alsanız bile cihazınıza fiziki erişimi olan bir saldırganın, çok daha etkili ve görünmez saldırılarına maruz kalmanız işten bile değildir. Bu tip saldırılara karşı alınabilecek tedbirler yine fiziki olmaktadır.
 
 Fiziki erişimi ile gerçekleştirilebilecek saldırılar, basit bir web araması ile elde öğrenilebileceklerden ulus devlet seviyesinde kaynakları gerektiren yöntemlere uzanmaktadır. Bu bakımdan fiziki erişim ile yapılabilecek saldırılar sadece filmlerde görülebilecek cinsten zorlukta değildir.

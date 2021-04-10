@@ -1,5 +1,7 @@
 # Web Key Directory ile GPG Anahtarı Paylaşımı
 
+<!-- toc -->
+
 GPG ile e-posta şifrelemenin bugüne kadar en dertli görülen ve eleştirilen yönü yazışılan kişilerin anahtarlarının güvenli şekilde bulunması ve kullanılması olmuştur. Keza [güven ağı(WOT)](wot.md); kullanıcıların bilinçli olarak birbirlerinin anahtarlarını imzalamalarını ve sunuculara yüklemesini, bu ağa dahil olmayan birinin de anahtarı bilinçli bir çaba ile kimi zaman karmaşık süreçlerden geçerek bulması, indirmesi ve kullanmasını gerektirmekte. Hala bu güven ağı sistemi kullanıcıya en fazla özerkliği veren en dağıtık güven sistemi olmakla birlikte anahtar keşfinin zorluğu kimi zaman e-postaların şifreli olması ile olmaması arasındaki farkı belirlemekte.
 
 [Web Key Directory(WKD)](https://wiki.gnupg.org/WKD) yeni bir anahtar keşif yöntemi olarak GPG kullanımını çok kolay ve otomatize bir hale getirmeyi hedeflemektedir. WKD basit bir mantığa dayanır: her e-posta adresinin bir alan adı vardır; örneğin, "@oyd.org.tr". Bu alan adını tarafından işaret edilen sunucuda belirli bir dizinin altında GPG anahtarının bulunması durumunda WKD destekleyen e-posta istemcileri ve hizmet sağlayıcıları bir e-posta adresine ait anahtarı otomatik olarak elde edebilmekte. Bu sayede kullanıcıya sadece e-posta adresini yazmak ve "şifrele" demek kalmakta.

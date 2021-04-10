@@ -13,19 +13,19 @@ Zaman sıkıntısı mı çekiyorsunuz? Baskıyla mücadele etmek ve daha iyi bir
 
 ## Güvenlik neden önemlidir?
 
-Bilgi ve iletişim (bilişim) teknolojilerinin giderek yükselen önemi bir başka olguyu daha hayatımıza getirdi: *gözetim toplumunun* yükselişi. Gözetimi, güç sahiplerinin [_hakimiyetlerini korumak için iletişim üzerinde kontrol kurması_] olarak düşünebilirsiniz.
+Bilgi ve iletişim (bilişim) teknolojilerinin giderek yükselen önemi bir başka olguyu daha hayatımıza getirdi: *gözetim toplumunun* yükselişi. Gözetimi, güç sahiplerinin _hakimiyetlerini korumak için iletişim üzerinde kontrol kurması_ olarak düşünebilirsiniz.
 
-**Devletler;** yeni bilişim teknolojilerine, iletişimi ve kitleleri topluca kontrol etmek için gerekli altyapıları geliştirerek tepki vermiştir. Keza daha önce yapamayacakları gözetim her saniye İnternetten akan verilerle mümkün olmuştur. Pek çok devlet aynı zamanda ahlaki değerleri olmayan özel şirketlerle, insanların ve sivil toplumun iletişimine ve cihazlarına girmek için iş birliği yapmaktadır.
+**Devletler;** yeni bilişim teknolojilerine, iletişimi ve kitleleri topluca kontrol etmek için gerekli altyapıları geliştirerek tepki vermiştir. Keza, daha önce yapamayacakları gözetim, İnternet'ten anlık olarak akan verilerle mümkün olmuştur. Pek çok devlet, insanların ve sivil toplumun iletişimini dinlemek ve cihazlarına girmek için ahlaki değerleri olmayan özel şirketlerle iş birliği yapmaktadır.
 
-**Şirketler;** İnternet sayesinde ortaya çıkan veriye dayalı düzende rekabette sağ kalabilmek için insanların kişisel verilerini toplayıp, inceleyip sonuç çıkarmakta çok kar olduğunu fark etti. Özellikle reklamcılık sektörü tamamen kişilerin takip edilmesi ve davranışlarının incelenmesi üzerine kurulu bir sisteme geçiş yaptı. Bunun sonucu ortaya saçılmış kişisel veriler ve tarihin görmediği toplu bir gözetim oldu.
+**Şirketler;** İnternet sayesinde ortaya çıkan veriye dayalı düzende, rekabette sağ kalabilmek için insanların kişisel verilerini toplayıp, inceleyip sonuç çıkarmanın ve bu sonuçları kullanmanın çok fazla kar getirdiğini gördü. Özellikle reklamcılık sektörü, tamamen bireylerin takip edilmesi ve davranışlarının incelenmesi üzerine kurulu bir sisteme geçiş yaptı. Bunun da sonucu, ortaya saçılmış kişisel veriler ve tarihin bugüne kadar hiç görmediği toplu bir gözetim oldu.
 
-**Suçlular;** kişilerin cihazlarına ve hesaplarına yapacakları saldırılar aracılığı ile şantaj ve sahteciliğin çokça karlı olduğunu farketti. Devletlerin yaşanan suçlara karşı kayıtsız tavrı neredeyse suçların cezasız kalmasına neden olmaktadır. Devletler pek kadir olmalarına rağmen suçluları bahane ederek toplu gözetim sistemlerini de meşrulaştırmaya çalışmaktadır.
+**Kötü niyetli kişiler;** kişilerin cihazlarına ve hesaplarına yaptıkları saldırılar ile elde ettikleri verileri kullanarak şantaj yapmanın ve sahteciliğin karlı bir iş olduğunu fark ettiler. Devletler de pek kadir olmalarına rağmen, bu kişileri bahane ederek toplu gözetim sistemlerini meşrulaştırmaya çalışmaktadır.
 
 Bu bağlamda, sayısal güvenlik bireylerin yaşamı için hayati bir öneme sahiptir.
 
 * [Devlet gözetiminin](https://en.wikipedia.org/wiki/Stasi), [sosyal hareket](https://en.wikipedia.org/wiki/COINTELPRO) ve ilerlemeyi bastırdığı gerçeği tarihi olarak bilinen bir gerçektir.
 * Dolaylı bile olsa, kontrolsüz gözetimin sosyal hareketler ve insanlar üzerinde olumsuz etkileri vardır.
-* Şirket gözetimi devletlerinki kadar ciddi bir tehlikedir. Sadece şirketlerin insanlar hakkında topladığı sınırsız bilginin devletler tarafından başka amaçlarla kullanılması değil, [şirketlerin insanlar üzerinde ve dolayısı ile sosyal düzen üzerinde hiç olmadığı şekilde kontrol sahibi olması](https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal) da tehlikenin bir parçasıdır.
+* Şirket gözetimi de devletlerinki kadar ciddi bir tehlikedir. Sadece şirketlerin insanlar hakkında topladığı sınırsız bilginin devletler tarafından başka amaçlarla kullanılması değil, [şirketlerin insanlar üzerinde ve dolayısı ile sosyal düzen üzerinde hiç olmadığı şekilde kontrol sahibi olması](https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal) da tehlikenin bir parçasıdır.
 
 İnsanlar toplu gözetimin yükselişi ve boyutları hakkında bilgi edinmeye başladıklarında çoğunlukla yenik hissetmektedirler. Kimi bu durumdan kurtuluş olmadığına karar verip tüm benliklerini gözetim altında yaşamaya razı gelmekte veya tüm sayısal iletişimlerini kendilerini korumak adına sonlandırmaktadırlar. Biz üçüncü bir yol olduğuna inanıyor ve güvenlik ile mahremiyetin herkese erişilebilir olması için çalışıyoruz.
 
