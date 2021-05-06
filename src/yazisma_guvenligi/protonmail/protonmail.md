@@ -26,6 +26,10 @@ Uçbirimde:
 
 `gpg --search --keyserver hkps://api.protonmail.ch [aradığınız adres]`
 
+Tarayıcıda:
+
+`https://api.protonmail.ch/pks/lookup?op=get&search=kullanıcıadı@protonmail.com`
+
 şeklinde arama yapabilirsiniz. Adresi doğru girdi iseniz bir tane anahtar size önerilecektir. 1'e basıp ilgili anahtarı indirebilirsiniz.
 
 Şayet Thunderbird/Enigmail ikilisini kullanacaksanız birden fazla imkanınız bulunuyor. Bunlardan ilki, özellikle Protonmail adresleri ile sıkça yazışacaksanız, Protonmail anahtarsunucusunu Enigmail'in ayarlarından anahtar sunucuları listesine eklemektir. Bunu yapmanın güzel tarafı Enigmail şayet anahtarını bilmediği bir Protonmail adresi görür ise bunun anahtarını otomatik olarak indirip şifreleme seçeneğini açacaktır.
