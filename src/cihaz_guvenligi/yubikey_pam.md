@@ -8,9 +8,15 @@
 
 Öncelikle Yubikey'in challange-response imkanından yararlanarak login olabilmek için aşağıdaki gerekli paketleri kurmanız gerekmekte.
 
-Debian tabanlı sistemler için: `sudo apt-get install libpam-yubico yubikey-manager`
+Debian tabanlı sistemler için:
 
-RPM tabanlı sistemler için: ` sudo yum install libpam-yubico yubikey-manager`
+```
+sudo apt-add-repository ppa:yubico/stable
+sudo apt update
+sudo apt install yubikey-manager
+```
+
+RPM tabanlı sistemler için: `sudo yum install libpam-yubico yubikey-manager`
 
 ### Yubikey'in ayarlanması
 
