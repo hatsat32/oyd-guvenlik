@@ -10,7 +10,7 @@ Enigmail ile Thunderbird'ün birleşmesinden doğan en önemli fark eskiden işl
 
 Thunderbird'ü bilgisayarnıza işletim sisteminizin paket yöneticisinden kolaylıkla kurabilirsiniz.
 
-Bilgisayarınıza Kmail kurulumu yapmak için:
+Bilgisayarınıza Thunderbird kurulumu yapmak için:
 
 Debian tabanlı dağıtımlarda
 
