@@ -1,14 +1,8 @@
-# Harici Bellekleri Şifrelemek
+# Taşınabilir Bellek Şifreleme
 
 <!-- toc -->
 
-Harici bellekler ortaya çıktıkları ilk günlerden itibaren giderek hayatımızda daha fazla yer edindiler. Öncelikle görece taşınabilir sabit sürücülerden başlayan taşınabilir kayıt ortamları, [NAND](https://en.wikipedia.org/wiki/NAND_flash_memory) hafıza aygıtlarının yani bugün usb bellek olarak bilinen donanımların yaygınlaşması ile veri taşımanın en pratik yöntemi haline geldiler.
-
-Hem fiyatların azalması hem de kapasitenin geometrik artışı usb bellekleri ve usb harici harddiskleri çok cazip araçlar haline getirmekte. Lakin pek çok önemli verinin taşındığı, saklandığı bu donanımların hayatımıza getirdiği en büyük tehlike yine bu kadar tutulmaları ile aynı olan taşınabilirlikleri. USB hafıza aygıtları; kolaylıkla unutulabilmekte, çalınabilmekte ve gerekirse bir saldırgan tarafından rahatça kurcalanabilmekte. Bu sebepten taşınabilir veri depolama aygıtlarının da şifrelenerek güvenli kılınması gerekli.
-
-## Planlama
-
-Öncelikle usb belleğiniz ile ne yapmak istediğinizi belirlemeniz gerekli. Keza şifrelenmiş verilere belirli işletim sistemlerinde erişmeniz tercih edeceğiniz yönteme göre mümkün olmayabilir. Bu bakımdan cihazınızın dosya sistemini şekillendirmeden önce küçük bir planlama ileride sorun yaşamanızı engelleyecektir.
+Bir taşınabilir belleği şifrelemeden önce aygıt ile ne yapmak istediğinizi belirlemeniz gerekli. Keza şifrelenmiş verilere belirli işletim sistemlerinde erişmeniz tercih edeceğiniz yönteme göre mümkün olmayabilir veya iş akışınızda şifreleme bir engel teşkil edebilir. Bu bakımdan cihazınızın dosya sistemini şekillendirmeden önce küçük bir planlama ileride sorun yaşamanızı engelleyecektir.
 
 * Şayet cihazınız ile güvenlik bakımından endişe duymadığınzı film, müzik gibi veriler taşımak niyetiniz var ve bu bölüme kötücül niyetle bir dosya koyulmasından endişe etmiyorsanız belki cihazınızı hiç şifrelememeniz daha kolay bir seçenek olabilir.
 
@@ -24,7 +18,7 @@ Taşınabilir bellekleri şifrelemek için pek çok seçenek bulunmakta. Bu ara�
 
 Şifreleme araçları arasında pek azı LUKS kadar bir işletim sisteminde entegre ve sorunsuz çalışmaktadır. [LUKS(Linux Unified Key Setup)](https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup) her GNU/Linux işletim sistemi ile birleşik olarak gelen bir şifreleme aracıdır.
 
-LUKS ile tüm bilgisayarınızın sabit sürücüsünü şifreleyebileceğiniz gibi harici depolama aygıtlarını da bilgisayarınızda kullanmak üzere şifreleyebilirsiniz. Bunun için hem grafik arayüz araçları hem de uçbirim araçlarını kullanabilirsiniz.
+LUKS ile tüm bilgisayarınızın sabit sürücüsünü şifreleyebileceğiniz gibi taşınabilir depolama aygıtlarını da bilgisayarınızda kullanmak üzere şifreleyebilirsiniz. Bunun için hem grafik arayüz araçları hem de uçbirim araçlarını kullanabilirsiniz.
 
 #### Gnome-Disks ile LUKS
 
@@ -91,7 +85,7 @@ Karşınıza gelen ekrandan yeni biriminize bir isim verip ekran görüntüsünd
 
 Bu noktada Gnome Disks size parolanızı soracaktır. Bu parola doğrudan şifrelediğiniz verilerin güvenliği olduğundan kullandığınız [parolanın güvenli olmasına](beseri_guvenlik/parolalar.md) özen göstermelisiniz. Yazılımın sunduğu **güvenlik ölçer çok güvenilir değildir**. Bir [Zarola](https://zarola.oyd.org.tr) size güvenlik ve hatırlanabilirlik açısından en iyi sonucu verecektir.
 
-"Oluştur" düğmesine tıklamanız ile Gnome Disks LUKS bölümünüz oluşturmaya başlayacaktır. İşlem bittiğinde anaekranda aşağıdaki görüntü ile karşılacaksınız. Bu noktadan sonra harici depolama aygıtınız kullanıma hazırdır!
+"Oluştur" düğmesine tıklamanız ile Gnome Disks LUKS bölümünüz oluşturmaya başlayacaktır. İşlem bittiğinde anaekranda aşağıdaki görüntü ile karşılacaksınız. Bu noktadan sonra taşınabilir depolama aygıtınız kullanıma hazırdır!
 
 ![alt-text](luks_usb/gd_bitti.png)
 
@@ -203,7 +197,7 @@ Oluşturduğumuz alanı tekrar VeraCrypt üzerinden sisteme bağladığımızda 
 ![Final](luks_usb/vera28.PNG "Final")
 
 
-Artık oluşturduğunuz alanda istediğiniz gibi değişiklik yapabilir, erişim için kullandığınız dosyayı harici belleklere aktarabilir veya yedekleyebilirsiniz.
+Artık oluşturduğunuz alanda istediğiniz gibi değişiklik yapabilir, erişim için kullandığınız dosyayı taşınabilir belleklere aktarabilir veya yedekleyebilirsiniz.
 
 
 [Buraya katkı verebilirsiniz](https://git.oyd.org.tr/oyd/guvenlik)
@@ -248,7 +242,7 @@ Bu noktada Gnome Disks size parolanızı soracaktır. Bu parola doğrudan şifre
 
 ![alt-text](luks_usb/gd_bolumlendir3.png)
 
-"Oluştur" düğmesine tıklamanız ile Gnome Disks LUKS bölümünüz oluşturmaya başlayacaktır. İşlem bittiğinde anaekranda aşağıdaki görüntü ile karşılacaksınız. Bu noktadan sonra harici depolama aygıtınız kullanıma hazırdır!
+"Oluştur" düğmesine tıklamanız ile Gnome Disks LUKS bölümünüz oluşturmaya başlayacaktır. İşlem bittiğinde anaekranda aşağıdaki görüntü ile karşılacaksınız. Bu noktadan sonra taşınabilir depolama aygıtınız kullanıma hazırdır!
 
 ![alt-text](luks_usb/gd_bitti2.png)
 
