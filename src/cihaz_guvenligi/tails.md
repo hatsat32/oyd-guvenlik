@@ -1,5 +1,7 @@
 # Tails
 
+<!-- toc -->
+
 Tails özünde anonimlik ve güvenlik sağlamak üzere geliştirilmiş bir GNU/Linux dağıtımıdır. Kullanıcılarına yabancı bilgisayarlarda güvenli bir iletişim ve çalışma ortamı sunduğu gibi kendi bilgisayarlarında da mümkün olan en az izi bırakarak iletişim kurmalarını sağlar. Tails'i diğer dağıtımlardan özel kılan [canlı](https://en.wikipedia.org/wiki/Live_USB) bir sistem olarak tamamen kullanılan usb bellek veya optik disk gibi bir medya üzerinden yüklenip bilgisayarın RAM'inde çalışmasıdır. Bu bakımdan Tails kullanılan bilgisayarın depolama aygıtlarına istenmedikçe bir veri kaydetmez ve bilgisayarın kapatılması üzerine yapılan işlemler RAM'den silinerek yok edilir. Bu sebepten Tails'in kısaltmasındaki "a" amnesic yani unutkan anlamına gelmektedir. Tails kullanıcılarına en az iz bırakarak bilgisayar kullanmalarına imkan sağlar.
 
 Tails bu amacını gerçekleştirmek için çeşitli araçları bir araya getirip bunların en güvenli kullanımlarını temel alır. Bu araçlardan en önemlisi [TOR](/ag_guvenligi/tor.md). Tails'de tüm internet bağlantısı TOR üzerinden geçer. Bu şekilde kullanıcının anonimliği önceliklendirilmiş olur. Tails aynı zamanda kullanıldığı USB bellek üzerindeki boş alanda güvenli veri depolama yapılmasına da [Luks](https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup) ile imkan sağlar. Bu şekilde Tails ile birlikte üzerinde sürekli çalışılması gereken verilerin güvenli taşınması ve işlenmesi mümkündür. Bu rehberde anlatılan pek çok güvenlik ve mahremiyet aracı da Tails ile birlikte kurulu gelmekte.
