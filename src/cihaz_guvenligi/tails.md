@@ -22,7 +22,7 @@ Bunu yapabilmek için öncelikle [Tails'in web sayfasına](https://tails.boum.or
 
 Tails imajını elde etmenin en hızlı ve güvenilir yolu BitTorent aracılığı ile indirmektir. BitTorent pek çok insanın bilgisayarındaki eş imajlardan aktarım yapacağı için indireceğiniz imajın doğruluğunu sağlamanın emin yollarından biridir. Bunun için Tails'in sitesinden `Get Tails` başlığına girip işletim sisteminizi seçerek veya yükleyeceğiniz medya tipini seçerek indirme sayfasına ulaşabilirsiniz. Buradan BitTorent seçeneğini seçerek [Transmission](https://transmissionbt.com/download/) veya [qBittorent](https://www.qbittorrent.org/download.php) gibi özgür torrent istemcilerinden biri ile indirmeyi tamamlayabilirsiniz.
 
-![alt-text](/tails/bittorent.png)
+![](/tails/bittorent.png)
 
 İndirme işleminin sonunda iki adet dosya elde edeceksiniz. Bunlardan ilki `tails-amd64-xxxx.img` şeklinde gelen Tails imajı ile aynı isimde olup sonu `.sig` ile biten GPG imzası. Bu imajı doğrulamak için her iki dosyaya da ihtiyaç bulunmakta.
 
@@ -70,11 +70,11 @@ RPM tabanlı dağıtımlarda: `sudo yum install brassero`
 
 İndirdiğiniz .ISO imajını yazmak için Brassero'yu açtıktan sonra menünün en altındaki `Burn image` seçeneğini seçerek ilerleyin.
 
-![alt-text](/cihaz_guvenligi/tails/brassero.png)
+![](/cihaz_guvenligi/tails/brassero.png)
 
 Açılacak pencereden .ISO imajını ve optik sürücünüzü seçerek yazdırma işlemini başlatın.
 
-![alt-text](/cihaz_guvenligi/tails/brassero_yaz.png)
+![](/cihaz_guvenligi/tails/brassero_yaz.png)
 
 #### USB bellek
 
@@ -86,17 +86,17 @@ Debian tabanlı dağıtımlarda: `sudo apt-get install gnome-disk-utility`
 
 RPM tabanlı dağıtımlarda: `sudo yum install gnome-disk-utility`
 
-![alt-text](/cihaz_guvenligi/luks_usb/gd_anaekran.png)
+![](/cihaz_guvenligi/luks_usb/gd_anaekran.png)
 
 Gnome Disk Utility'nin listelediği depolama aygıtlarından cihazınıza Tails yazmak için taktığınız USB belleği bulmanız gerekli. Bunu kapasitesinden veya isminden anlamanız mümkün veya USB belleğinizi taktığınızda listede beliren cihaz olmasından da ayırt edebilirsiniz.
 
-![alt-text](/cihaz_guvenligi/tails/gnome_disks_drive.png)
+![](/cihaz_guvenligi/tails/gnome_disks_drive.png)
 
 USB belleğinizi seçtikten sonra pencerenin sağ üst köşesindeki menüden `Restore Disk Image` seçeneğini seçip karşınıza çıkan pencereden indirdiğiniz Tails imaj dosyasını gösterip `Start Restoring` seçeneği ile işleme başlayabilirsiniz.
 
 **SEÇTİĞİNİZ BELLEK ÜZERİNDEKİ TÜM VERİ KAYBOLACAKTIR**
 
-![alt-text](/cihaz_guvenligi/tails/gnome_disks_menu.png)
+![](/cihaz_guvenligi/tails/gnome_disks_menu.png)
 
 ## Tails'i çalıştırın
 
@@ -104,7 +104,7 @@ Tails'i kullanabilmek için USB belleğinizi kullanacağınız bilgisayara takı
 
 Şayet boot menüsünü açmak konusundaki cambazlıkta başarılı olduysanız karşınıza cihazınıza bağlı olan boot edilebilir cihazların bir listesi çıkacaktır. Bu listeden Tails Kurduğunuz USB belleği varsa ismi ile seçebilirsiniz yoksa `removable devices` veya `USB devices` benzeri harici bir aygıtı ifade eden menüyü seçerek Tails'i başlatabilirsiniz. Şayet bu işe yaramaz ise USB belleği tam olarak taktığınızdan emin olun ve başka bir USB girişini daha deneyin. Kimi bilgisayarlar boot edecekleri USB girişlerde ayrım yapabilmektedir. Şayet başarılı şekilde doğru USB aygıtı seçebilirseniz Tails bootloader'i olan Grub sizi siyah ekranı ile karşılayacaktır.
 
-![alt-text](/cihaz_guvenligi/tails/grub.png)
+![](/cihaz_guvenligi/tails/grub.png)
 
 Şayet bu aşamaya gelmekte sorun yaşıyorsanız aşağıdakileri sıra ile denemeniz önerilir:
 
@@ -117,29 +117,70 @@ Buna rağmen bilgisayar donanımlarının farklılıklarından dolayı kimi zama
 
 ## Tails kullanımı
 
-Tails'i çalıştırmanızın ardından kullanılan bilgisayarın hızına bağlı olarak birkaç dakika içinde karşılama ekranı görüntülenecektir. Bu ekrandan çeşitli tercihlerin değiştirilmesi ve sistem başlatılmadan önce belirlenmesi gereken bazı özelliklerin açılması mümkün. Bu tercihler kullanım amacınıza göre önem gösterebilir. Aşağıdaki ayarları bu bölümde belirleyebilirsiniz.
+Tails'i çalıştırmanızın ardından kullanılan bilgisayarın hızına bağlı olarak birkaç dakika içinde karşılama ekranı görüntülenecektir. Bu ekrandan çeşitli tercihlerin değiştirilmesi ve sistem başlatılmadan önce belirlenmesi gereken bazı özelliklerin açılması mümkün. 
+
+![](/cihaz_guvenligi/tails/tails1.jpg)
+![](/cihaz_guvenligi/tails/tails2.jpg)
+
+Bu tercihler kullanım amacınıza göre önem gösterebilir. Aşağıdaki ayarları bu bölümde belirleyebilirsiniz.
 
 * Tails'in dili
 * Klavye dili
 * Kullanılacak formatlar
 * Ayarlandıysa kalıcı depolama alanının oturuma yüklenmesi
-* Root kullanıcısı ve parolası
-* 
+* Root (administration) kullanıcısı ve parolası
+* MAC adresi değiştirme
+* Ağ bağlantısı
+* Güvensiz web tarayıcısı
 
+## Unsafe browser
 
+Unsafe Browser (güvensiz web tarayıcısı) Tails içinde TOR haricinde web bağlantısı kurulmasına imkan veren ayrı bir tarayıcıdır. Tails'e dahil edilmesindeki amaç kimi wifi ağlarında İnternet erişimi almadan önce girilmesi gereken `captive portal` arayüzlerine bağlanılmasını sağlamaktır. Bu tarayıcıcının web erişimi için kullanılması oturumun anonimliğini ve buna bağlı olarak güvenliğinizi bozacaktır. Bu mümkün ise sadece wifi ağlarına bağlanmak için kullanılması ve bunun dışındaki kullanımlarına başka hiç bir seçenek yoksa başvurulması tavsiye edilir.
 
+![](/cihaz_guvenligi/tails/unsafe.jpg)
 
+## Adminstration password
 
+Yönetici parolası Tails kurulumunuzda yapmak isteyebileceğiniz kimi değişiklikler için gerekli olabilir. Bunların başında Tails'te olmayan yazılımların kurulması veya harici donanımlara erişim gelmekte. Bu sebeple Tails'i çalıştırırken bu gereklilikler görülürse yönetici parolasının kurulması unutulmamalıdır.
 
+![](/cihaz_guvenligi/tails/admin.jpg)
 
+## MAC address spoofing
 
+MAC adresi her ağ aygıtını eşsiz olarak tanımlayan bir veridir. Bu veri ağ aygıtları arasındaki iletişimde kullanıldığından cihazınızı tanımlamak ve gerekirse konumlar ve ağlar arasında takip etmek için kullanılabilmektedir. Bu sebepten anonimlik amaçlandığında bu adresin belirli aralıklarla değiştirilmesi önemlidir. Tails bunu otomatik olarak yapabilmekte lakin bu şekilde MAC adresi değiştirmek bağlandığınız ağ bakımından kimi zaman sorun çıkarabilmekte veya kayıtlarda bir şüphe olarak iz bırakabilir. Bu durumlarda MAC adres değiştirme özelliğini kapatmayı değerlendirebilirsiniz.
 
+![](/cihaz_guvenligi/tails/mac.jpg)
 
+## Network configuration
 
+TOR'a bağlanmak bulunduğunuz ülke veya ağ içinde engellenmiş olabilir. Tails standart olarak pek çok köprü (Bridge) bağlantısını kayıtlı tutmakta lakin kimi ülkelerde bu durumun yeterli olmaması durumunda kendi köprü bağlantısını belirlemek için ağ yapılandırmasını Tails başlangıcında yapmanız gerekebilir.
 
+![](/cihaz_guvenligi/tails/ag.jpg)
 
+## Persistent Storage
 
+Kalıcı depolama (persistent storage) Tails'i kapatmanızın ardından kayıtlı kalmaya devam edecek ve dosyalarınız ile ayarlarınızın tutulacağı şifreli bir alandır. Bu alan LUKS ile şifrelenmekte ve dosyalarınız ile Tails'te yaptığınız özelleştirmeleri içerir. **Bu bölümün varlığı görülebileceği için içindekileri elde etmek adına zorlanabilirsiniz.** Bu sebepten bir kalıcı depolama alanı açmayı operasyonel güvenliğinize bağlı olarak değerlendirmelisiniz.
 
+Kalıcı depolama alanı oluşturmak için Tails'i başlatın ve menüden `Configure persistent volume` seçeneğini seçin.
 
+![](/cihaz_guvenligi/tails/menu.png)
 
+Karşınıza gelecek alanda bir parola girmeniz istenecektir. Buraya gireceğiniz parola verilerinizin güvenliğinin tek dayanağı olduğundan [parola güvenliğine](/beseri_guvenlik/parolalar.md) uymanız çok büyük önem arz etmektedir. Bu sebeple bir [zarola](https://zarola.oyd.org.tr) belirleyip burada kullanmanız elde edebileceğiniz en iyi sonucu verecektir.
 
+![](/cihaz_guvenligi/tails/parola.md)
+
+Parolanızı belirleyip `create` düğmesine basmanız ile birlikte kullandığınız USB bellek üzerine boş kalan alanda Tails kalıcı depolama alanını oluşturmaya başlayacaktır. Bu işlemin bitmesi ardından da size bu bölümde hangi ayarların bulunmasını istediğinizi soracaktır. [GPG anahtarı](/yazisma_guvenligi/gpg/gpg.md) veya [OTR/OMEMO](/yazisma_guvenligi/gpg/otr.md) anahtarlarınızı bu aşamada saklamayı tercih edebilirsiniz.
+
+![](/cihaz_guvenligi/tails/kurulum.md)
+
+![](/cihaz_guvenligi/tails/secim.md)
+
+Bu işlemin ardından Tails'i yeniden başlatmanız gerekecektir. Kalıcı depolama alanına erişebilmek için her açılışta sizi karşılayan açılış ekranında kalıcı depolama seçeneğini parolasını girerek açmanız gerekli. Bunu yapmadığınız durumda çalışan bir Tails'ten kalıcı depolama alanını yüklemeniz mümkün olmayacaktır.
+
+## TOR bağlantısı
+
+Tails'in İnternet'e çıkabilmesi için TOR bağlantısı kurması gereklidir. Bunun için Tails'i kablolu veya kablosuz bir ağa bağladıktan sonra TOR devresini çalıştırmanız gerekli. Bunun için ekranın sağ üst köşesindeki soğan simgesine tıklayıp `Open Onion Circuit` seçeneğini seçmelisiniz. Bunun ardından açılacak devreyi ve bağlandığınıza dair onay mesajı görüntülenecektir. Bunun olmaması durumunda bulunduğunuz ağ'da TOR bağlantıları yasaklanmış olabileceğinden köprü (bridge) kurulumu yapmanız gerekebilir.
+
+![](/cihaz_guvenligi/tails/sogan.md)
+
+![](/cihaz_guvenligi/tails/bagli.md)
