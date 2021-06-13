@@ -88,7 +88,7 @@ Anahtarlığınızdaki belirli bir anahtarı arıyor iseniz aşağıdaki şekild
 
 ## Anahtar imzalarını kontrol etme
 
-Bir anahtardaki imzaları görüntülemek yerine bu imzalar arasında [WOT](/yazisma_guvenligi/wot.md) ile güven ağı doğrulaması yapmak isterseniz aşağıdaki komut ile anahtarlığınızdaki umumi anahtarlarla atılı imzalar arasında bir bağlantı olup olmadığını denetleyebilirsiniz.
+Bir anahtardaki imzaları görüntülemek yerine bu imzalar arasında [WOT](/yazisma_guvenligi/gpg/wot.md) ile güven ağı doğrulaması yapmak isterseniz aşağıdaki komut ile anahtarlığınızdaki umumi anahtarlarla atılı imzalar arasında bir bağlantı olup olmadığını denetleyebilirsiniz.
 
 `gpg --check-signatures [anahtar ID veya e-posta]`
 
@@ -100,7 +100,7 @@ Kendi anahtarınıza veya bir başka kişiye ait umumi anahtarı bir amaçla kul
 
 ## Sunucuda anahtar arama
 
-Pek çok GPG anahtarı anahtar sunucularında aleni olarak tutulur. Bu anahtar rehberlerinde belirli bir anahtarı, ismi veya e-postayı aramak mümkündür. Bu aranan anahtarın iddia edilen kişi veya e-postaya ait olduğunu göstermese de anahtar keşfini kolaylaştırmaktadır. Anahtarı doğrulamak için [güven ağından faydalanmak](/yazisma_guvenligi/wot.md) veya harici kaynaklardan bu anahtarı doğrulamak gereklidir. Bir anahtar sunucunda anahtar aramak için aşağıdaki komutu kullanabilirsiniz.
+Pek çok GPG anahtarı anahtar sunucularında aleni olarak tutulur. Bu anahtar rehberlerinde belirli bir anahtarı, ismi veya e-postayı aramak mümkündür. Bu aranan anahtarın iddia edilen kişi veya e-postaya ait olduğunu göstermese de anahtar keşfini kolaylaştırmaktadır. Anahtarı doğrulamak için [güven ağından faydalanmak](/yazisma_guvenligi/gpg/wot.md) veya harici kaynaklardan bu anahtarı doğrulamak gereklidir. Bir anahtar sunucunda anahtar aramak için aşağıdaki komutu kullanabilirsiniz.
 
 `gpg --search [anahtar ID veya e-posta]`
 
@@ -233,4 +233,4 @@ Tanıdığınız ve güvendiğiniz bir kişinin anahtarının o kişiye ait oldu
 
 Bir kişinin anahtarını imzalamak için aşağıdaki komutu çalıştırıp karşınıza gelen mesajları takip edebilirsiniz.
 
-`gpg --sign-key [anahtar ID veya e-posta]
+`gpg --sign-key [anahtar ID veya e-posta]`

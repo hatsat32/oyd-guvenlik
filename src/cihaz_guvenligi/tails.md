@@ -24,7 +24,7 @@ Bunu yapabilmek için öncelikle [Tails'in web sayfasına](https://tails.boum.or
 
 Tails imajını elde etmenin en hızlı ve güvenilir yolu BitTorent aracılığı ile indirmektir. BitTorent pek çok insanın bilgisayarındaki eş imajlardan aktarım yapacağı için indireceğiniz imajın doğruluğunu sağlamanın emin yollarından biridir. Bunun için Tails'in sitesinden `Get Tails` başlığına girip işletim sisteminizi seçerek veya yükleyeceğiniz medya tipini seçerek indirme sayfasına ulaşabilirsiniz. Buradan BitTorent seçeneğini seçerek [Transmission](https://transmissionbt.com/download/) veya [qBittorent](https://www.qbittorrent.org/download.php) gibi özgür torrent istemcilerinden biri ile indirmeyi tamamlayabilirsiniz.
 
-![](/tails/bittorent.png)
+![](cihaz_guvenligi/tails/bittorent.png)
 
 İndirme işleminin sonunda iki adet dosya elde edeceksiniz. Bunlardan ilki `tails-amd64-xxxx.img` şeklinde gelen Tails imajı ile aynı isimde olup sonu `.sig` ile biten GPG imzası. Bu imajı doğrulamak için her iki dosyaya da ihtiyaç bulunmakta.
 
@@ -34,7 +34,7 @@ Doğrulama işlemini yapabilmek için öncelikle Tails'ın dağıtım anahtarın
 
 Tails'e ait GPG imza anahtarını en güvenli şekilde elde etmek için aşağıdaki yollara sahipsiniz.
 
-* [GPG güven ağına](/yazisma_guvenligi/wot.md) aşina iseniz Tails anahtarındaki imzalar arasından tanıdığınız biri var mı denetleyebilirsiniz.
+* [GPG güven ağına](/yazisma_guvenligi/gpg/wot.md) aşina iseniz Tails anahtarındaki imzalar arasından tanıdığınız biri var mı denetleyebilirsiniz.
 
 * Güvendiğiniz ve aranızdaki ilişki olası saldırganlarınıza bariz olmayan birinin Tails kurulumundan hem doğrulama yapabilir hem Tails GPG anahtarını edinebilirsiniz.
 
@@ -169,13 +169,13 @@ Kalıcı depolama alanı oluşturmak için Tails'i başlatın ve menüden `Confi
 
 Karşınıza gelecek alanda bir parola girmeniz istenecektir. Buraya gireceğiniz parola verilerinizin güvenliğinin tek dayanağı olduğundan [parola güvenliğine](/beseri_guvenlik/parolalar.md) uymanız çok büyük önem arz etmektedir. Bu sebeple bir [zarola](https://zarola.oyd.org.tr) belirleyip burada kullanmanız elde edebileceğiniz en iyi sonucu verecektir.
 
-![](/cihaz_guvenligi/tails/parola.md)
+![](/cihaz_guvenligi/tails/parola.png)
 
-Parolanızı belirleyip `create` düğmesine basmanız ile birlikte kullandığınız USB bellek üzerine boş kalan alanda Tails kalıcı depolama alanını oluşturmaya başlayacaktır. Bu işlemin bitmesi ardından da size bu bölümde hangi ayarların bulunmasını istediğinizi soracaktır. [GPG anahtarı](/yazisma_guvenligi/gpg/gpg.md) veya [OTR/OMEMO](/yazisma_guvenligi/gpg/otr.md) anahtarlarınızı bu aşamada saklamayı tercih edebilirsiniz.
+Parolanızı belirleyip `create` düğmesine basmanız ile birlikte kullandığınız USB bellek üzerine boş kalan alanda Tails kalıcı depolama alanını oluşturmaya başlayacaktır. Bu işlemin bitmesi ardından da size bu bölümde hangi ayarların bulunmasını istediğinizi soracaktır. [GPG anahtarı](/yazisma_guvenligi/gpg/gpg.md) veya [OTR/OMEMO](/yazisma_guvenligi/otr.md) anahtarlarınızı bu aşamada saklamayı tercih edebilirsiniz.
 
-![](/cihaz_guvenligi/tails/kurulum.md)
+![](/cihaz_guvenligi/tails/kurulum.png)
 
-![](/cihaz_guvenligi/tails/secim.md)
+![](/cihaz_guvenligi/tails/secim.png)
 
 Bu işlemin ardından Tails'i yeniden başlatmanız gerekecektir. Kalıcı depolama alanına erişebilmek için her açılışta sizi karşılayan açılış ekranında kalıcı depolama seçeneğini parolasını girerek açmanız gerekli. Bunu yapmadığınız durumda çalışan bir Tails'ten kalıcı depolama alanını yüklemeniz mümkün olmayacaktır.
 
@@ -183,6 +183,6 @@ Bu işlemin ardından Tails'i yeniden başlatmanız gerekecektir. Kalıcı depol
 
 Tails'in İnternet'e çıkabilmesi için TOR bağlantısı kurması gereklidir. Bunun için Tails'i kablolu veya kablosuz bir ağa bağladıktan sonra TOR devresini çalıştırmanız gerekli. Bunun için ekranın sağ üst köşesindeki soğan simgesine tıklayıp `Open Onion Circuit` seçeneğini seçmelisiniz. Bunun ardından açılacak devreyi ve bağlandığınıza dair onay mesajı görüntülenecektir. Bunun olmaması durumunda bulunduğunuz ağ'da TOR bağlantıları yasaklanmış olabileceğinden köprü (bridge) kurulumu yapmanız gerekebilir.
 
-![](/cihaz_guvenligi/tails/sogan.md)
+![](/cihaz_guvenligi/tails/sogan.png)
 
-![](/cihaz_guvenligi/tails/bagli.md)
+![](/cihaz_guvenligi/tails/bagli.png)
