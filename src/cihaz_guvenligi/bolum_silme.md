@@ -12,13 +12,13 @@ Bir depolama aygıtını ve üzerindeki verileri yok etmenin fiziken imhadan son
 
 Gnome Disk Utility pek çok GNU/Linux dağıtımında gelen kullanımı kolay bir disk yöneticisi. Bu araç ile kolaylıkla harici bellekler ve diğer depolama aygıtları üzerine sıfır yazarak silme işlemi yapabilirsiniz. Bunun için Disks'i çalıştırıp silmek istediğiniz bellek aygıtını seçtikten sonra sağ üst köşedeki menüden `Format Disk` seçeneğini seçin.
 
-![alt-text](cihaz_guvenligi/dosya_silme/gdu1.png)
+![](dosya_silme/gdu1.png)
 
 Karşınıza çıkacak arayüzden `Overwrite existing data with zeroes (slow)` seçeneğini seçerek `Format` düğmesine basın ve ardından onaylayın.
 
-![alt-text](cihaz_guvenligi/dosya_silme/gdu2.png)
+![](dosya_silme/gdu2.png)
 
-![alt-text](cihaz_guvenligi/dosya_silme/gdu3.png)
+![](dosya_silme/gdu3.png)
 
 ## DD ile bölüm silme
 
