@@ -1,5 +1,7 @@
 # Özgür Yönlendirici Kurulumu
 
+<!-- toc -->
+
 İnternet erişiminizin ve ağınızın temel yöneticisi olan bu küçük bilgisayarların özgürlüğü diğer donanımlarınızınki kadar önemlidir. Günümüzde yönlendiricilerin güvenliği hem kullanıcıları hem de üreticileri tarafından hep ikincil görülmekte. Yaşam alanlarımızın köşesinde unutulan bu küçük kutular çoğunlukla almadıkları güncellemeler veya yanlış yapılandırmalar ile pek çok güvenlik açığına yol açmaktadır.
 
 Türkiye'de hala DSL çağı sürmekte olduğundan pek çok insan ya internet servis sağlayıcısının sunduğu çoğu zaman kesinlikle güvenlik açığı sayılacak uzaktan erişim imkanı taşıyan modem/yönlendirici birleşimi cihazları kullanmakta. Bu makineler taşıdıkları özgür olmayan modem bileşenleri nedeni ile özgürleştirilememekte ve bir güvenlik sorunu olarak varlıklarını sürdürmekte.

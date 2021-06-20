@@ -12,6 +12,6 @@ Bu duruma en kolay çare başkalarının bilgisayarın kullanmamak olabilir. Bun
 
 Şayet gönderdiğiniz her veri, dosya sadece taşıma sırasında değil size ait bir anahtar ile şifrelenmiş olursa gönderdiğiniz sunucu tarafında bunların okunması neredeyse imkansız olur. Bu hala verinin silinmesi, şifresinin kırılmaya çalışılması veya [rubber hose](https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis) saldırılara engel olmayacak olsa da faydalı bir araç olarak gerektiği yerde değerlendirilebilir.
 
-* [SSH ile uzak sunucuya bağlantı güvenliği](/cihaz_guvenligi/ssh.md)
-* [SSH ile OTP(2FA) kullanımı](/cihaz_guvenligi/sunucu_2fa.md)
-* [Uzak sunucuda dosya şifreleme](/cihaz_guvenligi/sunucu_sifreleme.md)
+* [SSH ile uzak sunucuya bağlantı güvenliği](ssh.md)
+* [SSH ile OTP(2FA) kullanımı](sunucu_2fa.md)
+* [Uzak sunucuda dosya şifreleme](sunucu_sifreleme.md)
