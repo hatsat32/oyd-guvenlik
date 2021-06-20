@@ -263,7 +263,17 @@ Bu aşamanın ardından, her çekirdek güncellemesinde ilgili betik çalışara
 
 ## İşler ters giderse
 
-[Buraya Katkı Verebilirsiniz.](https://oyd.org.tr)
+Şayet işler ters giderse cihazınızı hala çalıştırmak isteyebilirsiniz. Ters gidebilecek şeyler arasında bir güncelleme sırasında grub.cfg, initrm veya vmlinuz dosyalarının güncellenmesi fakat bir sebepten imzalanmaması olabilir veya biri bilgisayarınızı kurcalamıştır ve Libreboot bunun farkında varmış olabilir.
+
+Kimi zamanlarda imza korumasını güvenlik gereklilikleri dışında da devredışı bırakmak isteyebilirsiniz. Mesela bir liveUSB ile GNU/Linux çalıştırmak isterseniz.
+
+Bunu yapmak için Libreboot ekranı geldiği zaman bir tuşa basarak boot işlemini durdurun veya parolanızı girmeyerek menüye geri dönün.
+
+Ardından `ctrl + C` tuş kombinasyonu ile grub terminaline girip aşağıdaki komutu girin:
+
+`set check_signatures=no`
+
+Bunun ardından cihazınızı başlatmak üzere menüden dilediğiniz seçeneği seçin. Bu sefer için Libreboot imza kontrolünü yapmadan yapılandırmadaki işlemleri uygulayacak ve bilgisayarınızı çalıştıracaktır.
 
 ## Ek Okumalar
 

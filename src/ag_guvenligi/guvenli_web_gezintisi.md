@@ -2,39 +2,48 @@
 
 <!-- toc -->
 
+Bilişim güvenliği bilgisayarınız kadar bu bilgisayarla eriştiğiniz diğer bilgisayar ve hizmetleri de kapsamakta. Bu bakımdan günümüzde İnternet ile en sık temas edilen alan web sayfaları. Web'de gezinmek için bir tarayıcı kullanmak gerekli olduğundan bu tarayıcının genelde devletlerin ve şirketlerin elinde tehlikeli bir yer haline gelmiş Web'de sizi takip edilmekten ve zararlı sonuçlardan koruması gerekli.
+
+Aynı şekilde Web'deki gezintilerde güvenli kalabilmek sizin farkındalığınıza bağlı. Bir sitenin veya bir bağlantının kötücül olup olmadığını anlamak biraz deneyim, bilgi ve sağduyu gerektirmekte. Bu neden ile teknoloji anonimliğinize ve güvenliğinize çok katkı verebilecek olsa da son noktada kullanıcının bilinçli kullanımı önem kazanmakta. Keza günümüzdeki web siteleri anonimliğinizi ve güvenliğinizi korumaya çalıştığınızda sizi cezalandırmaya veya bozulmaya eğilimli olduğundan ilk sorunda tüm güvenlik tedbirlerini kapatacaksanız pek güvende kalacak sayılmazsınız.
+
 ## Web tarayıcınızı seçin
 
-Her gün, muhtemelen en sık kullandığınız yazılım web tarayıcınızdır. Bu sebepten dolayı, web tarayıcınızın güvenli ve özgür olması çok kritiktir. Mozilla Firefox kullanın!
+Öncelikle bir tarayıcı tercih etmeniz ve bunu bilgisayarınıza kurmanız gerekli. Diğer tüm bilişim sistemlerinde olduğu gibi özgür bir yazılım olan Mozilla Firefox'u kullanmanızı öneriyoruz.
 
-[Firefox'u buraya tıklayarak indirebilirsiniz.](https://getfirefox.com)
+[Firefox'u buraya tıklayarak indirebilir.](https://getfirefox.com) veya aşağıdaki komutları kullanarak GNU/Linux dağıtımınızın yazılım deposundan kurabilirsiniz.
 
-## Firefox'ta ayarlarınızı yapın
+Debian tabanlı dağıtımlar için: `sudo apt-get install firefox`
+
+RPM tabanlı dağıtımlar için: `sudo yum install firefox`
+
+![](/ag_guvenligi/guvenli_web_gezintisi/firefox_acilis.png)
+
+## Firefox güvenlik ayarlarını yapın
 
 ### Üçüncü taraf çerezleri devre dışı bırakın
 
-Üçüncü parti çerezler, siz İnternet'te gezinirken davranışlarınızı izlemek için reklam ağları tarafından kullanılan tanımlayıcılardır.
+Üçüncü parti çerezler, siz İnternet'te gezinirken davranışlarınızı izlemek için reklam ağları tarafından kullanılan tanımlayıcılardır. Bu çerezler tarayıcınızın buna ayrılan bir alanına yerleştirilir ve siz girdiğiniz siteden ayrıldıktan sonra da orada kalmaya devam eder. Her gezdiğiniz sayfada bu çerezler reklam (Google, FB vs.) şirketlerince okunarak tarama alışkanlıklarınız ve nelerle ilgilendiğiniz takip edilir. Tarayıcılar bu takip sistemlerini kısıtlamakta ilerlese de üçüncü taraf çerezlerin tarayıcınızda hiç işi olmadığından engellenmeleri güvenliğiniz için önemli bir adımdır. Bunun için;
 
 1. Sandviç menüden Tercihler'e girin. Gizlilik ayarlarını yapmak için Gizlilik ve Güvenlik'e tıklayın. Gelişmiş izleme koruması başlığı altındaki Üçüncü sırada olan "Özel" seçeneğini seçin.
 
-2.En yüksek düzeyde güvenlik için sırasıyla Çerezler, Takip amaçlı içerikler, Kripto madencileri, Parmak izi toplayıcılar seçeneklerinin hepsini işaretleyerek engellenmelerini sağlayın.
+2. En yüksek düzeyde güvenlik için sırasıyla Çerezler, Takip amaçlı içerikler, Kripto madencileri, Parmak izi toplayıcılar seçeneklerinin hepsini işaretleyerek engellenmelerini sağlayın.
 
 3. Çerezler'in yanındaki menüden "Tüm üçüncü taraf çerezleri"ni seçin. Hemen altındaki menüden "Tüm pencerelerde" seçeneğini seçin.
 
-![alt-text](guvenli_web_gezintisi/firefox.png)
+![](guvenli_web_gezintisi/firefox.png)
 
 4. Aşağı inince göreceğiniz "Web sitelerine Do Not Track (İzlemeyin) sinyali gönder" ibaresinin altında "Her zaman" seçeneğini tıklayın.
 
-![alt-text](guvenli_web_gezintisi/firefox1.png)
+![](guvenli_web_gezintisi/firefox1.png)
 
 5. Çerezler ve site verilerinin altında "Firefox kapatıldığında çerezleri ve site verilerini sil" seçeneğini işaretleyin.
-
 6. Gezinme geçmişinizin temizlendiğinden emin olmak için; Geçmiş ayarlarının olduğu yerdeki menüden "Firefox geçmiş için özel ayarlar kullansın" seçeneğini işaretleyin. Altındaki kutucuklardan "Firefox kapatılınca geçmişi temizle"yi tıklayın.
 
-![alt-text](guvenli_web_gezintisi/firefox2.png)
+![](guvenli_web_gezintisi/firefox2.png)
 
 7. İzinler başlığının altında "Açılır pencereleri engelle" ve "Siteler eklenti yüklemeye çalıştığında beni uyar" seçeneklerini seçin.
 
-![alt-text](guvenli_web_gezintisi/firefox3.png)
+![](guvenli_web_gezintisi/firefox3.png)
 
 8. Firefox veri toplama ve kullanma izinleri başlığının altındaki hiçbir kutucuğu işaretlememenizi öneririz.
 
@@ -42,62 +51,65 @@ Her gün, muhtemelen en sık kullandığınız yazılım web tarayıcınızdır.
 
 10. Sertifikalar başlığının altında "Her seferinde bana sor" ve "Sertifikaların geçerliliğini doğrulamak için OCSP otomatik yanıt sunucularını sorgula" seçeneklerini işaretleyin.
 
-![alt-text](guvenli_web_gezintisi/firefox4.png)
+![](guvenli_web_gezintisi/firefox4.png)
 
 ### Varsayılan arama motorunuzu değiştirin
 
-Yine tercihlerden "Arama" kısmına gelin. Varsayılan arama motoru olarak [duckduckgo.com](https://duckduckgo.com)'u seçin. Riseup arama motoru olarak DuckDuckGo'yu öneriyor. [Masaüstü](https://duck.co/help/desktop/adding-duckduckgo-to-your-browser) veya [mobil](https://duck.co/help/mobile) tarayıcılar için kurulum talimatlarını inceleyin.
+Günümüzde neredeyse her kullanıcının ilk girdiği sayfa bir arama motoru. Bu alanda Google hala açıkara bir üstünlüğe sahip olsa da mahremiyet düşmanlığı ve kötücül arama tercihleri sebebi ile arama mahremiyetine önem veren alternatifleri hızla gelişmekte. Bu arama motorları çeşitli derecede başarılara sahip olmakla kimi ender zamanlarda Google'ı aratabilir. Lakin Google'a ancak başka hiç bir çareniz kalmayınca dönmenizi öneririz. Keza hem Google'ı kullanarak varlığını devam ettirmesine katkı sağlamış hem de sizi takip etmeleri için bir fırsat yaratmış olursunuz.
+
+Çeşitli alternatif arama motoru bugün için kullanılabilir durumda. Bunlar çeşitli seviyelerde başarılı olmakla birlikte en özgürlük ve mahremiyet yanlısından en azına doğru aşağıdaki şekilde sıralanabilir.
+
+* **[Searx:](https://searx.space/)** Searx dağıtık bir arama motoru. Bu anlamda belirli bir Searx yok, pek çok farklı kişi tarafından barındırılan temsiller bulunmakta. Searx bir arama motorunun getirebileceği tüm mahremiyet araçlarını taşımakta. Sonuçları her ne kadar yerelleştirilmiş aramalarda eksik kalabilecek olsa da pek çok genel amaçlı aramada istenen sonucu verecektir. Bir aramaya başlamak ve mahremiyetinizi korumak için en iyi seçenek sayılabilir. [Dilediğiniz bir Searx temsilini](https://searx.space/) seçerek ilk aramanızı yapabilirsiniz.
+
+* **[MetaGer:](https://metager.org)** Şayet Searx gibi dağıtık ve kendi sunucunuzda çalıştırabileceğiniz bir arama motoru çok radikal bir araç ise Avrupalı bir Dernekçe çalıştırılan arama motoru ilginizi çekebilir. Şirketlerin sahip olacağı kar güdüsünün olmadığı bir ortamda şeffaflıkla çalışan bir arama motoru mahremiyet ve güvenlik beklentilerinizi karşılayabilir.
+
+* **[DuckDuckGo:](https://duckduckgo.com)** Mahremiyeti arama motorlarında bir beklenti haline getiren en ana akım arama motoru DuckDuckGo. Geniş bir kullanıcı kitlesine ve görece bilenmiş bir motora sahip. Bu bakımdan pek çok insanın başka bir arama yapmasını gerektirmeyecek kadar iyi sonuçlar verebilmekte. [Spread Privacy](https://spreadprivacy.com/why-use-duckduckgo-instead-of-google/) DDG tarafından yürütülen bir mahremiyet rehberi. Burada kendilerine neden güvenebileceğinize dair açıklamalarını okuyabilirsiniz. Şayet DuckDuckGo'yı en minimal ve güvenli şekilde kullanmak isterseniz [Javascript içermeyen lite](https://html.duckduckgo.com/html) sayfasından kullanabilirsiniz.
+
+Firefox'ta varsayılan arama motorunuzu belirlemek için ayarlara gelip sağ menüden search (arama) seçeneğini seçip ardından ilgili bölümden DuckDuckGo'yu seçebilirsiniz.
+
+![](guvenli_web_gezintisi/arama_menu.png)
+
+![](guvenli_web_gezintisi/arama.png)
 
 ## Tarayıcı eklentileri
 
-Eklentiler aksi belirtilmedikçe Firefox ve Chrome (mülk yazılım!) ile uyumludur.
+Tarayıcılara çeşitli işlevler kazandırmak için eklentiler kurulabilmekte. Eklentiler ile tarayıcıların almadıkları kimi tedbirlerin alınması veya bu tedbirlerin kullanımının kolaylaştırılması mümkün. Bunların başında reklamların ve üçüncü taraf javascriptlerin çalışmasının engellenmesi/sınırlandırılması, çerez yönetimi ve şifreleme kontrolü bulunuyor. 
 
 ### Başlıca eklentiler
 
-Aşağıdaki eklentiler, herkesin sürekli olarak kullanmasını önerdiğimiz başlıca eklentilerdir. Stabil ve açık kaynak olan bu eklentiler, web sitelerinin bozulmasına çok nadir sebep olurlar.
+Aşağıdaki eklentiler, herkesin sürekli olarak kullanmasını önerdiğimiz başlıca eklentiler.
 
 
 |||
 |---|---|
-|![uBlock Origin](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/icon38%402x.png)|[uBlock Origin](https://github.com/gorhill/uBlock) ([Chrome](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)) reklam ve takipçi ağların çoğunu engeller. Adblock Plus veya Disconnect'e benzerdir ama daha iyi ve daha hızlı çalışır.|
-|![HTTPS Everywhere](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/HTTPS_Everywhere_icon.svg/60px-HTTPS_Everywhere_icon.svg.png)|[HTTPS Everywhere](https://www.eff.org/https-everywhere), destekleyen web sitelerinde otomatik olarak güvenli TLS bağlantılarına geçiş yapar. Gezinti içeriğinizin gözetilmesine karşı korunmanıza yardımcı olur. Hangi siteleri ziyaret ettiğinizi gizlemez (ayriyeten [Tor](tor.md) veya VPN kullanmıyorsanız).|
-|![Privacy Badger](https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/PrivacyBadgerLogo.svg/125px-PrivacyBadgerLogo.svg.png)|[Privacy Badger](https://www.eff.org/privacybadger) sizi izleme eğiliminde olan takipçileri dinamik olarak tespit eder ve engeller. Privacy Badger reklam engelleyici olmadığı için uBlock alternatifi değildir, ancak uBlock'un varsayılan modda sahip olmadığı güvenlik özelliklerine sahiptir.|
+|![uBlock Origin](guvenli_web_gezintisi/ublock_origin.png)|[uBlock Origin](https://github.com/gorhill/uBlock) reklam ve gözetim ağlarının çoğunu engeller.|
+|![HTTPS Everywhere](guvenli_web_gezintisi/https_everywhere.png)|[HTTPS Everywhere](https://www.eff.org/https-everywhere), Tarayıcınız ile girdiğiniz web sitelerini desteklemesi durumunda şifreli HTTPS bağlantısı kurmaya zorlar. Şayet şifreli bağlantı mümkün değil ise bu konuda size bir uyarı göstererek tercihinizi sorar.|
+|![Privacy Badger](guvenli_web_gezintisi/privacy_badger.png)|[Privacy Badger](https://www.eff.org/privacybadger) sizi izleme eğiliminde olan takipçileri dinamik olarak tespit eder ve engeller. Privacy Badger reklam engelleyici olmadığı için uBlock alternatifi değildir, ancak uBlock'un varsayılan modda sahip olmadığı güvenlik özelliklerine sahiptir.|
+|![Cookie Autodelete](guvenli_web_gezintisi/cookie_autodelete.png)|[Cookie Autodelete](https://github.com/Cookie-AutoDelete) Web sayfalarını ziyrate ettiğinizde tarayıcınıza işlevlerin yerine getirilmesi için yerleştirilen ve çoğu zaman sizi takip etmekte de kullanılan çerezleri sayfayı terk etmeniz üzerine siler. Bu sayede arkanızda bir çerez izi bırakmadan web de gezinebilirsiniz.
 
-Kullanım notları;
+### Gelişmiş takip sistemleri ve gerekli eklentiler
 
-- IP adres sızıntıları; Tüm tarayıcılar sesli ve görüntülü konferanslar sırasında gerçek IP adresinizi sızdırır. Eğer VPN veya Tor ile birlikte sesli veya görüntülü konuşma gerçekleştiriyorsanız, uBlock ayarlarında WebRTC IP sızıntılarını engelleyen ayarı aktif etmelisiniz.
-- uBlock gelişmiş mod; Eğer uBlock'u [gelişmiş modda](https://github.com/gorhill/uBlock/wiki/Advanced-user-features) kullanıyorsanız, ayriyeten Privacy Badger kullanmanız gerek yoktur.
+Bu bölümde anlatılan eklentiler tarayıcınızın ve doğal olarak web gezintinizin mahremiyetini ve güvenliğini daha da arttırabilir. Lakin kullanıcıların takibi için kullanılan daha detaylı ve kimi zaman web sayfalarının çalışması için gereken işlevleri de engelleyebileceği için tamamen sorunsuz bir tarama deneyimine engel olabilir. Kimi zaman çalışmayan web sayfalarını çalıştırmak için eklentilerin ayarlarını özelleştirmek gibi zahmetli görülecek anlar yaratabilir. Aşağıda bu bölümde önereceğimiz eklentilerle engellenmeye çalışılan web takip sistemlerinin bazıları şunlardır;
 
-### Gelişmiş Eklentiler
+* __HTTP User-Agent:__ Tarayıcınız ziyaret ettiğiniz sitelere "user-agent" adı altında tarayıcı, işletim sistemi ve ilgili bilgileri gönderir. Bu web sayfalarının tarayıcınıza uygun olarak düzenlenmesini sağladığı gibi cihazınıza has belirgin özellikler aracılığı ile takip edilmenize de sebep olabilir. Bu noktada Windows ve Chrome kullanan kalabalıktan ayrıldığınız anda belirgin bir hedef haline gelirsiniz. Özellikle bir GNU/Linux dağıtımı ve Firefox kullanıyorsanız. Bu amaçla kalabalığa karışmak için bu değerin en yaygın değerlere çevrilmesi gereklidir.
+* __HTML5 Canvas:__ HTML5 Canvas takibi tarayıcıların geleneksel yöntemlerin yeterli olmaması üzerine geliştirdikleri bir takip sistemi. Tarayıcınızın web sayfasını ekranınıza çizmesine yarayan sistemin kötüye kullanılması ile gerçekleşen bu takibi tamamen engellemek mümkün olmasa da kimi eklentiler ile ciddi şekilde azaltılması mümkün.
+* __JavaScript:__ JavaScript modern web'in var olmasının ve aynı zamanda günümüzde bu kadar sorunlu olmasının da sebebi. JS ile web siteleri pek çok etkileşimli özelliği kullanıcılarına sunabilmekte ama her yazılım gibi kullanıcıların cihazında çalışan bu kod kötüye kullanıma da açıktır. Tarayıcınızda girdiğiniz web sitesinden veya harici kaynaklardan yüklenen JS ile hakkınızda takip yapılması mümkün. Bunu engellemenin en kesin yolu JS kodlarının tarayıcınızda çalışmasını tamamen engellemektir ama geldiğimiz günde bu pek çok sayfayı tamamen bozacağından bunu kontrollü ve seçici olarak yapmak gerekmekte.
 
-Bu eklentiler kullanımları zor olduğundan veya web sitelerinde bozulmalara yol açabileceğinden için ileri düzey kullanıcılar içindir.
+### Tavsiye edilen gelişmiş eklentiler
 
-Bu eklentiler web tarayıcılarının çalışma şekillerinden kaynaklanan temel mahremiyet kusurlarının üzerinden gelmeye çalışır. Ancak, pek çok web sitesi basit işlevler için bu kusurlardan faydalanır, bu yüzden bu kusurları gidermek zaman zaman web sitelerinin çalışmamasına sebep olabilir.
+* [µMatrix](https://addons.mozilla.org/en-US/firefox/addon/umatrix/) seçici olarak sayfaların yüklediği javaScriptler dahil tüm elementleri ve üçüncü-taraf kaynakları kontrol etmenizi sağlar. Kullanımı başta karmaşık gelecek ise de uMatrix basitçe girdiğiniz sayfanın tüm elementlerini bloklar halinde önünüze serer.
 
-Bahsedilen kusurların bazıları şunlardır;
+![](guvenli_web_gezintisi/umatrix.png)
 
-* __HTTP Referrer:__ Bir linke tıkladığınızda, tarayıcınız bulunduğunuz sitenin konumunu yeni siteye gönderir. Hassas ve kişiyi tanımlayan bilgiler site URLinde bulunabileceğinden, HTTP Referer kapatılmalıdır. Bunu sadece bir eklenti kullanarak gerçekleştirebilirsiniz.
-* __HTTP User-Agent:__ Tarayıcınız ziyaret ettiğiniz her web sitesine, tarayıcınıza özel bir "User-Agent" bilgisi gönderir. Bu bilgi çevrimiçi etkinliğinizi belirlemek için diğer veriler ile birlikte kullanılabilecek pek çok benzersiz veri içerir. Tor Tarayıcı'da kullanılanlar gibi daha genel bir değer kullanmak daha iyidir.
-* __HTML5 Canvas:__ Pek çok site tarayıcınızın benzersiz bir parmakizini almak ve sizi izlemek için HTML5 Canvas kullanmaya başladı. Şu anda bu özelliği devre dışı bırakmak için bir yol olmasa da, bazı eklentiler ile önüne geçilebilir.
-* __JavaScript:__ JavaScript günümüzde pek çok web sitesi için temel bir bağımlılıktır, ama zaman zaman devre dışı bırakmak isteyebilirsiniz. JavaScript aktifken, web sitelerinin tarayıcı parmakizinizi oluşturması ve sizi izlemesi çok daha kolaydır. Ayrıca tarayıcı güvenlik kusurlarının pek çoğu JavaScript kaynaklıdır.
+uMartix her satırda elementlerin yüklendiği alan adlarını, her sütunda da yüklenen elementleri ve sayısını göstermekte. Bunları her kutunun üst veya altına tıklayarak engelleyip izin verebileceğiniz gibi tümden bir satır ve sütuna en uçlardaki kutulardan da aynı şekilde izin verebilirsiniz. Sayfayı yenilediğinizde izin verdiğiniz veya engellediğini elementlerle birlikte sayfa dilediğiniz şekilde tekrar yüklenecektir. Belirli bir sayfa için bu değişiklikleri kalıcı kılmak isterseniz asmakilit simgesine tıklayarak değişikliklerinizi kaydedebilirsiniz.
 
-Firefox için:
+* [Canvas Blocker](https://addons.mozilla.org/en-US/firefox/addon/canvasblocker/) HTML5 canvas desteğini belirli siteler için devre dışı bırakmanızı sağlar. CanvasBlocker'i ilk kurduğunuzda karşınıza gelen sayfadan ihtiyacınız olan güvenlik seviyesini seçerek "apply" düğmesi ile tercihinizi kaydedebilirsiniz.
 
-* [µMatrix](https://addons.mozilla.org/en-US/firefox/addon/umatrix/) seçici olarak JavaScript'i, eklentileri veya diğer kaynakları engellemenize ve üçüncü-taraf kaynakları kontrol etmenizi sağlar. Bunun yanında mahremiyetinizi korumak için user-agent maskeleme, referer engelleme gibi ek özellikler sunar. NoScript ve RequestPolicy yerine kullanılabilir.
-* [Canvas Blocker](https://addons.mozilla.org/en-US/firefox/addon/canvasblocker/) HTML5 canvas desteğini belirli siteler için devre dışı bırakmanızı sağlar.
+* [CleanURLs](https://addons.mozilla.org/en-US/firefox/addon/clearurls/) Kimi siteler, çoğu zaman sizi çeşitli sebeplerle takip etmek üzere bağlantılara takip parametreleri yerleştirebilirler. Bu bağlantılara tıklamanız üzerine gittiğiniz sayfa bağlandıda bulunan bilgiye bağlı olarak sizin kim olduğunuzu, nereden geldiğinizi öğrenebilir. Bu şekilde takip edilmemek için bağlantıları elle olması gerektiği hale getirebileceğiniz gibi CleanURLs eklentisi ile bu işlemi otomatize de edebilirsiniz.
 
-Chrome için:
+### Eklentilerin sayfaları bozması
 
-* [µMatrix](https://chrome.google.com/webstore/detail/%C2%B5matrix/ogfcmafjalglgifnmanfmnieipoejdcf) seçici olarak JavaScript'i, eklentileri veya diğer kaynakları engellemenize ve üçüncü-taraf kaynakları kontrol etmenizi sağlar. Bunun yanında mahremiyetinizi korumak için user-agent maskeleme, referer engelleme gibi ek özellikler sunar. NoScript ve RequestPolicy yerine kullanılabilir.
-* [CanvasFingerPrintBlock](https://chrome.google.com/webstore/detail/canvasfingerprintblock/ipmjngkmngdcdpmgmiebdmfbkcecdndc) HTML5 canvas desteğini belirli siteler için devre dışı bırakmanızı sağlar (eklenti kaynak kodu kapalıdır).
-
-### Zararlı veya önerilmeyen eklentiler
-
-Popüler olmalarına rağmen, bu eklentileri kullanmaktan kaçınmanızı öneriyoruz.
-
-* [Adblock Plus](https://adblockplus.org/) reklam ve takipçileri engellemek için en iyi eklentilerden biriydi. Ancak, şu an reklamverenlerin kendi filtrelerini atlamaları için bir rüşvet programı yürütüyorlar. Ayrıca, uBlock kullandığı teknoloji açısından daha iyidir.
-* [Disconnect](https://disconnect.me/disconnect) uBlock gibi çalışır ve kaynağı açıktır. uBlock kullanıyorsanız, uBlock'ta olmayan bazı görselleştirmeler sunmasına rağmen Disconnect gereksizdir.
-* [Ghostery](https://www.ghostery.com) uBlock gibi çalışır, ancak varsayılan olarak pek çok takipçiye izin verir ve kaynak kodu özel mülktür.
+Kimi sayfalar sizi takip etmeye veya gerekmedik yerlerde takip için kullanılan teknolojileri kullanmaya o kadar yer ayırmışlardır ki aldığınız tedbirler bu sayfaların kısmen veya tamamen çalışmasına engel olabilir. Bu durumda özellikle o sayfaya güveniyoranız veya başka çareniz yok ise bu bozukluğu gidermek isteyebilirsiniz. Yukarıda belirtilen kadar eklenti kurulduktan sonra kimi zaman hangi eklentinin ilgili sayfayı bozduğunu anlamak kola olmayabilmekte. Bunun aşmanın en hızlı yolu Firefox'u güvenli modda eklentiler olmadan çalıştırmak. Bu tüm tedbirlerinizi berteraf edeceği için gerekmedikçe kullanılmaması önerilir. Bunun için Firefox menüsünden `yardım` sekmesinden `sorun giderme modu` seçeneğini seçebilirsiniz.
 
 ## Firefox'un Ayarlarını Güçlendirmek
 
@@ -151,6 +163,8 @@ Firefox tarama deneyiminizi iyileştirmek için çeşitli içerikleri siz açık
 
 `network.http.sendRefererHeader` "0" olmalıdır.
 
+`network.http.referer.XOriginPolicy` "2" olmalıdır.
+
 `security.ssl.disable_session_identifiers` arama çubuğuna yazdıktan sonra "bolean" seçeneğini seçip + simgesine tıklayın ve değerin "true" olduğunu kontrol edin.
 
 İnternetin ve Web'in temel şifreleme teknolojisi olan [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) pek çok geçmişten kalan ve artık güvenli sayılmayan bağlantı standardını hala yaşatmaktadır. Eski sistemlerin desteklenmesi için süren bu uygulama sizin için bir güvenlik riski teşkil edebilir. Bu ayarları değiştirdiğinizde pek çok büyük şirketin ve kimi devlet kurumlarının sitelerinin çalışmaması sonucu ile karşılaşabilirsiniz. Güvenli bağlantı kurmayan bu sitelere erişmek için bu ayarları geçici olarak kaldırmanız gerekebilir.
@@ -169,4 +183,24 @@ Firefox tarama deneyiminizi iyileştirmek için çeşitli içerikleri siz açık
 
 Tarayıcınızın bilgisayarınızın batarya durumunu ziyaret ettiğiniz web sitelerine iletmesinin bir anlamı var mı gerçekten?
 
-` dom.battery.enabled` "false" olmalıdır.
+`dom.battery.enabled` "false" olmalıdır.
+
+Firefox hesaplarını kullanmıyorsanız kapatmanız mahremiyetiniz için iyi olacaktır.
+
+`identity.fxaccounts.enable` "false" olmalıdır.
+
+Web'de görüntülemek istediğiniz PDF'leri görüntülemek için JavaScript kullanmanız gerekmediğinden bu özelliği güvenliğiniz için kapatmak yerinde olur.
+
+`pdfjs.enableScripting` "false" olmalıdır.
+
+Bezner şekilde Mozilla'nın FireFox'a zorla gömdüğü mülk bir yazılım olan Pocket'i devredışı bırakmak tercih edilebilir.
+
+`browser.newtabpage.activity-stream.section.highlights.includePocket` false olmalıdır.
+
+### Güvenlik ayarlarının sayfaları bozması
+
+Bu bölümde anlatılan ayarlar kimi sayfaların bozulmasına sebep olabilir. Örneğin önerilen özgür bir konferans yazılımı olan Jitsi WebRTC teknolojisini kullanmakta fakat yerel IP adresinizin ifşa olmaması için yukarıda yapılan ayarlar bu özelliği kapatmakta. Bu sorunlarla karşılaşılması durumunda sorunu düzeltmek için kimi ayarları kapatmanız gerekli olacaktır.
+
+Bunu yapmanın en kolay yolu [Privacy Settings](https://addons.mozilla.org/en-US/firefox/addon/privacy-settings/) ile burada belirtilen kimi ayarları kapatıp açmaktır. Bu eklenti size hem belirli ayarları değiştirmeyi hem de tercih edilecek seviyeye bağlı olarak standart ayarları anlık olarak yapma seçeneği sunacaktır.
+
+Şayet Privacy Settings eklentisi ile sorunu çözemez veya kesin ve hızlı bir çözüme ihtiyaç duyarsanız Firefox'u yeni gibi başlatmayı seçebilirsiniz. Bunu yaptığınız ayarları kaybetmeden yapabileceğiniz en iyi yol Firefox'un `home` dizininizde bulunan `.mozilla` dizininde tekrar adlandırıp Firefox'u başlatmaktır. Bunu yaptığınızda yeni bir `firefox` dizini oluşacak ve Firefox ilk kurulum ayarlarında açılacaktır. İşinizi bitirdikten sonra basitçe yeni oluşan Firefox dizinini silip adını değiştirdiğiniz eski dizine orjinal adını tekrar vermekle eski duruma geri dönebilirsiniz.

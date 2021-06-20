@@ -22,12 +22,10 @@ Hangi aracı seçtiğinize bakmaksızın gerçekten önemli olan bir parola yön
 * **Ana Parola**: Bir parola yöneticisi kullanırken, ana parolanızı kaybetmemeniz hayati önem taşır. Ana parolayı unutma ihtimaline karşı bir yere bu parolayı not edebilirsiniz. Ama güçlü ve unutulması zor bir ana parola üretmek için **[Zarola](https://zarola.oyd.org.tr)** kullanmanızı öneriyoruz. Bilgisayarlar için zor ama hatırlamanız için kolay bir parola tüm sayısal hayatınızın dayanacağı bir parolayı unutmamak için en garanti yoldur.
 * **Yedekler**: Parola yöneticinizin verilerini düzenli olarak yedeklemeniz de bir o kadar önemlidir. Bulut hizmeti yedekleme işini sizin için yaparken yerel yedeklerinizi düzenli olarak almanız yararınıza olacaktır. Yerel uygulamalar için veri dosyasının yedeğini almak yeterlidir. Ara sıra parola yöneticinizin parolaları sakladığı küçük dosyayı bir USB belleğe koyup kenara kaldırmak sizi çokça baş ağrısından kurtarabilir.
 
-Yaygın parola yöneticileri;
+Yaygın özgür parola yöneticileri;
 
 *  [KeePassXC](https://keepassxc.org/): (yerel uygulama) Kullanım kolaylığı açısından tavsiye edilen yerel parola yöneticisidir. Neredeyse her bilgisayarda çalışabilmektedir ve Nextcloud ile eşitlenebilir.
-   * [Security Self-defense / How to: Use KeepPassXC](https://ssd.eff.org/en/module/how-use-keepassxc)
-   * [Security In-a-box / KeePass overview](https://securityinabox.org/en/guide/keepass/windows)
-* [Pass](https://passwordstore.org): GnuPG ve Git ile çalışan bir parola yöneticisidir. Eğer GnuPG'ye ve Git'e biraz hakimseniz, kesinlikle `pass` kullanmanız tavsiye edilir. Pass, parolalarınızı GnuPG anahtarınızla şifreler ve uzak bir Git sunucusuyla eşitleyebilir. Android istemcisi ve Firefox eklentisi mevcuttur.
+* [Pass](pass.md): GnuPG ve Git ile çalışan bir parola yöneticisidir. Eğer GnuPG'ye ve Git'e biraz hakimseniz, kesinlikle `pass` kullanmanız tavsiye edilir. Pass, parolalarınızı GnuPG anahtarınızla şifreler ve uzak bir Git sunucusuyla eşitleyebilir. Android istemcisi ve Firefox eklentisi mevcuttur.
 * [Bitwarden](https://bitwarden.com/): Tamamen uzak sunucuda çalışan ve pek çok platform için istemcileri bulunan bir parola yöneticisidir.
 
 ## Güçlü Parolalar Kullanın<a name="guclu-parola"></a>
