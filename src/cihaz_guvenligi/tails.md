@@ -24,7 +24,7 @@ Bunu yapabilmek için öncelikle [Tails'in web sayfasına](https://tails.boum.or
 
 Tails imajını elde etmenin en hızlı ve güvenilir yolu BitTorent aracılığı ile indirmektir. BitTorent pek çok insanın bilgisayarındaki eş imajlardan aktarım yapacağı için indireceğiniz imajın doğruluğunu sağlamanın emin yollarından biridir. Bunun için Tails'in sitesinden `Get Tails` başlığına girip işletim sisteminizi seçerek veya yükleyeceğiniz medya tipini seçerek indirme sayfasına ulaşabilirsiniz. Buradan BitTorent seçeneğini seçerek [Transmission](https://transmissionbt.com/download/) veya [qBittorent](https://www.qbittorrent.org/download.php) gibi özgür torrent istemcilerinden biri ile indirmeyi tamamlayabilirsiniz.
 
-![](cihaz_guvenligi/tails/bittorent.png)
+![](tails/bittorent.png)
 
 İndirme işleminin sonunda iki adet dosya elde edeceksiniz. Bunlardan ilki `tails-amd64-xxxx.img` şeklinde gelen Tails imajı ile aynı isimde olup sonu `.sig` ile biten GPG imzası. Bu imajı doğrulamak için her iki dosyaya da ihtiyaç bulunmakta.
 
