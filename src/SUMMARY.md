@@ -78,6 +78,7 @@
     - [OnionShare](ag_guvenligi/onionshare.md)
   - [VPN](ag_guvenligi/vpn.md)
   - [Shadowsocks Proxy](ag_guvenligi/shadowsocks.md)
+  - [MAC Adres Değişikliği](ag_guvenligi/macchanger.md)
   - [Let's Encrypt](ag_guvenligi/letsencrypt.md)
 
 ---
