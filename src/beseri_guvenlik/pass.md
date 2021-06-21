@@ -79,7 +79,7 @@ Kurulumun ardından Firefox çubuğunda yer alacak passff simgesinden parolalar�
 
 Pass'i Android'de kullanmak muhtemelen en kolay seçenek olabilir. Bunun için [Openkeychain](https://www.openkeychain.org/) yazılımını cihazınıza kurmuş ve GPG anahtarınızı kullanılabilir kılmış olmanız gerekli. Bunun için [GnuPG Anahtar Üretimi](/yazisma_guvenligi/gpg/gpg-anahtar-uretimi.md) rehberinden destek alabilirsiniz.
 
-Pass'i kullanabilmek için [Password Store](https://github.com/zeapo/Android-Password-Store#readme) yazılımını cihazınıza kurmanız gerekli.
+Pass'i kullanabilmek için [Password Store](https://github.com/zeapo/Android-Password-Store#readme) yazılımını cihazınıza kurmanız gerekli. Password Store'u [F-droid özgür yazılım deposunda](https://f-droid.org) bulabilirsiniz.
 
 ![](pass/password_store_fdroid.png)
 
