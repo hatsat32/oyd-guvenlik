@@ -109,7 +109,7 @@ uMartix her satırda elementlerin yüklendiği alan adlarını, her sütunda da 
 
 ### Eklentilerin sayfaları bozması
 
-Kimi sayfalar sizi takip etmeye veya gerekmedik yerlerde takip için kullanılan teknolojileri kullanmaya o kadar yer ayırmışlardır ki aldığınız tedbirler bu sayfaların kısmen veya tamamen çalışmasına engel olabilir. Bu durumda özellikle o sayfaya güveniyoranız veya başka çareniz yok ise bu bozukluğu gidermek isteyebilirsiniz. Yukarıda belirtilen kadar eklenti kurulduktan sonra kimi zaman hangi eklentinin ilgili sayfayı bozduğunu anlamak kola olmayabilmekte. Bunun aşmanın en hızlı yolu Firefox'u güvenli modda eklentiler olmadan çalıştırmak. Bu tüm tedbirlerinizi berteraf edeceği için gerekmedikçe kullanılmaması önerilir. Bunun için Firefox menüsünden `yardım` sekmesinden `sorun giderme modu` seçeneğini seçebilirsiniz.
+Kimi sayfalar sizi takip etmeye veya gerekmedik yerlerde takip için kullanılan teknolojileri kullanmaya o kadar yer ayırmışlardır ki aldığınız tedbirler bu sayfaların kısmen veya tamamen çalışmasına engel olabilir. Bu durumda özellikle o sayfaya güveniyoranız veya başka çareniz yok ise bu bozukluğu gidermek isteyebilirsiniz. Yukarıda belirtilen kadar eklenti kurulduktan sonra kimi zaman hangi eklentinin ilgili sayfayı bozduğunu anlamak kolay olmayabilmekte. Bunun aşmanın en hızlı yolu Firefox'u güvenli modda eklentiler olmadan çalıştırmak. Bu tüm tedbirlerinizi berteraf edeceği için gerekmedikçe kullanılmaması önerilir. Bunun için Firefox menüsünden `yardım` sekmesinden `sorun giderme modu` seçeneğini seçebilirsiniz.
 
 ## Firefox'un Ayarlarını Güçlendirmek
 

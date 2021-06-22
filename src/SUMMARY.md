@@ -6,7 +6,7 @@
   - [Mesaj Disiplini](beseri_guvenlik/mesaj_disiplini.md)
   - [Parolalar](beseri_guvenlik/parolalar.md)
      - [Pass](beseri_guvenlik/pass.md)
-     - [Keepass](beseri_guvenlik/keepass.md)
+     - [KeepassXC](beseri_guvenlik/keepass.md)
      - [Bitwarden](beseri_guvenlik/bitwarden.md)
   - [Çift Aşamalı Doğrulama (2FA)](beseri_guvenlik/2fa.md)
      - [andOTP ile OTP](beseri_guvenlik/andotp.md)
