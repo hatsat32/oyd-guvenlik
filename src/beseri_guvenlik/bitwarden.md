@@ -34,7 +34,7 @@ Parola oluşturmak için `Parola` bölümünün sağ tarafındaki yenileme simge
 
 ![](bitwarden/bw_uret.png)
 ![](bitwarden/bw_giris.png)
-![](Bitwarden/bw_ilk.png)
+![](bitwarden/bw_ilk.png)
 
 Bitwarden'ın kullanımınıza ilişkin bir grup ayarı bulunmakta. Bunları `Dosya > ayarlar` menüsünden erişebilirsiniz.
 
