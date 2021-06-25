@@ -16,7 +16,7 @@ Bu sebepte ötürü SMS ile şifreli yazışma yapabilmek kimi olasılıklarda y
 
 ## SMS nasıl şifrelenir?
 
-SMS temelde mesaj başına 160 karakter metin aktarımı sağlar. Bu bakımdan haricen şifrelenmiş bir veriyi mesaj olarak göndermenizde bir engel yoktur. Dilerseniz [GPG](yazisma_guvenligi/eposta-sifreleme.md) ile bir mesajı şifreleyip SMS ile uzun da olsa göndermeniz mümkündür. Bu yöntem kesinlikle pratik olmamakla birlikte gerektiğinde kullanılabilir.
+SMS temelde mesaj başına 160 karakter metin aktarımı sağlar. Bu bakımdan haricen şifrelenmiş bir veriyi mesaj olarak göndermenizde bir engel yoktur. Dilerseniz [GPG](openpgp.md) ile bir mesajı şifreleyip SMS ile uzun da olsa göndermeniz mümkündür. Bu yöntem kesinlikle pratik olmamakla birlikte gerektiğinde kullanılabilir.
 
 [Silence](https://silence.im/) özgür bir Android yazılımı olarak SMS şifrelemeyi neredeyse sorunsuz şekilde gerçekleştirmektedir. [F-droid](https://f-droid.org) üzerinden indirebileceğiniz yazılım cihazınızın standart SMS yazılımının yerine geçer ve hem şifreli hem şifresiz SMS'lerinizi Silence aracılığı ile kullanabilirsiniz. Silence ile diğer SMS yazılımları arasındaki farkı anlamak neredeyse mümkün değildir.
 

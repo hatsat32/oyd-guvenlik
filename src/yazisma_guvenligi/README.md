@@ -11,7 +11,7 @@ __Yazışma Güvenliği__Mesajların iletildiği hat üzerinde sunucu dahil kims
 * __Meşakatli öğrenme süreci__: Şifreleme yazılımlarını doğru kullanabilmek için bir miktar deneyim gereklidir. Açık anahtar, özel anahtar, imzalama gibi kavramlara farkındalık sahibi olmanız süreci güvenli yürütebilmeniz için elzemdir.
 * __Sınırlı kullanıcı sayısı__: Ne yazık ki herkes şifreli yazışabileceğiniz kişiler bugünlerde görece yaz. Yazılımlardaki gelişme ve güvenlik endişeleri ile bu sayı giderek artsa bile çevrenizdeki insanlara konu hakkında bilgi verip yardım etmeniz gerekebilir.
 
-Mesajlarınızın güvenliğinin cihazınızın güvenliğinden geçtiğini de unutmamalısınız. Dünyanın en ileri şifreleme teknolojileri şifrelemenin yapıldığı cihaz kadar güvenli olabilir. Bu sebepten [cihaz güvenliği](/cihaz_guvenigi/README.md) konusunda dikkat etmelisiniz.
+Mesajlarınızın güvenliğinin cihazınızın güvenliğinden geçtiğini de unutmamalısınız. Dünyanın en ileri şifreleme teknolojileri şifrelemenin yapıldığı cihaz kadar güvenli olabilir. Bu sebepten [cihaz güvenliği](../cihaz_guvenligi/README.md) konusunda dikkat etmelisiniz.
 
 
 ## Mesaj şifreleme hakkında

@@ -34,15 +34,15 @@ Tarayıcıda:
 
 Şayet Thunderbird/Enigmail ikilisini kullanacaksanız birden fazla imkanınız bulunuyor. Bunlardan ilki, özellikle Protonmail adresleri ile sıkça yazışacaksanız, Protonmail anahtarsunucusunu Enigmail'in ayarlarından anahtar sunucuları listesine eklemektir. Bunu yapmanın güzel tarafı Enigmail şayet anahtarını bilmediği bir Protonmail adresi görür ise bunun anahtarını otomatik olarak indirip şifreleme seçeneğini açacaktır.
 
-![alt-text](enigmail_ayarlar.png "Enigmail ayarlarına Protonail sunucunu eklemek")
+![alt-text](protonmail/enigmail_ayarlar.png "Enigmail ayarlarına Protonail sunucunu eklemek")
 
 Şayet e-posta yazma ekranında hızlıca bunu yapmaya karar verirseniz, Enigmail sekmesinden anahtar yönetimi (key management) kısmına tıklayıp anahtar sunucusu (keyserver) kısmına Protonmail'in sunucu adresini girip doğrudan arama yapma seçeneğini seçebilirsiniz.
 
-![alt-text](enigmail_yonetim.png "Enigmail anahtar yönetimi")
+![alt-text](protonmail/enigmail_yonetim.png "Enigmail anahtar yönetimi")
 
 Şayet e-postanızı göndermeden önce şifreleme seçeneğini açarsanız, Enigmail anahtarı olmayan Protonmail adresinin anahtarını göstermenizi sizden isteyecektir. Bu noktada eksik anahtarları indir (download missing keys) seçeneğini tıklayıp anahtar yönetimi sayfasından bir üstteki adımı takip ederek işleminizi bitirebilirsiniz.
 
-![alt-text](enigmail_gonderim.png "Enigmail eksik anahtar paneli")
+![alt-text](protonmail/enigmail_gonderim.png "Enigmail eksik anahtar paneli")
 
 Tebrikler, bir Protonmail kullanıcısına tek seçeneklerinin Protonmail olmadığını göstermiş oldunuz. Protonmail'e atacağınız e-postaların ekine açık anahtarınızı eklemeniz veya e-postayı şifreli atmanız durumunda Protonmail sadece **web** istemcisinden otomatik olarak şifreli yanıt atacaktır. Android ve OS istemcilerde sorun çıktığı görülmüştür. Hali ile yazıştığınız kişiyi bu konuda bilgilendirmeniz önerilir. Sizin açık anahtarınızı Protonmail hesaplarında sizin adınıza eklemeleri gereklidir sorunsuz bir iletişim için.
 
@@ -54,11 +54,11 @@ Protonmail'den GnuPG kullanan bir başka adrese şifreli e-posta atmak için ön
 
 Şayet gelen e-posta şifreli veya imzalı değilse ya da siz ilk şifreli e-postayı atacaksanız öncelikle rehberinizden şifreleme yapmak istediğiniz kişinin paneline gelin ve küçük dişli şekliyle ifade edilen gelişmiş ayarları açın.
 
-![alt-text](proton_kisi.png)
+![alt-text](protonmail/proton_kisi.png)
 
 Daha sonra açılan ayarlardan anahtar yükle seçeneğini seçerek ilgili kişinin anahtar dosyasını yükleyin ve şifrele ve imzala düğmesini aktif hale getirin.
 
-![alt-txt](proton_kisi_ayar.png)
+![alt-txt](protonmail/proton_kisi_ayar.png)
 
 Bundan sonra kişiye atacağınız e-postalar kişinin GnuPG anahtarı ile şifrelenecek ve imzalanacaktır.
 

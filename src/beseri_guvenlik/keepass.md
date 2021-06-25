@@ -68,7 +68,7 @@ KeePassXC-Browser eklentisi ile kaydettiğiniz parolaları tarayıcınızda kull
 
 ![](keepassxc/kp_tarayici.png)
 
-![](keepassxs/kp_ekleme.png)
+![](keepassxc/kp_ekleme.png)
 
 Eklentinin KeePassXC veritabanına ulaşabilmesi için bilgisayarınızda kurulu KeePassXC'den `Tarayıcı Tümleşmesi` seçeneğinin etkineştirilmesi gerekiyor. Bunun için KeePassXC'yi açıp ` Araçlar > Ayarlar > Tarayıcı Tümleşmesi` sekmesine gelip üst bölümde bulunan `KeePassXC tarayıcı entegrasyonunu etkinleştir` seçeneğini seçmeniz ve ardından listelenen tarayıcılar arasından kullandığınız tarayıcıyı işaretlemeniz gerekli.
 

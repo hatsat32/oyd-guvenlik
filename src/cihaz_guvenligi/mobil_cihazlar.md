@@ -54,7 +54,7 @@ Sayılan cihazların ya modern kullanım için eski ya da Türkiye'de bulunması
 
 ### Wifi
 
-Günümüzdeki internet üzerinden iletişim hizmet ve sistemlerinin gelişmişliği altında artık sesli ve yazılı iletişimin sadece internet bağlantısı ile sağlanması çok kolaylaşmış durumda. [Signal](yazisma_guvenligi/signal.md) veya [Jitsi](https://meet.jit.si) gibi araçların sağladığı imkanlar ile artık GSM ses bağlantısına ihtiyaç eskisi kadar yok. Bu neden ile bir kişi internet bağlantısını sağlayabildiği her yerden iletişim kurması mümkün.
+Günümüzdeki internet üzerinden iletişim hizmet ve sistemlerinin gelişmişliği altında artık sesli ve yazılı iletişimin sadece internet bağlantısı ile sağlanması çok kolaylaşmış durumda. [Signal](../yazisma_guvenligi/signal.md) veya [Jitsi](https://meet.jit.si) gibi araçların sağladığı imkanlar ile artık GSM ses bağlantısına ihtiyaç eskisi kadar yok. Bu neden ile bir kişi internet bağlantısını sağlayabildiği her yerden iletişim kurması mümkün.
 
 Buna e-posta gibi diğer iletişim ihtiyaçlarının da çoğunlukla İnternet üzerine taşındığı gözönüne alındığında bir kişinin GSM şebekesinin sağladığı klasik ses ve yazılı (SMS) bağlantı imkanlarına ihtiyacının az olması muhtemel. Özellikle [VOIP](https://en.wikipedia.org/wiki/VoIP) benzeri klasik telefon hizmetini İnternet üzerinden sağlayan servislerle telefon ihtiyacının da karşılanabilmesi mümkün.
 

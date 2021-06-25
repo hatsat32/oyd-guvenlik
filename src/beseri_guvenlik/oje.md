@@ -2,7 +2,7 @@
 
 <!-- toc -->
 
-[Fiziksel güvenlik](fiziki_guvenlik.md) cihazların güvenliğinin sağlanması açısından ciddi bir endişe olarak var olmakta. Her ne kadar [boot güvenliği](cihaz_guvenligi/boot_guvenligi.md) veya [şifreleme](cihaz_guvenligi/cihaz_sifreleme.md) gibi yazılımsal kaynaklı güvenlik tedbirleri kimi saldırıları engelleyebilecek olsa da fiziken cihaza yerleştirilecek bir cihaz aracılığı ile gerçekleştirilebilecek saldırılara karşı çok az koruma sağlamaktadır.
+[Fiziksel güvenlik](fiziki_guvenlik.md) cihazların güvenliğinin sağlanması açısından ciddi bir endişe olarak var olmakta. Her ne kadar [boot güvenliği](../cihaz_guvenligi/boot_guvenligi.md) veya [şifreleme](../cihaz_guvenligi/cihaz_sifreleme.md) gibi yazılımsal kaynaklı güvenlik tedbirleri kimi saldırıları engelleyebilecek olsa da fiziken cihaza yerleştirilecek bir cihaz aracılığı ile gerçekleştirilebilecek saldırılara karşı çok az koruma sağlamaktadır.
 
 Fiziki tedbirlerin amaçlarından biri de kullanılan cihazlara yapılabilecek fiziki müdahalelerin nasıl engellenebileceği veya yapılan müdahalelerin nasıl fark edilebileceğinden oluşmakta. Keza donanıma yapılan bir müdahalenin doğrulanması kimi zaman imkansıza yakın olabilecek olduğundan pratik olarak soruna getirilebilecek en iyi çözüm müdahalenin olmadığından emin olmaktan geçmekte.
 
@@ -16,7 +16,7 @@ Bir cihazın açılıp açılmadığını öğrenmeye yakın zamanlara kadar en 
 
 Lakin sizi, bilgisayarınızı ve kullandığınız etiketi bilen veya dünyadaki her güvenlik etiketinden bir tane bulundurmaya gücü yetecek bir saldırgan için bu etiketlerin bir engel teşkil ettiği söylenemez. Keza bilgisayarınızdaki etiket çıkarılıp yerine aynısından bir tane yapıştırılmış olursa cihazınıza müdahale edildiğine dair nasıl bir izlenim edinilebilir? Güvenlik etiketleri seri üretim ürünler olmakla belirli bir tasarımda ve topluca üretilmekteler. Bu etiketleri fiziki özelliklerini belirli kıldığından iki etiket arasındaki fark da felsefi düzeyde kalmaktadır.
 
-Belirlenebilirlik bir sorun olduğu zaman çözüm neredeyse her zaman belirlenemezlikle yani [entropi](https://en.wikipedia.org/wiki/Entropy_(statistical_thermodynamics)) ile çözülmektedir. [Parolalarınızı koruyan](beseri_guvenlik/parolalar.md) entropi ile aynı kapsamda cihazınızı koruyacak etkiet de entropiden faydalanır. Şöyle ki; şayet bir saldırgan dünyada seri üretimde bulunan veya özel ürettirmiş olsanız bile bilgi sahibi olduğu bir etiketten yaptırabilir lakin tamamen rastgele olan bir etiketten üretmesi çok ama çok zordur.
+Belirlenebilirlik bir sorun olduğu zaman çözüm neredeyse her zaman belirlenemezlikle yani [entropi](https://en.wikipedia.org/wiki/Entropy_(statistical_thermodynamics)) ile çözülmektedir. [Parolalarınızı koruyan](parolalar.md) entropi ile aynı kapsamda cihazınızı koruyacak etkiet de entropiden faydalanır. Şöyle ki; şayet bir saldırgan dünyada seri üretimde bulunan veya özel ürettirmiş olsanız bile bilgi sahibi olduğu bir etiketten yaptırabilir lakin tamamen rastgele olan bir etiketten üretmesi çok ama çok zordur.
 
 Bu sorunun çözümü olarak [Chaos Computer Club'ın](https://www.ccc.de/en/club) [30c3](https://media.ccc.de/v/30C3_-_5600_-_en_-_saal_1_-_201312301245_-_thwarting_evil_maid_attacks_-_eric_michaud_-_ryan_lackey) konferansında eric Michaud ve Ryan Lackey tarafından yapılan sunumda neredeyse her kozmetik dükkanında bulunabilecek simli oje önerilmektedir. Fikir ojenin içerdiği simlerin her boyamada tamamen rastgele sonuçlar vermesine dayanmaktadır. Bu şekilde cihazın vidalarına ve/veya portlarına yapılan mühürler daha sonra kontrol edilerek bozulup bozulmadığından görece emin olunabilmektedir. Keza aynı şekilde mührü oluşturmak veya bir iz bırakmadan çıkarıp yerine takmak pek kolay bir iş değildir.
 
@@ -70,7 +70,7 @@ Bu fotoğrafları yanınızdan ayırmayacağınız bir aygıt üzerinde depolama
 
 Bu aşama zorunlu olmasa da yapacağınız mührü kontrol etmek için kullanacağınız fotoğrafların değiştirilmediğinden emin olmanın tek yolu kriptografik olarak imzalamaktan geçmektir. Bu hem fotoğrafları içeren aygıtın kontrolünü kaybetmeniz durumunda önem taşır hem de uzun vadede bu mührü korumanızı kolaylaştırır.
 
-GPG ve kullanımı size yabancı konular ise [GPG rehberimizden](yazisma_guvenligi/gpg/gpg.md) faydalanabilirsiniz.
+GPG ve kullanımı size yabancı konular ise [GPG rehberimizden](../yazisma_guvenligi/gpg/gpg.md) faydalanabilirsiniz.
 
 ## Mührün kontrol edilmesi
 

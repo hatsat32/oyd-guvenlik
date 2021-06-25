@@ -68,6 +68,6 @@ Bitwarden'i [F-droid](https://f-droid.org) özgür yazılım reposundan bulmanı
 
 1. [Bitwarden Github deposundaki imzalı .APK](https://github.com/bitwarden/mobile/releases) dosyasını indirerek cihazınıza elle kurmak ilk seçenek. Burada bulacağınız dosyalar Github'a `0x4AEE18F83AFDEB23` GPG anahtarı ile imzalı yüklenmekte.
 
-2. [Bitwarden'in resmi F-droid deposunu](https://mobileapp.bitwarden.com/fdroid/] cihazınızda kurulu F-droid'de kurmak. Bunun için bağlantıyı takip ettiğinizde karşınıza çıkan karekodu kullanabilir veya URL'yi elle girerek depoyu ekleyebilirsiniz.
+2. [Bitwarden'in resmi F-droid deposunu](https://mobileapp.bitwarden.com/fdroid/) cihazınızda kurulu F-droid'de kurmak. Bunun için bağlantıyı takip ettiğinizde karşınıza çıkan karekodu kullanabilir veya URL'yi elle girerek depoyu ekleyebilirsiniz.
 
 Android versiyonun kullanımı da benzer olmakla birlikte hesabınıza giriş yapmakla tüm Bitwarden işlevlerine ve parolalarınıza anında erişebilirsiniz.

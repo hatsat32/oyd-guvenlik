@@ -2,11 +2,11 @@
 
 <!-- toc -->
 
-[andOTP](https://github.com/andOTP/andOTP) Android işletim sisteminde kullanılabilen özgür bir OTP yazılımıdır. [F-droid](https://f-droid.org/en/packages/org.shadowice.flocke.andotp/) aracılığı ile kurabileceğiniz andOTP'yi [Freeotp ve Freeotp+](https://search.f-droid.org/?q=freeotp&lang=en) yazılımlarından ayıran şifreli veri tabanı, [GPG şifreleme](yazisma_guvenligi/gpg/gpg.md) ve anahtar dışa aktarım gibi daha gelişmiş özellikleridir. Bu bakımdan andOTP neredeyse tüm OTP yazılımları gibi işlev görse de kullanım özellikleri bakımından daha ileri seçenekler sunmaktadır.
+[andOTP](https://github.com/andOTP/andOTP) Android işletim sisteminde kullanılabilen özgür bir OTP yazılımıdır. [F-droid](https://f-droid.org/en/packages/org.shadowice.flocke.andotp/) aracılığı ile kurabileceğiniz andOTP'yi [Freeotp ve Freeotp+](https://search.f-droid.org/?q=freeotp&lang=en) yazılımlarından ayıran şifreli veri tabanı, [GPG şifreleme](../yazisma_guvenligi/gpg/gpg.md) ve anahtar dışa aktarım gibi daha gelişmiş özellikleridir. Bu bakımdan andOTP neredeyse tüm OTP yazılımları gibi işlev görse de kullanım özellikleri bakımından daha ileri seçenekler sunmaktadır.
 
 ## Kurulum
 
-andOTP'yi tüm Android yazılımı dağıtan depolarda bulmanız mümkündür. Tavsiyemiz özgür [F-droid](cihaz_guvenligi/yazilim_guvenligi.md) deposundan kurulumunuzu yapmanızdır. Bunun için:
+andOTP'yi tüm Android yazılımı dağıtan depolarda bulmanız mümkündür. Tavsiyemiz özgür [F-droid](../cihaz_guvenligi/yazilim_guvenligi.md) deposundan kurulumunuzu yapmanızdır. Bunun için:
 
 F-droid'de `andOTP` ismini aratıp `install(yükle)` seçeneği ile kurulumunuzu başlatın ve çıkan ekranda tekrar yükleye basarak kurulumunuzu tamamlayın.
 
@@ -45,7 +45,7 @@ Bu seçeneklerden en yaygın olarak kullanacağınız `scan qrcode` seçeneğidi
 
 ![alt-text](andotp/otptoken.png)
 
-Kameranız ile karekod taramak için ayrı bir yazılıma ihtiyacınız olabilir. Bu noktada yine özgür olan [Binary Eye](![alt-text](andotp/ekleme.png) veya [Barcode Scanner](https://f-droid.org/en/packages/com.google.zxing.client.android) yazılımlarından birini öneririz.
+Kameranız ile karekod taramak için ayrı bir yazılıma ihtiyacınız olabilir. Bu noktada yine özgür olan [Binary Eye](https://f-droid.org/en/packages/de.markusfisch.android.binaryeye) veya [Barcode Scanner](https://f-droid.org/en/packages/com.google.zxing.client.android) yazılımlarından birini öneririz.
 
 Karekodu taramanız üzerine OTP token eklenecek ve talebiniz üzerine üretilmeye başlayacaktır. Bu noktadan sonra söz konusu token'e ait hizmeti kullanmak için andOTP'den aldığınız kodu belirtilen süre içinde girmeniz yeterlidir.
 
@@ -58,4 +58,4 @@ andOTP'yi kullanmak için özellikle ayarlarını değiştirmeniz gerekmiyor. Ki
 ![alt-text](andotp/ayarlar1.png)
 ![alt-text](andotp/ayarlar2.png)
 
-Yukarıdaki şekilde kilitlenme seçeneklerini ayarlamak andOTP'nin tuttuğu sırların korunması için en iyi seçeneği sağlayacaktır. Benzer şekilde söz konusu token'ler hesaplarınıza erişmenizde önemli rol oynayacağı için düzenli yedeklemelerinizi GPG ile şifrelemeniz için gerekli ayarları yaparak yedeklerinizi cihazınızdaki bir dizine kaydedebilir veya Android'in düzenli aldığı yedeklere şifreli şekilde güvenle ekleyebilirsiniz. Bunun için [Openkeychain](https://f-droid.org/en/packages/org.sufficientlysecure.keychain) yazılımına ihtiyacınız olacaktır. [Kullanımı için rehberimize danışabilirsiniz.](yazisma_guvenligi/gpg/gpg-anahtar-uretimi.md)
+Yukarıdaki şekilde kilitlenme seçeneklerini ayarlamak andOTP'nin tuttuğu sırların korunması için en iyi seçeneği sağlayacaktır. Benzer şekilde söz konusu token'ler hesaplarınıza erişmenizde önemli rol oynayacağı için düzenli yedeklemelerinizi GPG ile şifrelemeniz için gerekli ayarları yaparak yedeklerinizi cihazınızdaki bir dizine kaydedebilir veya Android'in düzenli aldığı yedeklere şifreli şekilde güvenle ekleyebilirsiniz. Bunun için [Openkeychain](https://f-droid.org/en/packages/org.sufficientlysecure.keychain) yazılımına ihtiyacınız olacaktır. [Kullanımı için rehberimize danışabilirsiniz.](../yazisma_guvenligi/gpg/gpg-anahtar-uretimi.md)

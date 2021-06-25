@@ -38,4 +38,4 @@ Her seviyeden kullanıcı için kullanım tavsiye ve rehberlerimize göz atabili
 
 * [GPG ile grafik arayüzde işlemler](gui_gpg.md)
 
-* [GPG ile e-posta şifreleme](yazisma_guvenligi/openpgp.md)
+* [GPG ile e-posta şifreleme](../openpgp.md)

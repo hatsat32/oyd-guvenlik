@@ -55,7 +55,7 @@ Her şey yolunda giderse kurulumunuz başarılı olarak tamamlanacak ve Kmail'in
 
 Kmail kurulumu tamamlandıktan sonra GPG ile e-posta atmaya ve almaya hazırsınız demektir. Bunun için yeni bir eposta açın.
 
-![alt-text](kmail/new.png)
+![alt-text](kmail/new1.png)
 
 ![alt-text](kmail/new1.png)
 
