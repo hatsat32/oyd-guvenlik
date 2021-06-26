@@ -57,7 +57,7 @@ Kmail kurulumu tamamlandıktan sonra GPG ile e-posta atmaya ve almaya hazırsın
 
 ![alt-text](kmail/new1.png)
 
-![alt-text](kmail/new1.png)
+![alt-text](kmail/new2.png)
 
 Karşınıza gelecek yeni mesaj ekranında şifreleme hali hazırda açık olacaktır. Şayet GPG anahtarlığınızda ilişkilendirilmiş bir e-posta adresini alıcı olarak girerseniz otomatik olarak Kmail e-postayı şifreleme seçeneğini de açacaktır.
 

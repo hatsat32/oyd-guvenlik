@@ -19,5 +19,4 @@ git-repository-icon = "fa-git" #|fa-git-square
 [output.html.search]
 enable = true
 
-[output.html.fold]
-enabled = true
+
