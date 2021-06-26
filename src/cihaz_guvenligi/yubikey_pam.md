@@ -11,9 +11,7 @@
 Debian tabanlı sistemler için:
 
 ```
-sudo apt-add-repository ppa:yubico/stable
-sudo apt update
-sudo apt install yubikey-manager
+sudo apt install libpam-yubico yubikey-manager
 ```
 
 RPM tabanlı sistemler için: `sudo yum install libpam-yubico yubikey-manager`
