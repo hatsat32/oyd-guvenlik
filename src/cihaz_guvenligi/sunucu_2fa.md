@@ -1,8 +1,8 @@
 # SSH Erişiminde OTP Kullanımı
 
-[Nextcloud](https://nextcloud.com/) veya [OpenVPN](ag_guvenligi/vpn.md) gibi hizmetleri kişisel kullanımınız için kendiniz barındırıyorsanız veya bir sebepten sunucu yönetimindeyseniz uzak sunucunuzun güvenliği tüm sisteminizin güvenliği anlamına gelmekte.
+[Nextcloud](https://nextcloud.com/) veya [OpenVPN](../ag_guvenligi/vpn.md) gibi hizmetleri kişisel kullanımınız için kendiniz barındırıyorsanız veya bir sebepten sunucu yönetimindeyseniz uzak sunucunuzun güvenliği tüm sisteminizin güvenliği anlamına gelmekte.
 
-[SSH güvenliği](ssh.md) cihazınıza uzaktan sistem erişimine tek imkan olduğundan tüm güvenliğin de düğüm noktasını oluşturmakta. SSH kullanımına ilişkin genel tedbirleri aldıktan sonra yetkilendirme bakımından gereklilikleri bir adım daha ileri taşıyarak bir saldırganın sisteminize erişmek için sahip olması gereken kaynakları arttırabilirsiniz. Bu bakımdan SSH anahtarı ve parolanın yanında bir üçüncü faktör olarak [OTP](beseri_guvenlik/2fa.md) kullanmanız mümkün.
+[SSH güvenliği](ssh.md) cihazınıza uzaktan sistem erişimine tek imkan olduğundan tüm güvenliğin de düğüm noktasını oluşturmakta. SSH kullanımına ilişkin genel tedbirleri aldıktan sonra yetkilendirme bakımından gereklilikleri bir adım daha ileri taşıyarak bir saldırganın sisteminize erişmek için sahip olması gereken kaynakları arttırabilirsiniz. Bu bakımdan SSH anahtarı ve parolanın yanında bir üçüncü faktör olarak [OTP](../beseri_guvenlik/2fa.md) kullanmanız mümkün.
 
 OTP gerekliliğini iki şekilde uygulamanız mümkün. Bu SSH kullanımınızı nasıl yönettiğinize bağlı olarak.
 
@@ -28,7 +28,7 @@ Google-authenticator'ü yapılandırmak için aşağıdaki komutu yetkilendirmed
 
 `google-authenticator`
 
-Ardından Karşınıza gelecek karekodu [andOTP](beseri_guvenlik/andotp.md) ile tarayıp kodu kullanılabilir hale getirin ve acil durum kodlarını güvenli şekilde saklamak üzere yazdırıp kaldırın.
+Ardından Karşınıza gelecek karekodu [andOTP](../beseri_guvenlik/andotp.md) ile tarayıp kodu kullanılabilir hale getirin ve acil durum kodlarını güvenli şekilde saklamak üzere yazdırıp kaldırın.
 
 ![alt-text](ga/qrcode.png)
 

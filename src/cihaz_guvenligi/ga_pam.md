@@ -1,6 +1,6 @@
 # Google-Authenticator ile Login Güvenliği
 
-Google-authenticator(GA) GNU/Linux cihazlarda login ekranlarında parola ile birlikte [ikinci faktör olarak (2FA)](beseri_guvenlik/2fa.md) akıllı cihazlardan alınacak bir kodu sunarak giriş yapılmasına imkan veren bir yazılım. GA kullanarak cihazlarınıza erişimi daha kontrollü ve güvenli hale getirmek mümkün.
+Google-authenticator(GA) GNU/Linux cihazlarda login ekranlarında parola ile birlikte [ikinci faktör olarak (2FA)](../beseri_guvenlik/2fa.md) akıllı cihazlardan alınacak bir kodu sunarak giriş yapılmasına imkan veren bir yazılım. GA kullanarak cihazlarınıza erişimi daha kontrollü ve güvenli hale getirmek mümkün.
 
 ## Kurulum
 
@@ -20,7 +20,7 @@ Uçbirimde aşağıdaki şekilde bir karekod ve bir terslik durumunda kullanılm
 
 ![alt-text](ga/qrcode.png)
 
-Çıkan karekodu tercihiniz olan bir OTP yazılımı ile mobil cihazınıza eklemelisiniz. Bunun için özgür [andOTP yazılımı önerilir ve kullanım rehberine başvurabilirsiniz.](beseri_guvenlik/andotp.md) Aynı zamanda acil durum kodlarını da elle veya yazıcı ile yazdırarak güvenli bir yerde taşımanız bir aksilik durumunda cihazınıza erişmeniz için hararetle önerilir. Bunun için en iyi yol bastırdığınız kodları kesip koyu renkli bir bant ile kaparak cüzdan gibi sürekli taşıdığınız bir yerde bulundurmanız olacaktır. Böylece gerektiğinde kodları kullanmanız mümkün olacağı gibi istenmeyen şekilde el geçirilmesinin de önüne geçebilirsiniz. Şayet tehdit modelniz bu durumun aksine hareket etmenizi gerektiriyor ise cihazınıza daha zor olacak ise de GA erişimi olmadan da ulaşmanız mümkündür.
+Çıkan karekodu tercihiniz olan bir OTP yazılımı ile mobil cihazınıza eklemelisiniz. Bunun için özgür [andOTP yazılımı önerilir ve kullanım rehberine başvurabilirsiniz.](../beseri_guvenlik/andotp.md) Aynı zamanda acil durum kodlarını da elle veya yazıcı ile yazdırarak güvenli bir yerde taşımanız bir aksilik durumunda cihazınıza erişmeniz için hararetle önerilir. Bunun için en iyi yol bastırdığınız kodları kesip koyu renkli bir bant ile kaparak cüzdan gibi sürekli taşıdığınız bir yerde bulundurmanız olacaktır. Böylece gerektiğinde kodları kullanmanız mümkün olacağı gibi istenmeyen şekilde el geçirilmesinin de önüne geçebilirsiniz. Şayet tehdit modelniz bu durumun aksine hareket etmenizi gerektiriyor ise cihazınıza daha zor olacak ise de GA erişimi olmadan da ulaşmanız mümkündür.
 
 Karekodu taradıktan sonra gelecek tüm sorulara evet diyerek kurulumu tamamlayın. Çıkan sorular sırası ile bir kodun tekrar kullanılması, zaman sapmalarına karşı koruma ve sürekli giriş denemelerine karşı tedbir sunacaktır.
 

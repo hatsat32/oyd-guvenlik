@@ -88,7 +88,7 @@ Anahtarlığınızdaki belirli bir anahtarı arıyor iseniz aşağıdaki şekild
 
 ## Anahtar imzalarını kontrol etme
 
-Bir anahtardaki imzaları görüntülemek yerine bu imzalar arasında [WOT](/yazisma_guvenligi/gpg/wot.md) ile güven ağı doğrulaması yapmak isterseniz aşağıdaki komut ile anahtarlığınızdaki umumi anahtarlarla atılı imzalar arasında bir bağlantı olup olmadığını denetleyebilirsiniz.
+Bir anahtardaki imzaları görüntülemek yerine bu imzalar arasında [WOT](wot.md) ile güven ağı doğrulaması yapmak isterseniz aşağıdaki komut ile anahtarlığınızdaki umumi anahtarlarla atılı imzalar arasında bir bağlantı olup olmadığını denetleyebilirsiniz.
 
 `gpg --check-signatures [anahtar ID veya e-posta]`
 
@@ -100,11 +100,11 @@ Kendi anahtarınıza veya bir başka kişiye ait umumi anahtarı bir amaçla kul
 
 ## Sunucuda anahtar arama
 
-Pek çok GPG anahtarı anahtar sunucularında aleni olarak tutulur. Bu anahtar rehberlerinde belirli bir anahtarı, ismi veya e-postayı aramak mümkündür. Bu aranan anahtarın iddia edilen kişi veya e-postaya ait olduğunu göstermese de anahtar keşfini kolaylaştırmaktadır. Anahtarı doğrulamak için [güven ağından faydalanmak](/yazisma_guvenligi/gpg/wot.md) veya harici kaynaklardan bu anahtarı doğrulamak gereklidir. Bir anahtar sunucunda anahtar aramak için aşağıdaki komutu kullanabilirsiniz.
+Pek çok GPG anahtarı anahtar sunucularında aleni olarak tutulur. Bu anahtar rehberlerinde belirli bir anahtarı, ismi veya e-postayı aramak mümkündür. Bu aranan anahtarın iddia edilen kişi veya e-postaya ait olduğunu göstermese de anahtar keşfini kolaylaştırmaktadır. Anahtarı doğrulamak için [güven ağından faydalanmak](wot.md) veya harici kaynaklardan bu anahtarı doğrulamak gereklidir. Bir anahtar sunucunda anahtar aramak için aşağıdaki komutu kullanabilirsiniz.
 
 `gpg --search [anahtar ID veya e-posta]`
 
-Bu GPG yapılandırmanızda belirli olan anahtar sunucusunu kullanacaktır. Kimi zaman [Protonmail anahtar sunucusunda arama yapmak gibi](/yazisma_guvenligi/protonmail.md) belirli bir sunucuda arama yapmak isteyebilirsiniz. Bu durumda `--keyserver` parametresi ile sunucu adresi belirtmeniz gereklidir.
+Bu GPG yapılandırmanızda belirli olan anahtar sunucusunu kullanacaktır. Kimi zaman [Protonmail anahtar sunucusunda arama yapmak gibi](../protonmail.md) belirli bir sunucuda arama yapmak isteyebilirsiniz. Bu durumda `--keyserver` parametresi ile sunucu adresi belirtmeniz gereklidir.
 
 `gpg --search --keyserver [sunucu adresi] [anahtar ID veya e-posta]`
 
@@ -229,7 +229,7 @@ Seçili öğeler üzerinde menüde çıkan işlemleri dilediğiniz gibi gerçekl
 
 ## Anahtar imzalama
 
-Tanıdığınız ve güvendiğiniz bir kişinin anahtarının o kişiye ait olduğunu kanıtlamak için kişinin anahtarını kendi anahtarınız ile imzalayabilirsiniz. Bunu yaptığınızda kişiyi kendi [güven ağınıza](/yazisma_guvenligi/gpg/wot.md) dahil edersiniz. Bu güveni fiilen tanıştığınız ve gerçek kimliğini bildiğiniz kişilere vermeniz kendi güven ağınızdaki diğer kişiler açısından çok önemlidir. Sizin güvendiğiniz kişiye diğer kişiler de otomatik olarak güvenecektir.
+Tanıdığınız ve güvendiğiniz bir kişinin anahtarının o kişiye ait olduğunu kanıtlamak için kişinin anahtarını kendi anahtarınız ile imzalayabilirsiniz. Bunu yaptığınızda kişiyi kendi [güven ağınıza](wot.md) dahil edersiniz. Bu güveni fiilen tanıştığınız ve gerçek kimliğini bildiğiniz kişilere vermeniz kendi güven ağınızdaki diğer kişiler açısından çok önemlidir. Sizin güvendiğiniz kişiye diğer kişiler de otomatik olarak güvenecektir.
 
 Bir kişinin anahtarını imzalamak için aşağıdaki komutu çalıştırıp karşınıza gelen mesajları takip edebilirsiniz.
 

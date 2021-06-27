@@ -38,7 +38,7 @@ Alternatif linkler:
 * [Archive.org](https://archive.org/details/@gettor)
 * [Google Drive](https://drive.google.com/drive/folders/13CADQTsCwrGsIID09YQbNz2DfRMUoxUU) (mahremiyetinize saygı göstermez)
 
-Bunların hiçbirine erişemiyorsanız, <gettor@torproject.org> adresine, işletim sisteminizi ve istediğiniz dili içeren aşağıdaki gibi bir e-posta atarsanız, indirme linkiniz attığınız e-postaya cevap olarak gelecektir. _Cevabın gelmesi bazen 1 saati bulabilmektedir._
+Bunların hiçbirine erişemiyorsanız, [gettor@torproject.org](mailto:gettor@torproject.org) adresine, işletim sisteminizi ve istediğiniz dili içeren aşağıdaki gibi bir e-posta atarsanız, indirme linkiniz attığınız e-postaya cevap olarak gelecektir. _Cevabın gelmesi bazen 1 saati bulabilmektedir._
 
 `windows tr`
 

@@ -83,7 +83,7 @@ Karşınıza gelen ekrandan yeni biriminize bir isim verip ekran görüntüsünd
 
 ![alt-text](luks_usb/gd_bolumlendir3.png)
 
-Bu noktada Gnome Disks size parolanızı soracaktır. Bu parola doğrudan şifrelediğiniz verilerin güvenliği olduğundan kullandığınız [parolanın güvenli olmasına](beseri_guvenlik/parolalar.md) özen göstermelisiniz. Yazılımın sunduğu **güvenlik ölçer çok güvenilir değildir**. Bir [Zarola](https://zarola.oyd.org.tr) size güvenlik ve hatırlanabilirlik açısından en iyi sonucu verecektir.
+Bu noktada Gnome Disks size parolanızı soracaktır. Bu parola doğrudan şifrelediğiniz verilerin güvenliği olduğundan kullandığınız [parolanın güvenli olmasına](../beseri_guvenlik/parolalar.md) özen göstermelisiniz. Yazılımın sunduğu **güvenlik ölçer çok güvenilir değildir**. Bir [Zarola](https://zarola.oyd.org.tr) size güvenlik ve hatırlanabilirlik açısından en iyi sonucu verecektir.
 
 "Oluştur" düğmesine tıklamanız ile Gnome Disks LUKS bölümünüz oluşturmaya başlayacaktır. İşlem bittiğinde anaekranda aşağıdaki görüntü ile karşılacaksınız. Bu noktadan sonra taşınabilir depolama aygıtınız kullanıma hazırdır!
 
@@ -238,7 +238,7 @@ Karşınıza gelen ekrandan yeni biriminize bir isim verip ekran görüntüsünd
 
 ![alt-text](luks_usb/gd_bolumlendir3.png)
 
-Bu noktada Gnome Disks size parolanızı soracaktır. Bu parola doğrudan şifrelediğiniz verilerin güvenliği olduğundan kullandığınız [parolanın güvenli olmasına](beseri_guvenlik/parolalar.md) özen göstermelisiniz. Yazılımın sunduğu **güvenlik ölçer çok güvenilir değildir**. Bir [Zarola](https://zarola.oyd.org.tr) size güvenlik ve hatırlanabilirlik açısından en iyi sonucu verecektir.
+Bu noktada Gnome Disks size parolanızı soracaktır. Bu parola doğrudan şifrelediğiniz verilerin güvenliği olduğundan kullandığınız [parolanın güvenli olmasına](../beseri_guvenlik/parolalar.md) özen göstermelisiniz. Yazılımın sunduğu **güvenlik ölçer çok güvenilir değildir**. Bir [Zarola](https://zarola.oyd.org.tr) size güvenlik ve hatırlanabilirlik açısından en iyi sonucu verecektir.
 
 ![alt-text](luks_usb/gd_bolumlendir3.png)
 

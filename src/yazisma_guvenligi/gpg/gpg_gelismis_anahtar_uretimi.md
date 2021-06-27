@@ -385,11 +385,11 @@ Artık cihazlarınızda kullanacağınız sıyrılmış alt anahtarlarınızı d
 
 [Yubikey rehberi yazarak katkıda bulunabilirsiniz](https://git.oyd.org.tr/oyd/guvenlik/issues/59)
 
-[GnuPG akıllı kart rehberi yazarak katkıda bulunabilirsiniz]
+[GnuPG akıllı kart rehberi yazarak katkıda bulunabilirsiniz](https://git.oyd.org.tr/oyd/guvenlik)
 
 ## Kaynaklar
 
-- [Getting Started with GNU Privacy Guard ](https://spin.atomicobject.com/2013/09/25/gpg-gnu-privacy-guard/)
+- [Getting Started with GNU Privacy Guard](https://spin.atomicobject.com/2013/09/25/gpg-gnu-privacy-guard/)
 
 - [GPG Tutorial](https://futureboy.us/pgp.html#GettingStarted)
 

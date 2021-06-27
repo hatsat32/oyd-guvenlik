@@ -2,7 +2,7 @@
 
 <!-- toc -->
 
-[Pass](https://www.passwordstore.org/) 700 satır bash betiği ile yazılmış inanılmaz basit ve etkili bir parola yöneticisi. Parolaları üst verileri ile birlikte ev dizini altında [GPG](/yazisma_guvenligi/gpg/gpg.md) ile şifreleyerek saklamakta. Bir uçbirim yazılımı olmakla birlikte hem Android hem de GNU/Linux için grafik önyüzü ve Firefox tarayıcı etklentisi bulunmakta. Şayet GPG kullanıyorsanız Pass'ten daha basit ve etkili bir parola yöneticisi bulmak zor.
+[Pass](https://www.passwordstore.org/) 700 satır bash betiği ile yazılmış inanılmaz basit ve etkili bir parola yöneticisi. Parolaları üst verileri ile birlikte ev dizini altında [GPG](../yazisma_guvenligi/gpg/gpg.md) ile şifreleyerek saklamakta. Bir uçbirim yazılımı olmakla birlikte hem Android hem de GNU/Linux için grafik önyüzü ve Firefox tarayıcı etklentisi bulunmakta. Şayet GPG kullanıyorsanız Pass'ten daha basit ve etkili bir parola yöneticisi bulmak zor.
 
 ## Pass kurulumu ve kullanımı
 
@@ -20,7 +20,7 @@ Debian tabanlı dağıtımlarda: `sudo apt-get install qtpass`
 
 RPM tabanlı dağıtımlarda: `sudo yum install qtpass`
 
-Kurulumun tamamlanması ardından `QtPass` çalıştırdığınızda ilk kurulum için gerekli ayarların yapılmasına başlanacaktır. Bu ayarlardan ilki kullanılacak GPG anahtarının belirlenmesi. Pass bunun için GNU/Linux dağıtımınızın kullandığı GPG yazılımını kullanacağından gizli anahtarınızın üretilmiş ve kullanıma hazır olarak bulunması gerekmekte. Bir GPG anahtarı oluşturmak için [kolay GPG anahtar üretimi rehberinden](/yazisma_guvenligi/gpg/gpg-anahtar-uretimi.md) yardım alabilirsiniz.
+Kurulumun tamamlanması ardından `QtPass` çalıştırdığınızda ilk kurulum için gerekli ayarların yapılmasına başlanacaktır. Bu ayarlardan ilki kullanılacak GPG anahtarının belirlenmesi. Pass bunun için GNU/Linux dağıtımınızın kullandığı GPG yazılımını kullanacağından gizli anahtarınızın üretilmiş ve kullanıma hazır olarak bulunması gerekmekte. Bir GPG anahtarı oluşturmak için [kolay GPG anahtar üretimi rehberinden](../yazisma_guvenligi/gpg/gpg-anahtar-uretimi.md) yardım alabilirsiniz.
 
 ![](pass/ilk_uyari.png)
 
@@ -32,7 +32,7 @@ Anahtar seçiminizi yaptıktan sonra Pass'ın genel ayarları ile karşılanacak
 
 Aynı penceredenin `settings` kısmında QtPass'ın genel ayarlarını bulabilirsiniz. Burada gelen varsayılan ayarlar kullanılması en iyi seçenekleri ifade ediyor. Şayet parola üretiminden veya pano seçeneklerinden değiştirmek istedikleriniz var ise özel ihtiyaçlarınız için bu bölümden yapabilirsiniz. Buradaki önemli seçeneklerden bir tanesi `Git` seçeneği. Bu seçenek parolalarınızın bulunduğu dizini bir git reposu ile eşitlemeye yaramakta ve birden fazla cihaz ile eş olarak parolalarınızı kullanabilmenize imkan vermekte. Şayet parolalarınızı şifreli olarak uzak bir sunucuda tutmak konusunda tehdit modeliniz açısından bir sıkıntı yoksa bu seçenek en kolay eşitlemeyi size sağlayacaktır. Ayarları tamamlamanız üzere QtPass'ın ana ekranı karşınıza gelecektir.
 
-![](pass/anaeksran.png)
+![](pass/anaekran.png)
 
 Buradan parola dizininizde yeni dizinler açabilir ve bu dizinlere yeni parolalar ekleyebilirsiniz. Sağ üst sekmeden `+` simgesi bulunan sayfa düğmesinden yeni parola ekleyebilirsiniz. QtPass size ilk olarak parolanızı tutacak dosyanın adını soracaktır. Şayet buraya bir web hizmetinin parolasını kaydedecekseniz alan adında geçen bir kelimeyi yazmak tarayıcı eklentisinin otomatik olarak bu parolayı size önermesini sağlayacaktır.
 
@@ -50,7 +50,7 @@ Oluşturacağınız parolayı ve diğer bilgileri girmek üzere karşınıza gel
 
 Parolayı kaydetmeniz üzerine parolanız verdiğiniz isimle birlikte ana ekranda yerini alacaktır. Üzerine tıkladığınızda QtPass size GPG parolanızı soracak ve başarılı bir şekilde girmeniz üzerine sağ tarafta parolaya ilişkin detaylar belirecektir.
 
-![](pass/anakeran_parola.png)
+![](pass/anaekran_parola.png)
 
 ### Passff Firefox tarayıcı eklentisi
 
@@ -77,7 +77,7 @@ Kurulumun ardından Firefox çubuğunda yer alacak passff simgesinden parolalar�
 
 ## Android
 
-Pass'i Android'de kullanmak muhtemelen en kolay seçenek olabilir. Bunun için [Openkeychain](https://www.openkeychain.org/) yazılımını cihazınıza kurmuş ve GPG anahtarınızı kullanılabilir kılmış olmanız gerekli. Bunun için [GnuPG Anahtar Üretimi](/yazisma_guvenligi/gpg/gpg-anahtar-uretimi.md) rehberinden destek alabilirsiniz.
+Pass'i Android'de kullanmak muhtemelen en kolay seçenek olabilir. Bunun için [Openkeychain](https://www.openkeychain.org/) yazılımını cihazınıza kurmuş ve GPG anahtarınızı kullanılabilir kılmış olmanız gerekli. Bunun için [GnuPG Anahtar Üretimi](../yazisma_guvenligi/gpg/gpg-anahtar-uretimi.md) rehberinden destek alabilirsiniz.
 
 Pass'i kullanabilmek için [Password Store](https://github.com/zeapo/Android-Password-Store#readme) yazılımını cihazınıza kurmanız gerekli. Password Store'u [F-droid özgür yazılım deposunda](https://f-droid.org) bulabilirsiniz.
 
@@ -91,7 +91,7 @@ Kurulumun ardından Password Store sizi kurulum ekranı ile karşılayacaktır.
 
 ![](pass/ps_repo.png)
 
-Ardından bu reponun gizli (hidden) mi yoksa açıkta (sd-card) mı olacağını seçmeniz gerekecek. Şayet gizli seçeneği ile ilerlerseniz Password Store kaydedeceğiniz parolaları kendi yetkisi kısıtlanmış alanda tutacaktır. Bu parolalarınızı eşitlemenizi neredeyse imkansız kılacağı gibi yedekleme seçeneklerinizi sadece Android'in kendi sistemine bırakacaktır şayet telefonunuza root erişiminiz yok ise. Şayet yerel depo ile devam edecekseniz önerimiz [Syncthing](https://syncthing.net) ile açık parola dizinini diğer cihazlarınıza eşitlemeniz olacaktır. Syncthing kullanımı için [eşitleme rehberimizden](cihaz_guvenligi/syncthing.md) faydalanabilirsiniz.
+Ardından bu reponun gizli (hidden) mi yoksa açıkta (sd-card) mı olacağını seçmeniz gerekecek. Şayet gizli seçeneği ile ilerlerseniz Password Store kaydedeceğiniz parolaları kendi yetkisi kısıtlanmış alanda tutacaktır. Bu parolalarınızı eşitlemenizi neredeyse imkansız kılacağı gibi yedekleme seçeneklerinizi sadece Android'in kendi sistemine bırakacaktır şayet telefonunuza root erişiminiz yok ise. Şayet yerel depo ile devam edecekseniz önerimiz [Syncthing](https://syncthing.net) ile açık parola dizinini diğer cihazlarınıza eşitlemeniz olacaktır. Syncthing kullanımı için [eşitleme rehberimizden](../cihaz_guvenligi/syncthing.md) faydalanabilirsiniz.
 
 ![](pass/ps_hidden.png)
 

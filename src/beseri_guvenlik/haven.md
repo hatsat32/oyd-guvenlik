@@ -1,12 +1,12 @@
 # Haven ile Güvenli Ortam İzlemesi
 
-[Haven](https://guardianproject.info/apps/org.havenapp.main/) [Guardian Project](https://guardianproject.info/) tarafından geliştirilen bir ortam izleme yazılımı. Mahremiyet ve güvenlik konuşulan bir rehberde olmaması gereken bir yazılım gibi görünse de Haven çok özelleşmiş bir sorunu çözmek için geliştirilen bir hayli etkili bir özgür yazılım. Haven çok basitçe bir Android cihazın sensörlerini kullanarak belirli bir alandaki değişiklikleri takip edip gerçekleşen değişiklikleri kaydederek cihazın sahibine haber verebiliyor. Bu ihtiyaç [Evil Maid](https://en.wikipedia.org/wiki/Evil_Maid_attack) tipi saldırılaradn doğmuş durumda. Özetle Haven, cihazlarınızı veya yaşam alanınızı bir otel odası gibi kontrol altında bırakmadan terk ettiğinizde arkadanızda bıraktıklarınıza yapılabilecek müdahalelerden doğabilecek güvenlik açıklarına karşı koymak için tasarlanıyor. Haven kurulu bir cihazı odanızı veya bir eşyanızı gören veya duyan bir noktaya kurulu şekilde bıraktığınızda olağan dışı hareket ve sesleri kaydedip kullanıcısına SMS veya [Signal](/yazisma_guvenligi/signal.md) üzerinden haber verebiiyor.
+[Haven](https://guardianproject.info/apps/org.havenapp.main/) [Guardian Project](https://guardianproject.info/) tarafından geliştirilen bir ortam izleme yazılımı. Mahremiyet ve güvenlik konuşulan bir rehberde olmaması gereken bir yazılım gibi görünse de Haven çok özelleşmiş bir sorunu çözmek için geliştirilen bir hayli etkili bir özgür yazılım. Haven çok basitçe bir Android cihazın sensörlerini kullanarak belirli bir alandaki değişiklikleri takip edip gerçekleşen değişiklikleri kaydederek cihazın sahibine haber verebiliyor. Bu ihtiyaç [Evil Maid](https://en.wikipedia.org/wiki/Evil_Maid_attack) tipi saldırılaradn doğmuş durumda. Özetle Haven, cihazlarınızı veya yaşam alanınızı bir otel odası gibi kontrol altında bırakmadan terk ettiğinizde arkadanızda bıraktıklarınıza yapılabilecek müdahalelerden doğabilecek güvenlik açıklarına karşı koymak için tasarlanıyor. Haven kurulu bir cihazı odanızı veya bir eşyanızı gören veya duyan bir noktaya kurulu şekilde bıraktığınızda olağan dışı hareket ve sesleri kaydedip kullanıcısına SMS veya [Signal](../yazisma_guvenligi/signal.md) üzerinden haber verebiiyor.
 
 Haven hala geliştirme sürecinde ve kullanılabilir olmakla birlikte kimi sorunlarla karşılaşmanız mümkün. Lakin çözdüğü sorunun önemi ve özgür bir başka çözümün yokluğunda yukarıda belirtilen bir saldırıyı tehdit modelinde gören kişilerin kullanması için değerlendirilebilir durumda.
 
 ## Haven'i yükleyin
 
-Bunun için bir Android mobil cihaza ihtiyacınız olacak. Tercihen ve fiyat/performans açısından [LineageOS](/cihaz_guvenligi/lineageos.md) kurulu kamerası ve mikrofonu çalışan ucuz bir cihaza [F-droid](https://f-droid.org) üzerinden kurulum yapabilirsiniz.
+Bunun için bir Android mobil cihaza ihtiyacınız olacak. Tercihen ve fiyat/performans açısından [LineageOS](../cihaz_guvenligi/lineageos.md) kurulu kamerası ve mikrofonu çalışan ucuz bir cihaza [F-droid](https://f-droid.org) üzerinden kurulum yapabilirsiniz.
 
 Bunun için öncelikle F-droid ayarlarından The Guardian Project'in deposunu etkinleştirmeniz gerekli.
 
@@ -58,9 +58,9 @@ Kayıtları Haven'i devredışı bıraktıktan sonra `kayıtları görüntüle` 
 
 ### Bildirim ve uzak erişim
 
-Haven takip ettiği olayları sadece kaydetmek değil aynı zamanda size göndermek imkanına da sahip. Bunun için iki yol bulunmakta. Biri [Signal](/yazisma_guvenligi/signal.md) kullanarak diğeri de [TOR](/ag_guvenligi/tor.md) üzerinden bir web sunucusu açıp buraya uzaktan erişmenize imkan sağlayarak. Signal seçeneği Signal kullanılmayan bir telefon numarası gerektirmekte, TOR seçeneği de düzenli bir internet bağlantısını. Bu ayarları Haven'in genel ayarlarından yapabilirsiniz.
+Haven takip ettiği olayları sadece kaydetmek değil aynı zamanda size göndermek imkanına da sahip. Bunun için iki yol bulunmakta. Biri [Signal](../yazisma_guvenligi/signal.md) kullanarak diğeri de [TOR](../ag_guvenligi/tor.md) üzerinden bir web sunucusu açıp buraya uzaktan erişmenize imkan sağlayarak. Signal seçeneği Signal kullanılmayan bir telefon numarası gerektirmekte, TOR seçeneği de düzenli bir internet bağlantısını. Bu ayarları Haven'in genel ayarlarından yapabilirsiniz.
 
-TOR kullanmak için yine The Guardian Project'in TOR istemcisi olan [Orbot](https://guardianproject.info/apps/org.torproject.android/) yazılımına ihtiyacınız olacak. Benzer şekilde F-droid'den indirebileceğiniz bu yazılım Haven'a TOR hidden service açma imkanı sağlayacaktır. Bunun ardından ayarlarda `wyig5ig2zamghhn.onion:8888` benzeri bir adres görülecek. [Tor Browser](/ag_guvenligi/tor.md) ile bu adrese girerek Haven'in kayıtlarına uzaktan belirleyeceğiniz parola ile erişebilirsiniz.
+TOR kullanmak için yine The Guardian Project'in TOR istemcisi olan [Orbot](https://guardianproject.info/apps/org.torproject.android/) yazılımına ihtiyacınız olacak. Benzer şekilde F-droid'den indirebileceğiniz bu yazılım Haven'a TOR hidden service açma imkanı sağlayacaktır. Bunun ardından ayarlarda `wyig5ig2zamghhn.onion:8888` benzeri bir adres görülecek. [Tor Browser](../ag_guvenligi/tor.md) ile bu adrese girerek Haven'in kayıtlarına uzaktan belirleyeceğiniz parola ile erişebilirsiniz.
 
 ### Telemetri
 

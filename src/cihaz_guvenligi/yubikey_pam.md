@@ -2,7 +2,7 @@
 
 <!-- toc -->
 
-[Yubikey](https://yubico.com) çok işlevli kriptografik bir güvenlik aracı. Yubikeyler [GPG](yazisma_guvenligi/gpg/gpg.md) anahtarı olarak kullanılabildiği gibi U2F ve TOTP gibi ikinci faktör yetkilendirme araçları olarak da kullanılabilmekte. Bu özellikleri sayesinde bilgisayarlarda yetkilendirme aşamasında ikinci faktör olarak kullanılması mümkün olmakta. Bu kullanıcıların bildikleri bir şey (parola/pin) ve sahip oldukları bir şey (Yubikey) ile sistemlere giriş yapabilmelerine imkan vermekte.
+[Yubikey](https://yubico.com) çok işlevli kriptografik bir güvenlik aracı. Yubikeyler [GPG](../yazisma_guvenligi/gpg/gpg.md) anahtarı olarak kullanılabildiği gibi U2F ve TOTP gibi ikinci faktör yetkilendirme araçları olarak da kullanılabilmekte. Bu özellikleri sayesinde bilgisayarlarda yetkilendirme aşamasında ikinci faktör olarak kullanılması mümkün olmakta. Bu kullanıcıların bildikleri bir şey (parola/pin) ve sahip oldukları bir şey (Yubikey) ile sistemlere giriş yapabilmelerine imkan vermekte.
 
 ## Kurulum
 

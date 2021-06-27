@@ -36,13 +36,13 @@ Cihazlarınızı fiziki müdahalelere karşı dayanıklı hale getirmek hem dona
 
 Cihazınızın /boot sektörünü ve tüm açılış aşamalarını kriptografik araçlarla kontrol altına alarak bir saldırganın bu süreci bozmasını engelleyebilirsiniz. Bu pek çok basit ve gelişmiş saldırıyı durdurma potansiyeline sahip bir tedbir olmakla kimi zaman özel donanım ve emek gerektirmektedir. 
 
-* [Boot sektörünü şifrelemek](cihaz_guvenligi/sifreli_boot.md)
+* [Boot sektörünü şifrelemek](../cihaz_guvenligi/sifreli_boot.md)
 
-* [Libreboot ve GPG ile boot güvenliği](cihaz_guvenligi/libreboot_grub.md)
+* [Libreboot ve GPG ile boot güvenliği](../cihaz_guvenligi/libreboot_grub.md)
 
-* [Boot sektörünü USB bellek üzerinde taşımak](cihaz_guvenligi/usb_grub.md)
+* [Boot sektörünü USB bellek üzerinde taşımak](../cihaz_guvenligi/usb_grub.md)
 
-* [Cihaz Şifreleme](cihaz_guvenligi/cihaz_sifreleme.md)
+* [Cihaz Şifreleme](../cihaz_guvenligi/cihaz_sifreleme.md)
 
 * [Yubikey ile GPG anahtarı Güvenliği]()
 

@@ -26,7 +26,7 @@ GnuPG anahtar üretimi için [rehberimize danışabilirsiniz](gpg/gpg-anahtar-ur
 
 ## Webmail kullanarak e-posta şifrelenebilir mi?
 
-Açıkçası, şifreli e-posta göndermenin en iyi yolu [Thunderbird](https://www.thunderbird.net/en-US/) gibi bir istemci ile [Enigmail](https://www.enigmail.net) benzeri bir eklenti kullanmaktır. Böylece şifreleme işlemi tamamen bilgisayarınızda güvenli şekilde gerçekleşir. Bu yöntemin kurulumu için [GnuPG ile e-posta şifreleme](/gpg/eposta-sifreleme.md) rehberimize bakabilirsiniz.
+Açıkçası, şifreli e-posta göndermenin en iyi yolu [Thunderbird](https://www.thunderbird.net/en-US/) gibi bir istemci ile [Enigmail](https://www.enigmail.net) benzeri bir eklenti kullanmaktır. Böylece şifreleme işlemi tamamen bilgisayarınızda güvenli şekilde gerçekleşir. Bu yöntemin kurulumu için [GnuPG ile e-posta şifreleme](thunderbird_enigmail.md) rehberimize bakabilirsiniz.
 
 Şayet kullandığınız e-posta hizmeti istemci üzerinden bağlanmanıza imkan vermiyor veya başka bir sebepten istemci kullanmak istemiyorsanız bir tarayıcı eklentisi ile e-postalarınız şifrelemeniz mümkün. [Mailvelope](https://www.mailvelope.com/en/) veya [FireGnuPG](http://tr.getfiregpg.org/s/home) gibi eklentiler tarayıcınızda şifreleme işlemini gerçekleştirebilir.
 

@@ -6,5 +6,5 @@ Hem fiyatların azalması hem de kapasitenin geometrik artışı usb bellekleri 
 
 Taşınablir belleklerle ilgili dikkat edilmesi gereken iki olası durum bulunmakta. Bir belleğin kaybolması durumunda üzerindeki şifresiz verilerin ele geçirilmesi tehlikesi ile şifresiz taşınan fakat silindiği düşünülen verilerin özel tekniklerle geri getirilmesi ihtimali. Bu iki husus planlama, uygun araçların kullanımı ve konuya ilişkin disiplinle kolaylıkla yönetilebilecek riskler.
 
-* [Harici bellek şifreleme](/cihaz_guvenligi/luks_usb.md)
-* [Güvenli dosya silme](/cihaz_guvenligi/dosya_silme.md)
+* [Harici bellek şifreleme](luks_usb.md)
+* [Güvenli dosya silme](dosya_silme.md)

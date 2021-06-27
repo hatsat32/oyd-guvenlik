@@ -8,10 +8,10 @@ Cihazlarımızı güvenli kılmak bugün çaresiz bir kavga olmaktan gün geçti
 
 Elbette günümüzde cihazların özgürlüğü ve güvenliği tamamen kazanılmış değildir. Bgün üretim sistemlerinin ve üretilen donanımların karmaşıklığı bireysel olarak bu cihazların incelenmesini ve kesinlikle güvenilirliğinin kanıtlanmasını çok zorlaştırmakta. Fakat basit birkaç adım bir çok tehdide karşı koyabilecek şekilde cihazları güvenli kılabilmekte ve pek çok durumda bu yazılım ve donanım özgürlüğünden geçmekte. [Özgür Yazılım Derneği / Donanım Özgürlüğü](https://oyd.org.tr/yazilar/donanim-ozgurlugu/) makalesinin bu konu hakkında okunması önerilebilir.
 
-* [Yazılım Güvenliği](cihaz_guvenligi/yazilim_guvenligi.md)
-* [Cihaz Şifreleme](cihaz_guvenligi/cihaz_sifreleme.md)
-* [Mobil Cihazlar](cihaz_guvenligi/mobil_cihazlar.md)
-* [Taşınabilir Bellekler](cihaz_guvenligi/luks_usb.md)
-* [Optik Disk Şifreleme](cihaz_guvenligi/luks_optik.md)
-* [Yönlendirici Güvenliği](cihaz_guvenligi/yonlendirici.md)
-* [Boot Güvenliği](cihaz_guvenligi/boot_guvenligi.md)
+* [Yazılım Güvenliği](yazilim_guvenligi.md)
+* [Cihaz Şifreleme](cihaz_sifreleme.md)
+* [Mobil Cihazlar](mobil_cihazlar.md)
+* [Taşınabilir Bellekler](luks_usb.md)
+* [Optik Disk Şifreleme](luks_optik.md)
+* [Yönlendirici Güvenliği](yonlendirici.md)
+* [Boot Güvenliği](boot_guvenligi.md)

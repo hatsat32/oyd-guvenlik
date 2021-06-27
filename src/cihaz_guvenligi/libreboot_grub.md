@@ -20,7 +20,7 @@ GnuPG ile Libreboot'un GRUB'ın kurulumunu ve yüklenecek çekirdeklerin değiş
 
 ## Bir GnuPG anahtarı oluşturun
 
-GRUB, kriptografik olarak çekirdek ve ayar dosyalarını denetlemek için GnuPG kullanmaktadır. Şifreleme esnasında kullanılacak anahtarın kullanıcı tarafından üretilmesi gerekmektedir. Eğer halihazırda bir GnuPG anahtarınız yoksa, sadece bu amaçla kullanmak için veya genel olarak kullanılmak üzere bir GnuPG anahtarı üretebilirsiniz. Bunun için [GnuPG anahtar üretimi](/yazisma_guvenligi/gpg/gpg-anahtar-uretimi.md) rehberinden yararlanabilirsiniz.
+GRUB, kriptografik olarak çekirdek ve ayar dosyalarını denetlemek için GnuPG kullanmaktadır. Şifreleme esnasında kullanılacak anahtarın kullanıcı tarafından üretilmesi gerekmektedir. Eğer halihazırda bir GnuPG anahtarınız yoksa, sadece bu amaçla kullanmak için veya genel olarak kullanılmak üzere bir GnuPG anahtarı üretebilirsiniz. Bunun için [GnuPG anahtar üretimi](../yazisma_guvenligi/gpg/gpg-anahtar-uretimi.md) rehberinden yararlanabilirsiniz.
 
 Bu noktada, ihtiyaç ve beklentilerinize göre değerlendirmeniz gereken bir husus vardır. Eğer kişisel GnuPG anahtarınızı sürekli olarak kullanacaksanız, bu anahtarın bir noktada açığa çıkması veya kaybedilmesi tehlikesini de göze almanız gerekecektir. Aynı zamanda bu durum, siz farkında olmadan anahtarınız kullanılarak çekirdeklerin veya ayar dosyalarının sizin anahtarınızla imzalanabileceği anlamına da gelmektedir. Bu sebepten dolayı anahtarınızı bir [zarola](https://zarola.oyd.org.tr) ile korumanızı ve [kağıt bir yedeğini almanızı](../yazisma_guvenligi/gpg/paperbackup.md) şiddetle tavsiye ederiz.
 

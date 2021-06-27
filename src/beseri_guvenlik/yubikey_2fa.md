@@ -32,7 +32,7 @@ Debian : `sudo apt-get install yubikey-manager yubikey-personalization yubikey-p
 
 RPM : `sudo yum install yubikey-manager yubikey-personalization yubikey-personalization-gui`
 
-Gerekli yazılımları elde ettikten sonra OTP kullanacağınız hizmetin ayarlarına gelip muhtemelen `güvenlik` adı altında bulacağınız çift aşamalı yetkilendirme (Two Factor authentication veya 2FA) bölümüne gelip söz konusu güvenlik tedbirini etkinleştirin. Bu rehberde [Protonmail](/yazisma_guvenligi/protonmail.md) kullanılmıştır.
+Gerekli yazılımları elde ettikten sonra OTP kullanacağınız hizmetin ayarlarına gelip muhtemelen `güvenlik` adı altında bulacağınız çift aşamalı yetkilendirme (Two Factor authentication veya 2FA) bölümüne gelip söz konusu güvenlik tedbirini etkinleştirin. Bu rehberde [Protonmail](../yazisma_guvenligi/protonmail.md) kullanılmıştır.
 
 OTP soft token olarak mobil cihazlarda kullanılması düşünüldüğünden bir karekod şeklinde hizmet sağlayıcı tarafından sunulacaktır. Bu karekod aslında paylaşılan sırrı ve süre ile kritopgrafik ayarlara ilişkin detaylar içermekte. Bu bilgileri elle de girmek mümkün ki bilgisayarda bu şekilde yapılması gerekli. Elle giriş seçeneğini seçerek gerekli detaylara ulaşabilirsiniz.
 
@@ -127,6 +127,6 @@ Kurulumu başlattıktan sonra çeşitli şekillerde sizden Yubikey'inizi bağlam
 
 Kaydın başarılı olması üzerine hesabınıza anahtarınız tanımlanacaktır.
 
-Bu durumda kaydettiğiniz yubikey'in kaybolması durumunda **hesabınıza erişemez** hale gelebilirsiniz. Bu neden ile ikinci bir güvenlik tedbirini daha kaydederek bu duruma engel olmanız mümkün. Bunun için [Akıllı cihaz üzerinden OTP kullanımını](andotp.png) tavsiye ederiz.
+Bu durumda kaydettiğiniz yubikey'in kaybolması durumunda **hesabınıza erişemez** hale gelebilirsiniz. Bu neden ile ikinci bir güvenlik tedbirini daha kaydederek bu duruma engel olmanız mümkün. Bunun için [Akıllı cihaz üzerinden OTP kullanımını](andotp.md) tavsiye ederiz.
 
 Yubikey'de U2F yetkilendirmesine pin veya parola ile tedbir koyulamamakta. Bu nedenle Yubikey'inizi elinde bulunduran biri herhangi bir sorun çekmeden ikinci faktör olarak cihazınızı kullanabilir. Bu sebepten **Yubikey'inizi iyi korumanız önerilir.** Bu tehdit modeli sizin için geçerli ise Yubikey ile TOTP OTP kullanımı pin ile korunabildiğinden daha güvenli olacaktır.

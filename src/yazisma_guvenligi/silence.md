@@ -4,7 +4,7 @@
 
 ## SMS'ler neden şifrelenmelidir?
 
-[SMS veya kısa mesaj servisi](https://en.wikipedia.org/wiki/Short_Message_Service) cep telefonlarına gelen ilk yazılı iletişim sistemidir. Bu amaçla günümüzde artık kişiler arasındaki iletişim için pek kullanılmasa da GSM sistemleri tarafından hala desteklenmekte ve [2FA](/beseri_guvenlik/2fa.md) için sıklıkla kullanılmaktadır.
+[SMS veya kısa mesaj servisi](https://en.wikipedia.org/wiki/Short_Message_Service) cep telefonlarına gelen ilk yazılı iletişim sistemidir. Bu amaçla günümüzde artık kişiler arasındaki iletişim için pek kullanılmasa da GSM sistemleri tarafından hala desteklenmekte ve [2FA](../beseri_guvenlik/2fa.md) için sıklıkla kullanılmaktadır.
 
 SMS'ler operatörlerin elinde bulunan anahtarlarla telefon ile baz istasyonu arasında şifrelenmektedir. Lakin anahtar kullanıcının kontrolünde olmadığından uçtan uca şifrelemenin sağlayacağı güvenliği veya operatör ile uyması gereken kanunlara karşı mahremiyeti sunamayacaktır. [Aynı zamanda GSM ağındaki SMS şifrelemenin dayanıklılığı da şüphelidir.](https://www.schneier.com/blog/archives/2019/11/eavesdropping_o_8.html)
 
@@ -16,7 +16,7 @@ Bu sebepte ötürü SMS ile şifreli yazışma yapabilmek kimi olasılıklarda y
 
 ## SMS nasıl şifrelenir?
 
-SMS temelde mesaj başına 160 karakter metin aktarımı sağlar. Bu bakımdan haricen şifrelenmiş bir veriyi mesaj olarak göndermenizde bir engel yoktur. Dilerseniz [GPG](yazisma_guvenligi/eposta-sifreleme.md) ile bir mesajı şifreleyip SMS ile uzun da olsa göndermeniz mümkündür. Bu yöntem kesinlikle pratik olmamakla birlikte gerektiğinde kullanılabilir.
+SMS temelde mesaj başına 160 karakter metin aktarımı sağlar. Bu bakımdan haricen şifrelenmiş bir veriyi mesaj olarak göndermenizde bir engel yoktur. Dilerseniz [GPG](openpgp.md) ile bir mesajı şifreleyip SMS ile uzun da olsa göndermeniz mümkündür. Bu yöntem kesinlikle pratik olmamakla birlikte gerektiğinde kullanılabilir.
 
 [Silence](https://silence.im/) özgür bir Android yazılımı olarak SMS şifrelemeyi neredeyse sorunsuz şekilde gerçekleştirmektedir. [F-droid](https://f-droid.org) üzerinden indirebileceğiniz yazılım cihazınızın standart SMS yazılımının yerine geçer ve hem şifreli hem şifresiz SMS'lerinizi Silence aracılığı ile kullanabilirsiniz. Silence ile diğer SMS yazılımları arasındaki farkı anlamak neredeyse mümkün değildir.
 
@@ -43,11 +43,11 @@ Menüye tıkladığınızda sizi aşağıdaki seçenekler karşılar.
 
 ![alt-text](silence/ayarlar.png)
 
-İçe ve dışa aktarım ayarları (import/export) Silence'ın kullanımında önemlidir. Bu ayarlardan Silence'da bulunan SMS'lerinizi yedekleyebilir ve yedeklerinizi daha sonra geri alabilirsiniz. Yedeklerinizi şifreli almanız güvenliğiniz için önerilir veya şifresiz yedeklerinizi alıp daha sonra şifreleyebilirsiniz. [Cihazınıza olan güveniniz bu kararınızda etkili olacaktır.](/cihaz_guvenligi/mobil_cihazlar.md)
+İçe ve dışa aktarım ayarları (import/export) Silence'ın kullanımında önemlidir. Bu ayarlardan Silence'da bulunan SMS'lerinizi yedekleyebilir ve yedeklerinizi daha sonra geri alabilirsiniz. Yedeklerinizi şifreli almanız güvenliğiniz için önerilir veya şifresiz yedeklerinizi alıp daha sonra şifreleyebilirsiniz. [Cihazınıza olan güveniniz bu kararınızda etkili olacaktır.](../cihaz_guvenligi/mobil_cihazlar.md)
 
 ![alt-text](silence/import_export.png)
 
-Mahremiyet (privacy) ayarları da Silence'ın kullanımına ilişkin önemli ayarları içerir. Bu menüde yapabileceğiniz en önemli ayar bir parola ile Silence'ın anahtar ve SMS'lerinin bulunduğu veri tabanını şifrelemektir. Bunun için parolayı etkinleştir (enable passphrase) seçeneğine tıkladıktan sonra gelen bölüme [bir parola yöneticisinden aldığınız](/beseri_guvenlik/parolalar.md) rastgele parolayı veya bir [Zarola](https://zarola.oyd.org.tr) girerek kurulumu sonlandırabilirsiniz.
+Mahremiyet (privacy) ayarları da Silence'ın kullanımına ilişkin önemli ayarları içerir. Bu menüde yapabileceğiniz en önemli ayar bir parola ile Silence'ın anahtar ve SMS'lerinin bulunduğu veri tabanını şifrelemektir. Bunun için parolayı etkinleştir (enable passphrase) seçeneğine tıkladıktan sonra gelen bölüme [bir parola yöneticisinden aldığınız](../beseri_guvenlik/parolalar.md) rastgele parolayı veya bir [Zarola](https://zarola.oyd.org.tr) girerek kurulumu sonlandırabilirsiniz.
 
 ![alt-text](silence/mahremiyet.png)
 
