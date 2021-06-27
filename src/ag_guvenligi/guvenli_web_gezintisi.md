@@ -16,7 +16,7 @@ Debian tabanlı dağıtımlar için: `sudo apt-get install firefox`
 
 RPM tabanlı dağıtımlar için: `sudo yum install firefox`
 
-![](/ag_guvenligi/guvenli_web_gezintisi/firefox_acilis.png)
+![](guvenli_web_gezintisi/firefox_acilis.png)
 
 ## Firefox güvenlik ayarlarını yapın
 

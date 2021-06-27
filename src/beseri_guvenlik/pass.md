@@ -2,7 +2,7 @@
 
 <!-- toc -->
 
-[Pass](https://www.passwordstore.org/) 700 satır bash betiği ile yazılmış inanılmaz basit ve etkili bir parola yöneticisi. Parolaları üst verileri ile birlikte ev dizini altında [GPG](/yazisma_guvenligi/gpg/gpg.md) ile şifreleyerek saklamakta. Bir uçbirim yazılımı olmakla birlikte hem Android hem de GNU/Linux için grafik önyüzü ve Firefox tarayıcı etklentisi bulunmakta. Şayet GPG kullanıyorsanız Pass'ten daha basit ve etkili bir parola yöneticisi bulmak zor.
+[Pass](https://www.passwordstore.org/) 700 satır bash betiği ile yazılmış inanılmaz basit ve etkili bir parola yöneticisi. Parolaları üst verileri ile birlikte ev dizini altında [GPG](../yazisma_guvenligi/gpg/gpg.md) ile şifreleyerek saklamakta. Bir uçbirim yazılımı olmakla birlikte hem Android hem de GNU/Linux için grafik önyüzü ve Firefox tarayıcı etklentisi bulunmakta. Şayet GPG kullanıyorsanız Pass'ten daha basit ve etkili bir parola yöneticisi bulmak zor.
 
 ## Pass kurulumu ve kullanımı
 
@@ -20,7 +20,7 @@ Debian tabanlı dağıtımlarda: `sudo apt-get install qtpass`
 
 RPM tabanlı dağıtımlarda: `sudo yum install qtpass`
 
-Kurulumun tamamlanması ardından `QtPass` çalıştırdığınızda ilk kurulum için gerekli ayarların yapılmasına başlanacaktır. Bu ayarlardan ilki kullanılacak GPG anahtarının belirlenmesi. Pass bunun için GNU/Linux dağıtımınızın kullandığı GPG yazılımını kullanacağından gizli anahtarınızın üretilmiş ve kullanıma hazır olarak bulunması gerekmekte. Bir GPG anahtarı oluşturmak için [kolay GPG anahtar üretimi rehberinden](/yazisma_guvenligi/gpg/gpg-anahtar-uretimi.md) yardım alabilirsiniz.
+Kurulumun tamamlanması ardından `QtPass` çalıştırdığınızda ilk kurulum için gerekli ayarların yapılmasına başlanacaktır. Bu ayarlardan ilki kullanılacak GPG anahtarının belirlenmesi. Pass bunun için GNU/Linux dağıtımınızın kullandığı GPG yazılımını kullanacağından gizli anahtarınızın üretilmiş ve kullanıma hazır olarak bulunması gerekmekte. Bir GPG anahtarı oluşturmak için [kolay GPG anahtar üretimi rehberinden](../yazisma_guvenligi/gpg/gpg-anahtar-uretimi.md) yardım alabilirsiniz.
 
 ![](pass/ilk_uyari.png)
 
@@ -77,7 +77,7 @@ Kurulumun ardından Firefox çubuğunda yer alacak passff simgesinden parolalar�
 
 ## Android
 
-Pass'i Android'de kullanmak muhtemelen en kolay seçenek olabilir. Bunun için [Openkeychain](https://www.openkeychain.org/) yazılımını cihazınıza kurmuş ve GPG anahtarınızı kullanılabilir kılmış olmanız gerekli. Bunun için [GnuPG Anahtar Üretimi](/yazisma_guvenligi/gpg/gpg-anahtar-uretimi.md) rehberinden destek alabilirsiniz.
+Pass'i Android'de kullanmak muhtemelen en kolay seçenek olabilir. Bunun için [Openkeychain](https://www.openkeychain.org/) yazılımını cihazınıza kurmuş ve GPG anahtarınızı kullanılabilir kılmış olmanız gerekli. Bunun için [GnuPG Anahtar Üretimi](../yazisma_guvenligi/gpg/gpg-anahtar-uretimi.md) rehberinden destek alabilirsiniz.
 
 Pass'i kullanabilmek için [Password Store](https://github.com/zeapo/Android-Password-Store#readme) yazılımını cihazınıza kurmanız gerekli. Password Store'u [F-droid özgür yazılım deposunda](https://f-droid.org) bulabilirsiniz.
 

@@ -64,7 +64,7 @@ Cihazınızın yönetim paneline girerek güncelleme seçeneklerine bakabilir ve
 
 Her ne kadar yukarıdaki tavsiyeler genel olarak tüm yönlendiriciler için geçerli olsalar da üreticilerin pek de özen göstermedikleri ürünler olmakla son kullanıcı yönlendiricileri pek çok mülk yazılım içermekte ve potansiyel olarak incelenememiş güvenlik açıkları içerme ihtimali taşımakta. Bu duruma en iyi çözüm ise yazılım özgürlüğünden geçmekte. LibreCMC ve OpenWRT sayılması gereken en önemli projeler olmakla belirli donanımları güncel özgür sistemlerle güncelleyerek güvenliğinizi hatrısayılır miktarda arttırabilir ve cihazlarınızın kabiliyetini de geliştirebilirsiniz.
 
-* [Özgür yönlendirici rehberi](/cihaz_guvenligi/librecmc_openwrt.md)
+* [Özgür yönlendirici rehberi](librecmc_openwrt.md)
 
 
 

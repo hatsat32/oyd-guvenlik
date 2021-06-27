@@ -20,7 +20,7 @@ RPM tabanlı dağıtımlar için : `sudo yum install nautilus-wipe`
 
 Kurulum tamamlandıktan sonra Nautilus'un sağ tık menüsünde `wipe` ve `wipe available disk space` seçenekleri ortaya çıkacaktır.
 
-![alt-text](/cihaz_guvenligi/dosya_silme/wipe_menu.png)
+![alt-text](dosya_silme/wipe_menu.png)
 
 * Wipe ile belirli bir dosyanın bulunduğu sektör silinebilir.
 * Wipe available disk space ile o depolama alanındaki boş bölge silinebilir.

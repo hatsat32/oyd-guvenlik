@@ -12,7 +12,7 @@
 
 Bitwarden diğer parola yöneticilerinden farklı olarak dağıtımların temel yazılım depolarında bulunmamakta. Bu noktada Bitwarden'i kurmak için iki seçeneğiniz bulunuyor:
 
-1. [Bitwarden indirme sayfasından](https://bitwarden.com/download/) cihazınıza uygun olan kurulum dosyasını indirip çalıştırmak. Bu GNU/Linux içn `.AppImage` indirip çalıştırmayı ve indirdiğiniz dosyanın bütünlüğü için sadece web sayfasının bir sertifika otoritesi tarafından verilmiş [TLS](/ag_guvenligi/letsencrypt.md) sertifikasına güvenmeyi gerektirmekte.
+1. [Bitwarden indirme sayfasından](https://bitwarden.com/download/) cihazınıza uygun olan kurulum dosyasını indirip çalıştırmak. Bu GNU/Linux içn `.AppImage` indirip çalıştırmayı ve indirdiğiniz dosyanın bütünlüğü için sadece web sayfasının bir sertifika otoritesi tarafından verilmiş [TLS](../ag_guvenligi/letsencrypt.md) sertifikasına güvenmeyi gerektirmekte.
 
 2. Kullandığınız dağıtımda `Snap` paket yöneticisi var ise kurulumu bununla yapmak. Bunun için aşağıdaki komutu kullanabilirsiniz:
 

@@ -32,7 +32,7 @@ En büyük ihlaller en küçük tedbirsizliklerden yaşanabilir. Muhtemelen yük
 
 ## Kapkaça karşı tedbir alın
 
-Her türlü tedbiri almış olabilirsiniz ama bir an vardır ki cihazınız olabildiğince korunaksızdır. Telefonunuzu kullandığınız an! Bu noktada hem cihazınız açık hem de ekran kilidi yok. Pratik olarak o anda telefonu elinde bulunduran herkes neredeyse her işlemi cihazınız ile yapabilir, [bu bir şaka değil](https://www.bbc.com/news/uk-38183819). Haliyle telefonunuzun elinizden kapılması durumunda tedbir almak için [Privatelock](/beseri_guvenlik/private_lock.md) kullanabilirsiniz.
+Her türlü tedbiri almış olabilirsiniz ama bir an vardır ki cihazınız olabildiğince korunaksızdır. Telefonunuzu kullandığınız an! Bu noktada hem cihazınız açık hem de ekran kilidi yok. Pratik olarak o anda telefonu elinde bulunduran herkes neredeyse her işlemi cihazınız ile yapabilir, [bu bir şaka değil](https://www.bbc.com/news/uk-38183819). Haliyle telefonunuzun elinizden kapılması durumunda tedbir almak için [Privatelock](../beseri_guvenlik/private_lock.md) kullanabilirsiniz.
 
 ## Bildirimlerin kilit ekranında görülmesine izin vermeyin
 

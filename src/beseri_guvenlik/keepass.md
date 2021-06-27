@@ -42,7 +42,7 @@ Veritabanınızın güvenliğine ilişkin kararları bir sonraki sayfada vermeni
 
 KeePassXC'nin veritabanını korumak için gelişmiş imkanlardan da faydalanabilirsiniz.
 
-* **Anahtar Dosyası:** Veritabanını deşifre edebilmek için hem parolayı hem de KeePassXC'nin oluşturacağı anahtar dosyasını sunmanız gerekir. Bu anahtarı oluşturmak için `Anahtar Dosası Ekle` seçeneğini seçip `oluştur` düğmesi ile yeni bir dosya oluşturabilirsiniz. Bu dosyayı parolanız kadar iyi korumanız gerekmekte aksi halde tüm parolalarınızı kaybedebilirsiniz. En iyi seçenek bir kopyayı USB bellekte diğerini güvendiğiniz bir başka alanda saklamak. Bunun için [GPG anahtarı kağıt yedek rehberimizden](/yazisma_guvenligi/gpg/paperbackup.md) yararlanabilirsiniz.
+* **Anahtar Dosyası:** Veritabanını deşifre edebilmek için hem parolayı hem de KeePassXC'nin oluşturacağı anahtar dosyasını sunmanız gerekir. Bu anahtarı oluşturmak için `Anahtar Dosası Ekle` seçeneğini seçip `oluştur` düğmesi ile yeni bir dosya oluşturabilirsiniz. Bu dosyayı parolanız kadar iyi korumanız gerekmekte aksi halde tüm parolalarınızı kaybedebilirsiniz. En iyi seçenek bir kopyayı USB bellekte diğerini güvendiğiniz bir başka alanda saklamak. Bunun için [GPG anahtarı kağıt yedek rehberimizden](../yazisma_guvenligi/gpg/paperbackup.md) yararlanabilirsiniz.
 
 ![](keepassxc/kp_anahtar_dosyasi.png)
 

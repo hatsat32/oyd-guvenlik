@@ -32,7 +32,7 @@ Debian : `sudo apt-get install yubikey-manager yubikey-personalization yubikey-p
 
 RPM : `sudo yum install yubikey-manager yubikey-personalization yubikey-personalization-gui`
 
-Gerekli yazılımları elde ettikten sonra OTP kullanacağınız hizmetin ayarlarına gelip muhtemelen `güvenlik` adı altında bulacağınız çift aşamalı yetkilendirme (Two Factor authentication veya 2FA) bölümüne gelip söz konusu güvenlik tedbirini etkinleştirin. Bu rehberde [Protonmail](/yazisma_guvenligi/protonmail.md) kullanılmıştır.
+Gerekli yazılımları elde ettikten sonra OTP kullanacağınız hizmetin ayarlarına gelip muhtemelen `güvenlik` adı altında bulacağınız çift aşamalı yetkilendirme (Two Factor authentication veya 2FA) bölümüne gelip söz konusu güvenlik tedbirini etkinleştirin. Bu rehberde [Protonmail](../yazisma_guvenligi/protonmail.md) kullanılmıştır.
 
 OTP soft token olarak mobil cihazlarda kullanılması düşünüldüğünden bir karekod şeklinde hizmet sağlayıcı tarafından sunulacaktır. Bu karekod aslında paylaşılan sırrı ve süre ile kritopgrafik ayarlara ilişkin detaylar içermekte. Bu bilgileri elle de girmek mümkün ki bilgisayarda bu şekilde yapılması gerekli. Elle giriş seçeneğini seçerek gerekli detaylara ulaşabilirsiniz.
 

@@ -4,7 +4,7 @@
 
 ## SMS'ler neden şifrelenmelidir?
 
-[SMS veya kısa mesaj servisi](https://en.wikipedia.org/wiki/Short_Message_Service) cep telefonlarına gelen ilk yazılı iletişim sistemidir. Bu amaçla günümüzde artık kişiler arasındaki iletişim için pek kullanılmasa da GSM sistemleri tarafından hala desteklenmekte ve [2FA](/beseri_guvenlik/2fa.md) için sıklıkla kullanılmaktadır.
+[SMS veya kısa mesaj servisi](https://en.wikipedia.org/wiki/Short_Message_Service) cep telefonlarına gelen ilk yazılı iletişim sistemidir. Bu amaçla günümüzde artık kişiler arasındaki iletişim için pek kullanılmasa da GSM sistemleri tarafından hala desteklenmekte ve [2FA](../beseri_guvenlik/2fa.md) için sıklıkla kullanılmaktadır.
 
 SMS'ler operatörlerin elinde bulunan anahtarlarla telefon ile baz istasyonu arasında şifrelenmektedir. Lakin anahtar kullanıcının kontrolünde olmadığından uçtan uca şifrelemenin sağlayacağı güvenliği veya operatör ile uyması gereken kanunlara karşı mahremiyeti sunamayacaktır. [Aynı zamanda GSM ağındaki SMS şifrelemenin dayanıklılığı da şüphelidir.](https://www.schneier.com/blog/archives/2019/11/eavesdropping_o_8.html)
 
@@ -43,11 +43,11 @@ Menüye tıkladığınızda sizi aşağıdaki seçenekler karşılar.
 
 ![alt-text](silence/ayarlar.png)
 
-İçe ve dışa aktarım ayarları (import/export) Silence'ın kullanımında önemlidir. Bu ayarlardan Silence'da bulunan SMS'lerinizi yedekleyebilir ve yedeklerinizi daha sonra geri alabilirsiniz. Yedeklerinizi şifreli almanız güvenliğiniz için önerilir veya şifresiz yedeklerinizi alıp daha sonra şifreleyebilirsiniz. [Cihazınıza olan güveniniz bu kararınızda etkili olacaktır.](/cihaz_guvenligi/mobil_cihazlar.md)
+İçe ve dışa aktarım ayarları (import/export) Silence'ın kullanımında önemlidir. Bu ayarlardan Silence'da bulunan SMS'lerinizi yedekleyebilir ve yedeklerinizi daha sonra geri alabilirsiniz. Yedeklerinizi şifreli almanız güvenliğiniz için önerilir veya şifresiz yedeklerinizi alıp daha sonra şifreleyebilirsiniz. [Cihazınıza olan güveniniz bu kararınızda etkili olacaktır.](../cihaz_guvenligi/mobil_cihazlar.md)
 
 ![alt-text](silence/import_export.png)
 
-Mahremiyet (privacy) ayarları da Silence'ın kullanımına ilişkin önemli ayarları içerir. Bu menüde yapabileceğiniz en önemli ayar bir parola ile Silence'ın anahtar ve SMS'lerinin bulunduğu veri tabanını şifrelemektir. Bunun için parolayı etkinleştir (enable passphrase) seçeneğine tıkladıktan sonra gelen bölüme [bir parola yöneticisinden aldığınız](/beseri_guvenlik/parolalar.md) rastgele parolayı veya bir [Zarola](https://zarola.oyd.org.tr) girerek kurulumu sonlandırabilirsiniz.
+Mahremiyet (privacy) ayarları da Silence'ın kullanımına ilişkin önemli ayarları içerir. Bu menüde yapabileceğiniz en önemli ayar bir parola ile Silence'ın anahtar ve SMS'lerinin bulunduğu veri tabanını şifrelemektir. Bunun için parolayı etkinleştir (enable passphrase) seçeneğine tıkladıktan sonra gelen bölüme [bir parola yöneticisinden aldığınız](../beseri_guvenlik/parolalar.md) rastgele parolayı veya bir [Zarola](https://zarola.oyd.org.tr) girerek kurulumu sonlandırabilirsiniz.
 
 ![alt-text](silence/mahremiyet.png)
 
